@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
+import { useSwipeDown } from '../../hooks/useSwipeDown';
 import { Icon } from '../../components/Icons';
 import { classifyError, getSample, translateInContext, type ContextTranslation } from '../../lib/claude';
 import { firstVariant, gloss, lookup, phrasesIn } from '../../lib/dictionary';
@@ -76,6 +77,8 @@ function Popover({ req }: { req: TranslationRequest }) {
   const { data, toggleVocab } = useApp();
   const voice = useNorwegianVoice();
   const ref = useRef<HTMLDivElement>(null);
+  const grip = useRef<HTMLDivElement>(null);
+  useSwipeDown(ref, grip, close);
   const [pos, setPos] = useState<{ left: number; top: number } | null>(null);
   const [canAsk, setCanAsk] = useState(false);
   const [ai, setAi] = useState<Ai>({ state: 'idle' });
@@ -126,9 +129,10 @@ function Popover({ req }: { req: TranslationRequest }) {
   }
 
   return (
-    <div className="pop" ref={ref} role="dialog" aria-label="Перевод" style={pos ?? { visibility: 'hidden' }}>
+    <div className="pop" ref={ref} role="dialog" aria-label={`Перевод: ${req.text}`} style={pos ?? { visibility: 'hidden' }}>
+      <div className="pop-grip" ref={grip} aria-hidden="true"><span /></div>
       <div className="ph">
-        <div className="pw">{req.text}</div>
+        <div className="pw" lang="nb">{req.text}</div>
         <button className="iconbtn" onClick={close} aria-label="Закрыть"><Icon name="close" /></button>
       </div>
       {t.body}

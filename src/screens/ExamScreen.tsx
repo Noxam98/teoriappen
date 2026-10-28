@@ -9,6 +9,7 @@ import { QUESTION_BY_ID } from '../data';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
 import { useNow } from '../hooks/useNow';
 import { errorCount, MAX_ERRORS } from '../lib/exam';
+import { announce, vibrate } from '../lib/feedback';
 import { fmtTime, plural } from '../lib/text';
 import { useApp } from '../state/AppState';
 import type { ExamSession } from '../types';
@@ -31,8 +32,12 @@ export function ExamScreen() {
   const locked = !!(E && id && instant && E.ans[id] !== undefined);
 
   const pick = (oi: number) => {
-    if (!id || locked) return;
+    if (!id || locked || !E) return;
     change(s => ({ ...s, ans: { ...s.ans, [id]: oi } }));
+    if (instant) {
+      vibrate(oi === 0, data.prefs.haptics);
+      announce(oi === 0 ? 'Верно' : `Неверно. Правильный ответ: ${QUESTION_BY_ID[id].a[0]}`);
+    }
   };
   const step = (d: number) => {
     change(s => ({ ...s, i: Math.min(Math.max(s.i + d, 0), s.ids.length - 1) }));
@@ -55,12 +60,13 @@ export function ExamScreen() {
 
   return (
     <div className="screen-q">
+      <h1 className="sr-only">Экзамен, вопрос {E.i + 1} из {E.ids.length}</h1>
       <div className="examhead">
         <div className="examhead-row">
-          <span className={left < 5 * 60_000 ? 'timer low tnum' : 'timer tnum'}><Icon name="clock" /><span>{fmtTime(left)}</span></span>
-          <span className="counter tnum"><b>{E.i + 1}</b>/{E.ids.length}</span>
+          <span className={left < 5 * 60_000 ? 'timer low tnum' : 'timer tnum'} role="timer" aria-label={`Осталось ${Math.ceil(left / 60000)} мин`}><Icon name="clock" /><span aria-hidden="true">{fmtTime(left)}</span></span>
+          <span className="counter tnum" aria-hidden="true"><b>{E.i + 1}</b>/{E.ids.length}</span>
           {instant && (
-            <span className={errors > MAX_ERRORS ? 'errs over tnum' : 'errs tnum'} title="Ошибок / можно">
+            <span className={errors > MAX_ERRORS ? 'errs over tnum' : 'errs tnum'} title="Ошибок / можно" aria-label={`Ошибок ${errors} из ${MAX_ERRORS} допустимых`}>
               <Icon name="cross" />{errors}<small>/{MAX_ERRORS}</small>
             </span>
           )}
@@ -76,8 +82,8 @@ export function ExamScreen() {
         {locked && <Explanation q={q} correct={E.ans[id] === 0} />}
       </QuestionCard>
 
-      <ActionBar>
-        <button className="btn square" disabled={E.i === 0} onClick={() => step(-1)} aria-label="Forrige"><Icon name="left" /></button>
+      <ActionBar label="Навигация по вопросам">
+        <button className="btn square" disabled={E.i === 0} onClick={() => step(-1)} aria-label="Forrige — предыдущий вопрос"><Icon name="left" /></button>
         <button className="btn flagbtn" aria-pressed={!!E.flag[id]} title="Отметить, чтобы вернуться позже"
           onClick={() => change(s => ({ ...s, flag: { ...s.flag, [id]: !s.flag[id] } }))}>
           <Icon name="flag" />Merk
@@ -95,6 +101,8 @@ export function ExamScreen() {
               const state = a === undefined ? '' : !instant ? 'done' : a === 0 ? 'ok' : 'bad';
               return (
                 <button key={x} className={[state, E.flag[x] && 'flag', k === E.i && 'cur'].filter(Boolean).join(' ')}
+                  aria-label={`Вопрос ${k + 1}: ${a === undefined ? 'без ответа' : state === 'ok' ? 'верно' : state === 'bad' ? 'ошибка' : 'отвечен'}${E.flag[x] ? ', отмечен' : ''}`}
+                  aria-current={k === E.i ? 'step' : undefined}
                   onClick={() => { change(s => ({ ...s, i: k })); setDialog(null); window.scrollTo({ top: 0 }); }}>{k + 1}</button>
               );
             })}

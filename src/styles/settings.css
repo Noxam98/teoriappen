@@ -1,6 +1,6 @@
 .setting { display: grid; gap: 10px; }
 .setting + .setting { border-top: 1px solid var(--line); padding-top: 16px; }
-.setting h4 { font-size: .8rem; text-transform: uppercase; letter-spacing: .09em; color: var(--ink-2); font-weight: 700; }
+.setting h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .09em; color: var(--ink-2); font-weight: 700; }
 .setting-note { font-size: .84rem; color: var(--ink-2); }
 .choice-list { display: grid; gap: 8px; }
 .choice { display: grid; grid-template-columns: 24px 1fr; gap: 12px; align-items: start; text-align: left; padding: 12px 14px; border-radius: var(--r); border: 1.5px solid var(--line); background: var(--surface); cursor: pointer; }
@@ -23,3 +23,8 @@
 .reset-confirm { display: grid; gap: 10px; padding: 12px 14px; border-radius: var(--r); background: var(--bad-soft); }
 .reset-confirm .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .reset-confirm .btn { min-height: 44px; }
+
+.install-done, .install-ios { font-size: .92rem; line-height: 1.45; }
+.install-done { display: flex; gap: 8px; align-items: center; color: var(--ok); font-weight: 600; }
+.install-done svg { width: 20px; height: 20px; }
+.install-ios { padding: 12px 14px; border-radius: var(--r); background: var(--surface-2); }

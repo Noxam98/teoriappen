@@ -31,7 +31,7 @@ function Layout() {
   return (
     <>
       <Toolbar />
-      <main className="wrap"><CurrentScreen /></main>
+      <main className="wrap" id="main" tabIndex={-1}><CurrentScreen /></main>
       <TranslationPopover />
     </>
   );

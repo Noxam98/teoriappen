@@ -8,9 +8,9 @@ export function Explanation({ q, correct }: { q: Question; correct?: boolean }) 
   return (
     <div className={correct === undefined ? 'explain' : correct ? 'explain ok' : 'explain bad'}>
       {correct !== undefined && (
-        <div className={correct ? 'verdict ok' : 'verdict bad'}>{correct ? 'Riktig! · Верно' : 'Feil · Неверно'}</div>
+        <div className={correct ? 'verdict ok' : 'verdict bad'} aria-hidden="true">{correct ? 'Riktig! · Верно' : 'Feil · Неверно'}</div>
       )}
-      <p className="f" data-block><Words text={q.f} /></p>
+      <p className="f" data-block lang="nb"><Words text={q.f} /></p>
       <details open={data.prefs.ru}
         onToggle={e => {
           const open = e.currentTarget.open;

@@ -24,6 +24,7 @@ export function ResultScreen() {
 
   return (
     <div className="result">
+      <h1 className="sr-only">{isExam ? `Результат экзамена: ${res.pass ? 'сдан' : 'не сдан'}, ${res.right} из ${res.n}` : `Тренировка завершена: ${res.right} из ${res.n}`}</h1>
       <section className={`result-hero ${isExam ? (res.pass ? 'pass' : 'fail') : 'practice'}`}>
         {isExam ? (
           <div className={res.pass ? 'bigstamp pass' : 'bigstamp fail'}>
@@ -91,10 +92,10 @@ function ReviewItem({ q, chosen, number }: { q: Question; chosen: number | undef
       </div>
       <div className={q.img ? 'ritem-body has-fig' : 'ritem-body'}>
         <Figure spec={q.img} />
-        <p className="qtext" data-block><Words text={q.q} /></p>
+        <p className="qtext" data-block lang="nb"><Words text={q.q} /></p>
       </div>
-      {chosen !== undefined && !ok && <div className="ans bad"><Icon name="cross" /><span data-block><Words text={q.a[chosen]} /></span></div>}
-      <div className="ans ok"><Icon name="check" /><span data-block><Words text={q.a[0]} /></span></div>
+      {chosen !== undefined && !ok && <div className="ans bad"><Icon name="cross" /><span className="sr-only">Ваш ответ: </span><span data-block lang="nb"><Words text={q.a[chosen]} /></span></div>}
+      <div className="ans ok"><Icon name="check" /><span className="sr-only">Правильный ответ: </span><span data-block lang="nb"><Words text={q.a[0]} /></span></div>
       <Explanation q={q} />
     </article>
   );

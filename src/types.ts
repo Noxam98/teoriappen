@@ -110,6 +110,8 @@ export type QuestionStat = [number, number, 0 | 1];
 
 export interface Prefs {
   reveal: RevealMode;
+  /** Short vibration after an answer (Android). */
+  haptics: boolean;
   size: 0 | 1 | 2;
   ru: boolean;
   seenBrushHint: boolean;

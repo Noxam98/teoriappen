@@ -27,13 +27,15 @@ export function Toolbar() {
 
   return (
     <header className="bar" ref={bar}>
+      <a className="skip-link" href="#main">К содержимому</a>
       <div className="wrap bar-row">
-        <button className="brand" onClick={() => go({ name: 'home' })} aria-label="На главную">
+        <button className="brand" onClick={() => go({ name: 'home' })} title="На главную">
           <svg viewBox="0 0 100 100" aria-hidden="true">
             <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#333" strokeWidth={2} />
             <polygon points="50,18 82,50 50,82 18,50" fill="#f6c400" />
           </svg>
           <span className="brand-text"><small>Førerkort B</small><b>Teoriprøven</b></span>
+          <span className="sr-only">— на главную</span>
         </button>
         <div className="tools">
           <button id="brushBtn" className={`tool brush${firstVisit ? ' pulse' : ''}`} aria-pressed={brush.on}

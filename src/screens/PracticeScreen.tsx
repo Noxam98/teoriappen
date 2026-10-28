@@ -7,6 +7,7 @@ import { QuestionCard } from '../components/question/QuestionCard';
 import { CATEGORY, QUESTIONS, QUESTION_BY_ID } from '../data';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
 import { wrongQuestionIds } from '../lib/exam';
+import { announce, vibrate } from '../lib/feedback';
 import { shuffle } from '../lib/text';
 import { useApp } from '../state/AppState';
 import type { AppData, PracticeMode, Screen } from '../types';
@@ -61,7 +62,11 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
     if (!q || revealed) return;
     // in "answers at the end" mode the choice can still be changed; stats count the final choice when moving on
     setAnswers(a => ({ ...a, [q.id]: oi }));
-    if (instant) answer(q.id, oi === 0);
+    if (instant) {
+      answer(q.id, oi === 0);
+      vibrate(oi === 0, data.prefs.haptics);
+      announce(oi === 0 ? 'Верно' : `Неверно. Правильный ответ: ${q.a[0]}`);
+    }
   };
 
   const finish = (recordCurrent: boolean) => {
@@ -89,6 +94,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
 
   return (
     <div className="screen-q">
+      <h1 className="sr-only">Тренировка: {no}, вопрос {i + 1} из {ids.length}</h1>
       <div className="examhead">
         <div className="examhead-row">
           <span className="topic"><b>{no}</b><small>{ru}</small></span>
@@ -104,7 +110,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
         {revealed && <div ref={explainRef}><Explanation q={q} correct={chosen === 0} /></div>}
       </QuestionCard>
 
-      <ActionBar>
+      <ActionBar label="Навигация по вопросам">
         <button className="btn ghost-strong" onClick={() => finish(true)}>Завершить</button>
         <button className={chosen !== undefined ? 'btn primary grow' : 'btn grow'} disabled={chosen === undefined} onClick={next}>
           {i + 1 < ids.length ? 'Neste' : 'Ferdig'} <Icon name="right" />

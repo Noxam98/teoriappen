@@ -27,17 +27,32 @@ export function Options({ q, order, chosen, reveal = false, onPick }: Props) {
     onPick(oi);
   };
 
+  // arrow keys move focus between the plates (Enter/Space answers)
+  const moveFocus = (e: React.KeyboardEvent, k: number) => {
+    const d = e.key === 'ArrowDown' || e.key === 'ArrowRight' ? 1 : e.key === 'ArrowUp' || e.key === 'ArrowLeft' ? -1 : 0;
+    if (!d) return false;
+    e.preventDefault();
+    const plates = (e.currentTarget.parentElement?.querySelectorAll<HTMLElement>('.opt')) ?? [];
+    plates[(k + d + plates.length) % plates.length]?.focus();
+    return true;
+  };
+  const focusable = order.includes(chosen ?? -1) ? chosen : order[0];
+
   return (
-    <div className="opts" role="radiogroup" aria-label="Svaralternativer">
+    <div className="opts" role="radiogroup" aria-label="Svaralternativer — варианты ответа">
       {order.map((oi, k) => {
         const state = reveal ? (oi === 0 ? ' right' : oi === chosen ? ' wrong' : '') : '';
         return (
-          <div key={oi} className={`opt${state}${reveal ? ' locked' : ''}`} role="radio" tabIndex={0} aria-checked={oi === chosen}
+          <div key={oi} className={`opt${state}${reveal ? ' locked' : ''}`} role="radio" tabIndex={oi === focusable ? 0 : -1} aria-checked={oi === chosen}
+            aria-disabled={reveal || undefined}
             onClick={e => pick(oi, e.target)}
-            onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(oi, null); } }}>
+            onKeyDown={e => { if (moveFocus(e, k)) return; if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(oi, null); } }}>
             <span className="key">{LETTERS[k]}</span>
-            <span className="otext" data-block><Words text={q.a[oi]} /></span>
-            <span className="mark">{reveal && oi === 0 ? <Icon name="check" /> : reveal && oi === chosen ? <Icon name="cross" /> : null}</span>
+            <span className="otext" data-block lang="nb"><Words text={q.a[oi]} /></span>
+            <span className="mark">
+              {reveal && oi === 0 ? <><Icon name="check" /><span className="sr-only">правильный ответ</span></>
+                : reveal && oi === chosen ? <><Icon name="cross" /><span className="sr-only">ваш ответ, неверно</span></> : null}
+            </span>
           </div>
         );
       })}

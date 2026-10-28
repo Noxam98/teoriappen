@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { canVibrate } from '../lib/feedback';
+import { useInstall } from '../lib/install';
 import { EMPTY } from '../lib/storage';
 import { useApp } from '../state/AppState';
 import type { Prefs, RevealMode } from '../types';
+import { Icon } from './Icons';
 import { Segmented } from './Segmented';
 import { Sheet } from './Sheet';
 
@@ -13,13 +16,14 @@ export const REVEAL_OPTIONS: { value: RevealMode; label: string; hint: string }[
 export function SettingsSheet({ onClose }: { onClose: () => void }) {
   const { data, update } = useApp();
   const [confirmReset, setConfirmReset] = useState(false);
+  const install = useInstall();
   const prefs = data.prefs;
   const set = (p: Partial<Prefs>) => update(d => ({ ...d, prefs: { ...d.prefs, ...p } }));
 
   return (
     <Sheet title="Настройки" onClose={onClose} actions={<button className="btn primary" onClick={onClose}>Готово</button>}>
       <section className="setting">
-        <h4>Показывать правильный ответ</h4>
+        <h3>Показывать правильный ответ</h3>
         <div className="choice-list" role="radiogroup" aria-label="Показывать правильный ответ">
           {REVEAL_OPTIONS.map(o => (
             <button key={o.value} className="choice" role="radio" aria-checked={prefs.reveal === o.value} onClick={() => set({ reveal: o.value })}>
@@ -32,10 +36,10 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
       </section>
 
       <section className="setting">
-        <h4>Размер текста вопросов</h4>
+        <h3>Размер текста вопросов</h3>
         <Segmented label="Размер текста" value={prefs.size} onChange={size => set({ size })}
           options={[{ value: 0, label: 'Мелкий' }, { value: 1, label: 'Средний' }, { value: 2, label: 'Крупный' }]} />
-        <p className="size-preview" data-size={prefs.size}>Du nærmer deg et gangfelt. Hva gjelder?</p>
+        <p className="size-preview" data-size={prefs.size} lang="nb">Du nærmer deg et gangfelt. Hva gjelder?</p>
       </section>
 
       <section className="setting">
@@ -45,8 +49,30 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
         </label>
       </section>
 
+      {canVibrate() && (
+        <section className="setting">
+          <label className="switch-row">
+            <span><b>Вибрация</b><small>Короткий отклик, когда ответ проверен</small></span>
+            <input type="checkbox" className="switch" checked={prefs.haptics} onChange={e => set({ haptics: e.target.checked })} />
+          </label>
+        </section>
+      )}
+
+      {install.state !== 'unavailable' && (
+        <section className="setting">
+          <h3>Приложение на телефоне</h3>
+          {install.state === 'installed' && <p className="install-done"><Icon name="check" />Тренажёр установлен и работает без интернета.</p>}
+          {install.state === 'prompt' && (
+            <button className="btn" onClick={install.install}><Icon name="home" />Установить на главный экран</button>
+          )}
+          {install.state === 'ios' && (
+            <p className="install-ios">В Safari нажмите <b>«Поделиться»</b> <span aria-hidden="true">⎙</span>, затем <b>«На экран „Домой“»</b>. Тренажёр откроется как приложение и будет работать без интернета.</p>
+          )}
+        </section>
+      )}
+
       <section className="setting">
-        <h4>Прогресс</h4>
+        <h3>Прогресс</h3>
         {confirmReset ? (
           <div className="reset-confirm">
             <p>Удалить статистику ответов и историю экзаменов? Словарь останется.</p>

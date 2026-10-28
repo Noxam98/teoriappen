@@ -8,5 +8,5 @@ export default defineConfig(({ mode }) => ({
   base: './',
   plugins: mode === 'single' ? [react(), viteSingleFile()] : [react()],
   // the question bank and dictionary (~450 KB of JSON) are bundled on purpose, so the app works offline
-  build: { outDir: mode === 'single' ? 'dist-single' : 'dist', emptyOutDir: true, chunkSizeWarningLimit: 1200 },
+  build: { outDir: mode === 'single' ? 'dist-single' : 'dist', emptyOutDir: true, chunkSizeWarningLimit: 1200, sourcemap: mode !== 'single' },
 }));

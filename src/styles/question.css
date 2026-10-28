@@ -9,7 +9,7 @@
 .counter { font-family: var(--display); font-size: 1.05rem; color: var(--ink-2); padding: 2px 9px; border-radius: 8px; background: var(--surface-3); }
 .counter b { color: var(--ink); }
 .errs, .score-chip { display: inline-flex; align-items: center; gap: 3px; font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding: 2px 9px 2px 6px; border-radius: 8px; background: var(--bad-soft); color: var(--bad); }
-.errs small, .score-chip small { font-weight: 500; opacity: .75; }
+.errs small, .score-chip small { font-weight: 500; }
 .errs svg, .score-chip svg { width: 15px; height: 15px; }
 .errs.over { background: var(--bad); color: var(--surface); }
 .score-chip { background: var(--ok-soft); color: var(--ok); }
@@ -79,7 +79,8 @@
 .opt.right .mark { color: var(--ok); animation: mark-in .25s ease-out; }
 .opt.wrong .mark { color: var(--bad); animation: mark-in .25s ease-out; }
 .opt.locked { cursor: default; }
-.opt.locked:not(.right):not(.wrong) { opacity: .62; }
+.opt.locked:not(.right):not(.wrong) { color: var(--ink-2); border-style: dashed; }
+.opt.locked:not(.right):not(.wrong) .key { opacity: .6; }
 @keyframes mark-in { from { transform: scale(.4); opacity: 0; } }
 @media (hover: hover) { .opt:not(.locked):hover { border-color: var(--ink-3); } }
 
@@ -91,8 +92,8 @@
 .explain .verdict.ok { color: var(--ok); }
 .explain .verdict.bad { color: var(--bad); }
 .explain .f { font-size: calc(var(--qsize) * .86); line-height: 1.45; }
-.explain details { border-top: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); padding-top: 8px; }
-.explain summary { cursor: pointer; color: var(--blue); font-weight: 600; font-size: .9rem; list-style: none; display: flex; align-items: center; gap: 6px; min-height: 30px; }
+.explain details { border-top: 1px solid var(--line); padding-top: 2px; }
+.explain summary { cursor: pointer; color: var(--blue); font-weight: 600; font-size: .9rem; list-style: none; display: flex; align-items: center; gap: 6px; min-height: 44px; }
 .explain summary::-webkit-details-marker { display: none; }
 .explain summary::before { content: ""; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform .15s; margin-right: 2px; }
 .explain details[open] summary::before { transform: rotate(45deg); }

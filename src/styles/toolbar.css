@@ -1,15 +1,15 @@
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--surface); }
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--surface); border-bottom: 1px solid var(--line); }
-.bar-row { display: flex; align-items: center; gap: 8px; min-height: 56px; }
+.bar-row { display: flex; align-items: center; gap: 6px; min-height: 58px; }
 .brand { display: flex; align-items: center; gap: 9px; background: none; border: 0; padding: 4px 0; cursor: pointer; min-width: 0; }
 .brand svg { width: 28px; height: 28px; flex: none; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .15)); }
 .brand-text { display: grid; text-align: left; line-height: 1.05; }
 .brand small { font-size: .66rem; color: var(--ink-3); letter-spacing: .1em; text-transform: uppercase; font-weight: 600; }
 .brand b { font-family: var(--display); font-weight: 700; font-size: 1.28rem; letter-spacing: .01em; white-space: nowrap; }
 .tools { margin-left: auto; display: flex; gap: 6px; align-items: center; }
-.tool { position: relative; display: inline-flex; align-items: center; gap: 7px; height: 40px; padding: 0 13px 0 11px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 600; font-size: .9rem; white-space: nowrap; }
+.tool { position: relative; display: inline-flex; align-items: center; gap: 7px; height: 44px; padding: 0 13px 0 11px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 600; font-size: .9rem; white-space: nowrap; }
 .tool svg { width: 21px; height: 21px; flex: none; }
-.tool.icon { width: 40px; padding: 0; justify-content: center; border-radius: 12px; background: var(--surface-2); border-color: transparent; }
+.tool.icon { width: 44px; padding: 0; justify-content: center; border-radius: 12px; background: var(--surface-2); border-color: transparent; }
 .tool:active { transform: scale(.95); }
 .tool .badge { position: absolute; top: -4px; right: -5px; min-width: 19px; height: 19px; padding: 0 5px; border-radius: 10px; background: var(--blue); color: var(--on-blue); font-size: .7rem; font-weight: 700; display: grid; place-items: center; border: 2px solid var(--surface); }
 .tool.brush { border: 1.5px solid var(--ink); }

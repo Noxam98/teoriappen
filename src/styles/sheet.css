@@ -1,14 +1,15 @@
 /* Bottom sheet on phones, centred dialog on wider screens */
 .modal { position: fixed; inset: 0; z-index: 60; background: rgba(8, 12, 18, .5); display: flex; align-items: flex-end; justify-content: center; animation: fade .18s ease-out; }
 .sheet {
-  width: 100%; max-height: min(88vh, 760px); overflow: auto; overscroll-behavior: contain; background: var(--surface); color: var(--ink);
+  width: 100%; max-height: min(88vh, 760px); max-height: min(88dvh, 760px); overflow: auto; overscroll-behavior: contain; background: var(--surface); color: var(--ink);
   border-radius: 22px 22px 0 0; box-shadow: var(--shadow-up); outline: none;
-  padding: 8px max(18px, env(safe-area-inset-left, 0px)) calc(16px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-right, 0px));
+  padding: 0 max(18px, env(safe-area-inset-left, 0px)) calc(16px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-right, 0px));
   animation: rise .26s cubic-bezier(.2, .9, .25, 1);
 }
-.sheet::before { content: ""; display: block; width: 40px; height: 5px; border-radius: 3px; background: var(--surface-3); margin: 0 auto 6px; }
+.sheet-grip { display: grid; place-items: center; height: 24px; margin: 0 -18px; cursor: grab; touch-action: none; }
+.sheet-grip span { width: 40px; height: 5px; border-radius: 3px; background: var(--surface-3); }
 .sheet-head { display: flex; align-items: center; gap: 10px; min-height: 44px; }
-.sheet-head h3 { flex: 1; font-size: 1.12rem; }
+.sheet-head h2 { flex: 1; font-size: 1.12rem; }
 .sheet-body { display: grid; gap: 16px; padding-block: 6px 4px; }
 .sheet-actions { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 10px; margin-top: 16px; position: sticky; bottom: calc(-16px - env(safe-area-inset-bottom, 0px)); background: var(--surface); padding-block: 10px 8px; border-top: 1px solid var(--line); }
 .mtext { font-size: 1rem; }
@@ -17,7 +18,7 @@
 @media (min-width: 640px) {
   .modal { align-items: center; padding: 20px; }
   .sheet { width: min(540px, 100%); border-radius: 20px; padding: 18px 22px 22px; animation: pop .2s ease-out; }
-  .sheet::before { display: none; }
+  .sheet-grip { display: none; }
   .sheet-actions { position: static; }
   @keyframes pop { from { transform: scale(.96); opacity: 0; } }
 }
@@ -29,6 +30,9 @@
 .qgrid button.ok { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); }
 .qgrid button.bad { background: var(--bad-soft); border-color: var(--bad); color: var(--bad); }
 .qgrid button.cur { outline: 3px solid var(--ink); outline-offset: 1px; }
+.qgrid button.ok::before, .qgrid button.bad::before { position: absolute; left: 4px; top: 2px; font-size: .62rem; line-height: 1; }
+.qgrid button.ok::before { content: "✓"; }
+.qgrid button.bad::before { content: "✕"; }
 .qgrid button.flag::after { content: ""; position: absolute; top: 4px; right: 4px; width: 8px; height: 8px; border-radius: 50%; background: var(--flag); }
 .legend { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: .82rem; color: var(--ink-2); }
 .legend i { display: inline-block; width: 13px; height: 13px; border-radius: 4px; vertical-align: -2px; margin-right: 6px; border: 1px solid var(--line); }

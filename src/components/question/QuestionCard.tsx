@@ -9,7 +9,7 @@ export function QuestionBody({ q }: { q: Question }) {
   return (
     <div className={q.img ? 'qbody has-fig' : 'qbody'}>
       <Figure spec={q.img} />
-      <p className="qtext" data-block><Words text={q.q} /></p>
+      <p className="qtext" data-block lang="nb"><Words text={q.q} /></p>
     </div>
   );
 }
