@@ -1,0 +1,168 @@
+[
+  {
+    "id": "par-01",
+    "cat": "parkering",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "stans_forbudt"
+    },
+    "a": [
+      "Stans forbudt: du må ikke stanse, heller ikke for å slippe av passasjerer",
+      "Parkering forbudt, men kort stans er tillatt",
+      "Innkjøring forbudt"
+    ],
+    "f": "Stans forbudt betyr at du ikke må stanse i det hele tatt, bortsett fra når trafikken eller en nødsituasjon tvinger deg.",
+    "ru": "«Остановка запрещена»: нельзя останавливаться вообще, кроме случаев, когда вынуждает движение (пробка) или экстренная ситуация."
+  },
+  {
+    "id": "par-02",
+    "cat": "parkering",
+    "q": "Du ser dette skiltet. Hva kan du gjøre her?",
+    "img": {
+      "sign": "parkering_forbudt"
+    },
+    "a": [
+      "Stanse kort for å slippe av eller ta opp passasjerer",
+      "Parkere i inntil 30 minutter",
+      "Ingenting, all stans er forbudt"
+    ],
+    "f": "Parkering forbudt betyr at du kan stanse kort for å la passasjerer gå av eller på, eller for å laste av og på, men du kan ikke parkere.",
+    "ru": "«Стоянка запрещена»: можно ненадолго остановиться для посадки или высадки пассажиров, погрузки или разгрузки, но нельзя оставлять машину на стоянку."
+  },
+  {
+    "id": "par-04",
+    "cat": "parkering",
+    "q": "Hva gjelder for stans ved et veikryss?",
+    "img": null,
+    "a": [
+      "Du må ikke stanse i krysset eller nærmere enn 5 meter fra krysset",
+      "Du kan stanse helt inntil krysset hvis du har nødsignal på",
+      "Du må ikke stanse nærmere enn 20 meter fra krysset"
+    ],
+    "f": "Stans er forbudt i veikryss og nærmere enn 5 meter fra krysset. Biler som står der, hindrer sikten og den svingende trafikken.",
+    "ru": "Останавливаться запрещено на перекрёстке и ближе 5 м от него: стоящие машины мешают обзору и поворачивающему транспорту."
+  },
+  {
+    "id": "par-05",
+    "cat": "parkering",
+    "q": "Du kjører på en vei med dette skiltet, utenfor tettbygd strøk. Kan du parkere i veikanten?",
+    "img": {
+      "sign": "forkjorsveg"
+    },
+    "a": [
+      "Nei, parkering er forbudt på forkjørsvei utenfor tettbygd strøk",
+      "Ja, hvis du slår på nødsignal",
+      "Ja, men bare om natten"
+    ],
+    "f": "På forkjørsvei utenfor tettbygd strøk er det forbudt å parkere. Trafikken går fort, og parkerte biler er farlige.",
+    "ru": "На главной дороге (forkjørsvei) вне населённых пунктов стоянка запрещена: там высокая скорость, и стоящие машины опасны."
+  },
+  {
+    "id": "par-06",
+    "cat": "parkering",
+    "q": "Hvor er det forbudt å parkere?",
+    "img": null,
+    "a": [
+      "Foran en inn- eller utkjørsel til en eiendom",
+      "På en parkeringsplass merket med P",
+      "Langs fortauet i en gate i tettbygd strøk uten skilt"
+    ],
+    "f": "Du må ikke parkere slik at du sperrer inn- eller utkjørselen til en eiendom.",
+    "ru": "Нельзя ставить машину так, чтобы перекрыть въезд или выезд с участка (территории)."
+  },
+  {
+    "id": "par-08",
+    "cat": "parkering",
+    "q": "Du skal parkere i en gate med toveistrafikk. På hvilken side av gaten skal du parkere?",
+    "img": null,
+    "a": [
+      "På høyre side i kjøreretningen",
+      "På den siden der det er ledig plass, uansett kjøreretning",
+      "På venstre side i kjøreretningen"
+    ],
+    "f": "Du skal parkere på høyre side av veien i kjøreretningen. I gater med envegskjøring kan du parkere på begge sider.",
+    "ru": "Ставить машину нужно у правого края по направлению движения. На улицах с односторонним движением — можно с обеих сторон."
+  },
+  {
+    "id": "par-09",
+    "cat": "parkering",
+    "q": "Du er i en gate med dette skiltet. Det er ingen skilt eller oppmerking for parkering. Hvor kan du parkere?",
+    "img": {
+      "sign": "envegskjoring"
+    },
+    "a": [
+      "På begge sider av gaten",
+      "Bare på høyre side",
+      "Bare på venstre side"
+    ],
+    "f": "I gater med envegskjøring kan du parkere både på høyre og venstre side, hvis ikke skilt eller oppmerking sier noe annet.",
+    "ru": "На улице с односторонним движением можно ставить машину и справа, и слева, если знаки или разметка не запрещают."
+  },
+  {
+    "id": "par-10",
+    "cat": "parkering",
+    "q": "Du parkerer i en bratt nedoverbakke ved fortauskanten. Hvordan bør du sikre bilen?",
+    "img": null,
+    "a": [
+      "Sette på parkeringsbremsen, sette bilen i gir (eller P) og vri forhjulene inn mot fortauskanten",
+      "Sette bilen i fri, så den er lett å flytte",
+      "Vri forhjulene ut mot veien"
+    ],
+    "f": "Bruk parkeringsbremsen og sett bilen i gir eller P. I nedoverbakke vrir du hjulene inn mot fortauskanten, så bilen stopper mot den hvis den begynner å rulle.",
+    "ru": "Затяните стояночный тормоз и включите передачу (или P). При стоянке на спуске поверните передние колёса к бордюру — тогда машина упрётся в него, если покатится."
+  },
+  {
+    "id": "par-11",
+    "cat": "parkering",
+    "q": "Du har parkert langs en gate og skal gå ut av bilen. Hva bør du gjøre før du åpner døren?",
+    "img": null,
+    "a": [
+      "Se i speilet og over skulderen etter syklister og andre trafikanter",
+      "Åpne døren raskt, så du ikke står lenge i veien",
+      "Slå på blinklyset, så har andre vikeplikt for deg"
+    ],
+    "f": "En dør som åpnes brått, kan treffe en syklist. Se deg godt om før du åpner, og åpne forsiktig.",
+    "ru": "Резко открытая дверь может сбить велосипедиста. Перед открытием посмотрите в зеркало и через плечо и открывайте дверь осторожно."
+  },
+  {
+    "id": "par-12",
+    "cat": "parkering",
+    "q": "Hvor er det forbudt å stanse?",
+    "img": null,
+    "a": [
+      "I en tunnel",
+      "På en parkeringsplass",
+      "Langs en gate i tettbygd strøk der det ikke er skilt"
+    ],
+    "f": "Det er forbudt å stanse i tunnel, bortsett fra i nødsituasjoner eller når trafikken står stille.",
+    "ru": "В тоннеле останавливаться запрещено, кроме экстренных случаев или когда стоит весь поток (пробка)."
+  },
+  {
+    "id": "par-13",
+    "cat": "parkering",
+    "q": "Hvorfor er det forbudt å stanse i en uoversiktlig kurve?",
+    "img": null,
+    "a": [
+      "Fordi andre trafikanter kan komme brått på bilen og ikke rekke å stoppe",
+      "Fordi bilen kan skade veibanen",
+      "Det er bare forbudt om natten"
+    ],
+    "f": "I en uoversiktlig kurve ser ikke andre bilen din før de er nær. Da kan det skje en påkjøring.",
+    "ru": "В плохо просматриваемом повороте другие водители увидят вашу машину слишком поздно — возможен наезд."
+  },
+  {
+    "id": "par-14",
+    "cat": "parkering",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "parkering"
+    },
+    "a": [
+      "Parkering er tillatt",
+      "Parkering er forbudt",
+      "Plass der du bare kan stanse i en nødsituasjon"
+    ],
+    "f": "Skiltet viser et område der det er tillatt å parkere. Underskilt kan gi regler om tid, betaling eller hvem som kan parkere.",
+    "ru": "Знак «P» обозначает место, где разрешена стоянка. Табличка под ним может ограничивать время, оплату или круг пользователей."
+  }
+]

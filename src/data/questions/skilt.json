@@ -1,0 +1,1053 @@
+[
+  {
+    "id": "sk-01",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "vikeplikt"
+    },
+    "a": [
+      "Du har vikeplikt for kjørende på veien du kommer inn på",
+      "Du kjører på forkjørsvei",
+      "Du må alltid stanse helt før du kjører videre",
+      "Kjørende fra venstre har vikeplikt for deg"
+    ],
+    "f": "Vikepliktskiltet betyr at du skal vike for trafikken på veien du skal inn på eller krysse. Du trenger ikke stanse hvis veien er fri.",
+    "ru": "Знак «Уступите дорогу» (vikeplikt): вы уступаете транспорту на дороге, на которую въезжаете или которую пересекаете. Останавливаться нужно, только если дорога не свободна."
+  },
+  {
+    "id": "sk-02",
+    "cat": "skilt",
+    "q": "Du kommer til dette skiltet. Veien du skal inn på, er helt fri, og du har god oversikt. Hva gjør du?",
+    "img": {
+      "sign": "stopp"
+    },
+    "a": [
+      "Stanser helt før du kjører videre",
+      "Kjører videre uten å stanse fordi veien er fri",
+      "Senker farten til gangfart og kjører videre",
+      "Stanser bare hvis det kommer trafikk fra høyre"
+    ],
+    "f": "Ved stoppskilt skal du alltid stanse helt, ved stopplinjen eller der du får god oversikt. Deretter skal du vike for trafikken på veien.",
+    "ru": "У знака STOP нужно всегда полностью остановиться (у стоп-линии или там, где хороший обзор), даже если дорога свободна, а затем уступить дорогу."
+  },
+  {
+    "id": "sk-03",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "forkjorsveg"
+    },
+    "a": [
+      "Du kjører på forkjørsvei, og trafikk fra sideveiene har vikeplikt for deg",
+      "Du har vikeplikt i neste kryss",
+      "Forkjørsveien slutter",
+      "Høyreregelen gjelder i alle kryss fram til neste skilt"
+    ],
+    "f": "Skiltet Forkjørsvei betyr at kjørende fra sideveier og avkjørsler har vikeplikt for deg. Det gjelder fram til skiltet Slutt på forkjørsvei.",
+    "ru": "Знак «Главная дорога» (forkjørsvei): въезжающие с боковых дорог обязаны уступать вам. Действует до знака «Конец главной дороги»."
+  },
+  {
+    "id": "sk-04",
+    "cat": "skilt",
+    "q": "Du kjører på en vei med dette skiltet, utenfor tettbygd strøk. Hva er forbudt her?",
+    "img": {
+      "sign": "forkjorsveg"
+    },
+    "a": [
+      "Å parkere",
+      "Å kjøre forbi en traktor",
+      "Å bruke nærlys om dagen",
+      "Å kjøre i 80 km/t når det ikke er skiltet en annen fartsgrense"
+    ],
+    "f": "På forkjørsvei utenfor tettbygd strøk er det forbudt å parkere.",
+    "ru": "На главной дороге (forkjørsvei) вне населённого пункта стоянка запрещена."
+  },
+  {
+    "id": "sk-05",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "slutt_forkjorsveg"
+    },
+    "a": [
+      "Forkjørsveien slutter, og du må følge de vanlige vikepliktsreglene videre",
+      "Du kjører inn på en forkjørsvei",
+      "Du har forkjørsrett i alle kryss fram til neste skilt",
+      "Veien slutter, og det er ikke mulig å kjøre videre"
+    ],
+    "f": "Slutt på forkjørsvei betyr at du ikke lenger har forkjørsrett. I neste kryss gjelder de vanlige reglene, for eksempel høyreregelen, hvis det ikke er andre skilt.",
+    "ru": "Знак «Конец главной дороги»: преимущества больше нет. На следующем перекрёстке действуют общие правила, например правило правой руки, если нет других знаков."
+  },
+  {
+    "id": "sk-06",
+    "cat": "skilt",
+    "q": "Du kommer til en smal strekning med dette skiltet. Hva betyr det?",
+    "img": {
+      "sign": "moteplikt"
+    },
+    "a": [
+      "Du har vikeplikt for møtende trafikk på strekningen",
+      "Møtende trafikk har vikeplikt for deg",
+      "Det er forbudt å kjøre inn på strekningen",
+      "Du skal kjøre forbi møtende kjøretøy på venstre side"
+    ],
+    "f": "Møteplikt betyr at du skal vike for møtende kjørende på den smale strekningen. Vent til de har passert.",
+    "ru": "Знак «Преимущество встречного движения» (møteplikt): на узком участке вы уступаете встречным машинам. Дождитесь, пока они проедут."
+  },
+  {
+    "id": "sk-07",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "forkjorsrett_mote"
+    },
+    "a": [
+      "Møtende kjørende har vikeplikt for deg på den smale strekningen",
+      "Du har vikeplikt for møtende trafikk",
+      "Veien er envegskjørt",
+      "Du har forkjørsrett i neste veikryss"
+    ],
+    "f": "Skiltet gir deg forkjørsrett ved møting på en smal strekning. De møtende skal vike for deg, men du må likevel kjøre forsiktig.",
+    "ru": "Знак «Преимущество перед встречным движением»: на узком участке встречные обязаны уступить вам. Но всё равно будьте осторожны."
+  },
+  {
+    "id": "sk-08",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "innkjoring_forbudt"
+    },
+    "a": [
+      "Det er forbudt å kjøre inn i veien fra denne retningen",
+      "Det er forbudt å stanse",
+      "Veien er stengt for gående",
+      "Du har vikeplikt for møtende trafikk"
+    ],
+    "f": "Innkjøring forbudt betyr at du ikke kan kjøre inn i veien fra den siden skiltet står. Skiltet står ofte i enden av en envegskjørt gate.",
+    "ru": "Знак «Въезд запрещён» («кирпич»): нельзя въезжать на дорогу с этой стороны. Часто стоит в конце улицы с односторонним движением."
+  },
+  {
+    "id": "sk-09",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "forbudt_alle"
+    },
+    "a": [
+      "Forbudt for alle kjøretøy",
+      "Innkjøring forbudt bare for lastebiler",
+      "Slutt på alle forbud",
+      "Parkering forbudt"
+    ],
+    "f": "Skiltet betyr at det er forbudt å kjøre på veien med alle typer kjøretøy. Et underskilt kan gi unntak.",
+    "ru": "Знак «Движение запрещено»: по дороге нельзя ехать ни на каком транспортном средстве. Табличка под знаком может давать исключения."
+  },
+  {
+    "id": "sk-10",
+    "cat": "skilt",
+    "q": "Hvem kan kjøre på veien etter dette skiltet?",
+    "img": {
+      "sign": "forbudt_motorvogn"
+    },
+    "a": [
+      "Syklende",
+      "Personbiler",
+      "Motorsykler",
+      "Varebiler"
+    ],
+    "f": "Forbudt for motorvogn gjelder alle kjøretøy med motor, som bil og motorsykkel. Syklende kan bruke veien.",
+    "ru": "Знак «Движение механических ТС запрещено»: нельзя всем транспортным средствам с мотором (авто, мотоциклы). Велосипедисты могут ехать."
+  },
+  {
+    "id": "sk-11",
+    "cat": "skilt",
+    "q": "Hvilket av disse skiltene forbyr deg å svinge til venstre?",
+    "img": {
+      "signs": [
+        "forbudt_venstresving",
+        "forbudt_hoyresving",
+        "forbudt_uvending"
+      ]
+    },
+    "a": [
+      "Skiltet til venstre",
+      "Skiltet i midten",
+      "Skiltet til høyre"
+    ],
+    "f": "Skiltet til venstre forbyr venstresving, skiltet i midten forbyr høyresving, og skiltet til høyre forbyr u-sving.",
+    "ru": "Левый знак запрещает поворот налево, средний — поворот направо, правый — разворот."
+  },
+  {
+    "id": "sk-12",
+    "cat": "skilt",
+    "q": "Hvilket av disse skiltene forbyr deg å snu (u-sving)?",
+    "img": {
+      "signs": [
+        "forbudt_venstresving",
+        "forbudt_hoyresving",
+        "forbudt_uvending"
+      ]
+    },
+    "a": [
+      "Skiltet til høyre",
+      "Skiltet til venstre",
+      "Skiltet i midten"
+    ],
+    "f": "Skiltet med en pil som går rundt og tilbake, forbyr u-sving. De andre forbyr venstresving og høyresving.",
+    "ru": "Знак со стрелкой, которая поворачивает назад, запрещает разворот. Два других запрещают поворот налево и направо."
+  },
+  {
+    "id": "sk-13",
+    "cat": "skilt",
+    "q": "Du kjører på en vei med dette skiltet. Hvilket kjøretøy kan du likevel kjøre forbi?",
+    "img": {
+      "sign": "forbikjoring_forbudt"
+    },
+    "a": [
+      "En syklist",
+      "En traktor",
+      "En bil som kjører sakte",
+      "En bil med tilhenger"
+    ],
+    "f": "Forbikjøring forbudt gjelder forbikjøring av motorvogn med mer enn to hjul. Sykkel, tohjuls moped og motorsykkel uten sidevogn kan du kjøre forbi når det er trygt.",
+    "ru": "Знак «Обгон запрещён» запрещает обгонять механические ТС с более чем двумя колёсами. Велосипед, двухколёсный мопед и мотоцикл без коляски можно обогнать, если это безопасно."
+  },
+  {
+    "id": "sk-14",
+    "cat": "skilt",
+    "q": "Hvor lenge gjelder forbudet på dette skiltet?",
+    "img": {
+      "sign": "forbikjoring_forbudt"
+    },
+    "a": [
+      "Fram til skiltet Slutt på forbikjøringsforbud",
+      "Bare til neste veikryss",
+      "I 1 kilometer",
+      "Til du kommer inn i tettbygd strøk"
+    ],
+    "f": "Forbudet gjelder fram til skiltet Slutt på forbikjøringsforbud, hvis ikke et underskilt viser en annen strekning.",
+    "ru": "Запрет действует до знака «Конец запрета обгона», если табличка под знаком не указывает другую длину участка."
+  },
+  {
+    "id": "sk-15",
+    "cat": "skilt",
+    "q": "Hvilket av disse skiltene viser at forbudet mot forbikjøring slutter?",
+    "img": {
+      "signs": [
+        "slutt_forbikjoring",
+        "slutt_forkjorsveg",
+        "slutt_fart_80"
+      ]
+    },
+    "a": [
+      "Skiltet til venstre",
+      "Skiltet i midten",
+      "Skiltet til høyre"
+    ],
+    "f": "Skiltet til venstre betyr slutt på forbikjøringsforbud. Skiltet i midten betyr slutt på forkjørsvei, og skiltet til høyre betyr slutt på særskilt fartsgrense.",
+    "ru": "Левый знак — конец запрета обгона. Средний — конец главной дороги, правый — конец особого ограничения скорости."
+  },
+  {
+    "id": "sk-16",
+    "cat": "skilt",
+    "q": "Hvor lenge gjelder fartsgrensen på dette skiltet?",
+    "img": {
+      "sign": "fart_50"
+    },
+    "a": [
+      "Til du passerer et nytt fartsgrenseskilt eller et skilt om slutt på fartsgrensen",
+      "Bare til neste veikryss",
+      "Bare i 500 meter",
+      "Bare om dagen"
+    ],
+    "f": "Et fartsgrenseskilt gjelder til du passerer et nytt fartsgrenseskilt, et skilt om slutt på særskilt fartsgrense eller et skilt for fartsgrensesone.",
+    "ru": "Ограничение скорости действует, пока вы не проедете новый знак ограничения, знак «Конец ограничения» или знак зоны."
+  },
+  {
+    "id": "sk-17",
+    "cat": "skilt",
+    "q": "Du kjører personbil med tilhenger. Tilhengeren er ikke godkjent for 100 km/t. Hvor fort kan du høyst kjøre etter dette skiltet?",
+    "img": {
+      "sign": "fart_100"
+    },
+    "a": [
+      "80 km/t",
+      "100 km/t",
+      "90 km/t",
+      "60 km/t"
+    ],
+    "f": "Med tilhenger er høyeste fart 80 km/t, selv om skiltet viser mer. Bare tilhengere som er godkjent for Tempo 100, kan kjøre 100 km/t.",
+    "ru": "С прицепом максимальная скорость 80 км/ч, даже если знак разрешает больше. 100 км/ч — только для прицепов с допуском Tempo 100."
+  },
+  {
+    "id": "sk-18",
+    "cat": "skilt",
+    "q": "Det regner kraftig, og sikten er dårlig. Du kjører på en vei med dette skiltet. Hva er riktig?",
+    "img": {
+      "sign": "fart_90"
+    },
+    "a": [
+      "Du må tilpasse farten til forholdene, selv om skiltet tillater 90 km/t",
+      "Du skal holde 90 km/t for ikke å hindre trafikken",
+      "Fartsgrensen gjelder bare når veien er tørr",
+      "Du kan kjøre litt over 90 km/t for å komme raskt ut av regnværet"
+    ],
+    "f": "Fartsgrensen er den høyeste tillatte farten under gode forhold. Ved regn, mørke eller dårlig sikt skal du kjøre saktere.",
+    "ru": "Ограничение — это максимум при хороших условиях. В дождь, в темноте или при плохой видимости нужно ехать медленнее."
+  },
+  {
+    "id": "sk-19",
+    "cat": "skilt",
+    "q": "Du kjører utenfor tettbygd strøk og passerer dette skiltet. Hvilken fartsgrense gjelder nå, hvis ingen andre skilt viser noe annet?",
+    "img": {
+      "sign": "slutt_fart_60"
+    },
+    "a": [
+      "80 km/t",
+      "60 km/t",
+      "50 km/t",
+      "90 km/t"
+    ],
+    "f": "Skiltet betyr slutt på den særskilte fartsgrensen. Da gjelder den generelle fartsgrensen, som er 80 km/t utenfor tettbygd strøk.",
+    "ru": "Знак «Конец ограничения 60». Далее действует общее ограничение: 80 км/ч вне населённого пункта."
+  },
+  {
+    "id": "sk-20",
+    "cat": "skilt",
+    "q": "Du kjører i tettbygd strøk og passerer dette skiltet. Hvilken fartsgrense gjelder nå, hvis ingen andre skilt viser noe annet?",
+    "img": {
+      "sign": "slutt_fart_70"
+    },
+    "a": [
+      "50 km/t",
+      "70 km/t",
+      "80 km/t",
+      "60 km/t"
+    ],
+    "f": "Når den særskilte fartsgrensen slutter, gjelder den generelle fartsgrensen. I tettbygd strøk er den 50 km/t.",
+    "ru": "Когда особое ограничение заканчивается, действует общее. В населённом пункте это 50 км/ч."
+  },
+  {
+    "id": "sk-21",
+    "cat": "skilt",
+    "q": "Du kjører utenfor tettbygd strøk. Hvilket av skiltene viser den samme farten som den generelle fartsgrensen der?",
+    "img": {
+      "signs": [
+        "fart_60",
+        "fart_70",
+        "fart_80"
+      ]
+    },
+    "a": [
+      "Skiltet til høyre",
+      "Skiltet til venstre",
+      "Skiltet i midten"
+    ],
+    "f": "Den generelle fartsgrensen utenfor tettbygd strøk er 80 km/t. I tettbygd strøk er den 50 km/t.",
+    "ru": "Общее ограничение вне населённых пунктов — 80 км/ч, в населённом пункте — 50 км/ч."
+  },
+  {
+    "id": "sk-22",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "fartssone_30"
+    },
+    "a": [
+      "Fartsgrensen er 30 km/t på alle veier i området, til du kjører ut av sonen",
+      "Fartsgrensen er 30 km/t bare fram til neste veikryss",
+      "Anbefalt fart er 30 km/t",
+      "Parkering er tillatt i 30 minutter"
+    ],
+    "f": "Fartsgrensesone betyr at fartsgrensen gjelder i hele området, også etter kryss, til du passerer skiltet om slutt på sonen.",
+    "ru": "Знак «Зона ограничения скорости 30»: 30 км/ч действует на всех улицах зоны, в том числе после перекрёстков, до знака конца зоны."
+  },
+  {
+    "id": "sk-23",
+    "cat": "skilt",
+    "q": "Det er sent på kvelden, og det er ingen barn ute. Gjelder fartsgrensen på dette skiltet fortsatt?",
+    "img": {
+      "sign": "fart_30"
+    },
+    "a": [
+      "Ja, fartsgrensen gjelder hele døgnet hvis ikke et underskilt sier noe annet",
+      "Nei, den gjelder bare når skolen er åpen",
+      "Nei, om kvelden kan du kjøre 50 km/t",
+      "Bare hvis det er mørkt"
+    ],
+    "f": "Et fartsgrenseskilt gjelder hele døgnet. Bare et underskilt med tidspunkt kan begrense når det gjelder.",
+    "ru": "Знак ограничения скорости действует круглосуточно. Только табличка с указанием времени может ограничить срок его действия."
+  },
+  {
+    "id": "sk-24",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "stans_forbudt"
+    },
+    "a": [
+      "Det er forbudt å stanse, også for å slippe av passasjerer",
+      "Det er forbudt å parkere, men du kan stanse kort for å slippe av passasjerer",
+      "Det er forbudt å kjøre inn",
+      "Det er forbudt for alle kjøretøy"
+    ],
+    "f": "Stans forbudt betyr at du ikke kan stanse i det hele tatt, unntatt når trafikken eller en farlig situasjon tvinger deg til det.",
+    "ru": "Знак «Остановка запрещена»: нельзя останавливаться вообще, даже чтобы высадить пассажира, кроме вынужденных остановок из-за движения или опасности."
+  },
+  {
+    "id": "sk-25",
+    "cat": "skilt",
+    "q": "Du ser dette skiltet. Kan du stanse kort for å slippe av en passasjer?",
+    "img": {
+      "sign": "parkering_forbudt"
+    },
+    "a": [
+      "Ja, kort stans for å slippe av eller på passasjerer er tillatt",
+      "Nei, all stans er forbudt",
+      "Ja, men bare hvis du har nødsignal på",
+      "Nei, bare drosjer kan stanse her"
+    ],
+    "f": "Parkering forbudt betyr at du ikke kan parkere. Du kan likevel stanse kort for at passasjerer skal gå av eller på, eller for å laste av og på.",
+    "ru": "Знак «Стоянка запрещена»: парковаться нельзя, но можно кратко остановиться, чтобы высадить или посадить пассажиров либо погрузить/выгрузить вещи."
+  },
+  {
+    "id": "sk-26",
+    "cat": "skilt",
+    "q": "Hvor langt gjelder dette skiltet når det ikke har underskilt?",
+    "img": {
+      "sign": "parkering_forbudt"
+    },
+    "a": [
+      "På den siden av veien der skiltet står, fram til neste veikryss",
+      "På begge sider av veien i 100 meter",
+      "Bare rett ved skiltet",
+      "I hele byen"
+    ],
+    "f": "Skiltet gjelder på den siden av veien der det står, og fram til neste veikryss, hvis ikke underskilt sier noe annet.",
+    "ru": "Знак действует на той стороне дороги, где он стоит, до ближайшего перекрёстка, если табличка не указывает иное."
+  },
+  {
+    "id": "sk-27",
+    "cat": "skilt",
+    "q": "Hvilken gruppe hører dette skiltet til?",
+    "img": {
+      "sign": "fare_ujevn"
+    },
+    "a": [
+      "Fareskilt",
+      "Forbudsskilt",
+      "Påbudsskilt",
+      "Opplysningsskilt"
+    ],
+    "f": "Fareskilt er trekantede med rød kant. Dette skiltet varsler om ujevn vei.",
+    "ru": "Предупреждающие знаки (fareskilt) — треугольные с красной каймой. Этот знак предупреждает о неровной дороге."
+  },
+  {
+    "id": "sk-28",
+    "cat": "skilt",
+    "q": "Hvilken gruppe hører dette skiltet til?",
+    "img": {
+      "sign": "fart_40"
+    },
+    "a": [
+      "Forbudsskilt",
+      "Fareskilt",
+      "Påbudsskilt",
+      "Opplysningsskilt"
+    ],
+    "f": "Forbudsskilt er som regel runde med rød kant. Fartsgrenseskiltet er et forbudsskilt: det er forbudt å kjøre fortere enn 40 km/t.",
+    "ru": "Запрещающие знаки (forbudsskilt) обычно круглые с красной каймой. Знак ограничения скорости — запрещающий: нельзя ехать быстрее 40 км/ч."
+  },
+  {
+    "id": "sk-29",
+    "cat": "skilt",
+    "q": "Hvilken gruppe hører dette skiltet til?",
+    "img": {
+      "sign": "sykkelveg"
+    },
+    "a": [
+      "Påbudsskilt",
+      "Opplysningsskilt",
+      "Forbudsskilt",
+      "Fareskilt"
+    ],
+    "f": "Påbudsskilt er runde og blå med hvitt symbol. Dette skiltet viser sykkelvei.",
+    "ru": "Предписывающие знаки (påbudsskilt) — круглые синие с белым символом. Этот знак обозначает велосипедную дорожку."
+  },
+  {
+    "id": "sk-30",
+    "cat": "skilt",
+    "q": "Hvilken gruppe hører dette skiltet til?",
+    "img": {
+      "sign": "parkering"
+    },
+    "a": [
+      "Opplysningsskilt",
+      "Påbudsskilt",
+      "Forbudsskilt",
+      "Vikepliktskilt"
+    ],
+    "f": "Opplysningsskilt er som regel blå og firkantede. De gir informasjon, her om at parkering er tillatt.",
+    "ru": "Информационные знаки (opplysningsskilt) обычно синие прямоугольные. Здесь — место для стоянки."
+  },
+  {
+    "id": "sk-31",
+    "cat": "skilt",
+    "q": "Du kjører utenfor tettbygd strøk og ser dette skiltet uten underskilt. Hvor langt foran faren står skiltet vanligvis?",
+    "img": {
+      "sign": "fare_sving_v"
+    },
+    "a": [
+      "150–250 meter",
+      "Rett ved faren",
+      "1–2 kilometer",
+      "20–30 meter"
+    ],
+    "f": "Utenfor tettbygd strøk står fareskilt vanligvis 150–250 meter før faren. Er avstanden en annen, vises den ofte på et underskilt.",
+    "ru": "Вне населённых пунктов предупреждающие знаки обычно ставят за 150–250 м до опасности. Если расстояние другое, его часто указывают на табличке."
+  },
+  {
+    "id": "sk-32",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "fare_annen"
+    },
+    "a": [
+      "Annen fare – et underskilt forteller ofte hva faren er",
+      "Utkjørsel fra brannstasjon",
+      "Stopp for kontroll",
+      "Slutt på alle fareskilt"
+    ],
+    "f": "Skiltet Annen fare brukes når ingen andre fareskilt passer. Ofte står det et underskilt som forklarer faren.",
+    "ru": "Знак «Прочие опасности» (восклицательный знак) ставят, когда другой знак не подходит. Часто под ним табличка с пояснением."
+  },
+  {
+    "id": "sk-33",
+    "cat": "skilt",
+    "q": "Hva varsler dette skiltet om?",
+    "img": {
+      "sign": "fare_sving_h"
+    },
+    "a": [
+      "Farlig sving til høyre",
+      "Farlig sving til venstre",
+      "Påbudt kjøreretning til høyre",
+      "Kjørefelt for høyresving"
+    ],
+    "f": "Skiltet varsler om en farlig sving til høyre. Senk farten før svingen.",
+    "ru": "Знак предупреждает об опасном повороте направо. Снизьте скорость до поворота."
+  },
+  {
+    "id": "sk-34",
+    "cat": "skilt",
+    "q": "Hva varsler dette skiltet om?",
+    "img": {
+      "sign": "fare_svinger"
+    },
+    "a": [
+      "Flere farlige svinger, den første til høyre",
+      "Én farlig sving til venstre",
+      "Glatt kjørebane",
+      "Veiarbeid"
+    ],
+    "f": "Skiltet varsler om flere farlige svinger etter hverandre. Den første svingen går til høyre.",
+    "ru": "Знак предупреждает о нескольких опасных поворотах подряд, первый — направо."
+  },
+  {
+    "id": "sk-35",
+    "cat": "skilt",
+    "q": "Du ser dette skiltet. Hva bør du gjøre?",
+    "img": {
+      "sign": "fare_bakke_ned"
+    },
+    "a": [
+      "Velge et lavt gir og bruke motorbremsen",
+      "Sette girspaken i fri for å spare drivstoff",
+      "Holde bremsen inne hele veien ned",
+      "Øke farten for å komme fort ned"
+    ],
+    "f": "Skiltet varsler om bratt bakke nedover. Bruk lavt gir og motorbremsen, slik at bremsene ikke blir for varme.",
+    "ru": "Знак «Крутой спуск». Включите пониженную передачу и тормозите двигателем, чтобы не перегреть тормоза."
+  },
+  {
+    "id": "sk-36",
+    "cat": "skilt",
+    "q": "Hvilket av disse skiltene varsler om møtende trafikk?",
+    "img": {
+      "signs": [
+        "fare_motende",
+        "fare_smalere",
+        "fare_ko"
+      ]
+    },
+    "a": [
+      "Skiltet til venstre",
+      "Skiltet i midten",
+      "Skiltet til høyre"
+    ],
+    "f": "Skiltet til venstre varsler om møtende trafikk. Skiltet i midten varsler om at veien blir smalere, og skiltet til høyre varsler om kø.",
+    "ru": "Левый знак — «Встречное движение». Средний — «Сужение дороги», правый — «Затор»."
+  },
+  {
+    "id": "sk-37",
+    "cat": "skilt",
+    "q": "Hva bør du gjøre når du ser dette skiltet?",
+    "img": {
+      "sign": "fare_vegarbeid"
+    },
+    "a": [
+      "Senke farten og se etter arbeidere og maskiner",
+      "Kjøre fort forbi for ikke å forstyrre arbeidet",
+      "Bruke fjernlys",
+      "Stanse og vente til arbeidet er ferdig"
+    ],
+    "f": "Skiltet varsler om veiarbeid. Kjør forsiktig, følg skiltene og ta hensyn til folk som arbeider på veien. Midlertidige fareskilt ved veiarbeid kan ha gul bunn.",
+    "ru": "Знак «Дорожные работы». Снизьте скорость, следуйте временным знакам и будьте внимательны к рабочим. Временные знаки при работах могут быть на жёлтом фоне."
+  },
+  {
+    "id": "sk-38",
+    "cat": "skilt",
+    "q": "Du ser dette skiltet. Hva bør du gjøre?",
+    "img": {
+      "sign": "fare_glatt"
+    },
+    "a": [
+      "Kjøre jevnt og forsiktig, uten brå bremsing eller ratting",
+      "Kjøre som vanlig, siden skiltet bare gjelder om vinteren",
+      "Kjøre nærmere bilen foran",
+      "Øke farten i svingene"
+    ],
+    "f": "Skiltet varsler om glatt kjørebane, for eksempel på grunn av is eller vann. Senk farten og unngå brå bevegelser.",
+    "ru": "Знак «Скользкая дорога» (лёд, вода). Снизьте скорость, избегайте резкого торможения и резких движений рулём."
+  },
+  {
+    "id": "sk-39",
+    "cat": "skilt",
+    "q": "Hva varsler dette skiltet om?",
+    "img": {
+      "sign": "fare_gangfelt"
+    },
+    "a": [
+      "Et gangfelt lenger fram",
+      "En gangvei der biler ikke kan kjøre",
+      "En skole",
+      "En holdeplass for buss"
+    ],
+    "f": "Skiltet varsler om et gangfelt som kan være vanskelig å se. Vær klar til å stanse for gående.",
+    "ru": "Знак предупреждает о пешеходном переходе впереди, который может быть плохо виден. Будьте готовы остановиться."
+  },
+  {
+    "id": "sk-40",
+    "cat": "skilt",
+    "q": "Du ser dette skiltet. Hva bør du gjøre?",
+    "img": {
+      "sign": "fare_barn"
+    },
+    "a": [
+      "Senke farten og være ekstra oppmerksom på barn",
+      "Bruke lydhorn for å varsle barna",
+      "Kjøre midt i veien",
+      "Ingenting, skiltet gjelder bare for skolebusser"
+    ],
+    "f": "Skiltet varsler om at barn ofte ferdes ved veien, for eksempel ved en skole eller lekeplass. Barn kan plutselig springe ut i veien.",
+    "ru": "Знак «Дети»: рядом часто бывают дети (школа, детская площадка). Ребёнок может внезапно выбежать на дорогу."
+  },
+  {
+    "id": "sk-41",
+    "cat": "skilt",
+    "q": "Hvilket av disse skiltene varsler om syklende?",
+    "img": {
+      "signs": [
+        "fare_lyssignal",
+        "fare_rundkjoring",
+        "fare_sykkel"
+      ]
+    },
+    "a": [
+      "Skiltet til høyre",
+      "Skiltet til venstre",
+      "Skiltet i midten"
+    ],
+    "f": "Skiltet til høyre varsler om syklende. Skiltet til venstre varsler om lyssignal, og skiltet i midten om rundkjøring.",
+    "ru": "Правый знак — «Велосипедисты». Левый — «Светофор», средний — «Кольцевое движение»."
+  },
+  {
+    "id": "sk-42",
+    "cat": "skilt",
+    "q": "Du kjører på en vei med dette skiltet. Når er faren for å møte elg størst?",
+    "img": {
+      "sign": "fare_elg"
+    },
+    "a": [
+      "I skumringen og i mørket",
+      "Midt på dagen om sommeren",
+      "Bare når det er tåke",
+      "Bare når veien er tørr"
+    ],
+    "f": "Elgen er mest i bevegelse i skumringen og om natten. Senk farten og følg med langs veikantene.",
+    "ru": "Лоси активнее всего в сумерках и ночью. Снизьте скорость и следите за обочинами."
+  },
+  {
+    "id": "sk-43",
+    "cat": "skilt",
+    "q": "Du har passert dette skiltet. Ved overgangen begynner rødt lys å blinke, og bommene går ned. Hva gjør du?",
+    "img": {
+      "sign": "fare_jernbane_bom"
+    },
+    "a": [
+      "Stanser før bommen og venter til den er oppe igjen",
+      "Kjører raskt over før bommene er helt nede",
+      "Kjører sakte over hvis du ikke ser noe tog",
+      "Kjører rundt bommen"
+    ],
+    "f": "Skiltet varsler om jernbaneovergang med bom. Når lyset blinker rødt eller bommene går ned, skal du stanse og vente.",
+    "ru": "Знак «Железнодорожный переезд со шлагбаумом». Если мигает красный или опускается шлагбаум — остановитесь и ждите."
+  },
+  {
+    "id": "sk-44",
+    "cat": "skilt",
+    "q": "Hva er forskjellen på disse to skiltene?",
+    "img": {
+      "signs": [
+        "fare_jernbane_bom",
+        "fare_jernbane"
+      ]
+    },
+    "a": [
+      "Skiltet til venstre varsler om jernbaneovergang med bom, skiltet til høyre om jernbaneovergang uten bom",
+      "Skiltet til venstre varsler om jernbaneovergang uten bom, skiltet til høyre om jernbaneovergang med bom",
+      "Begge varsler om trikk",
+      "Skiltet til venstre gjelder bare om natten"
+    ],
+    "f": "Skiltet med en bom varsler om jernbaneovergang med bom. Skiltet med et lokomotiv varsler om jernbaneovergang uten bom. Der må du se og lytte godt etter tog.",
+    "ru": "Знак со шлагбаумом — переезд со шлагбаумом. Знак с паровозом — переезд без шлагбаума: там нужно особенно внимательно смотреть и слушать, нет ли поезда."
+  },
+  {
+    "id": "sk-45",
+    "cat": "skilt",
+    "q": "Hva bør du gjøre når du ser dette skiltet?",
+    "img": {
+      "sign": "fare_ko"
+    },
+    "a": [
+      "Være forberedt på kø og på å stanse",
+      "Bytte til venstre felt for å komme forbi køen",
+      "Kjøre nærmere bilen foran",
+      "Slå på tåkelys"
+    ],
+    "f": "Skiltet varsler om at det ofte blir kø. Senk farten, hold god avstand og vær klar til å bremse.",
+    "ru": "Знак «Затор»: здесь часто бывают пробки. Снизьте скорость, держите дистанцию и будьте готовы тормозить."
+  },
+  {
+    "id": "sk-46",
+    "cat": "skilt",
+    "q": "Hva varsler dette skiltet om?",
+    "img": {
+      "sign": "fare_kryss"
+    },
+    "a": [
+      "Et veikryss",
+      "Et sykehus",
+      "En jernbaneovergang",
+      "En kirke"
+    ],
+    "f": "Skiltet varsler om et veikryss lenger fram. Følg med på trafikk fra sideveiene og på hvem som har vikeplikt.",
+    "ru": "Знак «Пересечение дорог»: впереди перекрёсток. Следите за транспортом с боковых дорог и за правилами очерёдности."
+  },
+  {
+    "id": "sk-47",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "pabudt_rett_fram"
+    },
+    "a": [
+      "Du må kjøre rett fram",
+      "Envegskjøring",
+      "Anbefalt kjøreretning",
+      "Forkjørsvei rett fram"
+    ],
+    "f": "Skiltet er et påbudsskilt. I krysset må du kjøre rett fram.",
+    "ru": "Предписывающий знак «Движение прямо»: на перекрёстке можно ехать только прямо."
+  },
+  {
+    "id": "sk-48",
+    "cat": "skilt",
+    "q": "Du kommer til et kryss med dette skiltet. Hva gjelder?",
+    "img": {
+      "sign": "pabudt_hoyre"
+    },
+    "a": [
+      "Du må kjøre til høyre",
+      "Du kan velge å kjøre til høyre eller rett fram",
+      "Det er forbudt å kjøre til høyre",
+      "Du har vikeplikt for trafikk fra høyre"
+    ],
+    "f": "Påbudt kjøreretning betyr at du må kjøre i pilens retning, her til høyre.",
+    "ru": "Знак «Движение направо»: нужно ехать в направлении стрелки — направо."
+  },
+  {
+    "id": "sk-49",
+    "cat": "skilt",
+    "q": "Du ser dette skiltet på en trafikkøy. Hva betyr det?",
+    "img": {
+      "sign": "pabudt_felt_hoyre"
+    },
+    "a": [
+      "Du må kjøre på høyre side av trafikkøya",
+      "Du kan velge side selv",
+      "Du må kjøre på venstre side av trafikkøya",
+      "Det er forbudt å kjøre forbi trafikkøya"
+    ],
+    "f": "Påbudt kjørefelt viser hvilken side av hindringen du skal kjøre på, her høyre side.",
+    "ru": "Знак «Объезд препятствия справа»: островок или препятствие нужно объехать справа."
+  },
+  {
+    "id": "sk-50",
+    "cat": "skilt",
+    "q": "Du kommer til en rundkjøring med disse skiltene. Hva gjelder?",
+    "img": {
+      "signs": [
+        "vikeplikt",
+        "rundkjoring"
+      ]
+    },
+    "a": [
+      "Du har vikeplikt for trafikken i rundkjøringen, og du skal kjøre rundt med øya på venstre side",
+      "Trafikken i rundkjøringen har vikeplikt for deg",
+      "Du kan kjøre begge veier rundt øya",
+      "Høyreregelen gjelder, så den som skal inn i rundkjøringen, kjører først"
+    ],
+    "f": "Skiltet Rundkjøring betyr at du skal kjøre rundt i pilenes retning, mot klokka. Vikepliktskiltet betyr at du skal vike for dem som allerede er i rundkjøringen.",
+    "ru": "Знак «Круговое движение»: едем по стрелкам, против часовой стрелки. Знак «Уступите дорогу»: уступаем тем, кто уже на кольце."
+  },
+  {
+    "id": "sk-51",
+    "cat": "skilt",
+    "q": "Kan du kjøre bil på en vei med dette skiltet?",
+    "img": {
+      "sign": "gangveg"
+    },
+    "a": [
+      "Nei, veien er for gående",
+      "Ja, i gangfart",
+      "Ja, hvis du skal parkere",
+      "Ja, men bare om natten"
+    ],
+    "f": "Skiltet viser gangvei. Veien er for gående, og det er ikke lov å kjøre bil der.",
+    "ru": "Знак «Пешеходная дорожка»: она для пешеходов, ехать на машине нельзя."
+  },
+  {
+    "id": "sk-52",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "gang_sykkelveg"
+    },
+    "a": [
+      "Gang- og sykkelvei: veien er for gående og syklende",
+      "Veien er bare for syklende",
+      "Gatetun der biler kan kjøre i gangfart",
+      "Holdeplass for skolebuss"
+    ],
+    "f": "Gang- og sykkelvei er for gående og syklende. Motorvogner kan ikke kjøre der, med mindre et underskilt tillater det.",
+    "ru": "«Пешеходно-велосипедная дорожка»: для пешеходов и велосипедистов. Машинам нельзя, если табличка не разрешает."
+  },
+  {
+    "id": "sk-53",
+    "cat": "skilt",
+    "q": "Du ser dette skiltet. En gående står ved fortauskanten og vil tydelig gå over. Hva gjør du?",
+    "img": {
+      "sign": "gangfelt"
+    },
+    "a": [
+      "Stanser og slipper den gående over",
+      "Kjører videre fordi du bare har vikeplikt når personen er ute i gangfeltet",
+      "Bruker lydhornet for å varsle den gående",
+      "Kjører forbi på venstre side av gangfeltet"
+    ],
+    "f": "Skiltet viser gangfelt. Du har vikeplikt for gående som er i gangfeltet eller er på vei ut i det.",
+    "ru": "Знак «Пешеходный переход». Нужно уступить пешеходам, которые уже на переходе или собираются на него ступить."
+  },
+  {
+    "id": "sk-54",
+    "cat": "skilt",
+    "q": "Du kjører inn på en vei med disse skiltene. Hva er forbudt her?",
+    "img": {
+      "signs": [
+        "motorveg",
+        "fart_110"
+      ]
+    },
+    "a": [
+      "Å rygge og å snu",
+      "Å kjøre i venstre felt når du kjører forbi",
+      "Å bruke nærlys om dagen",
+      "Å kjøre i 100 km/t"
+    ],
+    "f": "På motorvei er det forbudt å rygge, snu, stanse og parkere. Gående, syklende og mopeder kan ikke bruke motorveien.",
+    "ru": "На автомагистрали (motorvei) запрещено двигаться задним ходом, разворачиваться, останавливаться и парковаться. Пешеходам, велосипедистам и мопедам туда нельзя."
+  },
+  {
+    "id": "sk-55",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "slutt_motorveg"
+    },
+    "a": [
+      "Motorveien slutter, og de særskilte reglene for motorvei gjelder ikke lenger",
+      "Det kommer en motorvei",
+      "Du må kjøre av ved neste avkjøring",
+      "Fartsgrensen blir 110 km/t"
+    ],
+    "f": "Skiltet viser at motorveien slutter. Vær forberedt på kryss, møtende trafikk, gående og syklende.",
+    "ru": "Знак «Конец автомагистрали». Особые правила магистрали больше не действуют; будьте готовы к перекрёсткам, встречным машинам, пешеходам и велосипедистам."
+  },
+  {
+    "id": "sk-56",
+    "cat": "skilt",
+    "q": "Hvem kan IKKE bruke en vei med dette skiltet?",
+    "img": {
+      "sign": "motortrafikkveg"
+    },
+    "a": [
+      "Syklende",
+      "Personbiler",
+      "Lastebiler",
+      "Busser"
+    ],
+    "f": "Motortrafikkvei er bare for motorvogner. Gående, syklende og mopeder kan ikke bruke veien.",
+    "ru": "Дорога для автомобилей (motortrafikkvei) — только для механических ТС. Пешеходам, велосипедистам и мопедам нельзя."
+  },
+  {
+    "id": "sk-57",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "envegskjoring"
+    },
+    "a": [
+      "Envegskjøring: all trafikk kjører i pilens retning",
+      "Påbudt kjøreretning rett fram i neste kryss",
+      "Forkjørsvei",
+      "Motorveien begynner"
+    ],
+    "f": "Skiltet viser at veien er envegskjørt. All trafikk kjører i pilens retning.",
+    "ru": "Знак «Одностороннее движение»: весь транспорт едет в направлении стрелки."
+  },
+  {
+    "id": "sk-58",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "blindveg"
+    },
+    "a": [
+      "Blindvei: veien fører ikke videre",
+      "Veien er stengt for all trafikk",
+      "Det er forbudt å snu",
+      "Veien slutter ved en ferje"
+    ],
+    "f": "Blindvei betyr at veien ikke fører videre. Du må snu og kjøre samme vei tilbake.",
+    "ru": "Знак «Тупик»: дорога не имеет сквозного проезда, придётся развернуться и вернуться."
+  },
+  {
+    "id": "sk-59",
+    "cat": "skilt",
+    "q": "Du kjører inn i et område med dette skiltet. Hvor fort kan du kjøre?",
+    "img": {
+      "sign": "gatetun"
+    },
+    "a": [
+      "I gangfart",
+      "30 km/t",
+      "50 km/t",
+      "Så fort som forholdene tillater"
+    ],
+    "f": "Gatetun er et område der gående kan bruke hele gaten, og barn kan leke. Kjørende skal kjøre i gangfart og ta hensyn til de gående.",
+    "ru": "«Жилая зона» (gatetun): пешеходы могут ходить по всей улице, дети играют. Ехать — со скоростью пешехода, с особым вниманием к пешеходам."
+  },
+  {
+    "id": "sk-60",
+    "cat": "skilt",
+    "q": "Du er i et gatetun med dette skiltet. Hvor kan du parkere?",
+    "img": {
+      "sign": "gatetun"
+    },
+    "a": [
+      "Bare på plasser som er merket for parkering",
+      "Hvor du vil, så lenge du ikke hindrer andre",
+      "Langs husveggene",
+      "Ingen steder, heller ikke på merkede plasser"
+    ],
+    "f": "I gatetun er parkering bare tillatt på plasser som er merket for det.",
+    "ru": "В жилой зоне парковаться можно только на специально отмеченных местах."
+  },
+  {
+    "id": "sk-61",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "gagate"
+    },
+    "a": [
+      "Gågate: kjøring med motorvogn er forbudt, unntatt det et underskilt tillater",
+      "Gatetun der du kan kjøre i 30 km/t",
+      "Fortau",
+      "Holdeplass for buss"
+    ],
+    "f": "Gågate er for gående. Hvis et underskilt tillater for eksempel varelevering, skal du kjøre i gangfart og ta hensyn til de gående.",
+    "ru": "«Пешеходная улица» (gågate): движение механических ТС запрещено, кроме исключений на табличке (например, доставка). Тогда ехать со скоростью пешехода."
+  },
+  {
+    "id": "sk-62",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "moteplass"
+    },
+    "a": [
+      "Møteplass: et bredere sted på en smal vei der kjøretøy kan møtes",
+      "Parkeringsplass for turister",
+      "Et sted der trafikanter skal møte politiet",
+      "Rasteplass med toalett"
+    ],
+    "f": "Møteplass viser et sted der veien er bredere, slik at kjøretøy kan møte hverandre. Du må ikke parkere på møteplassen.",
+    "ru": "Знак «Место для разъезда» (M): расширение узкой дороги, чтобы встречные могли разъехаться. Парковаться там нельзя."
+  },
+  {
+    "id": "sk-63",
+    "cat": "skilt",
+    "q": "Hva betyr dette skiltet?",
+    "img": {
+      "sign": "kollektivfelt"
+    },
+    "a": [
+      "Kjørefeltet er for kollektivtrafikk, som buss og drosje",
+      "Feltet er for alle biler med passasjerer",
+      "Feltet er for syklende",
+      "Feltet er bare for lastebiler"
+    ],
+    "f": "Kollektivfelt er først og fremst for buss og drosje. Vanlige personbiler kan ikke bruke feltet hvis ikke skilt tillater det.",
+    "ru": "Полоса для общественного транспорта (автобусы и такси). Обычные легковые машины не могут ехать по ней, если знак этого не разрешает."
+  },
+  {
+    "id": "sk-64",
+    "cat": "skilt",
+    "q": "Du kjører inn i en tunnel. Hva er forbudt i tunnelen?",
+    "img": {
+      "sign": "tunnel"
+    },
+    "a": [
+      "Å snu og å rygge",
+      "Å kjøre med nærlys",
+      "Å holde god avstand til bilen foran",
+      "Å kjøre i fartsgrensen"
+    ],
+    "f": "I tunnel er det forbudt å snu, rygge og stanse. Bruk nærlys og hold god avstand.",
+    "ru": "В тоннеле запрещено разворачиваться, ехать задним ходом и останавливаться. Включите ближний свет и держите дистанцию."
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "id": "far-01",
+    "cat": "fart",
+    "q": "Hva er den generelle fartsgrensen i tettbygd strøk når det ikke er skiltet noe annet?",
+    "img": null,
+    "a": [
+      "50 km/t",
+      "30 km/t",
+      "40 km/t",
+      "60 km/t"
+    ],
+    "f": "I tettbygd strøk er fartsgrensen 50 km/t, med mindre skilt viser noe annet.",
+    "ru": "В населённом пункте (tettbygd strøk) общий лимит скорости — 50 км/ч, если знаки не устанавливают другой."
+  },
+  {
+    "id": "far-02",
+    "cat": "fart",
+    "q": "Hva er den generelle fartsgrensen utenfor tettbygd strøk når det ikke er skiltet noe annet?",
+    "img": null,
+    "a": [
+      "80 km/t",
+      "70 km/t",
+      "90 km/t",
+      "100 km/t"
+    ],
+    "f": "Utenfor tettbygd strøk er fartsgrensen 80 km/t, med mindre skilt viser noe annet.",
+    "ru": "Вне населённых пунктов общий лимит — 80 км/ч, если знаками не указано иное."
+  },
+  {
+    "id": "far-03",
+    "cat": "fart",
+    "q": "Du kjører utenfor tettbygd strøk og passerer dette skiltet. Hvilken fartsgrense gjelder nå?",
+    "img": {
+      "sign": "slutt_fart_60"
+    },
+    "a": [
+      "80 km/t",
+      "60 km/t",
+      "70 km/t",
+      "50 km/t"
+    ],
+    "f": "Skiltet betyr slutt på særskilt fartsgrense. Da gjelder den generelle fartsgrensen, som er 80 km/t utenfor tettbygd strøk.",
+    "ru": "Знак означает конец особого ограничения скорости. Дальше действует общий лимит — вне населённых пунктов это 80 км/ч."
+  },
+  {
+    "id": "far-04",
+    "cat": "fart",
+    "q": "Du kjører i 90 km/t. Omtrent hvor langt kjører bilen i løpet av ett sekund?",
+    "img": null,
+    "a": [
+      "Omtrent 25 meter",
+      "Omtrent 9 meter",
+      "Omtrent 15 meter",
+      "Omtrent 50 meter"
+    ],
+    "f": "90 km/t er 25 meter per sekund. Med en reaksjonstid på omtrent 1 sekund kjører du altså omtrent 25 meter før du begynner å bremse.",
+    "ru": "90 км/ч — это 25 метров в секунду. При времени реакции около 1 секунды машина проедет примерно 25 м, прежде чем вы начнёте тормозить."
+  },
+  {
+    "id": "far-05",
+    "cat": "fart",
+    "q": "Du øker farten fra 40 km/t til 80 km/t. Hva skjer med bremselengden?",
+    "img": null,
+    "a": [
+      "Den blir omtrent fire ganger så lang",
+      "Den blir omtrent dobbelt så lang",
+      "Den blir omtrent tre ganger så lang",
+      "Den blir omtrent like lang"
+    ],
+    "f": "Bremselengden øker med kvadratet av farten. Dobbel fart gir omtrent fire ganger så lang bremselengde.",
+    "ru": "Тормозной путь растёт пропорционально квадрату скорости: при удвоении скорости он становится примерно в 4 раза длиннее."
+  },
+  {
+    "id": "far-06",
+    "cat": "fart",
+    "q": "Hva er stopplengde?",
+    "img": null,
+    "a": [
+      "Reaksjonslengden og bremselengden til sammen",
+      "Bare den strekningen bilen bremser",
+      "Avstanden til bilen foran deg",
+      "Strekningen bilen kjører mens du reagerer"
+    ],
+    "f": "Stopplengden er hele strekningen fra du oppdager faren til bilen står stille: reaksjonslengde pluss bremselengde.",
+    "ru": "Остановочный путь — весь путь от момента, когда вы заметили опасность, до полной остановки: путь реакции плюс тормозной путь."
+  },
+  {
+    "id": "far-07",
+    "cat": "fart",
+    "q": "Hva er reaksjonslengde?",
+    "img": null,
+    "a": [
+      "Strekningen bilen kjører fra du oppdager en fare til du begynner å bremse",
+      "Strekningen bilen kjører fra du begynner å bremse til bilen står stille",
+      "Den tiden det tar å bremse helt ned",
+      "Avstanden du må holde til bilen foran"
+    ],
+    "f": "Reaksjonslengden er strekningen du kjører mens du reagerer, før bremsene begynner å virke. Den øker i samme forhold som farten.",
+    "ru": "Путь реакции — расстояние, которое машина проезжает, пока вы реагируете, ещё до начала торможения. Он растёт прямо пропорционально скорости."
+  },
+  {
+    "id": "far-08",
+    "cat": "fart",
+    "q": "Hvor stor tidsavstand bør du minst ha til kjøretøyet foran på tørr vei og med god sikt?",
+    "img": null,
+    "a": [
+      "Omtrent 3 sekunder",
+      "Omtrent 1 sekund",
+      "Omtrent et halvt sekund",
+      "Det holder med én billengde"
+    ],
+    "f": "Tresekundersregelen: Velg et fast punkt. Når bilen foran passerer punktet, skal det gå minst 3 sekunder før du passerer det samme punktet.",
+    "ru": "Правило трёх секунд: выберите неподвижный ориентир. Когда машина впереди его проехала, до вашего проезда должно пройти не меньше 3 секунд."
+  },
+  {
+    "id": "far-09",
+    "cat": "fart",
+    "q": "Veien er våt og glatt. Hva bør du gjøre med avstanden til kjøretøyet foran?",
+    "img": null,
+    "a": [
+      "Øke avstanden, fordi bremselengden blir lengre",
+      "Beholde den samme avstanden som på tørr vei",
+      "Minske avstanden for å se baklysene bedre"
+    ],
+    "f": "På glatt vei blir bremselengden mye lengre. Derfor trenger du større avstand enn 3 sekunder.",
+    "ru": "На скользкой дороге тормозной путь значительно длиннее, поэтому дистанция должна быть больше 3 секунд."
+  },
+  {
+    "id": "far-10",
+    "cat": "fart",
+    "q": "Du kjører personbil med tilhenger på en vei med fartsgrense 90 km/t. Tilhengeren er ikke godkjent for Tempo 100. Hva er den høyeste farten du kan kjøre?",
+    "img": null,
+    "a": [
+      "80 km/t",
+      "90 km/t",
+      "60 km/t",
+      "70 km/t"
+    ],
+    "f": "Med tilhenger er høyeste tillatte fart 80 km/t, selv om fartsgrensen på veien er høyere. Bare tilhengere som er godkjent for Tempo 100, kan kjøre i 100 km/t.",
+    "ru": "С прицепом максимальная скорость — 80 км/ч, даже если на дороге разрешено больше. 100 км/ч можно только с прицепом, одобренным по программе Tempo 100."
+  },
+  {
+    "id": "far-11",
+    "cat": "fart",
+    "q": "Når kan du kjøre i 100 km/t med tilhenger?",
+    "img": null,
+    "a": [
+      "Når tilhengeren er godkjent for Tempo 100 og fartsgrensen er 100 km/t eller høyere",
+      "Når tilhengeren har egne bremser",
+      "Når tilhengeren er tom",
+      "Aldri, 80 km/t gjelder alltid med tilhenger"
+    ],
+    "f": "Tilhengere som er godkjent for Tempo 100, kan kjøre i 100 km/t der fartsgrensen tillater det. Ellers er grensen 80 km/t.",
+    "ru": "С прицепом, одобренным по Tempo 100, можно ехать 100 км/ч там, где это позволяет ограничение. Иначе максимум — 80 км/ч."
+  },
+  {
+    "id": "far-12",
+    "cat": "fart",
+    "q": "Fartsgrensen er 80 km/t, men det er tett tåke. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du må tilpasse farten etter sikten, selv om det betyr at du kjører mye saktere enn 80 km/t",
+      "Du kan alltid kjøre 80 km/t når det er skiltet",
+      "Du skal holde 80 km/t for ikke å hindre andre",
+      "Du kan kjøre 80 km/t hvis du har tåkelys på"
+    ],
+    "f": "Fartsgrensen er den høyeste tillatte farten under gode forhold. Du skal alltid tilpasse farten etter sikt, føre og trafikk.",
+    "ru": "Ограничение — это максимум для хороших условий. Скорость всегда нужно подбирать под видимость, состояние дороги и движение."
+  },
+  {
+    "id": "far-13",
+    "cat": "fart",
+    "q": "Du kjører forbi dette skiltet. Hvor gjelder fartsgrensen 30 km/t?",
+    "img": {
+      "sign": "fartssone_30"
+    },
+    "a": [
+      "På alle veiene i området, helt til du passerer skiltet for slutt på sonen",
+      "Bare på veien fram til neste kryss",
+      "Bare de første 100 meterne etter skiltet"
+    ],
+    "f": "Fartsgrensesone betyr at fartsgrensen gjelder på alle veiene i sonen, til du kjører ut av sonen.",
+    "ru": "Зона ограничения скорости: лимит действует на всех улицах внутри зоны, пока вы её не покинете (знак конца зоны)."
+  },
+  {
+    "id": "far-14",
+    "cat": "fart",
+    "q": "Er det lov å kjøre unødvendig sakte, slik at du hindrer trafikken bak deg?",
+    "img": null,
+    "a": [
+      "Nei, du skal ikke hindre annen trafikk ved å kjøre unødvendig sakte",
+      "Ja, så lenge du holder deg under fartsgrensen",
+      "Ja, det er alltid tryggest å kjøre sakte"
+    ],
+    "f": "Du skal ikke uten grunn kjøre så sakte at du hindrer annen trafikk. For lav fart kan føre til farlige forbikjøringer.",
+    "ru": "Нельзя без причины ехать так медленно, что мешаешь другим. Слишком низкая скорость провоцирует опасные обгоны."
+  },
+  {
+    "id": "far-15",
+    "cat": "fart",
+    "q": "Du nærmer deg en fartsdemper (fartshump). Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Senke farten i god tid før fartsdemperen",
+      "Bremse kraftig når du er oppå fartsdemperen",
+      "Holde farten, fartsdempere er bare for tunge kjøretøy"
+    ],
+    "f": "Fartsdempere skal få ned farten der det er mange myke trafikanter. Senk farten i god tid, ikke brems på selve humpen.",
+    "ru": "Искусственные неровности («лежачие полицейские») ставят там, где много пешеходов и велосипедистов. Снижайте скорость заранее, а не тормозите на самой неровности."
+  },
+  {
+    "id": "far-16",
+    "cat": "fart",
+    "q": "Du kjører forbi en skole når elevene går hjem. Fartsgrensen er 30 km/t. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du bør kjøre så sakte at du kan stoppe hvis et barn plutselig springer ut i veien",
+      "Du kan alltid kjøre 30 km/t, fordi skiltet viser det",
+      "Barna har ansvaret for å se seg for, så du kan holde farten"
+    ],
+    "f": "Barn er uforutsigbare. Ved skoler og lekeplasser må du være klar til å stoppe, også under fartsgrensen.",
+    "ru": "Дети непредсказуемы. Возле школ и детских площадок будьте готовы остановиться, даже если едете медленнее лимита."
+  },
+  {
+    "id": "far-17",
+    "cat": "fart",
+    "q": "Hva er vannplaning?",
+    "img": null,
+    "a": [
+      "At dekkene mister kontakten med veien fordi de flyter på et lag med vann",
+      "At bremsene blir våte og virker dårligere",
+      "At det kommer vann inn i motoren"
+    ],
+    "f": "Ved vannplaning ligger dekkene på et lag med vann. Da kan du ikke styre eller bremse. Risikoen øker med høy fart og slitte dekk.",
+    "ru": "При аквапланировании шины «плывут» по слою воды: машина не управляется и не тормозит. Риск выше при большой скорости и изношенной резине."
+  },
+  {
+    "id": "far-18",
+    "cat": "fart",
+    "q": "Bilen begynner å vannplane. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Slippe gassen og holde rattet rett til dekkene får grep igjen",
+      "Bremse så hardt du kan",
+      "Svinge kraftig for å komme ut av vannet",
+      "Gi mer gass"
+    ],
+    "f": "Slipp gassen forsiktig og hold rattet rett. Unngå brå bremsing og brå bevegelser med rattet til dekkene har fått grep.",
+    "ru": "Плавно отпустите газ и держите руль прямо. Не делайте резких торможений и поворотов руля, пока шины снова не сцепятся с дорогой."
+  }
+]

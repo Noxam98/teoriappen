@@ -1,0 +1,175 @@
+[
+  {
+    "id": "myk-01",
+    "cat": "myke",
+    "q": "En ball triller ut i veien foran deg i et boligområde. Hva bør du forvente?",
+    "img": null,
+    "a": [
+      "At et barn kan komme løpende etter ballen",
+      "At ballen ikke betyr noe for kjøringen",
+      "At barn alltid ser seg for før de løper ut"
+    ],
+    "f": "Der det kommer en ball, kan det komme et barn etter. Senk farten og vær klar til å stoppe.",
+    "ru": "За мячом может выбежать ребёнок. Снизьте скорость и будьте готовы остановиться."
+  },
+  {
+    "id": "myk-02",
+    "cat": "myke",
+    "q": "Du ser barn som leker ved veikanten. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Senke farten og være klar til å stoppe, fordi barn kan gjøre uventede ting",
+      "Tute for å varsle barna og holde farten",
+      "Kjøre raskt forbi, så du er nær barna i kort tid"
+    ],
+    "f": "Barn er små, vanskelige å se og kan gjøre uventede ting. Senk farten og vær klar til å stoppe.",
+    "ru": "Дети маленькие, их трудно заметить, и они могут повести себя неожиданно. Снизьте скорость и будьте готовы остановиться."
+  },
+  {
+    "id": "myk-03",
+    "cat": "myke",
+    "q": "En gående med mørke klær og uten refleks går langs veien i mørket. Omtrent hvor langt unna kan du se personen med nærlys?",
+    "img": null,
+    "a": [
+      "Omtrent 25–30 meter",
+      "Omtrent 140 meter",
+      "Omtrent 300 meter"
+    ],
+    "f": "Med nærlys ser du en gående med mørke klær først på omtrent 25–30 meters avstand. Med refleks ser du personen på omtrent 140 meter.",
+    "ru": "С ближним светом пешехода в тёмной одежде видно лишь примерно с 25–30 метров. Со светоотражателем — примерно со 140 метров."
+  },
+  {
+    "id": "myk-04",
+    "cat": "myke",
+    "q": "Hvorfor bør gående bruke refleks når det er mørkt?",
+    "img": null,
+    "a": [
+      "Bilførere ser dem da på mye lengre avstand",
+      "Refleksen gir gående forkjørsrett",
+      "Refleksen lyser av seg selv uten lys fra bilene"
+    ],
+    "f": "Refleks gjør at gående blir sett mye tidligere i lyset fra bilene, med nærlys omtrent 140 meter i stedet for omtrent 25–30 meter.",
+    "ru": "Светоотражатель позволяет водителям увидеть пешехода гораздо раньше в свете фар: при ближнем свете примерно со 140 метров вместо 25–30."
+  },
+  {
+    "id": "myk-05",
+    "cat": "myke",
+    "q": "En gående står ved et gangfelt og skal tydelig gå over. Hva skal du gjøre?",
+    "img": {
+      "road": "gangfelt"
+    },
+    "a": [
+      "Stoppe og la den gående gå over",
+      "Kjøre forbi før den gående går ut",
+      "Tute, så den gående venter"
+    ],
+    "f": "Du har vikeplikt for gående som er i gangfeltet eller er på vei ut i det.",
+    "ru": "Вы обязаны уступить пешеходам, которые находятся на пешеходном переходе или собираются на него выйти."
+  },
+  {
+    "id": "myk-07",
+    "cat": "myke",
+    "q": "Du ser en gående med hvit stokk ved veien. Hva betyr det?",
+    "img": null,
+    "a": [
+      "Personen er blind eller svaksynt, og du må ta ekstra hensyn",
+      "Personen hjelper til med å styre trafikken",
+      "Personen vil at bilene skal kjøre forbi først"
+    ],
+    "f": "Hvit stokk betyr at personen er blind eller ser dårlig. Vær ekstra forsiktig og gi personen god tid.",
+    "ru": "Белая трость означает, что человек слепой или плохо видит. Будьте особенно внимательны и дайте ему достаточно времени."
+  },
+  {
+    "id": "myk-08",
+    "cat": "myke",
+    "q": "Du skal kjøre forbi en syklist. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Hold god sideavstand, gjerne minst 1,5 meter, og kjør forbi bare når det er trygt",
+      "Du kan kjøre tett forbi hvis syklisten holder seg helt til høyre",
+      "Tut før du kjører forbi, så syklisten flytter seg"
+    ],
+    "f": "Syklister kan vingle, for eksempel på grunn av hull i veien eller vind. Hold god avstand, gjerne minst 1,5 meter.",
+    "ru": "Велосипедист может вильнуть, например из-за ямы или ветра. Держите большой боковой интервал, желательно не меньше 1,5 метра."
+  },
+  {
+    "id": "myk-11",
+    "cat": "myke",
+    "q": "Hvorfor kan det være vanskelig å se og vurdere motorsykler i trafikken?",
+    "img": null,
+    "a": [
+      "De er smale, og det er vanskelig å bedømme fart og avstand",
+      "De kjører alltid uten lys",
+      "De har ikke lov til å kjøre forbi biler"
+    ],
+    "f": "Motorsykler er smale og blir lett skjult. Det er også vanskelig å bedømme hvor fort de kommer.",
+    "ru": "Мотоциклы узкие, их легко не заметить. Также трудно оценить, с какой скоростью они приближаются."
+  },
+  {
+    "id": "myk-12",
+    "cat": "myke",
+    "q": "Du skal svinge til venstre, og en motorsykkel kommer mot deg. Hva bør du tenke på?",
+    "img": null,
+    "a": [
+      "Motorsykkelen kan være nærmere og kjøre fortere enn du tror",
+      "Motorsykler har alltid vikeplikt for biler",
+      "Du kan svinge, fordi motorsykkelen er liten og kan kjøre utenom deg"
+    ],
+    "f": "Når du svinger til venstre, har du vikeplikt for møtende. Motorsykler er vanskelige å bedømme, så vent hvis du er usikker.",
+    "ru": "При повороте налево вы уступаете встречным. Скорость мотоцикла трудно оценить, поэтому если сомневаетесь — подождите."
+  },
+  {
+    "id": "myk-13",
+    "cat": "myke",
+    "q": "Du kjører gjennom et skogsområde i skumringen og ser dette skiltet. Hva bør du gjøre?",
+    "img": {
+      "sign": "fare_elg"
+    },
+    "a": [
+      "Senke farten og følge godt med langs veikantene",
+      "Slå på tåkebaklyset",
+      "Kjøre fortere for å komme raskt gjennom området"
+    ],
+    "f": "Elg er ofte i bevegelse i skumringen og om natten. Senk farten og følg med langs veikantene.",
+    "ru": "Лоси особенно активны в сумерках и ночью. Снизьте скорость и внимательно следите за обочинами."
+  },
+  {
+    "id": "myk-14",
+    "cat": "myke",
+    "q": "En elg krysser veien foran deg. Hva bør du forvente?",
+    "img": null,
+    "a": [
+      "At flere elger kan komme etter",
+      "At det aldri kommer flere dyr",
+      "At elgen alltid stopper for biler"
+    ],
+    "f": "Elg går ofte i flokk eller med kalv. Når én elg har krysset, kan flere komme etter.",
+    "ru": "Лоси часто ходят группами или с лосёнком. Если один лось перешёл дорогу, за ним могут пойти другие."
+  },
+  {
+    "id": "myk-15",
+    "cat": "myke",
+    "q": "Det står sauer langs veien foran deg. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Senke farten og være klar til å stoppe",
+      "Tute for å skremme dem bort",
+      "Kjøre forbi i vanlig fart"
+    ],
+    "f": "Dyr kan plutselig gå ut i veien. Senk farten og kjør forsiktig forbi.",
+    "ru": "Животные могут внезапно выйти на дорогу. Снизьте скорость и проезжайте мимо осторожно."
+  },
+  {
+    "id": "myk-16",
+    "cat": "myke",
+    "q": "Du skal kjøre forbi en person som rir på en hest. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Kjør sakte og hold god avstand, så hesten ikke blir skremt",
+      "Tut, så rytteren vet at du kommer",
+      "Kjør raskt forbi, så det går fort over"
+    ],
+    "f": "Hester kan bli redde for lyd og biler som kommer nær. Kjør sakte forbi med god avstand og ikke bruk tuten.",
+    "ru": "Лошадь может испугаться шума и близко проезжающих машин. Проезжайте медленно, с большим интервалом и не сигнальте."
+  }
+]

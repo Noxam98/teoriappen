@@ -1,0 +1,233 @@
+[
+  {
+    "id": "sig-01",
+    "cat": "lyssignal",
+    "q": "Hva betyr dette lyssignalet?",
+    "img": {
+      "light": "rod"
+    },
+    "a": [
+      "Du skal stanse før stopplinjen",
+      "Du kan kjøre hvis krysset er fritt",
+      "Du kan svinge til høyre hvis veien er fri"
+    ],
+    "f": "Rødt lys betyr stopp. Du skal stanse før stopplinjen, eller før lyssignalet hvis det ikke er stopplinje.",
+    "ru": "Красный сигнал означает «стоп». Останавливайтесь перед стоп-линией, а если её нет — перед светофором."
+  },
+  {
+    "id": "sig-02",
+    "cat": "lyssignal",
+    "q": "Lyssignalet viser rødt og gult samtidig. Hva betyr det?",
+    "img": {
+      "light": "rodgul"
+    },
+    "a": [
+      "Lyset skifter snart til grønt, men du skal fortsatt stå stille",
+      "Du kan begynne å kjøre",
+      "Lyset skifter snart til rødt, så du må skynde deg"
+    ],
+    "f": "Rødt og gult lys sammen betyr at signalet snart skifter til grønt. Gjør deg klar, men kjør først når lyset er grønt.",
+    "ru": "Красный и жёлтый вместе означают, что скоро загорится зелёный. Приготовьтесь, но трогайтесь только на зелёный."
+  },
+  {
+    "id": "sig-03",
+    "cat": "lyssignal",
+    "q": "Lyset skifter fra grønt til gult. Du er langt nok unna til å stanse på en trygg måte. Hva skal du gjøre?",
+    "img": {
+      "light": "gul"
+    },
+    "a": [
+      "Stanse før stopplinjen",
+      "Øke farten for å rekke over",
+      "Kjøre videre, fordi gult betyr at du skal kjøre forsiktig"
+    ],
+    "f": "Gult lys betyr stopp. Du kan bare kjøre videre hvis du er så nær at du ikke kan stanse uten fare.",
+    "ru": "Жёлтый сигнал означает «стоп». Продолжать движение можно, только если вы так близко, что безопасно остановиться уже нельзя."
+  },
+  {
+    "id": "sig-04",
+    "cat": "lyssignal",
+    "q": "Lyset skifter til gult i det du er helt fram ved stopplinjen. Du kan bare stanse med en kraftig nedbremsing. Hva er riktig?",
+    "img": {
+      "light": "gul"
+    },
+    "a": [
+      "Kjøre videre med forsiktighet",
+      "Bremse så hardt du kan",
+      "Rygge tilbake bak stopplinjen"
+    ],
+    "f": "Er du så nær at du ikke kan stanse på en trygg måte, kan du kjøre videre på gult lys. En brå stans kan føre til at noen kjører inn i deg bakfra.",
+    "ru": "Если вы так близко, что не можете безопасно остановиться, можно проехать на жёлтый. Резкое торможение может привести к удару сзади."
+  },
+  {
+    "id": "sig-05",
+    "cat": "lyssignal",
+    "q": "Lyssignalet blinker gult. Hva betyr det?",
+    "img": {
+      "light": "gulblink"
+    },
+    "a": [
+      "Du skal være ekstra oppmerksom, og skilt og vanlige vikepliktsregler gjelder",
+      "Du har forkjørsrett i krysset",
+      "Du skal alltid stanse helt"
+    ],
+    "f": "Blinkende gult lys er et varsel. Lyssignalet regulerer ikke trafikken, så skilt og vanlige vikepliktsregler gjelder.",
+    "ru": "Мигающий жёлтый — это предупреждение. Светофор в этот момент не регулирует движение: действуют знаки и обычные правила приоритета."
+  },
+  {
+    "id": "sig-06",
+    "cat": "lyssignal",
+    "q": "Du har grønt lys og skal svinge til høyre. Gående som har grønt, krysser veien du svinger inn i. Hva skal du gjøre?",
+    "img": {
+      "light": "gronn"
+    },
+    "a": [
+      "Slippe de gående over før du svinger",
+      "Svinge, fordi du har grønt lys",
+      "Tute og svinge forsiktig mellom de gående"
+    ],
+    "f": "Grønt lys gir deg lov til å kjøre, men når du svinger, skal du slippe over gående som krysser veien du svinger inn i.",
+    "ru": "Зелёный разрешает движение, но при повороте вы обязаны пропустить пешеходов, переходящих дорогу, на которую вы поворачиваете."
+  },
+  {
+    "id": "sig-07",
+    "cat": "lyssignal",
+    "q": "Du har grønt lys og skal svinge til venstre. En møtende bil har også grønt og skal kjøre rett fram. Hva gjelder?",
+    "img": {
+      "light": "gronn"
+    },
+    "a": [
+      "Du må vike for den møtende bilen",
+      "Den møtende bilen må vike fordi du blinker",
+      "Dere kan kjøre samtidig fordi begge har grønt"
+    ],
+    "f": "Grønt lys betyr ikke at veien er fri. Når du svinger til venstre, skal du vike for møtende som kjører rett fram eller svinger til høyre.",
+    "ru": "Зелёный не означает, что путь свободен. Поворачивая налево, вы уступаете встречным, которые едут прямо или направо."
+  },
+  {
+    "id": "sig-08",
+    "cat": "lyssignal",
+    "q": "Hva betyr en grønn pil som peker til høyre?",
+    "img": {
+      "light": "gronnpil_h"
+    },
+    "a": [
+      "Du kan kjøre i den retningen pilen viser",
+      "Du må stanse, fordi pilen bare gjelder for buss",
+      "Du kan kjøre i alle retninger"
+    ],
+    "f": "En grønn pil gir lov til å kjøre i pilens retning. Vær likevel oppmerksom på andre trafikanter.",
+    "ru": "Зелёная стрелка разрешает движение в направлении стрелки. Всё равно будьте внимательны к другим участникам движения."
+  },
+  {
+    "id": "sig-09",
+    "cat": "lyssignal",
+    "q": "En politibetjent dirigerer trafikken i et lyskryss. Du har grønt lys, men politiet gir tegn til at du skal stanse. Hva skal du gjøre?",
+    "img": null,
+    "a": [
+      "Stanse, fordi politiets tegn går foran lyssignalet",
+      "Kjøre, fordi grønt lys går foran politiets tegn",
+      "Kjøre videre hvis krysset ser fritt ut"
+    ],
+    "f": "Tegn fra politiet går foran lyssignaler, skilt og vanlige trafikkregler.",
+    "ru": "Сигналы полицейского имеют приоритет над светофором, знаками и общими правилами."
+  },
+  {
+    "id": "sig-10",
+    "cat": "lyssignal",
+    "q": "I et kryss med lyssignal står det også et vikepliktskilt. Lyset er grønt for deg. Hva gjelder?",
+    "img": {
+      "light": "gronn"
+    },
+    "a": [
+      "Lyssignalet gjelder, og skiltet gjelder bare når lyset er slått av eller blinker gult",
+      "Vikepliktskiltet gjelder alltid foran lyssignalet",
+      "Du må både stanse og vente på grønt"
+    ],
+    "f": "Lyssignal går foran skilt. Vikepliktskiltet ved et lyskryss gjelder når lyset er slått av eller blinker gult.",
+    "ru": "Светофор имеет приоритет над знаками. Знак «Уступи дорогу» у светофора действует, когда светофор выключен или мигает жёлтым."
+  },
+  {
+    "id": "sig-11",
+    "cat": "lyssignal",
+    "q": "Hvilken rekkefølge gjelder når ulike regler sier forskjellige ting?",
+    "img": null,
+    "a": [
+      "Politiets tegn – lyssignal – skilt – vanlige trafikkregler",
+      "Skilt – lyssignal – politiets tegn – vanlige trafikkregler",
+      "Lyssignal – politiets tegn – skilt – vanlige trafikkregler",
+      "Vanlige trafikkregler – skilt – lyssignal – politiets tegn"
+    ],
+    "f": "Politiets tegn går foran alt. Deretter kommer lyssignaler, så skilt og veioppmerking, og til slutt de vanlige trafikkreglene.",
+    "ru": "Сначала сигналы полиции, затем светофор, затем знаки и разметка, и в последнюю очередь — общие правила движения."
+  },
+  {
+    "id": "sig-12",
+    "cat": "lyssignal",
+    "q": "Lyssignalene i et kryss er helt slukket, og det står ingen skilt. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Høyreregelen",
+      "Den som kommer fra den største veien, har forkjørsrett",
+      "Alle skal stanse, og den som stanset først, kjører først"
+    ],
+    "f": "Når lyssignalet er ute av drift og det ikke er skilt, gjelder vanlige vikepliktsregler, altså høyreregelen.",
+    "ru": "Если светофор не работает и знаков нет, действуют общие правила — правило правой руки."
+  },
+  {
+    "id": "sig-13",
+    "cat": "lyssignal",
+    "q": "Lyssignalet blinker gult, og under det står et vikepliktskilt som gjelder for deg. Hva gjelder?",
+    "img": {
+      "light": "gulblink"
+    },
+    "a": [
+      "Du har vikeplikt for trafikken på den kryssende veien",
+      "Høyreregelen gjelder",
+      "Du har forkjørsrett fordi lyset blinker"
+    ],
+    "f": "Når lyset blinker gult, er det skiltene som gjelder. Vikepliktskiltet gir deg vikeplikt for trafikken på veien du krysser.",
+    "ru": "При мигающем жёлтом действуют знаки. Знак «Уступи дорогу» обязывает вас пропустить транспорт на пересекаемой дороге."
+  },
+  {
+    "id": "sig-14",
+    "cat": "lyssignal",
+    "q": "I et lyskryss ser du et eget signal med hvite streker i stedet for farger. Hvem gjelder det for?",
+    "img": null,
+    "a": [
+      "Bare for buss og trikk",
+      "For alle kjøretøy",
+      "Bare for syklister"
+    ],
+    "f": "Et signal med hvite streker eller symboler er et signal for kollektivtrafikk. Det gjelder bare for buss og trikk, ikke for deg som kjører bil.",
+    "ru": "Сигналы с белыми полосками или символами — это светофор для общественного транспорта. Он действует только для автобусов и трамваев, а не для легковых машин."
+  },
+  {
+    "id": "sig-15",
+    "cat": "lyssignal",
+    "q": "Du står ved rødt lys og skal svinge til høyre. Det kommer ingen trafikk. Kan du svinge?",
+    "img": {
+      "light": "rod"
+    },
+    "a": [
+      "Nei, du må vente på grønt lys eller grønn pil",
+      "Ja, i Norge er høyresving på rødt lov hvis veien er fri",
+      "Ja, hvis du stanser helt først"
+    ],
+    "f": "I Norge er det ikke lov å svinge til høyre på rødt lys. Du må vente til du får grønt.",
+    "ru": "В Норвегии поворот направо на красный запрещён. Нужно ждать зелёного."
+  },
+  {
+    "id": "sig-16",
+    "cat": "lyssignal",
+    "q": "Ved en jernbaneovergang blinker to røde lys vekselvis. Hva betyr det?",
+    "img": null,
+    "a": [
+      "Du skal stanse, fordi et tog nærmer seg",
+      "Du kan kjøre forsiktig over hvis du ikke ser toget",
+      "Overgangen er ute av drift, så du kan kjøre"
+    ],
+    "f": "Vekselvis blinkende rødt lys betyr stopp. Ved jernbaneovergang viser det at et tog kommer, og du må stanse før bommen eller stopplinjen.",
+    "ru": "Попеременно мигающий красный означает «стоп». На железнодорожном переезде он показывает, что приближается поезд: остановитесь перед шлагбаумом или стоп-линией."
+  }
+]

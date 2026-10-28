@@ -1,0 +1,252 @@
+[
+  {
+    "id": "opp-01",
+    "cat": "oppmerking",
+    "q": "Hva betyr linjen midt i veien på bildet?",
+    "img": {
+      "road": "sperrelinje"
+    },
+    "a": [
+      "Det er en sperrelinje: du må ikke kjøre over eller på den",
+      "Det er en skillelinje: du kan kjøre over når det er trygt",
+      "Det er en kantlinje som viser hvor veien slutter",
+      "Det er en varsellinje: du kan kjøre forbi uten å tenke på sikten"
+    ],
+    "f": "En heltrukket gul linje midt i veien er en sperrelinje. Du må ikke kjøre over den eller på den.",
+    "ru": "Сплошная жёлтая линия по центру — это sperrelinje (сплошная разделительная). Пересекать её и ехать по ней нельзя."
+  },
+  {
+    "id": "opp-02",
+    "cat": "oppmerking",
+    "q": "Hva varsler linjen på bildet om?",
+    "img": {
+      "road": "varsellinje"
+    },
+    "a": [
+      "At det kommer en sperrelinje eller et sted med dårlig sikt",
+      "At veien snart blir envegskjørt",
+      "At det er forbudt å kjøre over linjen",
+      "At du nærmer deg en parkeringsplass"
+    ],
+    "f": "En varsellinje har lange streker og korte mellomrom. Den varsler om sperrelinje lenger fram eller om at sikten er dårlig. Vær forsiktig med forbikjøring.",
+    "ru": "Varsellinje — длинные штрихи с короткими промежутками. Предупреждает о сплошной линии впереди или о плохой видимости. Обгон — с большой осторожностью."
+  },
+  {
+    "id": "opp-03",
+    "cat": "oppmerking",
+    "q": "Kan du kjøre over denne linjen?",
+    "img": {
+      "road": "skillelinje"
+    },
+    "a": [
+      "Ja, når det er trygt, for eksempel for å kjøre forbi",
+      "Nei, aldri",
+      "Bare for å kjøre inn på en parkeringsplass",
+      "Bare om natten når det er lite trafikk"
+    ],
+    "f": "Skillelinjen har korte streker og lange mellomrom. Den skiller kjøreretningene, og du kan kjøre over den når det er trygt.",
+    "ru": "Skillelinje — короткие штрихи с длинными промежутками. Разделяет встречные потоки; пересекать можно, когда это безопасно."
+  },
+  {
+    "id": "opp-04",
+    "cat": "oppmerking",
+    "q": "Det er to linjer midt i veien. Linjen nærmest deg er heltrukket. Kan du kjøre over linjene for å kjøre forbi?",
+    "img": {
+      "road": "sperre_varsel"
+    },
+    "a": [
+      "Nei, det er linjen nærmest deg som gjelder, og den er en sperrelinje",
+      "Ja, fordi den andre linjen er en varsellinje",
+      "Ja, hvis bilen foran kjører under fartsgrensen",
+      "Ja, men bare utenfor tettbygd strøk"
+    ],
+    "f": "Når en sperrelinje og en varsellinje går ved siden av hverandre, gjelder linjen nærmest deg. Her er det sperrelinjen, så du må ikke kjøre over.",
+    "ru": "Если сплошная и прерывистая идут рядом, действует линия, ближайшая к вам. Здесь ближе сплошная — пересекать нельзя."
+  },
+  {
+    "id": "opp-05",
+    "cat": "oppmerking",
+    "q": "Det er to linjer midt i veien. Linjen nærmest deg er stiplet. Hva gjelder for deg?",
+    "img": {
+      "road": "varsel_sperre"
+    },
+    "a": [
+      "Du kan kjøre over linjene når det er trygt, fordi linjen nærmest deg er en varsellinje",
+      "Du må ikke kjøre over, fordi det er en sperrelinje der",
+      "Du må stanse ved linjene",
+      "Ingen av kjøreretningene kan kjøre over"
+    ],
+    "f": "Linjen nærmest deg gjelder. Når den er en varsellinje, kan du kjøre over når det er trygt. Trafikk fra den andre retningen har sperrelinjen nærmest seg og må ikke kjøre over.",
+    "ru": "Действует линия, ближайшая к вам. Если это прерывистая (varsellinje), пересекать можно, когда безопасно. Встречным ближе сплошная — им нельзя."
+  },
+  {
+    "id": "opp-06",
+    "cat": "oppmerking",
+    "q": "Hva betyr de to heltrukne linjene midt i veien?",
+    "img": {
+      "road": "dobbel_sperrelinje"
+    },
+    "a": [
+      "Dobbel sperrelinje: ingen av kjøreretningene kan kjøre over",
+      "Du kan kjøre over hvis du skal kjøre forbi en traktor",
+      "Linjene viser at veien har to felt i din retning",
+      "Linjene gjelder bare for lastebiler"
+    ],
+    "f": "Dobbel sperrelinje betyr at ingen kjørende, uansett retning, kan kjøre over linjene.",
+    "ru": "Двойная сплошная (dobbel sperrelinje): пересекать нельзя никому, ни в одном направлении."
+  },
+  {
+    "id": "opp-07",
+    "cat": "oppmerking",
+    "q": "Hva betyr de hvite trekantene over feltet ditt?",
+    "img": {
+      "road": "haitenner"
+    },
+    "a": [
+      "Det er en vikepliktlinje: du har vikeplikt, og du skal stanse ved linjen hvis det er nødvendig",
+      "Det er en stopplinje: du må alltid stanse",
+      "Det er en fartshump",
+      "Det er et gangfelt"
+    ],
+    "f": "Trekantene kalles haitenner og er en vikepliktlinje. Du skal vike for trafikken på veien du kommer til, og stanse ved linjen om nødvendig.",
+    "ru": "Белые треугольники («зубы акулы», haitenner) — линия «Уступите дорогу». Уступайте транспорту на пересекаемой дороге; при необходимости остановитесь у линии."
+  },
+  {
+    "id": "opp-08",
+    "cat": "oppmerking",
+    "q": "Det står et stoppskilt ved krysset, og det er en hvit, heltrukket linje over feltet ditt. Hvor skal du stanse?",
+    "img": {
+      "road": "stopplinje"
+    },
+    "a": [
+      "Ved stopplinjen",
+      "Midt i krysset",
+      "Der det passer, bare du stanser før krysset",
+      "Du trenger ikke stanse hvis veien er fri"
+    ],
+    "f": "Ved stoppskilt skal du stanse ved stopplinjen. Hvis du ikke ser trafikken derfra, kjører du forsiktig litt fram og stanser igjen.",
+    "ru": "При знаке STOP останавливаются у стоп-линии. Если оттуда не видно дорогу, медленно продвиньтесь вперёд и остановитесь ещё раз."
+  },
+  {
+    "id": "opp-09",
+    "cat": "oppmerking",
+    "q": "Kan du stanse i sykkelfeltet for å slippe av en passasjer?",
+    "img": {
+      "road": "sykkelfelt"
+    },
+    "a": [
+      "Nei, det er forbudt å stanse i sykkelfelt",
+      "Ja, hvis det bare tar et øyeblikk",
+      "Ja, hvis du slår på nødsignalet",
+      "Ja, hvis det ikke er syklister der akkurat nå"
+    ],
+    "f": "Det er forbudt å stanse og parkere i sykkelfelt. Feltet er for syklende.",
+    "ru": "Останавливаться и парковаться на велосипедной полосе запрещено. Полоса — для велосипедистов."
+  },
+  {
+    "id": "opp-10",
+    "cat": "oppmerking",
+    "q": "Du skal svinge til høyre i krysset og krysse sykkelfeltet. En syklist i sykkelfeltet skal rett fram. Hva gjelder?",
+    "img": {
+      "road": "sykkelfelt"
+    },
+    "a": [
+      "Du har vikeplikt for syklisten",
+      "Syklisten har vikeplikt for deg fordi du kjører bil",
+      "Den som kommer først, kjører først",
+      "Syklisten må stanse fordi sykkelfeltet slutter i krysset"
+    ],
+    "f": "Når du svinger til høyre, har du vikeplikt for syklende i sykkelfeltet som skal rett fram. Se i speilet og over skulderen før du svinger.",
+    "ru": "При повороте направо вы уступаете велосипедистам на велополосе, которые едут прямо. Перед поворотом посмотрите в зеркало и через плечо."
+  },
+  {
+    "id": "opp-11",
+    "cat": "oppmerking",
+    "q": "Det er kø i feltet ditt. Feltet til høyre er merket KOLLEKTIV. Kan du kjøre der med vanlig personbil for å komme raskere fram?",
+    "img": {
+      "road": "kollektivfelt"
+    },
+    "a": [
+      "Nei, ikke hvis skilt ikke tillater det",
+      "Ja, når det er kø",
+      "Ja, hvis du har passasjerer i bilen",
+      "Ja, hvis du kjører saktere enn bussene"
+    ],
+    "f": "Kollektivfelt er for buss og drosje. Vanlige personbiler kan ikke kjøre der hvis ikke skilt tillater det.",
+    "ru": "Полоса KOLLEKTIV — для автобусов и такси. Обычным легковым машинам туда нельзя, если знак не разрешает."
+  },
+  {
+    "id": "opp-12",
+    "cat": "oppmerking",
+    "q": "Mellom feltene er det et område med skrå streker. Kan du kjøre på dette området?",
+    "img": {
+      "road": "sperreflate"
+    },
+    "a": [
+      "Nei, det er en sperreflate som du ikke skal kjøre på",
+      "Ja, når du skal kjøre forbi",
+      "Ja, hvis du skal parkere kort",
+      "Ja, det er et ekstra kjørefelt i rushtiden"
+    ],
+    "f": "Området med skrå streker er en sperreflate. Du skal ikke kjøre eller stanse på den.",
+    "ru": "Участок с косыми полосами — sperreflate (островок безопасности из разметки). По нему нельзя ехать и на нём нельзя останавливаться."
+  },
+  {
+    "id": "opp-13",
+    "cat": "oppmerking",
+    "q": "Hvor nær gangfeltet foran deg kan du stanse eller parkere?",
+    "img": {
+      "road": "gangfelt"
+    },
+    "a": [
+      "Ikke i gangfeltet og ikke nærmere enn 5 meter foran det",
+      "Helt inntil gangfeltet",
+      "Ikke nærmere enn 1 meter foran gangfeltet",
+      "Ikke nærmere enn 50 meter foran gangfeltet"
+    ],
+    "f": "Det er forbudt å stanse i gangfelt og nærmere enn 5 meter foran gangfeltet. Da kan andre se de gående.",
+    "ru": "Останавливаться запрещено на пешеходном переходе и ближе 5 метров перед ним — чтобы другие водители видели пешеходов."
+  },
+  {
+    "id": "opp-14",
+    "cat": "oppmerking",
+    "q": "Hva viser gule linjer i kjørebanen?",
+    "img": null,
+    "a": [
+      "De skiller trafikk som kjører i motsatte retninger",
+      "De skiller kjørefelt med samme kjøreretning",
+      "De viser kanten av veien",
+      "De viser hvor du kan parkere"
+    ],
+    "f": "Gule linjer skiller trafikk i motsatte retninger. Hvite linjer skiller felt med samme kjøreretning og viser kanten av kjørebanen.",
+    "ru": "Жёлтые линии разделяют встречные потоки. Белые — полосы одного направления и край проезжей части."
+  },
+  {
+    "id": "opp-15",
+    "cat": "oppmerking",
+    "q": "Du kjører på en vei med to felt i din retning. Hvilken farge har linjen mellom de to feltene?",
+    "img": null,
+    "a": [
+      "Hvit",
+      "Gul",
+      "Blå",
+      "Rød"
+    ],
+    "f": "Linjer mellom felt med samme kjøreretning er hvite. Gule linjer brukes mellom motsatte kjøreretninger.",
+    "ru": "Линии между полосами одного направления — белые. Жёлтые используют между встречными направлениями."
+  },
+  {
+    "id": "opp-16",
+    "cat": "oppmerking",
+    "q": "Foran et kryss er det malt en pil som peker til venstre i feltet ditt. Hva betyr det?",
+    "img": null,
+    "a": [
+      "Feltet er for kjørende som skal svinge til venstre",
+      "Du må bytte til feltet til venstre",
+      "Det er forbudt å svinge til venstre",
+      "Feltet er for møtende trafikk"
+    ],
+    "f": "Piler i kjørebanen viser hvilken retning feltet er for. Velg feltet i god tid før krysset.",
+    "ru": "Стрелки на проезжей части показывают, для какого направления полоса. Выбирайте полосу заранее, до перекрёстка."
+  }
+]

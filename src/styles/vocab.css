@@ -1,0 +1,13 @@
+.vlist { display: grid; gap: 6px; }
+.vrow { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) auto auto; gap: 12px; align-items: center; padding: 10px 14px; }
+.vrow .no { font-weight: 600; }
+.vrow small { display: block; color: var(--ink-2); font-weight: 400; font-size: .8rem; }
+@media (max-width: 560px) {
+  .vrow { grid-template-columns: minmax(0, 1fr) auto auto; }
+  .vrow .tr { grid-column: 1; grid-row: 2; }
+  .vrow .iconbtn { grid-row: span 2; }
+}
+.flash { padding: 28px 22px; text-align: center; display: grid; gap: 14px; justify-items: center; min-height: 260px; align-content: center; }
+.flash .front { font-family: var(--display); font-weight: 700; font-size: clamp(2rem, 8vw, 3rem); line-height: 1.1; overflow-wrap: anywhere; }
+.flash .back { font-size: 1.3rem; }
+.flash .ctx { color: var(--ink-2); font-size: .9rem; max-width: 50ch; }

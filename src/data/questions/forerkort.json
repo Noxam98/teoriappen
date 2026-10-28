@@ -1,0 +1,221 @@
+[
+  {
+    "id": "fk-01",
+    "cat": "forerkort",
+    "q": "Hvor mange spørsmål er det på teoriprøven for klasse B?",
+    "img": null,
+    "a": [
+      "45",
+      "30",
+      "50",
+      "25"
+    ],
+    "f": "Teoriprøven for klasse B har 45 spørsmål. Du har 90 minutter, og du kan ha inntil 7 feil.",
+    "ru": "Теоретический экзамен для категории B состоит из 45 вопросов. На него даётся 90 минут, допускается не более 7 ошибок."
+  },
+  {
+    "id": "fk-02",
+    "cat": "forerkort",
+    "q": "Hvor mange feil kan du ha og likevel bestå teoriprøven for klasse B?",
+    "img": null,
+    "a": [
+      "Inntil 7",
+      "Inntil 3",
+      "Inntil 10",
+      "Ingen feil"
+    ],
+    "f": "Du må ha minst 38 riktige av 45 spørsmål. Det betyr at du kan ha inntil 7 feil.",
+    "ru": "Нужно ответить правильно минимум на 38 из 45 вопросов, то есть можно ошибиться не более 7 раз."
+  },
+  {
+    "id": "fk-03",
+    "cat": "forerkort",
+    "q": "Hvor lang tid har du på teoriprøven for klasse B?",
+    "img": null,
+    "a": [
+      "90 minutter",
+      "45 minutter",
+      "60 minutter",
+      "120 minutter"
+    ],
+    "f": "Du har 90 minutter til å svare på de 45 spørsmålene.",
+    "ru": "На 45 вопросов даётся 90 минут."
+  },
+  {
+    "id": "fk-04",
+    "cat": "forerkort",
+    "q": "Hvor lenge varer prøvetiden når du får førerkort klasse B første gang?",
+    "img": null,
+    "a": [
+      "2 år",
+      "1 år",
+      "3 år",
+      "5 år"
+    ],
+    "f": "De første 2 årene med førerkort klasse B er en prøvetid. Da gjelder strengere regler for prikker.",
+    "ru": "Первые 2 года после получения прав категории B — испытательный срок (prøvetid). В это время действуют более строгие правила по штрафным баллам."
+  },
+  {
+    "id": "fk-05",
+    "cat": "forerkort",
+    "q": "Hva skjer hvis du gjør noe som gir prikker mens du er i prøvetiden?",
+    "img": null,
+    "a": [
+      "Du får dobbelt så mange prikker",
+      "Prikkene teller ikke i prøvetiden",
+      "Du får halvparten så mange prikker"
+    ],
+    "f": "I prøvetiden får du dobbelt antall prikker. En overtredelse som vanligvis gir 3 prikker, gir da 6.",
+    "ru": "В испытательный срок начисляется вдвое больше штрафных баллов (prikker). Нарушение, за которое обычно дают 3 балла, принесёт 6."
+  },
+  {
+    "id": "fk-06",
+    "cat": "forerkort",
+    "q": "Hvor mange prikker fører til at du mister førerkortet i 6 måneder?",
+    "img": null,
+    "a": [
+      "8 prikker i løpet av 3 år",
+      "4 prikker i løpet av 1 år",
+      "12 prikker i løpet av 5 år",
+      "6 prikker i løpet av 2 år"
+    ],
+    "f": "Får du 8 prikker i løpet av 3 år, mister du førerretten i 6 måneder.",
+    "ru": "Если за 3 года набрать 8 штрафных баллов, права отбирают на 6 месяцев."
+  },
+  {
+    "id": "fk-07",
+    "cat": "forerkort",
+    "q": "Du mister førerretten mens du er i prøvetiden. Hva må du gjøre for å få førerkortet tilbake?",
+    "img": null,
+    "a": [
+      "Ta ny teoriprøve og ny praktisk prøve",
+      "Bare vente til tapsperioden er over",
+      "Betale en bot"
+    ],
+    "f": "Mister du førerretten i prøvetiden, må du ta både teoriprøven og den praktiske prøven på nytt.",
+    "ru": "Если лишиться прав в испытательный срок, придётся заново сдать и теоретический, и практический экзамен."
+  },
+  {
+    "id": "fk-08",
+    "cat": "forerkort",
+    "q": "Du er 17 år. Hva må du ha gjennomført før du kan begynne å øvelseskjøre med bil?",
+    "img": null,
+    "a": [
+      "Trafikalt grunnkurs",
+      "Teoriprøven",
+      "Sikkerhetskurs på bane",
+      "Den praktiske førerprøven"
+    ],
+    "f": "Trafikalt grunnkurs må være gjennomført før du kan øvelseskjøre. Du kan øvelseskjøre bil fra du er 16 år.",
+    "ru": "До учебной езды нужно пройти базовый курс по дорожному движению (trafikalt grunnkurs). Учиться водить машину можно с 16 лет."
+  },
+  {
+    "id": "fk-09",
+    "cat": "forerkort",
+    "q": "Hvilke krav gjelder for en privat ledsager ved øvelseskjøring med bil?",
+    "img": null,
+    "a": [
+      "Ledsageren må ha fylt 25 år og ha hatt førerkort klasse B sammenhengende de siste 5 årene",
+      "Ledsageren må ha fylt 18 år og ha førerkort",
+      "Ledsageren må være trafikklærer",
+      "Ledsageren må ha fylt 21 år og ha hatt førerkort i 2 år"
+    ],
+    "f": "Ledsageren må være minst 25 år og ha hatt førerkort i samme klasse sammenhengende i de siste 5 årene.",
+    "ru": "Сопровождающему должно быть не меньше 25 лет, и он должен иметь права той же категории непрерывно последние 5 лет."
+  },
+  {
+    "id": "fk-10",
+    "cat": "forerkort",
+    "q": "Hvem regnes som fører av bilen under øvelseskjøring?",
+    "img": null,
+    "a": [
+      "Ledsageren",
+      "Eleven som sitter bak rattet",
+      "Den som eier bilen"
+    ],
+    "f": "Ved øvelseskjøring regnes ledsageren som fører. Ledsageren har derfor ansvaret for kjøringen og må være edru og oppmerksom.",
+    "ru": "Во время учебной езды водителем считается сопровождающий. Поэтому он отвечает за езду и должен быть трезвым и внимательным."
+  },
+  {
+    "id": "fk-11",
+    "cat": "forerkort",
+    "q": "Hvor tung bil kan du kjøre med førerkort klasse B?",
+    "img": null,
+    "a": [
+      "Bil med tillatt totalvekt inntil 3500 kg",
+      "Bil med tillatt totalvekt inntil 7500 kg",
+      "Bil med tillatt totalvekt inntil 2500 kg",
+      "Det finnes ingen vektgrense"
+    ],
+    "f": "Klasse B gjelder bil med tillatt totalvekt inntil 3500 kg.",
+    "ru": "Категория B даёт право управлять машиной с разрешённой общей массой до 3500 кг."
+  },
+  {
+    "id": "fk-12",
+    "cat": "forerkort",
+    "q": "Hvor mange sitteplasser kan bilen ha i tillegg til førerplassen når du kjører med førerkort klasse B?",
+    "img": null,
+    "a": [
+      "Inntil 8",
+      "Inntil 4",
+      "Inntil 12",
+      "Inntil 16"
+    ],
+    "f": "Med klasse B kan du kjøre bil med inntil 8 sitteplasser i tillegg til førerplassen.",
+    "ru": "С категорией B можно водить машину, в которой кроме водительского не более 8 мест."
+  },
+  {
+    "id": "fk-13",
+    "cat": "forerkort",
+    "q": "Må du ha med deg førerkortet når du kjører i Norge?",
+    "img": null,
+    "a": [
+      "Ja, enten det fysiske førerkortet eller det digitale førerkortet i appen",
+      "Nei, det holder at førerkortet ligger hjemme",
+      "Bare når du kjører i utlandet"
+    ],
+    "f": "Du skal ha med førerkortet når du kjører. I Norge kan du bruke det digitale førerkortet i appen.",
+    "ru": "Во время езды права должны быть при вас. В Норвегии можно пользоваться цифровыми правами в приложении."
+  },
+  {
+    "id": "fk-14",
+    "cat": "forerkort",
+    "q": "Det står i førerkortet ditt at du må bruke briller eller linser når du kjører. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Du må alltid bruke briller eller linser når du kjører",
+      "Du må bare bruke dem når det er mørkt",
+      "Du må bare bruke dem på motorvei"
+    ],
+    "f": "Er det krav om synskorreksjon i førerkortet, må du alltid bruke briller eller linser når du kjører.",
+    "ru": "Если в правах указано требование коррекции зрения, при вождении всегда нужно быть в очках или линзах."
+  },
+  {
+    "id": "fk-15",
+    "cat": "forerkort",
+    "q": "Du har ikke bestått teoriprøven. Hvor lenge må du vente før du kan ta en ny prøve?",
+    "img": null,
+    "a": [
+      "2 uker",
+      "1 dag",
+      "3 måneder",
+      "1 år"
+    ],
+    "f": "Hvis du ikke består teoriprøven, må du vente 2 uker før du kan prøve igjen.",
+    "ru": "Если экзамен не сдан, пересдать его можно не раньше чем через 2 недели."
+  },
+  {
+    "id": "fk-16",
+    "cat": "forerkort",
+    "q": "Hvor gammel må du være for å få førerkort klasse B?",
+    "img": null,
+    "a": [
+      "18 år",
+      "16 år",
+      "17 år",
+      "20 år"
+    ],
+    "f": "Aldersgrensen for førerkort klasse B er 18 år. Øvelseskjøring kan starte fra 16 år.",
+    "ru": "Права категории B можно получить с 18 лет. Учебную езду можно начинать с 16 лет."
+  }
+]

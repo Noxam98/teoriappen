@@ -1,0 +1,106 @@
+[
+  {
+    "id": "mil-01",
+    "cat": "miljo",
+    "q": "Hva kjennetegner økonomisk og miljøvennlig kjøring?",
+    "img": null,
+    "a": [
+      "Jevn fart, tidlig giring opp og god planlegging",
+      "Kraftige akselerasjoner og harde nedbremsinger",
+      "Kjøring i lavt gir med høyt turtall"
+    ],
+    "f": "Jevn kjøring der du ser langt fram og unngår unødvendige oppbremsinger, gir lavere forbruk og mindre utslipp.",
+    "ru": "Плавная езда, когда вы смотрите далеко вперёд и избегаете лишних торможений, снижает расход топлива и выбросы."
+  },
+  {
+    "id": "mil-02",
+    "cat": "miljo",
+    "q": "Hvorfor bør du unngå å la motoren gå på tomgang?",
+    "img": null,
+    "a": [
+      "Det gir unødvendig forurensning og drivstofforbruk",
+      "Det sliter mye på dekkene",
+      "Motoren trenger å gå lenge på tomgang for å bli varm"
+    ],
+    "f": "Tomgang gir utslipp uten at du kommer noen vei. Motoren blir raskere varm når du kjører rolig.",
+    "ru": "Работа двигателя на холостом ходу даёт выбросы без всякой пользы. Двигатель быстрее прогревается при спокойной езде."
+  },
+  {
+    "id": "mil-03",
+    "cat": "miljo",
+    "q": "Hvordan påvirker en takboks drivstofforbruket?",
+    "img": null,
+    "a": [
+      "Forbruket øker fordi luftmotstanden blir større",
+      "Forbruket blir lavere",
+      "Det har ingen betydning"
+    ],
+    "f": "Takboks og takstativ øker luftmotstanden. Ta dem av når du ikke trenger dem.",
+    "ru": "Багажник на крыше увеличивает сопротивление воздуха. Снимайте его, когда он не нужен."
+  },
+  {
+    "id": "mil-04",
+    "cat": "miljo",
+    "q": "Hva er fordelen med å bruke motorvarmer om vinteren?",
+    "img": null,
+    "a": [
+      "Mindre slitasje på motoren og mindre forbruk og utslipp ved kaldstart",
+      "Bilen får bedre veigrep på is",
+      "Du trenger ikke vinterdekk"
+    ],
+    "f": "En kald motor bruker mer drivstoff og slipper ut mer. Motorvarmer reduserer slitasje og utslipp ved start.",
+    "ru": "Холодный двигатель расходует больше топлива и даёт больше выбросов. Подогреватель двигателя уменьшает износ и выбросы при запуске."
+  },
+  {
+    "id": "mil-05",
+    "cat": "miljo",
+    "q": "Hvorfor må du i noen byer betale gebyr for å kjøre med piggdekk?",
+    "img": null,
+    "a": [
+      "Fordi piggdekk sliter asfalten og lager svevestøv som er skadelig å puste inn",
+      "Fordi piggdekk gir dårligere veigrep på is",
+      "Fordi piggdekk gjør at bilen bruker mer strøm"
+    ],
+    "f": "Piggene river opp asfalten. Det gir svevestøv som er skadelig for helsen, særlig i byene.",
+    "ru": "Шипы разрушают асфальт. Образуется мелкая пыль, вредная для здоровья, особенно в городах."
+  },
+  {
+    "id": "mil-06",
+    "cat": "miljo",
+    "q": "Du nærmer deg et rødt lys. Hvordan kjører du mest økonomisk?",
+    "img": null,
+    "a": [
+      "Slipper gassen tidlig og lar bilen rulle i gir",
+      "Gasser helt fram til krysset og bremser hardt",
+      "Setter giret i fri og gasser litt"
+    ],
+    "f": "Når du slipper gassen i gir, bruker de fleste moderne biler nesten ikke drivstoff. Tidlig motorbrems sparer både drivstoff og bremser.",
+    "ru": "Когда вы отпускаете газ на включённой передаче, большинство современных машин почти не расходует топливо. Раннее торможение двигателем экономит и топливо, и тормоза."
+  },
+  {
+    "id": "mil-07",
+    "cat": "miljo",
+    "q": "Hvordan påvirker høy fart drivstofforbruket?",
+    "img": null,
+    "a": [
+      "Forbruket øker mye fordi luftmotstanden øker med farten",
+      "Forbruket blir lavere fordi du kommer raskere fram",
+      "Farten har ingen betydning for forbruket"
+    ],
+    "f": "Luftmotstanden øker kraftig med farten. Litt lavere fart på landeveien gir mye lavere forbruk.",
+    "ru": "Сопротивление воздуха сильно растёт с увеличением скорости. Немного меньшая скорость на трассе заметно снижает расход."
+  },
+  {
+    "id": "mil-08",
+    "cat": "miljo",
+    "q": "Hva kan du gjøre for å redusere miljøbelastningen fra bilkjøring?",
+    "img": null,
+    "a": [
+      "Planlegge turene, samkjøre og gå eller sykle på korte turer",
+      "Kjøre mange korte turer med kald motor",
+      "Ha mye unødvendig last i bilen"
+    ],
+    "f": "Korte turer med kald motor gir mest utslipp per kilometer. Planlegging og samkjøring gir færre turer.",
+    "ru": "Короткие поездки на холодном двигателе дают больше всего выбросов на километр. Планирование и совместные поездки уменьшают число поездок."
+  }
+]

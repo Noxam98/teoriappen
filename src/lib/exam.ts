@@ -1,0 +1,65 @@
+import { CATEGORIES, QUESTIONS, QUESTION_BY_ID } from '../data';
+import type { AppData, ExamSession, FinishedExam, QuestionStat } from '../types';
+import { shuffle } from './text';
+
+export const EXAM_QUESTIONS = 45;
+export const EXAM_MINUTES = 90;
+export const MAX_ERRORS = 7;
+
+/** Picks 45 questions spread over the topics like the real test, preferring ones not yet answered correctly. */
+export function pickExamQuestions(stats: Record<string, QuestionStat>): string[] {
+  const chosen: string[] = [];
+  const rank = (id: string) => (stats[id] ? stats[id][2] : -1);
+  for (const cat of CATEGORIES) {
+    const pool = shuffle(QUESTIONS.filter(q => q.cat === cat.id)).sort((a, b) => rank(a.id) - rank(b.id));
+    chosen.push(...pool.slice(0, cat.inExam).map(q => q.id));
+  }
+  for (const q of shuffle(QUESTIONS)) {
+    if (chosen.length >= Math.min(EXAM_QUESTIONS, QUESTIONS.length)) break;
+    if (!chosen.includes(q.id)) chosen.push(q.id);
+  }
+  return shuffle(chosen.slice(0, EXAM_QUESTIONS));
+}
+
+export function createExam(stats: Record<string, QuestionStat>): ExamSession {
+  const ids = pickExamQuestions(stats);
+  const now = Date.now();
+  return {
+    ids,
+    perm: Object.fromEntries(ids.map(id => [id, shuffle(QUESTION_BY_ID[id].a.map((_, i) => i))])),
+    ans: {},
+    flag: {},
+    i: 0,
+    start: now,
+    end: now + EXAM_MINUTES * 60_000,
+  };
+}
+
+export function gradeExam(session: ExamSession, timeout: boolean): FinishedExam {
+  let right = 0;
+  const byCat: FinishedExam['byCat'] = {};
+  for (const id of session.ids) {
+    const ok = session.ans[id] === 0;
+    if (ok) right++;
+    const c = QUESTION_BY_ID[id].cat;
+    const row = (byCat[c] ??= [0, 0]);
+    row[1]++;
+    if (ok) row[0]++;
+  }
+  const n = session.ids.length;
+  return {
+    ids: session.ids,
+    perm: session.perm,
+    ans: session.ans,
+    byCat,
+    res: { date: Date.now(), n, right, pass: n - right <= MAX_ERRORS, ms: Math.min(Date.now(), session.end) - session.start, timeout },
+  };
+}
+
+export function recordAnswer(stats: AppData['stats'], id: string, ok: boolean): AppData['stats'] {
+  const [r, w] = stats[id] ?? [0, 0, 0];
+  return { ...stats, [id]: [r + (ok ? 1 : 0), w + (ok ? 0 : 1), ok ? 1 : 0] };
+}
+
+export const wrongQuestionIds = (stats: AppData['stats']) =>
+  QUESTIONS.filter(q => stats[q.id]?.[2] === 0).map(q => q.id);

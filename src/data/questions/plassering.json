@@ -1,0 +1,282 @@
+[
+  {
+    "id": "pla-01",
+    "cat": "plassering",
+    "q": "Du kjører på en vei med ett kjørefelt i hver retning. Hvor skal du normalt plassere bilen?",
+    "img": null,
+    "a": [
+      "Så langt til høyre som det er hensiktsmessig",
+      "Midt i veien",
+      "Nær midtlinjen, så du ser bedre framover",
+      "Helt ute ved veikanten hele tiden"
+    ],
+    "f": "Hovedregelen er at du skal holde så langt til høyre som det er hensiktsmessig, uten å komme for nær veikanten.",
+    "ru": "Основное правило — держаться правее, насколько это целесообразно, но не прижиматься к самому краю дороги."
+  },
+  {
+    "id": "pla-02",
+    "cat": "plassering",
+    "q": "Du skal svinge til venstre i et kryss. Veien har ett kjørefelt i hver retning. Hvor plasserer du bilen før du svinger?",
+    "img": null,
+    "a": [
+      "Nær midten av veien, i ditt eget kjørefelt",
+      "Så langt til høyre som mulig",
+      "Over i det møtende kjørefeltet",
+      "Midt i krysset før du blinker"
+    ],
+    "f": "Før venstresving på vei med toveistrafikk skal du plassere deg nær midten av veien. Da kan trafikk bak deg passere på høyre side.",
+    "ru": "Перед левым поворотом на дороге с двусторонним движением займите положение ближе к середине дороги (в своей полосе) — тогда сзади вас можно объехать справа."
+  },
+  {
+    "id": "pla-03",
+    "cat": "plassering",
+    "q": "Du skal svinge til høyre i et kryss. Hvordan plasserer du bilen?",
+    "img": null,
+    "a": [
+      "Så langt til høyre som det er hensiktsmessig",
+      "Nær midtlinjen",
+      "Litt ut mot venstre for å få en bredere sving"
+    ],
+    "f": "Når du skal svinge til høyre, skal du holde så langt til høyre som det er hensiktsmessig, og svinge i en kort bue.",
+    "ru": "Перед правым поворотом держитесь как можно правее (насколько целесообразно) и поворачивайте по короткой дуге."
+  },
+  {
+    "id": "pla-04",
+    "cat": "plassering",
+    "q": "Hvorfor skal du se over skulderen før du skifter kjørefelt?",
+    "img": null,
+    "a": [
+      "For å sjekke blindsonen, som du ikke ser i speilene",
+      "For å se om det står skilt bak deg",
+      "Det trengs bare når det er mørkt",
+      "For å vise andre at du skal skifte felt"
+    ],
+    "f": "Speilene viser ikke alt. I blindsonen kan det være en bil, en motorsykkel eller en syklist. Se derfor over skulderen før du skifter felt.",
+    "ru": "Зеркала показывают не всё: в «слепой зоне» может быть машина, мотоцикл или велосипедист. Поэтому перед перестроением посмотрите через плечо."
+  },
+  {
+    "id": "pla-05",
+    "cat": "plassering",
+    "q": "Du skal skifte kjørefelt. Hvem har vikeplikt?",
+    "img": null,
+    "a": [
+      "Du har vikeplikt for trafikken i feltet du skal over i",
+      "Trafikken i det andre feltet må slippe deg inn når du blinker",
+      "Den som kjører fortest",
+      "Den største bilen"
+    ],
+    "f": "Den som skifter kjørefelt, har vikeplikt for trafikken i det nye feltet.",
+    "ru": "Тот, кто перестраивается, обязан уступить транспорту, который движется в соседней полосе."
+  },
+  {
+    "id": "pla-06",
+    "cat": "plassering",
+    "q": "Når skal du bruke blinklyset?",
+    "img": null,
+    "a": [
+      "I god tid før du svinger eller skifter felt",
+      "Samtidig som du begynner å svinge",
+      "Bare når du skal kjøre forbi",
+      "Etter at du har skiftet felt"
+    ],
+    "f": "Blink i god tid, slik at andre trafikanter forstår hva du skal gjøre før du gjør det.",
+    "ru": "Включайте поворотник заблаговременно, чтобы другие участники движения поняли ваш манёвр до того, как вы его начнёте."
+  },
+  {
+    "id": "pla-07",
+    "cat": "plassering",
+    "q": "Du har slått på blinklyset fordi du vil skifte felt. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Blinklyset gir deg ingen rett, du må vente til det er ledig",
+      "De andre i feltet må slippe deg inn",
+      "Du kan skifte felt når du har blinket i 3 sekunder"
+    ],
+    "f": "Blinklys er bare et tegn om hva du skal gjøre. Det gir ingen rettigheter, og du har fortsatt vikeplikt.",
+    "ru": "Поворотник — лишь сигнал о намерении. Он не даёт никаких прав: вы по-прежнему должны уступить."
+  },
+  {
+    "id": "pla-08",
+    "cat": "plassering",
+    "q": "Når skal du blinke til høyre i en rundkjøring?",
+    "img": {
+      "sign": "rundkjoring"
+    },
+    "a": [
+      "Like før du skal kjøre ut av rundkjøringen",
+      "Når du kjører inn i rundkjøringen, uansett hvor du skal",
+      "Du skal aldri blinke i en rundkjøring",
+      "Hele tiden mens du kjører i rundkjøringen"
+    ],
+    "f": "Blink til høyre like før du kjører ut, etter at du har passert avkjøringen før den du skal ta. Da vet andre at du forlater rundkjøringen.",
+    "ru": "Правый поворотник включайте перед выездом — после того как проехали предыдущий съезд. Так другие поймут, что вы покидаете кольцо."
+  },
+  {
+    "id": "pla-09",
+    "cat": "plassering",
+    "q": "Du skal kjøre inn i en rundkjøring med to felt og ta en avkjøring som er mer enn halvveis rundt. Det er ingen oppmerking som viser feltvalg. Hvilket felt bør du velge?",
+    "img": null,
+    "a": [
+      "Venstre felt",
+      "Høyre felt",
+      "Det feltet som har minst trafikk"
+    ],
+    "f": "Skal du langt rundt, bør du velge venstre felt. Skal du ta første avkjøring eller kjøre rett fram, bør du velge høyre felt.",
+    "ru": "Если вам дальше, чем на половину круга, выбирайте левую полосу. Если на первый съезд или прямо — правую."
+  },
+  {
+    "id": "pla-10",
+    "cat": "plassering",
+    "q": "Du kjører i venstre felt i en rundkjøring med to felt og skal ta neste avkjøring. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Blinker til høyre, skifter til høyre felt når det er ledig, og viker for trafikken der",
+      "Kjører rett ut fra venstre felt",
+      "Stanser i rundkjøringen til høyre felt er tomt"
+    ],
+    "f": "Før du kjører ut, må du over i høyre felt. Når du skifter felt, har du vikeplikt for trafikken i høyre felt.",
+    "ru": "Перед выездом нужно перестроиться в правую полосу; при перестроении вы уступаете тем, кто едет в правой полосе."
+  },
+  {
+    "id": "pla-11",
+    "cat": "plassering",
+    "q": "Du skal kjøre inn på motorveien fra et akselerasjonsfelt. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Øke farten til omtrent samme fart som trafikken på motorveien og flette inn når det er ledig",
+      "Stoppe i enden av akselerasjonsfeltet og vente på en stor luke",
+      "Kjøre sakte inn, så de andre må bremse for deg"
+    ],
+    "f": "Bruk akselerasjonsfeltet til å komme opp i fart. Du har vikeplikt for trafikken på motorveien og skal flette inn i en ledig luke.",
+    "ru": "Используйте полосу разгона, чтобы набрать скорость потока. Вы уступаете транспорту на магистрали и встраиваетесь в свободный промежуток."
+  },
+  {
+    "id": "pla-12",
+    "cat": "plassering",
+    "q": "Du skal kjøre av motorveien. Hvor bør du senke farten?",
+    "img": null,
+    "a": [
+      "I retardasjonsfeltet, etter at du har kjørt ut av motorveien",
+      "I venstre felt på motorveien",
+      "I høyre felt på motorveien, før du blinker"
+    ],
+    "f": "Blink i god tid, kjør inn i retardasjonsfeltet og senk farten der. Da hindrer du ikke trafikken på motorveien.",
+    "ru": "Заранее включите поворотник, съезжайте на полосу торможения и снижайте скорость уже на ней, чтобы не мешать потоку на магистрали."
+  },
+  {
+    "id": "pla-13",
+    "cat": "plassering",
+    "q": "To kjørefelt går sammen til ett, og trafikken går sakte. Hvordan bør bilene flette sammen?",
+    "img": null,
+    "a": [
+      "Etter glidelåsprinsippet: én bil fra hvert felt annenhver gang",
+      "Bilene i feltet som fortsetter, skal aldri slippe noen inn",
+      "Den største bilen kjører først",
+      "De som blinker, kjører først"
+    ],
+    "f": "Glidelåsprinsippet gir jevn trafikk: kjør fram til der feltene møtes, og flett inn én og én annenhver gang.",
+    "ru": "Принцип «молнии»: доезжайте до места сужения и встраивайтесь поочерёдно — по одной машине из каждой полосы."
+  },
+  {
+    "id": "pla-14",
+    "cat": "plassering",
+    "q": "Du kjører en vanlig personbil uten passasjerer. Det er kø, men kollektivfeltet er nesten tomt. Kan du bruke kollektivfeltet?",
+    "img": {
+      "sign": "kollektivfelt"
+    },
+    "a": [
+      "Nei, kollektivfeltet er for buss, drosje og andre som er særskilt tillatt",
+      "Ja, når det er kø",
+      "Ja, hvis du kjører under 30 km/t"
+    ],
+    "f": "Kollektivfeltet er forbeholdt kollektivtrafikk og kjøretøy som er særskilt tillatt. Vanlige biler må ikke bruke det for å komme forbi køen.",
+    "ru": "Полоса для общественного транспорта предназначена для автобусов, такси и тех, кому это специально разрешено. Обычной машине нельзя объезжать по ней пробку."
+  },
+  {
+    "id": "pla-15",
+    "cat": "plassering",
+    "q": "Du skal svinge til høyre i neste kryss. Det er et sykkelfelt til høyre for deg, slik som på bildet. Hva er riktig?",
+    "img": {
+      "road": "sykkelfelt"
+    },
+    "a": [
+      "Du har vikeplikt for syklister i sykkelfeltet som skal rett fram",
+      "Syklistene har vikeplikt for deg når du blinker",
+      "Du kan kjøre inn i sykkelfeltet og stanse der før du svinger"
+    ],
+    "f": "Når du svinger til høyre, krysser du sykkelfeltet. Da har du vikeplikt for syklister som skal rett fram. Se i speilet og over skulderen.",
+    "ru": "Поворачивая направо, вы пересекаете велополосу и обязаны уступить велосипедистам, едущим прямо. Проверьте зеркало и посмотрите через плечо."
+  },
+  {
+    "id": "pla-16",
+    "cat": "plassering",
+    "q": "Hva er riktig om rygging?",
+    "img": null,
+    "a": [
+      "Du må forsikre deg om at det ikke er noen bak bilen, og rygge sakte og bare et kort stykke",
+      "Med ryggekamera trenger du ikke å se deg om",
+      "Andre trafikanter har vikeplikt for deg når du rygger"
+    ],
+    "f": "Du er ansvarlig for at ryggingen skjer uten fare. Se deg godt om, rygg sakte og bare så langt som nødvendig.",
+    "ru": "Вы отвечаете за безопасность движения задним ходом: внимательно осмотритесь, двигайтесь медленно и только на необходимое расстояние."
+  },
+  {
+    "id": "pla-17",
+    "cat": "plassering",
+    "q": "Hvor er det forbudt å vende (gjøre u-sving)?",
+    "img": null,
+    "a": [
+      "På motorvei",
+      "I et kryss i tettbygd strøk uten skilt",
+      "På en stor parkeringsplass"
+    ],
+    "f": "På motorvei og motortrafikkvei er det forbudt å vende og å rygge.",
+    "ru": "На автомагистрали (motorvei) и на дороге для автотранспорта (motortrafikkvei) запрещено разворачиваться и двигаться задним ходом."
+  },
+  {
+    "id": "pla-18",
+    "cat": "plassering",
+    "q": "Du kjører i en gate med dette skiltet og skal svinge til venstre. Hvordan plasserer du bilen?",
+    "img": {
+      "sign": "envegskjoring"
+    },
+    "a": [
+      "Så langt til venstre som det er hensiktsmessig",
+      "Nær midten av gaten",
+      "Så langt til høyre som mulig"
+    ],
+    "f": "I gate med envegskjøring er det ingen møtende trafikk. Skal du svinge til venstre, plasserer du deg så langt til venstre som det er hensiktsmessig.",
+    "ru": "На улице с односторонним движением встречных нет. Перед левым поворотом займите крайнее левое положение (насколько целесообразно)."
+  },
+  {
+    "id": "pla-19",
+    "cat": "plassering",
+    "q": "Du kjører i en tunnel. Hva er riktig?",
+    "img": {
+      "sign": "tunnel"
+    },
+    "a": [
+      "Du skal ha lyset på, holde god avstand og ikke stanse, rygge eller vende",
+      "Du kan slå av lyset hvis tunnelen er godt opplyst",
+      "Du kan rygge ut igjen hvis du har kjørt feil",
+      "Det er lov å stanse kort for å ta bilder"
+    ],
+    "f": "I tunnel skal du ha lyset på og holde god avstand. Det er forbudt å stanse (utenom nødsituasjoner), rygge og vende.",
+    "ru": "В тоннеле фары должны быть включены, нужно держать дистанцию. Останавливаться (кроме экстренных случаев), двигаться задним ходом и разворачиваться запрещено."
+  },
+  {
+    "id": "pla-20",
+    "cat": "plassering",
+    "q": "Du kjører på motorvei utenfor tettbygd strøk. Det er to felt i din retning. Hvilket felt skal du normalt bruke?",
+    "img": {
+      "sign": "motorveg"
+    },
+    "a": [
+      "Høyre felt, venstre felt brukes når du kjører forbi",
+      "Venstre felt, fordi det går raskest",
+      "Det feltet som har minst trafikk"
+    ],
+    "f": "Utenfor tettbygd strøk skal du normalt kjøre i høyre felt og bare bruke venstre felt når du kjører forbi.",
+    "ru": "Вне населённых пунктов обычно едут по правой полосе, а левую используют только для обгона."
+  }
+]

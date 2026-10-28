@@ -1,0 +1,33 @@
+/* Layout: sticky tool bar over one 800px exam column; answers are large tappable plates; road signs are drawn as real objects.
+   Palette from Norwegian road signs: sign blue, sign red, forkjørsvei yellow, asphalt greys. */
+:root {
+  --bg: #eef1f5; --surface: #ffffff; --surface-2: #f5f7fa; --ink: #16202b; --ink-2: #4e5b6b; --line: #d5dbe4;
+  --blue: #1f4f9e; --blue-soft: #e4ecf8; --on-blue: #ffffff; --red: #c8102e; --yellow: #f6c400;
+  --paint: rgba(246, 196, 0, .55); --ok: #17804a; --ok-bg: #e2f4ea; --bad: #b42318; --bad-bg: #fdeceb; --note-bg: #fff7d9;
+  --flag: #c99a00; --asphalt: #5c636d; --ground: #dde4d9; --kerb: #c7cdc4;
+  --display: 'Barlow Semi Condensed', 'Golos Text', 'Arial Narrow', system-ui, sans-serif;
+  --body: 'Golos Text', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --qsize: 1.2rem; --r: 12px;
+  --shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 6px 18px rgba(16, 24, 40, .07);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1318; --surface: #171c23; --surface-2: #1e252e; --ink: #e8ecf1; --ink-2: #a2adbb; --line: #2c3541;
+    --blue: #6d9cf0; --blue-soft: #1b2a44; --on-blue: #0c1526; --red: #ff6068; --yellow: #f5cf3a;
+    --paint: rgba(245, 207, 58, .42); --ok: #4fc98c; --ok-bg: #12291d; --bad: #ff7a70; --bad-bg: #341716; --note-bg: #2b2611;
+    --flag: #e0b42a; --asphalt: #3b414a; --ground: #1c2520; --kerb: #2b332d;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 18px rgba(0, 0, 0, .25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1318; --surface: #171c23; --surface-2: #1e252e; --ink: #e8ecf1; --ink-2: #a2adbb; --line: #2c3541;
+  --blue: #6d9cf0; --blue-soft: #1b2a44; --on-blue: #0c1526; --red: #ff6068; --yellow: #f5cf3a;
+  --paint: rgba(245, 207, 58, .42); --ok: #4fc98c; --ok-bg: #12291d; --bad: #ff7a70; --bad-bg: #341716; --note-bg: #2b2611;
+  --flag: #e0b42a; --asphalt: #3b414a; --ground: #1c2520; --kerb: #2b332d;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 18px rgba(0, 0, 0, .25);
+  color-scheme: dark;
+}
+body.size-0 { --qsize: 1.05rem; }
+body.size-1 { --qsize: 1.2rem; }
+body.size-2 { --qsize: 1.4rem; }

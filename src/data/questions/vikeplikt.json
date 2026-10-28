@@ -1,0 +1,1067 @@
+[
+  {
+    "id": "vik-01",
+    "cat": "vikeplikt",
+    "q": "Du er bil A. Det er ingen skilt i krysset, og begge bilene kommer samtidig. Hvem skal kjøre først?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "e",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Bil B, fordi den kommer fra høyre",
+      "Du, fordi du kjører rett fram",
+      "Den som kjører fortest"
+    ],
+    "f": "I kryss uten skilt gjelder høyreregelen. Bil B kommer fra høyre for deg, så du har vikeplikt.",
+    "ru": "В перекрёстке без знаков действует правило правой руки (høyreregelen). Машина B приближается справа от вас, поэтому вы обязаны её пропустить."
+  },
+  {
+    "id": "vik-02",
+    "cat": "vikeplikt",
+    "q": "Du er bil A. Krysset har ingen skilt. Hvem har vikeplikt?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "w",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Bil B har vikeplikt for deg",
+      "Du har vikeplikt for bil B",
+      "Ingen av dere har vikeplikt"
+    ],
+    "f": "Bil B kommer fra venstre for deg. Etter høyreregelen skal bil B vike, fordi du kommer fra høyre for B.",
+    "ru": "Машина B подъезжает слева от вас. По правилу правой руки уступает B, потому что вы находитесь справа от неё."
+  },
+  {
+    "id": "vik-03",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og skal svinge til venstre. Bil B kommer imot deg og skal kjøre rett fram. Hva gjelder?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "left",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "n",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du må vente til bil B har kjørt forbi",
+      "Bil B må vente på deg fordi du blinker",
+      "Den som kommer først inn i krysset, kjører først"
+    ],
+    "f": "Når du svinger til venstre, har du vikeplikt for møtende trafikk som kjører rett fram eller svinger til høyre.",
+    "ru": "При повороте налево вы уступаете встречному транспорту, который едет прямо или поворачивает направо."
+  },
+  {
+    "id": "vik-04",
+    "cat": "vikeplikt",
+    "q": "Du er bil A. Det er ingen skilt, og alle tre bilene kommer samtidig. I hvilken rekkefølge skal de kjøre?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "e",
+            "go": "straight"
+          },
+          {
+            "id": "C",
+            "from": "w",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "B, A, C",
+      "A, B, C",
+      "C, A, B",
+      "B, C, A"
+    ],
+    "f": "Bil B har ingen fra høyre og kjører først. Deretter kjører du, fordi bil C har deg på sin høyre side. Bil C kjører sist.",
+    "ru": "У машины B справа никого нет — она едет первой. Затем едете вы (A): машина C уступает вам, потому что вы справа от неё. C едет последней."
+  },
+  {
+    "id": "vik-05",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og skal svinge til venstre. Bil B og bil C skal kjøre rett fram. Det er ingen skilt. Hvilken rekkefølge er riktig?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "left",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "n",
+            "go": "straight"
+          },
+          {
+            "id": "C",
+            "from": "e",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "B, C, A",
+      "C, B, A",
+      "A, B, C",
+      "C, A, B"
+    ],
+    "f": "Bil C har vikeplikt for bil B, som kommer fra høyre for C. Du har vikeplikt for begge: for C fordi den kommer fra høyre, og for B fordi du svinger til venstre foran møtende.",
+    "ru": "C уступает B (B у неё справа). Вы уступаете обоим: C — потому что она справа от вас, B — потому что это встречная машина, а вы поворачиваете налево. Порядок: B, C, A."
+  },
+  {
+    "id": "vik-06",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og har vikepliktskilt. Bil B kommer fra venstre. Hva gjelder?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "signs": {
+          "s": "vikeplikt",
+          "n": "vikeplikt",
+          "e": "forkjorsveg",
+          "w": "forkjorsveg"
+        },
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "w",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du har vikeplikt for bil B",
+      "Bil B har vikeplikt fordi den kommer fra venstre",
+      "Du kan kjøre fordi du skal rett fram"
+    ],
+    "f": "Vikepliktskiltet betyr at du skal vike for all trafikk på den kryssende veien, både fra høyre og fra venstre.",
+    "ru": "Знак «Уступи дорогу» (vikeplikt) означает, что вы пропускаете весь транспорт на пересекаемой дороге — и справа, и слева."
+  },
+  {
+    "id": "vik-07",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og kjører på forkjørsvei. Bil B kommer fra høyre og har vikepliktskilt. Hvem kjører først?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "signs": {
+          "e": "forkjorsveg",
+          "w": "forkjorsveg",
+          "n": "vikeplikt",
+          "s": "vikeplikt"
+        },
+        "veh": [
+          {
+            "id": "A",
+            "from": "e",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "n",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du kjører først",
+      "Bil B, fordi den kommer fra høyre",
+      "Bil B, fordi den er nærmest krysset"
+    ],
+    "f": "Den som kjører på forkjørsvei, har forkjørsrett. Bil B har vikepliktskilt og skal vike, selv om den kommer fra høyre.",
+    "ru": "На главной дороге (forkjørsvei) преимущество у вас. У машины B знак «Уступи дорогу», поэтому она уступает, хотя и находится справа."
+  },
+  {
+    "id": "vik-08",
+    "cat": "vikeplikt",
+    "q": "Du er bil A på forkjørsveien og skal svinge til venstre. Bil B kommer imot deg på den samme veien og skal kjøre rett fram. Hva gjelder?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "signs": {
+          "e": "forkjorsveg",
+          "w": "forkjorsveg",
+          "n": "vikeplikt",
+          "s": "vikeplikt"
+        },
+        "veh": [
+          {
+            "id": "A",
+            "from": "e",
+            "go": "left",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "w",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du må vike for bil B",
+      "Bil B må vike fordi du er på forkjørsvei",
+      "Dere kan kjøre samtidig fordi begge er på forkjørsvei"
+    ],
+    "f": "Begge kjører på forkjørsveien. Da gjelder vanlig regel for venstresving: du skal vike for møtende som kjører rett fram.",
+    "ru": "Вы обе на главной дороге, поэтому действует обычное правило поворота налево: вы уступаете встречной машине, которая едет прямо."
+  },
+  {
+    "id": "vik-09",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og skal svinge til venstre ut på veien. Det er ingen skilt. Bil B kommer fra høyre. Hva gjelder?",
+    "img": {
+      "scene": {
+        "type": "t",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "left",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "e",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du har vikeplikt for bil B",
+      "Bil B har vikeplikt fordi den skal rett fram",
+      "Du kan kjøre først fordi du står stille"
+    ],
+    "f": "Høyreregelen gjelder også i T-kryss uten skilt. Bil B kommer fra høyre, så du skal vike.",
+    "ru": "Правило правой руки действует и на Т-образном перекрёстке без знаков. Машина B справа — вы уступаете."
+  },
+  {
+    "id": "vik-10",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og kjører rett fram på veien som går gjennom T-krysset. Det er ingen skilt. Bil B kommer fra sideveien til høyre for deg. Hvem har vikeplikt?",
+    "img": {
+      "scene": {
+        "type": "t",
+        "veh": [
+          {
+            "id": "A",
+            "from": "w",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "s",
+            "go": "left"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du har vikeplikt for bil B",
+      "Bil B har vikeplikt fordi den kommer fra en sidevei",
+      "Ingen har vikeplikt i et T-kryss"
+    ],
+    "f": "I T-kryss uten skilt gjelder høyreregelen fullt ut. Bil B kommer fra høyre for deg, så du må vike, selv om du kjører på den gjennomgående veien.",
+    "ru": "На Т-образном перекрёстке без знаков правило правой руки действует полностью: B справа от вас, поэтому уступаете вы, даже если едете по «сквозной» дороге."
+  },
+  {
+    "id": "vik-11",
+    "cat": "vikeplikt",
+    "q": "Du er bil A. Bil B kommer fra sideveien til høyre for deg og har vikepliktskilt. Hvem kjører først?",
+    "img": {
+      "scene": {
+        "type": "t",
+        "signs": {
+          "s": "vikeplikt"
+        },
+        "veh": [
+          {
+            "id": "A",
+            "from": "w",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "s",
+            "go": "left"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du kjører først",
+      "Bil B, fordi den kommer fra høyre",
+      "Bil B, fordi den skal svinge"
+    ],
+    "f": "Vikepliktskiltet gjelder foran høyreregelen. Bil B skal vike for deg.",
+    "ru": "Знак «Уступи дорогу» важнее правила правой руки: машина B должна пропустить вас."
+  },
+  {
+    "id": "vik-12",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og har stoppskilt. Bil B kommer fra venstre. Hva skal du gjøre?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "signs": {
+          "s": "stopp",
+          "n": "stopp"
+        },
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "w",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Stanse helt ved stopplinjen og slippe bil B forbi før du kjører",
+      "Sette ned farten og kjøre uten å stanse hvis bil B er langt unna",
+      "Kjøre først, fordi bil B kommer fra venstre"
+    ],
+    "f": "Ved stoppskilt skal du alltid stanse helt. Deretter har du vikeplikt for trafikken på den kryssende veien fra begge sider.",
+    "ru": "У знака «Стоп» нужно всегда полностью остановиться, а затем пропустить весь транспорт на пересекаемой дороге с обеих сторон."
+  },
+  {
+    "id": "vik-13",
+    "cat": "vikeplikt",
+    "q": "Du er bil A. En trikk (B) kommer fra venstre. Det er ingen skilt. Hva gjelder?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "w",
+            "go": "straight",
+            "kind": "tram"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du skal gi trikken fri vei",
+      "Trikken har vikeplikt fordi den kommer fra venstre",
+      "Trikken må stanse fordi du er først i krysset"
+    ],
+    "f": "Alle trafikanter skal gi trikken fri vei, også når den kommer fra venstre. Trikken har lang bremselengde og kan ikke svinge unna.",
+    "ru": "Все участники движения должны уступать трамваю, даже если он приближается слева. У трамвая длинный тормозной путь, и он не может объехать препятствие."
+  },
+  {
+    "id": "vik-14",
+    "cat": "vikeplikt",
+    "q": "Du er bil A. En ambulanse (B) kommer fra venstre med blålys og sirene. Hva skal du gjøre?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "w",
+            "go": "straight",
+            "kind": "utrykning"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Gi ambulansen fri vei og stanse om nødvendig",
+      "Kjøre først, fordi ambulansen kommer fra venstre",
+      "Kjøre fort over krysset før ambulansen kommer"
+    ],
+    "f": "Utrykningskjøretøy med blålys skal få fri vei. Du må vike selv om du ellers ville hatt forkjørsrett.",
+    "ru": "Машине экстренных служб с синими маячками нужно освободить дорогу — даже если в обычной ситуации преимущество было бы у вас."
+  },
+  {
+    "id": "vik-15",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og skal svinge til høyre. En fotgjenger går over i gangfeltet i veien du svinger inn i. Hva skal du gjøre?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "right",
+            "me": true
+          }
+        ],
+        "ped": [
+          "e"
+        ]
+      }
+    },
+    "a": [
+      "Slippe fotgjengeren over før du svinger",
+      "Svinge foran fotgjengeren, fordi bilen har forkjørsrett",
+      "Tute og kjøre forbi fotgjengeren"
+    ],
+    "f": "Du har vikeplikt for gående som er i gangfeltet eller på vei ut i det. Det gjelder også når du svinger.",
+    "ru": "Вы обязаны пропустить пешеходов, которые находятся на переходе или собираются на него ступить. Это действует и при повороте."
+  },
+  {
+    "id": "vik-16",
+    "cat": "vikeplikt",
+    "q": "Du er bil A. En syklist (B) kommer fra høyre på kjørebanen. Det er ingen skilt. Hvem har vikeplikt?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "e",
+            "go": "straight",
+            "kind": "bike"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du har vikeplikt for syklisten",
+      "Syklisten har vikeplikt for biler",
+      "Den som kommer først, har forkjørsrett"
+    ],
+    "f": "Syklister på kjørebanen følger de samme vikepliktsreglene som biler. Syklisten kommer fra høyre, så du må vike.",
+    "ru": "Велосипедисты на проезжей части подчиняются тем же правилам приоритета, что и машины. Велосипедист справа — вы уступаете."
+  },
+  {
+    "id": "vik-17",
+    "cat": "vikeplikt",
+    "q": "Du er bil A. En buss (B) kommer fra venstre. Det er ingen skilt i krysset. Hva gjelder?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "w",
+            "go": "straight",
+            "kind": "bus"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Bussen har vikeplikt for deg",
+      "Du har vikeplikt fordi bussen er stor",
+      "Du har vikeplikt for alle busser i rute"
+    ],
+    "f": "Buss har ingen særlig forkjørsrett i veikryss. Etter høyreregelen skal bussen vike for deg, fordi du kommer fra høyre for den.",
+    "ru": "Автобус не имеет особого преимущества на перекрёстке. По правилу правой руки он уступает вам, потому что вы справа от него."
+  },
+  {
+    "id": "vik-18",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og skal svinge til venstre. Møtende bil B skal svinge til høyre inn i den samme veien. Hvem kjører først?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "left",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "n",
+            "go": "right"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Bil B kjører først",
+      "Du kjører først, fordi du kom først",
+      "Dere kan svinge samtidig"
+    ],
+    "f": "Den som svinger til venstre, har vikeplikt for møtende som kjører rett fram eller svinger til høyre.",
+    "ru": "Поворачивающий налево уступает встречным, которые едут прямо или поворачивают направо."
+  },
+  {
+    "id": "vik-19",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og har stoppskilt. Bil B og bil C kjører på veien du skal inn på. Hva er riktig?",
+    "img": {
+      "scene": {
+        "type": "t",
+        "signs": {
+          "s": "stopp"
+        },
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "left",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "w",
+            "go": "straight"
+          },
+          {
+            "id": "C",
+            "from": "e",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du må vente til begge bilene på veien har kjørt forbi",
+      "Du må bare vente på bil C, som kommer fra høyre",
+      "Du må bare vente på bil B, fordi du skal svinge til venstre"
+    ],
+    "f": "Stoppskiltet gir deg vikeplikt for all trafikk på veien du kjører inn på, fra begge retninger.",
+    "ru": "Знак «Стоп» обязывает вас пропустить весь транспорт на дороге, на которую вы выезжаете, — с обеих сторон."
+  },
+  {
+    "id": "vik-20",
+    "cat": "vikeplikt",
+    "q": "Du er bil A. Både du og bil B har vikepliktskilt, og det kommer ingen på forkjørsveien. Bil B skal svinge til venstre. Hvem kjører først?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "signs": {
+          "n": "vikeplikt",
+          "s": "vikeplikt",
+          "e": "forkjorsveg",
+          "w": "forkjorsveg"
+        },
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "n",
+            "go": "left"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du kjører først",
+      "Bil B kjører først",
+      "Den som blinker, kjører først"
+    ],
+    "f": "Dere har begge vikeplikt for forkjørsveien, men mellom dere gjelder regelen for venstresving: bil B svinger til venstre og skal vike for deg som kjører rett fram.",
+    "ru": "Вы оба уступаете главной дороге, но между собой действует правило поворота налево: B поворачивает налево и уступает вам, едущему прямо."
+  },
+  {
+    "id": "vik-21",
+    "cat": "vikeplikt",
+    "q": "Du er bil A på forkjørsveien. Fra sideveien kommer en ambulanse (B) med blålys og sirene. Hva gjelder?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "signs": {
+          "e": "forkjorsveg",
+          "w": "forkjorsveg",
+          "n": "vikeplikt",
+          "s": "vikeplikt"
+        },
+        "veh": [
+          {
+            "id": "A",
+            "from": "w",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "s",
+            "go": "straight",
+            "kind": "utrykning"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du skal gi ambulansen fri vei",
+      "Ambulansen må vike fordi den har vikepliktskilt",
+      "Du kan kjøre hvis du blinker for å vise at du har sett den"
+    ],
+    "f": "Utrykningskjøretøy med blålys skal få fri vei. Det gjelder også når du kjører på forkjørsvei og utrykningskjøretøyet har vikepliktskilt.",
+    "ru": "Машине экстренных служб с синими маячками нужно дать дорогу — даже если вы на главной дороге, а у неё знак «Уступи дорогу»."
+  },
+  {
+    "id": "vik-22",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og skal kjøre rett fram. På den andre siden av krysset er en fotgjenger på vei ut i gangfeltet. Hva skal du gjøre?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "straight",
+            "me": true
+          }
+        ],
+        "ped": [
+          "n"
+        ]
+      }
+    },
+    "a": [
+      "Stanse og slippe fotgjengeren over",
+      "Kjøre videre, fordi fotgjengeren ennå ikke er ute i gangfeltet",
+      "Kjøre fort forbi før fotgjengeren kommer ut"
+    ],
+    "f": "Du har vikeplikt for gående som er i gangfeltet eller på vei ut i det. Pass på at du ikke blir stående midt i krysset mens du venter.",
+    "ru": "Вы обязаны пропустить пешехода, который находится на переходе или собирается на него выйти. Следите, чтобы при этом не остаться стоять посреди перекрёстка."
+  },
+  {
+    "id": "vik-23",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og skal svinge til venstre inn i sideveien. Bil B kommer imot deg og skal kjøre rett fram. Det er ingen skilt. Hva gjelder?",
+    "img": {
+      "scene": {
+        "type": "t",
+        "veh": [
+          {
+            "id": "A",
+            "from": "e",
+            "go": "left",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "w",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du må vike for bil B",
+      "Bil B må vike fordi du kom først til krysset",
+      "Bil B må vike fordi du blinker"
+    ],
+    "f": "Når du svinger til venstre, skal du vike for møtende trafikk som kjører rett fram.",
+    "ru": "Поворачивая налево, вы уступаете встречному транспорту, который едет прямо."
+  },
+  {
+    "id": "vik-24",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og kjører rett fram. Bil B kommer fra sideveien og skal svinge til venstre. Det er ingen skilt. Hvem har vikeplikt?",
+    "img": {
+      "scene": {
+        "type": "t",
+        "veh": [
+          {
+            "id": "A",
+            "from": "e",
+            "go": "straight",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "s",
+            "go": "left"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Bil B har vikeplikt for deg",
+      "Du har vikeplikt for bil B",
+      "Ingen har vikeplikt i et T-kryss"
+    ],
+    "f": "Du kommer fra høyre for bil B. Etter høyreregelen er det derfor bil B som skal vike.",
+    "ru": "Вы находитесь справа от машины B, поэтому по правилу правой руки уступает B."
+  },
+  {
+    "id": "vik-25",
+    "cat": "vikeplikt",
+    "q": "Du er bil A og skal svinge til høyre. Bil B kommer fra venstre og skal kjøre rett fram. Det er ingen skilt. Hvem kjører først?",
+    "img": {
+      "scene": {
+        "type": "x",
+        "veh": [
+          {
+            "id": "A",
+            "from": "s",
+            "go": "right",
+            "me": true
+          },
+          {
+            "id": "B",
+            "from": "w",
+            "go": "straight"
+          }
+        ]
+      }
+    },
+    "a": [
+      "Du kjører først",
+      "Bil B, fordi den skal rett fram",
+      "Bil B, fordi du svinger"
+    ],
+    "f": "Du kommer fra høyre for bil B. Etter høyreregelen har bil B vikeplikt for deg, selv om du svinger.",
+    "ru": "Вы находитесь справа от B. По правилу правой руки B уступает вам, даже если вы поворачиваете."
+  },
+  {
+    "id": "vik-26",
+    "cat": "vikeplikt",
+    "q": "Du skal kjøre ut fra en parkeringsplass og inn på en vei. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Du har vikeplikt for all trafikk på veien",
+      "Du har bare vikeplikt for trafikk fra høyre",
+      "Trafikk fra venstre har vikeplikt for deg"
+    ],
+    "f": "Den som kjører ut fra parkeringsplass, gårdsplass, bensinstasjon og lignende område, har vikeplikt for all trafikk på veien.",
+    "ru": "Выезжающий с парковки, двора, заправки и подобных мест уступает всему транспорту на дороге."
+  },
+  {
+    "id": "vik-27",
+    "cat": "vikeplikt",
+    "q": "Du kjører ut fra en privat innkjørsel. En bil kommer fra venstre på veien. Hvem har vikeplikt?",
+    "img": null,
+    "a": [
+      "Du har vikeplikt",
+      "Bilen fra venstre, fordi du kommer fra høyre",
+      "Den som kommer først, kjører først"
+    ],
+    "f": "Høyreregelen gjelder ikke når du kjører ut fra en eiendom eller innkjørsel. Da har du vikeplikt for all trafikk på veien.",
+    "ru": "При выезде с частной территории правило правой руки не действует: вы уступаете всему транспорту на дороге."
+  },
+  {
+    "id": "vik-28",
+    "cat": "vikeplikt",
+    "q": "Du kjører ut fra en bensinstasjon og må krysse et fortau. En fotgjenger går på fortauet. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Du skal vike for fotgjengeren",
+      "Fotgjengeren skal vike for deg",
+      "Du kan kjøre hvis du blinker"
+    ],
+    "f": "Når du krysser et fortau, har du vikeplikt for gående på fortauet. Etterpå har du vikeplikt for trafikken på veien.",
+    "ru": "Пересекая тротуар, вы уступаете пешеходам на нём, а затем — всему транспорту на дороге."
+  },
+  {
+    "id": "vik-29",
+    "cat": "vikeplikt",
+    "q": "En syklist kommer fra en gang- og sykkelvei og skal ut på kjørebanen foran deg. Hvem har vikeplikt?",
+    "img": null,
+    "a": [
+      "Syklisten",
+      "Du, fordi syklisten kommer fra høyre",
+      "Du, fordi syklister alltid har forkjørsrett"
+    ],
+    "f": "Den som kommer fra gangvei, sykkelvei eller gang- og sykkelvei ut på kjørebanen, har vikeplikt. Vær likevel forberedt på at syklisten ikke stanser.",
+    "ru": "Тот, кто выезжает на проезжую часть с пешеходной, велосипедной или пешеходно-велосипедной дорожки, должен уступить. Но будьте готовы к тому, что велосипедист не остановится."
+  },
+  {
+    "id": "vik-30",
+    "cat": "vikeplikt",
+    "q": "Du kjører inn i et gatetun. Hvor fort kan du kjøre?",
+    "img": {
+      "sign": "gatetun"
+    },
+    "a": [
+      "I gangfart",
+      "30 km/t",
+      "Inntil 20 km/t"
+    ],
+    "f": "I gatetun skal du kjøre i gangfart. Gående kan bruke hele gaten, og barn kan leke der.",
+    "ru": "В жилой зоне (gatetun) едут со скоростью пешехода. Пешеходы могут идти по всей ширине улицы, там играют дети."
+  },
+  {
+    "id": "vik-31",
+    "cat": "vikeplikt",
+    "q": "Du kjører ut fra et gatetun og inn på en vanlig vei. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Du har vikeplikt for trafikken på veien",
+      "Høyreregelen gjelder",
+      "Trafikken på veien har vikeplikt for deg"
+    ],
+    "f": "Den som kjører ut fra et gatetun, har vikeplikt på samme måte som ved utkjøring fra en parkeringsplass.",
+    "ru": "Выезжая из жилой зоны (gatetun), вы уступаете транспорту на дороге — так же, как при выезде с парковки."
+  },
+  {
+    "id": "vik-32",
+    "cat": "vikeplikt",
+    "q": "Du kjører på en vei med fartsgrense 50 km/t. En buss ved holdeplassen foran deg blinker til venstre for å kjøre ut. Hva skal du gjøre?",
+    "img": null,
+    "a": [
+      "Sette ned farten og slippe bussen ut",
+      "Kjøre forbi før bussen kommer ut",
+      "Tute for å vise at du kommer"
+    ],
+    "f": "På vei med fartsgrense 60 km/t eller lavere har du vikeplikt for buss som tydelig viser at den skal kjøre ut fra holdeplassen.",
+    "ru": "На дороге с ограничением 60 км/ч или ниже вы обязаны пропустить автобус, который явно показывает, что отъезжает от остановки."
+  },
+  {
+    "id": "vik-33",
+    "cat": "vikeplikt",
+    "q": "På en vei med fartsgrense 80 km/t blinker en buss for å kjøre ut fra holdeplassen. Har du vikeplikt for bussen?",
+    "img": null,
+    "a": [
+      "Nei, den regelen gjelder bare der fartsgrensen er 60 km/t eller lavere",
+      "Ja, buss i rute har alltid forkjørsrett",
+      "Ja, men bare hvis holdeplassen har busslomme"
+    ],
+    "f": "Vikeplikten for buss fra holdeplass gjelder på veier med fartsgrense 60 km/t eller lavere. På raskere veier må bussen vente til det er klart, men du bør gjøre det lettere for den.",
+    "ru": "Обязанность пропускать автобус, отъезжающий от остановки, действует только на дорогах с ограничением 60 км/ч или ниже. На более быстрых дорогах автобус ждёт сам, но вежливо облегчить ему выезд."
+  },
+  {
+    "id": "vik-34",
+    "cat": "vikeplikt",
+    "q": "Et utrykningskjøretøy med blålys og sirene kommer bak deg. Hva skal du gjøre?",
+    "img": null,
+    "a": [
+      "Kjøre til siden og slippe det forbi, og stanse om nødvendig",
+      "Øke farten så du ikke er i veien",
+      "Bremse brått og stanse midt i kjørefeltet"
+    ],
+    "f": "Du skal gi fri vei for utrykningskjøretøy. Kjør til siden på en rolig og forutsigbar måte, og stans hvis det trengs.",
+    "ru": "Нужно уступить дорогу машине экстренных служб: спокойно и предсказуемо сместиться в сторону и при необходимости остановиться."
+  },
+  {
+    "id": "vik-35",
+    "cat": "vikeplikt",
+    "q": "Du nærmer deg et gangfelt. En fotgjenger står på fortauskanten og er tydelig på vei ut i gangfeltet. Hva gjelder?",
+    "img": {
+      "sign": "gangfelt"
+    },
+    "a": [
+      "Du skal stanse og slippe fotgjengeren over",
+      "Fotgjengeren må vente til du har kjørt forbi",
+      "Du skal tute slik at fotgjengeren venter"
+    ],
+    "f": "Kjørende har vikeplikt for gående som er i gangfeltet eller på vei ut i det. Hold så lav fart at du kan stanse.",
+    "ru": "Водитель обязан пропустить пешехода, который находится на переходе или собирается на него выйти. Держите скорость, при которой успеете остановиться."
+  },
+  {
+    "id": "vik-37",
+    "cat": "vikeplikt",
+    "q": "Du svinger til venstre i et kryss uten gangfelt. Noen gående holder på å krysse veien du svinger inn i. Hva skal du gjøre?",
+    "img": null,
+    "a": [
+      "Slippe de gående over først",
+      "Svinge foran dem, fordi det ikke er gangfelt",
+      "Kjøre sakte rundt dem"
+    ],
+    "f": "Når du svinger i et kryss, skal du la gående som krysser veien du svinger inn i, gå over. Det gjelder også der det ikke er gangfelt.",
+    "ru": "При повороте на перекрёстке вы должны дать пешеходам, пересекающим дорогу, на которую вы поворачиваете, перейти её. Это действует и там, где нет пешеходного перехода."
+  },
+  {
+    "id": "vik-38",
+    "cat": "vikeplikt",
+    "q": "Du skal kjøre inn i en rundkjøring med vikepliktskilt. Hvem har vikeplikt?",
+    "img": {
+      "sign": "rundkjoring"
+    },
+    "a": [
+      "Du har vikeplikt for trafikken som er i rundkjøringen",
+      "Trafikken i rundkjøringen, fordi du kommer fra høyre",
+      "Den største bilen har forkjørsrett"
+    ],
+    "f": "Ved innkjøring i en rundkjøring er det normalt vikepliktskilt. Du skal vike for kjøretøy som allerede er i rundkjøringen.",
+    "ru": "При въезде на круговое движение обычно стоит знак «Уступи дорогу»: вы пропускаете тех, кто уже едет по кругу."
+  },
+  {
+    "id": "vik-39",
+    "cat": "vikeplikt",
+    "q": "Når skal du bruke blinklys til høyre i en rundkjøring?",
+    "img": null,
+    "a": [
+      "Før du kjører ut av rundkjøringen",
+      "Når du kjører inn, uansett hvor du skal",
+      "Du skal ikke blinke i en rundkjøring"
+    ],
+    "f": "Blink til høyre i god tid før du skal ut av rundkjøringen, slik at andre ser hvor du skal.",
+    "ru": "Включайте правый поворотник заранее перед выездом с кругового движения, чтобы другие видели, куда вы едете."
+  },
+  {
+    "id": "vik-40",
+    "cat": "vikeplikt",
+    "q": "Du skal kjøre rett fram gjennom et kryss, men det står kø på den andre siden. Hva skal du gjøre?",
+    "img": null,
+    "a": [
+      "Vente før krysset til det er plass til bilen på den andre siden",
+      "Kjøre inn i krysset og vente der",
+      "Kjøre inn i krysset, fordi du har forkjørsrett"
+    ],
+    "f": "Du skal ikke kjøre inn i et kryss hvis du kan bli stående der og hindre kryssende trafikk.",
+    "ru": "Нельзя въезжать на перекрёсток, если есть риск остановиться на нём и мешать поперечному движению."
+  },
+  {
+    "id": "vik-41",
+    "cat": "vikeplikt",
+    "q": "Kjørefeltet ditt slutter, og du må flytte over i feltet ved siden av. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Du skifter felt og har vikeplikt, men det er vanlig å flette inn annenhver bil som en glidelås",
+      "Trafikken i det andre feltet har vikeplikt for deg",
+      "Du skal stanse der feltet slutter og vente til det andre feltet er tomt"
+    ],
+    "f": "Den som skifter felt, har vikeplikt. Når et felt slutter, bør alle samarbeide og flette inn annenhver bil – glidelåsprinsippet.",
+    "ru": "Перестраивающийся уступает. Когда полоса заканчивается, водители должны помогать друг другу и встраиваться поочерёдно — по принципу «застёжки-молнии» (glidelås)."
+  },
+  {
+    "id": "vik-42",
+    "cat": "vikeplikt",
+    "q": "Hvordan skal du vise at du har vikeplikt?",
+    "img": null,
+    "a": [
+      "Ved å sette ned farten i god tid eller stanse",
+      "Ved å blinke med fjernlyset",
+      "Ved å kjøre helt fram til krysset i samme fart"
+    ],
+    "f": "Den som har vikeplikt, skal vise det tydelig ved å sette ned farten i god tid eller stanse. Du kjører bare videre når det kan skje uten fare eller hinder for andre.",
+    "ru": "Обязанный уступить должен заранее это показать: снизить скорость или остановиться. Продолжать движение можно, только если это не создаёт опасности или помех другим."
+  },
+  {
+    "id": "vik-43",
+    "cat": "vikeplikt",
+    "q": "Du har kjørt på forkjørsvei og passerer dette skiltet. Hva gjelder i neste kryss uten skilt?",
+    "img": {
+      "sign": "slutt_forkjorsveg"
+    },
+    "a": [
+      "Høyreregelen",
+      "Du har fortsatt forkjørsrett",
+      "Du har vikeplikt for all trafikk"
+    ],
+    "f": "Skiltet betyr at forkjørsveien slutter. I kryss uten skilt gjelder da høyreregelen igjen.",
+    "ru": "Знак означает конец главной дороги. На перекрёстках без знаков снова действует правило правой руки."
+  },
+  {
+    "id": "vik-44",
+    "cat": "vikeplikt",
+    "q": "Du kommer til dette skiltet og ser at det ikke kommer noen trafikk. Hva skal du gjøre?",
+    "img": {
+      "sign": "stopp"
+    },
+    "a": [
+      "Stanse helt og deretter kjøre videre",
+      "Kjøre sakte forbi uten å stanse",
+      "Stanse bare hvis det kommer trafikk"
+    ],
+    "f": "Stoppskilt betyr at du alltid skal stanse helt, selv om veien er fri. Deretter har du vikeplikt.",
+    "ru": "Знак «Стоп» требует всегда полностью остановиться, даже если дорога свободна. После этого вы уступаете дорогу."
+  },
+  {
+    "id": "vik-45",
+    "cat": "vikeplikt",
+    "q": "Hvor skal du stanse ved et stoppskilt hvis det ikke er noen stopplinje?",
+    "img": null,
+    "a": [
+      "Like før den kryssende veien, der du har god oversikt",
+      "Ved selve skiltet, selv om du ikke ser noe derfra",
+      "Ute i den kryssende veien, slik at du ser bedre"
+    ],
+    "f": "Er det stopplinje, stanser du ved den. Uten stopplinje stanser du like før den kryssende veien, der du har god oversikt.",
+    "ru": "Если есть стоп-линия, останавливайтесь перед ней. Если нет — непосредственно перед пересекаемой дорогой, там, где хорошо видно движение."
+  }
+]

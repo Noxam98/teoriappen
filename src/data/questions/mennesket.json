@@ -1,0 +1,245 @@
+[
+  {
+    "id": "men-01",
+    "cat": "mennesket",
+    "q": "Hva er promillegrensen for å kjøre bil i Norge?",
+    "img": null,
+    "a": [
+      "0,2 promille",
+      "0,5 promille",
+      "0,8 promille",
+      "0,1 promille"
+    ],
+    "f": "Promillegrensen i Norge er 0,2. Det er straffbart å kjøre med høyere promille.",
+    "ru": "Допустимый уровень алкоголя в крови в Норвегии — 0,2 промилле. Ездить с более высоким уровнем — уголовно наказуемо."
+  },
+  {
+    "id": "men-02",
+    "cat": "mennesket",
+    "q": "Du drakk alkohol sent i går kveld. Hva er riktig om å kjøre bil neste morgen?",
+    "img": null,
+    "a": [
+      "Du kan fortsatt ha promille, fordi kroppen forbrenner alkohol sakte",
+      "Etter en natts søvn er promillen alltid borte",
+      "Du kan kjøre hvis du føler deg i form",
+      "Kaffe og en kald dusj fjerner promillen"
+    ],
+    "f": "Kroppen forbrenner alkohol sakte, og søvn gjør ikke at det går fortere. Du kan ha promille lenge etter at du sluttet å drikke.",
+    "ru": "Организм перерабатывает алкоголь медленно, и сон это не ускоряет. Промилле может сохраняться ещё долго после того, как вы перестали пить."
+  },
+  {
+    "id": "men-03",
+    "cat": "mennesket",
+    "q": "Hva kan få promillen i blodet til å synke raskere?",
+    "img": null,
+    "a": [
+      "Ingenting, bare tid hjelper",
+      "Sterk kaffe",
+      "Mye vann og mat",
+      "Frisk luft og trening"
+    ],
+    "f": "Promillen synker bare med tiden. Kaffe, vann, mat eller frisk luft gjør ikke at alkoholen forsvinner fortere.",
+    "ru": "Промилле снижается только со временем. Кофе, вода, еда или свежий воздух не ускоряют выведение алкоголя."
+  },
+  {
+    "id": "men-04",
+    "cat": "mennesket",
+    "q": "Omtrent hvor mye alkohol forbrenner kroppen per time?",
+    "img": null,
+    "a": [
+      "Omtrent 0,1–0,15 promille",
+      "Omtrent 0,5 promille",
+      "Omtrent 1 promille"
+    ],
+    "f": "Kroppen forbrenner omtrent 0,1–0,15 promille i timen. Høy promille kan derfor vare i mange timer.",
+    "ru": "Организм перерабатывает примерно 0,1–0,15 промилле в час. Поэтому высокий уровень алкоголя может держаться много часов."
+  },
+  {
+    "id": "men-05",
+    "cat": "mennesket",
+    "q": "Du skal ta en medisin. På pakningen er det en rød varseltrekant. Hva betyr det?",
+    "img": null,
+    "a": [
+      "Medisinen kan påvirke evnen til å kjøre bil trygt",
+      "Medisinen må oppbevares kaldt",
+      "Medisinen er farlig for barn",
+      "Medisinen må tas sammen med mat"
+    ],
+    "f": "Rød varseltrekant på pakningen betyr at medisinen kan svekke evnen til å kjøre. Spør lege eller apotek om du kan kjøre.",
+    "ru": "Красный предупреждающий треугольник на упаковке означает, что лекарство может ухудшить способность управлять машиной. Спросите врача или в аптеке, можно ли вам садиться за руль."
+  },
+  {
+    "id": "men-06",
+    "cat": "mennesket",
+    "q": "Hva gjelder for å kjøre bil etter bruk av narkotika, for eksempel cannabis?",
+    "img": null,
+    "a": [
+      "Det er forbudt å kjøre når du er påvirket av narkotika",
+      "Det er lov hvis det har gått mer enn to timer",
+      "Det er lov hvis du kjører sakte",
+      "Cannabis påvirker ikke kjøringen"
+    ],
+    "f": "Det er forbudt å kjøre påvirket av narkotika. Narkotika gir dårligere reaksjonsevne og vurderingsevne.",
+    "ru": "Запрещено водить машину под воздействием наркотиков. Наркотики ухудшают реакцию и способность оценивать ситуацию."
+  },
+  {
+    "id": "men-07",
+    "cat": "mennesket",
+    "q": "Hvordan påvirker alkohol en bilfører?",
+    "img": null,
+    "a": [
+      "Reaksjonstiden blir lengre, og føreren tar større sjanser",
+      "Føreren blir mer forsiktig",
+      "Synet blir skarpere",
+      "Alkohol påvirker bare føreren hvis promillen er over 1"
+    ],
+    "f": "Selv litt alkohol gir lengre reaksjonstid, dårligere syn og konsentrasjon og mer risikovillig kjøring.",
+    "ru": "Даже немного алкоголя увеличивает время реакции, ухудшает зрение и внимание и делает водителя склонным к риску."
+  },
+  {
+    "id": "men-08",
+    "cat": "mennesket",
+    "q": "Hvilket av disse er et tegn på at du er for trøtt til å kjøre?",
+    "img": null,
+    "a": [
+      "Du husker ikke de siste kilometerne du har kjørt",
+      "Du holder jevn fart",
+      "Du ser deg mye i speilene",
+      "Du reagerer raskt på det som skjer"
+    ],
+    "f": "Tegn på trøtthet er at du gjesper, blir urolig, ikke husker strekningen du har kjørt og har vansker med å holde bilen i feltet.",
+    "ru": "Признаки усталости: вы зеваете, ёрзаете, не помните последний отрезок пути и с трудом держите машину в своей полосе."
+  },
+  {
+    "id": "men-09",
+    "cat": "mennesket",
+    "q": "Du blir trøtt under kjøring. Hva er det beste du kan gjøre?",
+    "img": null,
+    "a": [
+      "Stoppe på et trygt sted og sove 15–20 minutter",
+      "Åpne vinduet og skru opp musikken",
+      "Drikke en energidrikk og kjøre videre",
+      "Kjøre fortere for å komme raskere fram"
+    ],
+    "f": "Det eneste som virkelig hjelper mot trøtthet, er søvn. En kort pause med 15–20 minutters søvn hjelper for en stund.",
+    "ru": "Единственное, что действительно помогает от усталости, — это сон. Короткая остановка и сон 15–20 минут помогают на какое-то время."
+  },
+  {
+    "id": "men-10",
+    "cat": "mennesket",
+    "q": "Hva gjelder for bruk av mobiltelefon mens du kjører?",
+    "img": null,
+    "a": [
+      "Det er forbudt å bruke mobiltelefon som du holder i hånden",
+      "Det er lov å ringe med mobilen i hånden hvis samtalen er kort",
+      "Det er lov å bruke mobilen i hånden når farten er under 30 km/t",
+      "Det er bare forbudt på motorvei"
+    ],
+    "f": "Det er forbudt å bruke håndholdt mobiltelefon under kjøring. Mobilbruk tar oppmerksomheten bort fra trafikken.",
+    "ru": "Во время движения запрещено пользоваться телефоном, держа его в руке. Телефон отвлекает внимание от дороги."
+  },
+  {
+    "id": "men-11",
+    "cat": "mennesket",
+    "q": "Du snakker i telefon med handsfree mens du kjører. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Det er lov, men samtalen kan ta oppmerksomheten bort fra trafikken",
+      "Det er forbudt",
+      "Det er helt ufarlig, fordi du har begge hendene på rattet"
+    ],
+    "f": "Handsfree er lov, men en samtale kan likevel gjøre deg mindre oppmerksom. Avslutt samtalen hvis trafikken krever det.",
+    "ru": "Hands-free разрешён, но разговор всё равно отвлекает. Закончите разговор, если ситуация на дороге требует внимания."
+  },
+  {
+    "id": "men-12",
+    "cat": "mennesket",
+    "q": "Hvorfor bør du se langt fram når du kjører?",
+    "img": null,
+    "a": [
+      "For å oppdage farer tidlig og få tid til å reagere",
+      "For å slippe å bruke speilene",
+      "For å kunne kjøre fortere"
+    ],
+    "f": "Når du ser langt fram, oppdager du farer tidlig og får mer tid til å planlegge og reagere.",
+    "ru": "Когда вы смотрите далеко вперёд, вы раньше замечаете опасность и получаете больше времени, чтобы спланировать действия и среагировать."
+  },
+  {
+    "id": "men-13",
+    "cat": "mennesket",
+    "q": "Hvilken gruppe førere har høyest risiko for å bli innblandet i en trafikkulykke?",
+    "img": null,
+    "a": [
+      "Unge førere som nylig har fått førerkort",
+      "Førere mellom 40 og 50 år",
+      "Erfarne yrkessjåfører"
+    ],
+    "f": "Unge og nye førere har høyest ulykkesrisiko, blant annet fordi de mangler erfaring og ofte tar større sjanser.",
+    "ru": "У молодых водителей, недавно получивших права, самый высокий риск аварий: им не хватает опыта, и они чаще рискуют."
+  },
+  {
+    "id": "men-14",
+    "cat": "mennesket",
+    "q": "Vennene dine i bilen ber deg om å kjøre fortere. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Holde en trygg fart, fordi det er du som fører som har ansvaret",
+      "Kjøre litt fortere, så de blir fornøyde",
+      "Kjøre fort bare på rette strekninger"
+    ],
+    "f": "Som fører har du ansvaret for kjøringen og for passasjerene. Ikke la deg presse til å kjøre fortere enn det som er trygt.",
+    "ru": "Как водитель вы отвечаете за поездку и за пассажиров. Не поддавайтесь давлению и не превышайте безопасную скорость."
+  },
+  {
+    "id": "men-15",
+    "cat": "mennesket",
+    "q": "En annen bilist kjører uhøflig mot deg, og du blir sint. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du bør roe deg ned og ikke la sinnet styre kjøringen",
+      "Du bør kjøre tett bak bilen for å vise at du er sint",
+      "Du bør tute og blinke med lysene"
+    ],
+    "f": "Sinne og stress gir dårligere vurderinger og mer risikofylt kjøring. Hold avstand og la situasjonen gå over.",
+    "ru": "Злость и стресс ухудшают оценку ситуации и делают езду опаснее. Держите дистанцию и дайте ситуации успокоиться."
+  },
+  {
+    "id": "men-16",
+    "cat": "mennesket",
+    "q": "Du må bruke briller for å oppfylle synskravet for førerkort. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Du skal alltid bruke brillene når du kjører",
+      "Du trenger bare brillene når det er mørkt",
+      "Du kan la være å bruke brillene på korte turer"
+    ],
+    "f": "Hvis du trenger briller eller linser for å oppfylle synskravet, skal du alltid bruke dem når du kjører.",
+    "ru": "Если вам нужны очки или линзы, чтобы соответствовать требованиям к зрению, вы обязаны всегда носить их за рулём."
+  },
+  {
+    "id": "men-17",
+    "cat": "mennesket",
+    "q": "En eldre person skal krysse veien foran deg. Hva bør du tenke på?",
+    "img": null,
+    "a": [
+      "Personen kan gå sakte og trenge mer tid, så du må være klar til å stoppe",
+      "Eldre personer ser og hører alltid bilene godt",
+      "Du kan tute, så personen går raskere"
+    ],
+    "f": "Eldre kan ha dårligere syn, hørsel og bevegelighet. Gi dem god tid og vær klar til å stoppe.",
+    "ru": "У пожилых людей может быть хуже зрение, слух и подвижность. Дайте им достаточно времени и будьте готовы остановиться."
+  },
+  {
+    "id": "men-18",
+    "cat": "mennesket",
+    "q": "Hvorfor er det nyttig å få øyekontakt med andre trafikanter?",
+    "img": null,
+    "a": [
+      "Da vet du lettere om de har sett deg",
+      "Da får du alltid forkjørsrett",
+      "Det er påbudt i alle veikryss"
+    ],
+    "f": "Øyekontakt gjør det lettere å vite om andre har sett deg. Men du kan ikke være helt sikker, så vær fortsatt forsiktig.",
+    "ru": "Зрительный контакт помогает понять, заметили ли вас другие. Но полной уверенности он не даёт, поэтому оставайтесь осторожны."
+  }
+]

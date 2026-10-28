@@ -1,0 +1,188 @@
+[
+  {
+    "id": "lys-01",
+    "cat": "lys",
+    "q": "Hvilket lys skal bilen ha på når du kjører om dagen i godt vær?",
+    "img": null,
+    "a": [
+      "Nærlys eller kjørelys",
+      "Ingen lys",
+      "Bare parkeringslys",
+      "Tåkebaklys"
+    ],
+    "f": "I Norge skal bilen alltid ha nærlys eller kjørelys på under kjøring, også om dagen.",
+    "ru": "В Норвегии во время движения всегда должен быть включён ближний свет или дневные ходовые огни, даже днём."
+  },
+  {
+    "id": "lys-02",
+    "cat": "lys",
+    "q": "Hvorfor skal du ikke kjøre med bare kjørelys når det er mørkt?",
+    "img": null,
+    "a": [
+      "Kjørelyset lyser ikke opp veien godt nok, og på mange biler er baklysene da ikke tent",
+      "Kjørelyset bruker for mye strøm",
+      "Kjørelyset blender møtende trafikk"
+    ],
+    "f": "Kjørelys er laget for å bli sett om dagen. I mørket trenger du nærlys, og da er også baklysene på.",
+    "ru": "Дневные ходовые огни нужны, чтобы машину было видно днём. В темноте нужен ближний свет — тогда горят и задние фонари."
+  },
+  {
+    "id": "lys-03",
+    "cat": "lys",
+    "q": "Du kjører inn i en tunnel. Hvilket lys bør du bruke?",
+    "img": null,
+    "a": [
+      "Nærlys",
+      "Bare kjørelys",
+      "Tåkebaklys"
+    ],
+    "f": "I tunnel skal du ha nærlys, slik at du ser godt og blir sett, også bakfra.",
+    "ru": "В тоннеле нужен ближний свет, чтобы вы хорошо видели дорогу и вас было видно, в том числе сзади."
+  },
+  {
+    "id": "lys-04",
+    "cat": "lys",
+    "q": "Hvilket lys bør du bruke når du kjører på en mørk landevei uten møtende trafikk?",
+    "img": null,
+    "a": [
+      "Fjernlys",
+      "Nærlys",
+      "Tåkebaklys"
+    ],
+    "f": "Fjernlys gir lengst sikt. Bruk det når du ikke blender andre.",
+    "ru": "Дальний свет даёт наибольшую видимость. Используйте его, когда он никого не ослепляет."
+  },
+  {
+    "id": "lys-05",
+    "cat": "lys",
+    "q": "Du kjører med fjernlys i mørket, og en bil kommer mot deg. Hva skal du gjøre?",
+    "img": null,
+    "a": [
+      "Blende ned til nærlys i god tid, så du ikke blender føreren",
+      "Beholde fjernlyset til bilen er rett ved siden av deg",
+      "Slå av alle lysene et øyeblikk"
+    ],
+    "f": "Du skal blende ned i god tid før du møter andre, slik at de ikke blir blendet.",
+    "ru": "Переключитесь на ближний свет заблаговременно до встречного разъезда, чтобы не ослепить встречного водителя."
+  },
+  {
+    "id": "lys-06",
+    "cat": "lys",
+    "q": "Du kjører med fjernlys og kommer tett bak en annen bil. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Du skal blende ned, fordi fjernlyset kan blende føreren foran gjennom speilene",
+      "Du kan beholde fjernlyset, fordi det bare blender møtende",
+      "Du skal blinke med fjernlyset, så bilen slipper deg forbi"
+    ],
+    "f": "Fjernlyset kan blende føreren foran deg gjennom speilene. Blend ned når du kjører bak andre.",
+    "ru": "Дальний свет может ослепить водителя впереди через зеркала. Переключитесь на ближний, когда едете за другой машиной."
+  },
+  {
+    "id": "lys-07",
+    "cat": "lys",
+    "q": "Du blir blendet av en møtende bil i mørket. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Se mot høyre kant av veien og senke farten",
+      "Se rett inn i lyset til den møtende bilen",
+      "Sette på fjernlys for å blende tilbake"
+    ],
+    "f": "Når du blir blendet, skal du se mot høyre veikant, senke farten og om nødvendig stoppe.",
+    "ru": "Если вас ослепили, смотрите на правый край дороги, снизьте скорость и при необходимости остановитесь."
+  },
+  {
+    "id": "lys-08",
+    "cat": "lys",
+    "q": "Når kan du bruke tåkebaklys?",
+    "img": null,
+    "a": [
+      "Bare når sikten er sterkt nedsatt, for eksempel i tett tåke eller snøvær",
+      "Alltid når det er mørkt",
+      "Når det regner litt",
+      "Når du kjører i kø"
+    ],
+    "f": "Tåkebaklys er et sterkt lys og skal bare brukes når sikten er sterkt nedsatt.",
+    "ru": "Задний противотуманный фонарь очень яркий. Его можно включать только при сильно ухудшенной видимости."
+  },
+  {
+    "id": "lys-09",
+    "cat": "lys",
+    "q": "Hvorfor skal du slå av tåkebaklyset når sikten blir bedre?",
+    "img": null,
+    "a": [
+      "Det sterke lyset kan blende den som kjører bak deg",
+      "Det bruker mye drivstoff",
+      "Det gjør at blinklysene slutter å virke"
+    ],
+    "f": "Tåkebaklyset er så sterkt at det kan blende andre og gjøre det vanskelig å se bremselysene dine.",
+    "ru": "Задний противотуманный фонарь настолько яркий, что может слепить водителей сзади и мешать им видеть ваши стоп-сигналы."
+  },
+  {
+    "id": "lys-10",
+    "cat": "lys",
+    "q": "Når skal du bruke nødsignal, der alle blinklysene blinker samtidig?",
+    "img": null,
+    "a": [
+      "Når bilen står stille på et sted der den kan være til fare for andre",
+      "Når du parkerer ulovlig en kort stund",
+      "Når du kjører sakte i regnvær",
+      "Når du vil takke en annen bilist"
+    ],
+    "f": "Nødsignal brukes for å varsle andre når bilen står slik at den kan være til fare, for eksempel ved motorstopp eller ulykke.",
+    "ru": "Аварийная сигнализация предупреждает других, когда машина стоит там, где может создать опасность, например при поломке или ДТП."
+  },
+  {
+    "id": "lys-11",
+    "cat": "lys",
+    "q": "Du har stanset langs en mørk vei uten gatelys. Hvilket lys bør bilen ha på?",
+    "img": null,
+    "a": [
+      "Parkeringslys",
+      "Fjernlys",
+      "Ingen lys",
+      "Tåkebaklys"
+    ],
+    "f": "En bil som står på en mørk vei uten gatelys, skal ha parkeringslys på, slik at andre ser den.",
+    "ru": "Машина, стоящая на тёмной дороге без уличного освещения, должна иметь включённые габаритные огни, чтобы её было видно."
+  },
+  {
+    "id": "lys-12",
+    "cat": "lys",
+    "q": "Det er vinter, og lyktene på bilen er dekket av skitt og salt. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du bør rengjøre lyktene, fordi skitne lykter lyser svakere og kan blende andre",
+      "Det har ingen betydning, fordi lyset går gjennom skitten",
+      "Du bør bruke fjernlys i stedet"
+    ],
+    "f": "Skitne lykter lyser mye svakere og sprer lyset, slik at andre kan bli blendet. Hold lys og ruter rene.",
+    "ru": "Грязные фары светят намного слабее и рассеивают свет, ослепляя других. Держите фары и стёкла чистыми."
+  },
+  {
+    "id": "lys-13",
+    "cat": "lys",
+    "q": "Du kjører i mørket med nærlys. Hvordan bør du tilpasse farten?",
+    "img": null,
+    "a": [
+      "Slik at du kan stoppe på den strekningen du ser foran deg",
+      "Du kan holde samme fart som om dagen",
+      "Du bør kjøre fortere for å komme raskt fram"
+    ],
+    "f": "I mørket ser du kortere. Du må kunne stoppe på den strekningen som lyset viser deg.",
+    "ru": "В темноте видно ближе. Скорость должна позволять остановиться в пределах участка, освещённого фарами."
+  },
+  {
+    "id": "lys-14",
+    "cat": "lys",
+    "q": "Bilen er tungt lastet bak. Hva bør du gjøre med frontlysene?",
+    "img": null,
+    "a": [
+      "Justere lyset ned med lysreguleringen, så du ikke blender møtende",
+      "Ingenting, lyset justerer seg alltid selv",
+      "Bruke fjernlys hele tiden"
+    ],
+    "f": "Tung last bak gjør at fronten løfter seg og lyset peker høyere. Juster lyset ned, så du ikke blender andre.",
+    "ru": "Тяжёлый груз сзади приподнимает перед машины, и фары светят выше. Опустите свет корректором фар, чтобы не слепить встречных."
+  }
+]

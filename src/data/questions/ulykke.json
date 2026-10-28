@@ -1,0 +1,175 @@
+[
+  {
+    "id": "uly-01",
+    "cat": "ulykke",
+    "q": "Du kommer først til en trafikkulykke. Hva gjør du først?",
+    "img": null,
+    "a": [
+      "Sikrer ulykkesstedet slik at det ikke skjer flere ulykker",
+      "Flytter alle skadde ut av bilene med en gang",
+      "Tar bilder av ulykken",
+      "Kjører videre for å hente hjelp"
+    ],
+    "f": "Først sikrer du stedet, deretter varsler du og gir førstehjelp. Da unngår du at flere blir skadd.",
+    "ru": "Сначала обезопасьте место ДТП, затем вызовите помощь и окажите первую помощь. Так вы не допустите, чтобы пострадал кто-то ещё."
+  },
+  {
+    "id": "uly-02",
+    "cat": "ulykke",
+    "q": "Hvordan sikrer du et ulykkessted?",
+    "img": null,
+    "a": [
+      "Slår på nødsignal, tar på refleksvest og setter ut varseltrekant i god avstand",
+      "Stiller bilen din på tvers i veien uten lys",
+      "Ber andre bilister kjøre fort forbi"
+    ],
+    "f": "Nødsignal, refleksvest og varseltrekant varsler andre trafikanter i tide. Varseltrekant og refleksvest er påbudt å ha i bilen.",
+    "ru": "Аварийная сигнализация, светоотражающий жилет и знак аварийной остановки вовремя предупреждают других. Знак и жилет обязательно должны быть в машине."
+  },
+  {
+    "id": "uly-03",
+    "cat": "ulykke",
+    "q": "Hvilket telefonnummer ringer du for å få ambulanse?",
+    "img": null,
+    "a": [
+      "113",
+      "110",
+      "112",
+      "1881"
+    ],
+    "f": "113 er nødnummeret for medisinsk nødhjelp. 112 er politiet og 110 er brannvesenet.",
+    "ru": "113 — номер скорой медицинской помощи. 112 — полиция, 110 — пожарные."
+  },
+  {
+    "id": "uly-04",
+    "cat": "ulykke",
+    "q": "Hvilket nummer ringer du til politiet i en nødsituasjon?",
+    "img": null,
+    "a": [
+      "112",
+      "113",
+      "110",
+      "1881"
+    ],
+    "f": "Politiets nødnummer er 112. Ambulanse er 113 og brann er 110.",
+    "ru": "Экстренный номер полиции — 112. Скорая — 113, пожарные — 110."
+  },
+  {
+    "id": "uly-05",
+    "cat": "ulykke",
+    "q": "En skadd person er bevisstløs, men puster normalt. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Legger personen i stabilt sideleie og passer på at luftveiene er frie",
+      "Gir personen noe å drikke",
+      "Starter hjerte-lunge-redning med en gang",
+      "Legger personen på ryggen med en pute under hodet"
+    ],
+    "f": "En bevisstløs person som puster, legges i stabilt sideleie. Da holdes luftveiene frie. Følg med på pusten til hjelpen kommer.",
+    "ru": "Человека без сознания, который дышит, кладут в стабильное боковое положение — так дыхательные пути остаются свободными. Следите за дыханием до приезда помощи."
+  },
+  {
+    "id": "uly-06",
+    "cat": "ulykke",
+    "q": "En person reagerer ikke og puster ikke normalt. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Ringer 113 og starter hjerte-lunge-redning med 30 kompresjoner og 2 innblåsninger",
+      "Legger personen i stabilt sideleie og venter",
+      "Rister personen til den våkner"
+    ],
+    "f": "Når personen ikke puster normalt, skal du varsle 113 og starte hjerte-lunge-redning (HLR): 30 brystkompresjoner og 2 innblåsninger.",
+    "ru": "Если человек не дышит нормально, позвоните 113 и начните сердечно-лёгочную реанимацию (HLR): 30 нажатий на грудную клетку и 2 вдоха."
+  },
+  {
+    "id": "uly-07",
+    "cat": "ulykke",
+    "q": "En skadd person blør kraftig fra armen. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Trykker direkte på såret, gjerne med en kompress eller et tøystykke",
+      "Vasker såret med vann først",
+      "Lar det blø litt for å rense såret"
+    ],
+    "f": "Kraftig blødning stoppes med direkte trykk på såret. Hold trykket til hjelpen kommer.",
+    "ru": "Сильное кровотечение останавливают прямым давлением на рану. Держите давление до прибытия помощи."
+  },
+  {
+    "id": "uly-08",
+    "cat": "ulykke",
+    "q": "Når bør du flytte en skadd person ut av en bil?",
+    "img": null,
+    "a": [
+      "Bare når personen er i fare der den er, for eksempel ved brann",
+      "Alltid, så fort som mulig",
+      "Aldri, uansett hva som skjer"
+    ],
+    "f": "Skadde bør ikke flyttes unødvendig, fordi det kan gjøre skadene verre. Hvis det er fare for brann eller nye ulykker, må du flytte personen.",
+    "ru": "Пострадавших не следует перемещать без необходимости — это может усугубить травмы. Но если есть угроза пожара или новой аварии, человека нужно переместить."
+  },
+  {
+    "id": "uly-09",
+    "cat": "ulykke",
+    "q": "Du er innblandet i en trafikkulykke der noen er skadd. Hva har du plikt til å gjøre?",
+    "img": null,
+    "a": [
+      "Stanse, hjelpe de skadde og oppgi navn og adresse",
+      "Bare ringe forsikringsselskapet",
+      "Kjøre videre hvis ulykken ikke var din skyld"
+    ],
+    "f": "Den som er innblandet i en trafikkulykke, skal stanse, hjelpe skadde og oppgi navn og adresse. Dette gjelder også om du ikke har skyld.",
+    "ru": "Участник ДТП обязан остановиться, помочь пострадавшим и назвать своё имя и адрес. Это касается и тех, кто не виноват в аварии."
+  },
+  {
+    "id": "uly-10",
+    "cat": "ulykke",
+    "q": "Du kjører på en elg, og dyret løper inn i skogen. Hva må du gjøre?",
+    "img": null,
+    "a": [
+      "Melde fra til politiet og merke stedet der det skjedde",
+      "Ingenting, siden dyret løp vekk",
+      "Følge etter dyret inn i skogen"
+    ],
+    "f": "Påkjørsel av elg og annet hjortevilt skal meldes til politiet. Merk stedet, slik at det skadde dyret kan bli funnet.",
+    "ru": "О наезде на лося или другого оленевого нужно сообщить в полицию. Отметьте место, чтобы раненое животное можно было найти."
+  },
+  {
+    "id": "uly-11",
+    "cat": "ulykke",
+    "q": "Du rygger inn i en parkert bil og lager en bulk. Eieren er ikke der. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Legger igjen navn og kontaktinformasjon på bilen, eller melder fra til politiet",
+      "Kjører derfra, siden skaden er liten",
+      "Venter ved bilen til eieren kommer, uansett hvor lenge det tar"
+    ],
+    "f": "Skader du en parkert bil, skal eieren eller politiet varsles så snart som mulig. Du kan legge igjen en lapp med navn og telefonnummer.",
+    "ru": "Если вы повредили припаркованную машину, нужно как можно скорее сообщить владельцу или в полицию. Можно оставить записку с именем и номером телефона."
+  },
+  {
+    "id": "uly-12",
+    "cat": "ulykke",
+    "q": "Hvorfor bør du ta på refleksvest når du går ut av bilen på et ulykkessted?",
+    "img": null,
+    "a": [
+      "Slik at andre trafikanter ser deg bedre",
+      "Fordi den beskytter mot kulde",
+      "Slik at politiet ser at du er vitne"
+    ],
+    "f": "Refleksvesten gjør at du blir sett mye tidligere, særlig i mørket. Den er påbudt å ha i bilen.",
+    "ru": "Светоотражающий жилет делает вас заметным гораздо раньше, особенно в темноте. Жилет обязательно должен быть в машине."
+  },
+  {
+    "id": "uly-13",
+    "cat": "ulykke",
+    "q": "Du kommer til en ulykke der ingen har begynt å hjelpe ennå. Har du plikt til å hjelpe?",
+    "img": null,
+    "a": [
+      "Ja, alle har plikt til å hjelpe skadde så godt de kan",
+      "Nei, bare de som var innblandet i ulykken",
+      "Nei, bare helsepersonell har plikt til å hjelpe"
+    ],
+    "f": "Alle har hjelpeplikt. Du skal hjelpe etter beste evne, for eksempel ved å sikre stedet, varsle og gi førstehjelp.",
+    "ru": "Обязанность помогать есть у всех. Нужно помочь в меру своих сил: обезопасить место, вызвать помощь, оказать первую помощь."
+  }
+]

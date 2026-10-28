@@ -1,0 +1,211 @@
+[
+  {
+    "id": "sik-01",
+    "cat": "sikring",
+    "q": "Hvem skal bruke bilbelte?",
+    "img": null,
+    "a": [
+      "Alle som sitter i bilen, både foran og bak",
+      "Bare føreren og passasjeren i forsetet",
+      "Bare voksne passasjerer",
+      "Alle, unntatt på korte turer i byen"
+    ],
+    "f": "Alle i bilen skal bruke bilbelte eller annet godkjent sikringsutstyr, også i baksetet og på korte turer.",
+    "ru": "Все в машине обязаны быть пристёгнуты ремнём или другим одобренным удерживающим устройством — и на заднем сиденье, и в коротких поездках."
+  },
+  {
+    "id": "sik-02",
+    "cat": "sikring",
+    "q": "Hvem har ansvaret for at en passasjer på 12 år bruker bilbelte?",
+    "img": null,
+    "a": [
+      "Føreren",
+      "Passasjeren selv",
+      "Foreldrene, selv om de ikke er med i bilen"
+    ],
+    "f": "Føreren har ansvaret for at passasjerer under 15 år er sikret.",
+    "ru": "Водитель отвечает за то, чтобы пассажиры младше 15 лет были пристёгнуты."
+  },
+  {
+    "id": "sik-03",
+    "cat": "sikring",
+    "q": "En passasjer på 16 år bruker ikke bilbelte. Hvem kan få bot for det?",
+    "img": null,
+    "a": [
+      "Passasjeren selv",
+      "Bare føreren",
+      "Eieren av bilen"
+    ],
+    "f": "Passasjerer som er 15 år eller eldre, har selv ansvaret for å bruke bilbelte.",
+    "ru": "Пассажиры от 15 лет и старше сами отвечают за то, чтобы пристегнуться, и штраф получают сами."
+  },
+  {
+    "id": "sik-04",
+    "cat": "sikring",
+    "q": "Et barn er 120 cm høyt. Hva gjelder når barnet skal sitte i bilen?",
+    "img": null,
+    "a": [
+      "Barnet skal bruke godkjent sikringsutstyr som passer til vekt og høyde",
+      "Barnet kan bruke vanlig bilbelte uten annet utstyr",
+      "Barnet skal alltid sitte i forsetet"
+    ],
+    "f": "Barn som er lavere enn 135 cm, skal alltid bruke godkjent sikringsutstyr som passer til barnets vekt og høyde.",
+    "ru": "Дети ростом ниже 135 см должны всегда использовать одобренное детское удерживающее устройство, подходящее по весу и росту."
+  },
+  {
+    "id": "sik-05",
+    "cat": "sikring",
+    "q": "Du vil sette et bakovervendt barnesete i forsetet. Bilen har airbag foran passasjersetet. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Det er bare lov hvis airbagen er koblet ut",
+      "Det er lov hvis barnet er over ett år",
+      "Det er alltid lov hvis setet er godt festet"
+    ],
+    "f": "Et bakovervendt barnesete må aldri stå foran en aktiv airbag. Airbagen kan skade barnet alvorlig.",
+    "ru": "Детское кресло, установленное против хода движения, нельзя ставить перед включённой подушкой безопасности: она может тяжело травмировать ребёнка."
+  },
+  {
+    "id": "sik-06",
+    "cat": "sikring",
+    "q": "Hvorfor anbefales det at små barn sitter bakovervendt så lenge som mulig?",
+    "img": null,
+    "a": [
+      "Det beskytter hodet og nakken best ved en kollisjon forfra",
+      "Barnet blir mindre bilsykt",
+      "Det er lettere å feste barnesetet"
+    ],
+    "f": "Små barn har stort hode og svak nakke. Bakovervendt sete fordeler kreftene over ryggen og beskytter best ved frontkollisjon.",
+    "ru": "У маленьких детей большая голова и слабая шея. Кресло против хода движения распределяет нагрузку на спину и лучше всего защищает при лобовом столкновении."
+  },
+  {
+    "id": "sik-07",
+    "cat": "sikring",
+    "q": "Bilen har en airbag foran passasjersetet som ikke kan kobles ut. Hvor bør et barn på 125 cm sitte?",
+    "img": null,
+    "a": [
+      "I baksetet",
+      "I forsetet, fordi airbagen beskytter barnet",
+      "I forsetet, hvis barnet bruker vanlig bilbelte"
+    ],
+    "f": "Barn under 140 cm bør ikke sitte foran en aktiv airbag. Baksetet er det tryggeste stedet.",
+    "ru": "Детям ростом ниже 140 см не рекомендуется сидеть перед включённой подушкой безопасности. Самое безопасное место — заднее сиденье."
+  },
+  {
+    "id": "sik-08",
+    "cat": "sikring",
+    "q": "Hvorfor bør løse gjenstander i bilen være sikret?",
+    "img": null,
+    "a": [
+      "Ved en kollisjon kan de bli kastet framover med stor kraft og skade noen",
+      "De gjør bilen tyngre å styre",
+      "Det er bare viktig for gjenstander som veier over 50 kg"
+    ],
+    "f": "Ved en kollisjon blir løse gjenstander kastet framover med en kraft som er mange ganger større enn vekten deres.",
+    "ru": "При столкновении незакреплённые предметы летят вперёд с силой, во много раз превышающей их вес."
+  },
+  {
+    "id": "sik-09",
+    "cat": "sikring",
+    "q": "Hva er riktig om last på eller i bilen?",
+    "img": null,
+    "a": [
+      "Lasten skal være sikret slik at den ikke kan falle av eller flytte seg",
+      "Lasten trenger bare å sikres når du kjører på motorvei",
+      "Det er nok at lasten ligger stille når bilen står parkert"
+    ],
+    "f": "Lasten skal alltid være sikret, slik at den ikke kan falle av, flytte seg eller være til fare under kjøring.",
+    "ru": "Груз всегда должен быть закреплён так, чтобы он не мог упасть, сместиться или создать опасность во время движения."
+  },
+  {
+    "id": "sik-10",
+    "cat": "sikring",
+    "q": "Du har tung last i en takboks. Hva bør du tenke på?",
+    "img": null,
+    "a": [
+      "Bilen kan bli mindre stabil i svinger, så du bør tilpasse farten",
+      "Bilen får kortere bremselengde",
+      "Bilen bruker mindre drivstoff"
+    ],
+    "f": "Tung last på taket gir høyere tyngdepunkt. Bilen blir mindre stabil, særlig i svinger og ved sidevind.",
+    "ru": "Тяжёлый груз на крыше поднимает центр тяжести. Машина становится менее устойчивой, особенно в поворотах и при боковом ветре."
+  },
+  {
+    "id": "sik-11",
+    "cat": "sikring",
+    "q": "Du har førerkort klasse B. Hvilken tilhenger kan du trekke uten krav til vogntogets samlede vekt, så lenge bilen er godkjent for tilhengeren?",
+    "img": null,
+    "a": [
+      "En tilhenger med tillatt totalvekt på inntil 750 kg",
+      "En tilhenger med tillatt totalvekt på inntil 1500 kg",
+      "En tilhenger med tillatt totalvekt på inntil 3500 kg"
+    ],
+    "f": "Med klasse B kan du alltid trekke en tilhenger med tillatt totalvekt på inntil 750 kg, hvis bilen er godkjent for den.",
+    "ru": "С правами категории B всегда можно буксировать прицеп с разрешённой максимальной массой до 750 кг, если машина допущена к этому."
+  },
+  {
+    "id": "sik-12",
+    "cat": "sikring",
+    "q": "Du har førerkort klasse B og vil trekke en tilhenger med tillatt totalvekt over 750 kg. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Bilens og tilhengerens tillatte totalvekt kan til sammen ikke være mer enn 3500 kg",
+      "Det er aldri lov med klasse B",
+      "Det er lov uten grenser hvis bilen er godkjent for det"
+    ],
+    "f": "Med klasse B kan tilhengeren veie mer enn 750 kg hvis tillatt totalvekt for bil og tilhenger til sammen ikke er over 3500 kg.",
+    "ru": "С категорией B прицеп может быть тяжелее 750 кг, если суммарная разрешённая масса машины и прицепа не превышает 3500 кг."
+  },
+  {
+    "id": "sik-14",
+    "cat": "sikring",
+    "q": "Hva bør du sjekke før du kjører med tilhenger?",
+    "img": null,
+    "a": [
+      "At tilhengeren er riktig koblet, at lysene virker og at lasten er sikret",
+      "Bare at dekkene på tilhengeren har nok luft",
+      "Ingenting, så lenge tilhengeren er ny"
+    ],
+    "f": "Før kjøring skal du sjekke koblingen, lysene, dekkene og at lasten er sikret og riktig plassert.",
+    "ru": "Перед поездкой проверьте сцепку, фонари, шины и то, что груз закреплён и правильно размещён."
+  },
+  {
+    "id": "sik-15",
+    "cat": "sikring",
+    "q": "Hvor bør du plassere tung last på en tilhenger?",
+    "img": null,
+    "a": [
+      "Lavt og over hjulakselen",
+      "Bakerst på tilhengeren",
+      "Øverst på den andre lasten"
+    ],
+    "f": "Tung last skal ligge lavt og over hjulakselen. Feil plassering kan gjøre at tilhengeren slingrer.",
+    "ru": "Тяжёлый груз нужно класть низко и над осью колёс. Неправильное размещение может вызвать раскачивание прицепа."
+  },
+  {
+    "id": "sik-16",
+    "cat": "sikring",
+    "q": "Hvordan bør nakkestøtten være innstilt?",
+    "img": null,
+    "a": [
+      "Overkanten bør være omtrent i høyde med toppen av hodet, og nær hodet",
+      "Så lavt som mulig",
+      "I høyde med skuldrene"
+    ],
+    "f": "En riktig innstilt nakkestøtte beskytter mot nakkeskader ved påkjøring bakfra. Den skal være høyt og nær hodet.",
+    "ru": "Правильно отрегулированный подголовник защищает шею при ударе сзади. Он должен быть высоко и близко к голове."
+  },
+  {
+    "id": "sik-17",
+    "cat": "sikring",
+    "q": "Hva er riktig om airbag?",
+    "img": null,
+    "a": [
+      "Airbagen virker sammen med bilbeltet og erstatter det ikke",
+      "Med airbag trenger du ikke bilbelte",
+      "Airbagen beskytter best hvis du sitter helt inntil rattet"
+    ],
+    "f": "Airbagen er laget for å virke sammen med bilbeltet. Uten belte kan airbagen gi alvorlige skader.",
+    "ru": "Подушка безопасности рассчитана на работу вместе с ремнём. Без ремня она может причинить серьёзные травмы."
+  }
+]

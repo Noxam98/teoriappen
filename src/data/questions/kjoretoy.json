@@ -1,0 +1,217 @@
+[
+  {
+    "id": "kjt-01",
+    "cat": "kjoretoy",
+    "q": "Hvem har ansvaret for å sjekke at bilen er i forsvarlig stand før du kjører?",
+    "img": null,
+    "a": [
+      "Du som fører bilen",
+      "Verkstedet som gjorde siste service",
+      "Forsikringsselskapet",
+      "Statens vegvesen"
+    ],
+    "f": "Føreren har ansvaret for at kjøretøyet er i forsvarlig stand når det brukes. Du må sjekke bilen før du kjører.",
+    "ru": "За то, чтобы машина была в исправном состоянии во время езды, отвечает водитель. Перед поездкой нужно проверить автомобиль."
+  },
+  {
+    "id": "kjt-02",
+    "cat": "kjoretoy",
+    "q": "Hva bør du kontrollere før du starter en kjøretur?",
+    "img": null,
+    "a": [
+      "At lys, dekk og bremser virker, og at rutene er rene",
+      "Bare at det er nok drivstoff i tanken",
+      "Ingenting, hvis bilen har vært på EU-kontroll"
+    ],
+    "f": "En enkel kontroll før kjøring er lys, dekk, bremser, styring og fri sikt. EU-kontrollen gjelder ikke feil som oppstår senere.",
+    "ru": "Перед поездкой стоит проверить фары, шины, тормоза, рулевое управление и обзор (чистые стёкла). Техосмотр (EU-kontroll) не защищает от неисправностей, появившихся позже."
+  },
+  {
+    "id": "kjt-03",
+    "cat": "kjoretoy",
+    "q": "En rød varsellampe begynner å lyse i instrumentpanelet mens du kjører. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Stanse så snart det er trygt og finne ut hva som er feil",
+      "Kjøre videre og sjekke det ved neste service",
+      "Øke farten for å komme raskt hjem",
+      "Slå av lysene for å spare strøm"
+    ],
+    "f": "Rødt varsellys betyr vanligvis en alvorlig feil, for eksempel lavt oljetrykk eller feil på bremsene. Stans så snart det er trygt.",
+    "ru": "Красная контрольная лампа обычно означает серьёзную неисправность, например низкое давление масла или проблемы с тормозами. Остановитесь, как только это будет безопасно."
+  },
+  {
+    "id": "kjt-04",
+    "cat": "kjoretoy",
+    "q": "En gul varsellampe lyser i instrumentpanelet. Hva betyr det vanligvis?",
+    "img": null,
+    "a": [
+      "Det er en feil som bør sjekkes snart",
+      "Du må stanse straks og slå av motoren",
+      "Bilen er i orden og klar til kjøring"
+    ],
+    "f": "Gule eller oransje varsellamper viser vanligvis en feil som ikke er akutt, men som bør sjekkes snart. Røde lamper betyr at du må stanse.",
+    "ru": "Жёлтые или оранжевые лампы обычно показывают неисправность, которая не требует немедленной остановки, но её нужно скоро проверить. Красные лампы — сигнал остановиться."
+  },
+  {
+    "id": "kjt-05",
+    "cat": "kjoretoy",
+    "q": "Bilen din har ABS-bremser. Du må bremse kraftig i en nødsituasjon. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Trykker bremsepedalen hardt ned, holder den nede og styrer unna",
+      "Pumper på bremsepedalen",
+      "Bremser forsiktig så hjulene ikke låser seg",
+      "Slipper bremsen når pedalen begynner å vibrere"
+    ],
+    "f": "Med ABS skal du bremse hardt og holde pedalen nede. ABS hindrer at hjulene låser seg, så du kan styre samtidig. Vibrasjon i pedalen er normalt.",
+    "ru": "С ABS нужно нажать на тормоз сильно и держать педаль. ABS не даёт колёсам заблокироваться, поэтому вы можете одновременно рулить. Вибрация педали — это нормально."
+  },
+  {
+    "id": "kjt-06",
+    "cat": "kjoretoy",
+    "q": "Hva er den viktigste fordelen med ABS-bremser?",
+    "img": null,
+    "a": [
+      "Du kan styre bilen mens du bremser hardt",
+      "Bremselengden blir alltid mye kortere på is",
+      "Bilen kan ikke skrense"
+    ],
+    "f": "ABS hindrer at hjulene låser seg, slik at bilen kan styres under hard bremsing. Bremselengden blir ikke nødvendigvis kortere.",
+    "ru": "ABS не даёт колёсам заблокироваться, поэтому машиной можно управлять при резком торможении. Тормозной путь от этого не обязательно становится короче."
+  },
+  {
+    "id": "kjt-07",
+    "cat": "kjoretoy",
+    "q": "Hva gjør antiskrenssystemet (ESC) i bilen?",
+    "img": null,
+    "a": [
+      "Det bremser enkelthjul automatisk for å hjelpe bilen å holde kursen",
+      "Det gjør at du trygt kan kjøre fortere i svinger",
+      "Det gjør at du ikke trenger gode dekk om vinteren"
+    ],
+    "f": "ESC kan bremse ett og ett hjul for å hindre skrens. Systemet hjelper, men det kan ikke oppheve fysikkens lover.",
+    "ru": "Система ESC может подтормаживать отдельные колёса, чтобы предотвратить занос. Она помогает, но не отменяет законы физики."
+  },
+  {
+    "id": "kjt-08",
+    "cat": "kjoretoy",
+    "q": "Hva kan for lavt lufttrykk i dekkene føre til?",
+    "img": null,
+    "a": [
+      "Dårligere veigrep og høyere drivstofforbruk",
+      "Kortere bremselengde",
+      "Mindre slitasje på dekkene"
+    ],
+    "f": "For lavt dekktrykk gir dårligere styring og veigrep, mer slitasje og høyere forbruk. Sjekk dekktrykket jevnlig.",
+    "ru": "Слишком низкое давление в шинах ухудшает управляемость и сцепление с дорогой, увеличивает износ и расход топлива. Регулярно проверяйте давление."
+  },
+  {
+    "id": "kjt-09",
+    "cat": "kjoretoy",
+    "q": "Hva er minste lovlige mønsterdybde på dekkene til en personbil om sommeren?",
+    "img": null,
+    "a": [
+      "1,6 mm",
+      "3 mm",
+      "5 mm",
+      "1 mm"
+    ],
+    "f": "Utenfor vinterperioden er kravet minst 1,6 mm mønsterdybde. I vinterperioden er kravet 3 mm for personbiler.",
+    "ru": "Вне зимнего периода минимальная глубина протектора — 1,6 мм. В зимний период для легковых машин требуется не менее 3 мм."
+  },
+  {
+    "id": "kjt-10",
+    "cat": "kjoretoy",
+    "q": "Hvor ofte må en vanlig personbil på EU-kontroll?",
+    "img": null,
+    "a": [
+      "Første gang når bilen er 4 år, deretter hvert andre år",
+      "Hvert år fra bilen er ny",
+      "Hvert femte år",
+      "Bare når bilen skal selges"
+    ],
+    "f": "Personbiler skal på EU-kontroll (periodisk kjøretøykontroll) første gang når de er 4 år, og deretter hvert andre år.",
+    "ru": "Легковой автомобиль проходит техосмотр (EU-kontroll) первый раз в возрасте 4 лет, а затем каждые два года."
+  },
+  {
+    "id": "kjt-11",
+    "cat": "kjoretoy",
+    "q": "Hvilken forsikring er påbudt for alle registrerte biler i Norge?",
+    "img": null,
+    "a": [
+      "Ansvarsforsikring",
+      "Kaskoforsikring",
+      "Reiseforsikring",
+      "Livsforsikring"
+    ],
+    "f": "Ansvarsforsikring er påbudt. Den dekker skader på andre personer og deres eiendom. Kasko er frivillig.",
+    "ru": "Обязательна страховка гражданской ответственности (ansvarsforsikring). Она покрывает ущерб другим людям и их имуществу. Каско — добровольная страховка."
+  },
+  {
+    "id": "kjt-12",
+    "cat": "kjoretoy",
+    "q": "Hva kan du finne i vognkortet til bilen?",
+    "img": null,
+    "a": [
+      "Opplysninger om bilen, for eksempel tillatt totalvekt og tillatt tilhengervekt",
+      "Hvor mange prikker føreren har",
+      "Når føreren tok førerprøven"
+    ],
+    "f": "Vognkortet er bilens registreringsbevis. Der står blant annet tillatt totalvekt, tilhengervekt og antall sitteplasser.",
+    "ru": "Vognkort — свидетельство о регистрации автомобиля. В нём указаны, например, разрешённая общая масса, допустимая масса прицепа и число мест."
+  },
+  {
+    "id": "kjt-13",
+    "cat": "kjoretoy",
+    "q": "Bremsene på bilen virker så dårlig at det kan være farlig. Kan du kjøre bilen?",
+    "img": null,
+    "a": [
+      "Nei, bilen er ikke i forsvarlig stand og skal ikke kjøres",
+      "Ja, hvis du kjører sakte",
+      "Ja, hvis du har varseltrekant i bilen",
+      "Ja, men bare i dagslys"
+    ],
+    "f": "Et kjøretøy med feil som gir fare for trafikksikkerheten, skal ikke brukes. Feilen må rettes først.",
+    "ru": "Автомобиль с неисправностью, опасной для безопасности движения, использовать нельзя. Сначала нужно устранить неисправность."
+  },
+  {
+    "id": "kjt-14",
+    "cat": "kjoretoy",
+    "q": "Hvordan oppdager du best en trafikant i blindsonen før du skifter kjørefelt?",
+    "img": null,
+    "a": [
+      "Du vrir på hodet og ser over skulderen",
+      "Du ser bare i det innvendige speilet",
+      "Du blinker lenge før du skifter felt"
+    ],
+    "f": "Speilene dekker ikke hele området rundt bilen. Se over skulderen før du skifter felt eller svinger.",
+    "ru": "Зеркала не охватывают всё пространство вокруг машины. Перед перестроением или поворотом посмотрите через плечо."
+  },
+  {
+    "id": "kjt-15",
+    "cat": "kjoretoy",
+    "q": "Frontruten dugger på innsiden mens du kjører. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Retter varm luft mot ruten med viften, gjerne med klimaanlegget på",
+      "Tørker et lite hull med hånden og kjører videre",
+      "Slår av viften slik at luften står stille"
+    ],
+    "f": "Du må ha fri sikt. Vifte og defroster fjerner dugg, og klimaanlegget gjør luften tørrere.",
+    "ru": "Обзор должен быть свободным. Вентилятор и обдув стекла убирают запотевание, а кондиционер делает воздух суше."
+  },
+  {
+    "id": "kjt-16",
+    "cat": "kjoretoy",
+    "q": "Hvorfor bør spylervæsken inneholde frostvæske om vinteren?",
+    "img": null,
+    "a": [
+      "Slik at væsken ikke fryser og du kan holde frontruten ren",
+      "Slik at motoren starter lettere",
+      "Slik at bilen bruker mindre drivstoff"
+    ],
+    "f": "Om vinteren blir frontruten fort skitten av salt og slaps. Spylervæsken må tåle kulde, ellers fryser den.",
+    "ru": "Зимой лобовое стекло быстро пачкается солью и слякотью. Омывающая жидкость должна выдерживать мороз, иначе она замёрзнет."
+  }
+]
