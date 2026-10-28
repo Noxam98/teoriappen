@@ -6,7 +6,7 @@ import type { Question } from '../../types';
 export function Explanation({ q, correct }: { q: Question; correct?: boolean }) {
   const { data, update } = useApp();
   return (
-    <div className="explain">
+    <div className={correct === undefined ? 'explain' : correct ? 'explain ok' : 'explain bad'}>
       {correct !== undefined && (
         <div className={correct ? 'verdict ok' : 'verdict bad'}>{correct ? 'Riktig! · Верно' : 'Feil · Неверно'}</div>
       )}

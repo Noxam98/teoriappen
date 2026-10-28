@@ -1,11 +1,13 @@
-import { useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import { useBrush } from '../features/brush/BrushProvider';
 import { useApp } from '../state/AppState';
 import { Icon } from './Icons';
+import { SettingsSheet } from './SettingsSheet';
 
 export function Toolbar() {
   const { data, update, go } = useApp();
   const brush = useBrush();
+  const [settings, setSettings] = useState(false);
   const firstVisit = !data.prefs.seenBrushHint;
   const bar = useRef<HTMLElement>(null);
 
@@ -22,29 +24,28 @@ export function Toolbar() {
     brush.pressButton();
     if (firstVisit) update(d => ({ ...d, prefs: { ...d.prefs, seenBrushHint: true } }));
   };
-  const nextSize = () => update(d => ({ ...d, prefs: { ...d.prefs, size: ((d.prefs.size + 1) % 3) as 0 | 1 | 2 } }));
 
   return (
     <header className="bar" ref={bar}>
-      <div className="wrap">
+      <div className="wrap bar-row">
         <button className="brand" onClick={() => go({ name: 'home' })} aria-label="На главную">
           <svg viewBox="0 0 100 100" aria-hidden="true">
             <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#333" strokeWidth={2} />
             <polygon points="50,18 82,50 50,82 18,50" fill="#f6c400" />
           </svg>
-          <span className="brand-text"><small>Førerkort klasse B</small><b>Teoriprøven</b></span>
+          <span className="brand-text"><small>Førerkort B</small><b>Teoriprøven</b></span>
         </button>
         <div className="tools">
           <button id="brushBtn" className={`tool brush${firstVisit ? ' pulse' : ''}`} aria-pressed={brush.on}
             onPointerDown={brush.keepSelection} onClick={pressBrush}
             title="Волшебная кисть: проведите по слову, чтобы увидеть перевод (клавиша B)">
-            <Icon name="brush" /><span className="lbl">Кисть</span>
+            <Icon name="brush" /><span>Кисть</span>
           </button>
-          <button className="tool size" onClick={nextSize} title="Размер текста">
-            <Icon name="textSize" /><span className="lbl">Текст</span>
+          <button className="tool icon" onClick={() => go({ name: 'vocab' })} title="Мой словарь" aria-label={`Мой словарь, слов: ${data.vocab.length}`}>
+            <Icon name="book" />{data.vocab.length > 0 && <span className="badge">{data.vocab.length}</span>}
           </button>
-          <button className="tool" onClick={() => go({ name: 'vocab' })} title="Мой словарь">
-            <Icon name="book" /><span className="lbl">Словарь</span><span className="badge">{data.vocab.length}</span>
+          <button className="tool icon" onClick={() => setSettings(true)} title="Настройки" aria-label="Настройки">
+            <Icon name="gear" />
           </button>
         </div>
       </div>
@@ -57,6 +58,7 @@ export function Toolbar() {
           </div>
         </div>
       )}
+      {settings && <SettingsSheet onClose={() => setSettings(false)} />}
     </header>
   );
 }

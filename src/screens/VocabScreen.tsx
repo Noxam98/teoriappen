@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { ActionBar } from '../components/ActionBar';
 import { Icon } from '../components/Icons';
-import { shuffle } from '../lib/text';
+import { shuffle, plural } from '../lib/text';
 import { speak, useNorwegianVoice } from '../lib/speech';
 import { useApp } from '../state/AppState';
 import type { VocabItem } from '../types';
@@ -12,27 +13,36 @@ export function VocabScreen() {
   const remove = (w: string) => update(d => ({ ...d, vocab: d.vocab.filter(v => v.w !== w) }));
 
   return (
-    <>
-      <div className="section-title first">
-        <div><div className="eyebrow">Ordliste</div><h2 className="page-title">Мой словарь</h2></div>
-        {list.length > 0 && <button className="btn primary" onClick={() => go({ name: 'flashcards' })}>Учить карточками</button>}
+    <div className="vocab">
+      <div className="page-head">
+        <div className="eyebrow">Ordliste</div>
+        <h1>Мой словарь</h1>
+        <p className="muted">{list.length ? `${list.length} ${plural(list.length, 'слово', 'слова', 'слов')}, сохранённых кистью` : 'Здесь появятся слова, которые вы сохраните кистью.'}</p>
       </div>
       {list.length ? (
         <div className="vlist">
           {list.map(v => (
-            <div key={v.w} className="vrow panel">
+            <div key={v.w} className="vrow">
               <span className="no">{v.show || v.w}{v.lemma && v.lemma !== v.w && <small>{v.lemma}</small>}</span>
               <span className="tr">{v.tr || '—'}{v.gram && <small>{v.gram}</small>}</span>
-              {voice ? <button className="iconbtn" onClick={() => speak(v.show || v.w, voice)} title="Произнести"><Icon name="speak" /></button> : <span />}
-              <button className="iconbtn" onClick={() => remove(v.w)} title="Удалить"><Icon name="trash" /></button>
+              <span className="vrow-acts">
+                {voice && <button className="iconbtn" onClick={() => speak(v.show || v.w, voice)} aria-label="Произнести"><Icon name="speak" /></button>}
+                <button className="iconbtn" onClick={() => remove(v.w)} aria-label="Удалить"><Icon name="trash" /></button>
+              </span>
             </div>
           ))}
         </div>
       ) : (
-        <div className="empty">Словарь пуст. Включите кисть, проведите по незнакомому слову в вопросе и нажмите «В словарь».</div>
+        <div className="empty how">
+          <Icon name="brush" />
+          <p>Включите <b>кисть</b> в панели сверху, проведите по незнакомому слову в вопросе и нажмите <b>«В словарь»</b>.</p>
+        </div>
       )}
-      <div className="cta"><button className="btn" onClick={() => go({ name: 'home' })}><Icon name="left" /> Назад</button></div>
-    </>
+      <ActionBar>
+        <button className="btn square" onClick={() => go({ name: 'home' })} aria-label="Назад"><Icon name="left" /></button>
+        <button className="btn primary grow" disabled={!list.length} onClick={() => go({ name: 'flashcards' })}>Учить карточками</button>
+      </ActionBar>
+    </div>
   );
 }
 
@@ -47,28 +57,29 @@ export function FlashcardsScreen() {
   const word = card.show || card.w;
 
   return (
-    <>
-      <div className="section-title first"><h2>Карточки</h2><span className="muted tnum">{k + 1} / {cards.length}</span></div>
-      <section className="panel flash">
-        <div className="front">{word}</div>
-        {card.lemma && card.lemma !== card.w && <div className="muted">{card.lemma}</div>}
-        {open ? (
-          <>
-            <div className="back">{card.tr || '—'}</div>
-            {card.ctx && <div className="ctx">«{card.ctx}»</div>}
-          </>
-        ) : (
-          <button className="btn primary" onClick={() => setOpen(true)}>Показать перевод</button>
-        )}
-      </section>
-      <div className="cta">
-        {voice && <button className="btn" onClick={() => speak(word, voice)}><Icon name="speak" /> Uttale</button>}
-        <span className="sp" />
-        <button className="btn" onClick={() => go({ name: 'vocab' })}>Закончить</button>
-        <button className="btn primary" onClick={() => { setK((k + 1) % cards.length); setOpen(false); }}>
+    <div className="flashcards">
+      <div className="flash-progress tnum">Карточка {k + 1} из {cards.length}</div>
+      <button className={open ? 'flash open' : 'flash'} onClick={() => setOpen(o => !o)} aria-label={open ? 'Скрыть перевод' : 'Показать перевод'}>
+        <span className="flash-inner">
+          <span className="flash-face front">
+            <span className="flash-word">{word}</span>
+            {card.lemma && card.lemma !== card.w && <span className="muted">{card.lemma}</span>}
+            <span className="flash-hint">нажмите, чтобы перевернуть</span>
+          </span>
+          <span className="flash-face back">
+            <span className="flash-tr">{card.tr || '—'}</span>
+            <span className="flash-word small">{word}</span>
+            {card.ctx && <span className="flash-ctx">«{card.ctx}»</span>}
+          </span>
+        </span>
+      </button>
+      <ActionBar>
+        <button className="btn square" onClick={() => go({ name: 'vocab' })} aria-label="Закончить"><Icon name="close" /></button>
+        {voice && <button className="btn square" onClick={() => speak(word, voice)} aria-label="Произнести"><Icon name="speak" /></button>}
+        <button className="btn primary grow" onClick={() => { setK((k + 1) % cards.length); setOpen(false); }}>
           {k + 1 < cards.length ? 'Следующая' : 'Сначала'} <Icon name="right" />
         </button>
-      </div>
-    </>
+      </ActionBar>
+    </div>
   );
 }

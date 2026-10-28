@@ -1,8 +1,10 @@
 @import './tokens.css';
 @import './base.css';
 @import './toolbar.css';
+@import './sheet.css';
 @import './home.css';
 @import './question.css';
 @import './result.css';
 @import './vocab.css';
+@import './settings.css';
 @import './brush.css';

@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { createExam, gradeExam, recordAnswer } from '../lib/exam';
 import { loadData, saveData } from '../lib/storage';
-import type { AppData, Screen, VocabItem } from '../types';
+import type { AppData, ExamSession, FinishedExam, Screen, VocabItem } from '../types';
 
 interface AppApi {
   data: AppData;
@@ -12,6 +12,8 @@ interface AppApi {
   go: (s: Screen) => void;
   startExam: () => void;
   finishExam: (timeout: boolean) => void;
+  /** Ends a practice round and shows its result screen. */
+  finishPractice: (session: ExamSession, practice: NonNullable<FinishedExam['practice']>) => void;
   answer: (id: string, ok: boolean) => void;
   toggleVocab: (item: Omit<VocabItem, 't'>) => boolean;
 }
@@ -38,7 +40,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     visit: nav.visit,
     go,
     startExam() {
-      setData(d => ({ ...d, cur: createExam(d.stats) }));
+      setData(d => ({ ...d, cur: createExam(d.stats, d.prefs.reveal) }));
       go({ name: 'exam' });
     },
     finishExam(timeout) {
@@ -50,6 +52,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
         for (const id of done.ids) if (done.ans[id] !== undefined || !timeout) stats = recordAnswer(stats, id, done.ans[id] === 0);
         return { ...d, stats, exams: [...d.exams, done.res], last: done, cur: null };
       });
+    },
+    finishPractice(session, practice) {
+      setData(d => ({ ...d, last: gradeExam(session, false, practice) }));
+      go({ name: 'result' });
     },
     answer(id, ok) {
       setData(d => ({ ...d, stats: recordAnswer(d.stats, id, ok) }));

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import { ActionBar } from '../components/ActionBar';
 import { Icon } from '../components/Icons';
-import { Modal } from '../components/Modal';
 import { Explanation } from '../components/question/Explanation';
 import { Options } from '../components/question/Options';
 import { QuestionCard } from '../components/question/QuestionCard';
@@ -9,11 +9,11 @@ import { useAnswerKeys } from '../hooks/useAnswerKeys';
 import { wrongQuestionIds } from '../lib/exam';
 import { shuffle } from '../lib/text';
 import { useApp } from '../state/AppState';
-import type { AppData, Screen } from '../types';
+import type { AppData, PracticeMode, Screen } from '../types';
 
-type PracticeMode = Extract<Screen, { name: 'practice' }>;
+type PracticeScreenSpec = Extract<Screen, { name: 'practice' }>;
 
-function buildList(screen: PracticeMode, stats: AppData['stats']): string[] {
+function buildList(screen: PracticeScreenSpec, stats: AppData['stats']): string[] {
   if (screen.mode === 'wrong') return shuffle(wrongQuestionIds(stats));
   if (screen.mode === 'list') return shuffle(screen.ids ?? []);
   const pool = screen.mode === 'all' ? QUESTIONS : QUESTIONS.filter(q => q.cat === screen.mode);
@@ -21,87 +21,95 @@ function buildList(screen: PracticeMode, stats: AppData['stats']): string[] {
   return shuffle(pool.map(q => q.id)).sort((a, b) => Number(!!stats[a]) - Number(!!stats[b]));
 }
 
-function title(screen: PracticeMode): [string, string] {
-  if (screen.mode === 'all') return ['Alle temaer', 'все темы вперемешку'];
-  if (screen.mode === 'wrong' || screen.mode === 'list') return ['Feil', 'работа над ошибками'];
-  return [CATEGORY[screen.mode].no, CATEGORY[screen.mode].ru];
+export function practiceTitle(mode: PracticeMode): [string, string] {
+  if (mode === 'all') return ['Alle temaer', 'все темы вперемешку'];
+  if (mode === 'wrong' || mode === 'list') return ['Feil', 'работа над ошибками'];
+  return [CATEGORY[mode].no, CATEGORY[mode].ru];
 }
 
-export function PracticeScreen({ screen }: { screen: PracticeMode }) {
-  const { data, go, answer } = useApp();
+export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
+  const { data, go, answer, finishPractice } = useApp();
   const [ids] = useState(() => buildList(screen, data.stats));
+  const [instant] = useState(() => data.prefs.reveal === 'instant');
+  const [start] = useState(Date.now);
   const [i, setI] = useState(0);
-  const [order, setOrder] = useState(() => shuffle([0, 1, 2, 3]));
-  const [chosen, setChosen] = useState<number | undefined>();
-  const [score, setScore] = useState({ right: 0, done: 0 });
-  const [summary, setSummary] = useState(false);
-  const nextRef = useRef<HTMLButtonElement>(null);
+  const [orders, setOrders] = useState<Record<string, number[]>>({});
+  const [answers, setAnswers] = useState<Record<string, number>>({});
   const explainRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => { if (!ids.length) go({ name: 'home' }); }, [ids, go]);
-  useEffect(() => {
-    if (chosen === undefined) return;
-    nextRef.current?.focus({ preventScroll: true });
-    explainRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-  }, [chosen]);
 
   const id = ids[i];
   const q = id ? QUESTION_BY_ID[id] : null;
-  const visibleOrder = q ? order.filter(o => o < q.a.length) : [];
-  const answered = chosen !== undefined;
+  const order = id ? orders[id] ?? [] : [];
+  // each question gets its own shuffled option order once
+  useEffect(() => {
+    if (q && !orders[q.id]) setOrders(o => ({ ...o, [q.id]: shuffle(q.a.map((_, k) => k)) }));
+  }, [q, orders]);
+
+  const chosen = id ? answers[id] : undefined;
+  const revealed = instant && chosen !== undefined;
+  const right = Object.entries(answers).filter(([, a]) => a === 0).length;
+  const done = Object.keys(answers).length;
+  const [no, ru] = practiceTitle(screen.mode);
+
+  useEffect(() => {
+    if (revealed) explainRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }, [revealed]);
 
   const pick = (oi: number) => {
-    if (!q || answered) return;
-    setChosen(oi);
-    setScore(s => ({ right: s.right + (oi === 0 ? 1 : 0), done: s.done + 1 }));
-    answer(q.id, oi === 0);
+    if (!q || revealed) return;
+    // in "answers at the end" mode the choice can still be changed; stats count the final choice when moving on
+    setAnswers(a => ({ ...a, [q.id]: oi }));
+    if (instant) answer(q.id, oi === 0);
   };
+
+  const finish = (recordCurrent: boolean) => {
+    // in "answers at the end" mode the current choice is counted only when leaving the question
+    if (recordCurrent && !instant && q && chosen !== undefined) answer(q.id, chosen === 0);
+    const answered = ids.filter(x => answers[x] !== undefined);
+    if (!answered.length) { go({ name: 'home' }); return; }
+    finishPractice(
+      { ids: answered, perm: orders, ans: answers, flag: {}, i: 0, start, end: Date.now() },
+      { mode: screen.mode, title: [no, ru] },
+    );
+  };
+
   const next = () => {
-    if (!answered) return;
-    if (i + 1 >= ids.length) { setSummary(true); return; }
-    setI(i + 1); setChosen(undefined); setOrder(shuffle([0, 1, 2, 3]));
-    window.scrollTo(0, 0);
+    if (!q || chosen === undefined) return;
+    if (!instant) answer(q.id, chosen === 0);
+    if (i + 1 >= ids.length) { finish(false); return; }
+    setI(i + 1);
+    window.scrollTo({ top: 0 });
   };
 
-  useAnswerKeys({ pick: k => { if (k < visibleOrder.length) pick(visibleOrder[k]); }, next });
+  useAnswerKeys({ pick: k => { if (k < order.length) pick(order[k]); }, next });
 
-  if (!q) return null;
-  const [no, ru] = title(screen);
+  if (!q || !order.length) return null;
 
   return (
-    <>
+    <div className="screen-q">
       <div className="examhead">
-        <span className="progress-txt"><b>{no}</b> · {ru}</span>
-        <span className="sp" />
-        <span className="progress-txt tnum">{i + 1} / {ids.length} · верно {score.right} из {score.done}</span>
-        <button className="btn ghost" onClick={() => setSummary(true)}>Завершить</button>
-        <div className="pbar" aria-hidden="true"><i style={{ width: `${(score.done / ids.length) * 100}%` }} /></div>
+        <div className="examhead-row">
+          <span className="topic"><b>{no}</b><small>{ru}</small></span>
+          <span className="sp" />
+          <span className="counter tnum"><b>{i + 1}</b>/{ids.length}</span>
+          {instant && done > 0 && <span className="score-chip tnum"><Icon name="check" />{right}<small>/{done}</small></span>}
+        </div>
+        <div className="pbar" aria-hidden="true"><i style={{ width: `${(i / ids.length) * 100}%` }} /></div>
       </div>
 
-      <QuestionCard q={q} number={i + 1}>
-        <Options q={q} order={visibleOrder} chosen={chosen} reveal={answered} onPick={pick} />
-        {answered && <div ref={explainRef}><Explanation q={q} correct={chosen === 0} /></div>}
+      <QuestionCard key={q.id} q={q} number={i + 1}>
+        <Options q={q} order={order} chosen={chosen} reveal={revealed} onPick={pick} />
+        {revealed && <div ref={explainRef}><Explanation q={q} correct={chosen === 0} /></div>}
       </QuestionCard>
 
-      <nav className="qnav">
-        <span className="sp" />
-        {answered
-          ? <button ref={nextRef} className="btn primary" onClick={next}>{i + 1 < ids.length ? 'Neste' : 'Ferdig'} <Icon name="right" /></button>
-          : <span className="muted small">Выберите ответ — сразу увидите объяснение</span>}
-      </nav>
-
-      {summary && (
-        <Modal title={`${no} · ${ru}`} onClose={() => setSummary(false)}
-          actions={<>
-            {i + 1 < ids.length && <button className="btn" onClick={() => setSummary(false)}>Продолжить</button>}
-            <button className="btn primary" data-autofocus onClick={() => go({ name: 'home' })}>На главную</button>
-          </>}>
-          <p className="mtext tnum">
-            Отвечено: <b>{score.done}</b>, верно: <b>{score.right}</b>
-            {score.done > 0 && ` (${Math.round((score.right / score.done) * 100)}%)`}.
-          </p>
-        </Modal>
-      )}
-    </>
+      <ActionBar>
+        <button className="btn ghost-strong" onClick={() => finish(true)}>Завершить</button>
+        <button className={chosen !== undefined ? 'btn primary grow' : 'btn grow'} disabled={chosen === undefined} onClick={next}>
+          {i + 1 < ids.length ? 'Neste' : 'Ferdig'} <Icon name="right" />
+        </button>
+      </ActionBar>
+    </div>
   );
 }

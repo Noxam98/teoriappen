@@ -1,5 +1,5 @@
 import { CATEGORIES, QUESTIONS, QUESTION_BY_ID } from '../data';
-import type { AppData, ExamSession, FinishedExam, QuestionStat } from '../types';
+import type { AppData, ExamSession, FinishedExam, QuestionStat, RevealMode } from '../types';
 import { shuffle } from './text';
 
 export const EXAM_QUESTIONS = 45;
@@ -21,7 +21,7 @@ export function pickExamQuestions(stats: Record<string, QuestionStat>): string[]
   return shuffle(chosen.slice(0, EXAM_QUESTIONS));
 }
 
-export function createExam(stats: Record<string, QuestionStat>): ExamSession {
+export function createExam(stats: Record<string, QuestionStat>, reveal: RevealMode): ExamSession {
   const ids = pickExamQuestions(stats);
   const now = Date.now();
   return {
@@ -32,10 +32,11 @@ export function createExam(stats: Record<string, QuestionStat>): ExamSession {
     i: 0,
     start: now,
     end: now + EXAM_MINUTES * 60_000,
+    reveal,
   };
 }
 
-export function gradeExam(session: ExamSession, timeout: boolean): FinishedExam {
+export function gradeExam(session: ExamSession, timeout: boolean, practice?: FinishedExam['practice']): FinishedExam {
   let right = 0;
   const byCat: FinishedExam['byCat'] = {};
   for (const id of session.ids) {
@@ -48,6 +49,8 @@ export function gradeExam(session: ExamSession, timeout: boolean): FinishedExam 
   }
   const n = session.ids.length;
   return {
+    kind: practice ? 'practice' : 'exam',
+    practice,
     ids: session.ids,
     perm: session.perm,
     ans: session.ans,
@@ -60,6 +63,12 @@ export function recordAnswer(stats: AppData['stats'], id: string, ok: boolean): 
   const [r, w] = stats[id] ?? [0, 0, 0];
   return { ...stats, [id]: [r + (ok ? 1 : 0), w + (ok ? 0 : 1), ok ? 1 : 0] };
 }
+
+/** Wrong answers so far (only meaningful when answers are shown instantly). */
+export const errorCount = (s: Pick<ExamSession, 'ids' | 'ans'>) => s.ids.filter(id => s.ans[id] !== undefined && s.ans[id] !== 0).length;
+
+/** Share of the question bank whose last answer was correct, 0–1. */
+export const readiness = (stats: AppData['stats']) => QUESTIONS.filter(q => stats[q.id]?.[2] === 1).length / QUESTIONS.length;
 
 export const wrongQuestionIds = (stats: AppData['stats']) =>
   QUESTIONS.filter(q => stats[q.id]?.[2] === 0).map(q => q.id);

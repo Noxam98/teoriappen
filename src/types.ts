@@ -65,6 +65,9 @@ export interface VocabItem {
   t: number;
 }
 
+/** When the correct answer is shown: right after each question, or only at the end. */
+export type RevealMode = 'instant' | 'end';
+
 export interface ExamSession {
   ids: string[];
   /** Shuffled option order per question. */
@@ -75,6 +78,8 @@ export interface ExamSession {
   i: number;
   start: number;
   end: number;
+  /** Fixed when the exam starts; old saved sessions have none and count as 'end'. */
+  reveal?: RevealMode;
 }
 
 export interface ExamResult {
@@ -86,7 +91,13 @@ export interface ExamResult {
   timeout: boolean;
 }
 
+export type PracticeMode = CategoryId | 'all' | 'wrong' | 'list';
+
 export interface FinishedExam {
+  /** A timed exam, or a finished practice round (no pass/fail). Old saved results have no kind: exam. */
+  kind?: 'exam' | 'practice';
+  /** For practice: the topic, to offer "once more". */
+  practice?: { mode: PracticeMode; title: [string, string] };
   ids: string[];
   perm: Record<string, number[]>;
   ans: Record<string, number>;
@@ -98,6 +109,7 @@ export interface FinishedExam {
 export type QuestionStat = [number, number, 0 | 1];
 
 export interface Prefs {
+  reveal: RevealMode;
   size: 0 | 1 | 2;
   ru: boolean;
   seenBrushHint: boolean;
@@ -116,6 +128,6 @@ export type Screen =
   | { name: 'home' }
   | { name: 'exam' }
   | { name: 'result' }
-  | { name: 'practice'; mode: CategoryId | 'all' | 'wrong' | 'list'; ids?: string[] }
+  | { name: 'practice'; mode: PracticeMode; ids?: string[] }
   | { name: 'vocab' }
   | { name: 'flashcards' };

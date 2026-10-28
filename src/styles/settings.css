@@ -1,0 +1,25 @@
+.setting { display: grid; gap: 10px; }
+.setting + .setting { border-top: 1px solid var(--line); padding-top: 16px; }
+.setting h4 { font-size: .8rem; text-transform: uppercase; letter-spacing: .09em; color: var(--ink-2); font-weight: 700; }
+.setting-note { font-size: .84rem; color: var(--ink-2); }
+.choice-list { display: grid; gap: 8px; }
+.choice { display: grid; grid-template-columns: 24px 1fr; gap: 12px; align-items: start; text-align: left; padding: 12px 14px; border-radius: var(--r); border: 1.5px solid var(--line); background: var(--surface); cursor: pointer; }
+.choice b { display: block; font-size: .98rem; }
+.choice small { display: block; color: var(--ink-2); font-size: .84rem; line-height: 1.35; margin-top: 2px; }
+.choice .radio { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--ink-3); margin-top: 1px; display: grid; place-items: center; }
+.choice[aria-checked="true"] { border-color: var(--blue); background: var(--blue-soft); }
+.choice[aria-checked="true"] .radio { border-color: var(--blue); }
+.choice[aria-checked="true"] .radio::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--blue); }
+.size-preview { padding: 12px 14px; border-radius: var(--r); background: var(--surface-2); font-weight: 500; line-height: 1.4; }
+.size-preview[data-size="0"] { font-size: 1.04rem; } .size-preview[data-size="1"] { font-size: 1.17rem; } .size-preview[data-size="2"] { font-size: 1.36rem; }
+.switch-row { display: flex; align-items: center; gap: 14px; cursor: pointer; }
+.switch-row > span { flex: 1; }
+.switch-row b { display: block; font-size: .98rem; }
+.switch-row small { display: block; color: var(--ink-2); font-size: .84rem; }
+.switch { appearance: none; -webkit-appearance: none; width: 50px; height: 30px; border-radius: 15px; background: var(--surface-3); position: relative; cursor: pointer; flex: none; transition: background-color .2s; margin: 0; }
+.switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .3); transition: transform .2s; }
+.switch:checked { background: var(--ok); }
+.switch:checked::after { transform: translateX(20px); }
+.reset-confirm { display: grid; gap: 10px; padding: 12px 14px; border-radius: var(--r); background: var(--bad-soft); }
+.reset-confirm .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.reset-confirm .btn { min-height: 44px; }

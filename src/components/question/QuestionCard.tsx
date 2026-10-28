@@ -14,6 +14,7 @@ export function QuestionBody({ q }: { q: Question }) {
   );
 }
 
+/** One question on screen; `note` replaces the topic label in the corner ('' hides it). */
 export function QuestionCard({ q, number, note, children }: { q: Question; number: number; note?: ReactNode; children: ReactNode }) {
   return (
     <article className="qcard">

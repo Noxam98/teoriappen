@@ -14,6 +14,15 @@ const PATHS = {
   right: <path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" />,
   book: <><path d="M5 4.5 A1.5 1.5 0 0 1 6.5 3 H19 V18 H6.5 A1.5 1.5 0 0 0 5 19.5 Z M5 19.5 A1.5 1.5 0 0 0 6.5 21 H19 V18" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round" /><path d="M9 8 H15 M9 11 H13" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" /></>,
   textSize: <path d="M3 19 L8 6 L13 19 M5 15 H11 M14 19 L17.5 10 L21 19 M15.3 16 H19.7" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
+  gear: (
+    <>
+      <circle cx={12} cy={12} r={3.2} fill="none" stroke="currentColor" strokeWidth={1.8} />
+      <path d="M12 2.8 L13.6 5.2 L16.4 4.6 L17 7.4 L19.4 8.4 L18.6 11.1 L20.6 13.2 L18.3 14.9 L18.5 17.7 L15.7 18 L14.3 20.5 L12 19 L9.7 20.5 L8.3 18 L5.5 17.7 L5.7 14.9 L3.4 13.2 L5.4 11.1 L4.6 8.4 L7 7.4 L7.6 4.6 L10.4 5.2 Z" fill="none" stroke="currentColor" strokeWidth={1.6} strokeLinejoin="round" />
+    </>
+  ),
+  shuffle: <path d="M3 7 H7 Q10 7 12 11 L13 13 Q15 17 18 17 H21 M3 17 H7 Q9 17 10.5 15 M13.5 9 Q15 7 18 7 H21 M18.5 4.5 L21 7 L18.5 9.5 M18.5 14.5 L21 17 L18.5 19.5" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
+  redo: <path d="M4 12 A8 8 0 1 0 7 5.8 M4 4 V8.5 H8.5" fill="none" stroke="currentColor" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round" />,
+  home: <path d="M4 11 L12 4 L20 11 M6.5 9 V20 H10 V14.5 H14 V20 H17.5 V9" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
   brush: (
     <>
       <path d="M14.5 9.5 L19.8 4.2 a1.6 1.6 0 0 1 2.3 2.3 L16.8 11.8 Z" fill="currentColor" />
