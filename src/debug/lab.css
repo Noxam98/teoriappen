@@ -1,0 +1,15 @@
+.lab { padding: 16px; display: grid; gap: 12px; }
+.lab-head { position: sticky; top: 0; z-index: 5; background: var(--bg); padding-bottom: 8px; display: grid; gap: 8px; }
+.lab-head h1 { font-size: 1.4rem; }
+#problems { margin: 0; max-height: 40vh; overflow: auto; padding: 10px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); font-size: 12px; white-space: pre-wrap; }
+.lab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.lab-grid.wide { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.lab-grid figure { margin: 0; padding: 10px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); display: grid; justify-items: center; gap: 6px; }
+.lab-grid .sign { height: 130px; width: auto; max-width: 100%; }
+.lab-grid .light { height: 150px; }
+.lab-grid .road, .lab-grid .scene { width: 100%; height: auto; }
+.lab-grid figcaption { font-size: 12px; color: var(--ink-2); }
+.lab-cards { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+.lab-cards .qcard { width: min(var(--card-w), 100%); flex: none; animation: none; }
+[data-problem] { outline: 2px solid #ff0040 !important; outline-offset: 1px; }
+svg [data-problem] { stroke: #ff0040 !important; stroke-width: 2px; }

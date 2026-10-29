@@ -71,14 +71,20 @@ export function vehicle(kind: VehicleKind, color: string, label: string, rot: nu
         ),
       };
     case 'bike':
+      // cyclist seen from above: wheels, handlebar, shoulders and head; the id label rides on the road side
       return {
-        len: 24,
+        len: 39,
         node: (
           <>
-            <rect x={-1.5} y={-12} width={3} height={24} rx={1.5} fill="#222" />
-            <rect x={-7} y={-8} width={14} height={2.6} rx={1.3} fill="#222" />
-            <circle cx={0} cy={1} r={5.5} fill={color} stroke="rgba(0,0,0,.4)" />
-            <g transform="translate(13 0)"><circle r={7} fill={color} /><Label text={label} rot={rot} /></g>
+            <g transform="scale(1.3)">
+            <rect x={-1.6} y={-15} width={3.2} height={9} rx={1.6} fill="#1f2328" />
+            <rect x={-1.6} y={6} width={3.2} height={9} rx={1.6} fill="#1f2328" />
+            <rect x={-0.8} y={-7} width={1.6} height={14} fill="#1f2328" />
+            <rect x={-6.5} y={-8.5} width={13} height={2.2} rx={1.1} fill="#1f2328" />
+            <ellipse cx={0} cy={-1} rx={6.8} ry={4.2} fill={color} stroke="rgba(0,0,0,.35)" />
+            <circle cx={0} cy={-3.2} r={3} fill="#3a2a22" stroke="rgba(255,255,255,.6)" strokeWidth={0.8} />
+            </g>
+            <g transform="translate(-14.5 6)"><circle r={6.5} fill={color} stroke="#fff" strokeWidth={1.2} /><Label text={label} rot={rot} size={10} /></g>
           </>
         ),
       };

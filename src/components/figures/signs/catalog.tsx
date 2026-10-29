@@ -35,8 +35,8 @@ const SIGNS: Record<string, () => ReactElement> = {
   fare_svinger: () => <Triangle><path d="M44 77 V68 Q44 62 52 60 Q58 58 56 52 Q54 47 46 44" fill="none" stroke={ink} strokeWidth={6} /></Triangle>,
   fare_bakke_ned: () => (
     <Triangle>
-      <path d="M30 74 H70 L30 54 Z" fill={ink} />
-      <text x={57} y={57} textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight={700} fontSize={11} fill={ink}>10%</text>
+      <path d="M34 75 H69 L34 57 Z" fill={ink} />
+      <text x={56} y={63} textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight={700} fontSize={9.5} fill={ink}>10%</text>
     </Triangle>
   ),
   fare_smalere: () => <Triangle><path d="M36 77 L42 62 V45 M64 77 L58 62 V45" fill="none" stroke={ink} strokeWidth={5} /></Triangle>,
@@ -50,8 +50,8 @@ const SIGNS: Record<string, () => ReactElement> = {
   ),
   fare_glatt: () => (
     <Triangle>
-      <Place x={37} y={44} s={0.85}><CarRear c={ink} /></Place>
-      <path d="M42 66 Q37 70 43 73 Q49 76 42 79 M58 66 Q63 70 57 73 Q51 76 58 79" fill="none" stroke={ink} strokeWidth={2.6} />
+      <Place x={38.5} y={46} s={0.77}><CarRear c={ink} /></Place>
+      <path d="M43 65 Q38.5 68.5 44 71.5 Q49 74 43.5 77 M57 65 Q61.5 68.5 56 71.5 Q51 74 56.5 77" fill="none" stroke={ink} strokeWidth={2.4} />
     </Triangle>
   ),
   fare_gangfelt: () => (
@@ -67,7 +67,7 @@ const SIGNS: Record<string, () => ReactElement> = {
     </Triangle>
   ),
   fare_sykkel: () => <Triangle><Place x={30} y={52} s={0.92}><Bicycle c={ink} sw={3.2} /></Place></Triangle>,
-  fare_elg: () => <Triangle><Place x={26} y={46} s={0.86}><Moose c={ink} /></Place></Triangle>,
+  fare_elg: () => <Triangle><Place x={28} y={48.5} s={0.8}><Moose c={ink} /></Place></Triangle>,
   fare_lyssignal: () => (
     <Triangle>
       <rect x={42} y={38} width={16} height={38} rx={4} fill={ink} />
@@ -79,12 +79,12 @@ const SIGNS: Record<string, () => ReactElement> = {
   fare_jernbane_bom: () => (
     <Triangle>
       <g fill={ink}>
-        <rect x={30} y={52} width={40} height={5} /><rect x={30} y={64} width={40} height={5} />
-        <rect x={31} y={48} width={4} height={27} /><rect x={48} y={48} width={4} height={27} /><rect x={65} y={48} width={4} height={27} />
+        <rect x={35} y={55} width={30} height={4.5} /><rect x={35} y={65.5} width={30} height={4.5} />
+        <rect x={35.5} y={52} width={4} height={24} /><rect x={48} y={50} width={4} height={26} /><rect x={60.5} y={52} width={4} height={24} />
       </g>
     </Triangle>
   ),
-  fare_jernbane: () => <Triangle><Place x={27} y={45} s={0.82}><Locomotive c={ink} /></Place></Triangle>,
+  fare_jernbane: () => <Triangle><Place x={29.5} y={49} s={0.76}><Locomotive c={ink} /></Place></Triangle>,
   fare_motende: () => (
     <Triangle>
       <ArrowDown cx={42} top={42} bottom={76} c={ink} hw={7} sw={2.6} />
@@ -93,9 +93,9 @@ const SIGNS: Record<string, () => ReactElement> = {
   ),
   fare_ko: () => (
     <Triangle>
-      <Place x={41} y={42} s={0.6}><CarRear c={ink} /></Place>
-      <Place x={37} y={51} s={0.85}><CarRear c={ink} /></Place>
-      <Place x={33} y={61} s={1.1}><CarRear c={ink} /></Place>
+      <Place x={43.6} y={44.5} s={0.43}><CarRear c={ink} /></Place>
+      <Place x={41.6} y={52.4} s={0.56}><CarRear c={ink} /></Place>
+      <Place x={39.2} y={62} s={0.72}><CarRear c={ink} /></Place>
     </Triangle>
   ),
   fare_kryss: () => <Triangle><rect x={46} y={42} width={8} height={35} fill={ink} /><rect x={33} y={55} width={34} height={7} fill={ink} /></Triangle>,
@@ -181,7 +181,7 @@ const SIGNS: Record<string, () => ReactElement> = {
       <text x={50} y={84} textAnchor="middle" fontFamily={SIGN_FONT} fontWeight={700} fontSize={17} fill={ink} letterSpacing={1}>SONE</text>
     </>
   ),
-  stans_forbudt: () => <Ring fill={blue}><path d="M25 25 L75 75 M75 25 L25 75" stroke={red} strokeWidth={8} /></Ring>,
+  stans_forbudt: () => <Ring fill={blue}><path d="M25 25 L75 75 M75 25 L25 75" stroke={red} strokeWidth={8} data-exempt="" /></Ring>,
   parkering_forbudt: () => <Ring fill={blue}><Strike /></Ring>,
 
   // ---- Påbudsskilt (mandatory) ----

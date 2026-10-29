@@ -13,7 +13,7 @@ export const Triangle = ({ children }: Kids) => (
   <>
     <path d="M50 5 L96 87 H4 Z" fill={COLOR.red} stroke="#fff" strokeWidth={4} strokeLinejoin="round" />
     <path d="M50 23 L81 78 H19 Z" fill="#fff" stroke="#fff" strokeWidth={3} strokeLinejoin="round" />
-    {children}
+    <g data-area="tri">{children}</g>
   </>
 );
 
@@ -23,7 +23,7 @@ export const Ring = ({ children, fill = '#fff' }: Kids & { fill?: string }) => (
     <circle cx={50} cy={50} r={49} fill="#fff" />
     <circle cx={50} cy={50} r={47} fill={COLOR.red} />
     <circle cx={50} cy={50} r={36} fill={fill} />
-    {children}
+    <g data-area="ring">{children}</g>
   </>
 );
 
@@ -32,7 +32,7 @@ export const BlueDisc = ({ children }: Kids) => (
   <>
     <circle cx={50} cy={50} r={49} fill="#fff" />
     <circle cx={50} cy={50} r={47} fill={COLOR.blue} />
-    {children}
+    <g data-area="disc">{children}</g>
   </>
 );
 
@@ -41,7 +41,7 @@ export const BluePlate = ({ children, wide = false }: Kids & { wide?: boolean })
   <>
     <rect x={1} y={1} width={wide ? 138 : 98} height={98} rx={9} fill="#fff" />
     <rect x={4} y={4} width={wide ? 132 : 92} height={92} rx={7} fill={COLOR.blue} />
-    {children}
+    <g data-area={wide ? 'plate-wide' : 'plate'}>{children}</g>
   </>
 );
 
@@ -49,7 +49,7 @@ export const BluePlate = ({ children, wide = false }: Kids & { wide?: boolean })
 export const EndDisc = ({ children }: Kids) => (
   <>
     <circle cx={50} cy={50} r={48} fill="#fff" stroke="#b9bec5" strokeWidth={2} />
-    {children}
+    <g data-area="end">{children}</g>
     <Stripes cx={50} cy={50} r={44} shape="circle" />
   </>
 );
@@ -68,7 +68,7 @@ export function Stripes({ cx, cy, r, shape }: { cx: number; cy: number; r: numbe
 }
 
 export const Strike = ({ color = COLOR.red }: { color?: string }) => (
-  <line x1={24} y1={24} x2={76} y2={76} stroke={color} strokeWidth={8} />
+  <line x1={24} y1={24} x2={76} y2={76} stroke={color} strokeWidth={8} data-exempt="" />
 );
 
 export const Place = ({ x, y, s = 1, children }: Kids & { x: number; y: number; s?: number }) => (
