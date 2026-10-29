@@ -9,6 +9,9 @@ interface Props {
   /** Buttons at the bottom of the sheet. */
   actions?: ReactNode;
   onClose: () => void;
+  /** The sheet's language, when it differs from the app's (the first-start language dialog). */
+  lang?: string;
+  closeLabel?: string;
 }
 
 const FOCUSABLE = 'button:not([disabled]), [href], input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])';
@@ -17,7 +20,7 @@ const FOCUSABLE = 'button:not([disabled]), [href], input:not([disabled]), select
  * A modal bottom sheet on phones (drag the grip down, tap outside, press Esc or ✕ to close),
  * a centred dialog on wider screens. Focus stays inside while open and returns to the trigger afterwards.
  */
-export function Sheet({ title, children, actions, onClose }: Props) {
+export function Sheet({ title, children, actions, onClose, lang, closeLabel }: Props) {
   const titleId = useId();
   const t = useT();
   const box = useRef<HTMLDivElement>(null);
@@ -55,11 +58,11 @@ export function Sheet({ title, children, actions, onClose }: Props) {
 
   return createPortal(
     <div className="modal" onClick={e => { if (e.target === e.currentTarget) onClose(); }}>
-      <div className="sheet" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={box} tabIndex={-1}>
+      <div className="sheet" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={box} tabIndex={-1} lang={lang}>
         <div className="sheet-grip" ref={grip} aria-hidden="true"><span /></div>
         <div className="sheet-head">
           <h2 id={titleId}>{title}</h2>
-          <button className="iconbtn" onClick={onClose} aria-label={t.close}>
+          <button className="iconbtn" onClick={onClose} aria-label={closeLabel ?? t.close}>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 L18 18 M18 6 L6 18" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" /></svg>
           </button>
         </div>

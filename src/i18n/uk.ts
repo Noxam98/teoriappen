@@ -10,6 +10,7 @@ export const uk: Messages = {
   chooseTitle: 'Мова перекладу',
   choosePrompt: 'Норвезький текст, слова й пояснення — українською',
   chooseLater: 'Змінити можна в налаштуваннях ⚙',
+  chooseSave: 'Зберегти',
   questions: (k: number) => count(k, 'питання', 'питання', 'питань'),
   errors: (k: number) => count(k, 'помилка', 'помилки', 'помилок'),
   words: (k: number) => count(k, 'слово', 'слова', 'слів'),

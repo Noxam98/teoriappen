@@ -9,10 +9,11 @@ const count = (k: number, one: string, few: string, many: string) => `${k} ${plu
 export const ru = {
   locale: 'ru-RU',
   langName: 'Русский',
-  /** The first-start dialog: every language says this in its own words. */
+  /** The first-start dialog: the option of this language, and the dialog's texts once it is picked. */
   chooseTitle: 'Язык перевода',
   choosePrompt: 'Норвежский текст, слова и объяснения — на русском',
   chooseLater: 'Изменить можно в настройках ⚙',
+  chooseSave: 'Сохранить',
   questions: (k: number) => count(k, 'вопрос', 'вопроса', 'вопросов'),
   errors: (k: number) => count(k, 'ошибка', 'ошибки', 'ошибок'),
   words: (k: number) => count(k, 'слово', 'слова', 'слов'),
