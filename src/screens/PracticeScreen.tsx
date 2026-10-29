@@ -37,12 +37,15 @@ function openRound(screen: PracticeScreenSpec, data: AppData, restored: boolean)
   const saved = data.practice;
   if (restored && saved && saved.mode === screen.mode && (screen.mode !== 'list' || sameSet(saved.ids, screen.ids ?? []))
     && (!screen.q || saved.ids.includes(screen.q))) {
-    return { ...saved, i: screen.q ? saved.ids.indexOf(screen.q) : saved.i };
+    return { ...saved, perm: { ...orders(saved.ids), ...saved.perm }, i: screen.q ? saved.ids.indexOf(screen.q) : saved.i };
   }
   let ids = buildList(screen, data.stats);
   if (screen.q) ids = [screen.q, ...ids.filter(x => x !== screen.q)];
-  return { mode: screen.mode, ids, i: 0, ans: {}, perm: {}, start: Date.now(), instant: data.prefs.reveal === 'instant' };
+  return { mode: screen.mode, ids, i: 0, ans: {}, perm: orders(ids), start: Date.now(), instant: data.prefs.reveal === 'instant' };
 }
+
+/** Every question's option order up front: moving on to the next question never waits a frame for it. */
+const orders = (ids: string[]) => Object.fromEntries(ids.map(id => [id, optionOrder(QUESTION_BY_ID[id])]));
 
 // React StrictMode mounts twice in development: don't play the start chime twice.
 let lastBegin = 0;

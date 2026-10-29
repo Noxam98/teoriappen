@@ -56,14 +56,15 @@ export function ExamScreen() {
   const locked = !!(E && id && instant && E.ans[id] !== undefined);
 
   // "right after the question": a tap only selects the option, «Sjekk» hands the answer in and shows the result
-  const [pending, setPending] = useState<number>();
-  useEffect(() => setPending(undefined), [id]);
+  // kept with its question, so the next question never shows it, not even for the first frame
+  const [picked, setPicked] = useState<{ id: string; oi: number }>();
+  const pending = picked && picked.id === id ? picked.oi : undefined;
   const [explainRef, showExplanation] = useRevealScroll();
   const checking = instant && !locked && pending !== undefined;
 
   const pick = (oi: number) => {
     if (!id || locked || !E) return;
-    if (instant) setPending(oi);
+    if (instant) setPicked({ id, oi });
     else change(s => ({ ...s, ans: { ...s.ans, [id]: oi } }));
   };
   const check = () => {
