@@ -33,12 +33,15 @@ export function Sheet({ title, children, actions, onClose, lang, closeLabel }: P
   useEffect(() => {
     const trigger = document.activeElement as HTMLElement | null;
     const root = document.getElementById('root');
-    root?.setAttribute('inert', '');
+    // a value, not "": the picture viewer opened over a sheet puts back what it found when it closes
+    root?.setAttribute('inert', 'true');
     document.body.classList.add('sheet-open');
     const target = box.current?.querySelector<HTMLElement>('[data-autofocus]') ?? box.current;
     target?.focus({ preventScroll: true });
 
     const key = (e: KeyboardEvent) => {
+      // a picture opened full screen from the sheet takes the keys (Esc closes the picture, not the sheet)
+      if (document.body.classList.contains('viewer-open')) return;
       if (e.key === 'Escape') { e.preventDefault(); closeRef.current(); return; }
       if (e.key !== 'Tab' || !box.current) return;
       const items = [...box.current.querySelectorAll<HTMLElement>(FOCUSABLE)];

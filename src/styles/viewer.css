@@ -1,0 +1,25 @@
+/* Pictures open full screen when tapped (a corner badge says so); the viewer shows them large and zoomable */
+.zoomable { position: relative; display: grid; min-width: 0; }
+.zoomable-btn { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; border-radius: var(--r); background: none; cursor: zoom-in; }
+.zoomable-ic { position: absolute; right: 7px; bottom: 7px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: color-mix(in srgb, var(--surface) 90%, transparent); color: var(--ink-2); box-shadow: 0 1px 3px rgba(16, 24, 40, .18); }
+.zoomable-ic svg { width: 16px; height: 16px; }
+@media (hover: hover) { .zoomable-btn:hover .zoomable-ic { color: var(--blue); } }
+.ritem .zoomable-ic { width: 24px; height: 24px; right: 4px; bottom: 4px; border-radius: 7px; }
+.ritem .zoomable-ic svg { width: 13px; height: 13px; }
+.t-sign .zoomable-btn { border-radius: 8px; }
+.t-sign .zoomable-ic { width: 20px; height: 20px; right: -7px; bottom: -7px; border-radius: 6px; }
+.t-sign .zoomable-ic svg { width: 12px; height: 12px; }
+
+.viewer { --yarl__color_backdrop: #080b0f; }
+.viewer-fig { display: grid; place-items: center; }
+.viewer-fig .fig { padding: clamp(14px, 4vw, 28px); border-radius: 22px; }
+.viewer-fig .fig .sign { height: min(60vh, 76vw); }
+.viewer-fig .fig .sign.wide { height: min(44vh, 52vw); }
+.viewer-fig .fig-signs { gap: clamp(10px, 3vw, 24px); }
+.viewer-fig .fig-signs .sign { height: min(32vh, 25vw); }
+.viewer-fig .fig .light { height: min(66vh, 110vw); }
+.viewer-fig .fig .road, .viewer-fig .fig .scene { width: min(88vw, 66vh); max-width: none; }
+.viewer-count { position: absolute; top: max(14px, env(safe-area-inset-top, 0px)); left: 16px; padding: 6px 12px; border-radius: 999px; background: rgba(255, 255, 255, .12); color: #fff; font-family: var(--display); font-weight: 600; pointer-events: none; }
+.viewer-caption { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px max(16px, env(safe-area-inset-left, 0px)) calc(16px + env(safe-area-inset-bottom, 0px)); background: linear-gradient(transparent, rgba(0, 0, 0, .7) 40%); color: #fff; text-align: center; pointer-events: none; }
+.viewer-caption p { max-width: 620px; margin: 0 auto; font-size: 1rem; line-height: 1.4; }
+.viewer-caption .viewer-tr { margin-top: 4px; color: rgba(255, 255, 255, .78); font-size: .92rem; }

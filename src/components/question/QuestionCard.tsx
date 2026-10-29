@@ -5,6 +5,7 @@ import { topicName, useLang, useT } from '../../i18n';
 import { playSound } from '../../lib/sound';
 import type { Question } from '../../types';
 import { Figure } from '../figures/Figure';
+import { Zoomable } from '../figures/viewer';
 import { Icon } from '../Icons';
 import { ShareButton } from '../ShareButton';
 
@@ -12,7 +13,7 @@ import { ShareButton } from '../ShareButton';
 export function QuestionBody({ q }: { q: Question }) {
   return (
     <div className={q.img ? 'qbody has-fig' : 'qbody'}>
-      <Figure spec={q.img} numbered={q.byNumber} />
+      {q.img && <Zoomable slide={{ type: 'figure', spec: q.img, numbered: q.byNumber }}><Figure spec={q.img} numbered={q.byNumber} /></Zoomable>}
       <p className="qtext" data-block lang="nb"><Words text={q.q} /></p>
     </div>
   );

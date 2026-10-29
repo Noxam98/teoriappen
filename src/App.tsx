@@ -4,6 +4,7 @@ import { savedScroll } from './lib/routes';
 import { setSoundPrefs } from './lib/sound';
 import { LanguageSheet } from './components/LanguageSheet';
 import { Toolbar } from './components/Toolbar';
+import { ViewerProvider } from './components/figures/viewer';
 import { BrushProvider } from './features/brush/BrushProvider';
 import { TranslationPopover } from './features/brush/TranslationPopover';
 import { ExamScreen } from './screens/ExamScreen';
@@ -65,7 +66,9 @@ export default function App() {
   return (
     <AppProvider>
       <BrushProvider>
-        <Layout />
+        <ViewerProvider>
+          <Layout />
+        </ViewerProvider>
       </BrushProvider>
     </AppProvider>
   );

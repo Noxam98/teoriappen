@@ -10,6 +10,7 @@ import { Words } from '../features/brush/Words';
 import { fill, topicName, useT } from '../i18n';
 import { savedScroll } from '../lib/routes';
 import { sectionIds } from '../lib/theory';
+import { GalleryProvider, useChapterGallery } from '../components/figures/viewer';
 import { wordsOf } from '../lib/text';
 import { useApp } from '../state/AppState';
 import type { CategoryId, TheoryChapter } from '../types';
@@ -141,6 +142,8 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
     return () => io.disconnect();
   }, [cat, isRead, update]);
 
+  // every picture of the chapter, so the full-screen viewer swipes from one to the next
+  const gallery = useChapterGallery(ch?.blocks ?? []);
   if (!ch) return null;
 
   return (
@@ -162,7 +165,9 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
       </header>
 
       <div className="chapter-body">
-        {ch.blocks.map((b, i) => <TheoryBlock key={i} b={b} show={show} section={sections[i]} />)}
+        <GalleryProvider value={gallery}>
+          {ch.blocks.map((b, i) => <TheoryBlock key={i} b={b} show={show} section={sections[i]} />)}
+        </GalleryProvider>
       </div>
 
       {!!ch.sources?.length && (

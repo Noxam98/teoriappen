@@ -3,6 +3,7 @@ import { tr, useT } from '../../i18n';
 import type { Lang, Norwegian, TheoryBlock as Block, TheoryLang, Translated } from '../../types';
 import { Figure } from '../figures/Figure';
 import { Sign } from '../figures/Sign';
+import { Zoomable } from '../figures/viewer';
 import { Icon } from '../Icons';
 
 /** How the reader wants the text: `mode` (both / Norwegian / translation only) and the translation's language. */
@@ -64,7 +65,7 @@ export function TheoryBlock({ b, show, section }: { b: Block; show: Show; sectio
   );
   if ('fig' in b) return (
     <figure className="t-fig">
-      <Figure spec={b.fig} />
+      <Zoomable slide={{ type: 'figure', spec: b.fig, caption: b }} from={b}><Figure spec={b.fig} /></Zoomable>
       <figcaption><TheoryText t={b} show={show} /></figcaption>
     </figure>
   );
@@ -72,7 +73,7 @@ export function TheoryBlock({ b, show, section }: { b: Block; show: Show; sectio
     <ul className="t-signs">
       {b.signs.map(item => (
         <li key={item.sign}>
-          <span className="t-sign"><Sign name={item.sign} /></span>
+          <span className="t-sign"><Zoomable slide={{ type: 'figure', spec: { sign: item.sign }, caption: item }} from={item}><Sign name={item.sign} /></Zoomable></span>
           <span className="t-sign-text"><SignName t={item} show={show} /></span>
         </li>
       ))}

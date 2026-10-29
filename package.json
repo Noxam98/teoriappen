@@ -16,7 +16,8 @@
     "@fontsource-variable/golos-text": "^5.3.0",
     "@fontsource/barlow-semi-condensed": "^5.3.0",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "yet-another-react-lightbox": "^3.32.2"
   },
   "devDependencies": {
     "@types/react": "^19.3.0",

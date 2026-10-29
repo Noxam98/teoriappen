@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { createExam, fixNumberedOrders, gradeExam, recordAnswer, setClock, testId } from '../lib/exam';
 import { fromHash, rememberScroll, setAddress, toHash } from '../lib/routes';
 import { playSound } from '../lib/sound';
@@ -85,7 +85,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
     return () => clearTimeout(t);
   }, [toast]);
 
-  useEffect(() => saveData(data), [data]);
+  // saved as soon as a change is on screen, before the page could be reloaded or closed
+  useLayoutEffect(() => saveData(data), [data]);
 
   // the exam clock stops while the tab is hidden, the browser is minimised or the app is closed
   useEffect(() => {

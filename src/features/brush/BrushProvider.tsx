@@ -123,7 +123,7 @@ export function BrushProvider({ children }: { children: ReactNode }) {
     };
 
     const key = (e: KeyboardEvent) => {
-      if (document.querySelector('.modal') || e.metaKey || e.ctrlKey || e.altKey) return;
+      if (document.querySelector('.modal') || document.body.classList.contains('viewer-open') || e.metaKey || e.ctrlKey || e.altKey) return;
       if ((e.target as Element).closest?.('input, textarea')) return;
       if (e.key === 'Escape') {
         if (requestRef.current) close();

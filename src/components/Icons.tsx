@@ -3,6 +3,7 @@ const PATHS = {
   cross: <path d="M6 6 L18 18 M18 6 L6 18" fill="none" stroke="currentColor" strokeWidth={2.6} strokeLinecap="round" />,
   close: <path d="M6 6 L18 18 M18 6 L6 18" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" />,
   flag: <path d="M6 21 V4 M6 4 H17 L14.5 8 L17 12 H6" fill="none" stroke="currentColor" strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />,
+  expand: <path d="M14 4 H20 V10 M20 4 L13.5 10.5 M10 20 H4 V14 M4 20 L10.5 13.5" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />,
   bookmark: <path d="M6.5 3.5 H17.5 V20.5 L12 16.3 L6.5 20.5 Z" fill="none" stroke="currentColor" strokeWidth={1.9} strokeLinejoin="round" />,
   grid: <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" fill="none" stroke="currentColor" strokeWidth={1.8} />,
   clock: <><circle cx={12} cy={13} r={8} fill="none" stroke="currentColor" strokeWidth={2} /><path d="M12 9 V13 L15 15 M9 2.5 H15" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" /></>,

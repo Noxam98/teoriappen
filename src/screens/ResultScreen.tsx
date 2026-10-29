@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { playSound } from '../lib/sound';
 import { Figure } from '../components/figures/Figure';
+import { Zoomable } from '../components/figures/viewer';
 import { ScoreGauge } from '../components/Gauges';
 import { Icon } from '../components/Icons';
 import { laterOf, ReadingList, ReadingSheet } from '../components/later/Reading';
@@ -140,7 +141,7 @@ function ReviewItem({ q, chosen, number }: { q: Question; chosen: number | undef
         <QuestionShare q={q} />
       </div>
       <div className={q.img ? 'ritem-body has-fig' : 'ritem-body'}>
-        <Figure spec={q.img} numbered={q.byNumber} />
+        {q.img && <Zoomable slide={{ type: 'figure', spec: q.img, numbered: q.byNumber }}><Figure spec={q.img} numbered={q.byNumber} /></Zoomable>}
         <p className="qtext" data-block lang="nb"><Words text={q.q} /></p>
       </div>
       {chosen !== undefined && !ok && <div className="ans bad"><Icon name="cross" /><span className="sr-only">{r.yourAnswer}</span><span data-block lang="nb"><Words text={q.a[chosen]} /></span></div>}
