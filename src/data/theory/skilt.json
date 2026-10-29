@@ -4,7 +4,7 @@
   "leadRu": "Знаки предупреждают об опасностях, устанавливают правила и сообщают, по какой дороге вы едете. Здесь вы научитесь узнавать пять групп знаков и узнаете, что значат самые важные из них.",
   "blocks": [
     { "h": "Fem grupper skilt", "ru": "Пять групп знаков" },
-    { "p": "Hver gruppe har sin egen form og farge. Da ser du hva slags skilt det er, før du ser symbolet.", "ru": "У каждой группы своя форма и свой цвет. Поэтому тип знака понятен ещё до того, как вы разглядите символ." },
+    { "p": "Hver gruppe har sin egen form og farge. Da vet du hva slags skilt det er, før du ser symbolet.", "ru": "У каждой группы своя форма и свой цвет. Поэтому тип знака понятен ещё до того, как вы разглядите символ." },
     { "signs": [
       ["fare_ujevn", "Fareskilt: trekantede med rød kant. De varsler om en fare lenger fram.", "Предупреждающие знаки: треугольные с красной каймой. Предупреждают об опасности впереди."],
       ["vikeplikt", "Vikeplikt- og forkjørsskilt: de viser hvem som skal vike. De har ulike former, for eksempel en trekant med spissen ned.", "Знаки приоритета: показывают, кто кому уступает. Формы у них разные, например треугольник вершиной вниз."],
@@ -58,14 +58,14 @@
     ] },
     { "rule": "Ved vikepliktskilt stanser du bare hvis det er nødvendig. Ved stoppskilt stanser du alltid helt – også når veien er fri og du har god oversikt.", "ru": "У знака «Уступите дорогу» останавливаются, только если нужно. У знака «Стоп» — всегда полностью, даже если дорога свободна и всё хорошо видно." },
     { "p": "Forkjørsveien gjelder fram til skiltet Slutt på forkjørsvei. Utenfor tettbygd strøk er det forbudt å parkere på forkjørsvei.", "ru": "Главная дорога действует до знака «Конец главной дороги». Вне населённых пунктов стоянка на главной дороге запрещена." },
-    { "trap": "Møteplikt og forkjørsrett ved møting er lette å blande. Den røde pilen viser alltid hvem som skal vike. Peker den oppover, i din retning, er det du. Peker den nedover, er det de møtende.", "ru": "Эти два знака легко перепутать. Красная стрелка всегда показывает того, кто уступает. Если она смотрит вверх, по вашему направлению, — уступаете вы. Если вниз — уступают встречные." },
+    { "trap": "Møteplikt og forkjørsrett ved møting er lette å blande. Den røde pilen viser alltid hvem som skal vike. Peker den oppover, i din retning, er det du – peker den nedover, er det de møtende.", "ru": "Эти два знака легко перепутать. Красная стрелка всегда показывает того, кто уступает. Если она смотрит вверх, по вашему направлению, — уступаете вы, если вниз — встречные." },
 
     { "h": "Forbudsskilt", "ru": "Запрещающие знаки" },
     { "p": "Forbudsskilt er som regel runde med rød kant. Et underskilt kan gi unntak, for eksempel for varelevering.", "ru": "Запрещающие знаки обычно круглые с красной каймой. Табличка под знаком может делать исключения, например для доставки товаров." },
     { "signs": [
       ["innkjoring_forbudt", "Innkjøring forbudt: du kan ikke kjøre inn fra denne siden. Skiltet står ofte i enden av en envegskjørt gate", "Въезд запрещён: с этой стороны въезжать нельзя. Часто стоит в конце улицы с односторонним движением"],
       ["forbudt_alle", "Forbudt for alle kjøretøy: du kan ikke kjøre her med noe kjøretøy", "Движение запрещено: здесь нельзя ехать ни на каком транспортном средстве"],
-      ["forbudt_motorvogn", "Forbudt for motorvogn: gjelder kjøretøy med motor, som bil og motorsykkel. Syklende kan kjøre her", "Движение механических ТС запрещено: касается всего с мотором — авто, мотоциклов. Велосипедистам можно"],
+      ["forbudt_motorvogn", "Forbudt for motorvogn: gjelder kjøretøy med motor, som bil og motorsykkel. Syklende kan kjøre her", "Движение механических ТС запрещено: касается всех транспортных средств с мотором, например автомобилей и мотоциклов. Велосипедистам можно"],
       ["forbudt_venstresving", "Forbudt å svinge til venstre", "Поворот налево запрещён"],
       ["forbudt_hoyresving", "Forbudt å svinge til høyre", "Поворот направо запрещён"],
       ["forbudt_uvending", "Forbudt å snu: pilen går rundt og tilbake (u-sving)", "Разворот запрещён: стрелка поворачивает назад"],
@@ -106,7 +106,7 @@
       ["gang_sykkelveg", "Gang- og sykkelvei: for gående og syklende. Motorvogn bare hvis et underskilt tillater det", "Пешеходно-велосипедная дорожка: для пешеходов и велосипедистов. Машинам — только если разрешает табличка"]
     ] },
     { "p": "Ved en rundkjøring står det som regel også et vikepliktskilt. Da skal du vike for dem som allerede kjører i rundkjøringen.", "ru": "У кругового движения обычно стоит и знак «Уступите дорогу». Тогда уступайте тем, кто уже едет по кругу." },
-    { "trap": "En pil kan bety tre ulike ting. På et påbudsskilt må du kjøre dit pilen viser. Har skiltet rød kant og en rød strek over pilen, er det forbudt å kjøre dit. På et firkantet blått skilt betyr pilen envegskjøring.", "ru": "Стрелка может означать три разных вещи. На предписывающем знаке (круглом синем) ехать нужно туда, куда она показывает. Если у знака красная кайма и красная черта поверх стрелки — туда ехать запрещено. На синем прямоугольном знаке стрелка означает одностороннее движение." },
+    { "trap": "En pil kan bety tre ulike ting. På et påbudsskilt må du kjøre dit pilen viser, men har skiltet rød kant og en rød strek over pilen, er det forbudt å kjøre dit. På et firkantet blått skilt betyr pilen envegskjøring.", "ru": "Стрелка может означать три разные вещи. На предписывающем знаке (круглом синем) ехать нужно туда, куда она показывает, а если у знака красная кайма и красная черта поверх стрелки — туда ехать запрещено. На синем прямоугольном знаке стрелка означает одностороннее движение." },
 
     { "h": "Opplysningsskilt", "ru": "Информационные знаки" },
     { "p": "Opplysningsskilt er som regel blå og firkantede. Mange av dem viser en type vei med egne regler.", "ru": "Информационные знаки обычно синие прямоугольные. Многие из них обозначают тип дороги со своими правилами." },

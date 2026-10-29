@@ -81,6 +81,10 @@ for (const file of chapters) {
   if (!CATS[cat]) err(id, `unknown category "${cat}"`);
   text(id, ch.lead, '"lead"'); text(id, ch.leadRu, '"leadRu"');
   checkWords(id, ch.lead);
+  for (const s of ch.sources ?? []) {
+    if (!Array.isArray(s) || s.length !== 2 || typeof s[0] !== 'string' || !/^https:\/\/\S+$/.test(s[1] ?? '')) err(id, `source must be ["title", "https://…"]: ${JSON.stringify(s)}`);
+  }
+  if (ch.checked !== undefined && !/^\d{4}-\d{2}$/.test(ch.checked)) err(id, '"checked" must look like "2026-10"');
   if (!Array.isArray(ch.blocks) || ch.blocks.length < 3) { err(id, 'needs at least 3 blocks'); continue; }
   ch.blocks.forEach((b, i) => {
     const bid = `${id} block ${i + 1}`;

@@ -66,6 +66,10 @@ export interface TheoryChapter {
   lead: string;
   leadRu: string;
   blocks: TheoryBlock[];
+  /** Official sources the chapter was checked against: [title, https URL]. */
+  sources?: [string, string][];
+  /** When the facts were last checked against the sources (YYYY-MM). */
+  checked?: string;
 }
 
 export interface Question {

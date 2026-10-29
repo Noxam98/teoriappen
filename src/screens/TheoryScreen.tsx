@@ -23,6 +23,9 @@ function minutes(ch: TheoryChapter): number {
 
 const questionsIn = (cat: CategoryId) => QUESTIONS.filter(q => q.cat === cat).length;
 
+/** "2026-10" → "октябрь 2026" */
+const fmtMonth = (ym: string) => new Date(`${ym}-01T12:00:00`).toLocaleDateString('ru-RU', { month: 'long', year: 'numeric' }).replace(/\s*г\.?$/, '');
+
 export function TheoryScreen() {
   const { data, go, startExam } = useApp();
   const read = THEORY.filter(t => data.read[t.cat]).length;
@@ -34,6 +37,7 @@ export function TheoryScreen() {
         <div className="eyebrow">Teori</div>
         <h1>Теория</h1>
         <p className="muted">Главное из правил по каждой теме экзамена. Текст на норвежском, под каждым абзацем — перевод, а любое слово можно перевести кнопкой «Перевод».</p>
+        <p className="theory-note">Главы сверены с официальными источниками — законами на Lovdata и страницами Statens vegvesen; ссылки в конце каждой главы. Правила иногда меняются: перед экзаменом сверяйтесь с <a href="https://www.vegvesen.no/forerkort/" target="_blank" rel="noopener noreferrer">vegvesen.no</a>.</p>
       </div>
 
       <div className="theory-progress panel">
@@ -133,6 +137,15 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
       <div className="chapter-body">
         {ch.blocks.map((b, i) => <TheoryBlock key={i} b={b} ru={ru} />)}
       </div>
+
+      {!!ch.sources?.length && (
+        <section className="sources" aria-labelledby="sources-title">
+          <h2 id="sources-title">Источники{ch.checked && <small className="tnum"> · проверено {fmtMonth(ch.checked)}</small>}</h2>
+          <ul>
+            {ch.sources.map(([title, url]) => <li key={url}><a href={url} target="_blank" rel="noopener noreferrer">{title}</a></li>)}
+          </ul>
+        </section>
+      )}
 
       <div className="chapter-end" ref={end}>
         {isRead && <p className="ch-done"><Icon name="check" />Глава прочитана</p>}
