@@ -21,6 +21,18 @@ const neg = ([x, y]: Vec): Vec => [-x, -y];
 const f = (n: number) => n.toFixed(1);
 const pt = (p: Vec) => `${f(p[0])} ${f(p[1])}`;
 
+/** Pedestrian pictogram with a white outline, centred on (x, y), facing right unless `flip`. */
+function Walker({ x, y, flip }: { x: number; y: number; flip: boolean }) {
+  const s = 0.8;
+  return (
+    <g transform={`translate(${f(x)} ${f(y)}) scale(${flip ? -s : s} ${s}) translate(-19 -20)`} data-ped="">
+      <Person c="#fff" sw={9} />
+      <circle cx={21} cy={5} r={7} fill="#fff" />
+      <Person c="#111" />
+    </g>
+  );
+}
+
 function destination(from: Leg, go: 'straight' | 'left' | 'right'): Leg {
   const i = ORDER.indexOf(from);
   return go === 'straight' ? ORDER[(i + 2) % 4] : go === 'left' ? ORDER[(i + 1) % 4] : ORDER[(i + 3) % 4];
@@ -104,7 +116,8 @@ export function JunctionScene({ scene }: { scene: Scene }) {
 
       {ped.map(leg => {
         const o = OUT[leg], across = rightOf(o), mid = add(C, o, HW + 16), horizontal = o[0] !== 0;
-        const walker = add(mid, across, -HW - 2);
+        // walks along `across`: from the kerb on one side over to the other side
+        const walker = add(mid, across, scene.pedAt === 'crossing' ? -HW + 13 : -HW - 9);
         return (
           <g key={`ped${leg}`}>
             {Array.from({ length: 6 }, (_, k) => -HW + 2 + k * 10).map(k => {
@@ -113,7 +126,7 @@ export function JunctionScene({ scene }: { scene: Scene }) {
                 ? <rect key={k} x={p[0] - 7} y={Math.min(p[1], p[1] + 6 * across[1])} width={14} height={6} fill={WHITE} />
                 : <rect key={k} x={Math.min(p[0], p[0] + 6 * across[0])} y={p[1] - 7} width={6} height={14} fill={WHITE} />;
             })}
-            <g transform={`translate(${f(walker[0] - 8)} ${f(walker[1] - 9)}) scale(.42)`} data-ped=""><Person c="#111" /></g>
+            <Walker x={walker[0]} y={walker[1]} flip={across[0] < 0} />
           </g>
         );
       })}

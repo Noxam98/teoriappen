@@ -34,7 +34,7 @@ export function VocabScreen() {
       <div className="page-head">
         <div className="eyebrow">Ordliste</div>
         <h1>Мой словарь</h1>
-        <p className="muted">{list.length ? `${list.length} ${plural(list.length, 'слово', 'слова', 'слов')}, сохранённых кистью` : 'Здесь появятся слова, которые вы сохраните кистью.'}</p>
+        <p className="muted">{list.length ? `${list.length} ${plural(list.length, 'слово', 'слова', 'слов')} из переводов` : 'Здесь появятся слова, которые вы сохраните из перевода.'}</p>
       </div>
       {list.length ? (
         <div className="vlist">
@@ -51,8 +51,8 @@ export function VocabScreen() {
         </div>
       ) : (
         <div className="empty how">
-          <Icon name="brush" />
-          <p>Включите <b>кисть</b> в панели сверху, проведите по незнакомому слову в вопросе и нажмите <b>«В словарь»</b>.</p>
+          <Icon name="translate" />
+          <p>Нажмите <b>«Перевод»</b> в панели сверху, затем на незнакомое слово в вопросе и <b>«В словарь»</b>.</p>
         </div>
       )}
       <div className="toast-slot" role="status">

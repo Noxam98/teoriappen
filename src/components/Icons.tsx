@@ -23,6 +23,14 @@ const PATHS = {
   shuffle: <path d="M3 7 H7 Q10 7 12 11 L13 13 Q15 17 18 17 H21 M3 17 H7 Q9 17 10.5 15 M13.5 9 Q15 7 18 7 H21 M18.5 4.5 L21 7 L18.5 9.5 M18.5 14.5 L21 17 L18.5 19.5" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
   redo: <path d="M4 12 A8 8 0 1 0 7 5.8 M4 4 V8.5 H8.5" fill="none" stroke="currentColor" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round" />,
   home: <path d="M4 11 L12 4 L20 11 M6.5 9 V20 H10 V14.5 H14 V20 H17.5 V9" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
+  translate: (
+    <>
+      <rect x={2.5} y={3} width={11} height={11} rx={2.5} fill="none" stroke="currentColor" strokeWidth={1.7} />
+      <text x={8} y={12.3} textAnchor="middle" fontSize={7.6} fontWeight={700} fontFamily="Arial, sans-serif" fill="currentColor">Å</text>
+      <rect x={10.5} y={10} width={11} height={11} rx={2.5} fill="var(--yellow)" stroke="currentColor" strokeWidth={1.7} />
+      <text x={16} y={18.8} textAnchor="middle" fontSize={8.2} fontWeight={700} fontFamily="Arial, sans-serif" fill="#1c1700">Я</text>
+    </>
+  ),
   brush: (
     <>
       <path d="M14.5 9.5 L19.8 4.2 a1.6 1.6 0 0 1 2.3 2.3 L16.8 11.8 Z" fill="currentColor" />

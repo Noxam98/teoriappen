@@ -72,6 +72,7 @@ function checkFigure(id, img) {
       if (!legs.includes(leg)) err(id, `sign on missing leg "${leg}"`);
       if (!['vikeplikt', 'stopp', 'forkjorsveg'].includes(sign)) err(id, `sign "${sign}" not allowed in scenes`);
     }
+    if (s.pedAt !== undefined && !['kerb', 'crossing'].includes(s.pedAt)) err(id, `scene.pedAt must be "kerb" or "crossing"`);
     for (const v of s.veh ?? []) {
       if (!legs.includes(v.from)) err(id, `vehicle ${v.id} comes from missing leg "${v.from}"`);
       if (v.kind && !KINDS.includes(v.kind)) err(id, `unknown vehicle kind "${v.kind}"`);

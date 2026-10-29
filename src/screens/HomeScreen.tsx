@@ -30,7 +30,7 @@ export function HomeScreen() {
           <div className="hero-title">
             <div className="eyebrow">Førerkort klasse B</div>
             <h1>Teoriprøven</h1>
-            <p>Тренажёр теоретического экзамена. Вопросы на норвежском, перевод любого слова — волшебной кистью.</p>
+            <p>Тренажёр теоретического экзамена. Вопросы на норвежском, а любое слово можно перевести кнопкой «Перевод» вверху.</p>
           </div>
           <ProgressRing value={ready} label={`${Math.round(ready * 100)}%`} sub="готово" />
         </div>

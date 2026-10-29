@@ -1,5 +1,5 @@
-// The magic brush: switch it on in the toolbar, then tap a word or drag across several words to
-// "paint" them — a popover shows the Russian translation. Selecting text first and then pressing
+// Word translation ("Перевод" in the toolbar; internally the brush): switch it on, then tap a word or
+// drag across several words to highlight them — a popover shows the Russian translation. Selecting text first and then pressing
 // the brush button translates the selection.
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { wordsOf } from '../../lib/text';
@@ -128,7 +128,7 @@ export function BrushProvider({ children }: { children: ReactNode }) {
       if (e.key === 'Escape') {
         if (requestRef.current) close();
         else if (onRef.current) setOn(false);
-      } else if (['b', 'B', 'и', 'И'].includes(e.key)) setOn(!onRef.current);
+      } else if (['t', 'T', 'е', 'Е', 'b', 'B', 'и', 'И'].includes(e.key)) setOn(!onRef.current);
     };
 
     document.addEventListener('pointerdown', down);

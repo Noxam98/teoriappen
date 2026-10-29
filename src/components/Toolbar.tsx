@@ -40,8 +40,8 @@ export function Toolbar() {
         <div className="tools">
           <button id="brushBtn" className={`tool brush${firstVisit ? ' pulse' : ''}`} aria-pressed={brush.on}
             onPointerDown={brush.keepSelection} onClick={pressBrush}
-            title="Волшебная кисть: проведите по слову, чтобы увидеть перевод (клавиша B)">
-            <Icon name="brush" /><span>Кисть</span>
+            title="Перевод слов: нажмите на слово или проведите по нескольким словам (клавиша T)">
+            <Icon name="translate" /><span>Перевод</span>
           </button>
           <button className="tool icon" onClick={() => go({ name: 'vocab' })} title="Мой словарь" aria-label={`Мой словарь, слов: ${data.vocab.length}`}>
             <Icon name="book" />{data.vocab.length > 0 && <span className="badge">{data.vocab.length}</span>}
@@ -54,9 +54,9 @@ export function Toolbar() {
       {brush.on && (
         <div className="brushhint">
           <div className="wrap">
-            <Icon name="brush" />
-            <span className="hint-long">Кисть включена: нажмите на слово или проведите по нескольким словам. Выключить — кнопка «Кисть» или Esc.</span>
-            <span className="hint-short">Нажмите на слово или проведите по словам</span>
+            <Icon name="translate" />
+            <span className="hint-long">Перевод включён: нажмите на норвежское слово или проведите по нескольким словам. Выключить — кнопка «Перевод» или Esc.</span>
+            <span className="hint-short">Нажмите на слово — появится перевод</span>
           </div>
         </div>
       )}

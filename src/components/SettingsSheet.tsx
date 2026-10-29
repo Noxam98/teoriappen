@@ -52,7 +52,7 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
 
       <section className="setting">
         <label className="switch-row">
-          <span><b>Звуки</b><small>Ответы, начало и итог экзамена, таймер, кисть</small></span>
+          <span><b>Звуки</b><small>Ответы, начало и итог экзамена, таймер, перевод слов</small></span>
           <input type="checkbox" className="switch" checked={prefs.sound}
             onChange={e => { set({ sound: e.target.checked }); if (e.target.checked) { setSoundPrefs(true, prefs.volume); playSound('correct'); } }} />
         </label>

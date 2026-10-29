@@ -28,6 +28,8 @@ export interface Scene {
   veh: SceneVehicle[];
   /** Legs with a zebra crossing and a pedestrian. */
   ped?: Leg[];
+  /** Where the pedestrian is: waiting at the kerb (default) or already walking on the crossing. */
+  pedAt?: 'kerb' | 'crossing';
 }
 
 export type Figure =
