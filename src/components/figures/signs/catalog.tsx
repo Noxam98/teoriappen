@@ -32,7 +32,8 @@ const SIGNS: Record<string, () => ReactElement> = {
   // ---- Fareskilt (warning) ----
   fare_sving_h: () => <Triangle><path d="M44 76 V60 Q44 50 52 47 L60 44" fill="none" stroke={ink} strokeWidth={6.5} /></Triangle>,
   fare_sving_v: () => <Triangle><path d="M56 76 V60 Q56 50 48 47 L40 44" fill="none" stroke={ink} strokeWidth={6.5} /></Triangle>,
-  fare_svinger: () => <Triangle><path d="M44 77 V68 Q44 62 52 60 Q58 58 56 52 Q54 47 46 44" fill="none" stroke={ink} strokeWidth={6} /></Triangle>,
+  // first a bend to the right, then one to the left, and the road goes on ahead (it does not curl back like a «?»)
+  fare_svinger: () => <Triangle><path d="M43 76 V69.5 C43 62 59 63 59 54.5 C59 46.5 47 47.5 47 40" fill="none" stroke={ink} strokeWidth={6.5} /></Triangle>,
   fare_bakke_ned: () => (
     <Triangle>
       <path d="M34 75 H69 L34 57 Z" fill={ink} />
