@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="900"
+   height="480"
+   version="1.0"
+   id="svg1324"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Stamvei_E6Ø.svg"
+   sodipodi:docbase="/home/malarz/wiki"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata1335">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1333">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 65 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="210 : 65 : 1"
+       inkscape:persp3d-origin="105 : 43.333333 : 1"
+       id="perspective11" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="945"
+     inkscape:window-width="1251"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.6875001"
+     inkscape:cx="432.2348"
+     inkscape:cy="267.48637"
+     inkscape:window-x="21"
+     inkscape:window-y="0"
+     inkscape:current-layer="svg1324"
+     showgrid="false"
+     inkscape:showpageshadow="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9551"
+       visible="true"
+       enabled="true" />
+  </sodipodi:namedview>
+  <rect
+     x="0"
+     y="0"
+     width="900"
+     height="480"
+     id="rect1326"
+     style="fill:#009966;fill-opacity:1;stroke:none;stroke-width:0.26707691" />
+  <rect
+     x="1"
+     y="1"
+     width="898"
+     height="478"
+     rx="45.012531"
+     ry="40"
+     id="rect2061"
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.25709069" />
+  <rect
+     id="rect1339"
+     ry="20"
+     rx="22.631578"
+     height="440"
+     width="860"
+     y="20"
+     x="20"
+     style="fill:#009966;fill-opacity:1;stroke:none;stroke-width:0.2336842" />
+  <g
+     id="g2488"
+     transform="translate(-38.92565,0)">
+    <text
+       transform="scale(0.9075219,1.1019018)"
+       sodipodi:linespacing="125%"
+       id="text2801"
+       y="327.55249"
+       x="243.35611"
+       style="font-size:304.27365112px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       xml:space="preserve"><tspan
+         y="327.55249"
+         x="243.35611"
+         id="tspan2383"
+         sodipodi:role="line">E</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:297.97271729px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       x="472.17877"
+       y="323.07053"
+       id="text9547"
+       sodipodi:linespacing="125%"
+       transform="scale(0.9075219,1.1019018)"><tspan
+         sodipodi:role="line"
+         id="tspan9549"
+         x="472.17877"
+         y="323.07053">6</tspan></text>
+    <text
+       transform="scale(0.9075219,1.1019018)"
+       sodipodi:linespacing="100%"
+       id="text9773"
+       y="322.92502"
+       x="729.4295"
+       style="font-size:297.97271729px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan2551">Ø</tspan></text>
+  </g>
+</svg>

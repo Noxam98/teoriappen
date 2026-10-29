@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="600"
+   height="360"
+   viewBox="0 0 158.75 95.250003"
+   version="1.1"
+   id="svg2528">
+  <defs
+     id="defs2522" />
+  <metadata
+     id="metadata2525">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-17.403093,-58.874722)"
+     id="layer1" />
+  <rect
+     y="-7.1054274e-15"
+     x="0"
+     height="95.25"
+     width="158.75"
+     id="rect816"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="rect818"
+     transform="scale(0.26458334)"
+     d="M 36 9 C 21.042 9 9 21.042 9 36 L 9 324 C 9 338.958 21.042 351 36 351 L 564 351 C 578.958 351 591 338.958 591 324 L 591 36 C 591 21.042 578.958 9 564 9 L 36 9 z M 36 27 L 564 27 C 568.986 27 573 31.014 573 36 L 573 324 C 573 328.986 568.986 333 564 333 L 36 333 C 31.014 333 27 328.986 27 324 L 27 36 C 27 31.014 31.014 27 36 27 z "
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <g
+     id="text826"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:79.25753784px;line-height:125%;font-family:'Trafikkalfabetet Pro';-inkscape-font-specification:'Trafikkalfabetet Pro Bold';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="scale(0.99852009,1.0014821)"
+     aria-label="116">
+    <path
+       id="path908"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Trafikkalfabetet Pro';-inkscape-font-specification:'Trafikkalfabetet Pro Bold';stroke-width:0.26458335px"
+       d="m 38.64405,37.647326 5.15174,-2.932529 v 36.616982 h 8.322042 V 23.777257 H 43.79579 l -5.15174,5.15174 z" />
+    <path
+       id="path910"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Trafikkalfabetet Pro';-inkscape-font-specification:'Trafikkalfabetet Pro Bold';stroke-width:0.26458335px"
+       d="m 62.483232,37.647326 5.15174,-2.932529 v 36.616982 h 8.322042 V 23.777257 h -8.322042 l -5.15174,5.15174 z" />
+    <path
+       id="path912"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Trafikkalfabetet Pro';-inkscape-font-specification:'Trafikkalfabetet Pro Bold';stroke-width:0.26458335px"
+       d="m 96.546636,54.766954 c 0,-4.279907 3.487334,-7.767239 7.767244,-7.767239 4.2799,0 7.76723,3.487332 7.76723,7.767239 v 2.139954 c 0,4.279907 -3.48733,7.767238 -7.76723,7.767238 -4.27991,0 -7.767244,-3.487331 -7.767244,-7.767238 z m 23.856524,0 c 0,-8.559814 -6.97467,-15.534477 -15.53448,-15.534477 -2.93253,0 -5.54803,1.030348 -7.687983,2.694756 1.188863,-5.706543 3.883623,-11.492343 8.956103,-11.492343 2.21921,0 4.20065,0.871833 5.62728,2.377726 l 5.31026,-5.706543 c -2.77402,-2.853271 -6.57838,-4.438422 -10.93754,-4.438422 -9.273133,0 -18.229235,9.273132 -18.229235,28.849744 0,15.375962 8.718329,20.92399 16.961115,20.92399 8.55981,0 15.53448,-6.974663 15.53448,-15.534477 z" />
+  </g>
+</svg>

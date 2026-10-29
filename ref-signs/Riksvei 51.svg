@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="480"
+   height="360"
+   viewBox="0 0 127 95.250003"
+   version="1.1"
+   id="svg2528">
+  <defs
+     id="defs2522" />
+  <metadata
+     id="metadata2525">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-17.403093,-58.874722)"
+     id="layer1" />
+  <path
+     id="rect816"
+     d="M 0,0 H 127 V 95.25 H 0 Z"
+     style="fill:#00965e;stroke:#00965e;stroke-width:0.5291667" />
+  <g
+     id="text826"
+     style="font-weight:bold;font-size:79.25753784px;font-family:'Trafikkalfabetet Pro';-inkscape-font-specification:'Trafikkalfabetet Pro Bold';letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335px"
+     transform="scale(0.99852009,1.0014821)"
+     aria-label="51">
+    <path
+       id="path2984"
+       style="-inkscape-font-specification:'Trafikkalfabetet Pro Bold'"
+       d="m 38.939446,46.286398 7.212436,1.981438 c 1.822923,-1.030348 3.883619,-1.664408 6.10283,-1.664408 3.962877,0 7.212436,3.170301 7.212436,7.133178 v 3.804362 c 0,3.962877 -3.249559,7.133178 -7.212436,7.133178 -3.725104,0 -7.053921,-1.505893 -9.352389,-4.042134 l -5.627285,5.310255 c 3.725104,3.962877 9.114616,6.499118 14.979674,6.499118 8.242784,0 15.534478,-6.657633 15.534478,-14.900417 v -3.804362 c 0,-8.242784 -7.291694,-14.900417 -15.534478,-14.900417 -1.743666,0 -3.408074,0.237773 -4.993225,0.63406 V 31.544495 H 66.679584 V 23.777257 H 38.939446 Z" />
+    <path
+       id="path2986"
+       style="-inkscape-font-specification:'Trafikkalfabetet Pro Bold'"
+       d="m 76.439405,37.647326 5.15174,-2.932529 v 36.616982 h 8.322042 V 23.777257 h -8.322042 l -5.15174,5.15174 z" />
+  </g>
+  <path
+     id="rect950"
+     d="M 7.9374994,-3.7500001e-7 C 3.5401243,-3.7500001e-7 -7.5000003e-7,3.5401247 -7.5000003e-7,7.9374998 V 87.312502 c 0,4.397375 3.54012505000003,7.9375 7.93750015000003,7.9375 H 119.0625 c 4.39738,0 7.9375,-3.540125 7.9375,-7.9375 V 7.9374998 C 127,3.5401247 123.45988,-3.7500001e-7 119.0625,-3.7500001e-7 Z m 0,3.96875007500001 H 119.0625 c 2.19869,0 3.96875,1.7700625 3.96875,3.9687501 V 87.312502 c 0,2.198688 -1.77006,3.96875 -3.96875,3.96875 H 7.9374994 c -2.1986875,0 -3.9687501,-1.770062 -3.9687501,-3.96875 V 7.9374998 c 0,-2.1986876 1.7700626,-3.9687501 3.9687501,-3.9687501 z"
+     style="fill:#ffffff;stroke-width:0.26458335" />
+</svg>

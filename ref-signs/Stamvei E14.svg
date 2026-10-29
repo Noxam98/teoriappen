@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2528"
+   version="1.1"
+   viewBox="0 0 179.91667 95.250003"
+   height="360"
+   width="680">
+  <defs
+     id="defs2522" />
+  <metadata
+     id="metadata2525">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="translate(-17.403092,-58.874722)" />
+  <path
+     id="rect816"
+     d="M 7.5000003e-7,3.7499997e-7 H 179.91667 V 95.25 H 7.5000003e-7 Z"
+     style="fill:#00965e;stroke-width:0.5291667" />
+  <path
+     d="M 31.777889,71.4375 H 60.94672 V 63.817499 H 39.918029 V 50.4825 H 55.248623 V 42.862499 H 39.918029 v -11.43 H 60.94672 v -7.62 H 31.777889 Z"
+     style="-inkscape-font-specification:'Trafikkalfabetet Pro Bold';fill:#ffffff"
+     id="path1136" />
+  <path
+     d="m 91.077427,37.703123 5.144116,-2.936875 V 71.4375 h 8.309717 V 23.812497 h -8.309717 l -5.144116,5.159376 z"
+     style="-inkscape-font-specification:'Trafikkalfabetet Pro Bold';fill:#ffffff"
+     id="path1140" />
+  <path
+     d="m 148.12023,54.76875 h -3.87787 V 23.812497 h -10.28823 l -20.65561,31.511877 v 7.223125 h 22.63411 V 71.4375 h 8.30973 v -8.890001 h 3.87787 z m -25.1666,0 12.979,-19.843752 V 54.76875 Z"
+     style="-inkscape-font-specification:'Trafikkalfabetet Pro Bold';fill:#ffffff"
+     id="path1142" />
+  <path
+     style="fill:#ffffff;stroke-width:0.26458335"
+     d="M 7.9375002,0 C 3.5401251,0 0,3.5401251 0,7.9375002 V 87.312502 c 0,4.397375 3.5401251,7.9375 7.9375002,7.9375 H 171.97917 c 4.39738,0 7.9375,-3.540125 7.9375,-7.9375 V 7.9375002 C 179.91667,3.5401251 176.37655,0 171.97917,0 Z m 0,3.9687501 H 171.97917 c 2.19869,0 3.96875,1.7700625 3.96875,3.9687501 V 87.312502 c 0,2.198688 -1.77006,3.96875 -3.96875,3.96875 H 7.9375002 c -2.1986875,0 -3.9687501,-1.770062 -3.9687501,-3.96875 V 7.9375002 c 0,-2.1986876 1.7700626,-3.9687501 3.9687501,-3.9687501 z"
+     id="rect950" />
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="482"
+   height="362"
+   viewBox="0 0 127.5 95.77"
+   version="1.1"
+   id="svg2528">
+  <defs
+     id="defs2522" />
+  <metadata
+     id="metadata2525">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-17.14,-58.6)"
+     id="layer1" />
+  <path
+     id="rect816"
+     d="M 0.2646,0.2713 H 127.3 V 95.52 H 0.2646 Z"
+     style="fill:#00965e;stroke:#00965e;stroke-width:0.5292" />
+  <g
+     aria-label="33"
+     transform="matrix(0.999,0,0,1.001,38.89,22.96)"
+     id="text826"
+     style="font-weight:bold;font-size:79.22560000000000002px;font-family:'Trafikkalfabetet Pro';-inkscape-font-specification:'Trafikkalfabetet Pro Bold';letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;stroke-width:0.26447700000000002px">
+    <path
+       d="m 2.853,27.66 h 2.218 c 3.961,0 7.209,3.25 7.209,7.21 0,3.96 -3.248,7.13 -7.209,7.13 -3.169,0 -5.9418,-2.06 -6.813,-4.99 l -8.16,2.53 c 1.98,5.94 7.684,10.22 14.339,10.22 h 1.189 c 8.244,0 14.974,-6.65 14.974,-14.89 0,-4.68 -2.3,-8.8 -5.86,-11.33 2.85,-2.22 4.75,-5.71 4.75,-9.67 C 19.49,6.188 13.31,0.0083 5.626,0.0083 h -1.03 c -6.101,0 -11.567,3.8027 -13.389,9.2697 l 8.1599,2.692 C 0.1592,9.515 2.298,7.772 5.071,7.772 c 3.407,0 6.099,2.698 6.099,6.098 0,3.25 -2.454,6.02 -5.623,6.02 H 2.853 Z"
+       style="-inkscape-font-specification:'Trafikkalfabetet Pro Bold'"
+       id="path1547" />
+    <path
+       d="m 42,27.66 h 2.22 c 3.96,0 7.21,3.25 7.21,7.21 0,3.96 -3.25,7.13 -7.21,7.13 -3.17,0 -5.94,-2.06 -6.81,-4.99 l -8.16,2.53 c 1.98,5.94 7.68,10.22 14.34,10.22 h 1.18 c 8.24,0 14.98,-6.65 14.98,-14.89 0,-4.68 -2.3,-8.8 -5.86,-11.33 2.85,-2.22 4.75,-5.71 4.75,-9.67 0,-7.682 -6.18,-13.8617 -13.87,-13.8617 h -1.03 c -6.1,0 -11.56,3.8027 -13.38,9.2697 l 8.16,2.692 c 0.79,-2.455 2.93,-4.198 5.7,-4.198 3.41,0 6.1,2.698 6.1,6.098 0,3.25 -2.46,6.02 -5.62,6.02 H 42 Z"
+       style="-inkscape-font-specification:'Trafikkalfabetet Pro Bold'"
+       id="path1549" />
+  </g>
+  <path
+     id="rect950"
+     d="m 8.205,0.2713 c -4.4,0 -7.9404,3.5397 -7.9404,7.9397 V 87.58 c 0,4.4 3.5404,7.94 7.9404,7.94 H 119.4 c 4.4,0 7.9,-3.54 7.9,-7.94 V 8.211 c 0,-4.4 -3.5,-7.9397 -7.9,-7.9397 z m 0,3.9697 H 119.4 c 2.2,0 3.9,1.77 3.9,3.97 V 87.58 c 0,2.2 -1.7,3.97 -3.9,3.97 H 8.205 c -2.2,0 -3.97,-1.77 -3.97,-3.97 V 8.211 c 0,-2.2 1.77,-3.97 3.97,-3.97 z"
+     style="fill:#ffffff;stroke-width:0.2646" />
+</svg>

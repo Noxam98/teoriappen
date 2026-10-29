@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2528"
+   version="1.1"
+   viewBox="0 0 170.65625 95.250003"
+   height="360"
+   width="645"
+   sodipodi:docname="Riksvei_400.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="1.7029488"
+     inkscape:cx="384.48949"
+     inkscape:cy="180"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2528" />
+  <defs
+     id="defs2522" />
+  <metadata
+     id="metadata2525">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="translate(-17.403092,-58.874722)" />
+  <path
+     id="rect816"
+     d="M 7.5000003e-7,3.75e-7 H 170.65625 V 95.25 H 7.5000003e-7 Z"
+     style="fill:#00965e;stroke-width:0.61341131"
+     inkscape:connector-curvature="0" />
+  <path
+     inkscape:connector-curvature="0"
+     d="M 58.334248,54.76875 H 54.456376 V 23.812497 H 44.168144 L 23.512541,55.324374 v 7.223125 h 22.63411 V 71.4375 h 8.309725 v -8.890001 h 3.877872 z m -25.166598,0 12.979001,-19.843752 V 54.76875 Z"
+     style="font-weight:bold;font-size:79.25753784px;font-family:'Trafikkalfabetet Pro';-inkscape-font-specification:'Trafikkalfabetet Pro Bold';letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335px"
+     id="path2123" />
+  <path
+     inkscape:connector-curvature="0"
+     d="m 67.021125,47.624999 c 0,17.145001 7.834885,24.923751 17.410854,24.923751 9.57597,0 17.410851,-7.77875 17.410851,-24.923751 0,-17.145001 -7.834881,-24.923752 -17.410851,-24.923752 -9.575969,0 -17.410854,7.778751 -17.410854,24.923752 z m 8.309726,0 c 0,-9.604376 3.007329,-17.145001 9.101128,-17.145001 6.093798,0 9.101128,7.540625 9.101128,17.145001 0,9.604375 -3.00733,17.145001 -9.101128,17.145001 -6.093799,0 -9.101128,-7.540626 -9.101128,-17.145001 z"
+     style="font-weight:bold;font-size:79.25753784px;font-family:'Trafikkalfabetet Pro';-inkscape-font-specification:'Trafikkalfabetet Pro Bold';letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335px"
+     id="path2125" />
+  <path
+     style="fill:#ffffff;stroke-width:0.30670565"
+     d="M 10.666016,0 C 4.7570433,0 0,3.5401251 0,7.9375002 V 87.312502 c 0,4.397375 4.7570433,7.9375 10.666016,7.9375 H 159.99024 c 5.90897,0 10.66601,-3.540125 10.66601,-7.9375 V 7.9375002 C 170.65625,3.5401251 165.89921,0 159.99024,0 Z m 0,3.9687501 H 159.99024 c 2.95449,0 5.33302,1.7700625 5.33302,3.9687501 V 87.312502 c 0,2.198688 -2.37853,3.96875 -5.33302,3.96875 H 10.666016 c -2.954486,0 -5.3330077,-1.770062 -5.3330077,-3.96875 V 7.9375002 c 0,-2.1986876 2.3785217,-3.9687501 5.3330077,-3.9687501 z"
+     id="rect950"
+     inkscape:connector-curvature="0" />
+  <path
+     inkscape:connector-curvature="0"
+     d="m 112.44792,47.625 c 0,17.145001 7.83488,24.923751 17.41085,24.923751 9.57597,0 17.41086,-7.77875 17.41086,-24.923751 0,-17.145001 -7.83489,-24.923752 -17.41086,-24.923752 -9.57597,0 -17.41085,7.778751 -17.41085,24.923752 z m 8.30973,0 c 0,-9.604376 3.00732,-17.145001 9.10112,-17.145001 6.0938,0 9.10113,7.540625 9.10113,17.145001 0,9.604376 -3.00733,17.145001 -9.10113,17.145001 -6.0938,0 -9.10112,-7.540625 -9.10112,-17.145001 z"
+     style="font-weight:bold;font-size:79.25753784px;font-family:'Trafikkalfabetet Pro';-inkscape-font-specification:'Trafikkalfabetet Pro Bold';letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;stroke-width:0.26458335px"
+     id="path2125-1" />
+</svg>
