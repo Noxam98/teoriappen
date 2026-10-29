@@ -101,3 +101,7 @@
 
 .flagbtn[aria-pressed="true"] { background: var(--note); border-color: var(--flag); }
 .flagbtn svg { color: var(--flag); }
+
+/* "серия 5" — correct answers in a row (practice) */
+.streak-chip { font-family: var(--display); font-weight: 700; font-size: .95rem; padding: 2px 9px; border-radius: 8px; background: var(--note); color: var(--streak-ink); border: 1px solid var(--flag); animation: streak-pop .3s cubic-bezier(.2, 1.5, .4, 1); white-space: nowrap; }
+@keyframes streak-pop { from { transform: scale(.6); } }

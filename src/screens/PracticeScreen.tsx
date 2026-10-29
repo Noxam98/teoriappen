@@ -7,7 +7,8 @@ import { QuestionCard } from '../components/question/QuestionCard';
 import { CATEGORY, QUESTIONS, QUESTION_BY_ID } from '../data';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
 import { wrongQuestionIds } from '../lib/exam';
-import { announce, vibrate } from '../lib/feedback';
+import { answerFeedback } from '../lib/feedback';
+import { playSound } from '../lib/sound';
 import { shuffle } from '../lib/text';
 import { useApp } from '../state/AppState';
 import type { AppData, PracticeMode, Screen } from '../types';
@@ -20,6 +21,14 @@ function buildList(screen: PracticeScreenSpec, stats: AppData['stats']): string[
   const pool = screen.mode === 'all' ? QUESTIONS : QUESTIONS.filter(q => q.cat === screen.mode);
   // questions never seen before come first
   return shuffle(pool.map(q => q.id)).sort((a, b) => Number(!!stats[a]) - Number(!!stats[b]));
+}
+
+// React StrictMode mounts twice in development: don't play the start chime twice.
+let lastBegin = 0;
+function playOnce(name: 'begin') {
+  if (Date.now() - lastBegin < 500) return;
+  lastBegin = Date.now();
+  playSound(name);
 }
 
 export function practiceTitle(mode: PracticeMode): [string, string] {
@@ -37,8 +46,10 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
   const [orders, setOrders] = useState<Record<string, number[]>>({});
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const explainRef = useRef<HTMLDivElement>(null);
+  const [streak, setStreak] = useState(0);
 
   useEffect(() => { if (!ids.length) go({ name: 'home' }); }, [ids, go]);
+  useEffect(() => { if (ids.length) playOnce('begin'); }, [ids]);
 
   const id = ids[i];
   const q = id ? QUESTION_BY_ID[id] : null;
@@ -64,8 +75,9 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
     setAnswers(a => ({ ...a, [q.id]: oi }));
     if (instant) {
       answer(q.id, oi === 0);
-      vibrate(oi === 0, data.prefs.haptics);
-      announce(oi === 0 ? 'Верно' : `Неверно. Правильный ответ: ${q.a[0]}`);
+      const s = oi === 0 ? streak + 1 : 0;
+      setStreak(s);
+      answerFeedback(oi === 0, s, q.a[0], data.prefs.haptics);
     }
   };
 
@@ -101,6 +113,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
           <span className="sp" />
           <span className="counter tnum"><b>{i + 1}</b>/{ids.length}</span>
           {instant && done > 0 && <span className="score-chip tnum"><Icon name="check" />{right}<small>/{done}</small></span>}
+          {instant && streak >= 3 && <span key={streak} className="streak-chip tnum" title="Правильных ответов подряд">серия {streak}</span>}
         </div>
         <div className="pbar" aria-hidden="true"><i style={{ width: `${(i / ids.length) * 100}%` }} /></div>
       </div>

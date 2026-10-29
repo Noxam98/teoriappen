@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { setSoundPrefs } from './lib/sound';
 import { Toolbar } from './components/Toolbar';
 import { BrushProvider } from './features/brush/BrushProvider';
 import { TranslationPopover } from './features/brush/TranslationPopover';
@@ -27,6 +28,7 @@ function Layout() {
     document.body.classList.remove('size-0', 'size-1', 'size-2');
     document.body.classList.add(`size-${data.prefs.size}`);
   }, [data.prefs.size]);
+  useEffect(() => setSoundPrefs(data.prefs.sound, data.prefs.volume), [data.prefs.sound, data.prefs.volume]);
 
   return (
     <>

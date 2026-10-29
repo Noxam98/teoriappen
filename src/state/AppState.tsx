@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { createExam, gradeExam, recordAnswer } from '../lib/exam';
+import { playSound } from '../lib/sound';
 import { loadData, saveData } from '../lib/storage';
 import type { AppData, ExamSession, FinishedExam, Screen, VocabItem } from '../types';
 
@@ -40,6 +41,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     visit: nav.visit,
     go,
     startExam() {
+      playSound('start');
       setData(d => ({ ...d, cur: createExam(d.stats, d.prefs.reveal) }));
       go({ name: 'exam' });
     },

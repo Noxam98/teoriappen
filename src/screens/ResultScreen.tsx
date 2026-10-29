@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { playSound } from '../lib/sound';
 import { Figure } from '../components/figures/Figure';
 import { ScoreGauge } from '../components/Gauges';
 import { Icon } from '../components/Icons';
@@ -10,10 +11,21 @@ import { fmtTime, plural } from '../lib/text';
 import { useApp } from '../state/AppState';
 import type { CategoryId, Question } from '../types';
 
+let soundedFor = 0;
+
 export function ResultScreen() {
   const { data, go, startExam } = useApp();
   const [filter, setFilter] = useState<'bad' | 'all'>('bad');
   const L = data.last;
+  // the stamp sound plays together with the stamp animation, once per result
+  useEffect(() => {
+    if (!L || soundedFor === L.res.date) return;
+    soundedFor = L.res.date;
+    const share = L.res.n ? L.res.right / L.res.n : 0;
+    const name = L.kind === 'practice' ? (share >= 0.8 ? 'finishGood' : 'finishOk') : L.res.pass ? 'pass' : 'fail';
+    if (L.res.timeout) setTimeout(() => playSound(name), 900);
+    else playSound(name);
+  }, [L]);
   if (!L) return null;
   const { res } = L;
   const isExam = L.kind !== 'practice';

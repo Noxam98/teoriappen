@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ActionBar } from '../components/ActionBar';
 import { Icon } from '../components/Icons';
 import { Explanation } from '../components/question/Explanation';
@@ -9,7 +9,8 @@ import { QUESTION_BY_ID } from '../data';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
 import { useNow } from '../hooks/useNow';
 import { errorCount, MAX_ERRORS } from '../lib/exam';
-import { announce, vibrate } from '../lib/feedback';
+import { answerFeedback } from '../lib/feedback';
+import { playSound } from '../lib/sound';
 import { fmtTime, plural } from '../lib/text';
 import { useApp } from '../state/AppState';
 import type { ExamSession } from '../types';
@@ -21,9 +22,13 @@ export function ExamScreen() {
   const E = data.cur;
 
   const left = E ? E.end - now : 0;
+  const streak = useRef(0);
+  // the "5 minutes left" chime rings once; not again after reopening the app past that point
+  const warned = useRef(left <= 5 * 60_000);
   useEffect(() => {
     if (!E) go({ name: 'home' });
-    else if (left <= 0) { finishExam(true); go({ name: 'result' }); }
+    else if (left <= 0) { playSound('timeup'); finishExam(true); go({ name: 'result' }); }
+    else if (left <= 5 * 60_000 && !warned.current) { warned.current = true; playSound('warn'); }
   }, [E, left, finishExam, go]);
 
   const change = (fn: (s: ExamSession) => ExamSession) => update(d => (d.cur ? { ...d, cur: fn(d.cur) } : d));
@@ -35,8 +40,10 @@ export function ExamScreen() {
     if (!id || locked || !E) return;
     change(s => ({ ...s, ans: { ...s.ans, [id]: oi } }));
     if (instant) {
-      vibrate(oi === 0, data.prefs.haptics);
-      announce(oi === 0 ? 'Верно' : `Неверно. Правильный ответ: ${QUESTION_BY_ID[id].a[0]}`);
+      streak.current = oi === 0 ? streak.current + 1 : 0;
+      answerFeedback(oi === 0, streak.current, QUESTION_BY_ID[id].a[0], data.prefs.haptics);
+      // the 8th mistake means the exam can no longer be passed
+      if (oi !== 0 && errorCount({ ids: E.ids, ans: { ...E.ans, [id]: oi } }) === MAX_ERRORS + 1) setTimeout(() => playSound('limit'), 480);
     }
   };
   const step = (d: number) => {
@@ -85,7 +92,7 @@ export function ExamScreen() {
       <ActionBar label="Навигация по вопросам">
         <button className="btn square" disabled={E.i === 0} onClick={() => step(-1)} aria-label="Forrige — предыдущий вопрос"><Icon name="left" /></button>
         <button className="btn flagbtn" aria-pressed={!!E.flag[id]} title="Отметить, чтобы вернуться позже"
-          onClick={() => change(s => ({ ...s, flag: { ...s.flag, [id]: !s.flag[id] } }))}>
+          onClick={() => { if (!E.flag[id]) playSound('flag'); change(s => ({ ...s, flag: { ...s.flag, [id]: !s.flag[id] } })); }}>
           <Icon name="flag" />Merk
         </button>
         {last

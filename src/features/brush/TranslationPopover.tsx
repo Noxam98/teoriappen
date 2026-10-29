@@ -3,6 +3,7 @@ import { useSwipeDown } from '../../hooks/useSwipeDown';
 import { Icon } from '../../components/Icons';
 import { classifyError, getSample, translateInContext, type ContextTranslation } from '../../lib/claude';
 import { firstVariant, gloss, lookup, phrasesIn } from '../../lib/dictionary';
+import { playSound } from '../../lib/sound';
 import { speak, useNorwegianVoice } from '../../lib/speech';
 import { useApp } from '../../state/AppState';
 import { useBrush, type TranslationRequest } from './BrushProvider';
@@ -89,6 +90,7 @@ function Popover({ req }: { req: TranslationRequest }) {
   const t = translate(req);
 
   useEffect(() => {
+    playSound('magic');
     getSample().then(s => setCanAsk(!!s && !claudeBlocked));
     return () => abort.current?.abort();
   }, []);
@@ -125,7 +127,7 @@ function Popover({ req }: { req: TranslationRequest }) {
 
   function save() {
     const tr = t.tr || (ai.state === 'done' ? ai.result.translation : '');
-    toggleVocab({ w: key, show: req.text, lemma: t.lemma, tr, gram: t.gram, ctx: req.context.slice(0, 220) });
+    if (toggleVocab({ w: key, show: req.text, lemma: t.lemma, tr, gram: t.gram, ctx: req.context.slice(0, 220) })) playSound('save');
   }
 
   return (

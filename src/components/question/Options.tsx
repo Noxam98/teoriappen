@@ -43,7 +43,7 @@ export function Options({ q, order, chosen, reveal = false, onPick }: Props) {
       {order.map((oi, k) => {
         const state = reveal ? (oi === 0 ? ' right' : oi === chosen ? ' wrong' : '') : '';
         return (
-          <div key={oi} className={`opt${state}${reveal ? ' locked' : ''}`} role="radio" tabIndex={oi === focusable ? 0 : -1} aria-checked={oi === chosen}
+          <div key={oi} className={`opt${state}${reveal ? ' locked' : ''}`} role="radio" tabIndex={oi === focusable ? 0 : -1} aria-checked={oi === chosen} data-option={oi}
             aria-disabled={reveal || undefined}
             onClick={e => pick(oi, e.target)}
             onKeyDown={e => { if (moveFocus(e, k)) return; if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(oi, null); } }}>

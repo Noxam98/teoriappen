@@ -28,3 +28,5 @@
 .install-done { display: flex; gap: 8px; align-items: center; color: var(--ok); font-weight: 600; }
 .install-done svg { width: 20px; height: 20px; }
 .install-ios { padding: 12px 14px; border-radius: var(--r); background: var(--surface-2); }
+.sound-row { display: grid; gap: 8px; }
+.sound-row .btn { min-height: 44px; justify-self: start; }

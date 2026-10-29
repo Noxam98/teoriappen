@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { canVibrate } from '../lib/feedback';
 import { useInstall } from '../lib/install';
+import { playSound, setSoundPrefs } from '../lib/sound';
 import { EMPTY } from '../lib/storage';
 import { useApp } from '../state/AppState';
 import type { Prefs, RevealMode } from '../types';
@@ -47,6 +48,22 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
           <span><b>Объяснение по-русски</b><small>Сразу раскрывать перевод объяснения после ответа</small></span>
           <input type="checkbox" className="switch" checked={prefs.ru} onChange={e => set({ ru: e.target.checked })} />
         </label>
+      </section>
+
+      <section className="setting">
+        <label className="switch-row">
+          <span><b>Звуки</b><small>Ответы, начало и итог экзамена, таймер, кисть</small></span>
+          <input type="checkbox" className="switch" checked={prefs.sound}
+            onChange={e => { set({ sound: e.target.checked }); if (e.target.checked) { setSoundPrefs(true, prefs.volume); playSound('correct'); } }} />
+        </label>
+        {prefs.sound && (
+          <div className="sound-row">
+            <Segmented label="Громкость" value={prefs.volume}
+              onChange={volume => { set({ volume }); setSoundPrefs(true, volume); playSound('correct'); }}
+              options={[{ value: 0, label: 'Тихо' }, { value: 1, label: 'Обычно' }, { value: 2, label: 'Громко' }]} />
+            <button className="btn ghost-strong" onClick={() => playSound('pass')}><Icon name="speak" />Проверить звук</button>
+          </div>
+        )}
       </section>
 
       {canVibrate() && (

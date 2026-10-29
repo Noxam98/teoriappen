@@ -112,6 +112,9 @@ export interface Prefs {
   reveal: RevealMode;
   /** Short vibration after an answer (Android). */
   haptics: boolean;
+  /** UI sounds and their volume (quiet / normal / loud). */
+  sound: boolean;
+  volume: 0 | 1 | 2;
   size: 0 | 1 | 2;
   ru: boolean;
   seenBrushHint: boolean;

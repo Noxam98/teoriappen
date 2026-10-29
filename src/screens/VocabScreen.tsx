@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { ActionBar } from '../components/ActionBar';
 import { Icon } from '../components/Icons';
 import { shuffle, plural } from '../lib/text';
+import { playSound } from '../lib/sound';
 import { speak, useNorwegianVoice } from '../lib/speech';
 import { useApp } from '../state/AppState';
 import type { VocabItem } from '../types';
@@ -84,7 +85,7 @@ export function FlashcardsScreen() {
     <div className="flashcards">
       <h1 className="sr-only">Карточки слов</h1>
       <div className="flash-progress tnum">Карточка {k + 1} из {cards.length}</div>
-      <button className={open ? 'flash open' : 'flash'} onClick={() => setOpen(o => !o)} aria-label={open ? 'Скрыть перевод' : 'Показать перевод'}>
+      <button className={open ? 'flash open' : 'flash'} onClick={() => { playSound('flip'); setOpen(o => !o); }} aria-label={open ? 'Скрыть перевод' : 'Показать перевод'}>
         <span className="flash-inner">
           <span className="flash-face front">
             <span className="flash-word" lang="nb">{word}</span>
