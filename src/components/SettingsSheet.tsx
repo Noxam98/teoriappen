@@ -29,8 +29,15 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
     <Sheet title={s.title} onClose={onClose} actions={<button className="btn primary" onClick={onClose}>{s.done}</button>}>
       <section className="setting">
         <h3>{s.lang}</h3>
-        <Segmented label={s.lang} value={prefs.lang} onChange={lang => set({ lang })}
-          options={LANGS.map(l => ({ value: l, label: MESSAGES[l].langName }))} />
+        {/* a list rather than a segmented control, so that more languages fit */}
+        <div className="choice-list" role="radiogroup" aria-label={s.lang}>
+          {LANGS.map(l => (
+            <button key={l} className="choice" role="radio" aria-checked={prefs.lang === l} lang={l} onClick={() => set({ lang: l, langChosen: true })}>
+              <span className="radio" aria-hidden="true" />
+              <span><b>{MESSAGES[l].langName}</b></span>
+            </button>
+          ))}
+        </div>
         <p className="setting-note">{s.langHint}</p>
       </section>
 

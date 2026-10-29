@@ -7,6 +7,9 @@ const count = (k: number, one: string, few: string, many: string) => `${k} ${plu
 export const uk: Messages = {
   locale: 'uk-UA',
   langName: 'Українська',
+  chooseTitle: 'Мова перекладу',
+  choosePrompt: 'Норвезький текст, слова й пояснення — українською',
+  chooseLater: 'Змінити можна в налаштуваннях ⚙',
   questions: (k: number) => count(k, 'питання', 'питання', 'питань'),
   errors: (k: number) => count(k, 'помилка', 'помилки', 'помилок'),
   words: (k: number) => count(k, 'слово', 'слова', 'слів'),

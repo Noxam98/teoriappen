@@ -1,15 +1,13 @@
 import { Fragment, type ReactNode } from 'react';
 import { useApp } from '../state/AppState';
 import type { Category } from '../data/categories';
-import type { Lang, Question } from '../types';
-import { ru, type Messages } from './ru';
-import { uk } from './uk';
+import type { Lang, Question, Translated } from '../types';
+import { BASE_LANG, MESSAGES } from './langs';
+import type { Messages } from './ru';
 
-// The language of everything that is not Norwegian: buttons, explanations, theory and word translations.
-export const MESSAGES: Record<Lang, Messages> = { ru, uk };
-export const LANGS: Lang[] = ['ru', 'uk'];
+export { BASE_LANG, LANGS, MESSAGES } from './langs';
 
-let current: Lang = 'ru';
+let current: Lang = BASE_LANG;
 
 /** For code outside React (screen-reader announcements, the Claude prompt). */
 export const messages = (): Messages => MESSAGES[current];
@@ -37,8 +35,8 @@ export function fill(text: string, values: Record<string, ReactNode>): ReactNode
 /** A rich text: every second part is bold. */
 export const rich = (parts: string[]): ReactNode => parts.map((p, i) => (i % 2 ? <b key={i}>{p}</b> : <Fragment key={i}>{p}</Fragment>));
 
-/** The translation in the reader's language; Russian while a Ukrainian one is missing. */
-export const pick = (lang: Lang, ru: string, uk?: string): string => (lang === 'uk' && uk) || ru;
+/** The text in the reader's language, or the base translation while that one is missing. */
+export const tr = (t: Translated, lang: Lang): string => t[lang] || t[BASE_LANG];
 
 export const topicName = (c: Category, lang: Lang): string => c[lang];
-export const explanation = (q: Question, lang: Lang): string => pick(lang, q.ru, q.uk);
+export const explanation = (q: Question, lang: Lang): string => tr(q, lang);

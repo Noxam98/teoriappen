@@ -1,11 +1,10 @@
-import type { CategoryId } from '../types';
+import type { CategoryId, Lang } from '../types';
 
-export interface Category {
+/** A topic, with its name in every translation language (`ru`, `uk`, …). */
+export interface Category extends Record<Lang, string> {
   id: CategoryId;
   /** Norwegian name, as in the textbooks */
   no: string;
-  ru: string;
-  uk: string;
   /** How many questions of this topic go into one 45-question exam */
   inExam: number;
 }

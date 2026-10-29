@@ -1,56 +1,55 @@
 {
   "cat": "forerkort",
-  "lead": "Her lærer du hva førerkort klasse B gir lov til, hvordan øvelseskjøring og teoriprøven fungerer, hva prøvetid og prikker betyr, og hva som skjer hvis du bryter reglene.",
-  "leadRu": "Здесь — что разрешают права категории B, как устроены учебная езда и теоретический экзамен, что такое испытательный срок и штрафные баллы и что бывает за нарушения.",
+  "lead": { "no": "Her lærer du hva førerkort klasse B gir lov til, hvordan øvelseskjøring og teoriprøven fungerer, hva prøvetid og prikker betyr, og hva som skjer hvis du bryter reglene.", "ru": "Здесь — что разрешают права категории B, как устроены учебная езда и теоретический экзамен, что такое испытательный срок и штрафные баллы и что бывает за нарушения.", "uk": "Тут — що дозволяє посвідчення водія категорії B, як влаштовані навчальна їзда й теоретичний іспит, що таке випробувальний термін і штрафні бали та що буває за порушення." },
   "blocks": [
-    { "h": "Førerkort klasse B", "ru": "Права категории B" },
+    { "h": "Førerkort klasse B", "ru": "Права категории B", "uk": "Посвідчення водія категорії B" },
     { "nums": [
-      ["18 år", "aldersgrense for førerkort klasse B", "минимальный возраст для прав категории B"],
-      ["3500 kg", "høyeste tillatte totalvekt for bilen", "наибольшая разрешённая общая масса автомобиля"],
-      ["inntil 8", "sitteplasser i tillegg til førerplassen", "не больше 8 мест помимо водительского"],
-      ["80 år", "fra denne alderen trenger du helseattest fra lege for å fornye førerkortet", "с этого возраста для продления прав нужна медицинская справка от врача"]
+      { "value": "18 år", "no": "aldersgrense for førerkort klasse B", "ru": "минимальный возраст для прав категории B", "uk": "мінімальний вік для посвідчення водія категорії B" },
+      { "value": "3500 kg", "no": "høyeste tillatte totalvekt for bilen", "ru": "наибольшая разрешённая общая масса автомобиля", "uk": "межа дозволеної максимальної маси автомобіля" },
+      { "value": "inntil 8", "no": "sitteplasser i tillegg til førerplassen", "ru": "не больше 8 мест помимо водительского", "uk": "не більше 8 місць для сидіння, крім місця водія" },
+      { "value": "80 år", "no": "fra denne alderen trenger du helseattest fra lege for å fornye førerkortet", "ru": "с этого возраста для продления прав нужна медицинская справка от врача", "uk": "з цього віку для продовження посвідчення потрібна медична довідка від лікаря" }
     ] },
     { "list": [
-      ["Ha med førerkortet når du kjører. I Norge kan du velge mellom det fysiske kortet og det digitale førerkortet i appen. I utlandet må du ha med det fysiske kortet.", "Во время езды права должны быть при вас. В Норвегии можно выбрать: пластиковая карточка или цифровые права в приложении. За границей нужна пластиковая карточка."],
-      ["Står det i førerkortet at du må bruke briller eller linser, må du alltid bruke dem når du kjører – ikke bare i mørket.", "Если в правах указано, что вам нужны очки или линзы, носите их за рулём всегда — не только в темноте."]
+      { "no": "Ha med førerkortet når du kjører. I Norge kan du velge mellom det fysiske kortet og det digitale førerkortet i appen. I utlandet må du ha med det fysiske kortet.", "ru": "Во время езды права должны быть при вас. В Норвегии можно выбрать: пластиковая карточка или цифровые права в приложении. За границей нужна пластиковая карточка.", "uk": "Під час їзди посвідчення водія має бути при вас. У Норвегії можна вибрати: пластикова картка або цифрове посвідчення в застосунку. За кордоном потрібна пластикова картка." },
+      { "no": "Står det i førerkortet at du må bruke briller eller linser, må du alltid bruke dem når du kjører – ikke bare i mørket.", "ru": "Если в правах указано, что вам нужны очки или линзы, носите их за рулём всегда — не только в темноте.", "uk": "Якщо в посвідченні зазначено, що вам потрібні окуляри або лінзи, носіть їх за кермом завжди — не лише в темряві." }
     ] },
-    { "p": "Fra 80 år må du levere helseattest fra lege når du fornyer førerkort klasse B. Har du et tidsbegrenset førerkort på grunn av helsen, trenger du også helseattest.", "ru": "С 80 лет для продления прав категории B нужна медицинская справка от врача (helseattest). Если срок действия ваших прав ограничен по состоянию здоровья, справка тоже нужна." },
+    { "p": "Fra 80 år må du levere helseattest fra lege når du fornyer førerkort klasse B. Har du et tidsbegrenset førerkort på grunn av helsen, trenger du også helseattest.", "ru": "С 80 лет для продления прав категории B нужна медицинская справка от врача (helseattest). Если срок действия ваших прав ограничен по состоянию здоровья, справка тоже нужна.", "uk": "З 80 років для продовження посвідчення водія категорії B потрібна медична довідка від лікаря (helseattest). Якщо строк дії вашого посвідчення обмежено за станом здоров'я, довідка теж потрібна." },
 
-    { "h": "Øvelseskjøring", "ru": "Учебная езда" },
-    { "p": "Du kan øvelseskjøre bil fra du er 16 år. Før du begynner, må du ha gjennomført trafikalt grunnkurs.", "ru": "Учиться водить машину можно с 16 лет. Но сначала нужно пройти базовый курс по дорожному движению (trafikalt grunnkurs)." },
-    { "trap": "Du trenger ikke ha bestått teoriprøven før du øvelseskjører. Det som kreves, er trafikalt grunnkurs.", "ru": "Для учебной езды не нужно сдавать теоретический экзамен. Требуется только базовый курс (trafikalt grunnkurs)." },
+    { "h": "Øvelseskjøring", "ru": "Учебная езда", "uk": "Навчальна їзда" },
+    { "p": "Du kan øvelseskjøre bil fra du er 16 år. Før du begynner, må du ha gjennomført trafikalt grunnkurs.", "ru": "Учиться водить машину можно с 16 лет. Но сначала нужно пройти базовый курс по дорожному движению (trafikalt grunnkurs).", "uk": "Навчатися водити автомобіль можна з 16 років. Але спочатку треба пройти базовий курс із дорожнього руху (trafikalt grunnkurs)." },
+    { "trap": "Du trenger ikke ha bestått teoriprøven før du øvelseskjører. Det som kreves, er trafikalt grunnkurs.", "ru": "Для учебной езды не нужно сдавать теоретический экзамен. Требуется только базовый курс (trafikalt grunnkurs).", "uk": "Для навчальної їзди не потрібно складати теоретичний іспит. Потрібен лише базовий курс (trafikalt grunnkurs)." },
     { "list": [
-      ["Ledsageren må ha fylt 25 år.", "Сопровождающему должно быть не меньше 25 лет."],
-      ["Ledsageren må ha hatt førerkort klasse B sammenhengende de siste 5 årene.", "Сопровождающий должен непрерывно иметь права категории B последние 5 лет."],
-      ["Ledsageren må være edru og oppmerksom hele tiden.", "Сопровождающий должен быть трезвым и всё время внимательным."]
+      { "no": "Ledsageren må ha fylt 25 år.", "ru": "Сопровождающему должно быть не меньше 25 лет.", "uk": "Супровідникові має бути не менше 25 років." },
+      { "no": "Ledsageren må ha hatt førerkort klasse B sammenhengende de siste 5 årene.", "ru": "Сопровождающий должен непрерывно иметь права категории B последние 5 лет.", "uk": "Супровідник повинен безперервно мати посвідчення водія категорії B останні 5 років." },
+      { "no": "Ledsageren må være edru og oppmerksom hele tiden.", "ru": "Сопровождающий должен быть трезвым и всё время внимательным.", "uk": "Супровідник повинен бути тверезим і весь час уважним." }
     ] },
-    { "rule": "Under øvelseskjøring regnes ledsageren som fører av bilen – ikke eleven bak rattet. Ledsageren har derfor hovedansvaret for kjøringen, men eleven har også ansvar.", "ru": "Во время учебной езды водителем считается сопровождающий, а не ученик за рулём. Поэтому основная ответственность за езду лежит на сопровождающем, но ученик тоже несёт ответственность." },
+    { "rule": "Under øvelseskjøring regnes ledsageren som fører av bilen – ikke eleven bak rattet. Ledsageren har derfor hovedansvaret for kjøringen, men eleven har også ansvar.", "ru": "Во время учебной езды водителем считается сопровождающий, а не ученик за рулём. Поэтому основная ответственность за езду лежит на сопровождающем, но ученик тоже несёт ответственность.", "uk": "Під час навчальної їзди водієм вважається супровідник, а не учень за кермом. Тому основна відповідальність за їзду лежить на супровідникові, але учень теж несе відповідальність." },
 
-    { "h": "Teoriprøven", "ru": "Теоретический экзамен" },
+    { "h": "Teoriprøven", "ru": "Теоретический экзамен", "uk": "Теоретичний іспит" },
     { "nums": [
-      ["45", "spørsmål på teoriprøven", "вопросов на экзамене"],
-      ["90 min", "tid til å svare", "время на ответы"],
-      ["inntil 7", "feil, og du består likevel (minst 38 av 45 riktige)", "ошибок — и экзамен всё равно сдан (нужно не меньше 38 верных ответов из 45)"],
-      ["2 uker", "ventetid før ny prøve hvis du ikke består", "сколько ждать пересдачи, если не сдали"],
-      ["3 år", "så lenge gjelder en bestått teoriprøve: innen da må du ha bestått den praktiske prøven", "столько действует сданная теория: за это время нужно сдать практический экзамен"]
+      { "value": "45", "no": "spørsmål på teoriprøven", "ru": "вопросов на экзамене", "uk": "запитань на іспиті" },
+      { "value": "90 min", "no": "tid til å svare", "ru": "время на ответы", "uk": "час на відповіді" },
+      { "value": "inntil 7", "no": "feil, og du består likevel (minst 38 av 45 riktige)", "ru": "ошибок — и экзамен всё равно сдан (нужно не меньше 38 верных ответов из 45)", "uk": "помилок — а іспит усе одно складено (потрібно не менше 38 правильних відповідей із 45)" },
+      { "value": "2 uker", "no": "ventetid før ny prøve hvis du ikke består", "ru": "сколько ждать пересдачи, если не сдали", "uk": "скільки чекати на перескладання, якщо іспит не складено" },
+      { "value": "3 år", "no": "så lenge gjelder en bestått teoriprøve: innen da må du ha bestått den praktiske prøven", "ru": "столько действует сданная теория: за это время нужно сдать практический экзамен", "uk": "стільки діє складена теорія: за цей час треба скласти практичний іспит" }
     ] },
 
-    { "h": "Prøvetid og prikker", "ru": "Испытательный срок и штрафные баллы" },
-    { "p": "Noen overtredelser gir prikker i tillegg til bot. De første 2 årene etter at du har fått førerkort klasse B første gang, er en prøvetid. I prøvetiden får du dobbelt så mange prikker.", "ru": "За некоторые нарушения кроме штрафа начисляют штрафные баллы (prikker). Первые 2 года после первого получения прав категории B — испытательный срок (prøvetid). В это время баллы начисляются в двойном размере." },
+    { "h": "Prøvetid og prikker", "ru": "Испытательный срок и штрафные баллы", "uk": "Випробувальний термін і штрафні бали" },
+    { "p": "Noen overtredelser gir prikker i tillegg til bot. De første 2 årene etter at du har fått førerkort klasse B første gang, er en prøvetid. I prøvetiden får du dobbelt så mange prikker.", "ru": "За некоторые нарушения кроме штрафа начисляют штрафные баллы (prikker). Первые 2 года после первого получения прав категории B — испытательный срок (prøvetid). В это время баллы начисляются в двойном размере.", "uk": "За деякі порушення, крім штрафу, нараховують штрафні бали (prikker). Перші 2 роки після першого отримання посвідчення водія категорії B — випробувальний термін (prøvetid). У цей час бали нараховуються в подвійному розмірі." },
     { "nums": [
-      ["2 år", "prøvetid for nye førere", "испытательный срок для новых водителей"],
-      ["× 2", "prikker i prøvetiden: 3 prikker blir 6", "баллы в испытательный срок: вместо 3 баллов — 6"],
-      ["8 prikker", "i løpet av 3 år: du mister førerretten i 6 måneder", "за 3 года: лишение прав на 6 месяцев"]
+      { "value": "2 år", "no": "prøvetid for nye førere", "ru": "испытательный срок для новых водителей", "uk": "випробувальний термін для нових водіїв" },
+      { "value": "× 2", "no": "prikker i prøvetiden: 3 prikker blir 6", "ru": "баллы в испытательный срок: вместо 3 баллов — 6", "uk": "бали у випробувальний термін: замість 3 балів — 6" },
+      { "value": "8 prikker", "no": "i løpet av 3 år: du mister førerretten i 6 måneder", "ru": "за 3 года: лишение прав на 6 месяцев", "uk": "за 3 роки: позбавлення права керування на 6 місяців" }
     ] },
-    { "rule": "Mister du førerretten i prøvetiden, må du ta både teoriprøven og den praktiske prøven på nytt. Det holder ikke å vente eller betale en bot.", "ru": "Если вы лишились прав в испытательный срок, придётся заново сдать и теоретический, и практический экзамен. Просто подождать или заплатить штраф недостаточно." },
+    { "rule": "Mister du førerretten i prøvetiden, må du ta både teoriprøven og den praktiske prøven på nytt. Det holder ikke å vente eller betale en bot.", "ru": "Если вы лишились прав в испытательный срок, придётся заново сдать и теоретический, и практический экзамен. Просто подождать или заплатить штраф недостаточно.", "uk": "Якщо вас позбавили права керування у випробувальний термін, доведеться знову скласти і теоретичний, і практичний іспит. Просто зачекати або сплатити штраф недостатньо." },
 
-    { "h": "Bot, beslag og tap av førerretten", "ru": "Штраф, изъятие прав и лишение права управления" },
-    { "p": "For mindre overtredelser, for eksempel litt for høy fart, kan politiet gi deg et forenklet forelegg – en bot som du kan vedta på stedet. Vedtar du det, er saken avgjort. Vedtar du det ikke, går saken videre og kan ende i retten.", "ru": "За небольшие нарушения, например незначительное превышение скорости, полиция может выписать упрощённое постановление о штрафе (forenklet forelegg), которое можно принять прямо на месте. Если вы его принимаете, дело закрыто. Если нет, дело идёт дальше и может дойти до суда." },
-    { "p": "Er du mistenkt for noe som kan gi tap av førerretten, for eksempel promillekjøring eller svært høy fart, kan politiet ta beslag i førerkortet på stedet. Da har du ikke lov til å kjøre. Tiden uten førerkort trekkes fra tapstiden.", "ru": "Если вас подозревают в нарушении, за которое могут лишить прав, например в езде в нетрезвом виде или с очень высокой скоростью, полиция может изъять права прямо на месте. После этого водить нельзя. Время без прав засчитывается в срок лишения." },
+    { "h": "Bot, beslag og tap av førerretten", "ru": "Штраф, изъятие прав и лишение права управления", "uk": "Штраф, вилучення посвідчення водія і позбавлення права керування" },
+    { "p": "For mindre overtredelser, for eksempel litt for høy fart, kan politiet gi deg et forenklet forelegg – en bot som du kan vedta på stedet. Vedtar du det, er saken avgjort. Vedtar du det ikke, går saken videre og kan ende i retten.", "ru": "За небольшие нарушения, например незначительное превышение скорости, полиция может выписать упрощённое постановление о штрафе (forenklet forelegg), которое можно принять прямо на месте. Если вы его принимаете, дело закрыто. Если нет, дело идёт дальше и может дойти до суда.", "uk": "За незначні порушення, наприклад невелике перевищення швидкості, поліція може виписати спрощений штраф (forenklet forelegg), з яким можна погодитися прямо на місці. Якщо ви погоджуєтеся, справу закрито. Якщо ні, справа йде далі й може дійти до суду." },
+    { "p": "Er du mistenkt for noe som kan gi tap av førerretten, for eksempel promillekjøring eller svært høy fart, kan politiet ta beslag i førerkortet på stedet. Da har du ikke lov til å kjøre. Tiden uten førerkort trekkes fra tapstiden.", "ru": "Если вас подозревают в нарушении, за которое могут лишить прав, например в езде в нетрезвом виде или с очень высокой скоростью, полиция может изъять права прямо на месте. После этого водить нельзя. Время без прав засчитывается в срок лишения.", "uk": "Якщо вас підозрюють у порушенні, за яке можуть позбавити права керування, наприклад у керуванні в нетверезому стані або з дуже високою швидкістю, поліція може вилучити посвідчення водія прямо на місці. Після цього керувати не можна. Час без посвідчення зараховується до строку позбавлення." },
     { "nums": [
-      ["26 km/t", "eller mer over fartsgrensen når den er 60 km/t eller lavere: du mister førerretten", "или больше сверх ограничения, если оно 60 км/ч или ниже: вас лишат прав"],
-      ["over 0,5 ‰", "til og med 0,8 promille: tap av førerretten i 12–18 måneder", "и до 0,8 промилле включительно: лишение прав на 12–18 месяцев"],
-      ["over 1,2 ‰", "tap av førerretten i minst 2 år", "лишение прав минимум на 2 года"]
+      { "value": "26 km/t", "no": "eller mer over fartsgrensen når den er 60 km/t eller lavere: du mister førerretten", "ru": "или больше сверх ограничения, если оно 60 км/ч или ниже: вас лишат прав", "uk": "або більше понад обмеження, якщо воно 60 км/год або менше: вас позбавлять права керування" },
+      { "value": "over 0,5 ‰", "no": "til og med 0,8 promille: tap av førerretten i 12–18 måneder", "ru": "и до 0,8 промилле включительно: лишение прав на 12–18 месяцев", "uk": "і до 0,8 промілле включно: позбавлення права керування на 12–18 місяців" },
+      { "value": "over 1,2 ‰", "no": "tap av førerretten i minst 2 år", "ru": "лишение прав минимум на 2 года", "uk": "позбавлення права керування щонайменше на 2 роки" }
     ] }
   ],
   "sources": [

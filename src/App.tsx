@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect } from 'react';
 import { setLang } from './i18n';
 import { savedScroll } from './lib/routes';
 import { setSoundPrefs } from './lib/sound';
+import { LanguageSheet } from './components/LanguageSheet';
 import { Toolbar } from './components/Toolbar';
 import { BrushProvider } from './features/brush/BrushProvider';
 import { TranslationPopover } from './features/brush/TranslationPopover';
@@ -52,6 +53,7 @@ function Layout() {
       <Toolbar />
       <main className="wrap" id="main" tabIndex={-1}><CurrentScreen /></main>
       <TranslationPopover />
+      {!data.prefs.langChosen && <LanguageSheet />}
       <div className="global-toast" role="status">{toast && <div className="toast info">{toast}</div>}</div>
     </>
   );

@@ -16,12 +16,12 @@ import type { CategoryId, TheoryChapter } from '../types';
 /** Reading time for a learner: about 90 Norwegian words a minute, with the translation alongside. */
 function minutes(ch: TheoryChapter): number {
   const texts = ch.blocks.flatMap(b =>
-    'list' in b ? b.list.map(([no]) => no)
-      : 'signs' in b ? b.signs.map(([, no]) => no)
-        : 'nums' in b ? b.nums.map(([, no]) => no)
+    'list' in b ? b.list.map(x => x.no)
+      : 'signs' in b ? b.signs.map(x => x.no)
+        : 'nums' in b ? b.nums.map(x => x.no)
           : 'fig' in b ? [b.no]
             : [Object.values(b)[0] as string]);
-  return Math.max(1, Math.round([ch.lead, ...texts].reduce((n, t) => n + wordsOf(t).length, 0) / 90));
+  return Math.max(1, Math.round([ch.lead.no, ...texts].reduce((n, t) => n + wordsOf(t).length, 0) / 90));
 }
 
 const questionsIn = (cat: CategoryId) => QUESTIONS.filter(q => q.cat === cat).length;
@@ -163,7 +163,7 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
             <p className="chapter-ru">{topic}</p>
           </div>
         </div>
-        <div className="t-p lead"><TheoryText no={ch.lead} ru={ch.leadRu} uk={ch.leadUk} show={show} /></div>
+        <div className="t-p lead"><TheoryText t={ch.lead} show={show} /></div>
         <Segmented label={t.theory.textLang} value={show.mode}
           onChange={v => update(d => ({ ...d, prefs: { ...d.prefs, theoryLang: v } }))}
           options={[{ value: 'both', label: t.theory.both }, { value: 'nb', label: 'Norsk' }, { value: 'tr', label: t.langName }]} />

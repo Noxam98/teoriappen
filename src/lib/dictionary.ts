@@ -1,5 +1,5 @@
 import { DICTIONARY } from '../data';
-import { currentLang } from '../i18n';
+import { BASE_LANG, currentLang } from '../i18n';
 import type { DictEntry, Lang } from '../types';
 
 export type Lookup =
@@ -12,9 +12,9 @@ const ENDINGS = ['ene', 'ane', 'er', 'en', 'et', 'te', 'de', 'a', 'e', 's', 't']
 /** The entry of an exact word form, with the translation and the grammar note in the reader's language. */
 function entry(w: string, lang: Lang): DictEntry | undefined {
   const e = DICTIONARY.words[w];
-  if (!e || lang === 'ru') return e;
-  const { words, grammar } = DICTIONARY.uk;
-  return [e[0], words[w] ?? e[1], e[2] && (grammar[e[2]] ?? e[2])];
+  if (!e || lang === BASE_LANG) return e;
+  const words = DICTIONARY.tr.words[lang], grammar = DICTIONARY.tr.grammar[lang];
+  return [e[0], words?.[w] ?? e[1], e[2] && (grammar?.[e[2]] ?? e[2])];
 }
 
 /** Finds a word in the built-in Norwegian dictionary, with simple fallbacks for unknown forms. */
@@ -51,7 +51,7 @@ export const firstVariant = (tr: string) => tr.split(';')[0].trim();
 
 /** Fixed expressions found inside a sequence of words, longest match first. */
 export function phrasesIn(words: string[], lang: Lang = currentLang()): [string, string][] {
-  const tr = (k: string) => (lang === 'uk' && DICTIONARY.uk.phrases[k]) || DICTIONARY.phrases[k];
+  const tr = (k: string) => DICTIONARY.tr.phrases[lang]?.[k] || DICTIONARY.phrases[k];
   const low = words.map(w => w.toLowerCase());
   const found: [string, string][] = [];
   for (let i = 0; i < low.length; i++) {

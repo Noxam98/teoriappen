@@ -40,32 +40,39 @@ export type Figure =
   | { scene: Scene };
 
 /**
- * One piece of a theory chapter. Norwegian text (translatable with the brush) goes with its Russian translation.
- * Like Figure, the kind of block is told by its first key.
+ * A text in the translation languages: the base one (Russian) always, the others once they are written.
+ * Adding a language adds its key here and everywhere in the data.
+ */
+export type Translated = { ru: string } & Partial<Record<Lang, string>>;
+
+/** A Norwegian text (translatable with the brush) and its translations. */
+export type Norwegian = { no: string } & Translated;
+
+/**
+ * One piece of a theory chapter. Like Figure, the kind of block is told by its first key; the Norwegian text
+ * goes under that key and its translations next to it.
  */
 export type TheoryBlock =
   /** subheading */
-  | { h: string; ru: string; uk?: string }
-  | { p: string; ru: string; uk?: string }
+  | { h: string } & Translated
+  | { p: string } & Translated
   /** the rule to remember, highlighted */
-  | { rule: string; ru: string; uk?: string }
+  | { rule: string } & Translated
   /** a typical mistake on the exam */
-  | { trap: string; ru: string; uk?: string }
-  /** bullet list: [Norwegian, Russian, Ukrainian] */
-  | { list: [string, string, string?][] }
+  | { trap: string } & Translated
+  /** bullet list */
+  | { list: Norwegian[] }
   /** a picture with a caption */
-  | { fig: Figure; no: string; ru: string; uk?: string }
-  /** signs with their names: [sign, Norwegian, Russian, Ukrainian] */
-  | { signs: [string, string, string, string?][] }
-  /** numbers to know: [value, Norwegian, Russian, Ukrainian], e.g. ["0,2 ‰", "promillegrense", "допустимое промилле", "допустимий рівень"] */
-  | { nums: [string, string, string, string?][] };
+  | { fig: Figure } & Norwegian
+  /** signs with their names */
+  | { signs: ({ sign: string } & Norwegian)[] }
+  /** numbers to know, e.g. { value: "0,2 ‰", no: "promillegrense", ru: "допустимое промилле", … } */
+  | { nums: ({ value: string } & Norwegian)[] };
 
 export interface TheoryChapter {
   cat: CategoryId;
   /** One or two sentences under the title. */
-  lead: string;
-  leadRu: string;
-  leadUk?: string;
+  lead: Norwegian;
   blocks: TheoryBlock[];
   /** Official sources the chapter was checked against: [title, https URL]. */
   sources?: [string, string][];
@@ -73,7 +80,8 @@ export interface TheoryChapter {
   checked?: string;
 }
 
-export interface Question {
+/** A question; its explanation's translations sit beside it, keyed by language (`ru`, `uk`, …). */
+export interface Question extends Translated {
   id: string;
   cat: CategoryId;
   /** Question text (Norwegian bokmål). */
@@ -83,10 +91,6 @@ export interface Question {
   a: string[];
   /** Explanation in Norwegian. */
   f: string;
-  /** Explanation in Russian. */
-  ru: string;
-  /** Explanation in Ukrainian. */
-  uk?: string;
   /**
    * The options name the signs of the picture by number ("Skilt 1 …", "Skilt 2 …"): the signs get numbers,
    * and the options are shown in that order instead of shuffled, so plate 1 is always sign 1.
@@ -108,7 +112,10 @@ export interface VocabItem {
   t: number;
 }
 
-/** The language of translations and of the interface. */
+/**
+ * The language of translations and of the interface. To add one: its code here, interface texts in src/i18n/<code>.ts,
+ * the translations in the data (README: «Как добавить язык»).
+ */
 export type Lang = 'ru' | 'uk';
 
 /** Theory text: Norwegian with the translation under it, Norwegian only, or the translation only. */
@@ -170,6 +177,8 @@ export interface Prefs {
   ru: boolean;
   theoryLang: TheoryLang;
   lang: Lang;
+  /** The reader has picked the translation language (the choice is offered once, on the first start). */
+  langChosen: boolean;
   seenBrushHint: boolean;
 }
 

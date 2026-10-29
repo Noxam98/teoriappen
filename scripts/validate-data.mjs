@@ -1,11 +1,12 @@
 // Checks the question bank, the theory chapters and the dictionary:  npm run validate
 // - every question has the right shape, a known category, 3–4 options and a valid picture
-// - every theory chapter has known block types, Russian translations and valid pictures
+// - every theory chapter has known block types, translations and valid pictures
 // - every Norwegian word in questions, options, explanations and theory has a dictionary entry
-// - every Russian translation has a Ukrainian one (questions, theory, dictionary, grammar labels)
+// - every text is translated into every language: Russian (the base one) and each language with a dictionary
+//   src/data/dictionary/words.<code>.json — in questions, theory, the dictionary and its grammar labels
 // Drafting new text: `node scripts/validate-data.mjs --words draft.json fart lys` also reads the entries in
 // draft.json ({ "words": {…}, "phrases": {…} }) and checks only the named theory chapters;
-// `--no-uk` skips the Ukrainian checks while the translation is not written yet.
+// `--no-uk` (any language code) skips that language while its translation is not written yet.
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -35,9 +36,21 @@ const err = (id, msg) => errors.push(`${id}: ${msg}`);
 const ids = new Set();
 const counts = {};
 const args = process.argv.slice(2);
-const noUk = args.includes('--no-uk');
-if (noUk) args.splice(args.indexOf('--no-uk'), 1);
-const uk = (id, v, what) => { if (!noUk && (typeof v !== 'string' || v.trim().length < 2)) err(id, `missing Ukrainian ${what}`); };
+
+// translation languages: the base one, and every language that has a dictionary
+const BASE = 'ru';
+const ddir = 'src/data/dictionary';
+const OTHER = readdirSync(join(root, ddir)).map(f => /^words\.(\w+)\.json$/.exec(f)?.[1]).filter(Boolean)
+  .filter(code => { const flag = args.indexOf(`--no-${code}`); if (flag < 0) return true; args.splice(flag, 1); return false; });
+// letters that a text in this language never has: they give away an untranslated Russian text
+const FOREIGN = { uk: /[ыэъё]/i };
+const translated = (id, t, what) => {
+  for (const code of [BASE, ...OTHER]) {
+    const v = t?.[code];
+    if (typeof v !== 'string' || v.trim().length < 2) err(id, `missing "${code}" translation of ${what}`);
+    else if (FOREIGN[code]?.test(v)) err(id, `"${code}" translation of ${what} has letters of another language: ${v.slice(0, 60)}`);
+  }
+};
 const draftAt = args.indexOf('--words');
 const draft = draftAt >= 0 ? JSON.parse(readFileSync(args.splice(draftAt, 2)[1], 'utf8')) : {};
 const onlyChapters = args;
@@ -64,8 +77,8 @@ for (const file of readdirSync(join(root, dir)).filter(f => f.endsWith('.json'))
     else if (!id.startsWith(`${CATS[q.cat]}-`)) err(id, `id should start with "${CATS[q.cat]}-"`);
     if (`${q.cat}.json` !== file) err(id, `category "${q.cat}" is in ${file}`);
     counts[q.cat] = (counts[q.cat] ?? 0) + 1;
-    for (const k of ['q', 'f', 'ru']) if (typeof q[k] !== 'string' || q[k].trim().length < 5) err(id, `missing "${k}"`);
-    uk(id, q.uk, '"uk" explanation');
+    for (const k of ['q', 'f']) if (typeof q[k] !== 'string' || q[k].trim().length < 5) err(id, `missing "${k}"`);
+    translated(id, q, 'the explanation');
     if (!Array.isArray(q.a) || q.a.length < 3 || q.a.length > 4) err(id, '"a" needs 3–4 options (correct one first)');
     else if (new Set(q.a).size !== q.a.length) err(id, 'duplicate options');
     checkFigure(id, q.img);
@@ -80,7 +93,7 @@ for (const file of readdirSync(join(root, dir)).filter(f => f.endsWith('.json'))
   }
 }
 
-// theory: one chapter per topic, every Norwegian text with its Russian translation
+// theory: one chapter per topic, every Norwegian text with its translations beside it
 const BLOCKS = ['h', 'p', 'rule', 'trap', 'list', 'fig', 'signs', 'nums'];
 const tdir = 'src/data/theory';
 const chapters = existsSync(join(root, tdir)) ? readdirSync(join(root, tdir)).filter(f => f.endsWith('.json')) : [];
@@ -92,8 +105,9 @@ for (const file of chapters) {
   const id = `theory/${file}`;
   if (ch.cat !== cat) err(id, `"cat" should be "${cat}"`);
   if (!CATS[cat]) err(id, `unknown category "${cat}"`);
-  text(id, ch.lead, '"lead"'); text(id, ch.leadRu, '"leadRu"'); uk(id, ch.leadUk, '"leadUk"');
-  checkWords(id, ch.lead);
+  // { no, ru, uk, … }: a Norwegian text and its translations
+  const norwegian = (bid, t, what) => { text(bid, t?.no, `${what} "no"`); translated(bid, t, what); checkWords(bid, t?.no ?? ''); };
+  norwegian(id, ch.lead, '"lead"');
   for (const s of ch.sources ?? []) {
     if (!Array.isArray(s) || s.length !== 2 || typeof s[0] !== 'string' || !/^https:\/\/\S+$/.test(s[1] ?? '')) err(id, `source must be ["title", "https://…"]: ${JSON.stringify(s)}`);
   }
@@ -104,19 +118,19 @@ for (const file of chapters) {
     const type = Object.keys(b)[0];
     if (!BLOCKS.includes(type)) return err(bid, `unknown block "${type}" (one of ${BLOCKS.join(', ')})`);
     if (['h', 'p', 'rule', 'trap'].includes(type)) {
-      text(bid, b[type], `"${type}"`); text(bid, b.ru, '"ru"'); uk(bid, b.uk, '"uk"'); checkWords(bid, b[type]);
+      text(bid, b[type], `"${type}"`); translated(bid, b, `"${type}"`); checkWords(bid, b[type]);
     } else if (type === 'list') {
       if (!b.list.length) err(bid, 'empty list');
-      for (const [no, ru, u] of b.list) { text(bid, no, 'list item'); text(bid, ru, 'list item translation'); uk(bid, u, 'list item [2]'); checkWords(bid, no); }
+      b.list.forEach((item, n) => norwegian(bid, item, `list item ${n + 1}`));
     } else if (type === 'fig') {
-      checkFigure(bid, b.fig); text(bid, b.no, '"no" caption'); text(bid, b.ru, '"ru" caption'); uk(bid, b.uk, '"uk" caption'); checkWords(bid, b.no);
+      checkFigure(bid, b.fig); norwegian(bid, b, 'caption');
     } else if (type === 'signs') {
-      for (const [sign, no, ru] of b.signs) {
-        if (!SIGNS.has(sign)) err(bid, `unknown sign "${sign}"`);
-        text(bid, no, `name of ${sign}`); text(bid, ru, `translation of ${sign}`); uk(bid, b.signs.find(s => s[0] === sign)[3], `translation of ${sign} [3]`); checkWords(bid, no);
+      for (const item of b.signs) {
+        if (!SIGNS.has(item.sign)) err(bid, `unknown sign "${item.sign}"`);
+        norwegian(bid, item, `the name of ${item.sign}`);
       }
     } else if (type === 'nums') {
-      for (const [value, no, ru, u] of b.nums) { text(bid, value, 'value'); text(bid, no, 'label'); text(bid, ru, 'label translation'); uk(bid, u, 'label translation [3]'); checkWords(bid, no); }
+      b.nums.forEach((item, n) => { text(bid, item.value, `value ${n + 1}`); norwegian(bid, item, `number ${n + 1}`); });
     }
   });
 }
@@ -151,17 +165,23 @@ function checkFigure(id, img) {
 
 for (const [w, id] of missing) err(id, `no dictionary entry for "${w}" (src/data/dictionary/words.json)`);
 
-// the Ukrainian dictionary covers every Russian entry, phrase and grammar label
-if (!noUk) {
-  const wordsUk = read('src/data/dictionary/words.uk.json'), phrasesUk = read('src/data/dictionary/phrases.uk.json'), gramUk = read('src/data/dictionary/grammar.uk.json');
+// every other language's dictionary covers every entry, phrase and grammar label of the base one
+const phrases = Object.keys({ ...read(`${ddir}/phrases.json`), ...(draft.phrases ?? {}) });
+for (const code of OTHER) {
+  const file = name => existsSync(join(root, ddir, `${name}.${code}.json`)) ? read(`${ddir}/${name}.${code}.json`) : (err(ddir, `missing ${name}.${code}.json`), {});
+  const tw = file('words'), tp = file('phrases'), tg = file('grammar');
+  const check = (where, v, what) => {
+    if (typeof v !== 'string' || !v.trim()) err(`${where}.${code}.json`, `no translation for ${what}`);
+    else if (FOREIGN[code]?.test(v)) err(`${where}.${code}.json`, `${what}: letters of another language in "${v}"`);
+  };
   for (const [w, e] of Object.entries(words)) {
-    if (!wordsUk[w]) err('words.uk.json', `no Ukrainian translation for "${w}"`);
-    if (e[2] && !gramUk[e[2]]) err('grammar.uk.json', `no Ukrainian grammar label for "${e[2]}"`);
+    check('words', tw[w], `"${w}"`);
+    if (e[2]) check('grammar', tg[e[2]], `the grammar label "${e[2]}"`);
   }
-  for (const p of Object.keys({ ...read('src/data/dictionary/phrases.json'), ...(draft.phrases ?? {}) })) if (!phrasesUk[p]) err('phrases.uk.json', `no Ukrainian translation for "${p}"`);
+  for (const p of phrases) check('phrases', tp[p], `"${p}"`);
 }
 
-console.log(`${ids.size} questions in ${Object.keys(counts).length} topics, ${chapters.length} theory chapters, ${Object.keys(words).length} dictionary words`);
+console.log(`${ids.size} questions in ${Object.keys(counts).length} topics, ${chapters.length} theory chapters, ${Object.keys(words).length} dictionary words; translations: ${[BASE, ...OTHER].join(', ')}`);
 console.log(Object.entries(counts).map(([c, n]) => `${c} ${n}`).join(' · '));
 if (errors.length) {
   console.error(`\n${errors.length} problem(s):\n${errors.join('\n')}`);
