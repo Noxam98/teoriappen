@@ -60,7 +60,7 @@ export function practiceTitle(mode: PracticeMode, t: Messages, lang: Lang): [str
 }
 
 export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
-  const { data, update, go, mark, restored, answer, finishPractice } = useApp();
+  const { data, update, go, mark, restored, answer, finishPractice, toggleLater } = useApp();
   const t = useT();
   const [round] = useState(() => openRound(screen, data, restored));
   const { ids, instant, start } = round;
@@ -120,7 +120,8 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
     // in "answers at the end" mode the current choice is counted only when leaving the question
     if (recordCurrent && !instant && q && chosen !== undefined) answer(q.id, chosen === 0);
     const answered = ids.filter(x => answers[x] !== undefined);
-    if (!answered.length) { update(d => ({ ...d, practice: null })); go({ name: 'home' }); return; }
+    // nothing answered and nothing to read about: no result to show
+    if (!answered.length && !data.later.some(x => x.test === start)) { update(d => ({ ...d, practice: null })); go({ name: 'home' }); return; }
     finishPractice(
       { ids: answered, perm: orders, ans: answers, flag: {}, i: 0, start, end: Date.now() },
       { mode: screen.mode, title: [no, ru] },
@@ -159,7 +160,8 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
         <div className="pbar" aria-hidden="true"><i style={{ width: `${(i / ids.length) * 100}%` }} /></div>
       </div>
 
-      <QuestionCard key={q.id} q={q} number={i + 1} share>
+      <QuestionCard key={q.id} q={q} number={i + 1} share
+        later={{ on: data.later.some(x => x.id === q.id && x.test === start), toggle: () => toggleLater(q.id, start) }}>
         <Options q={q} order={order} chosen={chosen} reveal={revealed} onPick={pick} />
         {revealed && <div ref={explainRef}><Explanation q={q} correct={chosen === 0} /></div>}
       </QuestionCard>

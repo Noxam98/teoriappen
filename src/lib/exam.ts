@@ -33,6 +33,7 @@ export function createExam(stats: Record<string, QuestionStat>, reveal: RevealMo
     start: now,
     end: now + EXAM_MINUTES * 60_000,
     reveal,
+    tid: now,
   };
 }
 
@@ -84,9 +85,15 @@ export function gradeExam(session: ExamSession, timeout: boolean, practice?: Fin
     perm: session.perm,
     ans: session.ans,
     byCat,
-    res: { date: Date.now(), n, right, pass: n - right <= MAX_ERRORS, ms: Math.min(Date.now(), session.end) - session.start, timeout },
+    res: {
+      kind: practice ? 'practice' : 'exam', mode: practice?.mode, test: testId(session),
+      date: Date.now(), n, right, pass: n - right <= MAX_ERRORS, ms: Math.min(Date.now(), session.end) - session.start, timeout,
+    },
   };
 }
+
+/** The id the questions marked for reading in this test are filed under. */
+export const testId = (s: Pick<ExamSession, 'tid' | 'start'>) => s.tid ?? s.start;
 
 export function recordAnswer(stats: AppData['stats'], id: string, ok: boolean): AppData['stats'] {
   const [r, w] = stats[id] ?? [0, 0, 0];

@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
-import { createExam, fixNumberedOrders, gradeExam, recordAnswer, setClock } from '../lib/exam';
+import { createExam, fixNumberedOrders, gradeExam, recordAnswer, setClock, testId } from '../lib/exam';
 import { fromHash, rememberScroll, setAddress, toHash } from '../lib/routes';
 import { playSound } from '../lib/sound';
 import { loadData, saveData } from '../lib/storage';
@@ -26,6 +26,10 @@ interface AppApi {
   finishPractice: (session: ExamSession, practice: NonNullable<FinishedExam['practice']>) => void;
   answer: (id: string, ok: boolean) => void;
   toggleVocab: (item: Omit<VocabItem, 't'>) => boolean;
+  /** Ticks or unticks "I want to read about this" on a question of the test `test`. */
+  toggleLater: (id: string, test: number) => void;
+  /** The question was opened from the reading list. */
+  markRead: (id: string, test: number) => void;
 }
 
 const AppContext = createContext<AppApi | null>(null);
@@ -41,7 +45,8 @@ function withClock(d: AppData, running: boolean, now: number): AppData {
 export function AppProvider({ children }: { children: ReactNode }) {
   const [data, setData] = useState<AppData>(() => {
     const d = withClock(loadData(), onScreen(), Date.now());
-    return d.cur ? { ...d, cur: fixNumberedOrders(d.cur) } : d;
+    // an exam begun before the reading list existed is named by its start, fixed now
+    return d.cur ? { ...d, cur: { ...fixNumberedOrders(d.cur), tid: testId(d.cur) } } : d;
   });
   const [nav, setNav] = useState<{ screen: Screen; visit: number; restored: boolean }>(() => ({ screen: fromHash(location.hash), visit: 0, restored: true }));
   const navRef = useRef(nav);
@@ -145,7 +150,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
       });
     },
     finishPractice(session, practice) {
-      setData(d => ({ ...d, last: gradeExam(session, false, practice), practice: null }));
+      setData(d => {
+        const done = gradeExam(session, false, practice);
+        return { ...d, exams: [...d.exams, done.res], last: done, practice: null };
+      });
       go({ name: 'result' });
     },
     answer(id, ok) {
@@ -158,6 +166,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
         vocab: has ? d.vocab.filter(v => v.w !== item.w) : [...d.vocab, { ...item, t: Date.now() }],
       }));
       return !has;
+    },
+    toggleLater(id, test) {
+      setData(d => {
+        const has = d.later.some(x => x.id === id && x.test === test);
+        return { ...d, later: has ? d.later.filter(x => !(x.id === id && x.test === test)) : [...d.later, { id, test }] };
+      });
+    },
+    markRead(id, test) {
+      setData(d => d.later.some(x => x.id === id && x.test === test && !x.read)
+        ? { ...d, later: d.later.map(x => (x.id === id && x.test === test && !x.read ? { ...x, read: Date.now() } : x)) }
+        : d);
     },
   }), [data, nav, toast, update, go, mark]);
 

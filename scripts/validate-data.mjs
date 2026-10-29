@@ -1,6 +1,7 @@
 // Checks the question bank, the theory chapters and the dictionary:  npm run validate
 // - every question has the right shape, a known category, 3–4 options and a valid picture
 // - every theory chapter has known block types, translations and valid pictures
+// - every question links to an existing theory section ("theory": "<topic>/<section>")
 // - every Norwegian word in questions, options, explanations and theory has a dictionary entry
 // - every text is translated into every language: Russian (the base one) and each language with a dictionary
 //   src/data/dictionary/words.<code>.json — in questions, theory, the dictionary and its grammar labels
@@ -60,6 +61,11 @@ for (const [w, e] of Object.entries(draft.words ?? {})) {
   if (!Array.isArray(e) || e.length !== 3 || e.some(x => typeof x !== 'string' || !x.trim())) err('--words', `entry "${w}" must be [lemma, translation, grammar]`);
 }
 const missing = new Map();
+const links = [];
+// section addresses as the app makes them: the heading without diacritics, numbered when a heading repeats
+const slug = t => t.toLowerCase().replace(/æ/g, 'ae').replace(/ø/g, 'o').replace(/å/g, 'a')
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+const sections = new Set();
 const checkWords = (id, text) => {
   for (const m of String(text).matchAll(WORD)) {
     const w = m[0].toLowerCase();
@@ -90,6 +96,8 @@ for (const file of readdirSync(join(root, dir)).filter(f => f.endsWith('.json'))
       else if (nums.some(x => !(x >= 1 && x <= n)) || new Set(nums).size !== nums.length) err(id, `with "byNumber" every option starts with "Skilt 1" … "Skilt ${n}", each number once`);
     }
     for (const text of [q.q, ...(q.a ?? []), q.f]) checkWords(id, text);
+    if (q.theory === undefined) err(id, 'missing "theory": the section that explains it, "<topic>/<section>"');
+    else links.push([id, q.theory]);
   }
 }
 
@@ -113,6 +121,14 @@ for (const file of chapters) {
   }
   if (ch.checked !== undefined && !/^\d{4}-\d{2}$/.test(ch.checked)) err(id, '"checked" must look like "2026-10"');
   if (!Array.isArray(ch.blocks) || ch.blocks.length < 3) { err(id, 'needs at least 3 blocks'); continue; }
+  const seen = new Set();
+  for (const b of ch.blocks) {
+    if (typeof b.h !== 'string') continue;
+    let s = slug(b.h);
+    for (let k = 2; seen.has(s); k++) s = `${slug(b.h)}-${k}`;
+    seen.add(s);
+    sections.add(`${cat}/${s}`);
+  }
   ch.blocks.forEach((b, i) => {
     const bid = `${id} block ${i + 1}`;
     const type = Object.keys(b)[0];
@@ -162,6 +178,8 @@ function checkFigure(id, img) {
     }
   } else err(id, `unknown picture type "${type}"`);
 }
+
+if (!onlyChapters.length) for (const [id, to] of links) if (!sections.has(to)) err(id, `"theory": no section "${to}" (a heading of src/data/theory/<topic>.json)`);
 
 for (const [w, id] of missing) err(id, `no dictionary entry for "${w}" (src/data/dictionary/words.json)`);
 

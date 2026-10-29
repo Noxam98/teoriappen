@@ -6,6 +6,7 @@ const KEY = 'teoriprove-b-v1';
 export const EMPTY: AppData = {
   stats: {},
   exams: [],
+  later: [],
   vocab: [],
   cur: null,
   last: null,

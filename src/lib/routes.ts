@@ -7,7 +7,7 @@ import type { CategoryId, PracticeMode, Screen } from '../types';
 //   #/theory  #/theory/<topic>[/<section>]
 //   #/practice/<topic|all|wrong>[/<question id>]
 //   #/questions/<id,id,…>[/<question id>]   a hand-picked list, e.g. the mistakes of one exam
-//   #/exam  #/result  #/vocab  #/vocab/cards
+//   #/exam  #/result  #/vocab  #/vocab/cards  #/history
 
 export function toHash(s: Screen): string {
   switch (s.name) {
@@ -16,6 +16,7 @@ export function toHash(s: Screen): string {
     case 'result': return '#/result';
     case 'vocab': return '#/vocab';
     case 'flashcards': return '#/vocab/cards';
+    case 'history': return '#/history';
     case 'theory': return '#/theory';
     case 'chapter': return `#/theory/${s.cat}${s.section ? `/${s.section}` : ''}`;
     case 'practice': {
@@ -35,6 +36,7 @@ export function fromHash(hash: string): Screen {
   switch (page) {
     case 'exam': return { name: 'exam' };
     case 'result': return { name: 'result' };
+    case 'history': return { name: 'history' };
     case 'vocab': return a === 'cards' ? { name: 'flashcards' } : { name: 'vocab' };
     case 'theory': return isTopic(a) && THEORY_BY_CAT[a] ? { name: 'chapter', cat: a, section: b || undefined } : { name: 'theory' };
     case 'practice': {

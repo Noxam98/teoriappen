@@ -7,6 +7,7 @@ import { Toolbar } from './components/Toolbar';
 import { BrushProvider } from './features/brush/BrushProvider';
 import { TranslationPopover } from './features/brush/TranslationPopover';
 import { ExamScreen } from './screens/ExamScreen';
+import { HistoryScreen } from './screens/HistoryScreen';
 import { HomeScreen } from './screens/HomeScreen';
 import { PracticeScreen } from './screens/PracticeScreen';
 import { ResultScreen } from './screens/ResultScreen';
@@ -22,6 +23,7 @@ function CurrentScreen() {
     case 'practice': return <PracticeScreen key={visit} screen={screen} />;
     case 'vocab': return <VocabScreen />;
     case 'flashcards': return <FlashcardsScreen key={visit} />;
+    case 'history': return <HistoryScreen />;
     case 'theory': return <TheoryScreen />;
     case 'chapter': return <ChapterScreen key={visit} cat={screen.cat} />;
     default: return <HomeScreen />;

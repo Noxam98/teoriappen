@@ -8,7 +8,8 @@ import { TheoryBlock, TheoryText } from '../components/theory/TheoryBlock';
 import { CATEGORY, QUESTIONS, THEORY, THEORY_BY_CAT } from '../data';
 import { Words } from '../features/brush/Words';
 import { fill, topicName, useT } from '../i18n';
-import { savedScroll, slug } from '../lib/routes';
+import { savedScroll } from '../lib/routes';
+import { sectionIds } from '../lib/theory';
 import { wordsOf } from '../lib/text';
 import { useApp } from '../state/AppState';
 import type { CategoryId, TheoryChapter } from '../types';
@@ -95,20 +96,11 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
   const section = screen.name === 'chapter' ? screen.section : undefined;
 
   // every heading has an address: #/theory/<topic>/<heading>
-  const sections = useMemo(() => {
-    const seen = new Set<string>();
-    return (ch?.blocks ?? []).map(b => {
-      if (!('h' in b)) return undefined;
-      let s = slug(b.h);
-      for (let k = 2; seen.has(s); k++) s = `${slug(b.h)}-${k}`;
-      seen.add(s);
-      return s;
-    });
-  }, [ch]);
+  const sections = useMemo(() => (ch ? sectionIds(ch) : []), [ch]);
 
-  // a shared link (or a reload without a saved position) opens the chapter at its section
+  // a link to a section (shared, or from the reading list), or a reload without a saved position, opens it there
   useLayoutEffect(() => {
-    if (restored && section && savedScroll(location.hash) === undefined) {
+    if (section && (!restored || savedScroll(location.hash) === undefined)) {
       document.querySelector(`.chapter-body [data-section="${CSS.escape(section)}"]`)?.scrollIntoView({ block: 'start' });
     }
   }, []); // only when the chapter opens

@@ -3,6 +3,7 @@ import { playSound } from '../lib/sound';
 import { Figure } from '../components/figures/Figure';
 import { ScoreGauge } from '../components/Gauges';
 import { Icon } from '../components/Icons';
+import { laterOf, ReadingList, ReadingSheet } from '../components/later/Reading';
 import { Explanation } from '../components/question/Explanation';
 import { QuestionShare } from '../components/question/QuestionCard';
 import { CATEGORY, QUESTION_BY_ID, THEORY_BY_CAT } from '../data';
@@ -22,6 +23,7 @@ export function ResultScreen() {
   const r = t.result;
   const lang = data.prefs.lang;
   const [filter, setFilter] = useState<'bad' | 'all'>('bad');
+  const [reading, setReading] = useState<string | null>(null);
   const L = data.last;
   // the stamp sound plays together with the stamp animation, once per result
   useEffect(() => {
@@ -44,6 +46,8 @@ export function ResultScreen() {
   const practiced = L.practice && L.practice.mode in CATEGORY ? L.practice.mode as CategoryId : null;
   // the title in the reader's current language, not the one saved with the result
   const title = L.practice ? practiceTitle(L.practice.mode, t, lang) : null;
+  const later = laterOf(data.later, res.test);
+  const readCount = later.filter(x => x.read).length;
 
   return (
     <div className="result">
@@ -60,13 +64,27 @@ export function ResultScreen() {
             <small>{title?.[1]}</small>
           </div>
         )}
-        <ScoreGauge right={res.right} total={res.n} maxErrors={isExam ? MAX_ERRORS : undefined} pass={isExam ? res.pass : undefined} />
-        <div className="rfacts">
-          <span className="chip tnum">{t.errors(errors)}{isExam && r.allowed(MAX_ERRORS)}</span>
-          <span className="chip tnum"><Icon name="clock" />{fmtTime(res.ms)}</span>
-          {res.timeout && <span className="chip warn">{r.timeout}</span>}
-        </div>
+        {res.n > 0 && <>
+          <ScoreGauge right={res.right} total={res.n} maxErrors={isExam ? MAX_ERRORS : undefined} pass={isExam ? res.pass : undefined} />
+          <div className="rfacts">
+            <span className="chip tnum">{t.errors(errors)}{isExam && r.allowed(MAX_ERRORS)}</span>
+            <span className="chip tnum"><Icon name="clock" />{fmtTime(res.ms)}</span>
+            {res.timeout && <span className="chip warn">{r.timeout}</span>}
+          </div>
+        </>}
       </section>
+
+      {later.length > 0 && (
+        <section className="panel later-panel" aria-labelledby="later-title">
+          <div className="later-head">
+            <Icon name="bookmark" />
+            <h2 id="later-title">{t.later.title}</h2>
+            <span className="chip tnum">{t.later.count(later.length, readCount)}</span>
+          </div>
+          <ReadingList items={later} onOpen={setReading} />
+        </section>
+      )}
+      {reading && <ReadingSheet items={later} start={reading} onClose={() => setReading(null)} />}
 
       {topics.length > 1 && (
         <section className="panel breakdown">
@@ -93,18 +111,20 @@ export function ResultScreen() {
         <button className="btn ghost" onClick={() => go({ name: 'home' })}><Icon name="home" />{t.toHome}</button>
       </div>
 
-      <div className="section-title tight">
-        <h2>{r.review}</h2>
-        <div className="segmented small" role="radiogroup" aria-label={r.show}>
-          <button role="radio" aria-checked={filter === 'bad'} onClick={() => setFilter('bad')}>{r.mistakesN(errors)}</button>
-          <button role="radio" aria-checked={filter === 'all'} onClick={() => setFilter('all')}>{r.allN(res.n)}</button>
+      {res.n > 0 && <>
+        <div className="section-title tight">
+          <h2>{r.review}</h2>
+          <div className="segmented small" role="radiogroup" aria-label={r.show}>
+            <button role="radio" aria-checked={filter === 'bad'} onClick={() => setFilter('bad')}>{r.mistakesN(errors)}</button>
+            <button role="radio" aria-checked={filter === 'all'} onClick={() => setFilter('all')}>{r.allN(res.n)}</button>
+          </div>
         </div>
-      </div>
-      <div className="review">
-        {shown.length
-          ? shown.map(id => <ReviewItem key={id} q={QUESTION_BY_ID[id]} chosen={L.ans[id]} number={L.ids.indexOf(id) + 1} />)
-          : <div className="empty">{r.noMistakes}</div>}
-      </div>
+        <div className="review">
+          {shown.length
+            ? shown.map(id => <ReviewItem key={id} q={QUESTION_BY_ID[id]} chosen={L.ans[id]} number={L.ids.indexOf(id) + 1} />)
+            : <div className="empty">{r.noMistakes}</div>}
+        </div>
+      </>}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { CategoryIcon } from '../components/CategoryIcon';
+import { HistoryList, useHistory } from '../components/History';
 import { Words } from '../features/brush/Words';
 import { ProgressRing } from '../components/Gauges';
 import { Icon } from '../components/Icons';
@@ -21,7 +22,7 @@ export function HomeScreen() {
   const wrong = wrongQuestionIds(data.stats).length;
   const seen = Object.keys(data.stats).filter(id => QUESTION_BY_ID[id]).length;
   const ready = readiness(data.stats);
-  const recent = data.exams.slice(-5).reverse();
+  const history = useHistory();
   const chaptersRead = THEORY.filter(t => data.read[t.cat]).length;
   const options = revealOptions(t);
   const reveal = options.find(o => o.value === data.prefs.reveal) ?? options[0];
@@ -118,20 +119,11 @@ export function HomeScreen() {
         })}
       </div>
 
-      <div className="section-title"><h2>{h.recent}</h2></div>
-      {recent.length ? (
-        <div className="history">
-          {recent.map(e => (
-            <div key={e.date} className="hrow">
-              <span className={e.pass ? 'stamp pass' : 'stamp fail'}>{e.pass ? 'Bestått' : 'Ikke bestått'}</span>
-              <span className="tnum"><b>{e.right}</b>/{e.n} · {t.errors(e.n - e.right)}</span>
-              <span className="muted tnum small">{new Date(e.date).toLocaleDateString(t.locale, { day: 'numeric', month: 'short' })}</span>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div className="empty">{h.noExams}</div>
-      )}
+      <div className="section-title">
+        <h2>{t.history.title}</h2>
+        {history.length > 5 && <button className="text-link" onClick={() => go({ name: 'history' })}>{t.history.all}<Icon name="right" /></button>}
+      </div>
+      {history.length ? <HistoryList entries={history.slice(0, 5)} /> : <div className="empty">{t.history.empty}</div>}
     </div>
   );
 }

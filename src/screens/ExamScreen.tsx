@@ -9,7 +9,7 @@ import { QUESTION_BY_ID } from '../data';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
 import { useRevealScroll } from '../hooks/useRevealScroll';
 import { useNow } from '../hooks/useNow';
-import { errorCount, MAX_ERRORS, timeLeft } from '../lib/exam';
+import { errorCount, MAX_ERRORS, testId, timeLeft } from '../lib/exam';
 import { announce, answerFeedback } from '../lib/feedback';
 import { playSound } from '../lib/sound';
 import { fill, useT } from '../i18n';
@@ -18,7 +18,7 @@ import { useApp } from '../state/AppState';
 import type { ExamSession } from '../types';
 
 export function ExamScreen() {
-  const { data, update, go, finishExam } = useApp();
+  const { data, update, go, finishExam, toggleLater } = useApp();
   const t = useT();
   const x = t.exam;
   const now = useNow(1000);
@@ -100,6 +100,8 @@ export function ExamScreen() {
 
   if (!E || !id) return null;
   const q = QUESTION_BY_ID[id];
+  const test = testId(E);
+  const later = { on: data.later.some(x => x.id === id && x.test === test), toggle: () => toggleLater(id, test) };
   const done = Object.keys(E.ans).length;
   const unanswered = E.ids.length - done;
   const flagged = E.ids.filter(x => E.flag[x]).length;
@@ -124,7 +126,7 @@ export function ExamScreen() {
         <div className="pbar" aria-hidden="true"><i style={{ width: `${(done / E.ids.length) * 100}%` }} /></div>
       </div>
 
-      <QuestionCard key={id} q={q} number={E.i + 1} note={E.flag[id] ? <span className="flag-note"><Icon name="flag" />merket</span> : ''}>
+      <QuestionCard key={id} q={q} number={E.i + 1} note={E.flag[id] ? <span className="flag-note"><Icon name="flag" />merket</span> : ''} later={later}>
         <Options q={q} order={E.perm[id]} chosen={E.ans[id] ?? (instant ? pending : undefined)} reveal={locked} onPick={pick} />
         {locked && <div ref={explainRef}><Explanation q={q} correct={E.ans[id] === 0} /></div>}
       </QuestionCard>

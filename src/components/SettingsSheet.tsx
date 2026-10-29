@@ -114,7 +114,7 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
             <div className="row2">
               <button className="btn" onClick={() => setConfirmReset(false)}>{s.cancel}</button>
               <button className="btn danger" onClick={() => {
-                update(d => ({ ...d, stats: EMPTY.stats, exams: EMPTY.exams, read: EMPTY.read, cur: null, last: null }));
+                update(d => ({ ...d, stats: EMPTY.stats, exams: EMPTY.exams, later: EMPTY.later, read: EMPTY.read, cur: null, last: null }));
                 setConfirmReset(false);
               }}>{s.remove}</button>
             </div>

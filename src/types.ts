@@ -91,6 +91,8 @@ export interface Question extends Translated {
   a: string[];
   /** Explanation in Norwegian. */
   f: string;
+  /** The theory section that explains it, `<topic>/<section>` as in the address #/theory/<topic>/<section>. */
+  theory?: string;
   /**
    * The options name the signs of the picture by number ("Skilt 1 …", "Skilt 2 …"): the signs get numbers,
    * and the options are shown in that order instead of shuffled, so plate 1 is always sign 1.
@@ -138,9 +140,18 @@ export interface ExamSession {
   reveal?: RevealMode;
   /** Set while the clock stands still because the app is off screen (tab hidden, browser minimised, app closed). */
   paused?: number;
+  /** When the exam was created: names it in the reading list (`start` moves on with every pause). */
+  tid?: number;
 }
 
+/** One finished test in the history: an exam, or a practice round (no pass/fail). */
 export interface ExamResult {
+  /** Old saved results have no kind: exam. */
+  kind?: 'exam' | 'practice';
+  /** For practice: the topic. */
+  mode?: PracticeMode;
+  /** The test's id (when it began), shared with the questions marked in it for reading. */
+  test?: number;
   date: number;
   n: number;
   right: number;
@@ -193,9 +204,21 @@ export interface PracticeRound {
   instant: boolean;
 }
 
+/** A question someone ticked "I want to read about this" on, in the test where it came up. */
+export interface ReadLater {
+  id: string;
+  /** The test: ExamResult.test, ExamSession.tid, PracticeRound.start. */
+  test: number;
+  /** When it was opened from the list. */
+  read?: number;
+}
+
 export interface AppData {
   stats: Record<string, QuestionStat>;
+  /** The history: finished exams and practice rounds, oldest first. */
   exams: ExamResult[];
+  /** Questions to read about after the test, of every test; kept with the history. */
+  later: ReadLater[];
   vocab: VocabItem[];
   cur: ExamSession | null;
   last: FinishedExam | null;
@@ -213,6 +236,7 @@ export type Screen =
   | { name: 'practice'; mode: PracticeMode; ids?: string[]; q?: string }
   | { name: 'vocab' }
   | { name: 'flashcards' }
+  | { name: 'history' }
   | { name: 'theory' }
   /** `section`: the heading in view, so a reload or a shared link opens that part of the chapter */
   | { name: 'chapter'; cat: CategoryId; section?: string };
