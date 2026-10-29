@@ -69,6 +69,9 @@ main { padding-block: 16px 28px; }
 .segmented button { border: 0; background: transparent; min-height: 44px; padding: 0 12px; border-radius: 9px; font-weight: 600; font-size: .9rem; color: var(--ink-2); cursor: pointer; white-space: nowrap; transition: background-color .15s, color .15s; }
 .segmented button[aria-checked="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(0, 0, 0, .14); }
 .segmented.small button { min-height: 38px; font-size: .84rem; }
+/* narrow phones: the plates share the width equally and a long label wraps (Обидві мови · Norsk · Українська) */
+.segmented { grid-auto-columns: minmax(0, 1fr); }
+@media (max-width: 380px) { .segmented button { padding: 0 4px; font-size: .86rem; white-space: normal; line-height: 1.15; } }
 
 /* bottom action bar: sticks to the bottom edge while the content scrolls */
 .actionbar {

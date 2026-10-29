@@ -9,6 +9,7 @@
 .t-sign .zoomable-btn { border-radius: 8px; }
 .t-sign .zoomable-ic { width: 20px; height: 20px; right: -7px; bottom: -7px; border-radius: 6px; }
 .t-sign .zoomable-ic svg { width: 12px; height: 12px; }
+.t-sign .zoomable:has(.with-plate) .zoomable-ic { top: -7px; bottom: auto; } /* not over the plate */
 
 .viewer { --yarl__color_backdrop: #080b0f; }
 .viewer-fig { display: grid; place-items: center; }

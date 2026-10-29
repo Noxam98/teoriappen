@@ -127,7 +127,27 @@
       { "sign": "sykkelveg", "no": "Sykkelvei: veien er for syklende. Du kan ikke kjøre bil her", "ru": "Велосипедная дорожка: для велосипедистов, на машине ехать нельзя", "uk": "Велосипедна доріжка: для велосипедистів, автомобілем їхати не можна" },
       { "sign": "gang_sykkelveg", "no": "Gang- og sykkelvei: for gående og syklende. Bil bare hvis et underskilt tillater det", "ru": "Пешеходно-велосипедная дорожка: для пешеходов и велосипедистов. Машинам — только если разрешает табличка", "uk": "Пішохідно-велосипедна доріжка: для пішоходів і велосипедистів. Автомобілям — лише якщо дозволяє табличка" }
     ] },
-    { "trap": "Skiltene for gangvei, sykkelvei og gang- og sykkelvei er runde og blå, akkurat som påbudsskilt. Men i Norge hører de til opplysningsskiltene.", "ru": "Знаки пешеходной, велосипедной и пешеходно-велосипедной дорожки круглые и синие, как предписывающие. Но в Норвегии они относятся к информационным знакам.", "uk": "Знаки пішохідної, велосипедної та пішохідно-велосипедної доріжки круглі й сині, як наказові. Але в Норвегії вони належать до інформаційних знаків." }
+    { "trap": "Skiltene for gangvei, sykkelvei og gang- og sykkelvei er runde og blå, akkurat som påbudsskilt. Men i Norge hører de til opplysningsskiltene.", "ru": "Знаки пешеходной, велосипедной и пешеходно-велосипедной дорожки круглые и синие, как предписывающие. Но в Норвегии они относятся к информационным знакам.", "uk": "Знаки пішохідної, велосипедної та пішохідно-велосипедної доріжки круглі й сині, як наказові. Але в Норвегії вони належать до інформаційних знаків." },
+
+    { "h": "Underskilt", "ru": "Дополнительные таблички", "uk": "Додаткові таблички" },
+    { "p": "Et underskilt står under et hovedskilt og gjelder bare sammen med det. Det sier mer om hovedskiltet: hva det betyr, hvor eller når det gjelder, og hvem det gjelder for.", "ru": "Табличка (underskilt) стоит под основным знаком и действует только вместе с ним. Она уточняет основной знак: что он означает, где или когда действует и для кого.", "uk": "Табличка (underskilt) стоїть під основним знаком і діє лише разом із ним. Вона уточнює основний знак: що він означає, де або коли діє і для кого." },
+    { "p": "Underskilt har vanligvis hvit bunn med svart kant og svart tekst eller symbol. Ved midlertidige skilt, for eksempel ved veiarbeid, kan bunnen være gul.", "ru": "Обычно табличка белая, с чёрной каймой и чёрным текстом или символом. У временных знаков, например на дорожных работах, фон может быть жёлтым.", "uk": "Зазвичай табличка біла, з чорною облямівкою і чорним текстом або символом. У тимчасових знаків, наприклад на дорожніх роботах, тло може бути жовтим." },
+    { "list": [
+      { "no": "Avstand: hvor langt det er til der hovedskiltet begynner å gjelde, for eksempel til faren.", "ru": "Расстояние: сколько ехать до места, где начинает действовать основной знак, например до опасности.", "uk": "Відстань: скільки їхати до місця, де починає діяти основний знак, наприклад до небезпеки." },
+      { "no": "Utstrekning: på hvilken strekning hovedskiltet gjelder. Tallene viser avstanden til starten og slutten av strekningen.", "ru": "Протяжённость: на каком участке действует основной знак. Цифры показывают расстояние до начала и до конца участка.", "uk": "Протяжність: на якій ділянці діє основний знак. Цифри показують відстань до початку і до кінця ділянки." },
+      { "no": "Tid: når hovedskiltet gjelder. Svarte tall gjelder hverdager unntatt lørdag, svarte tall i parentes lørdag og røde tall søndager og helligdager.", "ru": "Время: когда действует основной знак. Чёрные цифры — будни, кроме субботы, чёрные в скобках — суббота, красные — воскресенья и праздники.", "uk": "Час: коли діє основний знак. Чорні цифри — будні, крім суботи, чорні в дужках — субота, червоні — неділі та свята." },
+      { "no": "Symbol: hvem hovedskiltet gjelder for, for eksempel bare lastebiler eller busser.", "ru": "Символ: для кого действует основной знак, например только для грузовиков или автобусов.", "uk": "Символ: для кого діє основний знак, наприклад лише для вантажівок або автобусів." },
+      { "no": "Tekst: når et symbol eller tall ikke passer, for eksempel «Gjelder ikke buss».", "ru": "Текст: когда символ или цифры не подходят, например «Gjelder ikke buss» — «не относится к автобусам».", "uk": "Текст: коли символ або цифри не підходять, наприклад «Gjelder ikke buss» — «не стосується автобусів»." },
+      { "no": "Anbefalt fart: den høyeste farten som anbefales for faren på fareskiltet, når vær, føre, sikt og lys er normale.", "ru": "Рекомендуемая скорость: самая высокая скорость, которую советуют для опасности на предупреждающем знаке при обычной погоде, покрытии, видимости и освещении.", "uk": "Рекомендована швидкість: найвища швидкість, яку радять для небезпеки на попереджувальному знаку за звичайної погоди, покриття, видимості й освітлення." },
+      { "no": "Forvarsling av stopp: under skiltet Vikeplikt varsler det at det står et stoppskilt lenger fram.", "ru": "Предупреждение о «Стоп»: под знаком «Уступите дорогу» сообщает, что дальше стоит знак «Стоп».", "uk": "Попередження про «Стоп»: під знаком «Дати дорогу» повідомляє, що далі стоїть знак «Стоп»." }
+    ] },
+    { "signs": [
+      { "sign": "fare_sving_h", "under": [{ "text": "150 m" }], "no": "Farlig sving til høyre: svingen kommer om 150 meter", "ru": "Опасный поворот направо: поворот будет через 150 метров", "uk": "Небезпечний поворот праворуч: поворот буде через 150 метрів" },
+      { "sign": "innkjoring_forbudt", "under": [{ "text": "Gjelder ikke" }, { "text": "buss" }], "no": "Innkjøring forbudt: forbudet gjelder ikke for buss", "ru": "Въезд запрещён: запрет не относится к автобусам", "uk": "В'їзд заборонено: заборона не стосується автобусів" },
+      { "sign": "stans_forbudt", "under": [{ "text": "8–17" }, { "text": "(8–15)" }], "no": "Stans forbudt: kl. 8–17 mandag til fredag og kl. 8–15 lørdag", "ru": "Остановка запрещена: с 8 до 17 с понедельника по пятницу и с 8 до 15 в субботу", "uk": "Зупинку заборонено: з 8 до 17 з понеділка по п'ятницю і з 8 до 15 у суботу" }
+    ] },
+    { "rule": "Les alltid underskiltet. Det kan bety at hovedskiltet bare gjelder på bestemte tider, på en bestemt strekning eller for bestemte kjøretøy.", "ru": "Всегда читайте табличку. Из-за неё основной знак может действовать только в определённое время, на определённом участке или для определённых машин.", "uk": "Завжди читайте табличку. Через неї основний знак може діяти лише в певний час, на певній ділянці або для певних машин." },
+    { "trap": "Anbefalt fart er ikke en fartsgrense. Den gjelder når forholdene er normale. Er det glatt eller dårlig sikt, må du kjøre saktere.", "ru": "Рекомендуемая скорость — не ограничение скорости. Её рассчитывают на обычные условия. Если скользко или плохо видно, нужно ехать медленнее.", "uk": "Рекомендована швидкість — не обмеження швидкості. Її розраховано на звичайні умови. Якщо слизько або погана видимість, треба їхати повільніше." }
   ],
   "sources": [
     ["Skiltforskriften – trafikkskilt og betydning (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219"],
@@ -135,7 +155,14 @@
     ["Trafikkreglene § 11 – rygging og vending (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A711"],
     ["Trafikkreglene § 17 – stans og parkering (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A717"],
     ["Trafikkskilt (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/langs-veien/trafikkskilt"],
-    ["Hvem kan bruke kollektivfeltet? (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/along-the-road/norwegian-traffic-rules/the-public-transport-lane/"]
+    ["Hvem kan bruke kollektivfeltet? (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/along-the-road/norwegian-traffic-rules/the-public-transport-lane/"],
+    ["Trafikkskilt 802 Avstand – underskilt (Store norske leksikon)", "https://snl.no/Avstand_-_trafikkskilt"],
+    ["Trafikkskilt 804 Utstrekning – underskilt (Store norske leksikon)", "https://snl.no/Utstrekning_-_trafikkskilt"],
+    ["Trafikkskilt 806 Tid – underskilt (Store norske leksikon)", "https://snl.no/Tid_-_trafikkskilt"],
+    ["Trafikkskilt 807 Symbol – underskilt (Store norske leksikon)", "https://snl.no/Symbol_-_trafikkskilt"],
+    ["Trafikkskilt 808 Tekst – underskilt (Store norske leksikon)", "https://snl.no/Tekst_-_trafikkskilt"],
+    ["Trafikkskilt 812 Anbefalt fart – underskilt (Store norske leksikon)", "https://snl.no/Anbefalt_fart_-_trafikkskilt"],
+    ["Trafikkskilt 824 Forvarsling av stopp – underskilt (Store norske leksikon)", "https://snl.no/Forvarsling_av_stopp_-_trafikkskilt"]
   ],
   "checked": "2026-10"
 }

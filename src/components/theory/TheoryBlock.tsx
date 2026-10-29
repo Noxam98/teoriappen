@@ -73,7 +73,7 @@ export function TheoryBlock({ b, show, section }: { b: Block; show: Show; sectio
     <ul className="t-signs">
       {b.signs.map(item => (
         <li key={item.sign}>
-          <span className="t-sign"><Zoomable slide={{ type: 'figure', spec: { sign: item.sign }, caption: item }} from={item}><Sign name={item.sign} /></Zoomable></span>
+          <span className="t-sign"><Zoomable slide={{ type: 'figure', spec: { sign: item.sign, under: item.under }, caption: item }} from={item}><Sign name={item.sign} under={item.under} /></Zoomable></span>
           <span className="t-sign-text"><SignName t={item} show={show} /></span>
         </li>
       ))}

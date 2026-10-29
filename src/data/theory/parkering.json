@@ -51,7 +51,7 @@
     { "list": [
       { "no": "Svarte tall: hverdager unntatt lørdag, altså vanligvis mandag til fredag.", "ru": "Чёрные цифры: будни, кроме субботы, то есть обычно с понедельника по пятницу.", "uk": "Чорні цифри: будні дні, крім суботи, тобто зазвичай з понеділка по п'ятницю." },
       { "no": "Svarte tall i parentes: lørdag.", "ru": "Чёрные цифры в скобках: суббота.", "uk": "Чорні цифри в дужках: субота." },
-      { "no": "Røde tall: søndag og helligdager.", "ru": "Красные цифры: воскресенье и праздничные дни.", "uk": "Червоні цифри: неділя та святкові дні." }
+      { "no": "Røde tall: søndag, helligdager og høytidsdager (1. og 17. mai).", "ru": "Красные цифры: воскресенье, праздничные дни и государственные праздники 1 и 17 мая.", "uk": "Червоні цифри: неділя, святкові дні та державні свята 1 і 17 травня." }
     ] },
     { "fig": { "sign": "parkering_forbudt", "under": [{ "text": "8–17" }, { "text": "(8–15)" }, { "text": "10–14", "red": true }] }, "no": "Her er parkering forbudt kl. 8–17 mandag til fredag, kl. 8–15 lørdag og kl. 10–14 søndag og helligdager.", "ru": "Здесь стоянка запрещена с 8 до 17 с понедельника по пятницу, с 8 до 15 в субботу и с 10 до 14 в воскресенье и праздничные дни.", "uk": "Тут стоянку заборонено з 8 до 17 з понеділка по п'ятницю, з 8 до 15 у суботу і з 10 до 14 у неділю та святкові дні." },
     { "rule": "Eksempel: «8–17 (8–15)» med svarte tall under skiltet Parkering forbudt betyr at du ikke kan parkere kl. 8–17 mandag til fredag og kl. 8–15 lørdag.", "ru": "Пример: «8–17 (8–15)» чёрными цифрами под знаком «Стоянка запрещена» означает, что ставить машину нельзя с 8 до 17 с понедельника по пятницу и с 8 до 15 в субботу.", "uk": "Приклад: «8–17 (8–15)» чорними цифрами під знаком «Стоянку заборонено» означає, що ставити автомобіль не можна з 8 до 17 з понеділка по п'ятницю і з 8 до 15 у суботу." },
@@ -71,7 +71,8 @@
     ["Skiltforskriften – skilt 370 og 372 (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219"],
     ["Skiltforskriften kap. 9 – underskilt, bl.a. 831 parkeringsskive (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219/KAPITTEL_10"],
     ["Skilting – underskilt 806 Tid (Statens vegvesen)", "https://www.vegvesen.no/fag/trafikk/parkering/skilting/"],
-    ["Parkeringstillatelse for forflytningshemmede (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/vei-og-skilt/parkering/parkeringstillatelse-for-forflytningshemmede/"]
+    ["Parkeringstillatelse for forflytningshemmede (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/vei-og-skilt/parkering/parkeringstillatelse-for-forflytningshemmede/"],
+    ["Trafikkskilt 806 Tid – underskilt (Store norske leksikon)", "https://snl.no/Tid_-_trafikkskilt"]
   ],
   "checked": "2026-10"
 }

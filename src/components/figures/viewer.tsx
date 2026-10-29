@@ -47,7 +47,7 @@ export function useChapterGallery(blocks: TheoryBlock[]): Gallery {
     const add = (key: object, slide: FigureSlide) => { index.set(key, slides.length); slides.push(slide); };
     for (const b of blocks) {
       if ('fig' in b) add(b, { type: 'figure', spec: b.fig, caption: b });
-      else if ('signs' in b) for (const item of b.signs) add(item, { type: 'figure', spec: { sign: item.sign }, caption: item });
+      else if ('signs' in b) for (const item of b.signs) add(item, { type: 'figure', spec: { sign: item.sign, under: item.under }, caption: item });
     }
     return { slides, index };
   }, [blocks]);

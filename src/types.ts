@@ -32,12 +32,15 @@ export interface Scene {
   pedAt?: 'kerb' | 'crossing';
 }
 
-/** A line of the underskilt «Tid» (806): black for weekdays, in parentheses for Saturdays, red for Sundays and holidays. */
-export interface TimeLine { text: string; red?: boolean }
+/**
+ * A line of an underskilt: a distance («150 m»), a text («Gjelder ikke buss») or a time («8–17»; black for weekdays,
+ * in parentheses for Saturdays, `red` for Sundays and holidays).
+ */
+export interface PlateLine { text: string; red?: boolean }
 
 export type Figure =
-  /** a sign; `under`: a time plate under it */
-  | { sign: string; under?: TimeLine[] }
+  /** a sign; `under`: the underskilt below it, line by line */
+  | { sign: string; under?: PlateLine[] }
   | { signs: string[] }
   | { light: LightState }
   | { road: RoadKind }
@@ -68,8 +71,8 @@ export type TheoryBlock =
   | { list: Norwegian[] }
   /** a picture with a caption */
   | { fig: Figure } & Norwegian
-  /** signs with their names */
-  | { signs: ({ sign: string } & Norwegian)[] }
+  /** signs with their names (and the underskilt below a sign) */
+  | { signs: ({ sign: string; under?: PlateLine[] } & Norwegian)[] }
   /** numbers to know, e.g. { value: "0,2 ‰", no: "promillegrense", ru: "допустимое промилле", … } */
   | { nums: ({ value: string } & Norwegian)[] };
 

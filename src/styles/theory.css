@@ -76,6 +76,7 @@
 .t-sign { display: grid; place-items: center; }
 .t-sign .sign { width: 54px; height: 54px; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .2)); }
 .t-sign .sign.wide { width: 58px; height: auto; }
+.t-sign .sign.with-plate { height: calc(54px * var(--k)); }
 .sname { font-size: .97rem; line-height: 1.35; }
 .t-signs .t-ru, .t-nums .t-ru { margin-top: 2px; padding-left: 0; border-left: 0; font-size: .86rem; line-height: 1.4; }
 
