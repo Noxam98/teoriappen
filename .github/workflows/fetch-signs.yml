@@ -1,0 +1,21 @@
+# Runs only on the branch ref-signs: fetches the official sign drawings (Wikimedia Commons) for checking the app's signs.
+name: Fetch official sign drawings
+on:
+  push:
+    branches: [ref-signs]
+    paths: [.github/fetch_signs.py, .github/workflows/fetch-signs.yml]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/fetch_signs.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ref-signs
+          git commit -m "Official Norwegian sign drawings from Wikimedia Commons" || echo "nothing new"
+          git push
