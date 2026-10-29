@@ -1,0 +1,962 @@
+{
+ "Norwegian-road-sign-109-Fartshump.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Norwegian-road-sign-109-Fartshump.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 109",
+  "name": "Norwegian-road-sign-109-Fartshump",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-151.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Norwegian-road-sign-151.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 151 MILITÆR AKTIVITET",
+  "name": "Norwegian-road-sign-151",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-153.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Norwegian-road-sign-153.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 153",
+  "name": "Norwegian-road-sign-153",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-306.10.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Norwegian-road-sign-306.10.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 306.10 - No small electric vehicles",
+  "name": "Norwegian-road-sign-306.10",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-306.3.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Norwegian-road-sign-306.3.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 306.3",
+  "name": "Norwegian-road-sign-306.3",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-306.4.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Norwegian-road-sign-306.4.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 306.4",
+  "name": "Norwegian-road-sign-306.4",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-306.8.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Norwegian-road-sign-306.8.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 306.8",
+  "name": "Norwegian-road-sign-306.8",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-308.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Norwegian-road-sign-308.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 308",
+  "name": "Norwegian-road-sign-308",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-314.0 blank.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Norwegian-road-sign-314.0_blank.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Blank road sign based on <a href=\"//commons.wikimedia.org/wiki/File:Norwegian-road-sign-314.0.svg\" class=\"mw-redirect\" title=\"File:Norwegian-road-sign-314.0.svg\">File:Norwegian-road-sign-314.0.svg</a>",
+  "name": "Norwegian-road-sign-314.0 blank",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-367.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Norwegian-road-sign-367.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 367 - Speed limit zone for small electric vehicles",
+  "name": "Norwegian-road-sign-367",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-369.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Norwegian-road-sign-369.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 369 - End of speed limit zone for small electric vehicles",
+  "name": "Norwegian-road-sign-369",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-376 1.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Norwegian-road-sign-376_1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 376.1",
+  "name": "Norwegian-road-sign-376 1",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-377.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Norwegian-road-sign-377.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 377 - No parking zone for small electric vehicles",
+  "name": "Norwegian-road-sign-377",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-379.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Norwegian-road-sign-379.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 379 - End of parking zone for small electric vehicles",
+  "name": "Norwegian-road-sign-379",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-380.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Norwegian-road-sign-380.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 380 - No small electric vehicle zone",
+  "name": "Norwegian-road-sign-380",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-382.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Norwegian-road-sign-382.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 382 - End of no small electric vehicle zone",
+  "name": "Norwegian-road-sign-382",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-408.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Norwegian-road-sign-408.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 408 PÅBUDT KJØRERETNING I RUNDKJØRING",
+  "name": "Norwegian-road-sign-408",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-502 - Motorveg.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Norwegian-road-sign-502_-_Motorveg.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 502",
+  "name": "Norwegian-road-sign-502 - Motorveg",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-503 - Motortrafikkveg.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Norwegian-road-sign-503_-_Motortrafikkveg.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 503",
+  "name": "Norwegian-road-sign-503 - Motortrafikkveg",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-504 - Slutt på motorveg.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Norwegian-road-sign-504_-_Slutt_p%C3%A5_motorveg.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 504",
+  "name": "Norwegian-road-sign-504 - Slutt på motorveg",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-505 - Slutt på motortrafikkveg.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Norwegian-road-sign-505_-_Slutt_p%C3%A5_motortrafikkveg.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 505",
+  "name": "Norwegian-road-sign-505 - Slutt på motortrafikkveg",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-506.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Norwegian-road-sign-506.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 506 TUNGTRAFIKKFELT",
+  "name": "Norwegian-road-sign-506",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-507.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Norwegian-road-sign-507.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 507 SLUTT PÅ TUNGTRAFIKKFELT",
+  "name": "Norwegian-road-sign-507",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-509.0 - High-occupancy vehicle lane.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Norwegian-road-sign-509.0_-_High-occupancy_vehicle_lane.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 509",
+  "name": "Norwegian-road-sign-509.0 - High-occupancy vehicle lane",
+  "license": "Copyrighted free use"
+ },
+ "Norwegian-road-sign-509 - High-occupancy vehicle lane.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Norwegian-road-sign-509_-_High-occupancy_vehicle_lane.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 509",
+  "name": "Norwegian-road-sign-509 - High-occupancy vehicle lane",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-511 - End of High-occupancy vehicle lane.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Norwegian-road-sign-511_-_End_of_High-occupancy_vehicle_lane.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 511",
+  "name": "Norwegian-road-sign-511 - End of High-occupancy vehicle lane",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-521.1.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Norwegian-road-sign-521.1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign  521.1",
+  "name": "Norwegian-road-sign-521.1",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-539.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Norwegian-road-sign-539.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 539.",
+  "name": "Norwegian-road-sign-539",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-540.0-excerpt.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Norwegian-road-sign-540.0-excerpt.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Excerpt of Norwegian road sign 540.0.",
+  "name": "Norwegian-road-sign-540.0-excerpt",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-556.2.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Norwegian-road-sign-556.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 556.2 AUTOMATISK TRAFIKKONTROLL - STREKNINGSMÅLING",
+  "name": "Norwegian-road-sign-556.2",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-560-.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Norwegian-road-sign-560-.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 560 Opplysningstavle. Sign 560 may provide information about miscellaneous traffic conditions. May have a brown background if the information is specifically aimed at tourists. Must have a yellow background if it's a temporary sign, or an orange background if it provides information about detours.",
+  "name": "Norwegian-road-sign-560-",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-560-Opplysningstavle.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Norwegian-road-sign-560-Opplysningstavle.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 560 Opplysningstavle. Sign 560 may provide information about miscellaneous traffic conditions. May have a brown background if the information is specifically aimed at tourists. Must have a yellow background if it's a temporary sign, or an orange background if it provides information about detours.",
+  "name": "Norwegian-road-sign-560-Opplysningstavle",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-560.1.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Norwegian-road-sign-560.1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 560.1 Generelle fartsgrenser posted on border crossings on <a href=\"https://en.wikipedia.org/wiki/Norwegian_national_road\" class=\"extiw\" title=\"en:Norwegian national road\">Norwegian national roads</a>, <a href=\"https://en.wikipedia.org/wiki/Norwegian_county_road\" class=\"extiw\" title=\"en:Norwegian county road\">Norwegian county roads</a> and ferry terminals. Replaces earlier road sign <a href=\"//commons.wikimedia.org/wiki/File:Daytime_headlights_mandatory_road_sign_in_Norway_near_Finland-Norway_border.JPG\" title=\"File:Daytime headlights mandatory road sign in Norway near Finland-Norway border.JPG\">\"Daytime headlights mandatory\"</a><sup id=\"cite_ref-1\" class=\"reference\"><a href=\"#cite_note-1\"><span class=\"cite-bracket\">[</span>1<span class=\"cite-bracket\">]</span></a></sup>",
+  "name": "Norwegian-road-sign-560.1",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-560.2-Forbudt for gående og syklende på motorveg og motortrafikkveg.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Norwegian-road-sign-560.2-Forbudt_for_g%C3%A5ende_og_syklende_p%C3%A5_motorveg_og_motortrafikkveg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 560.2 Forbudt for gående og syklende på motorveg og motortrafikkveg",
+  "name": "Norwegian-road-sign-560.2-Forbudt for gående og syklende på motorveg og motortrafikkveg",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-560.3.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Norwegian-road-sign-560.3.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 560.3 Forvarsling om fartsmåling",
+  "name": "Norwegian-road-sign-560.3",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-565.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Norwegian-road-sign-565.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 565",
+  "name": "Norwegian-road-sign-565",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-601.0.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Norwegian-road-sign-601.0.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Old version of Norwegian road sign 601.0. Now obsolete. The channel that relays traffic announcements has been moved to DAB digital radio. <a href=\"//commons.wikimedia.org/wiki/File:Norwegian-road-sign-601.jpg\" title=\"File:Norwegian-road-sign-601.jpg\">current version</a>",
+  "name": "Norwegian-road-sign-601.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-601.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Norwegian-road-sign-601.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 601",
+  "name": "Norwegian-road-sign-601",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-609.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Norwegian-road-sign-609.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 609",
+  "name": "Norwegian-road-sign-609",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-610.2-CNG.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Norwegian-road-sign-610.2-CNG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 610.2",
+  "name": "Norwegian-road-sign-610.2-CNG",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-610.2-LPG.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Norwegian-road-sign-610.2-LPG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 610.2",
+  "name": "Norwegian-road-sign-610.2-LPG",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-625.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Norwegian-road-sign-625.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 625",
+  "name": "Norwegian-road-sign-625",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-635 - Informasjon.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Norwegian-road-sign-635_-_Informasjon.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 635",
+  "name": "Norwegian-road-sign-635 - Informasjon",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-640.10-Severdighet.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Norwegian-road-sign-640.10-Severdighet.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 640.10",
+  "name": "Norwegian-road-sign-640.10-Severdighet",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-640.10-Severdighet.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Norwegian-road-sign-640.10-Severdighet.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 640.10",
+  "name": "Norwegian-road-sign-640.10-Severdighet",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-640.101.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Norwegian-road-sign-640.101.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 640.101 VERDENSARV",
+  "name": "Norwegian-road-sign-640.101",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-640.102.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Norwegian-road-sign-640.102.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 640.102 NASJONALE FESTNINGSVERK",
+  "name": "Norwegian-road-sign-640.102",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-640.12 - Museum.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Norwegian-road-sign-640.12_-_Museum.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 640.12",
+  "name": "Norwegian-road-sign-640.12 - Museum",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-640.30.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Norwegian-road-sign-640.30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 640.30 NATURVERNOMRÅDE",
+  "name": "Norwegian-road-sign-640.30",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-640.30.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Norwegian-road-sign-640.30.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Obsolete version of Norwegian road sign 640.30.",
+  "name": "Norwegian-road-sign-640.30",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-640.30 - Naturvernområde.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Norwegian-road-sign-640.30_-_Naturvernomr%C3%A5de.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Obsolete version of Norwegian road sign 640.30. <a href=\"//commons.wikimedia.org/wiki/File:Norwegian-road-sign-640.30.jpg\" title=\"File:Norwegian-road-sign-640.30.jpg\">current version</a>",
+  "name": "Norwegian-road-sign-640.30 - Naturvernområde",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-650.10 - Badeplass.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Norwegian-road-sign-650.10_-_Badeplass.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 750.10",
+  "name": "Norwegian-road-sign-650.10 - Badeplass",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-650.11 - Fiskeplass.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Norwegian-road-sign-650.11_-_Fiskeplass.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 650.11",
+  "name": "Norwegian-road-sign-650.11 - Fiskeplass",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-650.22.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Norwegian-road-sign-650.22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 650.22 SYKKELLØYPE",
+  "name": "Norwegian-road-sign-650.22",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-650.40.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Norwegian-road-sign-650.40.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 750.40",
+  "name": "Norwegian-road-sign-650.40",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-650.41.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Norwegian-road-sign-650.41.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 650.41 OLAVSROSA",
+  "name": "Norwegian-road-sign-650.41",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-701.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Norwegian-road-sign-701.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 701.0",
+  "name": "Norwegian-road-sign-701",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-703.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Norwegian-road-sign-703.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 703.0",
+  "name": "Norwegian-road-sign-703",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-705.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Norwegian-road-sign-705.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 705.0",
+  "name": "Norwegian-road-sign-705",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-707.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Norwegian-road-sign-707.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 707.0",
+  "name": "Norwegian-road-sign-707",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-709.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Norwegian-road-sign-709.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 709.0",
+  "name": "Norwegian-road-sign-709",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-711.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Norwegian-road-sign-711.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 711.0",
+  "name": "Norwegian-road-sign-711",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-713.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Norwegian-road-sign-713.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 713.0",
+  "name": "Norwegian-road-sign-713",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-715a.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Norwegian-road-sign-715a.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 715a",
+  "name": "Norwegian-road-sign-715a",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-715b.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Norwegian-road-sign-715b.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 715b",
+  "name": "Norwegian-road-sign-715b",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-717.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Norwegian-road-sign-717.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 717.0",
+  "name": "Norwegian-road-sign-717",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-719.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Norwegian-road-sign-719.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 719.0",
+  "name": "Norwegian-road-sign-719",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.11.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Norwegian-road-sign-723.11.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.11",
+  "name": "Norwegian-road-sign-723.11",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.12.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Norwegian-road-sign-723.12.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.12",
+  "name": "Norwegian-road-sign-723.12",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.13.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Norwegian-road-sign-723.13.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.13",
+  "name": "Norwegian-road-sign-723.13",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.14.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Norwegian-road-sign-723.14.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.14",
+  "name": "Norwegian-road-sign-723.14",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.15.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Norwegian-road-sign-723.15.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.15",
+  "name": "Norwegian-road-sign-723.15",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.15.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Norwegian-road-sign-723.15.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.15.",
+  "name": "Norwegian-road-sign-723.15",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.16.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Norwegian-road-sign-723.16.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.16",
+  "name": "Norwegian-road-sign-723.16",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.16.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Norwegian-road-sign-723.16.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.16.",
+  "name": "Norwegian-road-sign-723.16",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.21-Ringveg.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Norwegian-road-sign-723.21-Ringveg.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.21",
+  "name": "Norwegian-road-sign-723.21-Ringveg",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.21.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Norwegian-road-sign-723.21.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.21.",
+  "name": "Norwegian-road-sign-723.21",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.22-Ringveg.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Norwegian-road-sign-723.22-Ringveg.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.22",
+  "name": "Norwegian-road-sign-723.22-Ringveg",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.22.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Norwegian-road-sign-723.22.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.22.",
+  "name": "Norwegian-road-sign-723.22",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.31-Nasjonal turistveg.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Norwegian-road-sign-723.31-Nasjonal_turistveg.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.31",
+  "name": "Norwegian-road-sign-723.31-Nasjonal turistveg",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.66.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Norwegian-road-sign-723.66.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.66.",
+  "name": "Norwegian-road-sign-723.66",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.71.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Norwegian-road-sign-723.71.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.71.",
+  "name": "Norwegian-road-sign-723.71",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.72.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Norwegian-road-sign-723.72.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.72.",
+  "name": "Norwegian-road-sign-723.72",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723.73.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Norwegian-road-sign-723.73.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 723.73.",
+  "name": "Norwegian-road-sign-723.73",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723 71.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Norwegian-road-sign-723_71.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "",
+  "name": "Norwegian-road-sign-723 71",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723 72.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Norwegian-road-sign-723_72.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "",
+  "name": "Norwegian-road-sign-723 72",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-723 73.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Norwegian-road-sign-723_73.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "",
+  "name": "Norwegian-road-sign-723 73",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-727.1.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Norwegian-road-sign-727.1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 727.1",
+  "name": "Norwegian-road-sign-727.1",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-727.2.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Norwegian-road-sign-727.2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 727.2",
+  "name": "Norwegian-road-sign-727.2",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-727.3R.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Norwegian-road-sign-727.3R.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 727.3 used on country borders. Bilingual Bokmål and Sami in Troms og Finnmark, bilingual Bokmål and Nynorsk in other counties.<sup id=\"cite_ref-1\" class=\"reference\"><a href=\"#cite_note-1\"><span class=\"cite-bracket\">[</span>1<span class=\"cite-bracket\">]</span></a></sup>",
+  "name": "Norwegian-road-sign-727.3R",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-727.3k.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Norwegian-road-sign-727.3k.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 727.3K",
+  "name": "Norwegian-road-sign-727.3k",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-727.4.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Norwegian-road-sign-727.4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 727.4",
+  "name": "Norwegian-road-sign-727.4",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-729 0.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Norwegian-road-sign-729_0.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 729.0",
+  "name": "Norwegian-road-sign-729 0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-731.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Norwegian-road-sign-731.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 731.0",
+  "name": "Norwegian-road-sign-731",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-741.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Norwegian-road-sign-741.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 741.0",
+  "name": "Norwegian-road-sign-741",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-749.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Norwegian-road-sign-749.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 749.0",
+  "name": "Norwegian-road-sign-749",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-751.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Norwegian-road-sign-751.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 751.0",
+  "name": "Norwegian-road-sign-751",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-753.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Norwegian-road-sign-753.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 753.0",
+  "name": "Norwegian-road-sign-753",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-755.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Norwegian-road-sign-755.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 755.",
+  "name": "Norwegian-road-sign-755",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-757.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Norwegian-road-sign-757.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 757.0",
+  "name": "Norwegian-road-sign-757",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-761.0.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Norwegian-road-sign-761.0.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "",
+  "name": "Norwegian-road-sign-761.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-765 - Bomveg (Toll road).png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Norwegian-road-sign-765_-_Bomveg_%28Toll_road%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 765",
+  "name": "Norwegian-road-sign-765 - Bomveg (Toll road)",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-774 - Jernbanestasjon.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Norwegian-road-sign-774_-_Jernbanestasjon.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 774",
+  "name": "Norwegian-road-sign-774 - Jernbanestasjon",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-775.0 (gammel).svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Norwegian-road-sign-775.0_%28gammel%29.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Old version of Norwegian road sign 775.0 before 2006. <a href=\"//commons.wikimedia.org/wiki/File:Norwegian-road-sign-775.0.svg\" class=\"mw-redirect\" title=\"File:Norwegian-road-sign-775.0.svg\">current version</a>",
+  "name": "Norwegian-road-sign-775.0 (gammel)",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-775 - Ferry.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Norwegian-road-sign-775_-_Ferry.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 775",
+  "name": "Norwegian-road-sign-775 - Ferry",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-776.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Norwegian-road-sign-776.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 776",
+  "name": "Norwegian-road-sign-776",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-780.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Norwegian-road-sign-780.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 780",
+  "name": "Norwegian-road-sign-780",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-790.16-Kjøpesenter.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Norwegian-road-sign-790.16-Kj%C3%B8pesenter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 790.16 Kjøpesenter",
+  "name": "Norwegian-road-sign-790.16-Kjøpesenter",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-790.20- Svømmehall.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Norwegian-road-sign-790.20-_Sv%C3%B8mmehall.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 790.20",
+  "name": "Norwegian-road-sign-790.20- Svømmehall",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-790.30 -Alpinanlegg.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Norwegian-road-sign-790.30_-Alpinanlegg.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 790.30",
+  "name": "Norwegian-road-sign-790.30 -Alpinanlegg",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-790.31 - Hoppbakke.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Norwegian-road-sign-790.31_-_Hoppbakke.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 790.31",
+  "name": "Norwegian-road-sign-790.31 - Hoppbakke",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-792.11 - Electronic toll collection.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Norwegian-road-sign-792.11_-_Electronic_toll_collection.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 792.11",
+  "name": "Norwegian-road-sign-792.11 - Electronic toll collection",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-792.12 Betaling til betjent.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Norwegian-road-sign-792.12_Betaling_til_betjent.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 792.12",
+  "name": "Norwegian-road-sign-792.12 Betaling til betjent",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-792.13.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Norwegian-road-sign-792.13.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 792.13",
+  "name": "Norwegian-road-sign-792.13",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-792.14-alpha.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Norwegian-road-sign-792.14-alpha.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 792.14 with no background color.",
+  "name": "Norwegian-road-sign-792.14-alpha",
+  "license": "CC0"
+ },
+ "Norwegian-road-sign-792.14.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Norwegian-road-sign-792.14.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 792.14",
+  "name": "Norwegian-road-sign-792.14",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-792.15.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Norwegian-road-sign-792.15.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 792.15",
+  "name": "Norwegian-road-sign-792.15",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-792.16.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Norwegian-road-sign-792.16.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 792.16",
+  "name": "Norwegian-road-sign-792.16",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-792.17.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Norwegian-road-sign-792.17.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 792.17",
+  "name": "Norwegian-road-sign-792.17",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-792.30.gif": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Norwegian-road-sign-792.30.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 792.30",
+  "name": "Norwegian-road-sign-792.30",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-792.31.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Norwegian-road-sign-792.31.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 729.31. Now obsolete. <a href=\"//commons.wikimedia.org/wiki/File:Norwegian-road-sign-792.11.svg\" class=\"mw-redirect\" title=\"File:Norwegian-road-sign-792.11.svg\">current sign indicating electronic toll payment</a> <a href=\"//commons.wikimedia.org/wiki/File:Norwegian-road-sign-792.30.svg\" class=\"mw-redirect\" title=\"File:Norwegian-road-sign-792.30.svg\">current sign indicating automatic toll collection</a>",
+  "name": "Norwegian-road-sign-792.31",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-802.0.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Norwegian-road-sign-802.0.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 802.0.",
+  "name": "Norwegian-road-sign-802.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-804.0.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Norwegian-road-sign-804.0.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 804.0.",
+  "name": "Norwegian-road-sign-804.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-806.0.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Norwegian-road-sign-806.0.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 806.0.",
+  "name": "Norwegian-road-sign-806.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-807.10.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Norwegian-road-sign-807.10.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 807.10 - Small electric vehicle",
+  "name": "Norwegian-road-sign-807.10",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-807.6U.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Norwegian-road-sign-807.6U.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Underskilt 807.6U - Unntatt sykkel",
+  "name": "Norwegian-road-sign-807.6U",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-817.1.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Norwegian-road-sign-817.1.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 817.1.",
+  "name": "Norwegian-road-sign-817.1",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-817.2.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Norwegian-road-sign-817.2.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 817.2.",
+  "name": "Norwegian-road-sign-817.2",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-817.3.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Norwegian-road-sign-817.3.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 817.3.",
+  "name": "Norwegian-road-sign-817.3",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-817.4.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Norwegian-road-sign-817.4.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 817.4.",
+  "name": "Norwegian-road-sign-817.4",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-817.5.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Norwegian-road-sign-817.5.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 817.5.",
+  "name": "Norwegian-road-sign-817.5",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-822.1.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Norwegian-road-sign-822.1.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 822.1.",
+  "name": "Norwegian-road-sign-822.1",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-822.2.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Norwegian-road-sign-822.2.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 822.2.",
+  "name": "Norwegian-road-sign-822.2",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-822.3.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Norwegian-road-sign-822.3.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 822.3.",
+  "name": "Norwegian-road-sign-822.3",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-822.4.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Norwegian-road-sign-822.4.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 822.4.",
+  "name": "Norwegian-road-sign-822.4",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-822.5.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Norwegian-road-sign-822.5.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 822.5.",
+  "name": "Norwegian-road-sign-822.5",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-822.6.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Norwegian-road-sign-822.6.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 822.6.",
+  "name": "Norwegian-road-sign-822.6",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-822.7.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Norwegian-road-sign-822.7.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 822.7.",
+  "name": "Norwegian-road-sign-822.7",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-824 0.png": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Norwegian-road-sign-824_0.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 824.0",
+  "name": "Norwegian-road-sign-824 0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-829.0.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Norwegian-road-sign-829.0.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 829.0.",
+  "name": "Norwegian-road-sign-829.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-831.0.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Norwegian-road-sign-831.0.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 831.0.",
+  "name": "Norwegian-road-sign-831.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-834.0.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Norwegian-road-sign-834.0.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 834.0.",
+  "name": "Norwegian-road-sign-834.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-902.0H.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Norwegian-road-sign-902.0H.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 902.0H.",
+  "name": "Norwegian-road-sign-902.0H",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-902.0V.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Norwegian-road-sign-902.0V.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 902.0V.",
+  "name": "Norwegian-road-sign-902.0V",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-904.0H.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Norwegian-road-sign-904.0H.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 904.0H.",
+  "name": "Norwegian-road-sign-904.0H",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-904.0V.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Norwegian-road-sign-904.0V.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 904.0V.",
+  "name": "Norwegian-road-sign-904.0V",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-906.0H.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Norwegian-road-sign-906.0H.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 906.0H.",
+  "name": "Norwegian-road-sign-906.0H",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-906.0V.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Norwegian-road-sign-906.0V.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 906.0V.",
+  "name": "Norwegian-road-sign-906.0V",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-906.0VH.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Norwegian-road-sign-906.0VH.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 906.0VH.",
+  "name": "Norwegian-road-sign-906.0VH",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-908.0.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Norwegian-road-sign-908.0.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 908.0.",
+  "name": "Norwegian-road-sign-908.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-912.0.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Norwegian-road-sign-912.0.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 912.0.",
+  "name": "Norwegian-road-sign-912.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-914.H.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Norwegian-road-sign-914.H.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 914.H.",
+  "name": "Norwegian-road-sign-914.H",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-914.V.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Norwegian-road-sign-914.V.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 914.V.",
+  "name": "Norwegian-road-sign-914.V",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-916.0.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Norwegian-road-sign-916.0.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 916.0.",
+  "name": "Norwegian-road-sign-916.0",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-920.H.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Norwegian-road-sign-920.H.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 920.H.",
+  "name": "Norwegian-road-sign-920.H",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-920.VE.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Norwegian-road-sign-920.VE.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 920.VE.",
+  "name": "Norwegian-road-sign-920.VE",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-920.VM.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Norwegian-road-sign-920.VM.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 920.VM.",
+  "name": "Norwegian-road-sign-920.VM",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-940.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Norwegian-road-sign-940.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 940",
+  "name": "Norwegian-road-sign-940",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-942.jpg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Norwegian-road-sign-942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Norwegian road sign 942",
+  "name": "Norwegian-road-sign-942",
+  "license": "Public domain"
+ },
+ "Norwegian-road-sign-polar-bear.svg": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Norwegian-road-sign-polar-bear.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "description": "Polar bears, Norwegian warning road sign.",
+  "name": "Norwegian-road-sign-polar-bear",
+  "license": "Public domain"
+ }
+}
