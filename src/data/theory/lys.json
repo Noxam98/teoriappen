@@ -1,0 +1,43 @@
+{
+  "cat": "lys",
+  "lead": "Lyset hjelper deg å se veien, og det gjør at andre ser deg. Her lærer du hvilket lys du skal bruke, og hvordan du unngår å blende andre.",
+  "leadRu": "Фары помогают вам видеть дорогу, а другим — видеть вас. Здесь — какой свет когда включать и как не ослепить других.",
+  "blocks": [
+    { "h": "Lys om dagen", "ru": "Свет днём" },
+    { "p": "I Norge skal bilen alltid ha nærlys eller kjørelys på under kjøring. Det gjelder også om dagen i godt vær.", "ru": "В Норвегии во время движения всегда должен гореть ближний свет или дневные ходовые огни (kjørelys). Даже днём в хорошую погоду." },
+    { "p": "Kjørelys er laget for at bilen skal bli sett om dagen. Det lyser ikke opp veien godt nok, og på mange biler er baklysene ikke tent når du bare har kjørelys.", "ru": "Дневные ходовые огни нужны, чтобы машину было видно днём. Дорогу они освещают плохо, а на многих машинах задние фонари при этом не горят." },
+    { "rule": "Når det er mørkt, og når du kjører i tunnel, skal du bruke nærlys. Da ser du godt, og andre ser deg – også bakfra.", "ru": "В темноте и в тоннеле включайте ближний свет. Тогда вы хорошо видите дорогу, а вас видно другим — в том числе сзади." },
+    { "signs": [
+      ["tunnel", "Tunnel: bruk nærlys i tunnelen", "Тоннель: в тоннеле включайте ближний свет"]
+    ] },
+
+    { "h": "Fjernlys og nærlys i mørket", "ru": "Дальний и ближний свет в темноте" },
+    { "p": "Fjernlys gir lengst sikt. Bruk det på mørk vei når du ikke blender andre.", "ru": "Дальний свет даёт наибольшую видимость. Включайте его на тёмной дороге, когда он никого не ослепляет." },
+    { "list": [
+      ["Blend ned til nærlys i god tid før du møter en bil.", "Переключайтесь на ближний свет заблаговременно, до встречи со встречной машиной."],
+      ["Blend ned når du kjører bak en annen bil. Fjernlyset kan blende føreren foran deg gjennom speilene.", "Переключайтесь на ближний, когда едете за другой машиной: дальний свет может ослепить водителя впереди через зеркала."],
+      ["I tåke gir fjernlys dårligere sikt, fordi lyset blir reflektert i tåken.", "В тумане дальний свет ухудшает видимость: туман отражает его обратно."]
+    ] },
+    { "p": "I mørket ser du kortere enn om dagen. Du må tilpasse farten slik at du kan stoppe på den strekningen lyset viser deg.", "ru": "В темноте видно ближе, чем днём. Выбирайте скорость так, чтобы успеть остановиться в пределах участка, освещённого фарами." },
+    { "nums": [
+      ["25–30 m", "så langt unna ser du en gående med mørke klær når du har nærlys", "с такого расстояния при ближнем свете виден пешеход в тёмной одежде"],
+      ["140 m", "så langt unna ser du en gående med refleks når du har nærlys", "с такого расстояния при ближнем свете виден пешеход со светоотражателем"]
+    ] },
+
+    { "h": "Når du blir blendet", "ru": "Если вас ослепили" },
+    { "p": "Blir du blendet av en møtende bil, se mot høyre kant av veien og senk farten. Stopp om nødvendig.", "ru": "Если вас ослепила встречная машина, смотрите на правый край дороги и снизьте скорость. При необходимости остановитесь." },
+    { "trap": "Ikke se rett inn i lyset, og ikke sett på fjernlys for å blende tilbake. Da ser dere begge enda dårligere.", "ru": "Не смотрите прямо на свет фар и не включайте дальний, чтобы ослепить в ответ. Тогда вы оба будете видеть ещё хуже." },
+
+    { "h": "Tåkebaklys, nødsignal og parkeringslys", "ru": "Задний противотуманный фонарь, аварийка и габариты" },
+    { "list": [
+      ["Tåkebaklys bruker du bare når sikten er sterkt nedsatt, for eksempel i tett tåke eller snøvær.", "Задний противотуманный фонарь включают только при сильно ухудшенной видимости, например в густом тумане или снегопаде."],
+      ["Nødsignal betyr at alle blinklysene blinker samtidig. Bruk det når bilen står stille på et sted der den kan være til fare, for eksempel ved motorstopp eller ulykke.", "Аварийная сигнализация — все поворотники мигают одновременно. Включайте её, когда машина стоит там, где может создать опасность, например при поломке двигателя или ДТП."],
+      ["Står bilen på en mørk vei uten gatelys, skal den ha parkeringslys på, slik at andre ser den.", "Если машина стоит на тёмной дороге без уличного освещения, у неё должны гореть габаритные огни, чтобы её было видно."]
+    ] },
+    { "trap": "Tåkebaklys er ikke for vanlig mørke, lett regn eller kø. Det sterke lyset kan blende den som kjører bak deg og gjøre det vanskelig å se bremselysene dine. Slå det av når sikten blir bedre.", "ru": "Задний противотуманный фонарь не для обычной темноты, лёгкого дождя или пробки. Его яркий свет может ослепить едущего сзади и мешать ему видеть ваши стоп-сигналы. Выключите его, когда видимость улучшится." },
+
+    { "h": "Rene og riktig innstilte lys", "ru": "Чистые и правильно отрегулированные фары" },
+    { "p": "Skitne lykter lyser mye svakere og sprer lyset, slik at andre kan bli blendet. Hold lys og ruter rene, særlig om vinteren.", "ru": "Грязные фары светят намного слабее и рассеивают свет, так что могут ослепить других. Держите фары и стёкла чистыми, особенно зимой." },
+    { "rule": "Er bilen tungt lastet bak, løfter fronten seg, og lyset peker høyere. Juster lyset ned med lysreguleringen, så du ikke blender møtende.", "ru": "Если машина сильно нагружена сзади, её перед приподнимается, и фары светят выше. Опустите свет корректором фар, чтобы не слепить встречных." }
+  ]
+}

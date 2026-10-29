@@ -1,0 +1,44 @@
+{
+  "cat": "forerkort",
+  "lead": "Her lærer du hva førerkort klasse B gir lov til, hvordan øvelseskjøring og teoriprøven fungerer, og hva prøvetid og prikker betyr.",
+  "leadRu": "Здесь — что разрешают права категории B, как устроены учебная езда и теоретический экзамен и что такое испытательный срок и штрафные баллы.",
+  "blocks": [
+    { "h": "Førerkort klasse B", "ru": "Права категории B" },
+    { "nums": [
+      ["18 år", "aldersgrense for førerkort klasse B", "минимальный возраст для прав категории B"],
+      ["3500 kg", "høyeste tillatte totalvekt for bilen", "наибольшая разрешённая общая масса автомобиля"],
+      ["inntil 8", "sitteplasser i tillegg til førerplassen", "не больше 8 мест помимо водительского"]
+    ] },
+    { "list": [
+      ["Ha med førerkortet når du kjører: enten det fysiske kortet eller det digitale førerkortet i appen.", "Во время езды права должны быть при вас: либо пластиковая карточка, либо цифровые права в приложении."],
+      ["Står det i førerkortet at du må bruke briller eller linser, må du alltid bruke dem når du kjører – ikke bare i mørket.", "Если в правах указано, что вам нужны очки или линзы, носите их за рулём всегда — не только в темноте."]
+    ] },
+
+    { "h": "Øvelseskjøring", "ru": "Учебная езда" },
+    { "p": "Du kan øvelseskjøre bil fra du er 16 år. Før du begynner, må du ha gjennomført trafikalt grunnkurs.", "ru": "Учиться водить машину можно с 16 лет. Но сначала нужно пройти базовый курс по дорожному движению (trafikalt grunnkurs)." },
+    { "trap": "Du trenger ikke ha bestått teoriprøven før du øvelseskjører. Det som kreves, er trafikalt grunnkurs.", "ru": "Для учебной езды не нужно сдавать теоретический экзамен. Требуется только базовый курс (trafikalt grunnkurs)." },
+    { "list": [
+      ["Ledsageren må ha fylt 25 år.", "Сопровождающему должно быть не меньше 25 лет."],
+      ["Ledsageren må ha hatt førerkort klasse B sammenhengende de siste 5 årene.", "Сопровождающий должен непрерывно иметь права категории B последние 5 лет."],
+      ["Ledsageren må være edru og oppmerksom hele tiden.", "Сопровождающий должен быть трезвым и всё время внимательным."]
+    ] },
+    { "rule": "Under øvelseskjøring regnes ledsageren som fører av bilen – ikke eleven bak rattet. Ledsageren har derfor ansvaret for kjøringen.", "ru": "Во время учебной езды водителем считается сопровождающий, а не ученик за рулём. Поэтому за езду отвечает сопровождающий." },
+
+    { "h": "Teoriprøven", "ru": "Теоретический экзамен" },
+    { "nums": [
+      ["45", "spørsmål på teoriprøven", "вопросов на экзамене"],
+      ["90 min", "tid til å svare", "время на ответы"],
+      ["inntil 7", "feil, og du består likevel (minst 38 av 45 riktige)", "ошибок — и экзамен всё равно сдан (нужно не меньше 38 верных ответов из 45)"],
+      ["2 uker", "ventetid før ny prøve hvis du ikke består", "сколько ждать пересдачи, если не сдали"]
+    ] },
+
+    { "h": "Prøvetid og prikker", "ru": "Испытательный срок и штрафные баллы" },
+    { "p": "Noen overtredelser gir prikker i tillegg til bot. De første 2 årene etter at du har fått førerkort klasse B første gang, er en prøvetid. I prøvetiden får du dobbelt så mange prikker.", "ru": "За некоторые нарушения кроме штрафа начисляют штрафные баллы (prikker). Первые 2 года после первого получения прав категории B — испытательный срок (prøvetid). В это время баллы начисляются в двойном размере." },
+    { "nums": [
+      ["2 år", "prøvetid for nye førere", "испытательный срок для новых водителей"],
+      ["× 2", "prikker i prøvetiden: 3 prikker blir 6", "баллы в испытательный срок: вместо 3 баллов — 6"],
+      ["8 prikker", "i løpet av 3 år: du mister førerretten i 6 måneder", "за 3 года: лишение прав на 6 месяцев"]
+    ] },
+    { "rule": "Mister du førerretten i prøvetiden, må du ta både teoriprøven og den praktiske prøven på nytt. Det holder ikke å vente eller betale en bot.", "ru": "Если вы лишились прав в испытательный срок, придётся заново сдать и теоретический, и практический экзамен. Просто подождать или заплатить штраф недостаточно." }
+  ]
+}

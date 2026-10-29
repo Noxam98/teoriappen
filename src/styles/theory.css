@@ -1,0 +1,100 @@
+/* Theory: a table of contents and chapters printed on a white "page", Norwegian text with the Russian under it */
+.theory, .chapter { display: grid; }
+.theory-progress { display: grid; gap: 8px; padding: 12px 16px; margin-bottom: 12px; font-size: .92rem; color: var(--ink-2); }
+.theory-progress b { font-family: var(--display); font-size: 1.05rem; color: var(--ink); }
+.theory-progress .meter { height: 6px; }
+
+.chapter-row {
+  display: grid; grid-template-columns: 40px minmax(0, 1fr) 20px; grid-template-areas: "ic nm chev" "ic meta chev";
+  gap: 3px 12px; align-items: center; text-align: left; padding: 12px 12px 12px 14px; min-height: 70px; min-width: 0;
+  border: 0; border-top: 1px solid var(--line); background: transparent; cursor: pointer; transition: background-color .12s;
+}
+.chapter-row:first-child { border-top: 0; }
+.chapter-row:active { background: var(--blue-soft); }
+.chapter-row .ic { grid-area: ic; width: 40px; height: 40px; display: grid; place-items: center; }
+.chapter-row .ic svg { width: 36px; height: 36px; }
+.chapter-row .nm { grid-area: nm; font-weight: 600; font-size: .98rem; line-height: 1.25; min-width: 0; }
+.chapter-row .nm small { display: block; font-weight: 400; color: var(--ink-2); font-size: .8rem; margin-top: 1px; }
+.ch-meta { grid-area: meta; display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: .78rem; color: var(--ink-2); }
+.ch-done { display: inline-flex; align-items: center; gap: 4px; color: var(--ok); font-weight: 600; }
+.ch-done svg { width: 15px; height: 15px; }
+.chapter-row .chev { grid-area: chev; color: var(--ink-3); display: grid; }
+.chapter-row .chev svg { width: 18px; height: 18px; }
+@media (hover: hover) { .chapter-row:hover { background: var(--surface-2); } .chapter-row:hover .chev { color: var(--blue); } }
+@media (min-width: 720px) {
+  .chapters { grid-template-columns: 1fr 1fr; }
+  .chapter-row:nth-child(2) { border-top: 0; }
+  .chapter-row:nth-child(even) { border-left: 1px solid var(--line); }
+}
+
+/* chapter */
+.read-progress {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + var(--bar-h, 57px)); z-index: 10; height: 3px;
+  margin: -16px calc(-1 * max(16px, env(safe-area-inset-left, 0px))) 13px; background: var(--surface-3);
+}
+.read-progress i { display: block; height: 100%; background: var(--yellow); transform: scaleX(0); transform-origin: left; }
+@media (min-width: 720px) { .read-progress { margin-top: -28px; margin-bottom: 25px; } }
+.chapter-head { display: grid; gap: 14px; padding: 4px 2px 16px; }
+.chapter-title { display: flex; gap: 14px; align-items: center; }
+.chapter-title .ic { flex: none; display: grid; }
+.chapter-title .ic svg { width: 52px; height: 52px; }
+.chapter-title h1 { font-family: var(--display); font-weight: 700; font-size: clamp(1.9rem, 8.5vw, 2.5rem); line-height: 1.02; }
+.chapter-ru { color: var(--ink-2); font-size: .92rem; margin-top: 3px; }
+.chapter-head .lead [lang="nb"] { font-size: calc(var(--qsize) * .98); font-weight: 500; line-height: 1.5; }
+
+.chapter-body { display: grid; gap: 14px; padding: 4px 16px 22px; border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow); }
+.t-h { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.t-h:first-child { margin-top: 0; border-top: 0; }
+.t-h h2 { font-size: 1.24rem; line-height: 1.25; }
+.t-h-ru { color: var(--ink-2); font-size: .88rem; margin-top: 2px; }
+.t-p [lang="nb"], .t-list [lang="nb"] { font-size: calc(var(--qsize) * .92); line-height: 1.55; }
+.t-ru { margin-top: 6px; padding-left: 11px; border-left: 2px solid var(--line); color: var(--ink-2); font-size: .93rem; line-height: 1.5; }
+
+.t-box { display: grid; gap: 6px; padding: 13px 15px 14px; border-radius: var(--r); border-left: 4px solid; }
+.t-box.rule { background: var(--blue-soft); border-color: var(--blue); }
+.t-box.trap { background: var(--note); border-color: var(--flag); }
+.t-box-label { display: flex; align-items: center; gap: 6px; font-family: var(--display); font-weight: 700; font-size: .82rem; letter-spacing: .07em; text-transform: uppercase; color: var(--blue); }
+.t-box.trap .t-box-label { color: var(--streak-ink); }
+.t-box-label svg { width: 18px; height: 18px; }
+.t-box [lang="nb"] { font-size: calc(var(--qsize) * .92); font-weight: 600; line-height: 1.5; }
+.t-box .t-ru { border-left-color: color-mix(in srgb, currentColor 18%, transparent); }
+
+/* bullets are little forkjørsvei diamonds */
+.t-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.t-list li { position: relative; padding-left: 24px; }
+.t-list li::before {
+  content: ""; position: absolute; left: 5px; top: calc(var(--qsize) * .92 * 1.55 / 2 - 5px); width: 9px; height: 9px;
+  background: var(--yellow); border: 1.5px solid var(--surface); outline: 1px solid var(--ink-3); transform: rotate(45deg);
+}
+
+.t-fig { margin: 4px 0; display: grid; gap: 8px; }
+.t-fig figcaption [lang="nb"] { font-size: .96rem; font-weight: 500; line-height: 1.45; }
+
+.t-signs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); }
+.t-signs li { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 12px; align-items: center; padding: 10px 12px 10px 10px; border-radius: var(--r); background: var(--surface-2); }
+.t-sign { display: grid; place-items: center; }
+.t-sign .sign { width: 54px; height: 54px; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .2)); }
+.t-sign .sign.wide { width: 58px; height: auto; }
+.sname { font-size: .97rem; line-height: 1.35; }
+.t-signs .t-ru, .t-nums .t-ru { margin-top: 2px; padding-left: 0; border-left: 0; font-size: .86rem; line-height: 1.4; }
+
+.t-nums { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 136px), 1fr)); }
+.t-nums li { display: grid; align-content: start; gap: 2px; padding: 12px 14px; border-radius: var(--r); background: var(--surface-2); }
+.t-nums b { font-family: var(--display); font-weight: 700; font-size: 1.7rem; line-height: 1.1; color: var(--blue); }
+.t-nums [lang="nb"] { font-size: .92rem; font-weight: 600; line-height: 1.3; }
+
+.chapter-end { display: grid; gap: 10px; margin-top: 16px; }
+.chapter-end .ch-done { justify-content: center; font-size: .95rem; }
+.next-chapter {
+  display: grid; grid-template-columns: minmax(0, 1fr) 24px; grid-template-areas: "eb chev" "nm chev"; gap: 3px 12px; align-items: center;
+  min-height: 76px; padding: 14px 16px; text-align: left; border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--surface);
+  box-shadow: var(--shadow); cursor: pointer; transition: transform .08s;
+}
+.next-chapter:active { transform: scale(.98); }
+.next-chapter .eyebrow { grid-area: eb; }
+.next-chapter .nm { grid-area: nm; font-weight: 700; font-size: 1.08rem; line-height: 1.25; min-width: 0; }
+.next-chapter .nm small { display: block; font-weight: 400; color: var(--ink-2); font-size: .82rem; }
+.next-chapter > svg { grid-area: chev; width: 24px; height: 24px; color: var(--blue); }
+@media (hover: hover) { .next-chapter:hover { border-color: var(--ink-3); } }
+@media (max-width: 360px) { .chapter .actionbar .btn.primary > svg { display: none; } }
+.btn-sub { display: inline-grid; place-items: center; min-width: 26px; height: 22px; padding: 0 7px; border-radius: 999px; background: color-mix(in srgb, currentColor 20%, transparent); font-size: .8rem; }

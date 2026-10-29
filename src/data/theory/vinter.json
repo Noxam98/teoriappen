@@ -1,0 +1,53 @@
+{
+  "cat": "vinter",
+  "lead": "Is, snø, vann og dårlig sikt gjør kjøringen vanskeligere. Her lærer du om vinterdekk, glatt vei, skrens, tåke og vind, kolonnekjøring og brann i tunnel.",
+  "leadRu": "Лёд, снег, вода и плохая видимость усложняют езду. Здесь — о зимних шинах, скользкой дороге, заносах, тумане и ветре, движении в колонне и пожаре в туннеле.",
+  "blocks": [
+    { "h": "Før du kjører om vinteren", "ru": "Перед зимней поездкой" },
+    { "p": "Fjern snø og is fra alle ruter, lys, speil og taket før du kjører. Snø fra taket kan gli ned på frontruten når du bremser, eller blåse mot andre trafikanter.", "ru": "Перед поездкой очистите от снега и льда все стёкла, фары, зеркала и крышу. Снег с крыши может съехать на лобовое стекло при торможении или полететь в других участников движения." },
+    { "p": "Skal du over en fjellovergang, sjekker du vær- og føremeldingen først. Været kan endre seg raskt, og veien kan bli stengt. Fyll tanken, og ha med varme klær og kjetting i tilfelle du blir stående.", "ru": "Если едете через горный перевал, сначала посмотрите прогноз погоды и состояния дорог. Погода в горах быстро меняется, а дорогу могут закрыть. Заправьте полный бак и возьмите тёплую одежду и цепи на случай, если придётся долго стоять." },
+
+    { "h": "Vinterdekk og piggdekk", "ru": "Зимние и шипованные шины" },
+    { "p": "Det er ikke påbudt å ha piggdekk eller piggfrie vinterdekk. Men dekkene skal alltid gi godt nok veigrep på det føret du kjører på.", "ru": "Ни шипованные, ни нешипованные зимние шины не обязательны. Но шины всегда должны давать достаточное сцепление на том покрытии, по которому вы едете." },
+    { "nums": [
+      ["3 mm", "minste mønsterdybde i vinterperioden for bil inntil 3500 kg", "минимальная глубина протектора в зимний период для машины до 3500 кг"],
+      ["1,6 mm", "minste mønsterdybde resten av året", "минимальная глубина протектора в остальное время года"]
+    ] },
+    { "list": [
+      ["Piggdekk er tillatt fra 1. november til og med første søndag etter 2. påskedag.", "Шипованные шины разрешены с 1 ноября до первого воскресенья после второго дня Пасхи включительно."],
+      ["I Nordland, Troms og Finnmark er perioden fra 16. oktober til 30. april.", "В Нурланне, Тромсе и Финнмарке — с 16 октября по 30 апреля."],
+      ["Utenfor perioden kan du bare bruke piggdekk når føret gjør det nødvendig.", "Вне этого периода шипы можно использовать, только если этого требует состояние дороги."]
+    ] },
+    { "trap": "Mange tror at piggdekk er påbudt fra 1. november. Det stemmer ikke: datoene viser bare når du har lov til å bruke piggdekk.", "ru": "Многие думают, что с 1 ноября шипы обязательны. Это не так: даты лишь указывают, когда шипованные шины разрешены." },
+
+    { "h": "Glatt vei", "ru": "Скользкая дорога" },
+    { "p": "Når temperaturen er rundt 0 grader, er det stor fare for glatt vei. Bruer fryser fort, fordi de blir avkjølt både ovenfra og nedenfra. I skyggen kan det være is selv om veien ellers er bar.", "ru": "Когда температура около нуля, велик риск гололёда. Мосты быстро обледеневают, потому что охлаждаются и сверху, и снизу. В тени может быть лёд, даже если в остальных местах дорога чистая." },
+    { "p": "Svart is er et tynt, klart islag. Det er vanskelig å se, fordi veien bare ser mørk og våt ut.", "ru": "«Чёрный лёд» — тонкий прозрачный слой льда. Его трудно заметить, потому что дорога выглядит просто тёмной и мокрой." },
+    { "fig": { "sign": "fare_glatt" }, "no": "Fareskilt: glatt kjørebane.", "ru": "Предупреждающий знак «Скользкая дорога»." },
+    { "p": "På is kan bremselengden bli mange ganger lengre enn på tørr asfalt – også med gode vinterdekk og ABS. Hold lav fart og stor avstand.", "ru": "На льду тормозной путь может быть в несколько раз длиннее, чем на сухом асфальте, — даже с хорошими зимними шинами и ABS. Держите низкую скорость и большую дистанцию." },
+
+    { "h": "Skrens og vannplaning", "ru": "Занос и аквапланирование" },
+    { "list": [
+      ["Understyring: bilen fortsetter rett fram selv om du svinger med rattet. Slipp gassen og sving litt mindre med rattet, slik at forhjulene får grep igjen.", "Недостаточная поворачиваемость (снос передней оси): машина едет прямо, хотя вы поворачиваете руль. Отпустите газ и немного уменьшите поворот руля, чтобы передние колёса снова получили сцепление."],
+      ["Overstyring: bakenden av bilen skrenser ut i svingen. Se dit du vil kjøre, og styr i den retningen.", "Избыточная поворачиваемость (занос задней оси): задняя часть машины уходит в сторону в повороте. Смотрите туда, куда хотите ехать, и рулите в ту же сторону."],
+      ["Vannplaning: dekkene mister kontakten med veien på grunn av vann. Høy fart og slitte dekk øker risikoen, så senk farten når det er vann på veien.", "Аквапланирование: из-за воды шины теряют контакт с дорогой. Высокая скорость и изношенный протектор повышают риск, поэтому снижайте скорость, когда на дороге вода."]
+    ] },
+    { "rule": "Når bilen skrenser, ser du dit du vil kjøre – ikke på grøfta du er redd for å havne i. Bilen følger ofte blikket. Ikke gi mer gass, og ikke brems hardt.", "ru": "Когда машину заносит, смотрите туда, куда хотите ехать, — а не на кювет, в который боитесь угодить. Машина обычно следует за взглядом. Не добавляйте газ и не тормозите резко." },
+
+    { "h": "Tåke, lav sol og vind", "ru": "Туман, низкое солнце и ветер" },
+    { "list": [
+      ["Tåke: senk farten, slik at du kan stanse på den strekningen du ser er fri. Ikke bruk fjernlys – lyset blir reflektert i tåken og gir dårligere sikt.", "Туман: снизьте скорость так, чтобы успеть остановиться на участке, который вы видите свободным. Не включайте дальний свет — он отражается от тумана и ухудшает видимость."],
+      ["Lav sol: senk farten, bruk solskjermen og hold frontruten ren. En skitten rute gjør blendingen verre.", "Низкое солнце: снизьте скорость, опустите солнцезащитный козырёк и держите лобовое стекло чистым. Грязное стекло усиливает ослепление."],
+      ["Sterk sidevind, for eksempel på en høy bru: senk farten og hold godt fast i rattet. Vindkast kan flytte bilen sidelengs.", "Сильный боковой ветер, например на высоком мосту: снизьте скорость и крепко держите руль. Порывы ветра могут сдвинуть машину в сторону."]
+    ] },
+
+    { "h": "Kolonne og tunnel", "ru": "Колонна и туннель" },
+    { "p": "Når du kjører i kolonne over fjellet, er det kolonnelederen som bestemmer farten. Hold deg i kolonnen, følg anvisningene og ikke kjør forbi – heller ikke med firehjulstrekk.", "ru": "При движении в колонне через горы скорость задаёт ведущий колонны. Оставайтесь в колонне, выполняйте его указания и не обгоняйте — даже если у вас полный привод." },
+    { "fig": { "sign": "tunnel" }, "no": "Skiltet viser at det kommer en tunnel.", "ru": "Знак «Туннель»: впереди туннель." },
+    { "list": [
+      ["Brenner det i tunnelen, kjører du ut hvis du kan.", "Если в туннеле пожар, выезжайте из него, если это возможно."],
+      ["Kan du ikke kjøre ut, stanser du inntil siden og slår av motoren. La nøkkelen stå i, slik at bilen kan flyttes.", "Если выехать нельзя, остановитесь у края и заглушите двигатель. Оставьте ключ в машине, чтобы её могли переставить."],
+      ["Gå bort fra røyken til nærmeste nødutgang. Ikke bli sittende i bilen.", "Уходите от дыма к ближайшему аварийному выходу. Не оставайтесь в машине."]
+    ] }
+  ]
+}

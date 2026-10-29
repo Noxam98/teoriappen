@@ -39,6 +39,35 @@ export type Figure =
   | { road: RoadKind }
   | { scene: Scene };
 
+/**
+ * One piece of a theory chapter. Norwegian text (translatable with the brush) goes with its Russian translation.
+ * Like Figure, the kind of block is told by its first key.
+ */
+export type TheoryBlock =
+  /** subheading */
+  | { h: string; ru: string }
+  | { p: string; ru: string }
+  /** the rule to remember, highlighted */
+  | { rule: string; ru: string }
+  /** a typical mistake on the exam */
+  | { trap: string; ru: string }
+  /** bullet list: [Norwegian, Russian] */
+  | { list: [string, string][] }
+  /** a picture with a caption */
+  | { fig: Figure; no: string; ru: string }
+  /** signs with their names: [sign, Norwegian, Russian] */
+  | { signs: [string, string, string][] }
+  /** numbers to know: [value, Norwegian, Russian], e.g. ["0,2 ‰", "promillegrense", "допустимое промилле"] */
+  | { nums: [string, string, string][] };
+
+export interface TheoryChapter {
+  cat: CategoryId;
+  /** One or two sentences under the title. */
+  lead: string;
+  leadRu: string;
+  blocks: TheoryBlock[];
+}
+
 export interface Question {
   id: string;
   cat: CategoryId;
@@ -119,6 +148,8 @@ export interface Prefs {
   volume: 0 | 1 | 2;
   size: 0 | 1 | 2;
   ru: boolean;
+  /** Theory: show the Russian translation under every Norwegian paragraph. */
+  theoryRu: boolean;
   seenBrushHint: boolean;
 }
 
@@ -128,6 +159,8 @@ export interface AppData {
   vocab: VocabItem[];
   cur: ExamSession | null;
   last: FinishedExam | null;
+  /** Theory chapters read to the end (when). */
+  read: Partial<Record<CategoryId, number>>;
   prefs: Prefs;
 }
 
@@ -137,4 +170,6 @@ export type Screen =
   | { name: 'result' }
   | { name: 'practice'; mode: PracticeMode; ids?: string[] }
   | { name: 'vocab' }
-  | { name: 'flashcards' };
+  | { name: 'flashcards' }
+  | { name: 'theory' }
+  | { name: 'chapter'; cat: CategoryId };

@@ -7,6 +7,7 @@ import { ExamScreen } from './screens/ExamScreen';
 import { HomeScreen } from './screens/HomeScreen';
 import { PracticeScreen } from './screens/PracticeScreen';
 import { ResultScreen } from './screens/ResultScreen';
+import { ChapterScreen, TheoryScreen } from './screens/TheoryScreen';
 import { FlashcardsScreen, VocabScreen } from './screens/VocabScreen';
 import { AppProvider, useApp } from './state/AppState';
 
@@ -18,6 +19,8 @@ function CurrentScreen() {
     case 'practice': return <PracticeScreen key={visit} screen={screen} />;
     case 'vocab': return <VocabScreen />;
     case 'flashcards': return <FlashcardsScreen key={visit} />;
+    case 'theory': return <TheoryScreen />;
+    case 'chapter': return <ChapterScreen key={visit} cat={screen.cat} />;
     default: return <HomeScreen />;
   }
 }

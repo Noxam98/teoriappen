@@ -1,0 +1,52 @@
+{
+  "cat": "kjoretoy",
+  "lead": "Du har ansvaret for at bilen er i forsvarlig stand når du kjører. Her lærer du hva du skal sjekke, hva varsellampene betyr, og hvilke papirer bilen må ha.",
+  "leadRu": "За то, чтобы машина была в исправном состоянии, отвечаете вы. Здесь — что проверять перед поездкой, что означают контрольные лампы и какие документы нужны автомобилю.",
+  "blocks": [
+    { "h": "Ditt ansvar som fører", "ru": "Ваша ответственность как водителя" },
+    { "p": "Du som fører har ansvaret for at bilen er i forsvarlig stand når du bruker den – ikke verkstedet, forsikringsselskapet eller Statens vegvesen. Det gjelder også når bilen nylig har vært på service.", "ru": "За исправное состояние машины во время езды отвечаете вы как водитель — не автосервис, не страховая компания и не Дорожное управление (Statens vegvesen). Это так, даже если машина недавно была на сервисе." },
+    { "p": "Har bilen en feil som gjør den farlig å kjøre, for eksempel dårlige bremser, skal den ikke brukes. Feilen må rettes først. Det hjelper ikke å kjøre sakte eller bare i dagslys.", "ru": "Если из-за неисправности на машине опасно ездить — например, плохо работают тормоза, — пользоваться ею нельзя. Сначала неисправность нужно устранить. Медленная езда или езда только днём не спасает." },
+
+    { "h": "Sjekk bilen før du kjører", "ru": "Проверьте машину перед поездкой" },
+    { "list": [
+      ["Lys: alle lys virker og er rene.", "Свет: все фары и фонари работают и чистые."],
+      ["Dekk: riktig lufttrykk og nok mønster.", "Шины: правильное давление и достаточный протектор."],
+      ["Bremser og styring virker som de skal.", "Тормоза и рулевое управление работают как надо."],
+      ["Fri sikt: rene ruter og speil, og nok spylervæske.", "Свободный обзор: чистые стёкла и зеркала, достаточно омывающей жидкости."]
+    ] },
+    { "p": "For lavt lufttrykk i dekkene gir dårligere styring og veigrep, mer slitasje og høyere drivstofforbruk. Sjekk dekktrykket jevnlig.", "ru": "Слишком низкое давление в шинах ухудшает управляемость и сцепление с дорогой, увеличивает износ шин и расход топлива. Регулярно проверяйте давление." },
+    { "nums": [
+      ["1,6 mm", "minste mønsterdybde utenfor vinterperioden", "минимальная глубина протектора вне зимнего периода"],
+      ["3 mm", "minste mønsterdybde i vinterperioden (personbil)", "минимальная глубина протектора в зимний период (легковой автомобиль)"]
+    ] },
+    { "trap": "EU-kontrollen viser bare at bilen var i orden den dagen den ble kontrollert. Feil kan oppstå senere, så du må sjekke bilen selv før du kjører.", "ru": "Техосмотр (EU-kontroll) подтверждает только, что машина была исправна в день проверки. Неисправности могут появиться позже, поэтому перед поездкой проверяйте машину сами." },
+
+    { "h": "Varsellamper", "ru": "Контрольные лампы" },
+    { "list": [
+      ["Rød lampe: en alvorlig feil, for eksempel lavt oljetrykk eller feil på bremsene. Stans så snart det er trygt, og finn ut hva som er galt.", "Красная лампа: серьёзная неисправность, например низкое давление масла или неполадка тормозов. Остановитесь, как только это безопасно, и выясните, в чём дело."],
+      ["Gul eller oransje lampe: en feil som ikke er akutt, men som bør sjekkes snart.", "Жёлтая или оранжевая лампа: неисправность не срочная, но её стоит скоро проверить."]
+    ] },
+
+    { "h": "ABS og antiskrens (ESC)", "ru": "ABS и система курсовой устойчивости (ESC)" },
+    { "p": "ABS hindrer at hjulene låser seg når du bremser hardt. Da kan du styre bilen samtidig som du bremser. Men bremselengden blir ikke nødvendigvis kortere, heller ikke på is.", "ru": "ABS не даёт колёсам заблокироваться при резком торможении. Благодаря этому вы можете рулить, продолжая тормозить. Но тормозной путь не обязательно становится короче — и на льду тоже." },
+    { "rule": "Nødbrems med ABS: tråkk hardt på bremsepedalen, hold den nede og styr unna. Det er normalt at pedalen vibrerer – ikke pump, og ikke slipp bremsen.", "ru": "Экстренное торможение с ABS: сильно нажмите на педаль тормоза, держите её нажатой и объезжайте препятствие. Вибрация педали — это нормально: не «качайте» тормоз и не отпускайте педаль." },
+    { "p": "Antiskrenssystemet (ESC) kan bremse ett og ett hjul for å hindre skrens og hjelpe bilen å holde kursen. Men systemet kan ikke oppheve fysikkens lover. Du kan ikke kjøre fortere i svinger, og du trenger fortsatt gode dekk.", "ru": "Система курсовой устойчивости (ESC) может подтормаживать отдельные колёса, чтобы не допустить заноса и помочь машине держать курс. Но законы физики она не отменяет. Быстрее в поворотах ехать нельзя, и хорошие шины всё равно нужны." },
+
+    { "h": "God sikt", "ru": "Хороший обзор" },
+    { "list": [
+      ["Speilene viser ikke hele området rundt bilen. Vri på hodet og se over skulderen før du skifter felt eller svinger.", "Зеркала показывают не всё пространство вокруг машины. Перед перестроением или поворотом поверните голову и посмотрите через плечо."],
+      ["Dugger frontruten på innsiden, retter du varm luft mot ruten med viften. Klimaanlegget gjør luften tørrere, så duggen forsvinner raskere.", "Если лобовое стекло запотело изнутри, направьте на него тёплый воздух вентилятором. Кондиционер делает воздух суше, и запотевание проходит быстрее."],
+      ["Om vinteren blir frontruten fort skitten av salt og slaps. Bruk spylervæske med frostvæske, så den ikke fryser.", "Зимой лобовое стекло быстро пачкается солью и слякотью. Заливайте омывающую жидкость с антифризом, чтобы она не замёрзла."]
+    ] },
+
+    { "h": "EU-kontroll, forsikring og vognkort", "ru": "Техосмотр, страховка и регистрационное свидетельство" },
+    { "nums": [
+      ["4 år", "første EU-kontroll for en vanlig personbil", "первый техосмотр обычного легкового автомобиля — когда ему исполняется 4 года"],
+      ["2 år", "deretter EU-kontroll hvert andre år", "затем техосмотр каждые два года"]
+    ] },
+    { "list": [
+      ["Ansvarsforsikring er påbudt for alle registrerte biler. Den dekker skader på andre personer og det de eier. Kasko er frivillig.", "Страховка гражданской ответственности (ansvarsforsikring) обязательна для всех зарегистрированных машин. Она покрывает ущерб другим людям и их имуществу. Каско — добровольная страховка."],
+      ["Vognkortet er bilens registreringsbevis. Der står blant annet tillatt totalvekt, tillatt tilhengervekt og antall sitteplasser.", "Vognkort — свидетельство о регистрации машины. В нём указаны, среди прочего, разрешённая общая масса, допустимая масса прицепа и число мест."]
+    ] }
+  ]
+}

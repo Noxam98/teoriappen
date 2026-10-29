@@ -1,7 +1,10 @@
-// Checks the question bank and the dictionary:  npm run validate
+// Checks the question bank, the theory chapters and the dictionary:  npm run validate
 // - every question has the right shape, a known category, 3–4 options and a valid picture
-// - every Norwegian word in questions, options and explanations has a dictionary entry
-import { readdirSync, readFileSync } from 'node:fs';
+// - every theory chapter has known block types, Russian translations and valid pictures
+// - every Norwegian word in questions, options, explanations and theory has a dictionary entry
+// Drafting new text: `node scripts/validate-data.mjs --words draft.json fart lys` also reads the entries in
+// draft.json ({ "words": {…}, "phrases": {…} }) and checks only the named theory chapters.
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -29,8 +32,22 @@ const errors = [];
 const err = (id, msg) => errors.push(`${id}: ${msg}`);
 const ids = new Set();
 const counts = {};
-const words = read('src/data/dictionary/words.json');
+const args = process.argv.slice(2);
+const draftAt = args.indexOf('--words');
+const draft = draftAt >= 0 ? JSON.parse(readFileSync(args.splice(draftAt, 2)[1], 'utf8')) : {};
+const onlyChapters = args;
+const words = { ...read('src/data/dictionary/words.json'), ...(draft.words ?? {}) };
+for (const [w, e] of Object.entries(draft.words ?? {})) {
+  if (w !== w.toLowerCase()) err(`--words`, `key "${w}" must be lowercase`);
+  if (!Array.isArray(e) || e.length !== 3 || e.some(x => typeof x !== 'string' || !x.trim())) err('--words', `entry "${w}" must be [lemma, translation, grammar]`);
+}
 const missing = new Map();
+const checkWords = (id, text) => {
+  for (const m of String(text).matchAll(WORD)) {
+    const w = m[0].toLowerCase();
+    if (!words[w]) missing.set(w, id);
+  }
+};
 
 const dir = 'src/data/questions';
 for (const file of readdirSync(join(root, dir)).filter(f => f.endsWith('.json'))) {
@@ -46,13 +63,45 @@ for (const file of readdirSync(join(root, dir)).filter(f => f.endsWith('.json'))
     if (!Array.isArray(q.a) || q.a.length < 3 || q.a.length > 4) err(id, '"a" needs 3–4 options (correct one first)');
     else if (new Set(q.a).size !== q.a.length) err(id, 'duplicate options');
     checkFigure(id, q.img);
-    for (const text of [q.q, ...(q.a ?? []), q.f]) {
-      for (const m of String(text).matchAll(WORD)) {
-        const w = m[0].toLowerCase();
-        if (!words[w]) missing.set(w, id);
-      }
-    }
+    for (const text of [q.q, ...(q.a ?? []), q.f]) checkWords(id, text);
   }
+}
+
+// theory: one chapter per topic, every Norwegian text with its Russian translation
+const BLOCKS = ['h', 'p', 'rule', 'trap', 'list', 'fig', 'signs', 'nums'];
+const tdir = 'src/data/theory';
+const chapters = existsSync(join(root, tdir)) ? readdirSync(join(root, tdir)).filter(f => f.endsWith('.json')) : [];
+const text = (id, v, what) => { if (typeof v !== 'string' || v.trim().length < 2) err(id, `missing ${what}`); };
+for (const file of chapters) {
+  const cat = file.replace(/\.json$/, '');
+  if (onlyChapters.length && !onlyChapters.includes(cat)) continue;
+  const ch = read(join(tdir, file));
+  const id = `theory/${file}`;
+  if (ch.cat !== cat) err(id, `"cat" should be "${cat}"`);
+  if (!CATS[cat]) err(id, `unknown category "${cat}"`);
+  text(id, ch.lead, '"lead"'); text(id, ch.leadRu, '"leadRu"');
+  checkWords(id, ch.lead);
+  if (!Array.isArray(ch.blocks) || ch.blocks.length < 3) { err(id, 'needs at least 3 blocks'); continue; }
+  ch.blocks.forEach((b, i) => {
+    const bid = `${id} block ${i + 1}`;
+    const type = Object.keys(b)[0];
+    if (!BLOCKS.includes(type)) return err(bid, `unknown block "${type}" (one of ${BLOCKS.join(', ')})`);
+    if (['h', 'p', 'rule', 'trap'].includes(type)) {
+      text(bid, b[type], `"${type}"`); text(bid, b.ru, '"ru"'); checkWords(bid, b[type]);
+    } else if (type === 'list') {
+      if (!b.list.length) err(bid, 'empty list');
+      for (const [no, ru] of b.list) { text(bid, no, 'list item'); text(bid, ru, 'list item translation'); checkWords(bid, no); }
+    } else if (type === 'fig') {
+      checkFigure(bid, b.fig); text(bid, b.no, '"no" caption'); text(bid, b.ru, '"ru" caption'); checkWords(bid, b.no);
+    } else if (type === 'signs') {
+      for (const [sign, no, ru] of b.signs) {
+        if (!SIGNS.has(sign)) err(bid, `unknown sign "${sign}"`);
+        text(bid, no, `name of ${sign}`); text(bid, ru, `translation of ${sign}`); checkWords(bid, no);
+      }
+    } else if (type === 'nums') {
+      for (const [value, no, ru] of b.nums) { text(bid, value, 'value'); text(bid, no, 'label'); text(bid, ru, 'label translation'); checkWords(bid, no); }
+    }
+  });
 }
 
 function checkFigure(id, img) {
@@ -85,7 +134,7 @@ function checkFigure(id, img) {
 
 for (const [w, id] of missing) err(id, `no dictionary entry for "${w}" (src/data/dictionary/words.json)`);
 
-console.log(`${ids.size} questions in ${Object.keys(counts).length} topics, ${Object.keys(words).length} dictionary words`);
+console.log(`${ids.size} questions in ${Object.keys(counts).length} topics, ${chapters.length} theory chapters, ${Object.keys(words).length} dictionary words`);
 console.log(Object.entries(counts).map(([c, n]) => `${c} ${n}`).join(' · '));
 if (errors.length) {
   console.error(`\n${errors.length} problem(s):\n${errors.join('\n')}`);

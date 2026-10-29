@@ -37,7 +37,7 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
       </section>
 
       <section className="setting">
-        <h3>Размер текста вопросов</h3>
+        <h3>Размер текста вопросов и теории</h3>
         <Segmented label="Размер текста" value={prefs.size} onChange={size => set({ size })}
           options={[{ value: 0, label: 'Мелкий' }, { value: 1, label: 'Средний' }, { value: 2, label: 'Крупный' }]} />
         <p className="size-preview" data-size={prefs.size} lang="nb">Du nærmer deg et gangfelt. Hva gjelder?</p>
@@ -92,11 +92,11 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
         <h3>Прогресс</h3>
         {confirmReset ? (
           <div className="reset-confirm">
-            <p>Удалить статистику ответов и историю экзаменов? Словарь останется.</p>
+            <p>Удалить статистику ответов, историю экзаменов и отметки о прочитанной теории? Словарь останется.</p>
             <div className="row2">
               <button className="btn" onClick={() => setConfirmReset(false)}>Отмена</button>
               <button className="btn danger" onClick={() => {
-                update(d => ({ ...d, stats: EMPTY.stats, exams: EMPTY.exams, cur: null, last: null }));
+                update(d => ({ ...d, stats: EMPTY.stats, exams: EMPTY.exams, read: EMPTY.read, cur: null, last: null }));
                 setConfirmReset(false);
               }}>Удалить</button>
             </div>

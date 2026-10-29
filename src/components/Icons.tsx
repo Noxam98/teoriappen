@@ -23,6 +23,9 @@ const PATHS = {
   ),
   shuffle: <path d="M3 7 H7 Q10 7 12 11 L13 13 Q15 17 18 17 H21 M3 17 H7 Q9 17 10.5 15 M13.5 9 Q15 7 18 7 H21 M18.5 4.5 L21 7 L18.5 9.5 M18.5 14.5 L21 17 L18.5 19.5" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
   redo: <path d="M4 12 A8 8 0 1 0 7 5.8 M4 4 V8.5 H8.5" fill="none" stroke="currentColor" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round" />,
+  theory: <path d="M12 6.8 C9.8 5.2 6.8 4.7 3 5.2 V18.8 C6.8 18.3 9.8 18.8 12 20.4 C14.2 18.8 17.2 18.3 21 18.8 V5.2 C17.2 4.7 14.2 5.2 12 6.8 Z M12 6.8 V20.4" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round" />,
+  bulb: <path d="M9.5 17.5 H14.5 M10.5 20.5 H13.5 M12 3 A6 6 0 0 0 8.2 13.6 C9 14.4 9.4 15.2 9.5 16 H14.5 C14.6 15.2 15 14.4 15.8 13.6 A6 6 0 0 0 12 3 Z" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
+  warn: <path d="M12 3.8 L21.2 19.8 H2.8 Z M12 10 V14.2 M12 17 V17.1" fill="none" stroke="currentColor" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round" />,
   home: <path d="M4 11 L12 4 L20 11 M6.5 9 V20 H10 V14.5 H14 V20 H17.5 V9" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
   translate: (
     <>

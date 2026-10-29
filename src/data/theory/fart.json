@@ -1,0 +1,56 @@
+{
+  "cat": "fart",
+  "lead": "Fartsgrensen er den høyeste farten du kan kjøre når forholdene er gode. Her lærer du fartsgrensene, hvor langt bilen kjører før den står stille, og hvor stor avstand du skal holde.",
+  "leadRu": "Ограничение скорости — это наибольшая скорость, разрешённая при хороших условиях. Здесь — общие ограничения, какой путь проходит машина до полной остановки и какую дистанцию нужно держать.",
+  "blocks": [
+    { "h": "Fartsgrenser", "ru": "Ограничения скорости" },
+    { "p": "Når det ikke står noe skilt, gjelder den generelle fartsgrensen. Den er 50 km/t i tettbygd strøk og 80 km/t utenfor tettbygd strøk.", "ru": "Если знаков нет, действует общее ограничение: 50 км/ч в населённом пункте и 80 км/ч вне населённых пунктов." },
+    { "nums": [
+      ["50 km/t", "generell fartsgrense i tettbygd strøk", "общее ограничение в населённом пункте"],
+      ["80 km/t", "generell fartsgrense utenfor tettbygd strøk", "общее ограничение вне населённых пунктов"],
+      ["80 km/t", "høyeste fart med tilhenger", "наибольшая скорость с прицепом"],
+      ["100 km/t", "med tilhenger som er godkjent for Tempo 100, der fartsgrensen er 100 km/t eller høyere", "с прицепом, одобренным по Tempo 100, где ограничение 100 км/ч или выше"]
+    ] },
+    { "signs": [
+      ["fart_60", "Fartsgrense: her kan du kjøre høyst 60 km/t", "Ограничение скорости: здесь не быстрее 60 км/ч"],
+      ["slutt_fart_60", "Slutt på særskilt fartsgrense: nå gjelder den generelle fartsgrensen", "Конец особого ограничения: снова действует общее ограничение"],
+      ["fartssone_30", "Fartsgrensesone: 30 km/t på alle veiene i området", "Зона ограничения скорости: 30 км/ч на всех улицах района"]
+    ] },
+    { "p": "Et fartsgrenseskilt gjelder fram til et nytt fartsgrenseskilt eller et skilt om slutt på fartsgrensen. En fartsgrensesone gjelder på alle veiene i sonen, også etter kryss, helt til du passerer skiltet for slutt på sonen.", "ru": "Знак ограничения скорости действует до следующего такого знака или до знака конца ограничения. Зона ограничения действует на всех улицах внутри неё, в том числе после перекрёстков, пока вы не проедете знак конца зоны." },
+    { "trap": "Etter skiltet «Slutt på særskilt fartsgrense» gjelder ikke tallet på skiltet lenger. Da er fartsgrensen 80 km/t utenfor tettbygd strøk og 50 km/t i tettbygd strøk.", "ru": "После знака «Конец особого ограничения скорости» число на нём больше не действует. Тогда ограничение — 80 км/ч вне населённых пунктов и 50 км/ч в населённом пункте." },
+
+    { "h": "Tilpass farten etter forholdene", "ru": "Подбирайте скорость под условия" },
+    { "p": "Du skal alltid tilpasse farten etter sikt, føre og trafikk. Du skal kunne stanse på den strekningen du ser er fri foran deg.", "ru": "Скорость всегда нужно подбирать под видимость, состояние дороги и движение. Вы должны успеть остановиться на том участке, который видите свободным перед собой." },
+    { "rule": "Fartsgrensen er en øvre grense, ikke en fart du alltid kan kjøre. I tåke, mørke og regn og på glatt vei skal du kjøre saktere – noen ganger mye saktere enn skiltet viser.", "ru": "Ограничение — это верхний предел, а не скорость, с которой можно ехать всегда. В туман, в темноте, в дождь и на скользкой дороге езжайте медленнее — иногда намного медленнее, чем указано на знаке." },
+    { "list": [
+      ["Ved skoler og lekeplasser: kjør så sakte at du kan stoppe hvis et barn plutselig springer ut i veien.", "У школ и детских площадок езжайте так медленно, чтобы успеть остановиться, если ребёнок внезапно выбежит на дорогу."],
+      ["Fartsdemper (fartshump): senk farten i god tid før den. Ikke brems når du er oppå den.", "Искусственная неровность («лежачий полицейский»): снизьте скорость заранее, а не тормозите на ней самой."],
+      ["Ikke kjør unødvendig sakte, slik at du hindrer trafikken bak deg. Det kan føre til farlige forbikjøringer.", "Не езжайте без причины так медленно, что мешаете тем, кто сзади: это провоцирует опасные обгоны."]
+    ] },
+    { "trap": "Viser skiltet 30 km/t ved en skole, er ikke 30 km/t alltid trygt. Barn er uforutsigbare, så du må være klar til å stoppe – også under fartsgrensen.", "ru": "Если у школы знак 30 км/ч, это не значит, что 30 км/ч всегда безопасно. Дети непредсказуемы: будьте готовы остановиться, даже если едете медленнее разрешённого." },
+
+    { "h": "Reaksjonslengde, bremselengde og stopplengde", "ru": "Путь реакции, тормозной и остановочный путь" },
+    { "p": "Reaksjonslengden er strekningen bilen kjører fra du oppdager en fare til du begynner å bremse. Reaksjonstiden er omtrent 1 sekund, og i 90 km/t kjører bilen omtrent 25 meter i sekundet. Reaksjonslengden øker i samme forhold som farten.", "ru": "Путь реакции — расстояние, которое машина проезжает от момента, когда вы заметили опасность, до начала торможения. Время реакции — около 1 секунды, а на 90 км/ч машина проезжает примерно 25 метров в секунду. Путь реакции растёт прямо пропорционально скорости." },
+    { "p": "Bremselengden er strekningen fra du begynner å bremse til bilen står stille. Den øker med kvadratet av farten.", "ru": "Тормозной путь — расстояние от начала торможения до полной остановки. Он растёт пропорционально квадрату скорости." },
+    { "rule": "Stopplengde = reaksjonslengde + bremselengde. Det er hele strekningen fra du oppdager faren til bilen står stille.", "ru": "Остановочный путь = путь реакции + тормозной путь. Это весь путь от момента, когда вы заметили опасность, до полной остановки машины." },
+    { "nums": [
+      ["1 s", "omtrent så lang er reaksjonstiden", "примерно столько длится время реакции"],
+      ["25 m", "så langt kjører bilen på ett sekund i 90 km/t", "столько машина проезжает за секунду на 90 км/ч"],
+      ["× 2", "reaksjonslengden når farten blir dobbelt så høy", "путь реакции, если скорость вдвое выше"],
+      ["× 4", "bremselengden når farten blir dobbelt så høy", "тормозной путь, если скорость вдвое выше"]
+    ] },
+    { "trap": "Mange tror at bremselengden blir dobbelt så lang når du kjører dobbelt så fort. Øker du farten fra 40 til 80 km/t, blir den omtrent fire ganger så lang.", "ru": "Многие думают, что при скорости вдвое выше тормозной путь тоже вдвое длиннее. Если разогнаться с 40 до 80 км/ч, он станет примерно в четыре раза длиннее." },
+
+    { "h": "Avstand til bilen foran", "ru": "Дистанция до машины впереди" },
+    { "p": "Bruk tresekundersregelen. Velg et fast punkt, for eksempel et skilt. Når bilen foran passerer punktet, skal det gå minst 3 sekunder før du passerer det samme punktet.", "ru": "Пользуйтесь правилом трёх секунд. Выберите неподвижный ориентир, например знак. Когда машина впереди его проехала, до вашего проезда мимо него должно пройти не меньше 3 секунд." },
+    { "p": "Tre sekunder gjelder på tørr vei med god sikt. På våt og glatt vei blir bremselengden mye lengre, så da trenger du større avstand.", "ru": "Три секунды — это для сухой дороги и хорошей видимости. На мокрой и скользкой дороге тормозной путь намного длиннее, поэтому дистанция нужна больше." },
+
+    { "h": "Vannplaning", "ru": "Аквапланирование" },
+    { "p": "Ved vannplaning flyter dekkene på et lag med vann og mister kontakten med veien. Da kan du verken styre eller bremse. Faren øker med høy fart, slitte dekk og mye vann på veien.", "ru": "При аквапланировании шины «плывут» по слою воды и теряют контакт с дорогой. Тогда машина не слушается ни руля, ни тормозов. Риск растёт при большой скорости, изношенных шинах и большом количестве воды на дороге." },
+    { "list": [
+      ["Slipp gassen forsiktig.", "Плавно отпустите газ."],
+      ["Hold rattet rett.", "Держите руль прямо."],
+      ["Ikke brems hardt og ikke vri brått på rattet før dekkene har fått grep igjen.", "Не тормозите резко и не дёргайте руль, пока шины снова не сцепятся с дорогой."]
+    ] }
+  ]
+}

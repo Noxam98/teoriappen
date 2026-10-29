@@ -1,0 +1,46 @@
+{
+  "cat": "parkering",
+  "lead": "Stans og parkering er ikke det samme, og skiltene skiller mellom dem. Her lærer du hvor du ikke kan stanse eller parkere, og hvordan du parkerer trygt.",
+  "leadRu": "Остановка и стоянка — не одно и то же, и знаки их различают. Здесь — где нельзя останавливаться или ставить машину на стоянку и как сделать это безопасно.",
+  "blocks": [
+    { "h": "Stans og parkering", "ru": "Остановка и стоянка" },
+    { "p": "Du stanser når bilen står stille. Du parkerer når du lar bilen bli stående – også hvis du sitter i den. Det er ikke parkering når du bare stanser kort for at passasjerer skal gå av eller på, eller for å laste av og på.", "ru": "Остановка — когда машина стоит на месте. Стоянка — когда вы оставляете машину стоять, даже если сами сидите в ней. Короткая остановка, чтобы пассажиры сели или вышли, или для погрузки и разгрузки, стоянкой не считается." },
+    { "signs": [
+      ["stans_forbudt", "Stans forbudt: du må ikke stanse i det hele tatt", "Остановка запрещена: останавливаться нельзя совсем"],
+      ["parkering_forbudt", "Parkering forbudt: du kan stanse kort, men ikke parkere", "Стоянка запрещена: можно ненадолго остановиться, но не оставлять машину"],
+      ["parkering", "Parkering: her er det tillatt å parkere", "Место стоянки: здесь ставить машину разрешено"]
+    ] },
+    { "rule": "Ved skiltet Stans forbudt kan du bare stanse når trafikken eller en nødsituasjon tvinger deg. Ved skiltet Parkering forbudt kan du stanse kort for passasjerer eller for å laste av og på.", "ru": "У знака «Остановка запрещена» останавливаться можно, только если вынуждает движение или экстренная ситуация. У знака «Стоянка запрещена» можно ненадолго остановиться для пассажиров, погрузки или разгрузки." },
+    { "trap": "Mange tror at de kan stanse et øyeblikk ved skiltet Stans forbudt for å slippe av en passasjer. Det er ikke lov – det gjelder bare ved skiltet Parkering forbudt.", "ru": "Многие думают, что у знака «Остановка запрещена» можно на секунду остановиться, чтобы высадить пассажира. Нельзя — это разрешено только у знака «Стоянка запрещена»." },
+    { "p": "Skiltet Parkering forbudt gjelder på den siden av veien der det står, fram til neste veikryss, hvis ikke et underskilt sier noe annet. Ved skiltet Parkering kan underskilt gi regler om tid, betaling eller hvem som kan parkere.", "ru": "Знак «Стоянка запрещена» действует на той стороне дороги, где он стоит, до ближайшего перекрёстка, если табличка не говорит иное. У знака «P» табличка может указывать время, оплату или кому разрешена стоянка." },
+
+    { "h": "Her er det forbudt å stanse", "ru": "Где запрещена остановка" },
+    { "list": [
+      ["I et veikryss og nærmere enn 5 meter fra krysset.", "На перекрёстке и ближе 5 метров от него."],
+      ["I et gangfelt og nærmere enn 5 meter foran det.", "На пешеходном переходе и ближе 5 метров перед ним."],
+      ["I sykkelfelt.", "На велополосе."],
+      ["I tunnel, unntatt i en nødsituasjon eller når trafikken står stille.", "В тоннеле — кроме экстренных случаев или когда стоит весь поток."],
+      ["I en uoversiktlig kurve.", "На плохо просматриваемом повороте."],
+      ["På motorvei og motortrafikkvei.", "На автомагистрали и на дороге для автомобилей."]
+    ] },
+    { "p": "Biler som står i eller nær et kryss, hindrer sikten og den svingende trafikken. I en uoversiktlig kurve ser ikke andre bilen din før de er nær, og de rekker kanskje ikke å stoppe.", "ru": "Машины, стоящие на перекрёстке или рядом с ним, мешают обзору и поворачивающему транспорту. На плохо просматриваемом повороте другие увидят вашу машину слишком поздно и могут не успеть остановиться." },
+    { "nums": [
+      ["5 m", "minste avstand fra et veikryss når du stanser", "минимальное расстояние от перекрёстка при остановке"],
+      ["5 m", "minste avstand foran et gangfelt når du stanser", "минимальное расстояние перед пешеходным переходом при остановке"]
+    ] },
+
+    { "h": "Her er det forbudt å parkere", "ru": "Где запрещена стоянка" },
+    { "list": [
+      ["På forkjørsvei utenfor tettbygd strøk. Der går trafikken fort, og parkerte biler er farlige.", "На главной дороге вне населённых пунктов: там высокая скорость, и стоящие машины опасны."],
+      ["Foran en inn- eller utkjørsel til en eiendom.", "Перед въездом или выездом с участка."],
+      ["På en møteplass.", "В разъездном кармане."],
+      ["I gatetun, unntatt på plasser som er merket for parkering.", "В жилой зоне — кроме мест, отмеченных для стоянки."]
+    ] },
+    { "trap": "Nødsignal gjør ikke en ulovlig stans lovlig. Du kan ikke stanse inntil et kryss eller parkere på forkjørsvei bare fordi du slår på nødsignalet.", "ru": "Аварийная сигнализация не делает запрещённую остановку разрешённой. Нельзя остановиться вплотную к перекрёстку или оставить машину на главной дороге только потому, что вы включили «аварийку»." },
+
+    { "h": "Slik parkerer du", "ru": "Как правильно поставить машину" },
+    { "p": "I gate med toveistrafikk skal du parkere på høyre side i kjøreretningen. I gate med envegskjøring kan du parkere på begge sider, hvis ikke skilt eller oppmerking sier noe annet.", "ru": "На улице с двусторонним движением ставьте машину у правого края по направлению движения. На улице с односторонним движением — с любой стороны, если знаки или разметка не говорят иное." },
+    { "p": "I en bratt nedoverbakke bruker du parkeringsbremsen og setter bilen i gir eller P. Vri forhjulene inn mot fortauskanten, så bilen stopper mot den hvis den begynner å rulle.", "ru": "На крутом спуске затяните стояночный тормоз и включите передачу или P. Поверните передние колёса к бордюру — тогда машина упрётся в него, если покатится." },
+    { "rule": "Se i speilet og over skulderen før du åpner døren. En dør som åpnes brått, kan treffe en syklist.", "ru": "Прежде чем открыть дверь, посмотрите в зеркало и через плечо. Резко открытая дверь может сбить велосипедиста." }
+  ]
+}

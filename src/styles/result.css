@@ -18,12 +18,16 @@
 .rfacts { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
 
 .breakdown { display: grid; gap: 10px; padding: 16px; }
-.brow { display: grid; grid-template-columns: minmax(0, 1fr) 84px 42px; gap: 12px; align-items: center; font-size: .92rem; }
-.brow-name { line-height: 1.2; }
+/* phones: name and score on top, the bar below, the theory button on the right */
+.brow { display: grid; grid-template-columns: minmax(0, 1fr) 42px 44px; grid-template-areas: "nm v th" "mt mt th"; gap: 4px 10px; align-items: center; font-size: .92rem; }
+.brow-name { grid-area: nm; line-height: 1.2; }
+.brow .meter { grid-area: mt; }
+.brow .v { grid-area: v; }
+.brow .iconbtn { grid-area: th; color: var(--blue); background: var(--blue-soft); }
 .brow-name small { display: block; color: var(--ink-2); font-size: .78rem; }
 .brow .meter { height: 7px; }
 .brow .v { font-family: var(--display); font-weight: 700; text-align: right; }
-@media (min-width: 560px) { .brow { grid-template-columns: minmax(0, 1fr) 160px 48px; } }
+@media (min-width: 560px) { .brow { grid-template-columns: minmax(0, 1fr) 160px 48px 44px; grid-template-areas: "nm mt v th"; gap: 12px; } }
 
 .result-actions { display: grid; gap: 8px; }
 @media (min-width: 560px) { .result-actions { grid-auto-flow: column; grid-auto-columns: 1fr; } }

@@ -5,7 +5,7 @@ import { ProgressRing } from '../components/Gauges';
 import { Icon } from '../components/Icons';
 import { Segmented } from '../components/Segmented';
 import { REVEAL_OPTIONS } from '../components/SettingsSheet';
-import { CATEGORIES, QUESTIONS, QUESTION_BY_ID } from '../data';
+import { CATEGORIES, QUESTIONS, QUESTION_BY_ID, THEORY } from '../data';
 import { useNow } from '../hooks/useNow';
 import { EXAM_MINUTES, EXAM_QUESTIONS, MAX_ERRORS, readiness, wrongQuestionIds } from '../lib/exam';
 import { fmtTime, plural } from '../lib/text';
@@ -19,6 +19,7 @@ export function HomeScreen() {
   const seen = Object.keys(data.stats).filter(id => QUESTION_BY_ID[id]).length;
   const ready = readiness(data.stats);
   const recent = data.exams.slice(-5).reverse();
+  const chaptersRead = THEORY.filter(t => data.read[t.cat]).length;
   const reveal = REVEAL_OPTIONS.find(o => o.value === data.prefs.reveal) ?? REVEAL_OPTIONS[0];
 
   // an exam whose time ran out while the app was closed is graded silently
@@ -68,6 +69,10 @@ export function HomeScreen() {
       </section>
 
       <div className="tiles">
+        <button className="tile" onClick={() => go({ name: 'theory' })}>
+          <span className="tile-ic ok"><Icon name="theory" /></span>
+          <b>Теория</b><small className="tnum">{chaptersRead ? `прочитано ${chaptersRead} из ${THEORY.length}` : `${THEORY.length} ${plural(THEORY.length, 'глава', 'главы', 'глав')}`}</small>
+        </button>
         <button className="tile" onClick={() => go({ name: 'practice', mode: 'all' })}>
           <span className="tile-ic"><Icon name="shuffle" /></span>
           <b>Тренировка</b><small>все темы</small>

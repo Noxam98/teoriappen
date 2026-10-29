@@ -1,0 +1,41 @@
+{
+  "cat": "ulykke",
+  "lead": "Alle som kommer til en trafikkulykke, har plikt til å hjelpe. Her lærer du hva du gjør først, hvilke nødnumre du ringer, og hvordan du gir livreddende førstehjelp.",
+  "leadRu": "Каждый, кто оказался на месте ДТП, обязан помочь. Здесь — что делать в первую очередь, по каким номерам звонить и как оказать неотложную первую помощь.",
+  "blocks": [
+    { "h": "Sikre, varsle, hjelpe", "ru": "Обезопасить, вызвать помощь, помочь" },
+    { "rule": "Kommer du først til en ulykke, sikrer du ulykkesstedet først. Deretter varsler du og gir førstehjelp. Da unngår du at flere blir skadd.", "ru": "Если вы первым оказались на месте ДТП, сначала обезопасьте его. Затем вызовите помощь и окажите первую помощь. Так вы не допустите, чтобы пострадал кто-то ещё." },
+    { "list": [
+      ["Slå på nødsignalet.", "Включите аварийную сигнализацию."],
+      ["Ta på refleksvesten før du går ut av bilen. Da ser andre trafikanter deg mye tidligere, særlig i mørket.", "Наденьте светоотражающий жилет, прежде чем выйти из машины. Тогда другие участники движения заметят вас гораздо раньше, особенно в темноте."],
+      ["Plasser varseltrekanten i god avstand fra ulykkesstedet, slik at andre trafikanter blir varslet i tide.", "Выставьте знак аварийной остановки на достаточном расстоянии от места ДТП, чтобы других вовремя предупредить."]
+    ] },
+    { "p": "Varseltrekant og refleksvest er påbudt å ha i bilen. Ikke ta bilder, og ikke kjør videre for å hente hjelp – bruk telefonen.", "ru": "Знак аварийной остановки и светоотражающий жилет обязательно должны быть в машине. Не фотографируйте и не уезжайте за помощью — звоните по телефону." },
+
+    { "h": "Nødnumre", "ru": "Экстренные номера" },
+    { "nums": [
+      ["113", "medisinsk nødhjelp – ambulanse", "скорая медицинская помощь"],
+      ["112", "politi", "полиция"],
+      ["110", "brann", "пожарная служба"]
+    ] },
+    { "trap": "I mange land er 112 nummeret for all nødhjelp. I Norge er 112 politiet. Trenger du ambulanse, ringer du 113.", "ru": "Во многих странах 112 — единый номер всех экстренных служб. В Норвегии 112 — это полиция. Если нужна скорая, звоните 113." },
+
+    { "h": "Livreddende førstehjelp", "ru": "Неотложная первая помощь" },
+    { "list": [
+      ["Bevisstløs, men puster normalt: legg personen i stabilt sideleie, slik at luftveiene holdes frie. Følg med på pusten til hjelpen kommer.", "Без сознания, но дышит нормально: уложите человека в стабильное боковое положение, чтобы дыхательные пути оставались свободными. Следите за дыханием до приезда помощи."],
+      ["Reagerer ikke og puster ikke normalt: ring 113 og start hjerte-lunge-redning (HLR) med 30 brystkompresjoner og 2 innblåsninger.", "Не реагирует и не дышит нормально: позвоните 113 и начните сердечно-лёгочную реанимацию (HLR) — 30 нажатий на грудную клетку и 2 вдоха."],
+      ["Kraftig blødning: hold et fast trykk direkte på såret, gjerne med en kompress eller et tøystykke. Hold trykket til hjelpen kommer.", "Сильное кровотечение: плотно прижмите рану, лучше всего салфеткой или куском ткани. Не ослабляйте давление до приезда помощи."]
+    ] },
+    { "trap": "En bevisstløs person som puster normalt, skal ikke ha HLR og ikke ligge på ryggen. Legg personen i stabilt sideleie, og ikke gi noe å drikke.", "ru": "Человеку без сознания, который нормально дышит, не делают реанимацию и не оставляют лежать на спине. Уложите его в стабильное боковое положение и не давайте пить." },
+    { "p": "Ikke flytt skadde unødvendig, fordi det kan gjøre skadene verre. Men er personen i fare der den er, for eksempel ved brann, må du flytte den.", "ru": "Не перемещайте пострадавших без необходимости — это может усугубить травмы. Но если человеку грозит опасность там, где он находится, например пожар, его нужно переместить." },
+
+    { "h": "Plikter etter en ulykke", "ru": "Обязанности после ДТП" },
+    { "p": "Alle har plikt til å hjelpe skadde så godt de kan – ikke bare helsepersonell eller de som var innblandet. Du kan for eksempel sikre stedet, varsle og gi førstehjelp.", "ru": "Помогать пострадавшим в меру своих сил обязан каждый — не только медики и участники ДТП. Например, вы можете обезопасить место, вызвать помощь и оказать первую помощь." },
+    { "p": "Er du innblandet i en ulykke der noen er skadd, skal du stanse, hjelpe de skadde og oppgi navn og adresse. Det gjelder også om ulykken ikke var din skyld.", "ru": "Если вы участник ДТП, в котором есть пострадавшие, вы обязаны остановиться, помочь им и назвать своё имя и адрес. Это касается и тех, кто не виноват в аварии." },
+    { "list": [
+      ["Skader du en parkert bil og eieren ikke er der, legger du igjen en lapp med navn og telefonnummer, eller melder fra til politiet.", "Если вы повредили припаркованную машину, а владельца рядом нет, оставьте записку с именем и номером телефона или сообщите в полицию."],
+      ["Kjører du på elg eller annet hjortevilt, skal du melde fra til politiet – også om dyret løper inn i skogen. Merk stedet, slik at det skadde dyret kan bli funnet.", "Если вы сбили лося или другое оленевое животное, сообщите в полицию — даже если зверь убежал в лес. Отметьте место, чтобы раненое животное можно было найти."]
+    ] },
+    { "fig": { "sign": "fare_elg" }, "no": "Fareskilt: elg. Her kan det komme elg ut i veien.", "ru": "Предупреждающий знак «Лось»: здесь на дорогу может выйти лось." }
+  ]
+}

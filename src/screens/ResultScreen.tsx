@@ -4,7 +4,7 @@ import { Figure } from '../components/figures/Figure';
 import { ScoreGauge } from '../components/Gauges';
 import { Icon } from '../components/Icons';
 import { Explanation } from '../components/question/Explanation';
-import { CATEGORY, QUESTION_BY_ID } from '../data';
+import { CATEGORY, QUESTION_BY_ID, THEORY_BY_CAT } from '../data';
 import { Words } from '../features/brush/Words';
 import { MAX_ERRORS } from '../lib/exam';
 import { fmtTime, plural } from '../lib/text';
@@ -33,6 +33,7 @@ export function ResultScreen() {
   const wrongIds = L.ids.filter(id => L.ans[id] !== 0);
   const shown = filter === 'all' ? L.ids : wrongIds;
   const topics = (Object.entries(L.byCat) as [CategoryId, [number, number]][]).sort((a, b) => a[1][0] / a[1][1] - b[1][0] / b[1][1]);
+  const practiced = L.practice && L.practice.mode in CATEGORY ? L.practice.mode as CategoryId : null;
 
   return (
     <div className="result">
@@ -65,6 +66,9 @@ export function ResultScreen() {
               <span className="brow-name">{CATEGORY[c].no}<small>{CATEGORY[c].ru}</small></span>
               <span className="meter"><i className="g" style={{ width: `${(r / n) * 100}%` }} /><i className="r" style={{ width: `${((n - r) / n) * 100}%` }} /></span>
               <span className="v tnum">{r}/{n}</span>
+              {THEORY_BY_CAT[c] && (
+                <button className="iconbtn" onClick={() => go({ name: 'chapter', cat: c })} title="Теория по теме" aria-label={`Теория: ${CATEGORY[c].no}`}><Icon name="theory" /></button>
+              )}
             </div>
           ))}
         </section>
@@ -75,6 +79,7 @@ export function ResultScreen() {
           ? <button className="btn primary" onClick={startExam}><Icon name="redo" />Новый экзамен</button>
           : <button className="btn primary" onClick={() => go({ name: 'practice', mode: L.practice?.mode ?? 'all' })}><Icon name="redo" />Ещё раз</button>}
         {errors > 0 && <button className="btn" onClick={() => go({ name: 'practice', mode: 'list', ids: wrongIds })}>Тренировать ошибки</button>}
+        {practiced && THEORY_BY_CAT[practiced] && <button className="btn" onClick={() => go({ name: 'chapter', cat: practiced })}><Icon name="theory" />Теория по теме</button>}
         <button className="btn ghost" onClick={() => go({ name: 'home' })}><Icon name="home" />На главную</button>
       </div>
 

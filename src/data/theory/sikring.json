@@ -1,0 +1,46 @@
+{
+  "cat": "sikring",
+  "lead": "Bilbelte, riktig barnesete og godt sikret last redder liv. Her lærer du hvem som har ansvaret, hvordan barn skal sitte, og hva du kan trekke med førerkort klasse B.",
+  "leadRu": "Ремень безопасности, правильное детское кресло и надёжно закреплённый груз спасают жизни. Здесь — кто за что отвечает, как перевозить детей и какой прицеп можно буксировать с правами категории B.",
+  "blocks": [
+    { "h": "Bilbelte", "ru": "Ремень безопасности" },
+    { "p": "Alle som sitter i bilen, skal bruke bilbelte eller annet godkjent sikringsutstyr. Det gjelder både foran og bak, og også på korte turer i byen.", "ru": "Все, кто сидит в машине, должны быть пристёгнуты ремнём или другим одобренным удерживающим устройством. Это касается и переднего, и заднего сиденья — и коротких поездок по городу тоже." },
+    { "rule": "Føreren har ansvaret for at passasjerer under 15 år er sikret. Passasjerer som er 15 år eller eldre, har selv ansvaret og kan selv få bot.", "ru": "Водитель отвечает за то, чтобы пассажиры младше 15 лет были пристёгнуты. Пассажиры от 15 лет отвечают за себя сами и сами получают штраф." },
+
+    { "h": "Airbag og nakkestøtte", "ru": "Подушка безопасности и подголовник" },
+    { "p": "Airbagen virker sammen med bilbeltet og erstatter det ikke. Uten belte kan airbagen gi alvorlige skader. Du bør heller ikke sitte helt inntil rattet.", "ru": "Подушка безопасности работает вместе с ремнём и не заменяет его. Без ремня подушка может причинить серьёзные травмы. Также не стоит сидеть вплотную к рулю." },
+    { "p": "Nakkestøtten beskytter mot nakkeskader ved påkjøring bakfra. Overkanten bør være omtrent i høyde med toppen av hodet, og nakkestøtten skal være nær hodet.", "ru": "Подголовник защищает шею при ударе сзади. Его верхний край должен быть примерно на уровне макушки, а сам подголовник — близко к голове." },
+    { "trap": "En nakkestøtte som står så lavt som mulig eller i høyde med skuldrene, beskytter dårlig. Ved en påkjøring bakfra kan hodet bli kastet bakover over den.", "ru": "Подголовник, опущенный до упора или на уровень плеч, защищает плохо. При ударе сзади голову может откинуть назад через него." },
+
+    { "h": "Barn i bilen", "ru": "Дети в машине" },
+    { "p": "Barn som er lavere enn 135 cm, skal alltid bruke godkjent sikringsutstyr som passer til barnets vekt og høyde. Vanlig bilbelte er ikke nok.", "ru": "Дети ростом ниже 135 см должны всегда использовать одобренное детское удерживающее устройство, подходящее по весу и росту. Одного обычного ремня недостаточно." },
+    { "p": "Små barn har stort hode og svak nakke. Derfor bør de sitte bakovervendt så lenge som mulig. Et bakovervendt sete beskytter hodet og nakken best ved en kollisjon forfra.", "ru": "У маленьких детей большая голова и слабая шея. Поэтому им лучше как можно дольше ездить в кресле против хода движения: оно лучше всего защищает голову и шею при лобовом столкновении." },
+    { "rule": "Et bakovervendt barnesete må aldri stå foran en aktiv airbag. I forsetet er det bare lov hvis airbagen er koblet ut.", "ru": "Детское кресло против хода движения никогда нельзя ставить перед включённой подушкой безопасности. На переднем сиденье это допустимо, только если подушка отключена." },
+    { "p": "Barn under 140 cm skal ikke sitte foran en aktiv airbag. Kan airbagen ikke kobles ut, er baksetet det tryggeste stedet.", "ru": "Детей ростом ниже 140 см нельзя сажать перед включённой подушкой безопасности. Если её нельзя отключить, самое безопасное место — заднее сиденье." },
+    { "nums": [
+      ["15 år", "fra denne alderen har passasjeren selv ansvaret for bilbeltet", "с этого возраста пассажир сам отвечает за ремень"],
+      ["135 cm", "lavere enn dette: godkjent sikringsutstyr for barn", "ниже этого роста — обязательно детское удерживающее устройство"],
+      ["140 cm", "lavere enn dette: ikke foran en aktiv airbag", "ниже этого роста — не сажать перед включённой подушкой"]
+    ] },
+
+    { "h": "Last i og på bilen", "ru": "Груз в машине и на ней" },
+    { "p": "Lasten skal alltid være sikret, slik at den ikke kan falle av, flytte seg eller være til fare. Ved en kollisjon blir løse gjenstander kastet framover med en kraft som er mange ganger større enn vekten deres.", "ru": "Груз всегда должен быть закреплён так, чтобы он не мог упасть, сместиться или создать опасность. При столкновении незакреплённые предметы летят вперёд с силой, во много раз превышающей их вес." },
+    { "p": "Tung last på taket, for eksempel i en takboks, gir høyere tyngdepunkt. Bilen blir mindre stabil i svinger og ved sidevind, så du bør tilpasse farten.", "ru": "Тяжёлый груз на крыше, например в багажном боксе, поднимает центр тяжести. Машина становится менее устойчивой в поворотах и при боковом ветре, поэтому подберите скорость." },
+
+    { "h": "Tilhenger", "ru": "Прицеп" },
+    { "p": "Med klasse B kan du alltid trekke en tilhenger med tillatt totalvekt på inntil 750 kg, hvis bilen er godkjent for den. Er tilhengeren tyngre, kan bilen og tilhengeren til sammen ha tillatt totalvekt på høyst 3500 kg.", "ru": "С категорией B всегда можно буксировать прицеп с разрешённой максимальной массой до 750 кг, если машина допущена к этому. Если прицеп тяжелее, суммарная разрешённая масса машины и прицепа может быть не больше 3500 кг." },
+    { "nums": [
+      ["750 kg", "tillatt totalvekt for en tilhenger du alltid kan trekke med klasse B", "разрешённая масса прицепа, который всегда можно буксировать с категорией B"],
+      ["3500 kg", "høyeste tillatte totalvekt for bil og tilhenger til sammen når tilhengeren er tyngre", "наибольшая суммарная разрешённая масса машины и прицепа, если прицеп тяжелее"],
+      ["80 km/t", "høyeste fart med tilhenger, hvis den ikke er godkjent for Tempo 100", "наибольшая скорость с прицепом, если он не допущен к Tempo 100"]
+    ] },
+    { "trap": "Det er tillatt totalvekt som teller, ikke hvor mye tilhengeren veier akkurat nå. Hva bilen kan trekke, står i vognkortet.", "ru": "Считается разрешённая максимальная масса, а не то, сколько прицеп весит прямо сейчас. Что машине можно буксировать, указано в регистрационном свидетельстве (vognkort)." },
+    { "p": "Tung last på tilhengeren skal ligge lavt og over hjulakselen. Feil plassering kan gjøre at tilhengeren slingrer. Før du kjører, sjekk dette:", "ru": "Тяжёлый груз на прицепе кладут низко и над осью колёс. При неправильном размещении прицеп может начать раскачиваться. Перед поездкой проверьте:" },
+    { "list": [
+      ["Tilhengeren er riktig koblet.", "Прицеп правильно подсоединён."],
+      ["Lysene på tilhengeren virker.", "Фонари прицепа работают."],
+      ["Dekkene er i orden.", "Шины в порядке."],
+      ["Lasten er sikret og riktig plassert.", "Груз закреплён и правильно размещён."]
+    ] }
+  ]
+}

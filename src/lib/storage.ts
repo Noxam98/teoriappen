@@ -8,7 +8,8 @@ export const EMPTY: AppData = {
   vocab: [],
   cur: null,
   last: null,
-  prefs: { reveal: 'instant', haptics: true, sound: true, volume: 1, size: 1, ru: false, seenBrushHint: false },
+  read: {},
+  prefs: { reveal: 'instant', haptics: true, sound: true, volume: 1, size: 1, ru: false, theoryRu: true, seenBrushHint: false },
 };
 
 /** Progress lives in this browser only (localStorage); everything still works if storage is blocked. */

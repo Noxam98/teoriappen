@@ -1,0 +1,50 @@
+{
+  "cat": "myke",
+  "lead": "Myke trafikanter er gående, syklister og motorsyklister. De har ingen bil rundt seg som beskytter dem, og det er du som må ta hensyn – også til barn og dyr i veien.",
+  "leadRu": "Незащищённые участники движения (myke trafikanter) — пешеходы, велосипедисты и мотоциклисты. Их не защищает кузов машины, поэтому быть внимательным должны вы — и к детям, и к животным на дороге.",
+  "blocks": [
+    { "h": "Barn", "ru": "Дети" },
+    { "p": "Barn er små og vanskelige å se. De kan gjøre uventede ting, for eksempel springe rett ut i veien. Der det kommer en ball, kan det komme et barn etter.", "ru": "Дети маленькие, их трудно заметить. Они могут повести себя неожиданно — например, выбежать прямо на дорогу. За мячом может выбежать ребёнок." },
+    { "signs": [
+      ["fare_barn", "Barn: barn ferdes ofte ved veien, for eksempel ved en skole eller lekeplass", "Дети: здесь часто бывают дети, например у школы или детской площадки"]
+    ] },
+    { "rule": "Ser du barn ved veien, senk farten og vær klar til å stoppe. Ikke tut, og ikke kjør raskt forbi – barn løper ofte ut uten å se seg for.", "ru": "Видите детей у дороги — снизьте скорость и будьте готовы остановиться. Не сигнальте и не проезжайте быстро мимо: дети часто выбегают, не глядя по сторонам." },
+
+    { "h": "Gående", "ru": "Пешеходы" },
+    { "p": "Du har vikeplikt for gående som er i gangfeltet eller på vei ut i det. Står en gående ved gangfeltet og skal tydelig gå over, skal du stoppe.", "ru": "Вы уступаете пешеходам, которые уже на переходе или собираются на него выйти. Если пешеход стоит у перехода и явно хочет перейти, остановитесь." },
+    { "fig": { "road": "gangfelt" }, "no": "Gangfelt med skilt foran deg. Skal en gående over, stopper du og lar personen gå.", "ru": "Впереди пешеходный переход со знаком. Если пешеход собирается переходить, остановитесь и пропустите его." },
+    { "p": "En gående med hvit stokk er blind eller svaksynt. Vær ekstra forsiktig, og gi personen god tid.", "ru": "Пешеход с белой тростью — слепой или слабовидящий человек. Будьте особенно внимательны и дайте ему достаточно времени." },
+
+    { "h": "Refleks i mørket", "ru": "Светоотражатели в темноте" },
+    { "p": "En gående med mørke klær er vanskelig å se i mørket. Refleksen lyser ikke av seg selv, men lyset fra bilen blir reflektert tilbake. Da ser du personen på mye lengre avstand.", "ru": "Пешехода в тёмной одежде в темноте увидеть трудно. Светоотражатель не светится сам — он отражает свет фар обратно. Благодаря этому человека видно с гораздо большего расстояния." },
+    { "nums": [
+      ["25–30 m", "så langt unna ser du en gående med mørke klær når du har nærlys", "с такого расстояния при ближнем свете виден пешеход в тёмной одежде"],
+      ["140 m", "så langt unna ser du en gående med refleks når du har nærlys", "с такого расстояния при ближнем свете виден пешеход со светоотражателем"]
+    ] },
+    { "trap": "Mange tror at nærlys viser en gående på lang avstand. Uten refleks ser du personen først på 25–30 meter – det er kortere enn stopplengden i vanlig fart på landeveien.", "ru": "Многие думают, что ближний свет показывает пешехода издалека. Без светоотражателя вы увидите его лишь с 25–30 метров — это меньше остановочного пути на обычной загородной скорости." },
+
+    { "h": "Syklister", "ru": "Велосипедисты" },
+    { "p": "Syklister kan vingle, for eksempel på grunn av hull i veien eller vind. Hold god sideavstand når du kjører forbi, gjerne minst 1,5 meter.", "ru": "Велосипедист может вильнуть, например из-за ямы или ветра. При обгоне держите большой боковой интервал, желательно не меньше 1,5 метра." },
+    { "list": [
+      ["Kjør forbi bare når det er trygt. Kommer det en møtende bil på en smal vei, vent bak syklisten.", "Обгоняйте, только когда это безопасно. Если на узкой дороге едет встречная машина, подождите позади велосипедиста."],
+      ["Ikke tut for å få syklisten til å flytte seg.", "Не сигнальте, чтобы велосипедист посторонился."],
+      ["Se i speilet og over skulderen etter syklister før du åpner døren.", "Прежде чем открыть дверь, посмотрите в зеркало и через плечо, нет ли велосипедистов."]
+    ] },
+
+    { "h": "Motorsykler", "ru": "Мотоциклы" },
+    { "p": "Motorsykler er smale og blir lett skjult, for eksempel bak andre biler. Det er også vanskelig å bedømme hvor fort de kommer.", "ru": "Мотоциклы узкие, их легко не заметить — например, за другими машинами. Также трудно оценить, с какой скоростью они приближаются." },
+    { "trap": "Skal du svinge til venstre og en motorsykkel kommer mot deg, kan den være nærmere og kjøre fortere enn du tror. Du har vikeplikt – er du usikker, så vent.", "ru": "Если вы поворачиваете налево, а навстречу едет мотоцикл, он может быть ближе и ехать быстрее, чем кажется. Уступаете вы — если сомневаетесь, подождите." },
+
+    { "h": "Dyr i veien", "ru": "Животные на дороге" },
+    { "signs": [
+      ["fare_elg", "Elg: fare for elg i veien", "Лось: возможен выход лосей на дорогу"]
+    ] },
+    { "p": "Elg er mest i bevegelse i skumringen og om natten. Senk farten, følg godt med langs veikantene, og husk at flere dyr kan komme etter den første elgen – for eksempel en kalv.", "ru": "Лоси особенно активны в сумерках и ночью. Снизьте скорость, внимательно следите за обочинами и помните: за первым лосем могут выйти и другие животные — например, лосёнок." },
+    { "list": [
+      ["Sauer og andre dyr kan plutselig gå ut i veien. Senk farten og vær klar til å stoppe.", "Овцы и другие животные могут внезапно выйти на дорогу. Снизьте скорость и будьте готовы остановиться."],
+      ["Hester kan bli redde for lyd og biler som kommer nær. Kjør sakte forbi med god avstand.", "Лошадь может испугаться шума и близко проезжающих машин. Проезжайте медленно и с большим интервалом."],
+      ["Ikke bruk tuten mot dyr. Dyret kan bli redd og gjøre uventede ting.", "Не сигнальте животным: они могут испугаться и повести себя непредсказуемо."],
+      ["Kjører du på elg eller annet hjortevilt, skal du melde fra til politiet og merke stedet.", "Если вы сбили лося, оленя или косулю, сообщите в полицию и отметьте место."]
+    ] }
+  ]
+}

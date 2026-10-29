@@ -1,0 +1,33 @@
+{
+  "cat": "miljo",
+  "lead": "Måten du kjører på, påvirker både drivstofforbruket og utslippene. Her lærer du hvordan du kjører økonomisk og miljøvennlig.",
+  "leadRu": "То, как вы ездите, влияет и на расход топлива, и на выбросы. Здесь — как ездить экономично и экологично.",
+  "blocks": [
+    { "h": "Jevn og planlagt kjøring", "ru": "Плавная и продуманная езда" },
+    { "p": "Se langt fram, og planlegg kjøringen. Hold jevn fart, og skift opp tidlig, slik at motoren går med lavt turtall. Unngå kraftige akselerasjoner og harde nedbremsinger.", "ru": "Смотрите далеко вперёд и планируйте езду. Держите ровную скорость и рано переключайтесь на повышенную передачу, чтобы двигатель работал на низких оборотах. Избегайте резких разгонов и торможений." },
+    { "rule": "Nærmer du deg et rødt lys eller en kø, slipper du gassen tidlig og lar bilen rulle med giret inne. Da bruker de fleste moderne biler nesten ikke drivstoff, og du sparer bremsene.", "ru": "Когда приближаетесь к красному сигналу или пробке, заранее отпустите газ и катитесь на включённой передаче. Большинство современных машин при этом почти не расходует топливо, а тормоза меньше изнашиваются." },
+    { "trap": "Det lønner seg ikke å sette giret i fri og rulle. Da bruker motoren drivstoff på tomgang. Det er heller ikke lurt å gasse helt fram til krysset og bremse hardt.", "ru": "Катиться на нейтрали невыгодно: двигатель при этом расходует топливо на холостом ходу. Неразумно и разгоняться до самого перекрёстка, а потом резко тормозить." },
+
+    { "h": "Fart og luftmotstand", "ru": "Скорость и сопротивление воздуха" },
+    { "p": "Luftmotstanden øker kraftig med farten. Litt lavere fart på landeveien gir mye lavere forbruk.", "ru": "Сопротивление воздуха сильно растёт с увеличением скорости. Немного меньшая скорость на трассе заметно снижает расход." },
+    { "list": [
+      ["Takboks og takstativ øker luftmotstanden. Ta dem av når du ikke trenger dem.", "Бокс и багажник на крыше увеличивают сопротивление воздуха. Снимайте их, когда они не нужны."],
+      ["Ikke ha unødvendig last i bilen.", "Не возите в машине лишний груз."],
+      ["For lavt lufttrykk i dekkene gir høyere forbruk. Sjekk dekktrykket jevnlig.", "Слишком низкое давление в шинах увеличивает расход. Регулярно проверяйте давление."]
+    ] },
+
+    { "h": "Kald motor og tomgang", "ru": "Холодный двигатель и холостой ход" },
+    { "p": "En kald motor bruker mer drivstoff og slipper ut mer. Den blir raskere varm når du kjører rolig enn når den går på tomgang.", "ru": "Холодный двигатель расходует больше топлива и даёт больше выбросов. При спокойной езде он прогревается быстрее, чем на холостом ходу." },
+    { "list": [
+      ["Unngå tomgang. Det gir unødvendig forurensning og forbruk uten at du kommer noen vei.", "Не оставляйте двигатель работать на холостом ходу. Это лишнее загрязнение и расход без всякой пользы."],
+      ["Bruk motorvarmer om vinteren. Det gir mindre slitasje på motoren og mindre forbruk og utslipp ved kaldstart.", "Зимой пользуйтесь подогревателем двигателя. Он уменьшает износ двигателя, а также расход и выбросы при холодном запуске."],
+      ["Korte turer med kald motor gir mest utslipp per kilometer.", "Короткие поездки на холодном двигателе дают больше всего выбросов на километр."]
+    ] },
+
+    { "h": "Piggdekk og svevestøv", "ru": "Шипованные шины и мелкая пыль" },
+    { "p": "Piggene river opp asfalten. Det gir svevestøv i lufta, som er skadelig å puste inn. Derfor må du i noen byer betale gebyr for å kjøre med piggdekk.", "ru": "Шипы разрушают асфальт. В воздухе появляется мелкая пыль, которой вредно дышать. Поэтому в некоторых городах за езду на шипованных шинах нужно платить сбор." },
+
+    { "h": "Færre bilturer", "ru": "Меньше поездок на машине" },
+    { "p": "Planlegg turene, slik at du kan gjøre flere ærend på én tur. Samkjør når du kan, og gå eller sykle på korte turer.", "ru": "Планируйте поездки, чтобы за один раз сделать несколько дел. Ездите вместе с другими, когда это возможно, а короткие расстояния проходите пешком или проезжайте на велосипеде." }
+  ]
+}

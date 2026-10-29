@@ -36,16 +36,28 @@
 @media (min-width: 560px) { .reveal-card { grid-template-columns: 1fr minmax(220px, auto); align-items: center; } }
 
 /* shortcut tiles */
-.tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
-.tile { display: grid; justify-items: start; align-content: start; gap: 2px; min-height: 108px; padding: 14px 12px; text-align: left; border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--surface); cursor: pointer; transition: transform .08s; min-width: 0; }
+/* shortcut tiles: 2×2 with the icon on the left on phones, one row of four on wider screens */
+.tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+.tile {
+  display: grid; grid-template-columns: 38px minmax(0, 1fr); column-gap: 11px; align-content: center; align-items: center;
+  min-height: 74px; padding: 12px; text-align: left; border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--surface);
+  cursor: pointer; transition: transform .08s; min-width: 0;
+}
 .tile:active:not([disabled]) { transform: scale(.97); }
 .tile[disabled] { cursor: default; opacity: .6; }
-.tile-ic { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: var(--blue-soft); color: var(--blue); margin-bottom: 8px; }
+.tile-ic { grid-row: span 2; width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: var(--blue-soft); color: var(--blue); }
 .tile-ic.bad { background: var(--bad-soft); color: var(--bad); }
+.tile-ic.ok { background: var(--ok-soft); color: var(--ok); }
 .tile-ic svg { width: 21px; height: 21px; }
-.tile b { font-size: .95rem; line-height: 1.2; }
-.tile small { font-size: .8rem; color: var(--ink-2); line-height: 1.25; }
-@media (max-width: 360px) { .tile { padding: 12px 10px; } .tile b { font-size: .88rem; } }
+.tile b { grid-column: 2; font-size: .95rem; line-height: 1.2; align-self: end; }
+.tile small { grid-column: 2; font-size: .8rem; color: var(--ink-2); line-height: 1.25; align-self: start; margin-top: 2px; }
+@media (max-width: 360px) { .tile { padding: 11px 10px; column-gap: 9px; grid-template-columns: 34px minmax(0, 1fr); } .tile-ic { width: 34px; height: 34px; } .tile b { font-size: .9rem; } }
+@media (min-width: 560px) {
+  .tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tile { grid-template-columns: none; justify-items: start; align-content: start; gap: 2px; min-height: 108px; padding: 14px 12px; }
+  .tile-ic { grid-row: auto; margin-bottom: 8px; }
+  .tile b, .tile small { grid-column: auto; align-self: auto; margin-top: 0; }
+}
 
 /* topics: one grouped list; every row is a big button with a play button on the right */
 .section-title.stacked { display: grid; gap: 4px; }

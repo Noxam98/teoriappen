@@ -1,0 +1,38 @@
+{
+  "cat": "lyssignal",
+  "lead": "Lyssignal regulerer trafikken i kryss og ved gangfelt. Her lærer du hva fargene betyr, og hva som gjelder når politiet dirigerer eller lyset ikke virker.",
+  "leadRu": "Светофор регулирует движение на перекрёстках и у пешеходных переходов. Здесь — что значат его цвета и что действует, когда движением управляет полицейский или светофор не работает.",
+  "blocks": [
+    { "h": "Rødt, gult og grønt", "ru": "Красный, жёлтый и зелёный" },
+    { "p": "Lyset skifter i denne rekkefølgen: grønt – gult – rødt – rødt og gult – grønt.", "ru": "Сигналы сменяются в таком порядке: зелёный — жёлтый — красный — красный с жёлтым — зелёный." },
+    { "list": [
+      ["Rødt: stans før stopplinjen. Er det ingen stopplinje, stanser du før lyssignalet.", "Красный: остановитесь перед стоп-линией. Если её нет — перед светофором."],
+      ["Rødt og gult: lyset blir snart grønt. Gjør deg klar, men kjør først når lyset er grønt.", "Красный и жёлтый вместе: скоро загорится зелёный. Приготовьтесь, но трогайтесь только на зелёный."],
+      ["Grønt: du kan kjøre. Men du må fortsatt vike for andre når reglene sier det.", "Зелёный: можно ехать. Но уступать другим, когда этого требуют правила, всё равно нужно."],
+      ["Gult etter grønt: lyset blir snart rødt. Stans før stopplinjen.", "Жёлтый после зелёного: скоро загорится красный. Остановитесь перед стоп-линией."]
+    ] },
+    { "fig": { "light": "gul" }, "no": "Gult lys betyr stopp – ikke at du skal skynde deg over.", "ru": "Жёлтый означает «стоп», а не «успей проскочить»." },
+    { "rule": "På gult lys kjører du bare videre hvis du er så nær stopplinjen at du ikke kan stanse på en trygg måte. En kraftig nedbremsing kan føre til at noen kjører inn i deg bakfra.", "ru": "На жёлтый проезжают, только если вы так близко к стоп-линии, что безопасно остановиться уже нельзя. Резкое торможение может привести к удару сзади." },
+    { "trap": "I noen land kan du svinge til høyre på rødt lys. I Norge er det ikke lov, selv om det ikke kommer trafikk. Vent på grønt lys eller grønn pil.", "ru": "В некоторых странах на красный можно повернуть направо. В Норвегии — нельзя, даже если никого нет. Ждите зелёного сигнала или зелёной стрелки." },
+
+    { "h": "Grønt lys og grønn pil", "ru": "Зелёный сигнал и зелёная стрелка" },
+    { "p": "Grønt lys betyr ikke at veien er fri. Svinger du, skal du slippe over gående som krysser veien du svinger inn i – de kan også ha grønt.", "ru": "Зелёный не означает, что путь свободен. При повороте пропустите пешеходов, которые переходят дорогу, на которую вы поворачиваете, — у них тоже может быть зелёный." },
+    { "p": "Svinger du til venstre, skal du vike for møtende som kjører rett fram eller svinger til høyre. Det gjelder selv om dere begge har grønt.", "ru": "Поворачивая налево, вы уступаете встречным, которые едут прямо или направо. Это так, даже если зелёный у обоих." },
+    { "fig": { "light": "gronnpil_h" }, "no": "Grønn pil mot høyre: du kan kjøre i den retningen pilen viser. Vær likevel oppmerksom på andre trafikanter.", "ru": "Зелёная стрелка направо: можно ехать в направлении стрелки. Но всё равно следите за другими участниками движения." },
+
+    { "h": "Blinkende gult og lys som er slått av", "ru": "Мигающий жёлтый и выключенный светофор" },
+    { "fig": { "light": "gulblink" }, "no": "Blinkende gult: lyssignalet regulerer ikke trafikken. Vær ekstra oppmerksom.", "ru": "Мигающий жёлтый: светофор не регулирует движение. Будьте особенно внимательны." },
+    { "p": "Når lyset blinker gult eller er slått av, gjelder skiltene. Står det et vikepliktskilt, har du vikeplikt for trafikken på veien du krysser. Er det ingen skilt, gjelder vanlige vikepliktsregler – altså høyreregelen.", "ru": "Когда светофор мигает жёлтым или выключен, действуют знаки. Если стоит знак «Уступите дорогу», вы уступаете транспорту на пересекаемой дороге. Если знаков нет — общие правила, то есть правило правой руки." },
+    { "trap": "Et vikepliktskilt ved et lyskryss gjelder ikke når lyset virker. Har du grønt, er det lyset som gjelder. Skiltet gjelder bare når lyset er slått av eller blinker gult.", "ru": "Знак «Уступите дорогу» у светофора не действует, пока светофор работает. Если у вас зелёный — главное светофор. Знак действует, только когда светофор выключен или мигает жёлтым." },
+
+    { "h": "Politiet går foran alt", "ru": "Полицейский важнее всего" },
+    { "p": "Tegn fra politiet går foran lyssignal, skilt og vanlige trafikkregler. Har du grønt lys, men politiet gir tegn til at du skal stanse, skal du stanse.", "ru": "Сигналы полицейского важнее светофора, знаков и общих правил. Если у вас зелёный, а полицейский показывает остановиться, — останавливайтесь." },
+    { "rule": "Rekkefølgen er: 1) politiets tegn, 2) lyssignal, 3) skilt og veioppmerking, 4) vanlige trafikkregler, som høyreregelen.", "ru": "Порядок такой: 1) сигналы полицейского, 2) светофор, 3) знаки и разметка, 4) общие правила, например правило правой руки." },
+
+    { "h": "Andre lyssignaler", "ru": "Другие сигналы" },
+    { "list": [
+      ["Et signal med hvite streker eller symboler i stedet for farger er for kollektivtrafikken. Det gjelder bare for buss og trikk, ikke for deg som kjører bil.", "Сигнал с белыми полосками или символами вместо цветов — для общественного транспорта. Он действует только для автобусов и трамваев, а не для вас на легковой машине."],
+      ["To røde lys som blinker vekselvis, betyr stopp. Ved en jernbaneovergang viser de at et tog kommer: stans før bommen eller stopplinjen.", "Два попеременно мигающих красных сигнала означают «стоп». На железнодорожном переезде они показывают, что приближается поезд: остановитесь перед шлагбаумом или стоп-линией."]
+    ] }
+  ]
+}

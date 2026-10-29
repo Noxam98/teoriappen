@@ -1,0 +1,40 @@
+{
+  "cat": "oppmerking",
+  "lead": "Veioppmerking er linjer, piler og andre merker i kjørebanen. De viser hvor du skal kjøre, og hvilke linjer du ikke har lov til å kjøre over.",
+  "leadRu": "Разметка — это линии, стрелки и другие знаки на проезжей части. Она показывает, где ехать и какие линии пересекать нельзя.",
+  "blocks": [
+    { "h": "Gule og hvite linjer", "ru": "Жёлтые и белые линии" },
+    { "p": "Gule linjer skiller trafikk som kjører i motsatte retninger. Hvite linjer skiller kjørefelt med samme kjøreretning og viser kanten av kjørebanen.", "ru": "Жёлтые линии разделяют потоки, которые едут навстречу друг другу. Белые разделяют полосы одного направления и показывают край проезжей части." },
+
+    { "h": "Linjer midt i veien", "ru": "Линии посередине дороги" },
+    { "p": "Jo mer maling det er i linjen, jo farligere er det å kjøre over den.", "ru": "Чем больше краски в линии, тем опаснее её пересекать." },
+    { "fig": { "road": "skillelinje" }, "no": "Skillelinje: korte streker og lange mellomrom. Du kan kjøre over når det er trygt, for eksempel for å kjøre forbi.", "ru": "Прерывистая разделительная линия: короткие штрихи и длинные промежутки. Пересекать можно, когда это безопасно, например при обгоне." },
+    { "fig": { "road": "varsellinje" }, "no": "Varsellinje: lange streker og korte mellomrom. Den varsler om en sperrelinje lenger fram eller om dårlig sikt.", "ru": "Предупреждающая линия: длинные штрихи и короткие промежутки. Предупреждает о сплошной линии впереди или о плохой видимости." },
+    { "fig": { "road": "sperrelinje" }, "no": "Sperrelinje: en heltrukket linje. Du må ikke kjøre over den eller på den.", "ru": "Сплошная линия: пересекать её и ехать по ней нельзя." },
+    { "trap": "Skillelinje og varsellinje er lette å blande. Varsellinjen har de lange strekene. Den betyr at du skal være forsiktig med forbikjøring – ikke at du kan kjøre forbi uten å tenke på sikten.", "ru": "Прерывистую и предупреждающую линии легко перепутать. У предупреждающей длинные штрихи. Она значит, что с обгоном нужно быть осторожным, а не что можно обгонять, не думая о видимости." },
+
+    { "h": "To linjer ved siden av hverandre", "ru": "Две линии рядом" },
+    { "rule": "Går en sperrelinje og en varsellinje ved siden av hverandre, er det linjen nærmest deg som gjelder for deg.", "ru": "Если сплошная и предупреждающая линии идут рядом, для вас действует та, что ближе к вам." },
+    { "fig": { "road": "sperre_varsel" }, "no": "Linjen nærmest deg er heltrukket. Du må ikke kjøre over linjene.", "ru": "Ближняя к вам линия сплошная. Пересекать линии нельзя." },
+    { "fig": { "road": "varsel_sperre" }, "no": "Linjen nærmest deg er stiplet. Du kan kjøre over når det er trygt, men de møtende kan ikke.", "ru": "Ближняя к вам линия прерывистая. Вы можете пересечь их, когда это безопасно, а встречные — нет." },
+    { "fig": { "road": "dobbel_sperrelinje" }, "no": "Dobbel sperrelinje: ingen av kjøreretningene kan kjøre over.", "ru": "Двойная сплошная: пересекать нельзя ни в одном направлении." },
+
+    { "h": "Linjer over feltet ved kryss", "ru": "Поперечные линии у перекрёстка" },
+    { "fig": { "road": "haitenner" }, "no": "Vikepliktlinje (haitenner): vik for trafikken på veien du kommer til. Stans ved linjen hvis det er nødvendig.", "ru": "Линия «Уступите дорогу» («зубы акулы»): уступите транспорту на дороге, к которой подъезжаете. При необходимости остановитесь у линии." },
+    { "fig": { "road": "stopplinje" }, "no": "Stopplinje: en hvit, heltrukket linje over feltet. Ved stoppskilt stanser du ved linjen. Ser du ikke trafikken derfra, kjører du forsiktig litt fram og stanser igjen.", "ru": "Стоп-линия: белая сплошная линия поперёк полосы. При знаке «Стоп» останавливайтесь у неё. Если оттуда не видно дорогу, медленно продвиньтесь вперёд и остановитесь ещё раз." },
+
+    { "h": "Felt, sperreflate og gangfelt", "ru": "Особые полосы, островки и переходы" },
+    { "fig": { "road": "sykkelfelt" }, "no": "Sykkelfelt: et eget felt for syklende ved kanten av kjørebanen.", "ru": "Велосипедная полоса: отдельная полоса для велосипедистов у края проезжей части." },
+    { "list": [
+      ["Du må ikke stanse eller parkere i sykkelfeltet – heller ikke for å slippe av en passasjer.", "На велополосе нельзя останавливаться и парковаться — даже чтобы высадить пассажира."],
+      ["Svinger du til høyre over sykkelfeltet, har du vikeplikt for syklende som skal rett fram. Se i speilet og over skulderen før du svinger.", "Поворачивая направо через велополосу, вы уступаете велосипедистам, которые едут прямо. Перед поворотом посмотрите в зеркало и через плечо."],
+      ["Kollektivfelt er for buss og drosje. Med vanlig personbil kan du ikke kjøre der hvis ikke skilt tillater det – heller ikke når det er kø.", "Полоса для общественного транспорта — для автобусов и такси. Обычной легковой машине туда нельзя, если знак этого не разрешает, — даже в пробке."],
+      ["Piler i feltet viser hvilken retning feltet er for. En pil til venstre betyr at feltet er for dem som skal svinge til venstre. Velg feltet i god tid før krysset.", "Стрелки на полосе показывают, для какого направления она предназначена. Стрелка налево — полоса для тех, кто поворачивает налево. Выбирайте полосу заранее, до перекрёстка."]
+    ] },
+    { "fig": { "road": "sperreflate" }, "no": "Sperreflate: et område med skrå streker mellom feltene. Du skal ikke kjøre eller stanse på den.", "ru": "Островок из разметки: участок с косыми полосами между полосами движения. По нему нельзя ехать и на нём нельзя останавливаться." },
+    { "fig": { "road": "gangfelt" }, "no": "Gangfelt: brede hvite striper over veien og et skilt ved siden av. Du må ikke stanse i gangfeltet eller nærmere enn 5 meter foran det.", "ru": "Пешеходный переход: широкие белые полосы поперёк дороги и знак рядом. Нельзя останавливаться на переходе и ближе 5 метров перед ним." },
+    { "nums": [
+      ["5 m", "minste avstand foran et gangfelt når du stanser eller parkerer – da kan andre se de gående", "минимальное расстояние до перехода при остановке или стоянке — чтобы другие видели пешеходов"]
+    ] }
+  ]
+}
