@@ -12,7 +12,7 @@ import { answerFeedback } from '../lib/feedback';
 import { playSound } from '../lib/sound';
 import { shuffle } from '../lib/text';
 import { useApp } from '../state/AppState';
-import type { AppData, PracticeMode, Screen } from '../types';
+import type { AppData, PracticeMode, PracticeRound, Screen } from '../types';
 
 type PracticeScreenSpec = Extract<Screen, { name: 'practice' }>;
 
@@ -22,6 +22,23 @@ function buildList(screen: PracticeScreenSpec, stats: AppData['stats']): string[
   const pool = screen.mode === 'all' ? QUESTIONS : QUESTIONS.filter(q => q.cat === screen.mode);
   // questions never seen before come first
   return shuffle(pool.map(q => q.id)).sort((a, b) => Number(!!stats[a]) - Number(!!stats[b]));
+}
+
+const sameSet = (a: string[], b: string[]) => a.length === b.length && a.every(x => b.includes(x));
+
+/**
+ * The round to show: after a reload (or the back button) the saved round of this topic continues at the question in
+ * the address; otherwise a new round starts, with the question from a shared link first.
+ */
+function openRound(screen: PracticeScreenSpec, data: AppData, restored: boolean): PracticeRound {
+  const saved = data.practice;
+  if (restored && saved && saved.mode === screen.mode && (screen.mode !== 'list' || sameSet(saved.ids, screen.ids ?? []))
+    && (!screen.q || saved.ids.includes(screen.q))) {
+    return { ...saved, i: screen.q ? saved.ids.indexOf(screen.q) : saved.i };
+  }
+  let ids = buildList(screen, data.stats);
+  if (screen.q) ids = [screen.q, ...ids.filter(x => x !== screen.q)];
+  return { mode: screen.mode, ids, i: 0, ans: {}, perm: {}, start: Date.now(), instant: data.prefs.reveal === 'instant' };
 }
 
 // React StrictMode mounts twice in development: don't play the start chime twice.
@@ -39,20 +56,28 @@ export function practiceTitle(mode: PracticeMode): [string, string] {
 }
 
 export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
-  const { data, go, answer, finishPractice } = useApp();
-  const [ids] = useState(() => buildList(screen, data.stats));
-  const [instant] = useState(() => data.prefs.reveal === 'instant');
-  const [start] = useState(Date.now);
-  const [i, setI] = useState(0);
-  const [orders, setOrders] = useState<Record<string, number[]>>({});
-  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const { data, update, go, mark, restored, answer, finishPractice } = useApp();
+  const [round] = useState(() => openRound(screen, data, restored));
+  const { ids, instant, start } = round;
+  const [i, setI] = useState(round.i);
+  const [orders, setOrders] = useState<Record<string, number[]>>(round.perm);
+  const [answers, setAnswers] = useState<Record<string, number>>(round.ans);
   const explainRef = useRef<HTMLDivElement>(null);
   const [streak, setStreak] = useState(0);
 
-  useEffect(() => { if (!ids.length) go({ name: 'home' }); }, [ids, go]);
-  useEffect(() => { if (ids.length) playOnce('begin'); }, [ids]);
+  useEffect(() => { if (!ids.length) go({ name: 'home' }, { replace: true }); }, [ids, go]);
+  useEffect(() => { if (ids.length && !restored) playOnce('begin'); }, [ids, restored]);
 
   const id = ids[i];
+  // the round is saved and the address names the question, so a reload or a shared link opens this question
+  useEffect(() => {
+    if (!id) return;
+    update(d => ({ ...d, practice: { mode: screen.mode, ids, i, ans: answers, perm: orders, start, instant } }));
+  }, [id, i, answers, orders, ids, instant, start, screen.mode, update]);
+  useEffect(() => {
+    if (id) mark({ name: 'practice', mode: screen.mode, ids: screen.mode === 'list' ? ids : undefined, q: id });
+  }, [id, ids, screen.mode, mark]);
+
   const q = id ? QUESTION_BY_ID[id] : null;
   const order = id ? orders[id] ?? [] : [];
   // each question gets its own option order once
@@ -86,7 +111,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
     // in "answers at the end" mode the current choice is counted only when leaving the question
     if (recordCurrent && !instant && q && chosen !== undefined) answer(q.id, chosen === 0);
     const answered = ids.filter(x => answers[x] !== undefined);
-    if (!answered.length) { go({ name: 'home' }); return; }
+    if (!answered.length) { update(d => ({ ...d, practice: null })); go({ name: 'home' }); return; }
     finishPractice(
       { ids: answered, perm: orders, ans: answers, flag: {}, i: 0, start, end: Date.now() },
       { mode: screen.mode, title: [no, ru] },
@@ -119,7 +144,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
         <div className="pbar" aria-hidden="true"><i style={{ width: `${(i / ids.length) * 100}%` }} /></div>
       </div>
 
-      <QuestionCard key={q.id} q={q} number={i + 1}>
+      <QuestionCard key={q.id} q={q} number={i + 1} share>
         <Options q={q} order={order} chosen={chosen} reveal={revealed} onPick={pick} />
         {revealed && <div ref={explainRef}><Explanation q={q} correct={chosen === 0} /></div>}
       </QuestionCard>

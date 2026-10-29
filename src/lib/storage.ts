@@ -8,6 +8,7 @@ export const EMPTY: AppData = {
   vocab: [],
   cur: null,
   last: null,
+  practice: null,
   read: {},
   prefs: { reveal: 'instant', haptics: true, sound: true, volume: 1, size: 1, ru: false, theoryLang: 'both', seenBrushHint: false },
 };

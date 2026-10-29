@@ -26,6 +26,7 @@ const PATHS = {
   theory: <path d="M12 6.8 C9.8 5.2 6.8 4.7 3 5.2 V18.8 C6.8 18.3 9.8 18.8 12 20.4 C14.2 18.8 17.2 18.3 21 18.8 V5.2 C17.2 4.7 14.2 5.2 12 6.8 Z M12 6.8 V20.4" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round" />,
   bulb: <path d="M9.5 17.5 H14.5 M10.5 20.5 H13.5 M12 3 A6 6 0 0 0 8.2 13.6 C9 14.4 9.4 15.2 9.5 16 H14.5 C14.6 15.2 15 14.4 15.8 13.6 A6 6 0 0 0 12 3 Z" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
   warn: <path d="M12 3.8 L21.2 19.8 H2.8 Z M12 10 V14.2 M12 17 V17.1" fill="none" stroke="currentColor" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round" />,
+  share: <path d="M12 3.5 V14.5 M7.5 8 L12 3.5 L16.5 8 M8 11 H5.5 V20.5 H18.5 V11 H16" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
   home: <path d="M4 11 L12 4 L20 11 M6.5 9 V20 H10 V14.5 H14 V20 H17.5 V9" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
   translate: (
     <>

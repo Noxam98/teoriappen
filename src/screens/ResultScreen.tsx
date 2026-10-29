@@ -4,6 +4,7 @@ import { Figure } from '../components/figures/Figure';
 import { ScoreGauge } from '../components/Gauges';
 import { Icon } from '../components/Icons';
 import { Explanation } from '../components/question/Explanation';
+import { QuestionShare } from '../components/question/QuestionCard';
 import { CATEGORY, QUESTION_BY_ID, THEORY_BY_CAT } from '../data';
 import { Words } from '../features/brush/Words';
 import { MAX_ERRORS } from '../lib/exam';
@@ -26,6 +27,8 @@ export function ResultScreen() {
     if (L.res.timeout) setTimeout(() => playSound(name), 900);
     else playSound(name);
   }, [L]);
+  // the address #/result from another device or after a reset: there is nothing to show
+  useEffect(() => { if (!L) go({ name: 'home' }, { replace: true }); }, [L, go]);
   if (!L) return null;
   const { res } = L;
   const isExam = L.kind !== 'practice';
@@ -106,6 +109,7 @@ function ReviewItem({ q, chosen, number }: { q: Question; chosen: number | undef
       <div className="qmeta">
         <span className="qn">Spørsmål {number}</span>
         <span className={ok ? 'verdict-chip ok' : 'verdict-chip bad'}>{ok ? 'верно' : chosen === undefined ? 'без ответа' : 'ошибка'}</span>
+        <QuestionShare q={q} />
       </div>
       <div className={q.img ? 'ritem-body has-fig' : 'ritem-body'}>
         <Figure spec={q.img} numbered={q.byNumber} />

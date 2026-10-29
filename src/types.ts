@@ -166,12 +166,24 @@ export interface Prefs {
   seenBrushHint: boolean;
 }
 
+/** A practice round in progress, kept so that a reload continues it at the same question. */
+export interface PracticeRound {
+  mode: PracticeMode;
+  ids: string[];
+  i: number;
+  ans: Record<string, number>;
+  perm: Record<string, number[]>;
+  start: number;
+  instant: boolean;
+}
+
 export interface AppData {
   stats: Record<string, QuestionStat>;
   exams: ExamResult[];
   vocab: VocabItem[];
   cur: ExamSession | null;
   last: FinishedExam | null;
+  practice: PracticeRound | null;
   /** Theory chapters read to the end (when). */
   read: Partial<Record<CategoryId, number>>;
   prefs: Prefs;
@@ -181,8 +193,10 @@ export type Screen =
   | { name: 'home' }
   | { name: 'exam' }
   | { name: 'result' }
-  | { name: 'practice'; mode: PracticeMode; ids?: string[] }
+  /** `q`: the question on screen (a reload or a shared link opens it) */
+  | { name: 'practice'; mode: PracticeMode; ids?: string[]; q?: string }
   | { name: 'vocab' }
   | { name: 'flashcards' }
   | { name: 'theory' }
-  | { name: 'chapter'; cat: CategoryId };
+  /** `section`: the heading in view, so a reload or a shared link opens that part of the chapter */
+  | { name: 'chapter'; cat: CategoryId; section?: string };

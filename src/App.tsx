@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
+import { savedScroll } from './lib/routes';
 import { setSoundPrefs } from './lib/sound';
 import { Toolbar } from './components/Toolbar';
 import { BrushProvider } from './features/brush/BrushProvider';
@@ -26,7 +27,17 @@ function CurrentScreen() {
 }
 
 function Layout() {
-  const { data } = useApp();
+  const { data, visit, restored, toast } = useApp();
+  // a screen opened from the address (reload, back button) returns to where it was scrolled
+  useLayoutEffect(() => {
+    if (!restored) return;
+    const y = savedScroll(location.hash);
+    if (y === undefined) return;
+    const to = () => window.scrollTo(0, y);
+    to();
+    const f = requestAnimationFrame(() => requestAnimationFrame(to));
+    return () => cancelAnimationFrame(f);
+  }, [visit, restored]);
   useEffect(() => {
     document.body.classList.remove('size-0', 'size-1', 'size-2');
     document.body.classList.add(`size-${data.prefs.size}`);
@@ -38,6 +49,7 @@ function Layout() {
       <Toolbar />
       <main className="wrap" id="main" tabIndex={-1}><CurrentScreen /></main>
       <TranslationPopover />
+      <div className="global-toast" role="status">{toast && <div className="toast info">{toast}</div>}</div>
     </>
   );
 }

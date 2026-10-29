@@ -40,6 +40,9 @@
 .qmeta { display: flex; justify-content: space-between; gap: 10px; align-items: center; margin-bottom: 12px; min-height: 22px; }
 .qn { font-family: var(--display); font-weight: 700; font-size: .92rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-3); }
 .qc { font-size: .78rem; color: var(--ink-2); text-align: right; }
+.qmeta .qc { margin-left: auto; }
+/* the share button sits in the corner without making the row taller */
+.qmeta .qshare { margin: -11px -10px -11px -6px; }
 .flag-note { display: inline-flex; align-items: center; gap: 4px; color: var(--flag); font-weight: 600; }
 .flag-note svg { width: 15px; height: 15px; }
 .qbody { display: grid; gap: 14px; }

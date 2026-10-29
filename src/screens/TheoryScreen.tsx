@@ -1,11 +1,13 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { ActionBar } from '../components/ActionBar';
 import { CategoryIcon } from '../components/CategoryIcon';
 import { Icon } from '../components/Icons';
 import { Segmented } from '../components/Segmented';
+import { ShareButton } from '../components/ShareButton';
 import { TheoryBlock, TheoryText } from '../components/theory/TheoryBlock';
 import { CATEGORY, QUESTIONS, THEORY, THEORY_BY_CAT } from '../data';
 import { Words } from '../features/brush/Words';
+import { savedScroll, slug } from '../lib/routes';
 import { plural, wordsOf } from '../lib/text';
 import { useApp } from '../state/AppState';
 import type { CategoryId, TheoryChapter } from '../types';
@@ -75,7 +77,7 @@ export function TheoryScreen() {
 }
 
 export function ChapterScreen({ cat }: { cat: CategoryId }) {
-  const { data, update, go } = useApp();
+  const { data, update, go, mark, restored, screen } = useApp();
   const ch = THEORY_BY_CAT[cat];
   const c = CATEGORY[cat];
   const at = THEORY.findIndex(t => t.cat === cat);
@@ -85,18 +87,49 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
   const isRead = !!data.read[cat];
   const end = useRef<HTMLDivElement>(null);
   const progress = useRef<HTMLElement>(null);
+  const section = screen.name === 'chapter' ? screen.section : undefined;
 
-  // a thin bar under the toolbar shows how far the chapter has been read
+  // every heading has an address: #/theory/<topic>/<heading>
+  const sections = useMemo(() => {
+    const seen = new Set<string>();
+    return (ch?.blocks ?? []).map(b => {
+      if (!('h' in b)) return undefined;
+      let s = slug(b.h);
+      for (let k = 2; seen.has(s); k++) s = `${slug(b.h)}-${k}`;
+      seen.add(s);
+      return s;
+    });
+  }, [ch]);
+
+  // a shared link (or a reload without a saved position) opens the chapter at its section
+  useLayoutEffect(() => {
+    if (restored && section && savedScroll(location.hash) === undefined) {
+      document.querySelector(`.chapter-body [data-section="${CSS.escape(section)}"]`)?.scrollIntoView({ block: 'start' });
+    }
+  }, []); // only when the chapter opens
+
+  // a thin bar under the toolbar shows how far the chapter has been read, and the address follows the heading in view
+  const shown = useRef(section);
   useEffect(() => {
-    const onScroll = () => {
+    let frame = 0;
+    const update = () => {
+      frame = 0;
       const max = document.documentElement.scrollHeight - window.innerHeight;
       progress.current?.style.setProperty('transform', `scaleX(${max > 0 ? Math.min(1, window.scrollY / max) : 1})`);
+      const line = (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--bar-h')) || 60) + 90;
+      let now: string | undefined;
+      for (const h of document.querySelectorAll<HTMLElement>('.chapter-body [data-section]')) {
+        if (h.getBoundingClientRect().top > line) break;
+        now = h.dataset.section;
+      }
+      if (now !== shown.current) { shown.current = now; mark({ name: 'chapter', cat, section: now }); }
     };
-    onScroll();
+    const onScroll = () => { if (!frame) frame = requestAnimationFrame(update); };
+    update();
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll);
-    return () => { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); };
-  }, []);
+    return () => { cancelAnimationFrame(frame); window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); };
+  }, [cat, mark]);
 
   // the chapter counts as read once its end has been scrolled into view
   useEffect(() => {
@@ -132,7 +165,7 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
       </header>
 
       <div className="chapter-body">
-        {ch.blocks.map((b, i) => <TheoryBlock key={i} b={b} lang={lang} />)}
+        {ch.blocks.map((b, i) => <TheoryBlock key={i} b={b} lang={lang} section={sections[i]} />)}
       </div>
 
       {!!ch.sources?.length && (
@@ -163,8 +196,10 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
 
       <ActionBar>
         <button className="btn square" onClick={() => go({ name: 'theory' })} aria-label="Все главы"><Icon name="left" /></button>
+        <ShareButton className="btn square" to={{ name: 'chapter', cat, section }} title={`${c.no} — ${c.ru}`}
+          label={section ? 'Поделиться ссылкой на этот раздел' : 'Поделиться ссылкой на главу'} />
         <button className="btn primary grow" onClick={() => go({ name: 'practice', mode: cat })}>
-          <Icon name="play" />Тренировать тему<span className="btn-sub tnum">{n}</span>
+          <Icon name="play" />Тренировать<span className="wide-only"> тему</span><span className="btn-sub tnum">{n}</span>
         </button>
       </ActionBar>
     </article>

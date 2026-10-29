@@ -26,7 +26,7 @@ export function ExamScreen() {
   // the "5 minutes left" chime rings once; not again after reopening the app past that point
   const warned = useRef(left <= 5 * 60_000);
   useEffect(() => {
-    if (!E) go({ name: 'home' });
+    if (!E) go({ name: 'home' }, { replace: true });
     else if (left <= 0) { playSound('timeup'); finishExam(true); go({ name: 'result' }); }
     else if (left <= 5 * 60_000 && !warned.current) { warned.current = true; playSound('warn'); }
   }, [E, left, finishExam, go]);

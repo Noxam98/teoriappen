@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { createExam, fixNumberedOrders, gradeExam, recordAnswer, setClock } from '../lib/exam';
+import { fromHash, rememberScroll, setAddress, toHash } from '../lib/routes';
 import { playSound } from '../lib/sound';
 import { loadData, saveData } from '../lib/storage';
 import type { AppData, ExamSession, FinishedExam, Screen, VocabItem } from '../types';
@@ -10,7 +11,15 @@ interface AppApi {
   screen: Screen;
   /** Increases on every navigation, so screens remount with fresh local state. */
   visit: number;
-  go: (s: Screen) => void;
+  /** The screen came from the address (reload, back/forward, a link) rather than a tap in the app: restore where it was. */
+  restored: boolean;
+  /** Opens a screen as a new step in the browser history (`replace`: instead of the current step, e.g. a redirect). */
+  go: (s: Screen, opts?: { replace?: boolean }) => void;
+  /** Updates the address for the place within the same screen (question, section) without remounting it. */
+  mark: (s: Screen) => void;
+  /** A short message at the bottom of the screen, e.g. "link copied". */
+  notify: (text: string) => void;
+  toast: string;
   startExam: () => void;
   finishExam: (timeout: boolean) => void;
   /** Ends a practice round and shows its result screen. */
@@ -34,9 +43,42 @@ export function AppProvider({ children }: { children: ReactNode }) {
     const d = withClock(loadData(), onScreen(), Date.now());
     return d.cur ? { ...d, cur: fixNumberedOrders(d.cur) } : d;
   });
-  const [nav, setNav] = useState<{ screen: Screen; visit: number }>({ screen: { name: 'home' }, visit: 0 });
+  const [nav, setNav] = useState<{ screen: Screen; visit: number; restored: boolean }>(() => ({ screen: fromHash(location.hash), visit: 0, restored: true }));
+  const navRef = useRef(nav);
+  navRef.current = nav;
   const latest = useRef(data);
   latest.current = data;
+  const [toast, setToast] = useState('');
+
+  // the address follows the screen; the back button and edits of the address open the screen it names
+  useEffect(() => {
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    setAddress(toHash(navRef.current.screen), false);
+    const onAddress = () => {
+      const screen = fromHash(location.hash);
+      if (toHash(screen) === toHash(navRef.current.screen)) return;
+      setNav(n => ({ screen, visit: n.visit + 1, restored: true }));
+    };
+    let frame = 0;
+    const onScroll = () => {
+      if (frame) return;
+      frame = requestAnimationFrame(() => { frame = 0; rememberScroll(location.hash, window.scrollY); });
+    };
+    window.addEventListener('popstate', onAddress);
+    window.addEventListener('hashchange', onAddress);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('popstate', onAddress);
+      window.removeEventListener('hashchange', onAddress);
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!toast) return;
+    const t = setTimeout(() => setToast(''), 2600);
+    return () => clearTimeout(t);
+  }, [toast]);
 
   useEffect(() => saveData(data), [data]);
 
@@ -64,9 +106,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const update = useCallback((fn: (d: AppData) => AppData) => setData(fn), []);
 
-  const go = useCallback((screen: Screen) => {
-    setNav(n => ({ screen, visit: n.visit + 1 }));
+  const go = useCallback((screen: Screen, opts?: { replace?: boolean }) => {
+    rememberScroll(location.hash, window.scrollY);
+    setNav(n => ({ screen, visit: n.visit + 1, restored: false }));
+    setAddress(toHash(screen), !opts?.replace);
     window.scrollTo(0, 0);
+  }, []);
+
+  const mark = useCallback((screen: Screen) => {
+    setNav(n => ({ ...n, screen }));
+    setAddress(toHash(screen), false);
+    rememberScroll(location.hash, window.scrollY);
   }, []);
 
   const api = useMemo<AppApi>(() => ({
@@ -74,7 +124,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
     update,
     screen: nav.screen,
     visit: nav.visit,
+    restored: nav.restored,
     go,
+    mark,
+    notify: setToast,
+    toast,
     startExam() {
       playSound('start');
       setData(d => ({ ...d, cur: createExam(d.stats, d.prefs.reveal) }));
@@ -91,7 +145,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       });
     },
     finishPractice(session, practice) {
-      setData(d => ({ ...d, last: gradeExam(session, false, practice) }));
+      setData(d => ({ ...d, last: gradeExam(session, false, practice), practice: null }));
       go({ name: 'result' });
     },
     answer(id, ok) {
@@ -105,7 +159,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       }));
       return !has;
     },
-  }), [data, nav, update, go]);
+  }), [data, nav, toast, update, go, mark]);
 
   return <AppContext.Provider value={api}>{children}</AppContext.Provider>;
 }

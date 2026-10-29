@@ -45,6 +45,7 @@
 .chapter-body { display: grid; gap: 14px; padding: 4px 16px 22px; border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow); }
 .t-h { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
 .t-h:first-child { margin-top: 0; border-top: 0; }
+.t-h { scroll-margin-top: calc(env(safe-area-inset-top, 0px) + var(--bar-h, 57px) + 12px); }
 .t-h h2 { font-size: 1.24rem; line-height: 1.25; }
 .t-h-ru { color: var(--ink-2); font-size: .88rem; margin-top: 2px; }
 .t-p .t-main, .t-list .t-main { font-size: calc(var(--qsize) * .92); line-height: 1.55; }
@@ -104,5 +105,5 @@
 .next-chapter .nm small { display: block; font-weight: 400; color: var(--ink-2); font-size: .82rem; }
 .next-chapter > svg { grid-area: chev; width: 24px; height: 24px; color: var(--blue); }
 @media (hover: hover) { .next-chapter:hover { border-color: var(--ink-3); } }
-@media (max-width: 360px) { .chapter .actionbar .btn.primary > svg { display: none; } }
+@media (max-width: 360px) { .chapter .actionbar .btn.primary > svg, .chapter .actionbar .wide-only { display: none; } .chapter .actionbar .btn.primary { padding-inline: 12px; } }
 .btn-sub { display: inline-grid; place-items: center; min-width: 26px; height: 22px; padding: 0 7px; border-radius: 999px; background: color-mix(in srgb, currentColor 20%, transparent); font-size: .8rem; }

@@ -35,6 +35,7 @@
 .review { display: grid; gap: 12px; margin-top: 12px; }
 .ritem { padding: 14px; display: grid; gap: 10px; border-radius: var(--r-lg); background: var(--surface); border: 1px solid var(--line); }
 .ritem .qmeta { margin: 0; }
+.ritem .qmeta .verdict-chip { margin-left: auto; }
 .verdict-chip { font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 3px 8px; border-radius: 6px; }
 .verdict-chip.ok { background: var(--ok-soft); color: var(--ok); }
 .verdict-chip.bad { background: var(--bad-soft); color: var(--bad); }

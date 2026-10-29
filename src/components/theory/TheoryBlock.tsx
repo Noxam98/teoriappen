@@ -31,9 +31,9 @@ function SignName({ no, ru, lang }: { no: string; ru: string; lang: TheoryLang }
 }
 
 /** One block of a theory chapter, in the reading order. */
-export function TheoryBlock({ b, lang }: { b: Block; lang: TheoryLang }) {
+export function TheoryBlock({ b, lang, section }: { b: Block; lang: TheoryLang; section?: string }) {
   if ('h' in b) return (
-    <div className="t-h">
+    <div className="t-h" data-section={section}>
       {lang === 'ru' ? <h2>{b.ru}</h2> : <h2 data-block lang="nb"><Words text={b.h} /></h2>}
       {lang === 'both' && <p className="t-h-ru">{b.ru}</p>}
     </div>
