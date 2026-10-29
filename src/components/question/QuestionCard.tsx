@@ -19,7 +19,7 @@ export function QuestionCard({ q, number, note, children }: { q: Question; numbe
   return (
     <article className="qcard">
       <div className="qmeta">
-        <span className="qn">Spørsmål {number}</span>
+        <span className="qn" translate="no">Spørsmål {number}</span>
         <span className="qc">{note ?? CATEGORY[q.cat].no}</span>
       </div>
       <QuestionBody q={q} />

@@ -8,8 +8,8 @@ import { Sheet } from '../components/Sheet';
 import { QUESTION_BY_ID } from '../data';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
 import { useNow } from '../hooks/useNow';
-import { errorCount, MAX_ERRORS } from '../lib/exam';
-import { answerFeedback } from '../lib/feedback';
+import { errorCount, MAX_ERRORS, timeLeft } from '../lib/exam';
+import { announce, answerFeedback } from '../lib/feedback';
 import { playSound } from '../lib/sound';
 import { fmtTime, plural } from '../lib/text';
 import { useApp } from '../state/AppState';
@@ -21,7 +21,7 @@ export function ExamScreen() {
   const [dialog, setDialog] = useState<'grid' | 'submit' | null>(null);
   const E = data.cur;
 
-  const left = E ? E.end - now : 0;
+  const left = E ? timeLeft(E, now) : 0;
   const streak = useRef(0);
   // the "5 minutes left" chime rings once; not again after reopening the app past that point
   const warned = useRef(left <= 5 * 60_000);
@@ -30,6 +30,21 @@ export function ExamScreen() {
     else if (left <= 0) { playSound('timeup'); finishExam(true); go({ name: 'result' }); }
     else if (left <= 5 * 60_000 && !warned.current) { warned.current = true; playSound('warn'); }
   }, [E, left, finishExam, go]);
+
+  // after coming back to the app, say for how long the clock stood still
+  const [pausedFor, setPausedFor] = useState(0);
+  const pausedAt = useRef(E?.paused);
+  useEffect(() => {
+    const was = pausedAt.current;
+    pausedAt.current = E?.paused;
+    if (!was || E?.paused) return;
+    const stood = Date.now() - was;
+    if (stood < 3000) return;
+    setPausedFor(stood);
+    announce(`Таймер стоял на паузе ${fmtTime(stood)}`);
+    const t = setTimeout(() => setPausedFor(0), 5000);
+    return () => clearTimeout(t);
+  }, [E?.paused]);
 
   const change = (fn: (s: ExamSession) => ExamSession) => update(d => (d.cur ? { ...d, cur: fn(d.cur) } : d));
   const id = E?.ids[E.i];
@@ -79,25 +94,29 @@ export function ExamScreen() {
           )}
           <span className="sp" />
           <button className="iconbtn framed" onClick={() => setDialog('grid')} title="Обзор вопросов" aria-label="Обзор вопросов"><Icon name="grid" /></button>
-          <button className="btn primary small-btn" onClick={() => setDialog('submit')}>Lever</button>
+          <button className="btn primary small-btn" onClick={() => setDialog('submit')} translate="no">Lever</button>
         </div>
         <div className="pbar" aria-hidden="true"><i style={{ width: `${(done / E.ids.length) * 100}%` }} /></div>
       </div>
 
-      <QuestionCard key={id} q={q} number={E.i + 1} note={E.flag[id] ? <span className="flag-note"><Icon name="flag" />merket</span> : ''}>
+      <QuestionCard key={id} q={q} number={E.i + 1} note={E.flag[id] ? <span className="flag-note" translate="no"><Icon name="flag" />merket</span> : ''}>
         <Options q={q} order={E.perm[id]} chosen={E.ans[id]} reveal={locked} onPick={pick} />
         {locked && <Explanation q={q} correct={E.ans[id] === 0} />}
       </QuestionCard>
+
+      <div className="toast-slot" aria-hidden="true">
+        {pausedFor > 0 && <div className="toast info"><Icon name="clock" /><span>Таймер стоял на паузе {fmtTime(pausedFor)}</span></div>}
+      </div>
 
       <ActionBar label="Навигация по вопросам">
         <button className="btn square" disabled={E.i === 0} onClick={() => step(-1)} aria-label="Forrige — предыдущий вопрос"><Icon name="left" /></button>
         <button className="btn flagbtn" aria-pressed={!!E.flag[id]} title="Отметить, чтобы вернуться позже"
           onClick={() => { if (!E.flag[id]) playSound('flag'); change(s => ({ ...s, flag: { ...s.flag, [id]: !s.flag[id] } })); }}>
-          <Icon name="flag" />Merk
+          <Icon name="flag" /><span translate="no">Merk</span>
         </button>
         {last
-          ? <button className="btn primary grow" onClick={() => setDialog('submit')}>Lever prøven</button>
-          : <button className={E.ans[id] !== undefined ? 'btn primary grow' : 'btn grow'} onClick={() => step(1)}>Neste <Icon name="right" /></button>}
+          ? <button className="btn primary grow" onClick={() => setDialog('submit')} translate="no">Lever prøven</button>
+          : <button className={E.ans[id] !== undefined ? 'btn primary grow' : 'btn grow'} onClick={() => step(1)}><span translate="no">Neste</span> <Icon name="right" /></button>}
       </ActionBar>
 
       {dialog === 'grid' && (
@@ -128,7 +147,7 @@ export function ExamScreen() {
         <Sheet title="Lever prøven? · Сдать экзамен?" onClose={() => setDialog(null)}
           actions={<>
             <button className="btn" onClick={() => setDialog(null)}>Вернуться</button>
-            <button className="btn primary" data-autofocus onClick={() => { setDialog(null); finishExam(false); go({ name: 'result' }); }}>Lever prøven</button>
+            <button className="btn primary" data-autofocus onClick={() => { setDialog(null); finishExam(false); go({ name: 'result' }); }} translate="no">Lever prøven</button>
           </>}>
           <p className="mtext">
             {unanswered

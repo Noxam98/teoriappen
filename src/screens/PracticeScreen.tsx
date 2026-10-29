@@ -127,7 +127,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
       <ActionBar label="Навигация по вопросам">
         <button className="btn ghost-strong" onClick={() => finish(true)}>Завершить</button>
         <button className={chosen !== undefined ? 'btn primary grow' : 'btn grow'} disabled={chosen === undefined} onClick={next}>
-          {i + 1 < ids.length ? 'Neste' : 'Ferdig'} <Icon name="right" />
+          <span translate="no">{i + 1 < ids.length ? 'Neste' : 'Ferdig'}</span> <Icon name="right" />
         </button>
       </ActionBar>
     </div>

@@ -53,6 +53,8 @@
 .fig .sign { height: 116px; width: auto; max-width: 100%; filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .2)); }
 .fig .sign.wide { height: 96px; }
 .fig-signs .sign { height: 88px; }
+.fig-sign { display: grid; justify-items: center; gap: 8px; min-width: 0; }
+.sign-tag { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--bg); font-family: var(--display); font-weight: 700; font-size: 1rem; line-height: 1; }
 .fig .light { height: 150px; width: auto; }
 .fig .road { width: 100%; max-width: 210px; height: auto; border-radius: 10px; }
 .fig .scene { width: 100%; max-width: 290px; height: auto; border-radius: 10px; }

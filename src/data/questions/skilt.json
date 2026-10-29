@@ -171,12 +171,12 @@
       ]
     },
     "a": [
-      "Skiltet til venstre",
-      "Skiltet i midten",
-      "Skiltet til høyre"
+      "Skilt A (til venstre)",
+      "Skilt B (i midten)",
+      "Skilt C (til høyre)"
     ],
-    "f": "Skiltet til venstre forbyr venstresving, skiltet i midten forbyr høyresving, og skiltet til høyre forbyr u-sving.",
-    "ru": "Левый знак запрещает поворот налево, средний — поворот направо, правый — разворот."
+    "f": "Skilt A forbyr venstresving, skilt B forbyr høyresving, og skilt C forbyr u-sving.",
+    "ru": "Знак A (левый) запрещает поворот налево, B (средний) — поворот направо, C (правый) — разворот."
   },
   {
     "id": "sk-12",
@@ -190,12 +190,12 @@
       ]
     },
     "a": [
-      "Skiltet til høyre",
-      "Skiltet til venstre",
-      "Skiltet i midten"
+      "Skilt C (til høyre)",
+      "Skilt A (til venstre)",
+      "Skilt B (i midten)"
     ],
-    "f": "Skiltet med en pil som går rundt og tilbake, forbyr u-sving. De andre forbyr venstresving og høyresving.",
-    "ru": "Знак со стрелкой, которая поворачивает назад, запрещает разворот. Два других запрещают поворот налево и направо."
+    "f": "Skilt C, med en pil som går rundt og tilbake, forbyr u-sving. Skilt A og B forbyr venstresving og høyresving.",
+    "ru": "Знак C — со стрелкой, которая загибается назад, — запрещает разворот. Знаки A и B запрещают поворот налево и направо."
   },
   {
     "id": "sk-13",
@@ -241,12 +241,12 @@
       ]
     },
     "a": [
-      "Skiltet til venstre",
-      "Skiltet i midten",
-      "Skiltet til høyre"
+      "Skilt A (til venstre)",
+      "Skilt B (i midten)",
+      "Skilt C (til høyre)"
     ],
-    "f": "Skiltet til venstre betyr slutt på forbikjøringsforbud. Skiltet i midten betyr slutt på forkjørsvei, og skiltet til høyre betyr slutt på særskilt fartsgrense.",
-    "ru": "Левый знак — конец запрета обгона. Средний — конец главной дороги, правый — конец особого ограничения скорости."
+    "f": "Skilt A betyr slutt på forbikjøringsforbud. Skilt B betyr slutt på forkjørsvei, og skilt C betyr slutt på særskilt fartsgrense.",
+    "ru": "Знак A — конец запрета обгона, B — конец главной дороги, C — конец особого ограничения скорости."
   },
   {
     "id": "sk-16",
@@ -340,12 +340,12 @@
       ]
     },
     "a": [
-      "Skiltet til høyre",
-      "Skiltet til venstre",
-      "Skiltet i midten"
+      "Skilt C (til høyre)",
+      "Skilt A (til venstre)",
+      "Skilt B (i midten)"
     ],
-    "f": "Den generelle fartsgrensen utenfor tettbygd strøk er 80 km/t. I tettbygd strøk er den 50 km/t.",
-    "ru": "Общее ограничение вне населённых пунктов — 80 км/ч, в населённом пункте — 50 км/ч."
+    "f": "Den generelle fartsgrensen utenfor tettbygd strøk er 80 km/t – det viser skilt C. I tettbygd strøk er den 50 km/t.",
+    "ru": "Общее ограничение вне населённых пунктов — 80 км/ч, это знак C. В населённом пункте — 50 км/ч."
   },
   {
     "id": "sk-22",
@@ -583,12 +583,12 @@
       ]
     },
     "a": [
-      "Skiltet til venstre",
-      "Skiltet i midten",
-      "Skiltet til høyre"
+      "Skilt A (til venstre)",
+      "Skilt B (i midten)",
+      "Skilt C (til høyre)"
     ],
-    "f": "Skiltet til venstre varsler om møtende trafikk. Skiltet i midten varsler om at veien blir smalere, og skiltet til høyre varsler om kø.",
-    "ru": "Левый знак — «Встречное движение». Средний — «Сужение дороги», правый — «Затор»."
+    "f": "Skilt A varsler om møtende trafikk. Skilt B varsler om at veien blir smalere, og skilt C varsler om kø.",
+    "ru": "Знак A — «Встречное движение», B — «Сужение дороги», C — «Затор»."
   },
   {
     "id": "sk-37",
@@ -666,12 +666,12 @@
       ]
     },
     "a": [
-      "Skiltet til høyre",
-      "Skiltet til venstre",
-      "Skiltet i midten"
+      "Skilt C (til høyre)",
+      "Skilt A (til venstre)",
+      "Skilt B (i midten)"
     ],
-    "f": "Skiltet til høyre varsler om syklende. Skiltet til venstre varsler om lyssignal, og skiltet i midten om rundkjøring.",
-    "ru": "Правый знак — «Велосипедисты». Левый — «Светофор», средний — «Кольцевое движение»."
+    "f": "Skilt C varsler om syklende. Skilt A varsler om lyssignal, og skilt B om rundkjøring.",
+    "ru": "Знак C — «Велосипедисты», A — «Светофор», B — «Кольцевое движение»."
   },
   {
     "id": "sk-42",
@@ -716,13 +716,13 @@
       ]
     },
     "a": [
-      "Skiltet til venstre varsler om jernbaneovergang med bom, skiltet til høyre om jernbaneovergang uten bom",
-      "Skiltet til venstre varsler om jernbaneovergang uten bom, skiltet til høyre om jernbaneovergang med bom",
+      "Skilt A varsler om jernbaneovergang med bom, skilt B om jernbaneovergang uten bom",
+      "Skilt A varsler om jernbaneovergang uten bom, skilt B om jernbaneovergang med bom",
       "Begge varsler om trikk",
-      "Skiltet til venstre gjelder bare om natten"
+      "Skilt A gjelder bare om natten"
     ],
-    "f": "Skiltet med et gjerde varsler om jernbaneovergang med bom. Skiltet med et lokomotiv varsler om jernbaneovergang uten bom. Der må du se og lytte godt etter tog.",
-    "ru": "Знак с изображением забора — переезд со шлагбаумом. Знак с паровозом — переезд без шлагбаума: там нужно особенно внимательно смотреть и слушать, нет ли поезда."
+    "f": "Skilt A, med et gjerde, varsler om jernbaneovergang med bom. Skilt B, med et lokomotiv, varsler om jernbaneovergang uten bom. Der må du se og lytte godt etter tog.",
+    "ru": "Знак A (с забором) — переезд со шлагбаумом. Знак B (с паровозом) — переезд без шлагбаума: там нужно особенно внимательно смотреть и слушать, нет ли поезда."
   },
   {
     "id": "sk-45",

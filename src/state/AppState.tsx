@@ -1,5 +1,5 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { createExam, gradeExam, recordAnswer } from '../lib/exam';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { createExam, gradeExam, recordAnswer, setClock } from '../lib/exam';
 import { playSound } from '../lib/sound';
 import { loadData, saveData } from '../lib/storage';
 import type { AppData, ExamSession, FinishedExam, Screen, VocabItem } from '../types';
@@ -21,11 +21,43 @@ interface AppApi {
 
 const AppContext = createContext<AppApi | null>(null);
 
+const onScreen = () => typeof document === 'undefined' || document.visibilityState === 'visible';
+
+function withClock(d: AppData, running: boolean, now: number): AppData {
+  if (!d.cur) return d;
+  const cur = setClock(d.cur, running, now);
+  return cur === d.cur ? d : { ...d, cur };
+}
+
 export function AppProvider({ children }: { children: ReactNode }) {
-  const [data, setData] = useState<AppData>(loadData);
+  const [data, setData] = useState<AppData>(() => withClock(loadData(), onScreen(), Date.now()));
   const [nav, setNav] = useState<{ screen: Screen; visit: number }>({ screen: { name: 'home' }, visit: 0 });
+  const latest = useRef(data);
+  latest.current = data;
 
   useEffect(() => saveData(data), [data]);
+
+  // the exam clock stops while the tab is hidden, the browser is minimised or the app is closed
+  useEffect(() => {
+    const sync = (running: boolean) => {
+      const now = Date.now();
+      // saved right away: a closing page may not get another render
+      const next = withClock(latest.current, running, now);
+      if (next !== latest.current) saveData(next);
+      setData(d => withClock(d, running, now));
+    };
+    const onVisibility = () => sync(onScreen());
+    const onHide = () => sync(false);
+    const onShow = () => sync(onScreen());
+    document.addEventListener('visibilitychange', onVisibility);
+    window.addEventListener('pagehide', onHide);
+    window.addEventListener('pageshow', onShow);
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener('pagehide', onHide);
+      window.removeEventListener('pageshow', onShow);
+    };
+  }, []);
 
   const update = useCallback((fn: (d: AppData) => AppData) => setData(fn), []);
 

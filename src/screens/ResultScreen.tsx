@@ -104,7 +104,7 @@ function ReviewItem({ q, chosen, number }: { q: Question; chosen: number | undef
   return (
     <article className={ok ? 'ritem ok' : 'ritem bad'}>
       <div className="qmeta">
-        <span className="qn">Spørsmål {number}</span>
+        <span className="qn" translate="no">Spørsmål {number}</span>
         <span className={ok ? 'verdict-chip ok' : 'verdict-chip bad'}>{ok ? 'верно' : chosen === undefined ? 'без ответа' : 'ошибка'}</span>
       </div>
       <div className={q.img ? 'ritem-body has-fig' : 'ritem-body'}>

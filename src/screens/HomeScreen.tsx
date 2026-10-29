@@ -7,14 +7,14 @@ import { Segmented } from '../components/Segmented';
 import { REVEAL_OPTIONS } from '../components/SettingsSheet';
 import { CATEGORIES, QUESTIONS, QUESTION_BY_ID, THEORY } from '../data';
 import { useNow } from '../hooks/useNow';
-import { EXAM_MINUTES, EXAM_QUESTIONS, MAX_ERRORS, readiness, wrongQuestionIds } from '../lib/exam';
+import { EXAM_MINUTES, EXAM_QUESTIONS, MAX_ERRORS, readiness, timeLeft, wrongQuestionIds } from '../lib/exam';
 import { fmtTime, plural } from '../lib/text';
 import { useApp } from '../state/AppState';
 
 export function HomeScreen() {
   const { data, update, go, startExam, finishExam } = useApp();
   const now = useNow(15_000);
-  const cur = data.cur && data.cur.end > now ? data.cur : null;
+  const cur = data.cur && timeLeft(data.cur, now) > 0 ? data.cur : null;
   const wrong = wrongQuestionIds(data.stats).length;
   const seen = Object.keys(data.stats).filter(id => QUESTION_BY_ID[id]).length;
   const ready = readiness(data.stats);
@@ -23,14 +23,14 @@ export function HomeScreen() {
   const reveal = REVEAL_OPTIONS.find(o => o.value === data.prefs.reveal) ?? REVEAL_OPTIONS[0];
 
   // an exam whose time ran out while the app was closed is graded silently
-  useEffect(() => { if (data.cur && data.cur.end <= Date.now()) finishExam(true); }, [data.cur, finishExam]);
+  useEffect(() => { if (data.cur && timeLeft(data.cur) <= 0) finishExam(true); }, [data.cur, finishExam]);
 
   return (
     <div className="home">
       <section className="hero">
         <div className="hero-top">
           <div className="hero-title">
-            <div className="eyebrow">Førerkort klasse B</div>
+            <div className="eyebrow" translate="no">Førerkort klasse B</div>
             <h1>Teoriprøven</h1>
             <p>Тренажёр теоретического экзамена. Вопросы на норвежском, а любое слово можно перевести кнопкой «Перевод» вверху.</p>
           </div>
@@ -44,7 +44,7 @@ export function HomeScreen() {
         {cur ? (
           <>
             <button className="cta" onClick={() => go({ name: 'exam' })}>
-              <span><b>Продолжить экзамен</b><small className="tnum">{Object.keys(cur.ans).length} из {cur.ids.length} · осталось {fmtTime(cur.end - now)}</small></span>
+              <span><b>Продолжить экзамен</b><small className="tnum">{Object.keys(cur.ans).length} из {cur.ids.length} · осталось {fmtTime(timeLeft(cur, now))}</small></span>
               <Icon name="right" />
             </button>
             <button className="hero-link" onClick={startExam}>Начать новый экзамен</button>
@@ -119,7 +119,7 @@ export function HomeScreen() {
         <div className="history">
           {recent.map(e => (
             <div key={e.date} className="hrow">
-              <span className={e.pass ? 'stamp pass' : 'stamp fail'}>{e.pass ? 'Bestått' : 'Ikke bestått'}</span>
+              <span className={e.pass ? 'stamp pass' : 'stamp fail'} translate="no">{e.pass ? 'Bestått' : 'Ikke bestått'}</span>
               <span className="tnum"><b>{e.right}</b>/{e.n} · {e.n - e.right} {plural(e.n - e.right, 'ошибка', 'ошибки', 'ошибок')}</span>
               <span className="muted tnum small">{new Date(e.date).toLocaleDateString('ru-RU', { day: 'numeric', month: 'short' })}</span>
             </div>

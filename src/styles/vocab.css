@@ -29,4 +29,6 @@
 .toast-slot { position: sticky; bottom: calc(84px + env(safe-area-inset-bottom, 0px)); z-index: 16; display: grid; justify-items: center; pointer-events: none; }
 .toast { pointer-events: auto; display: flex; align-items: center; gap: 14px; margin-top: 12px; padding: 6px 6px 6px 16px; border-radius: 14px; background: var(--ink); color: var(--bg); box-shadow: var(--shadow); font-size: .92rem; animation: rise .2s ease-out; max-width: 100%; }
 .toast span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.toast.info { gap: 10px; padding: 11px 16px; }
+.toast.info svg { width: 18px; height: 18px; flex: none; color: var(--yellow); }
 .toast button { min-height: 44px; padding: 0 14px; border: 0; border-radius: 10px; background: transparent; color: var(--yellow); font-weight: 700; cursor: pointer; }

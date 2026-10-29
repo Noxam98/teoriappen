@@ -36,6 +36,21 @@ export function createExam(stats: Record<string, QuestionStat>, reveal: RevealMo
   };
 }
 
+/** Time left on the exam clock; a paused clock stands still. */
+export const timeLeft = (s: ExamSession, now = Date.now()) => s.end - (s.paused ?? now);
+
+/**
+ * The exam clock runs only while the app is on screen. Going off screen stops it; coming back moves the start
+ * and the deadline forward by the time it stood still, so neither the time left nor the time spent changes.
+ */
+export function setClock(s: ExamSession, running: boolean, now = Date.now()): ExamSession {
+  if (!running) return s.paused ? s : { ...s, paused: now };
+  if (!s.paused) return s;
+  const { paused, ...rest } = s;
+  const stood = Math.max(0, now - paused);
+  return { ...rest, start: s.start + stood, end: s.end + stood };
+}
+
 export function gradeExam(session: ExamSession, timeout: boolean, practice?: FinishedExam['practice']): FinishedExam {
   let right = 0;
   const byCat: FinishedExam['byCat'] = {};

@@ -115,6 +115,8 @@ export interface ExamSession {
   end: number;
   /** Fixed when the exam starts; old saved sessions have none and count as 'end'. */
   reveal?: RevealMode;
+  /** Set while the clock stands still because the app is off screen (tab hidden, browser minimised, app closed). */
+  paused?: number;
 }
 
 export interface ExamResult {
