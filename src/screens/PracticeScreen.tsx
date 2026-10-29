@@ -164,7 +164,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
 
       <ActionBar label="Навигация по вопросам">
         <button className="btn ghost-strong" onClick={() => finish(true)}>Завершить</button>
-        <button className={canMain ? 'btn primary grow' : 'btn grow'} disabled={!canMain} onClick={main}>
+        <button className={!canMain ? 'btn grow' : revealed && handedIn === 0 ? 'btn ok grow' : 'btn primary grow'} disabled={!canMain} onClick={main}>
           {checking ? <>Sjekk <Icon name="check" /></> : <>{i + 1 < ids.length ? 'Neste' : 'Ferdig'} <Icon name="right" /></>}
         </button>
       </ActionBar>

@@ -34,6 +34,8 @@ main { padding-block: 16px 28px; }
 .btn:active:not([disabled]) { transform: scale(.97); }
 .btn svg { width: 20px; height: 20px; flex: none; }
 .btn.primary { background: var(--blue); color: var(--on-blue); border-color: var(--blue); }
+/* «Neste» after a right answer */
+.btn.ok { background: var(--ok); color: var(--on-ok); border-color: var(--ok); }
 .btn.ghost { background: transparent; border-color: transparent; color: var(--ink-2); }
 .btn.ghost-strong { background: var(--surface-2); }
 .btn.danger { background: var(--bad); border-color: var(--bad); color: var(--surface); }
@@ -42,7 +44,7 @@ main { padding-block: 16px 28px; }
 .btn.grow { flex: 1; }
 .btn.small-btn { min-height: 40px; padding: 0 16px; border-radius: var(--r-sm); }
 .btn[disabled] { opacity: .45; cursor: default; }
-@media (hover: hover) { .btn:hover:not([disabled]) { border-color: var(--ink-3); } .btn.primary:hover:not([disabled]) { filter: brightness(1.08); } }
+@media (hover: hover) { .btn:hover:not([disabled]) { border-color: var(--ink-3); } .btn.primary:hover:not([disabled]), .btn.ok:hover:not([disabled]) { filter: brightness(1.08); } }
 .iconbtn { width: 44px; height: 44px; display: grid; place-items: center; border-radius: var(--r-sm); border: 1px solid transparent; background: none; cursor: pointer; color: var(--ink-2); flex: none; }
 .iconbtn.framed { border-color: var(--line); background: var(--surface); color: var(--ink); }
 .iconbtn svg { width: 21px; height: 21px; }
@@ -79,6 +81,7 @@ main { padding-block: 16px 28px; }
 body.sheet-open .actionbar { z-index: 1; }
 
 .blink { animation: blink 1s steps(2, start) infinite; }
+.blink-alt { animation-delay: -.5s; }
 @keyframes blink { to { visibility: hidden; } }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }

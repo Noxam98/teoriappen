@@ -133,7 +133,7 @@ export function ExamScreen() {
           onClick={() => { if (!E.flag[id]) playSound('flag'); change(s => ({ ...s, flag: { ...s.flag, [id]: !s.flag[id] } })); }}>
           <Icon name="flag" />Merk
         </button>
-        <button className={checking || last || E.ans[id] !== undefined ? 'btn primary grow' : 'btn grow'} onClick={main}>
+        <button className={locked && E.ans[id] === 0 ? 'btn ok grow' : checking || last || E.ans[id] !== undefined ? 'btn primary grow' : 'btn grow'} onClick={main}>
           {checking ? <>Sjekk <Icon name="check" /></> : last ? 'Lever prøven' : <>Neste <Icon name="right" /></>}
         </button>
       </ActionBar>

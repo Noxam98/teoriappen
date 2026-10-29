@@ -96,7 +96,7 @@ export function vehicle(kind: VehicleKind, color: string, label: string, rot: nu
             <rect x={-11} y={-20} width={22} height={40} rx={6} fill="#fff" stroke="rgba(0,0,0,.45)" />
             <rect x={-11} y={-2} width={22} height={5} fill="#e11d48" />
             <rect className="blink" x={-9} y={-9} width={7} height={4} rx={1} fill="#2563eb" />
-            <rect x={2} y={-9} width={7} height={4} rx={1} fill="#2563eb" />
+            <rect className="blink blink-alt" x={2} y={-9} width={7} height={4} rx={1} fill="#2563eb" />
             <path d="M-8 -16 Q0 -19 8 -16 L7 -12 H-7 Z" fill="#9fb3c8" />
             <g transform="translate(0 11)"><circle r={6.5} fill={color} /><Label text={label} rot={rot} /></g>
           </>
