@@ -51,25 +51,45 @@ export function ExamScreen() {
   const instant = E?.reveal === 'instant';
   const locked = !!(E && id && instant && E.ans[id] !== undefined);
 
+  // "right after the question": a tap only selects the option, «Sjekk» hands the answer in and shows the result
+  const [pending, setPending] = useState<number>();
+  useEffect(() => setPending(undefined), [id]);
+  const checking = instant && !locked && pending !== undefined;
+
   const pick = (oi: number) => {
     if (!id || locked || !E) return;
+    if (instant) setPending(oi);
+    else change(s => ({ ...s, ans: { ...s.ans, [id]: oi } }));
+  };
+  const check = () => {
+    if (!id || !E || !checking || pending === undefined) return;
+    const oi = pending;
     change(s => ({ ...s, ans: { ...s.ans, [id]: oi } }));
-    if (instant) {
-      streak.current = oi === 0 ? streak.current + 1 : 0;
-      answerFeedback(oi === 0, streak.current, QUESTION_BY_ID[id].a[0], data.prefs.haptics);
-      // the 8th mistake means the exam can no longer be passed
-      if (oi !== 0 && errorCount({ ids: E.ids, ans: { ...E.ans, [id]: oi } }) === MAX_ERRORS + 1) setTimeout(() => playSound('limit'), 480);
-    }
+    streak.current = oi === 0 ? streak.current + 1 : 0;
+    answerFeedback(oi === 0, streak.current, QUESTION_BY_ID[id].a[0], data.prefs.haptics);
+    // the 8th mistake means the exam can no longer be passed
+    if (oi !== 0 && errorCount({ ids: E.ids, ans: { ...E.ans, [id]: oi } }) === MAX_ERRORS + 1) setTimeout(() => playSound('limit'), 480);
   };
   const step = (d: number) => {
     change(s => ({ ...s, i: Math.min(Math.max(s.i + d, 0), s.ids.length - 1) }));
     window.scrollTo({ top: 0 });
   };
+  // handing in the exam also hands in an option that was selected but not yet checked
+  const submit = () => {
+    if (checking && id && pending !== undefined) { const oi = pending; change(s => ({ ...s, ans: { ...s.ans, [id]: oi } })); }
+    setDialog(null);
+    finishExam(false);
+    go({ name: 'result' });
+  };
+  const last = !!E && E.i === E.ids.length - 1;
+  // one main button: «Sjekk» while an option waits to be checked, otherwise «Neste» (or «Lever prøven» at the end)
+  const main = checking ? check : last ? () => setDialog('submit') : () => step(1);
 
   useAnswerKeys({
     pick: k => { if (E && id && k < E.perm[id].length) pick(E.perm[id][k]); },
     next: () => step(1),
     prev: () => step(-1),
+    confirm: main,
   });
 
   if (!E || !id) return null;
@@ -78,7 +98,6 @@ export function ExamScreen() {
   const unanswered = E.ids.length - done;
   const flagged = E.ids.filter(x => E.flag[x]).length;
   const errors = errorCount(E);
-  const last = E.i === E.ids.length - 1;
 
   return (
     <div className="screen-q">
@@ -100,7 +119,7 @@ export function ExamScreen() {
       </div>
 
       <QuestionCard key={id} q={q} number={E.i + 1} note={E.flag[id] ? <span className="flag-note"><Icon name="flag" />merket</span> : ''}>
-        <Options q={q} order={E.perm[id]} chosen={E.ans[id]} reveal={locked} onPick={pick} />
+        <Options q={q} order={E.perm[id]} chosen={E.ans[id] ?? (instant ? pending : undefined)} reveal={locked} onPick={pick} />
         {locked && <Explanation q={q} correct={E.ans[id] === 0} />}
       </QuestionCard>
 
@@ -114,9 +133,9 @@ export function ExamScreen() {
           onClick={() => { if (!E.flag[id]) playSound('flag'); change(s => ({ ...s, flag: { ...s.flag, [id]: !s.flag[id] } })); }}>
           <Icon name="flag" />Merk
         </button>
-        {last
-          ? <button className="btn primary grow" onClick={() => setDialog('submit')}>Lever prøven</button>
-          : <button className={E.ans[id] !== undefined ? 'btn primary grow' : 'btn grow'} onClick={() => step(1)}>Neste <Icon name="right" /></button>}
+        <button className={checking || last || E.ans[id] !== undefined ? 'btn primary grow' : 'btn grow'} onClick={main}>
+          {checking ? <>Sjekk <Icon name="check" /></> : last ? 'Lever prøven' : <>Neste <Icon name="right" /></>}
+        </button>
       </ActionBar>
 
       {dialog === 'grid' && (
@@ -147,7 +166,7 @@ export function ExamScreen() {
         <Sheet title="Lever prøven? · Сдать экзамен?" onClose={() => setDialog(null)}
           actions={<>
             <button className="btn" onClick={() => setDialog(null)}>Вернуться</button>
-            <button className="btn primary" data-autofocus onClick={() => { setDialog(null); finishExam(false); go({ name: 'result' }); }}>Lever prøven</button>
+            <button className="btn primary" data-autofocus onClick={submit}>Lever prøven</button>
           </>}>
           <p className="mtext">
             {unanswered

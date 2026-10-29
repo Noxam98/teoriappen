@@ -5,6 +5,8 @@ interface Keys {
   pick?: (position: number) => void;
   next?: () => void;
   prev?: () => void;
+  /** Enter: the main button (Sjekk, then Neste) */
+  confirm?: () => void;
 }
 
 /** Keyboard shortcuts for a question screen. */
@@ -20,6 +22,7 @@ export function useAnswerKeys(keys: Keys): void {
       if (k >= 0 && e.key.length === 1) ref.current.pick?.(k);
       else if (e.key === 'ArrowRight') ref.current.next?.();
       else if (e.key === 'ArrowLeft') ref.current.prev?.();
+      else if (e.key === 'Enter' && !target.closest?.('button, a')) ref.current.confirm?.();
     };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);

@@ -85,8 +85,11 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
     if (q && !orders[q.id]) setOrders(o => ({ ...o, [q.id]: optionOrder(q) }));
   }, [q, orders]);
 
-  const chosen = id ? answers[id] : undefined;
-  const revealed = instant && chosen !== undefined;
+  // "right after the question": a tap only selects the option, «Sjekk» hands the answer in and shows the result
+  const [pending, setPending] = useState<number>();
+  const handedIn = id ? answers[id] : undefined;
+  const chosen = instant ? handedIn ?? pending : handedIn;
+  const revealed = instant && handedIn !== undefined;
   const right = Object.entries(answers).filter(([, a]) => a === 0).length;
   const done = Object.keys(answers).length;
   const [no, ru] = practiceTitle(screen.mode);
@@ -97,14 +100,18 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
 
   const pick = (oi: number) => {
     if (!q || revealed) return;
+    if (instant) { setPending(oi); return; }
     // in "answers at the end" mode the choice can still be changed; stats count the final choice when moving on
     setAnswers(a => ({ ...a, [q.id]: oi }));
-    if (instant) {
-      answer(q.id, oi === 0);
-      const s = oi === 0 ? streak + 1 : 0;
-      setStreak(s);
-      answerFeedback(oi === 0, s, q.a[0], data.prefs.haptics);
-    }
+  };
+
+  const check = () => {
+    if (!q || revealed || pending === undefined) return;
+    setAnswers(a => ({ ...a, [q.id]: pending }));
+    answer(q.id, pending === 0);
+    const s = pending === 0 ? streak + 1 : 0;
+    setStreak(s);
+    answerFeedback(pending === 0, s, q.a[0], data.prefs.haptics);
   };
 
   const finish = (recordCurrent: boolean) => {
@@ -119,14 +126,20 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
   };
 
   const next = () => {
-    if (!q || chosen === undefined) return;
-    if (!instant) answer(q.id, chosen === 0);
+    if (!q || handedIn === undefined) return;
+    if (!instant) answer(q.id, handedIn === 0);
     if (i + 1 >= ids.length) { finish(false); return; }
+    setPending(undefined);
     setI(i + 1);
     window.scrollTo({ top: 0 });
   };
 
-  useAnswerKeys({ pick: k => { if (k < order.length) pick(order[k]); }, next });
+  // one main button: «Sjekk» until the answer is handed in, then «Neste» (the same element, so focus stays on it)
+  const checking = instant && !revealed;
+  const main = checking ? check : next;
+  const canMain = checking ? pending !== undefined : handedIn !== undefined;
+
+  useAnswerKeys({ pick: k => { if (k < order.length) pick(order[k]); }, next, confirm: main });
 
   if (!q || !order.length) return null;
 
@@ -151,8 +164,8 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
 
       <ActionBar label="Навигация по вопросам">
         <button className="btn ghost-strong" onClick={() => finish(true)}>Завершить</button>
-        <button className={chosen !== undefined ? 'btn primary grow' : 'btn grow'} disabled={chosen === undefined} onClick={next}>
-          {i + 1 < ids.length ? 'Neste' : 'Ferdig'} <Icon name="right" />
+        <button className={canMain ? 'btn primary grow' : 'btn grow'} disabled={!canMain} onClick={main}>
+          {checking ? <>Sjekk <Icon name="check" /></> : <>{i + 1 < ids.length ? 'Neste' : 'Ferdig'} <Icon name="right" /></>}
         </button>
       </ActionBar>
     </div>
