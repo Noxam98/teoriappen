@@ -1,50 +1,62 @@
 import { Words } from '../../features/brush/Words';
-import type { TheoryBlock as Block } from '../../types';
+import type { TheoryBlock as Block, TheoryLang } from '../../types';
 import { Figure } from '../figures/Figure';
 import { Sign } from '../figures/Sign';
 import { Icon } from '../Icons';
 
-/** Norwegian text the brush can translate. */
-const Nb = ({ text }: { text: string }) => <p data-block lang="nb"><Words text={text} /></p>;
+/**
+ * A Norwegian text and its Russian translation, as the reader chose: both (the translation under the text),
+ * Norwegian only, or Russian only (the translation takes the text's place and style).
+ */
+export function TheoryText({ no, ru, lang, className = 't-main' }: { no: string; ru: string; lang: TheoryLang; className?: string }) {
+  return (
+    <>
+      {lang !== 'ru' && <p className={className} data-block lang="nb"><Words text={no} /></p>}
+      {lang === 'both' && <p className="t-ru">{ru}</p>}
+      {lang === 'ru' && <p className={className}>{ru}</p>}
+    </>
+  );
+}
 
-/** Its Russian translation, unless the reader chose Norwegian only. */
-const Ru = ({ text, show }: { text: string; show: boolean }) => (show ? <p className="t-ru">{text}</p> : null);
-
-/** "Name: what it means" → the name in bold. */
-function SignName({ text }: { text: string }) {
-  const at = text.indexOf(': ');
-  if (at < 0) return <p className="sname" data-block lang="nb"><Words text={text} /></p>;
-  return <p className="sname" data-block lang="nb"><b><Words text={text.slice(0, at)} /></b>: <Words text={text.slice(at + 2)} /></p>;
+/** "Name: what it means" → the name in bold. In Russian only the meaning is given. */
+function SignName({ no, ru, lang }: { no: string; ru: string; lang: TheoryLang }) {
+  const at = no.indexOf(': ');
+  if (lang === 'ru' || at < 0) return <TheoryText no={no} ru={ru} lang={lang} className="t-main sname" />;
+  return (
+    <>
+      <p className="t-main sname" data-block lang="nb"><b><Words text={no.slice(0, at)} /></b>: <Words text={no.slice(at + 2)} /></p>
+      {lang === 'both' && <p className="t-ru">{ru}</p>}
+    </>
+  );
 }
 
 /** One block of a theory chapter, in the reading order. */
-export function TheoryBlock({ b, ru }: { b: Block; ru: boolean }) {
+export function TheoryBlock({ b, lang }: { b: Block; lang: TheoryLang }) {
   if ('h' in b) return (
     <div className="t-h">
-      <h2 data-block lang="nb"><Words text={b.h} /></h2>
-      {ru && <p className="t-h-ru">{b.ru}</p>}
+      {lang === 'ru' ? <h2>{b.ru}</h2> : <h2 data-block lang="nb"><Words text={b.h} /></h2>}
+      {lang === 'both' && <p className="t-h-ru">{b.ru}</p>}
     </div>
   );
-  if ('p' in b) return <div className="t-p"><Nb text={b.p} /><Ru text={b.ru} show={ru} /></div>;
+  if ('p' in b) return <div className="t-p"><TheoryText no={b.p} ru={b.ru} lang={lang} /></div>;
   if ('rule' in b || 'trap' in b) {
     const rule = 'rule' in b;
     return (
       <aside className={rule ? 't-box rule' : 't-box trap'}>
         <div className="t-box-label"><Icon name={rule ? 'bulb' : 'warn'} />{rule ? 'Запомните' : 'Ловушка на экзамене'}</div>
-        <Nb text={rule ? b.rule : b.trap} />
-        <Ru text={b.ru} show={ru} />
+        <TheoryText no={rule ? b.rule : b.trap} ru={b.ru} lang={lang} />
       </aside>
     );
   }
   if ('list' in b) return (
     <ul className="t-list">
-      {b.list.map(([no, tr], i) => <li key={i}><Nb text={no} /><Ru text={tr} show={ru} /></li>)}
+      {b.list.map(([no, tr], i) => <li key={i}><TheoryText no={no} ru={tr} lang={lang} /></li>)}
     </ul>
   );
   if ('fig' in b) return (
     <figure className="t-fig">
       <Figure spec={b.fig} />
-      <figcaption><Nb text={b.no} /><Ru text={b.ru} show={ru} /></figcaption>
+      <figcaption><TheoryText no={b.no} ru={b.ru} lang={lang} /></figcaption>
     </figure>
   );
   if ('signs' in b) return (
@@ -52,7 +64,7 @@ export function TheoryBlock({ b, ru }: { b: Block; ru: boolean }) {
       {b.signs.map(([sign, no, tr]) => (
         <li key={sign}>
           <span className="t-sign"><Sign name={sign} /></span>
-          <span className="t-sign-text"><SignName text={no} /><Ru text={tr} show={ru} /></span>
+          <span className="t-sign-text"><SignName no={no} ru={tr} lang={lang} /></span>
         </li>
       ))}
     </ul>
@@ -62,8 +74,7 @@ export function TheoryBlock({ b, ru }: { b: Block; ru: boolean }) {
       {b.nums.map(([value, no, tr], i) => (
         <li key={i}>
           <b className="tnum">{value}</b>
-          <Nb text={no} />
-          <Ru text={tr} show={ru} />
+          <TheoryText no={no} ru={tr} lang={lang} />
         </li>
       ))}
     </ul>

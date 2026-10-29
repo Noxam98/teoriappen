@@ -105,6 +105,8 @@ export interface VocabItem {
   t: number;
 }
 
+export type TheoryLang = 'both' | 'nb' | 'ru';
+
 /** When the correct answer is shown: right after each question, or only at the end. */
 export type RevealMode = 'instant' | 'end';
 
@@ -159,8 +161,8 @@ export interface Prefs {
   volume: 0 | 1 | 2;
   size: 0 | 1 | 2;
   ru: boolean;
-  /** Theory: show the Russian translation under every Norwegian paragraph. */
-  theoryRu: boolean;
+  /** Theory text: Norwegian with the Russian under it, Norwegian only, or Russian only. */
+  theoryLang: TheoryLang;
   seenBrushHint: boolean;
 }
 

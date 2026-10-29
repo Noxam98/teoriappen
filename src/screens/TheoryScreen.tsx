@@ -3,7 +3,7 @@ import { ActionBar } from '../components/ActionBar';
 import { CategoryIcon } from '../components/CategoryIcon';
 import { Icon } from '../components/Icons';
 import { Segmented } from '../components/Segmented';
-import { TheoryBlock } from '../components/theory/TheoryBlock';
+import { TheoryBlock, TheoryText } from '../components/theory/TheoryBlock';
 import { CATEGORY, QUESTIONS, THEORY, THEORY_BY_CAT } from '../data';
 import { Words } from '../features/brush/Words';
 import { plural, wordsOf } from '../lib/text';
@@ -36,7 +36,7 @@ export function TheoryScreen() {
       <div className="page-head">
         <div className="eyebrow">Teori</div>
         <h1>Теория</h1>
-        <p className="muted">Главное из правил по каждой теме экзамена. Текст на норвежском, под каждым абзацем — перевод, а любое слово можно перевести кнопкой «Перевод».</p>
+        <p className="muted">Главное из правил по каждой теме экзамена. Текст на норвежском с переводом под каждым абзацем, а любое слово можно перевести кнопкой «Перевод». Если удобнее, главу можно читать только по-русски или только по-норвежски.</p>
         <p className="theory-note">Главы сверены с законами и правилами на Lovdata и с официальными страницами Statens vegvesen, Helsedirektoratet и Trygg Trafikk; ссылки — в конце каждой главы. Правила иногда меняются: перед экзаменом сверяйтесь с <a href="https://www.vegvesen.no/forerkort/" target="_blank" rel="noopener noreferrer">vegvesen.no</a>.</p>
       </div>
 
@@ -80,7 +80,7 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
   const c = CATEGORY[cat];
   const at = THEORY.findIndex(t => t.cat === cat);
   const next = THEORY[at + 1];
-  const ru = data.prefs.theoryRu;
+  const lang = data.prefs.theoryLang;
   const n = questionsIn(cat);
   const isRead = !!data.read[cat];
   const end = useRef<HTMLDivElement>(null);
@@ -125,17 +125,14 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
             <p className="chapter-ru">{c.ru}</p>
           </div>
         </div>
-        <div className="t-p lead">
-          <p data-block lang="nb"><Words text={ch.lead} /></p>
-          {ru && <p className="t-ru">{ch.leadRu}</p>}
-        </div>
-        <Segmented label="Перевод абзацев" value={ru ? 'both' : 'nb'}
-          onChange={v => update(d => ({ ...d, prefs: { ...d.prefs, theoryRu: v === 'both' } }))}
-          options={[{ value: 'both', label: 'Norsk + русский' }, { value: 'nb', label: 'Только norsk' }]} />
+        <div className="t-p lead"><TheoryText no={ch.lead} ru={ch.leadRu} lang={lang} /></div>
+        <Segmented label="Язык текста" value={lang}
+          onChange={v => update(d => ({ ...d, prefs: { ...d.prefs, theoryLang: v } }))}
+          options={[{ value: 'both', label: 'Оба языка' }, { value: 'nb', label: 'Norsk' }, { value: 'ru', label: 'Русский' }]} />
       </header>
 
       <div className="chapter-body">
-        {ch.blocks.map((b, i) => <TheoryBlock key={i} b={b} ru={ru} />)}
+        {ch.blocks.map((b, i) => <TheoryBlock key={i} b={b} lang={lang} />)}
       </div>
 
       {!!ch.sources?.length && (
