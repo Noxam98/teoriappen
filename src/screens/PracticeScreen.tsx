@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ActionBar } from '../components/ActionBar';
 import { Icon } from '../components/Icons';
 import { Explanation } from '../components/question/Explanation';
@@ -7,6 +7,7 @@ import { QuestionCard } from '../components/question/QuestionCard';
 import { CATEGORY, QUESTIONS, QUESTION_BY_ID } from '../data';
 import { Words } from '../features/brush/Words';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
+import { useRevealScroll } from '../hooks/useRevealScroll';
 import { optionOrder, wrongQuestionIds } from '../lib/exam';
 import { answerFeedback } from '../lib/feedback';
 import { playSound } from '../lib/sound';
@@ -62,7 +63,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
   const [i, setI] = useState(round.i);
   const [orders, setOrders] = useState<Record<string, number[]>>(round.perm);
   const [answers, setAnswers] = useState<Record<string, number>>(round.ans);
-  const explainRef = useRef<HTMLDivElement>(null);
+  const [explainRef, showExplanation] = useRevealScroll();
   const [streak, setStreak] = useState(0);
 
   useEffect(() => { if (!ids.length) go({ name: 'home' }, { replace: true }); }, [ids, go]);
@@ -94,10 +95,6 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
   const done = Object.keys(answers).length;
   const [no, ru] = practiceTitle(screen.mode);
 
-  useEffect(() => {
-    if (revealed) explainRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-  }, [revealed]);
-
   const pick = (oi: number) => {
     if (!q || revealed) return;
     if (instant) { setPending(oi); return; }
@@ -112,6 +109,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
     const s = pending === 0 ? streak + 1 : 0;
     setStreak(s);
     answerFeedback(pending === 0, s, q.a[0], data.prefs.haptics);
+    showExplanation();
   };
 
   const finish = (recordCurrent: boolean) => {

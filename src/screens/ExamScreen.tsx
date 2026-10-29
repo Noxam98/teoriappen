@@ -7,6 +7,7 @@ import { QuestionCard } from '../components/question/QuestionCard';
 import { Sheet } from '../components/Sheet';
 import { QUESTION_BY_ID } from '../data';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
+import { useRevealScroll } from '../hooks/useRevealScroll';
 import { useNow } from '../hooks/useNow';
 import { errorCount, MAX_ERRORS, timeLeft } from '../lib/exam';
 import { announce, answerFeedback } from '../lib/feedback';
@@ -54,6 +55,7 @@ export function ExamScreen() {
   // "right after the question": a tap only selects the option, «Sjekk» hands the answer in and shows the result
   const [pending, setPending] = useState<number>();
   useEffect(() => setPending(undefined), [id]);
+  const [explainRef, showExplanation] = useRevealScroll();
   const checking = instant && !locked && pending !== undefined;
 
   const pick = (oi: number) => {
@@ -69,6 +71,7 @@ export function ExamScreen() {
     answerFeedback(oi === 0, streak.current, QUESTION_BY_ID[id].a[0], data.prefs.haptics);
     // the 8th mistake means the exam can no longer be passed
     if (oi !== 0 && errorCount({ ids: E.ids, ans: { ...E.ans, [id]: oi } }) === MAX_ERRORS + 1) setTimeout(() => playSound('limit'), 480);
+    showExplanation();
   };
   const step = (d: number) => {
     change(s => ({ ...s, i: Math.min(Math.max(s.i + d, 0), s.ids.length - 1) }));
@@ -120,7 +123,7 @@ export function ExamScreen() {
 
       <QuestionCard key={id} q={q} number={E.i + 1} note={E.flag[id] ? <span className="flag-note"><Icon name="flag" />merket</span> : ''}>
         <Options q={q} order={E.perm[id]} chosen={E.ans[id] ?? (instant ? pending : undefined)} reveal={locked} onPick={pick} />
-        {locked && <Explanation q={q} correct={E.ans[id] === 0} />}
+        {locked && <div ref={explainRef}><Explanation q={q} correct={E.ans[id] === 0} /></div>}
       </QuestionCard>
 
       <div className="toast-slot" aria-hidden="true">
