@@ -38,8 +38,8 @@
     "a": [
       "Stanse så snart det er trygt og finne ut hva som er feil",
       "Kjøre videre og sjekke det ved neste service",
-      "Øke farten for å komme raskt hjem",
-      "Slå av lysene for å spare strøm"
+      "Kjøre videre og se om lampen slutter å lyse etter hvert",
+      "Kjøre videre, men holde lavere fart til du kommer fram"
     ],
     "f": "Rødt varsellys betyr vanligvis en alvorlig feil, for eksempel lavt oljetrykk eller feil på bremsene. Stans så snart det er trygt.",
     "ru": "Красная контрольная лампа обычно означает серьёзную неисправность, например низкое давление масла или проблемы с тормозами. Остановитесь, как только это будет безопасно.",
@@ -68,9 +68,9 @@
     "img": null,
     "a": [
       "Trykker bremsepedalen hardt ned, holder den nede og styrer unna",
-      "Pumper på bremsepedalen",
-      "Bremser forsiktig så hjulene ikke låser seg",
-      "Slipper bremsen når pedalen begynner å vibrere"
+      "Pumper raskt på bremsepedalen og styrer unna samtidig",
+      "Bremser forsiktig, slik at hjulene ikke låser seg",
+      "Bremser hardt, men slipper pedalen når den begynner å vibrere"
     ],
     "f": "Med ABS skal du bremse hardt og holde pedalen nede. ABS hindrer at hjulene låser seg, så du kan styre samtidig. Vibrasjon i pedalen er normalt.",
     "ru": "С ABS нужно нажать на тормоз сильно и держать педаль. ABS не даёт колёсам заблокироваться, поэтому вы можете одновременно рулить. Вибрация педали — это нормально.",
@@ -99,8 +99,8 @@
     "img": null,
     "a": [
       "Det bremser enkelthjul automatisk for å hjelpe bilen å holde kursen",
-      "Det gjør at du trygt kan kjøre fortere i svinger",
-      "Det gjør at du ikke trenger gode dekk om vinteren"
+      "Det gjør at du trygt kan kjøre fortere i svinger, også på glatt vei",
+      "Det gjør at du kan kjøre trygt med slitte dekk om vinteren"
     ],
     "f": "ESC kan bremse ett og ett hjul for å hindre skrens. Systemet hjelper, men det kan ikke oppheve fysikkens lover.",
     "ru": "Система ESC может подтормаживать отдельные колёса, чтобы предотвратить занос. Она помогает, но не отменяет законы физики.",
@@ -114,8 +114,8 @@
     "img": null,
     "a": [
       "Dårligere veigrep og høyere drivstofforbruk",
-      "Kortere bremselengde",
-      "Mindre slitasje på dekkene"
+      "Bedre veigrep og kortere bremselengde",
+      "Mindre slitasje og lavere drivstofforbruk"
     ],
     "f": "For lavt dekktrykk gir dårligere styring og veigrep, mer slitasje og høyere forbruk. Sjekk dekktrykket jevnlig.",
     "ru": "Слишком низкое давление в шинах ухудшает управляемость и сцепление с дорогой, увеличивает износ и расход топлива. Регулярно проверяйте давление.",
@@ -145,9 +145,9 @@
     "img": null,
     "a": [
       "Første gang når bilen er 4 år, deretter hvert andre år",
-      "Hvert år fra bilen er ny",
-      "Hvert femte år",
-      "Bare når bilen skal selges"
+      "Hvert år, fra første gang bilen blir registrert",
+      "Første gang når bilen er 3 år, deretter hvert år",
+      "Første gang når bilen er 5 år, deretter hvert femte år"
     ],
     "f": "Personbiler skal på EU-kontroll (periodisk kjøretøykontroll) første gang når de er 4 år, og deretter hvert andre år.",
     "ru": "Легковой автомобиль проходит техосмотр (EU-kontroll) первый раз в возрасте 4 лет, а затем каждые два года.",
@@ -162,8 +162,8 @@
     "a": [
       "Ansvarsforsikring",
       "Kaskoforsikring",
-      "Reiseforsikring",
-      "Livsforsikring"
+      "Delkaskoforsikring",
+      "Ingen, all forsikring er frivillig"
     ],
     "f": "Ansvarsforsikring er påbudt. Den dekker blant annet skader på andre personer og deres eiendom. Kasko er frivillig.",
     "ru": "Обязательна страховка гражданской ответственности (ansvarsforsikring). Она покрывает, среди прочего, ущерб другим людям и их имуществу. Каско — добровольная страховка.",
@@ -177,8 +177,8 @@
     "img": null,
     "a": [
       "Opplysninger om bilen, for eksempel tillatt totalvekt og tillatt tilhengervekt",
-      "Hvor mange prikker føreren har",
-      "Når føreren tok førerprøven"
+      "Opplysninger om føreren, for eksempel hvor mange prikker føreren har fått",
+      "Når føreren tok førerprøven, og om føreren er i prøvetiden"
     ],
     "f": "Vognkortet er bilens registreringsbevis. Der står blant annet tillatt totalvekt, tilhengervekt og antall sitteplasser.",
     "ru": "Vognkort — свидетельство о регистрации автомобиля. В нём указаны, например, разрешённая общая масса, допустимая масса прицепа и число мест.",
@@ -192,9 +192,9 @@
     "img": null,
     "a": [
       "Nei, bilen er ikke i forsvarlig stand og skal ikke kjøres",
-      "Ja, hvis du kjører sakte",
-      "Ja, hvis du har varseltrekant i bilen",
-      "Ja, men bare i dagslys"
+      "Ja, hvis du kjører sakte og holder god avstand",
+      "Ja, hvis du kjører rett til verkstedet med en gang",
+      "Ja, men bare i dagslys og på veier med lite trafikk"
     ],
     "f": "Et kjøretøy med feil som gir fare for trafikksikkerheten, skal ikke brukes. Feilen må rettes først.",
     "ru": "Автомобиль с неисправностью, опасной для безопасности движения, использовать нельзя. Сначала нужно устранить неисправность.",
@@ -223,8 +223,8 @@
     "img": null,
     "a": [
       "Retter varm luft mot ruten med viften, gjerne med klimaanlegget på",
-      "Tørker et lite hull med hånden og kjører videre",
-      "Slår av viften slik at luften står stille"
+      "Tørker et lite hull i duggen med hånden og kjører videre",
+      "Slår av klimaanlegget, fordi det bare skal brukes om sommeren"
     ],
     "f": "Du må ha fri sikt. Vifte og defroster fjerner dugg, og klimaanlegget gjør luften tørrere.",
     "ru": "Обзор должен быть свободным. Вентилятор и обдув стекла убирают запотевание, а кондиционер делает воздух суше.",
@@ -238,8 +238,8 @@
     "img": null,
     "a": [
       "Slik at væsken ikke fryser og du kan holde frontruten ren",
-      "Slik at motoren starter lettere",
-      "Slik at bilen bruker mindre drivstoff"
+      "Slik at motoren starter lettere når det er kaldt ute",
+      "Slik at du ikke trenger å fjerne is og snø fra frontruten"
     ],
     "f": "Om vinteren blir frontruten fort skitten av salt og slaps. Spylervæsken må tåle kulde, ellers fryser den.",
     "ru": "Зимой лобовое стекло быстро пачкается солью и слякотью. Омывающая жидкость должна выдерживать мороз, иначе она замёрзнет.",
@@ -268,9 +268,9 @@
     "img": null,
     "a": [
       "At gående og syklende kan ha vanskelig for å høre at bilen kommer",
-      "At du kan kjøre fortere, fordi bilen nesten ikke lager støy",
+      "At bilens lydvarsel alltid gjør at gående hører deg i god tid",
       "At du bør tute ofte, slik at alle hører at du kommer",
-      "At gående alltid skal vike for en elbil"
+      "At gående hører en elbil like godt som andre biler i lav fart"
     ],
     "f": "En elbil lager lite lyd i lav fart. Gående, særlig blinde og svaksynte, kan derfor ha vanskelig for å høre deg, så vær klar til å stanse.",
     "ru": "На малой скорости электромобиль почти не шумит. Поэтому пешеходам, особенно слепым и слабовидящим, бывает трудно вас услышать — будьте готовы остановиться.",
@@ -285,8 +285,8 @@
     "a": [
       "Setter på nødsignal, tar på refleksvest og ringer fra nødtelefonen i tunnelen",
       "Blir sittende i bilen og venter til noen stanser og hjelper deg",
-      "Går ut i kjørebanen og vinker til andre bilister for å få drivstoff",
-      "Rygger bilen ut av tunnelen med nødsignal på"
+      "Går langs kjørebanen ut av tunnelen og ringer etter hjelp med mobilen",
+      "Ringer en venn som kan komme med drivstoff, og blir sittende i bilen"
     ],
     "f": "Ringer du fra nødtelefonen, vet Vegtrafikksentralen med en gang hvor du er. Tomt for drivstoff er en av de vanligste grunnene til at biler stanser i tunneler, så sørg for å ha nok før du kjører inn.",
     "ru": "Если позвонить по аварийному телефону, диспетчерская (Vegtrafikksentralen) сразу узнает, где вы. Пустой бак — одна из самых частых причин остановок машин в туннелях, поэтому заранее убедитесь, что топлива достаточно.",
@@ -316,9 +316,9 @@
     "img": null,
     "a": [
       "Sensorer og kamera kan bli dekket, slik at systemene virker dårlig eller slår seg av",
-      "Systemene virker bedre i kulde, så du kan holde høyere fart",
+      "Systemene virker som vanlig, fordi snø og is ikke har noe å si for sensorene",
       "Systemene renser sensorene selv, så du trenger ikke tenke på det",
-      "Det har ingen betydning, fordi systemene bare bruker satellitter"
+      "Det er bare filassistenten som kan bli påvirket, fordi den ser linjene på veien"
     ],
     "f": "Snø, is og skitt kan dekke sensorer og kamera, og da kan systemene virke dårlig eller slå seg av. Hold sensorer og kamera rene, og stol aldri blindt på systemene.",
     "ru": "Снег, лёд и грязь могут закрыть датчики и камеры, и тогда системы работают плохо или отключаются. Держите датчики и камеры чистыми и никогда не полагайтесь на системы слепо.",
@@ -364,9 +364,9 @@
     "img": null,
     "a": [
       "Du må fjerne duggen før du kjører, for eksempel med viften og bakrutevarmen",
-      "Det holder at frontruten er klar",
-      "Du kan kjøre hvis du bare bruker sidespeilene",
-      "Du kan kjøre, fordi duggen forsvinner av seg selv etter hvert"
+      "Det holder at frontruten er klar, fordi du mest ser framover",
+      "Du kan kjøre hvis du holder lav fart til duggen forsvinner",
+      "Du kan kjøre, fordi duggen på sidevinduene og bakruten forsvinner av seg selv"
     ],
     "f": "Du skal ha godt nok utsyn til alle sider, ikke bare framover. Snø, is og dugg på rutene må fjernes før du kjører.",
     "ru": "Обзор должен быть достаточным во все стороны, а не только вперёд. Снег, лёд и запотевание на стёклах нужно убрать до начала движения.",
@@ -380,9 +380,9 @@
     "img": null,
     "a": [
       "Selgeren sender salgsmelding på Din side hos Statens vegvesen, og kjøperen godkjenner den",
-      "Det er nok at kjøperen får vognkortet og nøklene",
+      "Det er nok at kjøperen betaler og får vognkortet og nøklene",
       "Kjøperen melder fra til forsikringsselskapet, og da er eierskiftet registrert",
-      "Selgeren melder fra til politiet innen en måned"
+      "Selgeren melder fra til politiet innen en måned, og da blir den nye eieren registrert"
     ],
     "f": "Eierskiftet meldes på Din side hos Statens vegvesen: selgeren sender salgsmelding, og kjøperen godkjenner den. Kjøperen må sørge for at bilen er forsikret fra eierskiftet.",
     "ru": "О смене владельца сообщают в личном кабинете (Din side) на сайте Statens vegvesen: продавец отправляет уведомление о продаже (salgsmelding), а покупатель его подтверждает. Покупатель должен застраховать машину с момента смены владельца.",
@@ -412,9 +412,9 @@
     "img": null,
     "a": [
       "Del 1 skal ligge i bilen, og del 2 bør ligge på et trygt sted utenfor bilen",
-      "Begge delene bør alltid ligge i hanskerommet",
-      "Begge delene skal leveres til forsikringsselskapet",
-      "Del 1 skal ligge hjemme, og del 2 skal ligge i bilen"
+      "Begge delene bør alltid ligge i hanskerommet, slik at politiet kan se dem",
+      "Begge delene bør ligge hjemme på et trygt sted, aldri i bilen",
+      "Del 1 bør ligge hjemme på et trygt sted, og del 2 skal ligge i bilen"
     ],
     "f": "Den tekniske delen av vognkortet skal oppbevares i bilen. Eierdelen bør du ha på et trygt sted, atskilt fra bilen.",
     "ru": "Техническую часть свидетельства о регистрации (vognkort) нужно хранить в машине. Часть владельца лучше держать в надёжном месте, отдельно от машины.",

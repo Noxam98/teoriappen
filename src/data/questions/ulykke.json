@@ -7,8 +7,8 @@
     "a": [
       "Sikrer ulykkesstedet slik at det ikke skjer flere ulykker",
       "Flytter alle skadde ut av bilene med en gang",
-      "Tar bilder av ulykken",
-      "Kjører videre for å hente hjelp"
+      "Ringer 113 før du gjør noe annet, slik at hjelpen kommer raskt",
+      "Kjører videre til nærmeste sted der du kan hente hjelp"
     ],
     "f": "Først sikrer du stedet, deretter varsler du og gir førstehjelp. Da unngår du at flere blir skadd.",
     "ru": "Сначала обезопасьте место ДТП, затем вызовите помощь и окажите первую помощь. Так вы не допустите, чтобы пострадал кто-то ещё.",
@@ -22,8 +22,8 @@
     "img": null,
     "a": [
       "Slår på nødsignal, tar på refleksvest og setter ut varseltrekant i god avstand",
-      "Stiller bilen din på tvers i veien uten lys",
-      "Ber andre bilister kjøre fort forbi"
+      "Setter ut varseltrekanten rett bak de skadde bilene, så den er lett å se",
+      "Slår på nødsignal og går rett ut uten refleksvest, så du ikke mister tid"
     ],
     "f": "Nødsignal, refleksvest og varseltrekant varsler andre trafikanter i tide. Varseltrekant og refleksvest er påbudt å ha i bilen.",
     "ru": "Аварийная сигнализация, светоотражающий жилет и знак аварийной остановки вовремя предупреждают других. Знак и жилет обязательно должны быть в машине.",
@@ -69,9 +69,9 @@
     "img": null,
     "a": [
       "Legger personen i stabilt sideleie og passer på at luftveiene er frie",
-      "Gir personen noe å drikke",
-      "Starter hjerte-lunge-redning med en gang",
-      "Legger personen på ryggen med en pute under hodet"
+      "Lar personen sitte med ryggen mot bilen, slik at den puster lettere",
+      "Starter hjerte-lunge-redning med en gang og ringer 113 etterpå",
+      "Legger personen på ryggen med en pute under hodet, så den ligger godt"
     ],
     "f": "En bevisstløs person som puster, legges i stabilt sideleie. Da holdes luftveiene frie. Følg med på pusten til hjelpen kommer.",
     "ru": "Человека без сознания, который дышит, кладут в стабильное боковое положение — так дыхательные пути остаются свободными. Следите за дыханием до приезда помощи.",
@@ -85,8 +85,8 @@
     "img": null,
     "a": [
       "Ringer 113 og starter hjerte-lunge-redning med 30 kompresjoner og 2 innblåsninger",
-      "Legger personen i stabilt sideleie og venter",
-      "Rister personen til den våkner"
+      "Legger personen i stabilt sideleie og venter til ambulansen kommer",
+      "Ringer 113 og gir bare innblåsninger helt til personen begynner å puste igjen"
     ],
     "f": "Når personen ikke puster normalt, skal du varsle 113 og starte hjerte-lunge-redning (HLR): 30 brystkompresjoner og 2 innblåsninger.",
     "ru": "Если человек не дышит нормально, позвоните 113 и начните сердечно-лёгочную реанимацию (HLR): 30 нажатий на грудную клетку и 2 вдоха.",
@@ -100,8 +100,8 @@
     "img": null,
     "a": [
       "Trykker direkte på såret, gjerne med en kompress eller et tøystykke",
-      "Vasker såret med vann først",
-      "Lar det blø litt for å rense såret"
+      "Vasker såret godt med vann før du gjør noe annet",
+      "Lar det blø en stund først, slik at skitt kommer ut av såret"
     ],
     "f": "Kraftig blødning stoppes med direkte trykk på såret. Hold trykket til hjelpen kommer.",
     "ru": "Сильное кровотечение останавливают прямым давлением на рану. Держите давление до прибытия помощи.",
@@ -115,8 +115,8 @@
     "img": null,
     "a": [
       "Bare når personen er i fare der den er, for eksempel ved brann",
-      "Alltid, så fort som mulig",
-      "Aldri, uansett hva som skjer"
+      "Alltid, så fort som mulig, slik at du kan gi førstehjelp",
+      "Aldri, fordi det alltid kan gjøre skadene verre"
     ],
     "f": "Skadde bør ikke flyttes unødvendig, fordi det kan gjøre skadene verre. Hvis det er fare for brann eller nye ulykker, bør du flytte personen.",
     "ru": "Пострадавших не следует перемещать без необходимости — это может усугубить травмы. Но если есть угроза пожара или новой аварии, человека следует переместить.",
@@ -130,8 +130,8 @@
     "img": null,
     "a": [
       "Stanse, hjelpe de skadde, oppgi navn og adresse og sørge for at politiet blir varslet",
-      "Bare ringe forsikringsselskapet",
-      "Kjøre videre hvis ulykken ikke var din skyld"
+      "Stanse og melde fra til forsikringsselskapet, men ikke til politiet",
+      "Kjøre videre hvis ulykken ikke var din skyld, og andre allerede har stanset for å hjelpe"
     ],
     "f": "Den som er innblandet i et trafikkuhell, skal straks stanse og hjelpe skadde, og alle som er innblandet, skal oppgi navn og adresse. Er noen skadd, og skaden ikke er ubetydelig, skal politiet varsles så snart som mulig. Dette gjelder også om du ikke har skyld.",
     "ru": "Участник ДТП обязан сразу остановиться и помочь пострадавшим, а все участники должны назвать свои имена и адреса. Если кто-то получил травму, и она не пустяковая, нужно как можно скорее сообщить в полицию. Это касается и тех, кто не виноват в аварии.",
@@ -145,8 +145,8 @@
     "img": null,
     "a": [
       "Melde fra til politiet og merke stedet der det skjedde",
-      "Ingenting, siden dyret løp vekk",
-      "Følge etter dyret inn i skogen"
+      "Ingenting, siden dyret løp vekk og sikkert ikke er skadd",
+      "Følge etter dyret inn i skogen for å se om det er skadd"
     ],
     "f": "Påkjørsel av elg og annet hjortevilt skal meldes til politiet (02800), også når dyret løper vekk. Ikke følg etter dyret. Du bør merke stedet, slik at det skadde dyret kan bli funnet.",
     "ru": "О наезде на лося или другое оленевое животное нужно сообщить в полицию (02800), даже если зверь убежал. Не идите за животным. Желательно отметить место, чтобы раненое животное можно было найти.",
@@ -160,7 +160,7 @@
     "img": null,
     "a": [
       "Legger igjen navn og kontaktinformasjon på bilen, eller melder fra til politiet",
-      "Kjører derfra, siden skaden er liten",
+      "Kjører derfra, fordi en liten bulk på en parkert bil ikke trenger å meldes til noen",
       "Venter ved bilen til eieren kommer, uansett hvor lenge det tar"
     ],
     "f": "Skader du en parkert bil, skal eieren eller politiet varsles så snart som mulig. Du kan legge igjen en lapp med navn og telefonnummer.",
@@ -175,7 +175,7 @@
     "img": null,
     "a": [
       "Slik at andre trafikanter ser deg bedre",
-      "Fordi den beskytter mot kulde",
+      "Slik at de skadde ser at det kommer hjelp",
       "Slik at politiet ser at du er vitne"
     ],
     "f": "Refleksvesten gjør at du blir sett mye tidligere, særlig i mørket. Den er påbudt å ha i bilen, og du skal bruke den når du går ut av bilen ved nødstans langs veien.",
@@ -221,9 +221,9 @@
     "img": null,
     "a": [
       "Når politiet har tatt prøve av deg, eller har bestemt at det ikke skal tas prøve",
-      "Når du har meldt fra om skaden til forsikringsselskapet",
-      "Når den andre føreren har sagt at det er greit for ham",
-      "Når du har kommet hjem og ikke skal kjøre mer den dagen"
+      "Når du har meldt fra om ulykken til forsikringsselskapet ditt",
+      "Når den andre føreren har sagt at saken ikke skal meldes til politiet",
+      "Når du har kommet hjem, har parkert bilen og ikke skal kjøre mer den dagen"
     ],
     "f": "Forbudet gjelder ikke lenger når politiet har tatt blodprøve eller utåndingsprøve, eller når politiet har bestemt at det ikke skal tas prøve. Ellers gjelder det i 6 timer etter kjøringen.",
     "ru": "Запрет перестаёт действовать, когда полиция взяла у вас анализ крови или пробу выдыхаемого воздуха либо решила, что проба браться не будет. В остальных случаях он действует 6 часов после поездки.",
@@ -237,9 +237,9 @@
     "img": null,
     "a": [
       "Fra nødtelefonen i tunnelen, så Vegtrafikksentralen vet hvor du er",
-      "Med mobilen, fordi det alltid går raskest",
+      "Med mobilen, fordi det alltid går raskest å ringe 113 direkte",
       "Kjøre ut av tunnelen og ringe fra neste bensinstasjon",
-      "Blinke med lysene til bilene som kjører forbi"
+      "Ringe 112 med mobilen, så politiet kan stenge tunnelen"
     ],
     "f": "Bruk nødtelefonen i tunnelen. Da får Vegtrafikksentralen alarm med en gang og vet hvor du er. Det er bare Vegtrafikksentralen som kan stenge tunnelen.",
     "ru": "Звоните по аварийному телефону в туннеле. Тогда дорожная диспетчерская (Vegtrafikksentralen) сразу получает сигнал тревоги и знает, где вы находитесь. Закрыть туннель может только эта диспетчерская.",

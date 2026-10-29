@@ -8,7 +8,7 @@
     },
     "a": [
       "Du har vikeplikt for kjørende på veien du kommer inn på",
-      "Du kjører på forkjørsvei",
+      "Du kjører på forkjørsvei, og andre har vikeplikt for deg",
       "Du må alltid stanse helt før du kjører videre",
       "Kjørende fra venstre har vikeplikt for deg"
     ],
@@ -44,8 +44,8 @@
     },
     "a": [
       "Du kjører på forkjørsvei, og trafikk fra sideveiene har vikeplikt for deg",
-      "Du har vikeplikt i neste kryss",
-      "Forkjørsveien slutter",
+      "Du har vikeplikt for trafikken på veien du kommer inn på",
+      "Forkjørsveien slutter, og de vanlige vikepliktsreglene gjelder igjen",
       "Høyreregelen gjelder i alle kryss fram til neste skilt"
     ],
     "f": "Skiltet Forkjørsvei betyr at kjørende fra sideveier og avkjørsler har vikeplikt for deg. Det gjelder fram til skiltet Slutt på forkjørsvei.",
@@ -63,12 +63,12 @@
     "a": [
       "Å parkere på kjørebanen",
       "Å kjøre forbi en traktor",
-      "Å bruke nærlys om dagen",
-      "Å svinge av til en sidevei"
+      "Å parkere på en rasteplass ved veien",
+      "Å kjøre forbi i et veikryss"
     ],
-    "f": "På forkjørsvei med fartsgrense over 50 km/t er det forbudt å parkere på kjørebanen.",
-    "ru": "На главной дороге (forkjørsvei) с ограничением скорости выше 50 км/ч стоянка на проезжей части запрещена.",
-    "uk": "На головній дорозі (forkjørsvei) з обмеженням швидкості понад 50 км/год стоянку на проїзній частині заборонено.",
+    "f": "På forkjørsvei med fartsgrense over 50 km/t er det forbudt å parkere på kjørebanen. Forbikjøring i kryss er ikke forbudt her, fordi trafikken fra sideveiene har vikeplikt.",
+    "ru": "На главной дороге (forkjørsvei) с ограничением скорости выше 50 км/ч стоянка на проезжей части запрещена. Обгон на перекрёстке здесь не запрещён, потому что транспорт с боковых дорог обязан уступать дорогу.",
+    "uk": "На головній дорозі (forkjørsvei) з обмеженням швидкості понад 50 км/год стоянку на проїзній частині заборонено. Обгін на перехресті тут не заборонений, бо транспорт із бічних доріг має поступатися дорогою.",
     "theory": "skilt/vikeplikt-og-forkjorsskilt"
   },
   {
@@ -80,7 +80,7 @@
     },
     "a": [
       "Forkjørsveien slutter, og du må følge de vanlige vikepliktsreglene videre",
-      "Du kjører inn på en forkjørsvei",
+      "Du kjører inn på forkjørsvei, og trafikk fra sideveiene må vike for deg",
       "Du har forkjørsrett i alle kryss fram til neste skilt",
       "Veien slutter, og det er ikke mulig å kjøre videre"
     ],
@@ -98,9 +98,9 @@
     },
     "a": [
       "Du har vikeplikt for møtende trafikk på strekningen",
-      "Møtende trafikk har vikeplikt for deg",
+      "Møtende trafikk har vikeplikt for deg på strekningen",
       "Det er forbudt å kjøre inn på strekningen",
-      "Du skal kjøre forbi møtende kjøretøy på venstre side"
+      "Forbikjøring er forbudt på den smale strekningen"
     ],
     "f": "Møteplikt betyr at du skal vike for møtende kjørende på den smale strekningen. Vent til de har passert.",
     "ru": "Знак «Преимущество встречного движения» (møteplikt): на узком участке вы уступаете встречным машинам. Дождитесь, пока они проедут.",
@@ -116,9 +116,9 @@
     },
     "a": [
       "Møtende kjørende har vikeplikt for deg på den smale strekningen",
-      "Du har vikeplikt for møtende trafikk",
+      "Du har vikeplikt for møtende trafikk på den smale strekningen",
       "Veien er envegskjørt",
-      "Du har forkjørsrett i neste veikryss"
+      "Du kjører på forkjørsvei og har forkjørsrett i neste kryss"
     ],
     "f": "Skiltet gir deg forkjørsrett ved møting på en smal strekning. De møtende skal vike for deg, men du må likevel kjøre forsiktig.",
     "ru": "Знак «Преимущество перед встречным движением»: на узком участке встречные обязаны уступить вам. Но всё равно будьте осторожны.",
@@ -135,7 +135,7 @@
     "a": [
       "Det er forbudt å kjøre inn i veien fra denne retningen",
       "Det er forbudt å stanse",
-      "Veien er stengt for gående",
+      "Det er forbudt å kjøre på veien fra begge retninger",
       "Du har vikeplikt for møtende trafikk"
     ],
     "f": "Innkjøring forbudt betyr at du ikke kan kjøre inn i veien fra den siden skiltet står. Skiltet står ofte i enden av en envegskjørt gate.",
@@ -172,7 +172,7 @@
       "Syklende",
       "Personbiler",
       "Motorsykler",
-      "Varebiler"
+      "Mopeder"
     ],
     "f": "Forbudt for motorvogn gjelder kjøretøy med motor, som bil, motorsykkel og moped. Syklende kan bruke veien.",
     "ru": "Знак «Движение механических ТС запрещено»: нельзя транспортным средствам с мотором (автомобили, мотоциклы, мопеды). Велосипедисты могут ехать.",
@@ -250,7 +250,7 @@
     },
     "a": [
       "Fram til skiltet Slutt på forbikjøringsforbud",
-      "Bare til neste veikryss",
+      "Fram til neste veikryss, hvis ikke et underskilt sier noe annet",
       "I 1 kilometer",
       "Til du kommer inn i tettbygd strøk"
     ],
@@ -290,9 +290,9 @@
     },
     "a": [
       "Til du passerer et nytt fartsgrenseskilt eller et skilt om slutt på fartsgrensen",
-      "Bare til neste veikryss",
-      "Bare i 500 meter",
-      "Bare om dagen"
+      "Fram til neste veikryss, hvis det ikke står et nytt skilt etter krysset",
+      "I 1 kilometer, hvis ikke et underskilt viser en annen strekning",
+      "Til du kjører ut av tettbygd strøk, selv om det ikke kommer et nytt skilt"
     ],
     "f": "Et fartsgrenseskilt gjelder til du passerer et nytt fartsgrenseskilt, et skilt om slutt på særskilt fartsgrense, et skilt for fartsgrensesone eller et skilt for gatetun eller gågate.",
     "ru": "Ограничение скорости действует, пока вы не проедете новый знак ограничения, знак «Конец ограничения», знак зоны или знак жилой зоны (gatetun) либо пешеходной улицы (gågate).",
@@ -326,9 +326,9 @@
     },
     "a": [
       "Du må tilpasse farten til forholdene, selv om skiltet tillater 90 km/t",
-      "Du skal holde 90 km/t for ikke å hindre trafikken",
-      "Fartsgrensen gjelder bare når veien er tørr",
-      "Du kan kjøre litt over 90 km/t for å komme raskt ut av regnværet"
+      "Du skal holde 90 km/t, så du ikke hindrer trafikken bak deg",
+      "Du kan kjøre i 90 km/t hvis du har lyset på og holder god avstand",
+      "Du trenger bare å senke farten når veien er glatt av is eller snø"
     ],
     "f": "Fartsgrensen er den høyeste tillatte farten under gode forhold. Ved regn, mørke eller dårlig sikt skal du kjøre saktere.",
     "ru": "Ограничение — это максимум при хороших условиях. В дождь, в темноте или при плохой видимости нужно ехать медленнее.",
@@ -403,8 +403,8 @@
     "a": [
       "Fartsgrensen er 30 km/t på alle veier i området, til du kjører ut av sonen",
       "Fartsgrensen er 30 km/t bare fram til neste veikryss",
-      "Anbefalt fart er 30 km/t",
-      "Parkering er tillatt i 30 minutter"
+      "Anbefalt fart er 30 km/t i hele området, men det er ikke en fartsgrense",
+      "Du kan parkere i høyst 30 minutter i hele området"
     ],
     "f": "Fartsgrensesone betyr at fartsgrensen gjelder i hele området, også etter kryss, til du passerer skiltet om slutt på sonen.",
     "ru": "Знак «Зона ограничения скорости 30»: 30 км/ч действует на всех улицах зоны, в том числе после перекрёстков, до знака конца зоны.",
@@ -420,9 +420,9 @@
     },
     "a": [
       "Ja, fartsgrensen gjelder hele døgnet hvis ikke et underskilt sier noe annet",
-      "Nei, den gjelder bare når skolen er åpen",
-      "Nei, om kvelden kan du kjøre 50 km/t",
-      "Bare hvis det er mørkt"
+      "Nei, den gjelder bare om dagen, når skolen er åpen",
+      "Nei, om kvelden gjelder den generelle fartsgrensen på 50 km/t",
+      "Nei, når det ikke er barn ute, kan du kjøre etter forholdene på veien"
     ],
     "f": "Et fartsgrenseskilt gjelder hele døgnet. Bare et underskilt med tidspunkt kan begrense når det gjelder.",
     "ru": "Знак ограничения скорости действует круглосуточно. Только табличка с указанием времени может ограничить срок его действия.",
@@ -456,7 +456,7 @@
     },
     "a": [
       "Ja, kort stans for å slippe av eller på passasjerer er tillatt",
-      "Nei, all stans er forbudt",
+      "Nei, skiltet betyr at det er forbudt å stanse i det hele tatt",
       "Ja, men bare hvis du har nødsignal på",
       "Nei, bare drosjer kan stanse her"
     ],
@@ -476,7 +476,7 @@
       "På den siden av veien der skiltet står, fram til neste veikryss",
       "På begge sider av veien i 100 meter",
       "Bare rett ved skiltet",
-      "I hele byen"
+      "På den siden av veien der skiltet står, i 100 meter etter skiltet"
     ],
     "f": "Skiltet gjelder på den siden av veien der det står, og fram til neste veikryss, hvis ikke underskilt sier noe annet.",
     "ru": "Знак действует на той стороне дороги, где он стоит, до ближайшего перекрёстка, если табличка не указывает иное.",
@@ -582,9 +582,9 @@
     },
     "a": [
       "Annen fare – et underskilt forteller ofte hva faren er",
-      "Utkjørsel fra brannstasjon",
-      "Stopp for kontroll",
-      "Slutt på alle fareskilt"
+      "Farlig veikryss lenger fram, der høyreregelen gjelder",
+      "Forbudsskilt – et underskilt forteller hva som er forbudt",
+      "Opplysningsskilt – et underskilt forteller om veien videre"
     ],
     "f": "Skiltet Annen fare brukes når ingen andre fareskilt passer. Ofte står det et underskilt som forklarer faren.",
     "ru": "Знак «Прочие опасности» (восклицательный знак) ставят, когда другой знак не подходит. Часто под ним табличка с пояснением.",
@@ -618,9 +618,9 @@
     },
     "a": [
       "Flere farlige svinger, den første til høyre",
-      "Én farlig sving til venstre",
-      "Glatt kjørebane",
-      "Veiarbeid"
+      "Én farlig sving til venstre lenger fram",
+      "Glatt kjørebane, særlig i svingene",
+      "Veien blir smalere lenger fram"
     ],
     "f": "Skiltet varsler om flere farlige svinger etter hverandre. Den første svingen går til høyre.",
     "ru": "Знак предупреждает о нескольких опасных поворотах подряд, первый — направо.",
@@ -638,7 +638,7 @@
       "Velge et lavt gir og bruke motorbremsen",
       "Sette girspaken i fri for å spare drivstoff",
       "Holde bremsen inne hele veien ned",
-      "Øke farten for å komme fort ned"
+      "Kjøre i høyt gir, så motoren går rolig nedover"
     ],
     "f": "Skiltet varsler om bratt bakke nedover. Bruk lavt gir og motorbremsen, slik at bremsene ikke blir for varme.",
     "ru": "Знак «Крутой спуск». Включите пониженную передачу и тормозите двигателем, чтобы не перегреть тормоза.",
@@ -676,8 +676,8 @@
     },
     "a": [
       "Senke farten og se etter arbeidere og maskiner",
-      "Kjøre fort forbi for ikke å forstyrre arbeidet",
-      "Bruke fjernlys",
+      "Holde vanlig fart hvis du ikke ser noen arbeidere",
+      "Senke farten bare hvis skiltet har gul bunn",
       "Stanse og vente til arbeidet er ferdig"
     ],
     "f": "Skiltet varsler om veiarbeid. Kjør forsiktig, følg skiltene og ta hensyn til folk som arbeider på veien. Midlertidige fareskilt ved veiarbeid kan ha gul bunn.",
@@ -695,8 +695,8 @@
     "a": [
       "Kjøre jevnt og forsiktig, uten brå bremsing eller ratting",
       "Kjøre som vanlig, siden skiltet bare gjelder om vinteren",
-      "Kjøre nærmere bilen foran",
-      "Øke farten i svingene"
+      "Bremse hardt med en gang hvis du kjenner at veien er glatt",
+      "Senke farten bare hvis du ser is på veien"
     ],
     "f": "Skiltet varsler om glatt kjørebane, for eksempel på grunn av is eller vann. Senk farten og unngå brå bevegelser.",
     "ru": "Знак «Скользкая дорога» (лёд, вода). Снизьте скорость, избегайте резкого торможения и резких движений рулём.",
@@ -730,9 +730,9 @@
     },
     "a": [
       "Senke farten og være ekstra oppmerksom på barn",
-      "Bruke lydhorn for å varsle barna",
-      "Kjøre midt i veien",
-      "Ingenting, skiltet gjelder bare for skolebusser"
+      "Bruke lydhornet, så barna vet at du kommer",
+      "Senke farten bare når skolen er åpen",
+      "Holde vanlig fart hvis du ikke ser barn ved veien"
     ],
     "f": "Skiltet varsler om at barn ofte ferdes ved veien, for eksempel ved en skole eller lekeplass. Barn kan plutselig springe ut i veien.",
     "ru": "Знак «Дети»: рядом часто бывают дети (школа, детская площадка). Ребёнок может внезапно выбежать на дорогу.",
@@ -772,7 +772,7 @@
       "I skumringen og i mørket",
       "Midt på dagen om sommeren",
       "Bare når det er tåke",
-      "Bare når veien er tørr"
+      "Når det er mye trafikk på veien"
     ],
     "f": "Elgen er mest i bevegelse i skumringen og om natten. Senk farten og følg med langs veikantene.",
     "ru": "Лоси активнее всего в сумерках и ночью. Снизьте скорость и следите за обочинами.",
@@ -790,7 +790,7 @@
       "Stanser før bommen og venter til den er oppe igjen",
       "Kjører raskt over før bommene er helt nede",
       "Kjører sakte over hvis du ikke ser noe tog",
-      "Kjører rundt bommen"
+      "Kjører videre så snart toget har passert"
     ],
     "f": "Skiltet varsler om jernbaneovergang med bom. Når lyset blinker rødt eller bommene går ned, skal du stanse og vente.",
     "ru": "Знак «Железнодорожный переезд со шлагбаумом». Если мигает красный или опускается шлагбаум — остановитесь и ждите.",
@@ -810,8 +810,8 @@
     "a": [
       "Skiltet med gjerde varsler om jernbaneovergang med bom, skiltet med lokomotiv om jernbaneovergang uten bom",
       "Skiltet med gjerde varsler om jernbaneovergang uten bom, skiltet med lokomotiv om jernbaneovergang med bom",
-      "Begge varsler om trikk",
-      "Skiltet med gjerde gjelder bare om natten"
+      "Begge varsler om jernbaneovergang med bom, men de ser litt ulike ut",
+      "Skiltet med gjerde varsler om jernbaneovergang, skiltet med lokomotiv om trikk i gaten"
     ],
     "f": "Skiltet med et gjerde varsler om jernbaneovergang med bom. Skiltet med et lokomotiv varsler om jernbaneovergang uten bom. Der må du se og lytte godt etter tog.",
     "ru": "Знак с изображением забора — переезд со шлагбаумом. Знак с паровозом — переезд без шлагбаума: там нужно особенно внимательно смотреть и слушать, нет ли поезда.",
@@ -829,7 +829,7 @@
       "Være forberedt på kø og på å stanse",
       "Bytte til venstre felt for å komme forbi køen",
       "Kjøre nærmere bilen foran",
-      "Slå på tåkelys"
+      "Holde vanlig fart til du ser køen"
     ],
     "f": "Skiltet varsler om at det ofte blir kø. Senk farten, hold god avstand og vær klar til å bremse.",
     "ru": "Знак «Затор»: здесь часто бывают пробки. Снизьте скорость, держите дистанцию и будьте готовы тормозить.",
@@ -845,9 +845,9 @@
     },
     "a": [
       "Et farlig veikryss der høyreregelen gjelder",
-      "Et sykehus",
-      "En jernbaneovergang",
-      "En kirke"
+      "Et veikryss der du kjører på forkjørsvei",
+      "En jernbaneovergang uten bom",
+      "Et veikryss der trafikken fra høyre har vikeplikt for deg"
     ],
     "f": "Skiltet varsler om et farlig veikryss lenger fram. Der gjelder høyreregelen: du har vikeplikt for trafikk fra høyre. Følg godt med på trafikk fra sideveiene.",
     "ru": "Знак «Опасный перекрёсток»: впереди перекрёсток, где действует правило правой руки — вы уступаете тем, кто едет справа. Внимательно следите за транспортом с боковых дорог.",
@@ -901,7 +901,7 @@
       "Du må kjøre på høyre side av trafikkøya",
       "Du kan velge side selv",
       "Du må kjøre på venstre side av trafikkøya",
-      "Det er forbudt å kjøre forbi trafikkøya"
+      "Du må svinge til høyre i neste kryss"
     ],
     "f": "Påbudt kjørefelt viser hvilken side av hindringen du skal kjøre på, her høyre side.",
     "ru": "Знак «Объезд препятствия справа»: островок или препятствие нужно объехать справа.",
@@ -920,8 +920,8 @@
     },
     "a": [
       "Du har vikeplikt for trafikken i rundkjøringen, og du skal kjøre rundt med øya på venstre side",
-      "Trafikken i rundkjøringen har vikeplikt for deg",
-      "Du kan kjøre begge veier rundt øya",
+      "Trafikken i rundkjøringen har vikeplikt for deg, og du kjører rundt med øya på venstre side",
+      "Du må stanse helt før du kjører inn, selv om rundkjøringen er tom",
       "Høyreregelen gjelder, så den som skal inn i rundkjøringen, kjører først"
     ],
     "f": "Skiltet Rundkjøring betyr at du skal kjøre rundt i pilenes retning, mot klokka. Vikepliktskiltet betyr at du skal vike for dem som allerede er i rundkjøringen.",
@@ -940,7 +940,7 @@
       "Nei, veien er for gående",
       "Ja, i gangfart",
       "Ja, hvis du skal parkere",
-      "Ja, men bare om natten"
+      "Ja, hvis du skal kjøre til en eiendom ved veien"
     ],
     "f": "Skiltet viser gangvei. Veien er for gående, og det er ikke lov å kjøre bil der.",
     "ru": "Знак «Пешеходная дорожка»: она для пешеходов, ехать на машине нельзя.",
@@ -956,9 +956,9 @@
     },
     "a": [
       "Gang- og sykkelvei: veien er for gående og syklende",
-      "Veien er bare for syklende",
+      "Sykkelvei: veien er bare for syklende, ikke for gående",
       "Gatetun der biler kan kjøre i gangfart",
-      "Holdeplass for skolebuss"
+      "Påbudsskilt: syklende må bruke denne veien, ikke kjørebanen"
     ],
     "f": "Gang- og sykkelvei er for gående og syklende. Skiltet er et opplysningsskilt. Med bil kan du ikke kjøre der, med mindre et underskilt tillater det.",
     "ru": "«Пешеходно-велосипедная дорожка»: для пешеходов и велосипедистов. Это информационный знак. На машине туда нельзя, если табличка не разрешает.",
@@ -996,7 +996,7 @@
     "a": [
       "Å rygge og å snu",
       "Å kjøre i venstre felt når du kjører forbi",
-      "Å bruke nærlys om dagen",
+      "Å kjøre med tilhenger",
       "Å kjøre i 100 km/t"
     ],
     "f": "På motorvei er det forbudt å rygge, snu, stanse og parkere. Gående, syklende og mopeder kan ikke bruke motorveien.",
@@ -1013,8 +1013,8 @@
     },
     "a": [
       "Motorveien slutter, og de særskilte reglene for motorvei gjelder ikke lenger",
-      "Det kommer en motorvei",
-      "Du må kjøre av ved neste avkjøring",
+      "Motorveien begynner, og de særskilte reglene for motorvei gjelder fra nå",
+      "Du må kjøre av motorveien ved neste avkjøring",
       "Fartsgrensen blir 110 km/t"
     ],
     "f": "Skiltet viser at motorveien slutter. Vær forberedt på kryss, møtende trafikk, gående og syklende.",
@@ -1104,7 +1104,7 @@
     "a": [
       "Bare på plasser som er merket for parkering",
       "Hvor du vil, så lenge du ikke hindrer andre",
-      "Langs husveggene",
+      "Der det ikke står skilt om parkering forbudt",
       "Ingen steder, heller ikke på merkede plasser"
     ],
     "f": "I gatetun er parkering bare tillatt på plasser som er merket for det.",
@@ -1121,9 +1121,9 @@
     },
     "a": [
       "Gågate: kjøring med motorvogn er forbudt, unntatt det et underskilt tillater",
-      "Gatetun der du kan kjøre i 30 km/t",
-      "Fortau",
-      "Holdeplass for buss"
+      "Gatetun: du kan kjøre bil i gangfart og parkere på plasser som er merket",
+      "Gangfelt: du har vikeplikt for gående som krysser gaten",
+      "Gågate: du kan kjøre bil der hvis du holder gangfart"
     ],
     "f": "Gågate er for gående. Hvis et underskilt tillater for eksempel varelevering, skal du kjøre i gangfart og ta hensyn til de gående.",
     "ru": "«Пешеходная улица» (gågate): движение механических ТС запрещено, кроме исключений на табличке (например, доставка). Тогда ехать со скоростью пешехода.",
@@ -1140,7 +1140,7 @@
     "a": [
       "Møteplass: et bredere sted på en smal vei der kjøretøy kan møtes",
       "Parkeringsplass for turister",
-      "Et sted der trafikanter skal møte politiet",
+      "Møteplass: et sted ved veien der du kan parkere en kort stund",
       "Rasteplass med toalett"
     ],
     "f": "Møteplass viser et sted der veien er bredere, slik at kjøretøy kan møte hverandre. Du må ikke parkere på møteplassen.",
@@ -1176,8 +1176,8 @@
     "a": [
       "Å stanse",
       "Å kjøre med nærlys",
-      "Å holde god avstand til bilen foran",
-      "Å kjøre i fartsgrensen"
+      "Å kjøre saktere enn fartsgrensen",
+      "Å kjøre med tilhenger"
     ],
     "f": "Det er forbudt å stanse i tunnel, hvis ikke trafikken eller et uhell tvinger deg til det. Bruk nærlys og hold god avstand.",
     "ru": "В тоннеле запрещено останавливаться, если только к этому не вынуждает движение или авария. Включите ближний свет и держите дистанцию.",

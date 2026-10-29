@@ -22,9 +22,9 @@
     "img": null,
     "a": [
       "Du kan fortsatt ha promille, fordi kroppen forbrenner alkohol sakte",
-      "Etter en natts søvn er promillen alltid borte",
-      "Du kan kjøre hvis du føler deg i form",
-      "Kaffe og en kald dusj fjerner promillen"
+      "Etter en natts søvn er alkoholen alltid ute av kroppen",
+      "Du kan kjøre hvis du føler deg i form og ikke kjenner alkoholen",
+      "Kaffe og en kald dusj får promillen til å synke fortere"
     ],
     "f": "Kroppen forbrenner alkohol sakte, og søvn gjør ikke at det går fortere. Du kan ha promille lenge etter at du sluttet å drikke.",
     "ru": "Организм перерабатывает алкоголь медленно, и сон это не ускоряет. Промилле может сохраняться ещё долго после того, как вы перестали пить.",
@@ -69,9 +69,9 @@
     "img": null,
     "a": [
       "Medisinen kan påvirke evnen til å kjøre bil trygt",
-      "Medisinen må oppbevares kaldt",
-      "Medisinen er farlig for barn",
-      "Medisinen må tas sammen med mat"
+      "Medisinen må oppbevares kaldt etter at pakningen er åpnet",
+      "Medisinen er farlig for barn og må oppbevares trygt",
+      "Medisinen må tas sammen med mat for å virke godt"
     ],
     "f": "Rød varseltrekant på pakningen betyr at medisinen kan svekke evnen til å kjøre. Spør lege eller apotek om du kan kjøre.",
     "ru": "Красный предупреждающий треугольник на упаковке означает, что лекарство может ухудшить способность управлять машиной. Спросите врача или в аптеке, можно ли вам садиться за руль.",
@@ -86,8 +86,8 @@
     "a": [
       "Det er forbudt å kjøre når du er påvirket av narkotika",
       "Det er lov hvis det har gått mer enn to timer",
-      "Det er lov hvis du kjører sakte",
-      "Cannabis påvirker ikke kjøringen"
+      "Det er bare forbudt hvis du også har drukket alkohol",
+      "Det er lov, fordi cannabis ikke gir dårligere reaksjonsevne"
     ],
     "f": "Det er forbudt å kjøre påvirket av narkotika. Narkotika gir dårligere reaksjonsevne og vurderingsevne.",
     "ru": "Запрещено водить машину под воздействием наркотиков. Наркотики ухудшают реакцию и способность оценивать ситуацию.",
@@ -101,8 +101,8 @@
     "img": null,
     "a": [
       "Reaksjonstiden blir lengre, og føreren tar større sjanser",
-      "Føreren blir mer forsiktig",
-      "Synet blir skarpere",
+      "Føreren blir mer forsiktig og kjører derfor saktere",
+      "Alkohol påvirker bare synet, ikke reaksjonstiden",
       "Alkohol påvirker bare føreren hvis promillen er over 1"
     ],
     "f": "Selv litt alkohol gir lengre reaksjonstid, dårligere syn og konsentrasjon og mer risikovillig kjøring.",
@@ -117,9 +117,9 @@
     "img": null,
     "a": [
       "Du husker ikke de siste kilometerne du har kjørt",
-      "Du holder jevn fart",
-      "Du ser deg mye i speilene",
-      "Du reagerer raskt på det som skjer"
+      "Du holder jevn fart og ligger godt i feltet",
+      "Du ser deg ofte i speilene og over skulderen",
+      "Du reagerer raskt på det som skjer foran deg"
     ],
     "f": "Tegn på trøtthet er at du gjesper, blir urolig, ikke husker strekningen du har kjørt og har vansker med å holde bilen i feltet.",
     "ru": "Признаки усталости: вы зеваете, ёрзаете, не помните последний отрезок пути и с трудом держите машину в своей полосе.",
@@ -133,9 +133,9 @@
     "img": null,
     "a": [
       "Stoppe på et trygt sted og sove i omtrent 15 minutter",
-      "Åpne vinduet og skru opp musikken",
-      "Drikke en energidrikk og kjøre videre",
-      "Kjøre fortere for å komme raskere fram"
+      "Åpne vinduet og skru opp musikken, så trøttheten går over",
+      "Drikke en energidrikk og kjøre videre som vanlig",
+      "Stoppe på et trygt sted og gå en kort tur i frisk luft"
     ],
     "f": "Det eneste som virkelig hjelper mot trøtthet, er søvn. En kort pause der du sover i omtrent 15 minutter, hjelper for en stund.",
     "ru": "Единственное, что действительно помогает от усталости, — это сон. Короткая остановка, чтобы поспать примерно 15 минут, помогает на какое-то время.",
@@ -165,7 +165,7 @@
     "img": null,
     "a": [
       "Det er lov, men samtalen kan ta oppmerksomheten bort fra trafikken",
-      "Det er forbudt",
+      "Det er forbudt å ringe mens du kjører, også når du bruker handsfree",
       "Det er helt ufarlig, fordi du har begge hendene på rattet"
     ],
     "f": "Handsfree er lov, men en samtale kan likevel gjøre deg mindre oppmerksom. Avslutt samtalen hvis trafikken krever det.",
@@ -180,8 +180,8 @@
     "img": null,
     "a": [
       "For å oppdage farer tidlig og få tid til å reagere",
-      "For å slippe å bruke speilene",
-      "For å kunne kjøre fortere"
+      "For å slippe å bruke speilene og se deg over skulderen",
+      "Så du ikke blir blendet av lysene til møtende biler"
     ],
     "f": "Når du ser langt fram, oppdager du farer tidlig og får mer tid til å planlegge og reagere.",
     "ru": "Когда вы смотрите далеко вперёд, вы раньше замечаете опасность и получаете больше времени, чтобы спланировать действия и среагировать.",
@@ -195,8 +195,8 @@
     "img": null,
     "a": [
       "Unge førere som nylig har fått førerkort",
-      "Førere mellom 40 og 50 år",
-      "Erfarne yrkessjåfører"
+      "Førere mellom 40 og 50 år som kjører mye",
+      "Erfarne yrkessjåfører som kjører langt hver dag"
     ],
     "f": "Unge og nye førere har høyest ulykkesrisiko, særlig de første månedene. Det er blant annet fordi de mangler erfaring og ofte tar større sjanser.",
     "ru": "У молодых водителей, недавно получивших права, самый высокий риск аварий, особенно в первые месяцы: им не хватает опыта, и они чаще рискуют.",
@@ -210,8 +210,8 @@
     "img": null,
     "a": [
       "Holde en trygg fart, fordi det er du som fører som har ansvaret",
-      "Kjøre litt fortere, så de blir fornøyde",
-      "Kjøre fort bare på rette strekninger"
+      "Kjøre litt fortere, fordi det er passasjerene som har ansvaret da",
+      "Kjøre fortere enn fartsgrensen, men bare på rette strekninger"
     ],
     "f": "Som fører har du ansvaret for kjøringen og for passasjerene. Ikke la deg presse til å kjøre fortere enn det som er trygt.",
     "ru": "Как водитель вы отвечаете за поездку и за пассажиров. Не поддавайтесь давлению и не превышайте безопасную скорость.",
@@ -255,8 +255,8 @@
     "img": null,
     "a": [
       "Personen kan gå sakte og trenge mer tid, så du må være klar til å stoppe",
-      "Eldre personer ser og hører alltid bilene godt",
-      "Du kan tute, så personen går raskere"
+      "Eldre personer ser og hører alltid bilene godt, så de venter til du er forbi",
+      "Du kan kjøre forbi raskt, før personen kommer ut i veien"
     ],
     "f": "Eldre kan ha dårligere syn, hørsel og bevegelighet. Gi dem god tid og vær klar til å stoppe.",
     "ru": "У пожилых людей может быть хуже зрение, слух и подвижность. Дайте им достаточно времени и будьте готовы остановиться.",
@@ -286,8 +286,8 @@
     "a": [
       "Du skal være hensynsfull, aktpågivende og varsom, så det ikke oppstår fare eller skade",
       "Du kan alltid kjøre så fort som fartsgrensen tillater, uansett forhold",
-      "Du trenger bare å ta hensyn til andre når du har vikeplikt",
-      "Du skal først og fremst komme raskt fram og aldri kjøre sakte"
+      "Du trenger bare å ta hensyn til andre trafikanter når du har vikeplikt for dem",
+      "Det er nok at du følger skilt og oppmerking, resten er ikke ditt ansvar som fører"
     ],
     "f": "Grunnregelen sier at alle skal ferdes hensynsfullt og være aktpågivende og varsom, så det ikke oppstår fare eller skade. Du skal heller ikke hindre eller forstyrre annen trafikk unødig.",
     "ru": "Основное правило гласит: все должны двигаться, уважая других, внимательно и осторожно, чтобы не возникло опасности или ущерба. Кроме того, нельзя без необходимости мешать другим участникам движения.",
@@ -301,9 +301,9 @@
     "img": null,
     "a": [
       "Alle trafikanter, også gående og syklister",
-      "Bare dem som kjører bil",
-      "Bare førere som har førerkort",
-      "Bare yrkessjåfører i arbeid"
+      "Bare dem som kjører bil eller motorsykkel",
+      "Bare førere som har førerkort, ikke syklister",
+      "Bare yrkessjåfører som kjører i arbeid"
     ],
     "f": "Grunnregelen gjelder alle som ferdes på veien – bilførere, syklister, gående og andre trafikanter.",
     "ru": "Основное правило касается всех, кто находится на дороге: водителей, велосипедистов, пешеходов и других участников движения.",

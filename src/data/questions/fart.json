@@ -121,7 +121,7 @@
     "a": [
       "Omtrent 3 sekunder",
       "Omtrent 1 sekund",
-      "Omtrent et halvt sekund",
+      "Omtrent 2 sekunder",
       "Det holder med én billengde"
     ],
     "f": "Tresekundersregelen: Velg et fast punkt. Når bilen foran passerer punktet, bør det gå minst 3 sekunder før du passerer det samme punktet.",
@@ -167,9 +167,9 @@
     "img": null,
     "a": [
       "Når tilhengeren er godkjent for Tempo 100, bilen oppfyller kravene, og fartsgrensen er 100 km/t eller høyere",
-      "Når tilhengeren har egne bremser",
-      "Når tilhengeren er tom",
-      "Aldri, 80 km/t gjelder alltid med tilhenger"
+      "Når tilhengeren har egne bremser, bilen har ABS, og fartsgrensen er 100 km/t eller høyere",
+      "Når tilhengeren er godkjent for Tempo 100, uansett hvilken bil som trekker den",
+      "Aldri, for med tilhenger er 80 km/t alltid den høyeste lovlige farten"
     ],
     "f": "Tilhengeren må være godkjent for Tempo 100 og ha Tempo 100-merket. Bilen må blant annet ha ABS og en tillatt totalvekt på høyst 3500 kg. Da kan du kjøre i 100 km/t der fartsgrensen tillater det. Ellers er grensen 80 km/t.",
     "ru": "Прицеп должен быть одобрен по Tempo 100 и иметь наклейку Tempo 100. У машины, среди прочего, должна быть ABS и разрешённая полная масса не больше 3500 кг. Тогда можно ехать 100 км/ч там, где это позволяет ограничение. Иначе максимум — 80 км/ч.",
@@ -183,9 +183,9 @@
     "img": null,
     "a": [
       "Du må tilpasse farten etter sikten, selv om det betyr at du kjører mye saktere enn 80 km/t",
-      "Du kan alltid kjøre 80 km/t når det er skiltet",
-      "Du skal holde 80 km/t for ikke å hindre andre",
-      "Du kan kjøre 80 km/t hvis du har tåkelys på"
+      "Du kan alltid kjøre 80 km/t når det er skiltet, også i tett tåke",
+      "Du skal holde omtrent 80 km/t, fordi du ikke må hindre trafikken som kommer bak deg",
+      "Du kan kjøre 80 km/t hvis du har tåkelys på, fordi da ser andre deg"
     ],
     "f": "Fartsgrensen er den høyeste tillatte farten under gode forhold. Du skal alltid tilpasse farten etter sikt, føre og trafikk.",
     "ru": "Ограничение — это максимум для хороших условий. Скорость всегда нужно подбирать под видимость, состояние дороги и движение.",
@@ -201,8 +201,8 @@
     },
     "a": [
       "På alle veiene i området, helt til du passerer skiltet for slutt på sonen",
-      "Bare på veien fram til neste kryss",
-      "Bare de første 100 meterne etter skiltet"
+      "Bare på veien du kjører på, fram til neste kryss",
+      "Bare de første 100 meterne etter skiltet, så gjelder vanlig fartsgrense"
     ],
     "f": "Fartsgrensesone betyr at fartsgrensen gjelder på alle veiene i sonen, til du kjører ut av sonen.",
     "ru": "Зона ограничения скорости: лимит действует на всех улицах внутри зоны, пока вы её не покинете (знак конца зоны).",
@@ -216,7 +216,7 @@
     "img": null,
     "a": [
       "Nei, du skal ikke hindre annen trafikk ved å kjøre unødvendig sakte",
-      "Ja, så lenge du holder deg under fartsgrensen",
+      "Ja, så lenge du holder deg under fartsgrensen, bestemmer du farten selv",
       "Ja, det er alltid tryggest å kjøre sakte"
     ],
     "f": "Du skal ikke uten grunn kjøre så sakte at du hindrer annen trafikk. For lav fart kan føre til farlige forbikjøringer.",
@@ -246,7 +246,7 @@
     "img": null,
     "a": [
       "Du bør kjøre så sakte at du kan stoppe hvis et barn plutselig springer ut i veien",
-      "Du kan alltid kjøre 30 km/t, fordi skiltet viser det",
+      "Du kan alltid kjøre 30 km/t, fordi skiltet viser hva som er trygt ved skolen",
       "Barna har ansvaret for å se seg for, så du kan holde farten"
     ],
     "f": "Barn er uforutsigbare. Ved skoler og lekeplasser må du være klar til å stoppe, også under fartsgrensen.",
@@ -261,7 +261,7 @@
     "img": null,
     "a": [
       "At dekkene mister kontakten med veien fordi de flyter på et lag med vann",
-      "At bremsene blir våte og virker dårligere",
+      "At bremsene blir våte når det regner, så de virker dårligere enn vanlig",
       "At det kommer vann inn i motoren"
     ],
     "f": "Ved vannplaning ligger dekkene på et lag med vann. Da kan du ikke styre eller bremse. Risikoen øker med høy fart og slitte dekk.",
@@ -276,9 +276,9 @@
     "img": null,
     "a": [
       "Slippe gassen og holde rattet rett til dekkene får grep igjen",
-      "Bremse så hardt du kan",
+      "Bremse så hardt du kan, så bilen stanser før det blir verre",
       "Svinge kraftig for å komme ut av vannet",
-      "Gi mer gass"
+      "Gi mer gass, så bilen kommer fortere gjennom vannet"
     ],
     "f": "Slipp gassen forsiktig og hold rattet rett. Unngå brå bremsing og brå bevegelser med rattet til dekkene har fått grep.",
     "ru": "Плавно отпустите газ и держите руль прямо. Не делайте резких торможений и поворотов руля, пока шины снова не сцепятся с дорогой.",
@@ -310,7 +310,7 @@
       "Rommet foran, bak og til sidene som gir deg tid og plass til å reagere",
       "Den delen av bilen som beskytter deg ved en kollisjon",
       "Området ved en skole der fartsgrensen er 30 km/t",
-      "Bare avstanden til bilen foran deg"
+      "Bare avstanden du holder til bilen foran deg, minst 3 sekunder"
     ],
     "f": "Sikkerhetssonen får du ved å holde avstand til andre og til farer rundt bilen – foran, bak og til sidene. Den gir deg tid og plass til å reagere hvis noe uventet skjer.",
     "ru": "Зону безопасности вы создаёте, держа дистанцию до других участников движения и до опасностей вокруг машины — спереди, сзади и по бокам. Она даёт вам время и место, чтобы среагировать, если случится что-то неожиданное.",

@@ -8,8 +8,8 @@
     },
     "a": [
       "Stans forbudt: du må ikke stanse, heller ikke for å slippe av passasjerer",
-      "Parkering forbudt, men kort stans er tillatt",
-      "Innkjøring forbudt"
+      "Parkering forbudt: du kan stanse kort for å slippe av passasjerer",
+      "Innkjøring forbudt: du må ikke kjøre inn på veien fra denne siden"
     ],
     "f": "Stans forbudt betyr at du ikke må stanse i det hele tatt, bortsett fra når trafikken eller en nødsituasjon tvinger deg.",
     "ru": "«Остановка запрещена»: нельзя останавливаться вообще, кроме случаев, когда вынуждает движение (пробка) или экстренная ситуация.",
@@ -25,8 +25,8 @@
     },
     "a": [
       "Stanse kort for å slippe av eller ta opp passasjerer",
-      "Parkere i inntil 30 minutter",
-      "Ingenting, all stans er forbudt"
+      "Parkere en kort stund, for eksempel i inntil 30 minutter",
+      "Ingenting, du må ikke stanse, heller ikke for passasjerer"
     ],
     "f": "Parkering forbudt betyr at du kan stanse kort for å la passasjerer gå av eller på, eller for å laste av og på, men du kan ikke parkere.",
     "ru": "«Стоянка запрещена»: можно ненадолго остановиться для посадки или высадки пассажиров, погрузки или разгрузки, но нельзя оставлять машину на стоянку.",
@@ -57,8 +57,8 @@
     },
     "a": [
       "Nei, på forkjørsvei med fartsgrense over 50 km/t er det forbudt å parkere på kjørebanen",
-      "Ja, hvis du slår på nødsignal",
-      "Ja, men bare om natten"
+      "Ja, hvis du slår på nødsignalet, så andre trafikanter ser at bilen står der",
+      "Ja, på forkjørsvei er det bare forbudt å parkere når fartsgrensen er over 80 km/t"
     ],
     "f": "På forkjørsvei med fartsgrense over 50 km/t er det forbudt å parkere på kjørebanen. Trafikken går fort, og parkerte biler er farlige.",
     "ru": "На главной дороге (forkjørsvei) с ограничением скорости выше 50 км/ч стоянка на проезжей части запрещена: там высокая скорость, и стоящие машины опасны.",
@@ -72,7 +72,7 @@
     "img": null,
     "a": [
       "Foran en inn- eller utkjørsel til en eiendom",
-      "På en parkeringsplass merket med P",
+      "På venstre side av en gate med envegskjøring",
       "Langs fortauet i en gate i tettbygd strøk uten skilt"
     ],
     "f": "Du må ikke parkere slik at du sperrer inn- eller utkjørselen til en eiendom.",
@@ -119,8 +119,8 @@
     "img": null,
     "a": [
       "Sette på parkeringsbremsen, sette bilen i gir (eller P) og vri forhjulene inn mot fortauskanten",
-      "Sette bilen i fri, så den er lett å flytte",
-      "Vri forhjulene ut mot veien"
+      "Sette på parkeringsbremsen godt og la bilen stå i fri, fordi det er bedre for motoren",
+      "Sette bilen i gir (eller P) og vri forhjulene ut mot veien, så de peker bort fra fortauskanten"
     ],
     "f": "Bruk parkeringsbremsen og sett bilen i gir eller P. I nedoverbakke vrir du hjulene inn mot fortauskanten, så bilen stopper mot den hvis den begynner å rulle.",
     "ru": "Затяните стояночный тормоз и включите передачу (или P). При стоянке на спуске поверните передние колёса к бордюру — тогда машина упрётся в него, если покатится.",
@@ -134,8 +134,8 @@
     "img": null,
     "a": [
       "Se i speilet og over skulderen etter syklister og andre trafikanter",
-      "Åpne døren raskt, så du ikke står lenge i veien",
-      "Slå på blinklyset, så har andre vikeplikt for deg"
+      "Se bare i speilet, fordi det viser alt som kommer bakfra",
+      "Slå på blinklyset, så har syklister og biler bak deg vikeplikt"
     ],
     "f": "En dør som åpnes brått, kan treffe en syklist. Se deg godt om før du åpner, og åpne forsiktig.",
     "ru": "Резко открытая дверь может сбить велосипедиста. Перед открытием посмотрите в зеркало и через плечо и открывайте дверь осторожно.",
@@ -149,12 +149,12 @@
     "img": null,
     "a": [
       "I en tunnel",
-      "På en parkeringsplass",
+      "Ved skiltet Parkering forbudt",
       "Langs en gate i tettbygd strøk der det ikke er skilt"
     ],
-    "f": "Det er forbudt å stanse i tunnel, bortsett fra i nødsituasjoner eller når trafikken står stille.",
-    "ru": "В тоннеле останавливаться запрещено, кроме экстренных случаев или когда стоит весь поток (пробка).",
-    "uk": "У тунелі зупинятися заборонено, крім екстрених випадків або коли стоїть увесь потік (затор).",
+    "f": "Det er forbudt å stanse i tunnel, bortsett fra i nødsituasjoner eller når trafikken står stille. Ved skiltet Parkering forbudt kan du stanse kort.",
+    "ru": "В тоннеле останавливаться запрещено, кроме экстренных случаев или когда стоит весь поток (пробка). У знака «Стоянка запрещена» можно ненадолго остановиться.",
+    "uk": "У тунелі зупинятися заборонено, крім екстрених випадків або коли стоїть увесь потік (затор). Біля знака «Стоянку заборонено» можна ненадовго зупинитися.",
     "theory": "parkering/her-er-det-forbudt-a-stanse"
   },
   {
@@ -164,8 +164,8 @@
     "img": null,
     "a": [
       "Fordi andre trafikanter kan komme brått på bilen og ikke rekke å stoppe",
-      "Fordi bilen kan skade veibanen",
-      "Det er bare forbudt om natten"
+      "Fordi det er forbudt å stanse på alle veier utenfor tettbygd strøk",
+      "Det er bare forbudt når det er mørkt, fordi andre da ser bilen dårlig"
     ],
     "f": "I en uoversiktlig kurve ser ikke andre bilen din før de er nær. Da kan det skje en påkjøring.",
     "ru": "В плохо просматриваемом повороте другие водители увидят вашу машину слишком поздно — возможен наезд.",
@@ -212,9 +212,9 @@
     "img": null,
     "a": [
       "Nei, tillatelsen er personlig, og hun må selv være med i bilen",
-      "Ja, hvis tillatelsen ligger synlig i bilen",
-      "Ja, fordi tillatelsen gjelder for bilen",
-      "Ja, men bare i 30 minutter"
+      "Ja, hvis tillatelsen ligger godt synlig i frontruta",
+      "Ja, fordi tillatelsen følger bilen og ikke personen",
+      "Ja, men bare en kort stund, for eksempel i 30 minutter"
     ],
     "f": "Parkeringstillatelsen er personlig, og andre må ikke bruke den. Har noen tillatelse som passasjer, må de selv være med i bilen når den parkeres.",
     "ru": "Разрешение на парковку для людей с ограниченной подвижностью — именное, другим пользоваться им нельзя. Если разрешение выдано как пассажиру, этот человек сам должен быть в машине, когда её паркуют.",
@@ -264,8 +264,8 @@
     },
     "a": [
       "Mandag til fredag kl. 8–18 må du bruke parkeringsskive, og du kan stå i maks 30 minutter",
-      "Du kan stå i maks 30 minutter hele døgnet, alle dager",
-      "Mandag til lørdag kl. 8–18 må du betale i automaten"
+      "Du kan stå i maks 30 minutter hele døgnet alle dager, og du må bruke parkeringsskive",
+      "Mandag til lørdag kl. 8–18 må du betale i automaten, og du kan stå i maks 30 minutter"
     ],
     "f": "Tallene 08–18 er svarte uten parentes, så underskiltet gjelder mandag til fredag kl. 8–18. Symbolet med parkeringsskiven betyr at en parkeringsskive eller en gratisbillett fra automaten må ligge godt synlig i frontruta og vise når du parkerte. «Maks 30 min» betyr at du kan stå i høyst 30 minutter. Utenfor denne tiden gjelder ikke disse kravene.",
     "ru": "Цифры 08–18 чёрные, без скобок, поэтому табличка действует с понедельника по пятницу с 8 до 18. Значок с парковочным диском означает, что за лобовым стеклом должен лежать на виду диск или бесплатный билет из автомата со временем, когда вы встали. «Maks 30 min» — стоять можно не больше 30 минут. В другое время эти требования не действуют.",

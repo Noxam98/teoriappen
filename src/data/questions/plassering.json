@@ -6,7 +6,7 @@
     "img": null,
     "a": [
       "Så langt til høyre som det er hensiktsmessig",
-      "Midt i veien",
+      "Midt i veien når det ikke kommer møtende trafikk",
       "Nær midtlinjen, så du ser bedre framover",
       "Helt ute ved veikanten hele tiden"
     ],
@@ -22,13 +22,13 @@
     "img": null,
     "a": [
       "Nær midten av veien, i ditt eget kjørefelt",
-      "Så langt til høyre som mulig",
-      "Over i det møtende kjørefeltet",
-      "Midt i krysset før du blinker"
+      "Så langt til høyre som mulig, så du får en bredere sving",
+      "Litt over midtlinjen, så bilene bak får mer plass",
+      "Så nær venstre kant av veien som mulig"
     ],
-    "f": "Før venstresving på vei med toveistrafikk skal du plassere deg nær midten av veien. Da kan trafikk bak deg passere på høyre side.",
-    "ru": "Перед левым поворотом на дороге с двусторонним движением займите положение ближе к середине дороги (в своей полосе) — тогда сзади вас можно объехать справа.",
-    "uk": "Перед поворотом ліворуч на дорозі з двостороннім рухом займіть положення ближче до середини дороги (у своїй смузі) — тоді позаду вас можна об'їхати праворуч.",
+    "f": "Før venstresving på vei med toveistrafikk skal du plassere deg nær midten av veien. Da kan trafikk bak deg passere på høyre side. Så nær venstre kant som mulig plasserer du deg bare i gate med envegskjøring.",
+    "ru": "Перед левым поворотом на дороге с двусторонним движением займите положение ближе к середине дороги (в своей полосе) — тогда сзади вас можно объехать справа. Как можно ближе к левому краю становятся только на улице с односторонним движением.",
+    "uk": "Перед поворотом ліворуч на дорозі з двостороннім рухом займіть положення ближче до середини дороги (у своїй смузі) — тоді позаду вас можна об'їхати праворуч. Якомога ближче до лівого краю стають лише на вулиці з одностороннім рухом.",
     "theory": "plassering/plassering-for-du-svinger"
   },
   {
@@ -53,8 +53,8 @@
     "img": null,
     "a": [
       "For å sjekke blindsonen, som du ikke ser i speilene",
-      "For å se om det står skilt bak deg",
-      "Det trengs bare når det er mørkt",
+      "Det trengs bare hvis bilen ikke har blindsonevarsler",
+      "Det trengs bare på motorvei, der det går fort",
       "For å vise andre at du skal skifte felt"
     ],
     "f": "Speilene viser ikke alt. I blindsonen kan det være en bil, en motorsykkel eller en syklist. Se derfor over skulderen før du skifter felt.",
@@ -70,12 +70,12 @@
     "a": [
       "Du har vikeplikt for trafikken i feltet du skal over i",
       "Trafikken i det andre feltet må slippe deg inn når du blinker",
-      "Den som kjører fortest",
-      "Den største bilen"
+      "Den som ligger lengst fram, fordi den kom først",
+      "Ingen, dere skal tilpasse farten etter glidelåsprinsippet"
     ],
-    "f": "Den som skifter kjørefelt, har vikeplikt for trafikken i det nye feltet.",
-    "ru": "Тот, кто перестраивается, обязан уступить транспорту, который движется в соседней полосе.",
-    "uk": "Той, хто перестроюється, зобов'язаний поступитися дорогою транспорту, який рухається в сусідній смузі.",
+    "f": "Den som skifter kjørefelt, har vikeplikt for trafikken i det nye feltet. Glidelåsprinsippet gjelder bare når to felt blir til ett.",
+    "ru": "Тот, кто перестраивается, обязан уступить транспорту, который движется в соседней полосе. Принцип «молнии» действует, только когда две полосы сливаются в одну.",
+    "uk": "Той, хто перестроюється, зобов'язаний поступитися дорогою транспорту, який рухається в сусідній смузі. Принцип «блискавки» діє лише тоді, коли дві смуги зливаються в одну.",
     "theory": "plassering/skifte-felt"
   },
   {
@@ -87,7 +87,7 @@
       "I god tid før du svinger eller skifter felt",
       "Samtidig som du begynner å svinge",
       "Bare når du skal kjøre forbi",
-      "Etter at du har skiftet felt"
+      "Når du står i krysset og ser at veien er fri"
     ],
     "f": "Blink i god tid, slik at andre trafikanter forstår hva du skal gjøre før du gjør det.",
     "ru": "Включайте поворотник заблаговременно, чтобы другие участники движения поняли ваш манёвр до того, как вы его начнёте.",
@@ -101,7 +101,7 @@
     "img": null,
     "a": [
       "Blinklyset gir deg ingen rett, du må vente til det er ledig",
-      "De andre i feltet må slippe deg inn",
+      "De andre i feltet må slippe deg inn når du har blinket",
       "Du kan skifte felt når du har blinket i 3 sekunder"
     ],
     "f": "Blinklys er bare et tegn om hva du skal gjøre. Det gir ingen rettigheter, og du har fortsatt vikeplikt.",
@@ -149,7 +149,7 @@
     "img": null,
     "a": [
       "Blinker til høyre, skifter til høyre felt når det er ledig, og viker for trafikken der",
-      "Kjører rett ut fra venstre felt",
+      "Blinker til høyre og kjører rett ut fra venstre felt, fordi trafikken i høyre felt må vike",
       "Stanser i rundkjøringen til høyre felt er tomt"
     ],
     "f": "Avkjøringen har bare ett felt, så du må over i høyre felt før du kjører ut. Når du skifter felt, har du vikeplikt for trafikken i høyre felt.",
@@ -164,8 +164,8 @@
     "img": null,
     "a": [
       "Øke farten til omtrent samme fart som trafikken på motorveien og kjøre inn når det er ledig",
-      "Stoppe i enden av akselerasjonsfeltet og vente på en stor luke",
-      "Kjøre sakte inn, så de andre må bremse for deg"
+      "Stoppe i enden av akselerasjonsfeltet og vente til det kommer en stor luke i trafikken",
+      "Kjøre inn med en gang, fordi trafikken på motorveien har vikeplikt for deg"
     ],
     "f": "Bruk akselerasjonsfeltet til å komme opp i fart. Du skal tilpasse farten til trafikken på motorveien og kjøre inn i en ledig luke. De som allerede kjører på motorveien, skal gjøre det lettere for deg å komme inn.",
     "ru": "Используйте полосу разгона, чтобы набрать скорость потока. Подстройте скорость под поток на магистрали и встраивайтесь в свободный промежуток. Те, кто уже едет по магистрали, должны облегчить вам въезд.",
@@ -179,7 +179,7 @@
     "img": null,
     "a": [
       "I retardasjonsfeltet, etter at du har kjørt ut av motorveien",
-      "I venstre felt på motorveien",
+      "På motorveien, så du kommer inn i retardasjonsfeltet i lav fart",
       "I høyre felt på motorveien, før du blinker"
     ],
     "f": "Blink i god tid, kjør inn i retardasjonsfeltet og senk farten der. Da hindrer du ikke trafikken på motorveien.",
@@ -195,8 +195,8 @@
     "a": [
       "Etter glidelåsprinsippet: én bil fra hvert felt annenhver gang",
       "Bilene i feltet som fortsetter, skal aldri slippe noen inn",
-      "Den største bilen kjører først",
-      "De som blinker, kjører først"
+      "Bilene i feltet som slutter, skal skifte felt så tidlig som mulig",
+      "De som blinker først, kjører først inn i feltet som fortsetter"
     ],
     "f": "Når antallet kjørefelt blir mindre, skal alle tilpasse farten, slik at bilene kan kjøre vekselvis. Kjør fram til der feltene møtes, og flett inn én og én.",
     "ru": "Когда полос становится меньше, все подстраивают скорость, чтобы машины проезжали поочерёдно. Доезжайте до места сужения и встраивайтесь по одной машине.",
@@ -212,8 +212,8 @@
     },
     "a": [
       "Nei, kollektivfeltet er for buss, drosje og andre som skiltet tillater",
-      "Ja, når det er kø",
-      "Ja, hvis du kjører under 30 km/t"
+      "Ja, når det er kø og nesten ingen kjører i kollektivfeltet",
+      "Ja, hvis du kjører forsiktig og ikke hindrer noen av bussene i feltet"
     ],
     "f": "Kollektivfeltet er for kollektivtrafikk og kjøretøy som skiltet tillater. En bensinbil må ikke bruke det for å komme forbi køen.",
     "ru": "Полоса для общественного транспорта предназначена для автобусов, такси и тех, кому это разрешают знаки. Бензиновой машине нельзя объезжать по ней пробку.",
@@ -244,8 +244,8 @@
     "img": null,
     "a": [
       "Du må forsikre deg om at det ikke er noen bak bilen, og rygge sakte og bare et kort stykke",
-      "Med ryggekamera trenger du ikke å se deg om",
-      "Andre trafikanter har vikeplikt for deg når du rygger"
+      "Med ryggekamera trenger du ikke å snu deg og se bakover",
+      "Andre trafikanter har vikeplikt for deg når du har begynt å rygge ut fra en parkeringsplass"
     ],
     "f": "Du er ansvarlig for at ryggingen skjer uten fare. Se deg godt om, rygg sakte og bare så langt som nødvendig.",
     "ru": "Вы отвечаете за безопасность движения задним ходом: внимательно осмотритесь, двигайтесь медленно и только на необходимое расстояние.",
@@ -294,8 +294,8 @@
     "a": [
       "Du skal ha lyset på, holde god avstand og ikke stanse, rygge eller vende",
       "Du kan slå av lyset hvis tunnelen er godt opplyst",
-      "Du kan rygge ut igjen hvis du har kjørt feil",
-      "Det er lov å stanse kort for å ta bilder"
+      "Du kan rygge ut igjen hvis du har kjørt feil og ingen er bak deg",
+      "Du kan stanse kort ved kanten hvis du har nødsignalet på"
     ],
     "f": "I tunnel skal du ha lyset på og holde god avstand. Det er forbudt å stanse (utenom nødsituasjoner), rygge og vende.",
     "ru": "В тоннеле фары должны быть включены, нужно держать дистанцию. Останавливаться (кроме экстренных случаев), двигаться задним ходом и разворачиваться запрещено.",
@@ -311,8 +311,8 @@
     },
     "a": [
       "Høyre felt, venstre felt brukes når du kjører forbi",
-      "Venstre felt, fordi det går raskest",
-      "Det feltet som har minst trafikk"
+      "Venstre felt, fordi trafikken der går raskest og mest jevnt",
+      "Det feltet som har minst trafikk, så du kommer raskest fram"
     ],
     "f": "Utenfor tettbygd strøk skal du normalt kjøre i høyre felt og bare bruke venstre felt når du kjører forbi.",
     "ru": "Вне населённых пунктов обычно едут по правой полосе, а левую используют только для обгона.",
@@ -342,7 +342,7 @@
     "a": [
       "Du bør ikke bli liggende lenge ved siden av den, fordi du kan være i blindsonen til sjåføren",
       "Du kan godt ligge ved siden av den, fordi sjåføren alltid ser deg i speilene",
-      "Du bør heller legge deg tett bak lastebilen, så sjåføren ser deg bedre"
+      "Du bør heller legge deg tett bak lastebilen, fordi sjåføren da ser deg bedre i speilene"
     ],
     "f": "Store kjøretøy har store blindsoner, også ved siden av og bak. Unngå blindsonene til lastebiler og busser: kjør forbi, eller legg deg et stykke bak.",
     "ru": "У больших машин большие слепые зоны — в том числе сбоку и сзади. Не задерживайтесь в слепых зонах грузовиков и автобусов: обгоните или держитесь на расстоянии позади.",
@@ -357,8 +357,8 @@
     "a": [
       "Da forstår andre trafikanter hva du skal gjøre, og de kan tilpasse seg",
       "Da har andre trafikanter vikeplikt for deg i kryss",
-      "Da trenger du ikke å blinke når du svinger",
-      "Da kan du kjøre litt fortere enn fartsgrensen"
+      "Da kan du skifte felt uten å se over skulderen",
+      "Da trenger du ikke øyekontakt med gående og syklister før du svinger"
     ],
     "f": "Godt samspill gjør trafikken tryggere. Plasser bilen riktig og blink i god tid, så andre forstår hva du skal gjøre.",
     "ru": "Хорошее взаимодействие делает движение безопаснее. Занимайте правильное положение на дороге и заранее включайте поворотник, чтобы другие понимали ваши намерения.",
@@ -372,7 +372,7 @@
     "img": null,
     "a": [
       "Når det trengs, for eksempel for å varsle en annen trafikant om fare",
-      "Når bilen foran ikke kjører med en gang lyset blir grønt",
+      "Når bilen foran ikke kjører med en gang lyset i krysset blir grønt",
       "Når du vil vise at en annen bilist har gjort en feil",
       "Når du vil hilse på noen du kjenner"
     ],

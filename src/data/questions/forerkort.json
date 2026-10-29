@@ -102,7 +102,7 @@
     "a": [
       "Ta ny teoriprøve og ny praktisk prøve",
       "Bare vente til tapsperioden er over",
-      "Betale en bot"
+      "Ta ny praktisk prøve, men ikke ny teoriprøve"
     ],
     "f": "Mister du førerretten i prøvetiden, må du ta både teoriprøven og den praktiske prøven på nytt.",
     "ru": "Если лишиться прав в испытательный срок, придётся заново сдать и теоретический, и практический экзамен.",
@@ -132,9 +132,9 @@
     "img": null,
     "a": [
       "Ledsageren må ha fylt 25 år og ha hatt førerkort klasse B sammenhengende de siste 5 årene",
-      "Ledsageren må ha fylt 18 år og ha førerkort",
-      "Ledsageren må være trafikklærer",
-      "Ledsageren må ha fylt 21 år og ha hatt førerkort i 2 år"
+      "Ledsageren må ha fylt 18 år og ha hatt førerkort klasse B i minst ett år",
+      "Ledsageren må ha fylt 20 år og ha hatt førerkort klasse B i minst 2 år",
+      "Ledsageren må ha fylt 21 år og ha hatt førerkort klasse B sammenhengende de siste 3 årene"
     ],
     "f": "Ledsageren må være minst 25 år og ha hatt førerkort i samme klasse sammenhengende i de siste 5 årene.",
     "ru": "Сопровождающему должно быть не меньше 25 лет, и он должен иметь права той же категории непрерывно последние 5 лет.",
@@ -195,8 +195,8 @@
     "img": null,
     "a": [
       "Ja, enten det fysiske førerkortet eller det digitale førerkortet i appen",
-      "Nei, det holder at førerkortet ligger hjemme",
-      "Bare når du kjører i utlandet"
+      "Ja, men bare det fysiske kortet, fordi appen ikke gjelder som førerkort",
+      "Nei, du trenger bare å ha det med når du kjører i utlandet"
     ],
     "f": "Du skal ha med førerkortet når du kjører. I Norge kan du bruke det digitale førerkortet i appen. I utlandet må du ha med det fysiske kortet.",
     "ru": "Во время езды права должны быть при вас. В Норвегии можно пользоваться цифровыми правами в приложении. За границей нужна пластиковая карточка.",
@@ -210,8 +210,8 @@
     "img": null,
     "a": [
       "Du må alltid bruke briller eller linser når du kjører",
-      "Du må bare bruke dem når det er mørkt",
-      "Du må bare bruke dem på motorvei"
+      "Du må bare bruke dem når det er mørkt eller dårlig sikt",
+      "Du må bare bruke dem når du skal kjøre lange turer"
     ],
     "f": "Er det krav om synskorreksjon i førerkortet, må du alltid bruke briller eller linser når du kjører.",
     "ru": "Если в правах указано требование коррекции зрения, при вождении всегда нужно быть в очках или линзах.",
@@ -289,7 +289,7 @@
     "img": null,
     "a": [
       "Bot og tap av førerretten",
-      "Bare en bot",
+      "Bot og prikker, men ikke tap av førerretten",
       "Bare 2 prikker",
       "Bare en muntlig advarsel"
     ],

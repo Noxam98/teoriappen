@@ -21,7 +21,7 @@
     "img": null,
     "a": [
       "Det gir unødvendig forurensning og drivstofforbruk",
-      "Det sliter mye på dekkene",
+      "Det er alltid forbudt, også langt fra byer og bebyggelse",
       "Motoren trenger å gå lenge på tomgang for å bli varm"
     ],
     "f": "Tomgang gir utslipp uten at du kommer noen vei. Motoren blir raskere varm når du kjører rolig.",
@@ -36,8 +36,8 @@
     "img": null,
     "a": [
       "Forbruket øker fordi luftmotstanden blir større",
-      "Forbruket blir lavere",
-      "Det har ingen betydning"
+      "Forbruket øker bare når det ligger mye tungt i den",
+      "Det har ingen betydning, fordi en tom takboks er lett"
     ],
     "f": "Takboks og takstativ øker luftmotstanden. Ta dem av når du ikke trenger dem.",
     "ru": "Багажник на крыше увеличивает сопротивление воздуха. Снимайте его, когда он не нужен.",
@@ -51,8 +51,8 @@
     "img": null,
     "a": [
       "Mindre slitasje på motoren og mindre forbruk og utslipp ved kaldstart",
-      "Bilen får bedre veigrep på is",
-      "Du trenger ikke vinterdekk"
+      "Du kan la motoren gå på tomgang uten at den gir utslipp",
+      "Du kan kjøre med høyt turtall med en gang uten at forbruket øker"
     ],
     "f": "En kald motor bruker mer drivstoff og slipper ut mer. Motorvarmer reduserer slitasje og utslipp ved start.",
     "ru": "Холодный двигатель расходует больше топлива и даёт больше выбросов. Подогреватель двигателя уменьшает износ и выбросы при запуске.",
@@ -67,7 +67,7 @@
     "a": [
       "Fordi piggdekk sliter asfalten og lager svevestøv som er skadelig å puste inn",
       "Fordi piggdekk gir dårligere veigrep på is",
-      "Fordi piggdekk gjør at bilen bruker mer strøm"
+      "Fordi piggdekk er forbudt i byene, og du får bot hver gang du kjører med dem"
     ],
     "f": "Piggene river opp asfalten. Det gir svevestøv som er skadelig for helsen, særlig i byene.",
     "ru": "Шипы разрушают асфальт. Образуется мелкая пыль, вредная для здоровья, особенно в городах.",
@@ -82,7 +82,7 @@
     "a": [
       "Slipper gassen tidlig og lar bilen rulle i gir",
       "Gasser helt fram til krysset og bremser hardt",
-      "Setter giret i fri og gasser litt"
+      "Setter giret i fri tidlig og lar bilen rulle mot lyset"
     ],
     "f": "Når du slipper gassen i gir, bruker de fleste moderne biler nesten ikke drivstoff. Tidlig motorbrems sparer både drivstoff og bremser.",
     "ru": "Когда вы отпускаете газ на включённой передаче, большинство современных машин почти не расходует топливо. Раннее торможение двигателем экономит и топливо, и тормоза.",
@@ -111,8 +111,8 @@
     "img": null,
     "a": [
       "Planlegge turene, samkjøre og gå eller sykle på korte turer",
-      "Kjøre mange korte turer med kald motor",
-      "Ha mye unødvendig last i bilen"
+      "La motoren gå på tomgang til den er varm før du kjører",
+      "Ta flere korte turer i stedet for én lang tur med mange ærend"
     ],
     "f": "Korte turer med kald motor gir mye utslipp per kilometer. Planlegging og samkjøring gir færre turer.",
     "ru": "Короткие поездки на холодном двигателе дают много выбросов на километр. Планирование и совместные поездки уменьшают число поездок.",
@@ -142,9 +142,9 @@
     "img": null,
     "a": [
       "Nei, i boligområder er tomgang som gir unødig støy eller eksos forbudt",
-      "Ja, så lenge bilen står lovlig parkert",
-      "Ja, tomgang er bare forbudt i sentrum av store byer",
-      "Ja, hvis du ikke venter mer enn en time"
+      "Ja, så lenge bilen står lovlig parkert og du sitter i den",
+      "Ja, tomgang er bare forbudt i sentrum av store byer, som Oslo og Bergen",
+      "Ja, hvis det er kaldt ute og du vil at bilen skal være varm"
     ],
     "f": "I eller ved bebyggelse er det forbudt å bruke motoren på tomgang når det gir unødig støy eller unødig utslipp av røyk eller gass. Slå av motoren mens du venter.",
     "ru": "В населённых пунктах и рядом с жильём запрещено оставлять двигатель на холостом ходу, если это создаёт лишний шум или лишние выбросы дыма или газа. Выключите двигатель, пока ждёте.",
@@ -174,7 +174,7 @@
     "a": [
       "I en vaskehall, som samler opp mye av olje og vaskemidler",
       "På asfalten i gata, så vannet renner rett i sluket",
-      "Ved en bekk, så du har nok vann til å skylle bilen"
+      "Hjemme, så lenge du bruker lite vann og vaskemidler"
     ],
     "f": "Vaskevann fra gater og innkjørsler renner ofte urenset ut i elver, innsjøer og fjorder. En vaskehall samler opp mye av olje og vaskemidler.",
     "ru": "Вода после мойки на улицах и у домов часто без очистки стекает в реки, озёра и фьорды. Автомойка задерживает большую часть масла и моющих средств.",

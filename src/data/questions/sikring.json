@@ -7,7 +7,7 @@
     "a": [
       "Alle som sitter i bilen, både foran og bak",
       "Bare føreren og passasjeren i forsetet",
-      "Bare voksne passasjerer",
+      "Bare føreren og voksne passasjerer",
       "Alle, unntatt på korte turer i byen"
     ],
     "f": "Alle i bilen skal bruke bilbelte eller annet godkjent sikringsutstyr, også i baksetet og på korte turer.",
@@ -52,8 +52,8 @@
     "img": null,
     "a": [
       "Barnet skal bruke godkjent sikringsutstyr som passer til vekt og høyde",
-      "Barnet kan bruke vanlig bilbelte uten annet utstyr",
-      "Barnet skal alltid sitte i forsetet"
+      "Barnet kan bruke vanlig bilbelte, så lenge det sitter i baksetet",
+      "Barnet trenger sikringsutstyr bare hvis det finnes i bilen"
     ],
     "f": "Barn som er lavere enn 135 cm, skal alltid bruke godkjent sikringsutstyr som passer til barnets vekt og høyde.",
     "ru": "Дети ростом ниже 135 см должны всегда использовать одобренное детское удерживающее устройство, подходящее по весу и росту.",
@@ -82,8 +82,8 @@
     "img": null,
     "a": [
       "Det beskytter hodet og nakken best ved en kollisjon forfra",
-      "Barnet blir mindre bilsykt",
-      "Det er lettere å feste barnesetet"
+      "Barnet blir mindre bilsykt når det ikke ser veien framover",
+      "Det er lettere å feste barnesetet riktig i bilen"
     ],
     "f": "Små barn har stort hode og svak nakke. Bakovervendt sete fordeler kreftene over ryggen og beskytter best ved frontkollisjon.",
     "ru": "У маленьких детей большая голова и слабая шея. Кресло против хода движения распределяет нагрузку на спину и лучше всего защищает при лобовом столкновении.",
@@ -112,8 +112,8 @@
     "img": null,
     "a": [
       "Ved en kollisjon kan de bli kastet framover med stor kraft og skade noen",
-      "De gjør bilen tyngre å styre",
-      "Det er bare viktig for gjenstander som veier over 50 kg"
+      "De kan bli kastet framover, men bare ved kollisjon i over 80 km/t",
+      "Det er bare viktig for tunge gjenstander som veier over 50 kg"
     ],
     "f": "Ved en kollisjon blir løse gjenstander kastet framover med en kraft som er mange ganger større enn vekten deres.",
     "ru": "При столкновении незакреплённые предметы летят вперёд с силой, во много раз превышающей их вес.",
@@ -127,8 +127,8 @@
     "img": null,
     "a": [
       "Lasten skal være sikret slik at den ikke kan falle av eller flytte seg",
-      "Lasten trenger bare å sikres når du kjører på motorvei",
-      "Det er nok at lasten ligger stille når bilen står parkert"
+      "Lasten trenger bare å sikres når du kjører på motorvei eller i høy fart",
+      "Det er nok at lasten er tung, så ligger den stille av seg selv"
     ],
     "f": "Lasten skal alltid være sikret, slik at den ikke kan falle av, flytte seg eller være til fare under kjøring.",
     "ru": "Груз всегда должен быть закреплён так, чтобы он не мог упасть, сместиться или создать опасность во время движения.",
@@ -142,8 +142,8 @@
     "img": null,
     "a": [
       "Bilen kan bli mindre stabil i svinger, så du bør tilpasse farten",
-      "Bilen får kortere bremselengde",
-      "Bilen bruker mindre drivstoff"
+      "Bilen blir mer stabil, fordi vekten holder den nede mot veien",
+      "Det har ingen betydning når lasten ligger i en lukket takboks"
     ],
     "f": "Tung last på taket gir høyere tyngdepunkt. Bilen blir mindre stabil, særlig i svinger og ved sidevind.",
     "ru": "Тяжёлый груз на крыше поднимает центр тяжести. Машина становится менее устойчивой, особенно в поворотах и при боковом ветре.",
@@ -172,12 +172,12 @@
     "img": null,
     "a": [
       "Bilens og tilhengerens tillatte totalvekt kan til sammen ikke være mer enn 3500 kg",
-      "Det er aldri lov med klasse B",
-      "Det er lov uten grenser hvis bilen er godkjent for det"
+      "Det er bare lov hvis tilhengeren med lasten veier under 750 kg akkurat nå",
+      "Det er lov uten grenser for vekt, så lenge bilen er godkjent for tilhengeren"
     ],
-    "f": "Med klasse B kan tilhengeren veie mer enn 750 kg hvis tillatt totalvekt for bil og tilhenger til sammen ikke er over 3500 kg.",
-    "ru": "С категорией B прицеп может быть тяжелее 750 кг, если суммарная разрешённая масса машины и прицепа не превышает 3500 кг.",
-    "uk": "З категорією B причіп може бути важчим за 750 кг, якщо сумарна дозволена маса машини й причепа не перевищує 3500 кг.",
+    "f": "Med klasse B kan tilhengeren veie mer enn 750 kg hvis tillatt totalvekt for bil og tilhenger til sammen ikke er over 3500 kg. Det er tillatt totalvekt som teller, ikke hvor mye tilhengeren veier akkurat nå.",
+    "ru": "С категорией B прицеп может быть тяжелее 750 кг, если суммарная разрешённая масса машины и прицепа не превышает 3500 кг. Считается разрешённая максимальная масса, а не то, сколько прицеп весит прямо сейчас.",
+    "uk": "З категорією B причіп може бути важчим за 750 кг, якщо сумарна дозволена маса машини й причепа не перевищує 3500 кг. Враховується дозволена максимальна маса, а не те, скільки причіп важить саме зараз.",
     "theory": "sikring/tilhenger"
   },
   {
@@ -187,8 +187,8 @@
     "img": null,
     "a": [
       "At tilhengeren er riktig koblet, at lysene virker og at lasten er sikret",
-      "Bare at dekkene på tilhengeren har nok luft",
-      "Ingenting, så lenge tilhengeren er ny"
+      "Bare at dekkene på tilhengeren har nok luft og ikke er slitte",
+      "At koblingen er i orden, men lysene trenger du bare å sjekke i mørket"
     ],
     "f": "Før kjøring skal du sjekke koblingen, lysene, dekkene og at lasten er sikret og riktig plassert.",
     "ru": "Перед поездкой проверьте сцепку, фонари, шины и то, что груз закреплён и правильно размещён.",
@@ -217,8 +217,8 @@
     "img": null,
     "a": [
       "Overkanten bør være omtrent i høyde med toppen av hodet, og nær hodet",
-      "Så lavt som mulig",
-      "I høyde med skuldrene"
+      "Så lavt som mulig, så du ser godt bakover gjennom bakruten",
+      "Overkanten bør være omtrent i høyde med skuldrene, så den er nær nakken"
     ],
     "f": "En riktig innstilt nakkestøtte beskytter mot nakkeskader ved påkjøring bakfra. Den bør stå høyt og nær hodet.",
     "ru": "Правильно отрегулированный подголовник защищает шею при ударе сзади. Его следует поднять высоко и придвинуть близко к голове.",

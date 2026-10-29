@@ -21,8 +21,8 @@
     "img": null,
     "a": [
       "Senke farten og være klar til å stoppe, fordi barn kan gjøre uventede ting",
-      "Tute for å varsle barna og holde farten",
-      "Kjøre raskt forbi, så du er nær barna i kort tid"
+      "Tute for å varsle barna og holde farten, så du ikke stopper trafikken",
+      "Kjøre raskt forbi, så du er nær barna i så kort tid som mulig"
     ],
     "f": "Barn er små, vanskelige å se og kan gjøre uventede ting. Senk farten og vær klar til å stoppe.",
     "ru": "Дети маленькие, их трудно заметить, и они могут повести себя неожиданно. Снизьте скорость и будьте готовы остановиться.",
@@ -83,8 +83,8 @@
     "img": null,
     "a": [
       "Personen er blind eller svaksynt, og du må ta ekstra hensyn",
-      "Personen hjelper til med å styre trafikken",
-      "Personen vil at bilene skal kjøre forbi først"
+      "Personen er eldre og trenger en stokk for å kunne gå",
+      "Personen hører dårlig og kan ikke høre at bilene kommer"
     ],
     "f": "Hvit stokk betyr at personen er blind eller ser dårlig. Vær ekstra forsiktig og gi personen god tid.",
     "ru": "Белая трость означает, что человек слепой или плохо видит. Будьте особенно внимательны и дайте ему достаточно времени.",
@@ -98,8 +98,8 @@
     "img": null,
     "a": [
       "Hold god sideavstand, gjerne minst 1,5 meter, og kjør forbi bare når det er trygt",
-      "Du kan kjøre tett forbi hvis syklisten holder seg helt til høyre",
-      "Tut før du kjører forbi, så syklisten flytter seg"
+      "Du kan kjøre tett forbi hvis syklisten holder seg helt til høyre i kjørebanen",
+      "Tut før du kjører forbi, så syklisten vet at du kommer og flytter seg"
     ],
     "f": "Syklister kan vingle, for eksempel på grunn av hull i veien eller vind. Hold god sideavstand. Statens vegvesen anbefaler minst 1,5 meter.",
     "ru": "Велосипедист может вильнуть, например из-за ямы или ветра. Держите большой боковой интервал. Дорожное управление (Statens vegvesen) рекомендует не меньше 1,5 метра.",
@@ -113,8 +113,8 @@
     "img": null,
     "a": [
       "De er smale, og det er vanskelig å bedømme fart og avstand",
-      "De kjører alltid uten lys",
-      "De har ikke lov til å kjøre forbi biler"
+      "De har ikke lys på om dagen, så de er vanskelige å se",
+      "De har ikke blinklys, så du ser ikke hvor de skal svinge"
     ],
     "f": "Motorsykler er smale og blir lett skjult. Det er også vanskelig å bedømme hvor fort de kommer.",
     "ru": "Мотоциклы узкие, их легко не заметить. Также трудно оценить, с какой скоростью они приближаются.",
@@ -145,8 +145,8 @@
     },
     "a": [
       "Senke farten og følge godt med langs veikantene",
-      "Slå på tåkebaklyset",
-      "Kjøre fortere for å komme raskt gjennom området"
+      "Holde farten, fordi elgen bare er ute om natten",
+      "Tute når du ser en elg, så den løper bort fra veien"
     ],
     "f": "Elg er ofte i bevegelse i skumringen og om natten. Senk farten og følg med langs veikantene.",
     "ru": "Лоси особенно активны в сумерках и ночью. Снизьте скорость и внимательно следите за обочинами.",
@@ -175,8 +175,8 @@
     "img": null,
     "a": [
       "Senke farten og være klar til å stoppe",
-      "Tute for å skremme dem bort",
-      "Kjøre forbi i vanlig fart"
+      "Tute for å skremme dem bort fra veien",
+      "Holde farten, fordi sauer ikke går ut i veien"
     ],
     "f": "Dyr kan plutselig gå ut i veien. Senk farten og kjør forsiktig forbi.",
     "ru": "Животные могут внезапно выйти на дорогу. Снизьте скорость и проезжайте мимо осторожно.",
@@ -190,8 +190,8 @@
     "img": null,
     "a": [
       "Kjør sakte og hold god avstand, så hesten ikke blir skremt",
-      "Tut, så rytteren vet at du kommer",
-      "Kjør raskt forbi, så det går fort over"
+      "Tut i god tid, så rytteren og hesten vet at du kommer",
+      "Kjør raskt forbi med god avstand, så det går fort over"
     ],
     "f": "Hester kan bli redde for lyd og biler som kommer nær. Kjør sakte forbi med god avstand og ikke bruk tuten.",
     "ru": "Лошадь может испугаться шума и близко проезжающих машин. Проезжайте медленно, с большим интервалом и не сигнальте.",
@@ -205,8 +205,8 @@
     "img": null,
     "a": [
       "I kjørebanen, i sykkelfeltet og på sykkelveien, og på fortauet når det ikke er til hinder for gående",
-      "Bare på fortauet og på gang- og sykkelveien, aldri i kjørebanen",
-      "Bare i kjørebanen, aldri på fortauet eller i sykkelfeltet"
+      "Bare på fortauet og på gang- og sykkelveien, aldri i kjørebanen og aldri i sykkelfeltet",
+      "Bare i kjørebanen og i sykkelfeltet, men aldri på fortauet, selv om det er helt tomt for gående"
     ],
     "f": "En elsparkesykkel følger stort sett de samme reglene som en sykkel. Den kan kjøre i kjørebanen og i sykkelfeltet, og på fortauet når det ikke er til hinder for gående.",
     "ru": "Для электросамоката в основном действуют те же правила, что и для велосипеда. На нём можно ехать по проезжей части и по велополосе, а по тротуару — если это не мешает пешеходам.",
@@ -221,7 +221,7 @@
     "a": [
       "Senke farten og være klar til å stoppe, fordi elsparkesykkelen kan komme brått ut i veien",
       "Holde farten, fordi elsparkesykler alltid stopper før de kjører ut i veien",
-      "Kjøre fortere, så du er forbi gangfeltet før elsparkesykkelen kommer fram"
+      "Holde farten, fordi den som kjører elsparkesykkel over gangfeltet, alltid har vikeplikt"
     ],
     "f": "Elsparkesykler er nesten lydløse, kan kjøre ganske fort og er mindre synlige enn en bil. De kan komme brått ut fra fortauet. Senk farten og vær klar til å stoppe.",
     "ru": "Электросамокаты почти бесшумные, могут ехать довольно быстро и менее заметны, чем машина. Они могут внезапно выехать с тротуара. Снизьте скорость и будьте готовы остановиться.",
@@ -237,8 +237,8 @@
     },
     "a": [
       "Personen regnes ikke som gående og har vikeplikt, men du må likevel være klar til å bremse",
-      "Du har vikeplikt, fordi alle som er i et gangfelt, regnes som gående",
-      "Personen har forkjørsrett, fordi elsparkesykkelen er i gangfeltet før deg"
+      "Du har vikeplikt, fordi alle som er i et gangfelt, regnes som gående og skal slippe over",
+      "Personen har forkjørsrett, fordi elsparkesykkelen kom ut i gangfeltet før du kom fram"
     ],
     "f": "Den som kjører sykkel eller elsparkesykkel over gangfeltet, regnes ikke som gående og har vikeplikt. Går personen av og triller, har du vikeplikt. Uansett skal du være aktpågivende og bremse hvis det trengs.",
     "ru": "Тот, кто пересекает пешеходный переход верхом на велосипеде или электросамокате, не считается пешеходом и сам обязан уступить. Если человек слезет и поведёт самокат рядом, уступить обязаны вы. В любом случае вы должны быть внимательны и тормозить, если нужно.",
@@ -252,8 +252,8 @@
     "img": null,
     "a": [
       "Syklisten kan være i blindsonen, så sjåføren ser kanskje ikke syklisten",
-      "Det er ikke farlig, fordi sjåføren sitter høyt og ser alt rundt lastebilen",
-      "Det er ikke farlig, fordi sjåføren alltid ser syklister i speilene"
+      "Det er bare farlig i mørket, fordi sjåføren da ikke ser syklisten i speilene",
+      "Syklisten ser ikke blinklyset, selv om sjåføren ser syklisten i speilene"
     ],
     "f": "Store kjøretøy, som lastebiler og busser, har store blindsoner. En syklist rett ved siden av en lastebil som svinger til høyre, kan være i blindsonen. Kan du ikke se sjåføren, er det ikke sikkert at sjåføren ser deg.",
     "ru": "У больших машин — грузовиков и автобусов — большие слепые зоны. Велосипедист рядом с грузовиком, который поворачивает направо, может оказаться в слепой зоне. Если вы не видите водителя, возможно, и он не видит вас.",

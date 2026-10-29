@@ -6,8 +6,8 @@
     "img": null,
     "a": [
       "Nei, forbikjøring er forbudt ved bakketopp der sikten er dårlig",
-      "Ja, hvis du blinker og kjører raskt forbi",
-      "Ja, hvis bilen foran kjører under fartsgrensen"
+      "Ja, hvis det ikke er sperrelinje eller skilt som forbyr det",
+      "Ja, hvis bilen foran kjører mye saktere enn fartsgrensen"
     ],
     "f": "Forbikjøring er forbudt ved bakketopper og i kurver der sikten er for dårlig til at du kan se at veien er fri.",
     "ru": "Обгон запрещён перед вершиной подъёма и на поворотах, где не видно, свободна ли встречная полоса.",
@@ -24,7 +24,7 @@
     "a": [
       "Venter med å kjøre forbi til du har god sikt og nok plass",
       "Kjører forbi før kurven, så du er ferdig før den begynner",
-      "Kjører forbi i kurven hvis du tuter først"
+      "Kjører forbi, fordi det går fort å kjøre forbi en traktor"
     ],
     "f": "I og like før en uoversiktlig kurve er forbikjøring forbudt. Vent til du ser at veien er fri langt nok framover.",
     "ru": "Обгон запрещён в плохо просматриваемом повороте и непосредственно перед ним. Дождитесь участка, где видно, что дорога свободна.",
@@ -38,8 +38,8 @@
     "img": null,
     "a": [
       "Nei, du må ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet",
-      "Ja, hvis du ikke ser noen gående",
-      "Ja, men bare i tettbygd strøk"
+      "Ja, hvis du ikke ser noen gående ved gangfeltet",
+      "Ja, hvis du kjører sakte og er klar til å stanse for gående i gangfeltet"
     ],
     "f": "Når du nærmer deg et gangfelt, må du ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet. Bilen du vil kjøre forbi, kan skjule en gående.",
     "ru": "Подъезжая к пешеходному переходу, нельзя обгонять транспорт, который закрывает обзор перехода: обгоняемая машина может закрывать пешехода.",
@@ -53,8 +53,8 @@
     "img": null,
     "a": [
       "Stanse, fordi det kan være en gående i gangfeltet som du ikke ser",
-      "Kjøre forbi forsiktig, siden ditt felt er ledig",
-      "Tute for å varsle den gående og kjøre videre"
+      "Kjøre forsiktig forbi, siden ditt eget felt er ledig",
+      "Kjøre videre, fordi det bare er bilen i det andre feltet som må stanse"
     ],
     "f": "Du må ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet. Når et kjøretøy har stanset foran et gangfelt, er det ofte for å slippe en gående over. Den gående kan være skjult, så du må stanse.",
     "ru": "Нельзя проезжать мимо транспорта, который закрывает обзор перехода. Если соседняя машина остановилась перед переходом, скорее всего, она пропускает пешехода, которого вам может быть не видно. Нужно остановиться.",
@@ -68,8 +68,8 @@
     "img": null,
     "a": [
       "Nei, forbikjøring er forbudt like før og i et slikt kryss",
-      "Ja, hvis det ikke er biler i krysset",
-      "Ja, hvis du holder fartsgrensen"
+      "Ja, hvis du ser at det ikke kommer biler inn i krysset",
+      "Ja, hvis bilen foran ikke skal svinge i krysset"
     ],
     "f": "Forbikjøring er som hovedregel forbudt like før og i veikryss. I et kryss med høyreregel kan det komme trafikk fra høyre som du må vike for.",
     "ru": "Обгон, как правило, запрещён непосредственно перед перекрёстком и на нём. На перекрёстке с правилом правой руки справа может появиться транспорт, которому вы обязаны уступить.",
@@ -85,8 +85,8 @@
     },
     "a": [
       "Vente med å kjøre forbi til du er over sporet, og følge godt med på om det kommer tog",
-      "Kjøre forbi før overgangen, så du kommer raskt over sporet",
-      "Holde vanlig fart, fordi toget må vike for deg"
+      "Kjøre forbi før overgangen, så du ikke blir stående bak bilen når du er på sporet",
+      "Kjøre forbi som vanlig, fordi du bare må vente ved en jernbaneovergang med bom"
     ],
     "f": "Ved en jernbaneovergang må du følge med på om det kommer tog. Vent med å kjøre forbi til du er over sporet, så du har full oversikt og kan stanse for tog.",
     "ru": "У железнодорожного переезда нужно следить, не идёт ли поезд. Подождите с обгоном, пока не проедете пути: так вы хорошо видите ситуацию и можете остановиться перед поездом.",
@@ -100,8 +100,8 @@
     "img": null,
     "a": [
       "Når kjøretøyet foran har gitt tegn og plassert seg for å svinge til venstre",
-      "Når kjøretøyet foran kjører sakte",
-      "Når det er god plass på veiskulderen",
+      "Når kjøretøyet foran kjører sakte i venstre felt og ikke slipper deg forbi",
+      "Når det er god plass på veiskulderen til høyre for kjøretøyet",
       "Aldri"
     ],
     "f": "Som hovedregel skal du kjøre forbi på venstre side. Et kjøretøy som har gitt tegn og plassert seg for å svinge til venstre, skal du kjøre forbi på høyre side. På vei med flere felt i samme retning er det også lov når det er kø i alle feltene.",
@@ -163,8 +163,8 @@
     "img": null,
     "a": [
       "At du har god sikt og nok plass, og at ingen bak deg har begynt å kjøre forbi deg",
-      "At bilen foran kjører under fartsgrensen",
-      "At du har blinket i minst fem sekunder"
+      "At bilen foran kjører saktere enn fartsgrensen, så forbikjøringen blir lovlig",
+      "At du har blinket i minst fem sekunder, så alle har sett deg"
     ],
     "f": "Før forbikjøring må du være sikker på at veien er fri langt nok framover, at det er plass til å kjøre inn igjen, og at ingen bak deg allerede kjører forbi.",
     "ru": "Перед обгоном убедитесь, что встречная полоса свободна на достаточном расстоянии, есть место, чтобы вернуться в свою полосу, и что вас самих сзади никто уже не обгоняет.",
@@ -178,8 +178,8 @@
     "img": null,
     "a": [
       "Så du har tid til å reagere, og så andre som kjører forbi, får plass til å kjøre inn igjen",
-      "For å hindre andre i å kjøre forbi",
-      "Det er bare nødvendig når det er mørkt"
+      "Det er bare nødvendig når du selv skal kjøre forbi bilene foran deg",
+      "Det er bare nødvendig når det er mørkt eller glatt, ellers kan du godt ligge tett bak"
     ],
     "f": "God avstand gir deg tid til å reagere. Den gir også plass til biler som kjører forbi kolonnen og må inn igjen.",
     "ru": "Достаточная дистанция даёт время на реакцию и оставляет место обгоняющим машинам, которым нужно вернуться в свою полосу.",
@@ -194,7 +194,7 @@
     "a": [
       "Forbikjøringen tar lang tid og lang strekning, så du trenger mye fri vei framover",
       "Vogntoget har plikt til å bremse for deg",
-      "Du bør ligge tett bak vogntoget før du kjører ut"
+      "Du bør ligge tett bak vogntoget før du kjører ut, så forbikjøringen går fortere"
     ],
     "f": "Et langt vogntog tar lang tid å kjøre forbi. Hold god avstand før du kjører ut, så du ser framover, og kjør bare forbi når du har god sikt.",
     "ru": "Длинную фуру обгонять долго. Держитесь на расстоянии, чтобы видеть дорогу впереди, и обгоняйте только при хорошей видимости и свободной встречной полосе.",
@@ -211,7 +211,7 @@
     "a": [
       "Kjøre inn på møteplassen og slippe den møtende forbi",
       "Fortsette, den møtende må rygge",
-      "Stanse midt i veien og vente"
+      "Vente der du er til den møtende har kjørt inn på en møteplass"
     ],
     "f": "Møteplasser er laget for at biler skal kunne passere hverandre på smal vei. Den som er nærmest møteplassen, bør bruke den.",
     "ru": "Разъездные карманы (møteplass) сделаны для разъезда на узкой дороге. Воспользоваться им следует тому, кто к нему ближе.",
@@ -243,7 +243,7 @@
     "a": [
       "Du, fordi hindringen er på din side av veien",
       "Den møtende, fordi du kom først til hindringen",
-      "Den som har den største bilen"
+      "Den møtende, fordi den ser hindringen og kan bremse i god tid"
     ],
     "f": "Har du en hindring i ditt eget kjørefelt, må du vike for møtende trafikk før du kjører ut forbi hindringen.",
     "ru": "Если препятствие находится в вашей полосе, вы уступаете встречным, прежде чем объехать его.",
@@ -257,7 +257,7 @@
     "img": null,
     "a": [
       "Vike for lastebilen, fordi det er vanskelig for den å starte igjen i bakken",
-      "Fortsette, lastebilen må rygge ned",
+      "Fortsette, fordi den som kjører nedover, har forkjørsrett i en bratt bakke",
       "Stanse og blinke med lysene til lastebilen viker"
     ],
     "f": "Et tungt kjøretøy i oppoverbakke kan ha vanskelig for å komme i gang igjen. Den som kjører nedover, bør derfor vike når det er mulig.",

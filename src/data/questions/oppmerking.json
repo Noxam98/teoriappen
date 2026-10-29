@@ -27,8 +27,8 @@
     "a": [
       "At sikten framover er for kort til vanlig forbikjøring",
       "At veien snart blir envegskjørt",
-      "At det er forbudt å kjøre over linjen",
-      "At du nærmer deg en parkeringsplass"
+      "At det er forbudt å kjøre over linjen på denne strekningen",
+      "At du kan kjøre forbi uten å tenke på sikten"
     ],
     "f": "En varsellinje har lange streker og korte mellomrom. Den betyr at sikten framover er for kort til vanlig forbikjøring. Vær forsiktig med forbikjøring.",
     "ru": "Varsellinje — длинные штрихи с короткими промежутками. Она означает, что видимость впереди слишком мала для обычного обгона. С обгоном — осторожно.",
@@ -46,7 +46,7 @@
       "Ja, når det er trygt, for eksempel for å kjøre forbi",
       "Nei, aldri",
       "Bare for å kjøre inn på en parkeringsplass",
-      "Bare om natten når det er lite trafikk"
+      "Bare når du skal svinge, ikke for å kjøre forbi"
     ],
     "f": "Dette er en kjørefeltlinje: korte streker og lange mellomrom. Her skiller den kjøreretningene, og du kan kjøre over den når det er trygt.",
     "ru": "Это kjørefeltlinje — короткие штрихи с длинными промежутками. Здесь она разделяет встречные потоки; пересекать её можно, когда это безопасно.",
@@ -62,9 +62,9 @@
     },
     "a": [
       "Nei, det er linjen nærmest deg som gjelder, og den er en sperrelinje",
-      "Ja, fordi den andre linjen er en varsellinje",
+      "Ja, fordi den andre linjen er en varsellinje, og den kan du kjøre over",
       "Ja, hvis bilen foran kjører under fartsgrensen",
-      "Ja, men bare utenfor tettbygd strøk"
+      "Ja, hvis du kan se at det ikke kommer møtende"
     ],
     "f": "Når en sperrelinje og en varsellinje går ved siden av hverandre, gjelder linjen nærmest deg. Her er det sperrelinjen, så du må ikke kjøre over.",
     "ru": "Если сплошная и прерывистая идут рядом, действует линия, ближайшая к вам. Здесь ближе сплошная — пересекать нельзя.",
@@ -80,13 +80,13 @@
     },
     "a": [
       "Du kan kjøre over linjene når det er trygt, fordi linjen nærmest deg er en varsellinje",
-      "Du må ikke kjøre over, fordi det er en sperrelinje der",
-      "Du må stanse ved linjene",
+      "Du må ikke kjøre over, fordi det er en sperrelinje der, og den gjelder for alle",
+      "Du må ikke kjøre forbi, fordi varsellinjen forbyr forbikjøring",
       "Ingen av kjøreretningene kan kjøre over"
     ],
-    "f": "Linjen nærmest deg gjelder. Når den er en varsellinje, kan du kjøre over når det er trygt. Trafikk fra den andre retningen har sperrelinjen nærmest seg og må ikke kjøre over.",
-    "ru": "Действует линия, ближайшая к вам. Если это прерывистая (varsellinje), пересекать можно, когда безопасно. Встречным ближе сплошная — им нельзя.",
-    "uk": "Діє лінія, найближча до вас. Якщо це переривчаста (varsellinje), перетинати можна, коли безпечно. Зустрічним ближче суцільна — їм не можна.",
+    "f": "Linjen nærmest deg gjelder. Når den er en varsellinje, kan du kjøre over når det er trygt. Trafikk fra den andre retningen har sperrelinjen nærmest seg og må ikke kjøre over. Varsellinjen forbyr ikke forbikjøring, men den varsler om kort sikt.",
+    "ru": "Действует линия, ближайшая к вам. Если это прерывистая (varsellinje), пересекать можно, когда безопасно. Встречным ближе сплошная — им нельзя. Сама varsellinje не запрещает обгон: она лишь предупреждает, что впереди плохой обзор.",
+    "uk": "Діє лінія, найближча до вас. Якщо це переривчаста (varsellinje), перетинати можна, коли безпечно. Зустрічним ближче суцільна — їм не можна. Сама varsellinje не забороняє обгін: вона лише попереджає, що попереду поганий огляд.",
     "theory": "oppmerking/to-linjer-ved-siden-av-hverandre"
   },
   {
@@ -100,7 +100,7 @@
       "Dobbel sperrelinje: ingen av kjøreretningene kan kjøre over",
       "Du kan kjøre over hvis du skal kjøre forbi en traktor",
       "Linjene viser at veien har to felt i din retning",
-      "Linjene gjelder bare for lastebiler"
+      "Du kan kjøre over når det er trygt, men de møtende kan ikke"
     ],
     "f": "Dobbel sperrelinje betyr at ingen kjørende, uansett retning, kan kjøre over linjene.",
     "ru": "Двойная сплошная (dobbel sperrelinje): пересекать нельзя никому, ни в одном направлении.",
@@ -116,9 +116,9 @@
     },
     "a": [
       "Det er en vikelinje: du har vikeplikt, og du skal stanse ved linjen hvis det er nødvendig",
-      "Det er en stopplinje: du må alltid stanse",
-      "Det er en fartshump",
-      "Det er et gangfelt"
+      "Det er en stopplinje: du skal alltid stanse helt ved linjen, også når veien er fri",
+      "Trekantene viser at trafikken på veien du kommer til, har vikeplikt for deg",
+      "Det er et gangfelt: du skal slippe de gående over"
     ],
     "f": "Trekantene kalles haitenner. Det er en vikelinje, og den viser hvor vikeplikten begynner. Du skal vike for trafikken på veien du kommer til, og stanse ved linjen om nødvendig.",
     "ru": "Белые треугольники («зубы акулы», haitenner) — это vikelinje, линия «Уступите дорогу». Она показывает, где начинается обязанность уступить. Уступайте транспорту на дороге, к которой подъезжаете; при необходимости остановитесь у линии.",
@@ -134,7 +134,7 @@
     },
     "a": [
       "Rett foran stopplinjen",
-      "Midt i krysset",
+      "Minst 5 meter før stopplinjen",
       "Der det passer, bare du stanser før krysset",
       "Du trenger ikke stanse hvis veien er fri"
     ],
@@ -190,7 +190,7 @@
       "Nei, ikke hvis skilt ikke tillater det",
       "Ja, når det er kø",
       "Ja, hvis du har passasjerer i bilen",
-      "Ja, hvis du kjører saktere enn bussene"
+      "Ja, hvis det ikke kommer noen buss bak deg"
     ],
     "f": "Kollektivfelt er først og fremst for buss. Vanlige personbiler kan ikke kjøre der hvis ikke skilt tillater det – heller ikke når det er kø.",
     "ru": "Полоса KOLLEKTIVFELT — прежде всего для автобусов. Обычным легковым машинам туда нельзя, если знак не разрешает, — даже в пробке.",
@@ -207,7 +207,7 @@
     "a": [
       "Nei, det er et sperreområde, og du må ikke kjøre på det",
       "Ja, når du skal kjøre forbi",
-      "Ja, hvis du skal parkere kort",
+      "Ja, du kan kjøre der, men du må ikke stanse på det",
       "Ja, det er et ekstra kjørefelt i rushtiden"
     ],
     "f": "Området med skrå streker er et sperreområde. Når det er avgrenset av en heltrukket linje, må du ikke kjøre eller stanse på det.",
@@ -224,9 +224,9 @@
     },
     "a": [
       "Ikke i gangfeltet og ikke nærmere enn 5 meter foran det",
-      "Helt inntil gangfeltet",
-      "Ikke nærmere enn 1 meter foran gangfeltet",
-      "Ikke nærmere enn 50 meter foran gangfeltet"
+      "Helt inntil gangfeltet, men ikke i selve gangfeltet",
+      "Ikke i gangfeltet og ikke nærmere enn 1 meter foran det",
+      "Ikke i gangfeltet og ikke nærmere enn 10 meter foran det"
     ],
     "f": "Det er forbudt å stanse i gangfelt og nærmere enn 5 meter foran gangfeltet. Da kan andre se de gående.",
     "ru": "Останавливаться запрещено на пешеходном переходе и ближе 5 метров перед ним — чтобы другие водители видели пешеходов.",
@@ -257,8 +257,8 @@
     "a": [
       "Hvit",
       "Gul",
-      "Blå",
-      "Rød"
+      "Gul hvis linjen er heltrukket",
+      "Gul utenfor tettbygd strøk"
     ],
     "f": "Linjer mellom felt med samme kjøreretning er hvite. Gule linjer brukes mellom motsatte kjøreretninger.",
     "ru": "Линии между полосами одного направления — белые. Жёлтые используют между встречными направлениями.",
@@ -272,7 +272,7 @@
     "img": null,
     "a": [
       "Feltet er for kjørende som skal svinge til venstre",
-      "Du må bytte til feltet til venstre",
+      "Du må bytte til feltet til venstre før krysset",
       "Det er forbudt å svinge til venstre",
       "Feltet er for møtende trafikk"
     ],
