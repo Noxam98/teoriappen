@@ -231,9 +231,9 @@
       "Mandag til fredag kl. 8–17 og søndag kl. 8–15",
       "Mandag til lørdag kl. 8–17 og søndag kl. 8–15"
     ],
-    "f": "Svarte tall gjelder hverdager unntatt lørdag. Svarte tall i parentes gjelder lørdag, og røde tall gjelder søndag og helligdager.",
-    "ru": "Чёрные цифры действуют в будни, кроме субботы. Чёрные цифры в скобках — в субботу, а красные — в воскресенье и праздничные дни.",
-    "uk": "Чорні цифри діють у будні дні, крім суботи. Чорні цифри в дужках — у суботу, а червоні — у неділю та святкові дні.",
+    "f": "Svarte tall uten parentes gjelder hverdager unntatt lørdag, altså mandag til fredag. Svarte tall i parentes gjelder lørdag. Søndager og helligdager vises med røde tall. Her er alle tallene svarte, så på søndag gjelder ikke forbudet.",
+    "ru": "Чёрные цифры без скобок — будни, кроме субботы, то есть с понедельника по пятницу. Чёрные цифры в скобках — суббота. Воскресенье и праздники обозначают красными цифрами. Здесь все цифры чёрные, поэтому в воскресенье запрет не действует.",
+    "uk": "Чорні цифри без дужок — будні дні, крім суботи, тобто з понеділка по п'ятницю. Чорні цифри в дужках — субота. Неділю та свята позначають червоними цифрами. Тут усі цифри чорні, тому в неділю заборона не діє.",
     "theory": "parkering/underskilt-med-tid-og-parkeringsskive"
   },
   {
