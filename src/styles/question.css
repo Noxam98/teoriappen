@@ -85,7 +85,9 @@
 @media (hover: hover) { .opt:not(.locked):hover { border-color: var(--ink-3); } }
 
 /* explanation */
-.explain { margin-top: 14px; border-radius: var(--r); background: var(--surface-2); padding: 14px 15px; display: grid; gap: 8px; animation: q-in .25s ease-out; }
+.explain { margin-top: 14px; border-radius: var(--r); background: var(--surface-2); padding: 14px 15px; display: grid; gap: 8px; animation: slide-in .25s ease-out; }
+/* slide only: the verdict text keeps full contrast while it appears */
+@keyframes slide-in { from { transform: translateY(8px); } }
 .explain.ok { background: var(--ok-soft); }
 .explain.bad { background: var(--bad-soft); }
 .explain .verdict { font-family: var(--display); font-weight: 700; font-size: 1.12rem; letter-spacing: .02em; }

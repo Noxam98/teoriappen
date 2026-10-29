@@ -81,11 +81,11 @@ export function HomeScreen() {
         </button>
       </div>
 
-      <div className="section-title">
-        <h2>Темы</h2>
-        <span className="muted small tnum">пройдено {seen} из {QUESTIONS.length}</span>
+      <div className="section-title stacked">
+        <h2 id="topics-title">Тренировка по темам</h2>
+        <p className="section-sub">Нажмите на тему — начнутся вопросы только по ней. <span className="tnum">Пройдено {seen} из {QUESTIONS.length}.</span></p>
       </div>
-      <div className="cats">
+      <div className="cats" role="group" aria-labelledby="topics-title">
         {CATEGORIES.map(c => {
           const qs = QUESTIONS.filter(q => q.cat === c.id);
           if (!qs.length) return null;
@@ -94,11 +94,14 @@ export function HomeScreen() {
           return (
             <button key={c.id} className="cat" onClick={() => go({ name: 'practice', mode: c.id })}>
               <span className="ic"><CategoryIcon id={c.id} /></span>
-              <span className="nm">{c.no}<small>{c.ru}</small></span>
-              <span className="ct tnum">{ok}<small>/{qs.length}</small></span>
-              <span className="meter" aria-hidden="true">
-                <i className="g" style={{ width: `${(ok / qs.length) * 100}%` }} />
-                <i className="r" style={{ width: `${(bad / qs.length) * 100}%` }} />
+              <span className="nm"><span className="sr-only">Тренировать тему: </span>{c.no}<small>{c.ru}</small></span>
+              <span className="go" aria-hidden="true"><Icon name="play" /></span>
+              <span className="cat-progress">
+                <span className="meter" aria-hidden="true">
+                  <i className="g" style={{ width: `${(ok / qs.length) * 100}%` }} />
+                  <i className="r" style={{ width: `${(bad / qs.length) * 100}%` }} />
+                </span>
+                <span className="ct tnum">{st.length ? <>верно <b>{ok}</b> из {qs.length}</> : <>{qs.length} {plural(qs.length, 'вопрос', 'вопроса', 'вопросов')}</>}</span>
               </span>
             </button>
           );

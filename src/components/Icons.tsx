@@ -14,6 +14,7 @@ const PATHS = {
   right: <path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" />,
   book: <><path d="M5 4.5 A1.5 1.5 0 0 1 6.5 3 H19 V18 H6.5 A1.5 1.5 0 0 0 5 19.5 Z M5 19.5 A1.5 1.5 0 0 0 6.5 21 H19 V18" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round" /><path d="M9 8 H15 M9 11 H13" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" /></>,
   textSize: <path d="M3 19 L8 6 L13 19 M5 15 H11 M14 19 L17.5 10 L21 19 M15.3 16 H19.7" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
+  play: <path d="M8.5 5.5 L18.5 12 L8.5 18.5 Z" fill="currentColor" stroke="currentColor" strokeWidth={1.6} strokeLinejoin="round" />,
   gear: (
     <>
       <circle cx={12} cy={12} r={3.2} fill="none" stroke="currentColor" strokeWidth={1.8} />
