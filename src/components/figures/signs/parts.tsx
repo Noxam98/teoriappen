@@ -27,6 +27,22 @@ export const Ring = ({ children, fill = '#fff' }: Kids & { fill?: string }) => (
   </>
 );
 
+/**
+ * The road on «Farlig sving» signs, after a photo of the real sign: a thick black line that ends in an arrow head.
+ * `end`: where the line meets the head; `angle`: the head's direction in degrees (0 = right, 90 = up).
+ */
+export const BendArrow = ({ d, end, angle }: { d: string; end: [number, number]; angle: number }) => {
+  const a = (angle * Math.PI) / 180, ux = Math.cos(a), uy = -Math.sin(a), nx = -uy, ny = ux;
+  const [x, y] = end, L = 10.5, W = 6.2;
+  const p = (px: number, py: number) => `${px.toFixed(2)},${py.toFixed(2)}`;
+  return (
+    <>
+      <path d={d} fill="none" stroke={COLOR.ink} strokeWidth={7.5} />
+      <polygon points={`${p(x + nx * W, y + ny * W)} ${p(x + ux * L, y + uy * L)} ${p(x - nx * W, y - ny * W)}`} fill={COLOR.ink} />
+    </>
+  );
+};
+
 /** Påbudsskilt: blue disc. */
 export const BlueDisc = ({ children }: Kids) => (
   <>

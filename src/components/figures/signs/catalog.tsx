@@ -1,7 +1,7 @@
 // Every road sign the questions can show, keyed as in the question JSON files ({"sign": "vikeplikt"}).
 import type { ReactElement } from 'react';
 import {
-  ArrowDown, ArrowUp, Bicycle, BlueDisc, BluePlate, CarRear, CarSide, COLOR, EndDisc, Locomotive, Moose, Person,
+  ArrowDown, ArrowUp, BendArrow, Bicycle, BlueDisc, BluePlate, CarRear, CarSide, COLOR, EndDisc, Locomotive, Moose, Person,
   Place, Ring, RoundArrows, Runner, SIGN_FONT, SignNumber, Stripes, Strike, Triangle,
 } from './parts';
 
@@ -30,10 +30,11 @@ const Diamond = () => (
 
 const SIGNS: Record<string, () => ReactElement> = {
   // ---- Fareskilt (warning) ----
-  fare_sving_h: () => <Triangle><path d="M44 76 V60 Q44 50 52 47 L60 44" fill="none" stroke={ink} strokeWidth={6.5} /></Triangle>,
-  fare_sving_v: () => <Triangle><path d="M56 76 V60 Q56 50 48 47 L40 44" fill="none" stroke={ink} strokeWidth={6.5} /></Triangle>,
-  // first a bend to the right, then one to the left, and the road goes on ahead (it does not curl back like a «?»)
-  fare_svinger: () => <Triangle><path d="M43 76 V69.5 C43 62 59 63 59 54.5 C59 46.5 47 47.5 47 40" fill="none" stroke={ink} strokeWidth={6.5} /></Triangle>,
+  // the bends end in an arrow head, as on the real signs (the line runs a little into the head, so no seam shows)
+  fare_sving_h: () => <Triangle><BendArrow d="M39.8 76 V58 C39.8 52 46.2 49 51.4 46" end={[50.5, 46.5]} angle={30} /></Triangle>,
+  fare_sving_v: () => <Triangle><BendArrow d="M60.2 76 V58 C60.2 52 53.8 49 48.6 46" end={[49.5, 46.5]} angle={150} /></Triangle>,
+  // first a bend to the right, then one to the left, and the road goes on ahead: the arrow points up
+  fare_svinger: () => <Triangle><BendArrow d="M42 76 V71 C42 64 57 65 57 57.5 C57 52 49.5 51 49.4 45" end={[49.5, 46]} angle={95} /></Triangle>,
   fare_bakke_ned: () => (
     <Triangle>
       <path d="M34 75 H69 L34 57 Z" fill={ink} />
