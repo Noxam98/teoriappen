@@ -57,6 +57,7 @@
     { "rule": "Eksempel: «8–17 (8–15)» med svarte tall under skiltet Parkering forbudt betyr at du ikke kan parkere kl. 8–17 mandag til fredag og kl. 8–15 lørdag.", "ru": "Пример: «8–17 (8–15)» чёрными цифрами под знаком «Стоянка запрещена» означает, что ставить машину нельзя с 8 до 17 с понедельника по пятницу и с 8 до 15 в субботу.", "uk": "Приклад: «8–17 (8–15)» чорними цифрами під знаком «Стоянку заборонено» означає, що ставити автомобіль не можна з 8 до 17 з понеділка по п'ятницю і з 8 до 15 у суботу." },
     { "trap": "Svarte tall uten parentes gjelder ikke på lørdag. På lørdag gjelder tallene i parentes.", "ru": "Чёрные цифры без скобок в субботу не действуют. В субботу действуют цифры в скобках.", "uk": "Чорні цифри без дужок у суботу не діють. У суботу діють цифри в дужках." },
     { "p": "Et underskilt som viser en parkeringsskive, betyr at du bare kan parkere når en parkeringsskive eller en billett fra automaten viser når bilen ble parkert.", "ru": "Табличка с изображением парковочного диска означает, что парковаться можно, только если диск или билет из автомата показывает, когда машину поставили.", "uk": "Табличка із зображенням паркувального диска означає, що паркуватися можна, тільки якщо диск або квиток з автомата показує, коли автомобіль поставили." },
+    { "fig": { "sign": "parkering", "under": [{ "text": "08–18" }, { "text": "Maks 30 min", "disc": true }] }, "no": "Mandag til fredag kl. 8–18 må en parkeringsskive vise når du parkerte, og du kan stå i maks 30 minutter. Flere regler kan stå på samme underskilt.", "ru": "С понедельника по пятницу с 8 до 18 парковочный диск должен показывать, когда вы встали, и стоять можно не больше 30 минут. Несколько правил могут быть на одной табличке.", "uk": "З понеділка по п'ятницю з 8 до 18 паркувальний диск має показувати, коли ви стали, і стояти можна не більше 30 хвилин. Кілька правил можуть бути на одній табличці." },
 
     { "h": "Plasser for forflytningshemmede", "ru": "Места для людей с ограниченной подвижностью", "uk": "Місця для людей з обмеженою рухливістю" },
     { "p": "En plass som er reservert for forflytningshemmede, er for den som har gyldig parkeringstillatelse for forflytningshemmede. Parkerer du der uten tillatelse, kan du få bot.", "ru": "Место, отведённое для людей с ограниченной подвижностью, предназначено для тех, у кого есть действующее разрешение на такую парковку. Если вы встанете там без разрешения, вас могут оштрафовать.", "uk": "Місце, відведене для людей з обмеженою рухливістю, призначене для тих, хто має чинний дозвіл на таке паркування. Якщо ви станете там без дозволу, вас можуть оштрафувати." },
@@ -72,7 +73,9 @@
     ["Skiltforskriften kap. 9 – underskilt, bl.a. 831 parkeringsskive (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219/KAPITTEL_10"],
     ["Skilting – underskilt 806 Tid (Statens vegvesen)", "https://www.vegvesen.no/fag/trafikk/parkering/skilting/"],
     ["Parkeringstillatelse for forflytningshemmede (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/vei-og-skilt/parkering/parkeringstillatelse-for-forflytningshemmede/"],
-    ["Trafikkskilt 806 Tid – underskilt (Store norske leksikon)", "https://snl.no/Tid_-_trafikkskilt"]
+    ["Trafikkskilt 806 Tid – underskilt (Store norske leksikon)", "https://snl.no/Tid_-_trafikkskilt"],
+    ["Trafikkskilt 831 Parkeringsskive/gratisbillett – underskilt (Store norske leksikon)", "https://snl.no/Parkeringsskive/gratisbillett_-_trafikkskilt"],
+    ["Trafikkskilt 834 Kombinert regulering – underskilt (Store norske leksikon)", "https://snl.no/Kombinert_regulering_-_trafikkskilt"]
   ],
   "checked": "2026-10"
 }

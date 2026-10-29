@@ -36,7 +36,12 @@ export interface Scene {
  * A line of an underskilt: a distance («150 m»), a text («Gjelder ikke buss») or a time («8–17»; black for weekdays,
  * in parentheses for Saturdays, `red` for Sundays and holidays).
  */
-export interface PlateLine { text: string; red?: boolean }
+export interface PlateLine {
+  text: string;
+  red?: boolean;
+  /** the parking-disc symbol on the left, the text beside it in two lines («Maks 30 min»), as on the plate «Kombinert regulering» */
+  disc?: boolean;
+}
 
 export type Figure =
   /** a sign; `under`: the underskilt below it, line by line */

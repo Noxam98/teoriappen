@@ -139,7 +139,8 @@
       { "no": "Symbol: hvem hovedskiltet gjelder for, for eksempel bare lastebiler eller busser.", "ru": "Символ: для кого действует основной знак, например только для грузовиков или автобусов.", "uk": "Символ: для кого діє основний знак, наприклад лише для вантажівок або автобусів." },
       { "no": "Tekst: når et symbol eller tall ikke passer, for eksempel «Gjelder ikke buss».", "ru": "Текст: когда символ или цифры не подходят, например «Gjelder ikke buss» — «не относится к автобусам».", "uk": "Текст: коли символ або цифри не підходять, наприклад «Gjelder ikke buss» — «не стосується автобусів»." },
       { "no": "Anbefalt fart: den høyeste farten som anbefales for faren på fareskiltet, når vær, føre, sikt og lys er normale.", "ru": "Рекомендуемая скорость: самая высокая скорость, которую советуют для опасности на предупреждающем знаке при обычной погоде, покрытии, видимости и освещении.", "uk": "Рекомендована швидкість: найвища швидкість, яку радять для небезпеки на попереджувальному знаку за звичайної погоди, покриття, видимості й освітлення." },
-      { "no": "Forvarsling av stopp: under skiltet Vikeplikt varsler det at det står et stoppskilt lenger fram.", "ru": "Предупреждение о «Стоп»: под знаком «Уступите дорогу» сообщает, что дальше стоит знак «Стоп».", "uk": "Попередження про «Стоп»: під знаком «Дати дорогу» повідомляє, що далі стоїть знак «Стоп»." }
+      { "no": "Forvarsling av stopp: under skiltet Vikeplikt varsler det at det står et stoppskilt lenger fram.", "ru": "Предупреждение о «Стоп»: под знаком «Уступите дорогу» сообщает, что дальше стоит знак «Стоп».", "uk": "Попередження про «Стоп»: під знаком «Дати дорогу» повідомляє, що далі стоїть знак «Стоп»." },
+      { "no": "Kombinert regulering: flere regler på samme underskilt, for eksempel tid, parkeringsskive og hvor lenge du kan parkere.", "ru": "Комбинированная табличка: несколько правил на одной табличке, например время, парковочный диск и сколько можно стоять.", "uk": "Комбінована табличка: кілька правил на одній табличці, наприклад час, паркувальний диск і скільки можна стояти." }
     ] },
     { "signs": [
       { "sign": "fare_sving_h", "under": [{ "text": "150 m" }], "no": "Farlig sving til høyre: svingen kommer om 150 meter", "ru": "Опасный поворот направо: поворот будет через 150 метров", "uk": "Небезпечний поворот праворуч: поворот буде через 150 метрів" },
@@ -162,7 +163,8 @@
     ["Trafikkskilt 807 Symbol – underskilt (Store norske leksikon)", "https://snl.no/Symbol_-_trafikkskilt"],
     ["Trafikkskilt 808 Tekst – underskilt (Store norske leksikon)", "https://snl.no/Tekst_-_trafikkskilt"],
     ["Trafikkskilt 812 Anbefalt fart – underskilt (Store norske leksikon)", "https://snl.no/Anbefalt_fart_-_trafikkskilt"],
-    ["Trafikkskilt 824 Forvarsling av stopp – underskilt (Store norske leksikon)", "https://snl.no/Forvarsling_av_stopp_-_trafikkskilt"]
+    ["Trafikkskilt 824 Forvarsling av stopp – underskilt (Store norske leksikon)", "https://snl.no/Forvarsling_av_stopp_-_trafikkskilt"],
+    ["Trafikkskilt 834 Kombinert regulering – underskilt (Store norske leksikon)", "https://snl.no/Kombinert_regulering_-_trafikkskilt"]
   ],
   "checked": "2026-10"
 }

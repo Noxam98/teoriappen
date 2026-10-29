@@ -156,8 +156,8 @@ for (const file of chapters) {
 function checkUnder(id, under) {
   if (under === undefined) return;
   if (!Array.isArray(under) || !under.length || under.length > 4
-    || under.some(l => typeof l?.text !== 'string' || !/^[\p{L}\d ().,:–-]{1,16}$/u.test(l.text) || (l.red !== undefined && l.red !== true)))
-    err(id, '"under": 1–4 lines of up to 16 characters, like { "text": "150 m" } or { "text": "10–14", "red": true }');
+    || under.some(l => typeof l?.text !== 'string' || !/^[\p{L}\d ().,:–-]{1,16}$/u.test(l.text) || (l.red !== undefined && l.red !== true) || (l.disc !== undefined && l.disc !== true)))
+    err(id, '"under": 1–4 lines of up to 16 characters, like { "text": "150 m" }, { "text": "10–14", "red": true } or { "text": "Maks 30 min", "disc": true }');
 }
 
 function checkFigure(id, img) {

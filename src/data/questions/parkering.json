@@ -249,16 +249,27 @@
   {
     "id": "par-18",
     "cat": "parkering",
-    "q": "Under skiltet Parkering står et underskilt som viser en parkeringsskive. Hva betyr det?",
-    "img": null,
+    "q": "Under skiltet Parkering står dette underskiltet. Hva betyr det?",
+    "img": {
+      "sign": "parkering",
+      "under": [
+        {
+          "text": "08–18"
+        },
+        {
+          "text": "Maks 30 min",
+          "disc": true
+        }
+      ]
+    },
     "a": [
-      "Du kan bare parkere når en parkeringsskive eller en billett viser når du parkerte",
-      "Parkeringen er gratis, og det er ingen tidsgrense",
-      "Bare biler med parkeringstillatelse for forflytningshemmede kan parkere her"
+      "Mandag til fredag kl. 8–18 må du bruke parkeringsskive, og du kan stå i maks 30 minutter",
+      "Du kan stå i maks 30 minutter hele døgnet, alle dager",
+      "Mandag til lørdag kl. 8–18 må du betale i automaten"
     ],
-    "f": "Underskiltet betyr at du bare kan parkere når en parkeringsskive eller en billett fra automaten viser når bilen ble parkert.",
-    "ru": "Табличка означает, что парковаться можно, только если парковочный диск или билет из автомата показывает, когда машину поставили.",
-    "uk": "Табличка означає, що паркуватися можна, тільки якщо паркувальний диск або квиток з автомата показує, коли автомобіль поставили.",
+    "f": "Tallene 08–18 er svarte uten parentes, så underskiltet gjelder mandag til fredag kl. 8–18. Symbolet med parkeringsskiven betyr at en parkeringsskive eller en gratisbillett fra automaten må ligge godt synlig i frontruta og vise når du parkerte. «Maks 30 min» betyr at du kan stå i høyst 30 minutter. Utenfor denne tiden gjelder ikke disse kravene.",
+    "ru": "Цифры 08–18 чёрные, без скобок, поэтому табличка действует с понедельника по пятницу с 8 до 18. Значок с парковочным диском означает, что за лобовым стеклом должен лежать на виду диск или бесплатный билет из автомата со временем, когда вы встали. «Maks 30 min» — стоять можно не больше 30 минут. В другое время эти требования не действуют.",
+    "uk": "Цифри 08–18 чорні, без дужок, тому табличка діє з понеділка по п'ятницю з 8 до 18. Значок із паркувальним диском означає, що за лобовим склом має лежати на видноті диск або безкоштовний квиток з автомата з часом, коли ви стали. «Maks 30 min» — стояти можна не більше 30 хвилин. В інший час ці вимоги не діють.",
     "theory": "parkering/underskilt-med-tid-og-parkeringsskive"
   }
 ]

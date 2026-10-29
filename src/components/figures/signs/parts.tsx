@@ -38,18 +38,46 @@ export const BlueDisc = ({ children }: Kids) => (
 
 /** Underskilt below a sign: a white plate with a black frame, one line of text each (times, a distance, a text). */
 export const PLATE = { gap: 6, line: 19, pad: 6 };
-export const plateHeight = (lines: number) => PLATE.pad * 2 + PLATE.line * lines;
-export const Plate = ({ lines, y }: { lines: { text: string; red?: boolean }[]; y: number }) => {
+type Line = { text: string; red?: boolean; disc?: boolean };
+/** A line with the parking-disc symbol takes two rows: the symbol on the left, its text beside it. */
+const rows = (l: Line) => (l.disc ? 2 : 1);
+export const plateHeight = (lines: Line[]) => PLATE.pad * 2 + PLATE.line * lines.reduce((n, l) => n + rows(l), 0);
+
+/** The parking disc (parkeringsskive): a dial with a pointer over a «P», white on a blue square. */
+const DiscSymbol = ({ x, y }: { x: number; y: number }) => (
+  <g transform={`translate(${x} ${y})`}>
+    <rect width={26} height={26} rx={1.5} fill={COLOR.blue} />
+    <path d="M5 13 A8 8 0 0 1 21 13 Z" fill="#fff" />
+    <path d="M13 4.5 L11 9.5 H15 Z" fill={COLOR.blue} />
+    <rect x={8.5} y={15.5} width={9} height={8} fill="none" stroke="#fff" strokeWidth={1.2} />
+    <text x={13} y={22.3} textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight={700} fontSize={7} fill="#fff">P</text>
+  </g>
+);
+
+export const Plate = ({ lines, y }: { lines: Line[]; y: number }) => {
   // the longest line sets one size for all: about half an em per letter of the condensed sign font, 74 units wide at most
-  const size = Math.min(17, 74 / (0.5 * Math.max(...lines.map(l => l.text.length))));
+  // (46 beside the parking disc, where the text goes in two lines)
+  const discText = (l: Line) => { const at = l.text.indexOf(' '); return at < 0 ? [l.text] : [l.text.slice(0, at), l.text.slice(at + 1)]; };
+  const fits = lines.map(l => (l.disc ? 46 / (0.5 * Math.max(...discText(l).map(t => t.length))) : 74 / (0.5 * l.text.length)));
+  const size = Math.min(17, ...fits);
+  let row = 0;
   return (
     <g transform={`translate(0 ${y})`}>
-      <rect x={8} y={0.75} width={84} height={plateHeight(lines.length) - 1.5} rx={4} fill="#fff" stroke={COLOR.ink} strokeWidth={1.5} />
+      <rect x={8} y={0.75} width={84} height={plateHeight(lines) - 1.5} rx={4} fill="#fff" stroke={COLOR.ink} strokeWidth={1.5} />
       <g data-area="under">
-        {lines.map((l, i) => (
-          <text key={i} x={50} y={PLATE.pad + PLATE.line * i + 9.5 + size * 0.35} textAnchor="middle" fontFamily={SIGN_FONT} fontWeight={700} fontSize={size}
-            fill={l.red ? COLOR.red : COLOR.ink}>{l.text}</text>
-        ))}
+        {lines.map((l, i) => {
+          const top = PLATE.pad + PLATE.line * row;
+          row += rows(l);
+          const base = (r: number) => top + PLATE.line * r + 9.5 + size * 0.35;
+          const fill = l.red ? COLOR.red : COLOR.ink;
+          if (!l.disc) return <text key={i} x={50} y={base(0)} textAnchor="middle" fontFamily={SIGN_FONT} fontWeight={700} fontSize={size} fill={fill}>{l.text}</text>;
+          return (
+            <g key={i}>
+              <DiscSymbol x={13} y={top + PLATE.line - 13} />
+              {discText(l).map((t, k) => <text key={k} x={66} y={base(k)} textAnchor="middle" fontFamily={SIGN_FONT} fontWeight={700} fontSize={size} fill={fill}>{t}</text>)}
+            </g>
+          );
+        })}
       </g>
     </g>
   );
