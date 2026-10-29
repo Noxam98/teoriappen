@@ -43,14 +43,17 @@ type Line = { text: string; red?: boolean; disc?: boolean };
 const rows = (l: Line) => (l.disc ? 2 : 1);
 export const plateHeight = (lines: Line[]) => PLATE.pad * 2 + PLATE.line * lines.reduce((n, l) => n + rows(l), 0);
 
-/** The parking disc (parkeringsskive): a dial with a pointer over a «P», white on a blue square. */
+/**
+ * The parking-disc symbol (parkeringsskive), measured from a photo of the real plate: a pointer over the dial
+ * (a white band of a ring) and a «P» in a thin frame, white on a blue plate a little taller than wide.
+ */
 const DiscSymbol = ({ x, y }: { x: number; y: number }) => (
   <g transform={`translate(${x} ${y})`}>
-    <rect width={26} height={26} rx={1.5} fill={COLOR.blue} />
-    <path d="M5 13 A8 8 0 0 1 21 13 Z" fill="#fff" />
-    <path d="M13 4.5 L11 9.5 H15 Z" fill={COLOR.blue} />
-    <rect x={8.5} y={15.5} width={9} height={8} fill="none" stroke="#fff" strokeWidth={1.2} />
-    <text x={13} y={22.3} textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight={700} fontSize={7} fill="#fff">P</text>
+    <rect width={26} height={31} fill={COLOR.blue} />
+    <path d="M10.65 2.25 H15.35 L13 9.4 Z" fill="#fff" />
+    <path d="M4.77 12.76 A10.75 10.75 0 0 0 21.23 12.76 L17.14 9.32 A5.4 5.4 0 0 1 8.86 9.32 Z" fill="#fff" />
+    <rect x={7.9} y={19.1} width={10.2} height={9.1} fill="none" stroke="#fff" strokeWidth={0.6} />
+    <text x={13.1} y={26.7} textAnchor="middle" fontFamily="Arial, sans-serif" fontSize={9} fill="#fff">P</text>
   </g>
 );
 
@@ -73,7 +76,7 @@ export const Plate = ({ lines, y }: { lines: Line[]; y: number }) => {
           if (!l.disc) return <text key={i} x={50} y={base(0)} textAnchor="middle" fontFamily={SIGN_FONT} fontWeight={700} fontSize={size} fill={fill}>{l.text}</text>;
           return (
             <g key={i}>
-              <DiscSymbol x={13} y={top + PLATE.line - 13} />
+              <DiscSymbol x={13} y={top + PLATE.line - 15.5} />
               {discText(l).map((t, k) => <text key={k} x={66} y={base(k)} textAnchor="middle" fontFamily={SIGN_FONT} fontWeight={700} fontSize={size} fill={fill}>{t}</text>)}
             </g>
           );
