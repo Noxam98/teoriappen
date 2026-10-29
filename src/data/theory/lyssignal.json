@@ -28,6 +28,18 @@
     { "h": "Politiet går foran alt", "ru": "Полицейский важнее всего" },
     { "p": "Tegn fra politiet går foran lyssignal, skilt og vanlige trafikkregler. Har du grønt lys, men politiet gir tegn til at du skal stanse, skal du stanse.", "ru": "Сигналы полицейского важнее светофора, знаков и общих правил. Если у вас зелёный, а полицейский показывает остановиться, — останавливайтесь." },
     { "rule": "Rekkefølgen er: 1) politiets tegn, 2) lyssignal, 3) skilt og veioppmerking, 4) vanlige trafikkregler, som høyreregelen.", "ru": "Порядок такой: 1) сигналы полицейского, 2) светофор, 3) знаки и разметка, 4) общие правила, например правило правой руки." },
+    { "p": "Det gjelder også omvendt: har du rødt lys, men politiet gir deg tegn til å kjøre, følger du tegnet.", "ru": "Это работает и в обратную сторону: если у вас красный, а полицейский показывает вам ехать, выполняйте его сигнал." },
+
+    { "h": "Tegn fra politiet", "ru": "Сигналы полицейского" },
+    { "p": "Politiet kan dirigere trafikken med armene. De kan også bruke en lykt med rødt lys. Tegnene betyr dette:", "ru": "Полицейский может регулировать движение руками, а также фонарём с красным светом. Сигналы означают следующее:" },
+    { "list": [
+      ["Armen løftet rett opp: alle skal stanse. Er du så nær at du ikke kan stanse uten fare, kan du kjøre videre. Er du i krysset, skal du kjøre ut av det.", "Рука поднята вверх: остановиться должны все. Если вы так близко, что не можете остановиться без опасности, можно ехать дальше. Если вы уже на перекрёстке, покиньте его."],
+      ["Armen strakt ut til siden: trafikk som kommer forfra eller bakfra, skal stanse. Trafikk som kommer fra siden, kan kjøre.", "Рука вытянута в сторону: те, кто приближается к полицейскому спереди или сзади, должны остановиться. Те, кто подъезжает сбоку, могут ехать."],
+      ["En lykt med rødt lys som svinges fram og tilbake: trafikk som kjører mot lyset, skal stanse.", "Фонарь с красным светом, которым машут из стороны в сторону: тот, кто движется в сторону этого света, должен остановиться."]
+    ] },
+    { "trap": "Armen ut til siden betyr ikke at du skal kjøre dit armen peker. Står politibetjenten med ansiktet eller ryggen mot deg, skal du stanse.", "ru": "Вытянутая в сторону рука не означает, что нужно ехать туда, куда она указывает. Если полицейский стоит к вам лицом или спиной, останавливайтесь." },
+    { "p": "Også anvisninger fra Statens vegvesen, tollvesenet og militærpolitiet går foran lyssignal, skilt og oppmerking. Krever politiet eller Statens vegvesen at du stanser for kontroll, skal du stanse med en gang.", "ru": "Указания Дорожного управления (Statens vegvesen), таможни и военной полиции тоже важнее светофора, знаков и разметки. Если полиция или Statens vegvesen требует остановиться для проверки, вы обязаны сразу остановиться." },
+    { "p": "Ved veiarbeid kan en person med en stoppspak dirigere trafikken. Følg anvisningene.", "ru": "При дорожных работах движением может управлять человек с ручным знаком на рукоятке (stoppspak). Выполняйте его указания." },
 
     { "h": "Andre lyssignaler", "ru": "Другие сигналы" },
     { "list": [
@@ -39,7 +51,10 @@
     ["Skiltforskriften kap. 12 § 24 – trafikklyssignaler (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219/KAPITTEL_13#%C2%A724"],
     ["Trafikkreglene § 3 – anvisninger fra politi, lyssignal, skilt og oppmerking (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747"],
     ["Trafikkreglene § 7 – vikeplikt ved svinging (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A77"],
-    ["Håndbok N303 Trafikksignalanlegg – betydningen av lysene (Statens vegvesen)", "https://www.vegvesen.no/globalassets/fag/handboker/hb-n303.pdf"]
+    ["Håndbok N303 Trafikksignalanlegg – betydningen av lysene (Statens vegvesen)", "https://www.vegvesen.no/globalassets/fag/handboker/hb-n303.pdf"],
+    ["Skiltforskriften § 25 – anvisning gitt av politiet (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219/KAPITTEL_13#%C2%A725"],
+    ["Vegtrafikkloven § 9 og § 10 – politiets anvisninger og plikt til å stanse for kontroll (Lovdata)", "https://lovdata.no/dokument/NL/lov/1965-06-18-4/KAPITTEL_2"],
+    ["Rundskriv om stoppspak ved manuell trafikkdirigering, 2015 (Statens vegvesen)", "https://www.vegvesen.no/globalassets/fag/publikasjoner/na-rundskriv/na-rundskriv-2015-12-endring-av-krav-til-synlighetstoy-og-stoppspak-i-handbok-n301-og-r310.pdf"]
   ],
   "checked": "2026-10"
 }

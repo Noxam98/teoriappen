@@ -10,7 +10,7 @@ export const EMPTY: AppData = {
   last: null,
   practice: null,
   read: {},
-  prefs: { reveal: 'instant', haptics: true, sound: true, volume: 1, size: 1, ru: false, theoryLang: 'both', seenBrushHint: false },
+  prefs: { reveal: 'instant', haptics: true, sound: true, volume: 1, size: 1, ru: false, theoryLang: 'both', lang: 'ru', seenBrushHint: false },
 };
 
 /** Progress lives in this browser only (localStorage); everything still works if storage is blocked. */
@@ -21,8 +21,9 @@ export function loadData(): AppData {
     const saved = JSON.parse(raw) as Partial<AppData>;
     const prefs = { ...EMPTY.prefs, ...saved.prefs };
     // earlier versions had only an on/off switch for the Russian under the theory text
-    const old = saved.prefs as { theoryRu?: boolean; theoryLang?: unknown } | undefined;
+    const old = saved.prefs as { theoryRu?: boolean; theoryLang?: string } | undefined;
     if (old?.theoryRu === false && !old.theoryLang) prefs.theoryLang = 'nb';
+    if (old?.theoryLang === 'ru') prefs.theoryLang = 'tr';
     return { ...EMPTY, ...saved, prefs };
   } catch {
     return EMPTY;

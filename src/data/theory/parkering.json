@@ -19,6 +19,7 @@
       ["I et veikryss og nærmere enn 5 meter fra krysset.", "На перекрёстке и ближе 5 метров от него."],
       ["I et gangfelt og nærmere enn 5 meter foran det.", "На пешеходном переходе и ближе 5 метров перед ним."],
       ["I sykkelfelt.", "На велополосе."],
+      ["Helt eller delvis på fortau, gangvei eller sykkelvei – heller ikke for å slippe av en passasjer.", "Полностью или частично на тротуаре, пешеходной или велосипедной дорожке — даже чтобы высадить пассажира."],
       ["I tunnel, unntatt i en nødsituasjon eller når trafikken står stille.", "В тоннеле — кроме экстренных случаев или когда стоит весь поток."],
       ["I en uoversiktlig kurve, på en bakketopp eller et annet sted med dårlig sikt.", "На плохо просматриваемом повороте, на вершине подъёма или в другом месте с плохой видимостью."],
       ["På motorvei og motortrafikkvei.", "На автомагистрали и на дороге для автомобилей."],
@@ -44,14 +45,33 @@
     { "p": "Du kan parkere på begge sider av veien, også mot kjøreretningen, hvis ikke skilt, oppmerking eller andre regler forbyr det. Det gjelder både i gate med toveistrafikk og i gate med envegskjøring.", "ru": "Ставить машину можно с обеих сторон дороги, в том числе против направления движения, если знаки, разметка или другие правила этого не запрещают. Это касается и улиц с двусторонним, и улиц с односторонним движением." },
     { "trap": "Skiltene for parkering gjelder som regel i kjøreretningen. Står bilen mot kjøreretningen, kan det være vanskelig å se hvilket skilt som gjelder der du står.", "ru": "Знаки стоянки, как правило, действуют по направлению движения. Если машина стоит против движения, бывает трудно понять, какой знак относится к месту, где вы стоите." },
     { "p": "I en bratt nedoverbakke bruker du parkeringsbremsen og setter bilen i gir eller P. Vri forhjulene inn mot fortauskanten, så bilen stopper mot den hvis den begynner å rulle.", "ru": "На крутом спуске затяните стояночный тормоз и включите передачу или P. Поверните передние колёса к бордюру — тогда машина упрётся в него, если покатится." },
-    { "rule": "Se i speilet og over skulderen før du åpner døren. En dør som åpnes brått, kan treffe en syklist.", "ru": "Прежде чем открыть дверь, посмотрите в зеркало и через плечо. Резко открытая дверь может сбить велосипедиста." }
+    { "rule": "Se i speilet og over skulderen før du åpner døren. En dør som åpnes brått, kan treffe en syklist.", "ru": "Прежде чем открыть дверь, посмотрите в зеркало и через плечо. Резко открытая дверь может сбить велосипедиста." },
+
+    { "h": "Underskilt med tid og parkeringsskive", "ru": "Таблички со временем и парковочным диском" },
+    { "p": "Et underskilt med klokkeslett viser når hovedskiltet gjelder. Fargen og parentesen viser hvilke dager:", "ru": "Табличка с часами показывает, когда действует основной знак. Цвет цифр и скобки показывают, в какие дни:" },
+    { "list": [
+      ["Svarte tall: hverdager unntatt lørdag, altså vanligvis mandag til fredag.", "Чёрные цифры: будни, кроме субботы, то есть обычно с понедельника по пятницу."],
+      ["Svarte tall i parentes: lørdag.", "Чёрные цифры в скобках: суббота."],
+      ["Røde tall: søndag og helligdager.", "Красные цифры: воскресенье и праздничные дни."]
+    ] },
+    { "rule": "Eksempel: «8–17 (8–15)» med svarte tall under skiltet Parkering forbudt betyr at du ikke kan parkere kl. 8–17 mandag til fredag og kl. 8–15 lørdag.", "ru": "Пример: «8–17 (8–15)» чёрными цифрами под знаком «Стоянка запрещена» означает, что ставить машину нельзя с 8 до 17 с понедельника по пятницу и с 8 до 15 в субботу." },
+    { "trap": "Svarte tall uten parentes gjelder ikke på lørdag. På lørdag gjelder tallene i parentes.", "ru": "Чёрные цифры без скобок в субботу не действуют. В субботу действуют цифры в скобках." },
+    { "p": "Et underskilt som viser en parkeringsskive, betyr at du bare kan parkere når en parkeringsskive eller en billett fra automaten viser når bilen ble parkert.", "ru": "Табличка с изображением парковочного диска означает, что парковаться можно, только если диск или билет из автомата показывает, когда машину поставили." },
+
+    { "h": "Plasser for forflytningshemmede", "ru": "Места для людей с ограниченной подвижностью" },
+    { "p": "En plass som er reservert for forflytningshemmede, er for den som har gyldig parkeringstillatelse for forflytningshemmede. Parkerer du der uten tillatelse, kan du få bot.", "ru": "Место, отведённое для людей с ограниченной подвижностью, предназначено для тех, у кого есть действующее разрешение на такую парковку. Если вы встанете там без разрешения, вас могут оштрафовать." },
+    { "rule": "Tillatelsen er personlig, og andre må ikke bruke den. Har noen tillatelse som passasjer, må de selv være med i bilen når den parkeres.", "ru": "Разрешение именное, другим пользоваться им нельзя. Если разрешение выдано как пассажиру, этот человек сам должен быть в машине, когда её паркуют." },
+    { "trap": "Tillatelsen gir ikke lov til å parkere ulovlig, for eksempel på fortau eller i et kryss.", "ru": "Разрешение не даёт права нарушать правила стоянки — например, ставить машину на тротуар или на перекрёсток." }
   ],
   "sources": [
     ["Trafikkreglene § 17 – stans og parkering (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A717"],
     ["Trafikkreglene § 1 – definisjoner (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A71"],
     ["Forbud mot å stanse (Statens vegvesen)", "https://vegvesen.no/trafikkinformasjon/langs-veien/parkering/forbud-mot-a-stanse"],
     ["Hvor gjelder parkeringsskiltet? (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/langs-veien/parkering/hvor-gjelder-parkeringsskiltet/"],
-    ["Skiltforskriften – skilt 370 og 372 (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219"]
+    ["Skiltforskriften – skilt 370 og 372 (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219"],
+    ["Skiltforskriften kap. 9 – underskilt, bl.a. 831 parkeringsskive (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219/KAPITTEL_10"],
+    ["Skilting – underskilt 806 Tid (Statens vegvesen)", "https://www.vegvesen.no/fag/trafikk/parkering/skilting/"],
+    ["Parkeringstillatelse for forflytningshemmede (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/vei-og-skilt/parkering/parkeringstillatelse-for-forflytningshemmede/"]
   ],
   "checked": "2026-10"
 }

@@ -1,3 +1,5 @@
+import { useT } from '../i18n';
+
 /** Circular progress (0–1) with a label in the middle. */
 export function ProgressRing({ value, size = 76, label, sub }: { value: number; size?: number; label: string; sub?: string }) {
   const r = 30, c = 2 * Math.PI * r;
@@ -17,6 +19,7 @@ export function ProgressRing({ value, size = 76, label, sub }: { value: number; 
  * (at most `maxErrors` wrong).
  */
 export function ScoreGauge({ right, total, maxErrors, pass }: { right: number; total: number; maxErrors?: number; pass?: boolean }) {
+  const t = useT();
   const R = 80, cx = 100, cy = 100;
   const arc = `M${cx - R} ${cy} A${R} ${R} 0 0 1 ${cx + R} ${cy}`;
   const share = total ? right / total : 0;
@@ -34,7 +37,7 @@ export function ScoreGauge({ right, total, maxErrors, pass }: { right: number; t
     );
   }
   return (
-    <svg className="gauge" viewBox="0 -8 200 122" role="img" aria-label={`${right} из ${total}`}>
+    <svg className="gauge" viewBox="0 -8 200 122" role="img" aria-label={t.gauge.of(right, total)}>
       <path d={arc} fill="none" stroke="var(--surface-3)" strokeWidth={16} strokeLinecap="round" />
       {right > 0 && (
         <path d={arc} fill="none" stroke={tone} strokeWidth={16} strokeLinecap="round" pathLength={100}
@@ -42,7 +45,7 @@ export function ScoreGauge({ right, total, maxErrors, pass }: { right: number; t
       )}
       {tick}
       <text x={cx} y={cy - 22} textAnchor="middle" className="gauge-value">{right}</text>
-      <text x={cx} y={cy + 2} textAnchor="middle" className="gauge-total">из {total}</text>
+      <text x={cx} y={cy + 2} textAnchor="middle" className="gauge-total">{t.gauge.total(total)}</text>
     </svg>
   );
 }

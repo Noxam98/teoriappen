@@ -21,6 +21,17 @@
     { "p": "Se i speilet, blink i god tid og se over skulderen før du skifter felt. Over skulderen ser du blindsonen. Der kan det være en bil, en motorsykkel eller en syklist som du ikke ser i speilene.", "ru": "Посмотрите в зеркало, заранее включите поворотник и посмотрите через плечо, прежде чем перестраиваться. Так вы проверите «слепую зону»: там может быть машина, мотоцикл или велосипедист, которых не видно в зеркалах." },
     { "rule": "Når du skifter felt, har du vikeplikt for trafikken i feltet du skal over i. Blinklyset gir deg ingen rett – det viser bare hva du vil gjøre.", "ru": "При перестроении вы уступаете транспорту в полосе, куда переходите. Поворотник не даёт вам никаких прав — он лишь показывает ваше намерение." },
     { "p": "Når to vanlige kjørefelt i samme retning blir til ett, har ingen vikeplikt. Alle skal tilpasse farten, slik at bilene kan kjøre vekselvis, én fra hvert felt (glidelåsprinsippet). I kø bør du kjøre helt fram til der feltene møtes.", "ru": "Когда две обычные полосы одного направления сливаются в одну, никто не обязан уступать. Все подстраивают скорость, чтобы машины проезжали поочерёдно, по одной из каждой полосы (принцип «молнии»). В пробке лучше доехать до самого места сужения." },
+    { "trap": "Mange tror at den som kjører i feltet som fortsetter, ikke trenger å slippe noen inn. Men farten skal tilpasses gjensidig – også av deg. Ikke legg deg tett inntil bilen foran for å stenge den andre ute.", "ru": "Многие думают, что тому, кто едет в продолжающейся полосе, не нужно никого пропускать. Но скорость подстраивают взаимно — и вы тоже. Не прижимайтесь к машине впереди, чтобы не пустить другую." },
+
+    { "h": "Blindsoner", "ru": "Слепые зоны" },
+    { "p": "Rundt alle kjøretøy er det områder som føreren ikke kan se. Det kalles blindsoner. Store kjøretøy, som lastebiler og busser, har mye større blindsoner enn en vanlig bil.", "ru": "Вокруг любого транспортного средства есть участки, которые водитель не видит. Их называют слепыми зонами. У больших машин — грузовиков и автобусов — слепые зоны гораздо больше, чем у обычного автомобиля." },
+    { "p": "Også stolpene ved frontruta (A-stolpene) lager blindsoner. De kan skjule en gående eller syklist som kommer fra siden, for eksempel når du svinger i et kryss. Se deg godt om før og mens du svinger.", "ru": "Слепые зоны создают и стойки по бокам лобового стекла (A-стойки). За ними может скрыться пешеход или велосипедист сбоку — например, когда вы поворачиваете на перекрёстке. Внимательно осматривайтесь до и во время поворота." },
+    { "rule": "Unngå blindsonene til andre, særlig til lastebiler og busser, og sjekk din egen blindsone. Ikke bli liggende lenge ved siden av et stort kjøretøy: kjør forbi, eller legg deg et stykke bak.", "ru": "Не задерживайтесь в слепых зонах других, особенно грузовиков и автобусов, и проверяйте свою слепую зону. Не держитесь долго рядом с большой машиной: обгоните её или держитесь на расстоянии позади." },
+
+    { "h": "Samspill med andre trafikanter", "ru": "Взаимодействие с другими участниками движения" },
+    { "p": "Godt samspill gjør trafikken tryggere. Kjør forutsigbart, så andre forstår hva du skal gjøre og kan tilpasse seg. Plasser bilen riktig, og blink i god tid.", "ru": "Хорошее взаимодействие делает движение безопаснее. Ведите машину предсказуемо, чтобы другие понимали ваши намерения и могли под них подстроиться. Занимайте правильное положение и заранее включайте поворотник." },
+    { "p": "Søk øyekontakt med gående og syklister. Da er det lettere å vite om de har sett deg. Men du kan ikke være helt sikker, så vær fortsatt forsiktig.", "ru": "Старайтесь встретиться взглядом с пешеходами и велосипедистами: так легче понять, заметили ли они вас. Но полной уверенности это не даёт, поэтому оставайтесь осторожны." },
+    { "rule": "Det er forbudt å bruke lydsignal (tuten) eller lyssignal unødig eller hensynsløst. Bruk tuten bare når det trengs, for eksempel for å varsle om fare.", "ru": "Запрещено подавать звуковой (клаксон) или световой сигнал без необходимости или бесцеремонно. Сигнальте, только когда это нужно, например чтобы предупредить об опасности." },
 
     { "h": "Rundkjøring", "ru": "Круговое движение" },
     { "list": [
@@ -48,11 +59,13 @@
   ],
   "sources": [
     ["Trafikkreglene § 5 – kjøretøyets plass på veien (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A75"],
-    ["Trafikkreglene § 6 – svinging (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747"],
+    ["Trafikkreglene § 6 og § 14 – svinging, signal og tegn (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747"],
     ["Trafikkreglene § 7 – vikeplikt ved svinging (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A77"],
     ["Trafikkreglene § 8 – kjørefeltskifte og fletting (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A78"],
     ["Kjøring i rundkjøring (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/traffic-safety/norwegian-traffic-rules/driving-in-roundabouts/"],
-    ["Vikeplikt i ulike trafikksituasjoner – felt for fartsøkning (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/trafikksikkerhet/trafikkregler/vikeplikt/vikeplikt-ulike-trafikksituasjoner/"]
+    ["Vikeplikt i ulike trafikksituasjoner – felt for fartsøkning (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/trafikksikkerhet/trafikkregler/vikeplikt/vikeplikt-ulike-trafikksituasjoner/"],
+    ["Samspill i trafikken – øyekontakt og blindsoner (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/trafikksikkerhet/kampanjer/samspill-i-trafikken/"],
+    ["Dybdeanalyser av dødsulykker 2018 – A-stolper som sikthinder (Statens vegvesen)", "https://www.vegvesen.no/globalassets/fag/publikasjoner/svv-rapport/dybdeanalyse-av-dodsulykker-i-region-vest-2018.pdf"]
   ],
   "checked": "2026-10"
 }

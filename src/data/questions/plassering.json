@@ -278,5 +278,72 @@
     ],
     "f": "Utenfor tettbygd strøk skal du normalt kjøre i høyre felt og bare bruke venstre felt når du kjører forbi.",
     "ru": "Вне населённых пунктов обычно едут по правой полосе, а левую используют только для обгона."
+  },
+  {
+    "id": "pla-21",
+    "cat": "plassering",
+    "q": "Du skal svinge til venstre i et kryss. Hvorfor bør du se ekstra godt etter gående som kommer fra siden?",
+    "img": null,
+    "a": [
+      "Stolpen mellom frontruta og sideruta (A-stolpen) kan skjule en gående",
+      "Gående har vikeplikt for biler som svinger, så de stopper selv",
+      "Speilene viser alt som skjer foran og ved siden av bilen"
+    ],
+    "f": "Stolpene ved frontruta (A-stolpene) lager blindsoner. De kan skjule en gående eller syklist som kommer fra siden. Se deg godt om, og husk at du har vikeplikt for gående som krysser veien du svinger inn i.",
+    "ru": "Стойки по бокам лобового стекла (A-стойки) создают слепые зоны: за ними может скрыться пешеход или велосипедист сбоку. Внимательно осмотритесь и помните: вы уступаете пешеходам, которые переходят дорогу, на которую вы поворачиваете."
+  },
+  {
+    "id": "pla-22",
+    "cat": "plassering",
+    "q": "Du kjører på en vei med to felt i din retning, og du ligger ved siden av en lastebil. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du bør ikke bli liggende lenge ved siden av den, fordi du kan være i blindsonen til sjåføren",
+      "Du kan godt ligge ved siden av den, fordi sjåføren alltid ser deg i speilene",
+      "Du bør heller legge deg tett bak lastebilen, så sjåføren ser deg bedre"
+    ],
+    "f": "Store kjøretøy har store blindsoner, også ved siden av og bak. Unngå blindsonene til lastebiler og busser: kjør forbi, eller legg deg et stykke bak.",
+    "ru": "У больших машин большие слепые зоны — в том числе сбоку и сзади. Не задерживайтесь в слепых зонах грузовиков и автобусов: обгоните или держитесь на расстоянии позади."
+  },
+  {
+    "id": "pla-23",
+    "cat": "plassering",
+    "q": "Hvorfor er det viktig at du kjører forutsigbart?",
+    "img": null,
+    "a": [
+      "Da forstår andre trafikanter hva du skal gjøre, og de kan tilpasse seg",
+      "Da har andre trafikanter vikeplikt for deg i kryss",
+      "Da trenger du ikke å blinke når du svinger",
+      "Da kan du kjøre litt fortere enn fartsgrensen"
+    ],
+    "f": "Godt samspill gjør trafikken tryggere. Plasser bilen riktig og blink i god tid, så andre forstår hva du skal gjøre.",
+    "ru": "Хорошее взаимодействие делает движение безопаснее. Занимайте правильное положение на дороге и заранее включайте поворотник, чтобы другие понимали ваши намерения."
+  },
+  {
+    "id": "pla-24",
+    "cat": "plassering",
+    "q": "Når kan du bruke tuten (lydsignalet)?",
+    "img": null,
+    "a": [
+      "Når det trengs, for eksempel for å varsle en annen trafikant om fare",
+      "Når bilen foran ikke kjører med en gang lyset blir grønt",
+      "Når du vil vise at en annen bilist har gjort en feil",
+      "Når du vil hilse på noen du kjenner"
+    ],
+    "f": "Det er forbudt å bruke lydsignal eller lyssignal unødig eller hensynsløst. Bruk tuten bare når det trengs, for eksempel for å varsle om fare.",
+    "ru": "Запрещено подавать звуковой или световой сигнал без необходимости или бесцеремонно. Сигнальте, только когда это нужно, например чтобы предупредить об опасности."
+  },
+  {
+    "id": "pla-25",
+    "cat": "plassering",
+    "q": "På motorveien blir to kjørefelt til ett. Du kjører i feltet som fortsetter. En bil i feltet som slutter, skal inn foran deg. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du skal tilpasse farten, så bilene kan kjøre vekselvis inn i feltet",
+      "Du kan holde farten, fordi bilen i feltet som slutter, har vikeplikt",
+      "Du bør legge deg tett inntil bilen foran, så ingen kommer inn"
+    ],
+    "f": "Når antallet vanlige kjørefelt blir mindre, har ingen vikeplikt. Alle skal tilpasse farten til hverandre – også du i feltet som fortsetter – slik at bilene kan kjøre vekselvis.",
+    "ru": "Когда количество обычных полос уменьшается, никто не обязан уступать. Все подстраивают скорость друг под друга — и вы тоже, хотя ваша полоса продолжается, — чтобы машины проезжали поочерёдно."
   }
 ]

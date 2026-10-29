@@ -213,5 +213,158 @@
     ],
     "f": "Om vinteren blir frontruten fort skitten av salt og slaps. Spylervæsken må tåle kulde, ellers fryser den.",
     "ru": "Зимой лобовое стекло быстро пачкается солью и слякотью. Омывающая жидкость должна выдерживать мороз, иначе она замёрзнет."
+  },
+  {
+    "id": "kjt-17",
+    "cat": "kjoretoy",
+    "q": "Du skal kjøre en lang tur med elbil en kald vinterdag. Hva er lurt?",
+    "img": null,
+    "a": [
+      "Regne med kortere rekkevidde, planlegge ladingen og forvarme bilen mens den lader",
+      "Regne med lengre rekkevidde, fordi batteriet holder seg kjølig i kulda",
+      "Kjøre til batteriet er nesten tomt før du begynner å se etter lading"
+    ],
+    "f": "I kulde blir rekkevidden kortere, fordi batteriet arbeider tregere og varmen i bilen bruker strøm. Forvarmer du bilen mens den lader, tas strømmen fra strømnettet og ikke fra batteriet.",
+    "ru": "В мороз запас хода электромобиля уменьшается: батарея на холоде работает медленнее, а обогрев салона расходует энергию. Если прогреть машину, пока она стоит на зарядке, энергия берётся из сети, а не из батареи."
+  },
+  {
+    "id": "kjt-18",
+    "cat": "kjoretoy",
+    "q": "Du kjører elbil sakte gjennom et boligområde. Hva bør du være ekstra oppmerksom på?",
+    "img": null,
+    "a": [
+      "At gående og syklende kan ha vanskelig for å høre at bilen kommer",
+      "At du kan kjøre fortere, fordi bilen nesten ikke lager støy",
+      "At du bør tute ofte, slik at alle hører at du kommer",
+      "At gående alltid skal vike for en elbil"
+    ],
+    "f": "En elbil lager lite lyd i lav fart. Gående, særlig blinde og svaksynte, kan derfor ha vanskelig for å høre deg, så vær klar til å stanse.",
+    "ru": "На малой скорости электромобиль почти не шумит. Поэтому пешеходам, особенно слепым и слабовидящим, бывает трудно вас услышать — будьте готовы остановиться."
+  },
+  {
+    "id": "kjt-19",
+    "cat": "kjoretoy",
+    "q": "Bilen stanser i en tunnel fordi drivstoffet er tomt. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Setter på nødsignal, tar på refleksvest og ringer fra nødtelefonen i tunnelen",
+      "Blir sittende i bilen og venter til noen stanser og hjelper deg",
+      "Går ut i kjørebanen og vinker til andre bilister for å få drivstoff",
+      "Rygger bilen ut av tunnelen med nødsignal på"
+    ],
+    "f": "Ringer du fra nødtelefonen, vet Vegtrafikksentralen med en gang hvor du er. Tomt for drivstoff er en av de vanligste grunnene til at biler stanser i tunneler, så sørg for å ha nok før du kjører inn.",
+    "ru": "Если позвонить по аварийному телефону, диспетчерская (Vegtrafikksentralen) сразу узнает, где вы. Пустой бак — одна из самых частых причин остановок машин в туннелях, поэтому заранее убедитесь, что топлива достаточно."
+  },
+  {
+    "id": "kjt-20",
+    "cat": "kjoretoy",
+    "q": "Bilen din har adaptiv cruisekontroll, som holder farten og avstanden til bilen foran. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du må hele tiden følge med og være klar til å bremse selv",
+      "Systemet har ansvaret for avstanden, så du kan se på mobilen",
+      "Du trenger ikke tilpasse farten etter føret og sikten",
+      "Systemet stanser alltid for gående og syklende"
+    ],
+    "f": "Førerstøttesystemer hjelper deg, men de kan ikke overta kjøringen. Du er fortsatt fører og har ansvaret, så du må følge med og gripe inn når det trengs.",
+    "ru": "Системы помощи водителю помогают, но не могут взять управление на себя. Водитель — по-прежнему вы, и отвечаете тоже вы: следите за дорогой и вмешивайтесь, когда нужно."
+  },
+  {
+    "id": "kjt-21",
+    "cat": "kjoretoy",
+    "q": "Det har kommet snø og is på bilen. Hva kan det bety for førerstøttesystemene, for eksempel automatisk nødbrems?",
+    "img": null,
+    "a": [
+      "Sensorer og kamera kan bli dekket, slik at systemene virker dårlig eller slår seg av",
+      "Systemene virker bedre i kulde, så du kan holde høyere fart",
+      "Systemene renser sensorene selv, så du trenger ikke tenke på det",
+      "Det har ingen betydning, fordi systemene bare bruker satellitter"
+    ],
+    "f": "Snø, is og skitt kan dekke sensorer og kamera, og da kan systemene virke dårlig eller slå seg av. Hold sensorer og kamera rene, og stol aldri blindt på systemene.",
+    "ru": "Снег, лёд и грязь могут закрыть датчики и камеры, и тогда системы работают плохо или отключаются. Держите датчики и камеры чистыми и никогда не полагайтесь на системы слепо."
+  },
+  {
+    "id": "kjt-22",
+    "cat": "kjoretoy",
+    "q": "Bilen har filassistent, som varsler deg eller napper i rattet når bilen er på vei over midtlinjen eller kantlinjen. Når kan systemet slutte å virke?",
+    "img": null,
+    "a": [
+      "Når linjene på veien er dekket av snø eller er utydelige",
+      "Når du kjører på en vei med tydelige linjer i dagslys",
+      "Når du kjører med nærlys",
+      "Når bilen har vinterdekk"
+    ],
+    "f": "Filassistenten bruker kamera eller sensorer for å se linjene på veien. Er linjene dekket av snø eller utydelige, kan systemet slutte å virke – og du skal uansett styre selv.",
+    "ru": "Система удержания в полосе распознаёт разметку с помощью камеры или датчиков. Если линии засыпаны снегом или плохо видны, система может перестать работать, — а рулить вы в любом случае должны сами."
+  },
+  {
+    "id": "kjt-23",
+    "cat": "kjoretoy",
+    "q": "Når kan du bruke lydhornet?",
+    "img": null,
+    "a": [
+      "Når det er nødvendig for å advare andre og unngå fare",
+      "Når du vil kjefte på en bilist som har kjørt dårlig",
+      "Når du vil hilse på en venn som går langs veien",
+      "Når du står i kø og vil at køen skal gå fortere"
+    ],
+    "f": "Unødig eller hensynsløs bruk av lydhornet er forbudt. Du kan tute for å advare andre og unngå fare, men ikke for å kjefte på andre bilister.",
+    "ru": "Пользоваться звуковым сигналом без необходимости или бесцеремонно запрещено. Сигналить можно, чтобы предупредить других и избежать опасности, но не чтобы отругать других водителей."
+  },
+  {
+    "id": "kjt-24",
+    "cat": "kjoretoy",
+    "q": "Det er dugg på sidevinduene og bakruten, men frontruten er klar. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du må fjerne duggen før du kjører, for eksempel med viften og bakrutevarmen",
+      "Det holder at frontruten er klar",
+      "Du kan kjøre hvis du bare bruker sidespeilene",
+      "Du kan kjøre, fordi duggen forsvinner av seg selv etter hvert"
+    ],
+    "f": "Du skal ha godt nok utsyn til alle sider, ikke bare framover. Snø, is og dugg på rutene må fjernes før du kjører.",
+    "ru": "Обзор должен быть достаточным во все стороны, а не только вперёд. Снег, лёд и запотевание на стёклах нужно убрать до начала движения."
+  },
+  {
+    "id": "kjt-25",
+    "cat": "kjoretoy",
+    "q": "Du selger bilen din til en privatperson. Hvordan melder dere eierskiftet?",
+    "img": null,
+    "a": [
+      "Selgeren sender salgsmelding på Din side hos Statens vegvesen, og kjøperen godkjenner den",
+      "Det er nok at kjøperen får vognkortet og nøklene",
+      "Kjøperen melder fra til forsikringsselskapet, og da er eierskiftet registrert",
+      "Selgeren melder fra til politiet innen en måned"
+    ],
+    "f": "Eierskiftet meldes på Din side hos Statens vegvesen: selgeren sender salgsmelding, og kjøperen godkjenner den. Kjøperen må sørge for at bilen er forsikret fra eierskiftet.",
+    "ru": "О смене владельца сообщают в личном кабинете (Din side) на сайте Statens vegvesen: продавец отправляет уведомление о продаже (salgsmelding), а покупатель его подтверждает. Покупатель должен застраховать машину с момента смены владельца."
+  },
+  {
+    "id": "kjt-26",
+    "cat": "kjoretoy",
+    "q": "Fristen for EU-kontroll har gått ut, og bilen er ikke kontrollert. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Det er forbudt å bruke bilen, og politiet kan ta av skiltene",
+      "Du kan kjøre som vanlig til du får et brev fra Statens vegvesen",
+      "Det er verkstedets ansvar, så du kan kjøre videre",
+      "Du kan kjøre som vanlig i tre måneder til"
+    ],
+    "f": "Eieren har plikt til å få bilen kontrollert innen fristen, også hvis det ikke har kommet noe varsel. Når fristen er ute, er det forbudt å bruke bilen.",
+    "ru": "Владелец обязан пройти техосмотр до истечения срока, даже если не получил напоминания. После истечения срока пользоваться машиной запрещено."
+  },
+  {
+    "id": "kjt-27",
+    "cat": "kjoretoy",
+    "q": "Vognkortet har en teknisk del (del 1) og en eierdel (del 2). Hvor bør delene være?",
+    "img": null,
+    "a": [
+      "Del 1 skal ligge i bilen, og del 2 bør ligge på et trygt sted utenfor bilen",
+      "Begge delene bør alltid ligge i hanskerommet",
+      "Begge delene skal leveres til forsikringsselskapet",
+      "Del 1 skal ligge hjemme, og del 2 skal ligge i bilen"
+    ],
+    "f": "Den tekniske delen av vognkortet skal oppbevares i bilen. Eierdelen bør du ha på et trygt sted, atskilt fra bilen.",
+    "ru": "Техническую часть свидетельства о регистрации (vognkort) нужно хранить в машине. Часть владельца лучше держать в надёжном месте, отдельно от машины."
   }
 ]

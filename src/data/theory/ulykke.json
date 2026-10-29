@@ -11,6 +11,10 @@
       ["Plasser varseltrekanten i god avstand fra ulykkesstedet, slik at andre trafikanter blir varslet i tide.", "Выставьте знак аварийной остановки на достаточном расстоянии от места ДТП, чтобы других вовремя предупредить."]
     ] },
     { "p": "Varseltrekant og refleksvest er påbudt å ha i bilen. Vesten skal du bruke når du går ut av bilen ved nødstans langs veien. Hjelp først – ikke bruk tiden på å ta bilder. Ikke kjør videre for å hente hjelp, men ring.", "ru": "Знак аварийной остановки и светоотражающий жилет обязательно должны быть в машине. Жилет нужно надевать, когда вы выходите из машины при вынужденной остановке на дороге. Сначала помогите — не тратьте время на фотографии. Не уезжайте за помощью, а позвоните." },
+    { "p": "Står bilen til fare eller hinder for trafikken, og du kan ikke flytte den med en gang, skal du varsle andre kjørende – med varseltrekant, nødsignal eller på annen måte. Varseltrekanten skal stå i god avstand fra bilen, slik at andre ser den i tide.", "ru": "Если машина создаёт опасность или помеху для движения и её нельзя сразу убрать, нужно предупредить других водителей — знаком аварийной остановки, аварийной сигнализацией или иначе. Знак ставят на достаточном расстоянии от машины, чтобы другие вовремя его заметили." },
+    { "nums": [
+      ["150 m", "om mulig minst så langt fra bilen skal varseltrekanten stå", "по возможности не меньше чем на таком расстоянии от машины нужно поставить знак аварийной остановки"]
+    ] },
 
     { "h": "Nødnumre", "ru": "Экстренные номера" },
     { "nums": [
@@ -19,6 +23,10 @@
       ["110", "brann", "пожарная служба"]
     ] },
     { "trap": "I mange land er 112 nummeret for all nødhjelp. I Norge er 112 politiet. Trenger du ambulanse, ringer du 113.", "ru": "Во многих странах 112 — единый номер всех экстренных служб. В Норвегии 112 — это полиция. Если нужна скорая, звоните 113." },
+
+    { "h": "Ulykke i tunnel", "ru": "ДТП в туннеле" },
+    { "rule": "Skjer det en ulykke i en tunnel, bør du varsle fra nødtelefonen i tunnelen, ikke fra mobilen. Da får Vegtrafikksentralen alarm med en gang og vet hvor du er.", "ru": "Если в туннеле произошло ДТП, сообщайте о нём по аварийному телефону в туннеле, а не по мобильному. Тогда дорожная диспетчерская (Vegtrafikksentralen) сразу получает сигнал тревоги и знает, где вы находитесь." },
+    { "p": "Det er bare Vegtrafikksentralen som kan stenge tunnelen. Ringer du nødetatene med mobilen, må de først varsle Vegtrafikksentralen, og da kan viktig tid gå tapt.", "ru": "Закрыть туннель может только дорожная диспетчерская. Если вы звоните в экстренные службы по мобильному, им сначала придётся сообщить диспетчерской, и драгоценное время может быть потеряно." },
 
     { "h": "Livreddende førstehjelp", "ru": "Неотложная первая помощь" },
     { "list": [
@@ -33,6 +41,8 @@
     { "p": "Alle har plikt til å hjelpe skadde så godt de kan – ikke bare helsepersonell eller de som var innblandet. Du kan for eksempel sikre stedet, varsle og gi førstehjelp.", "ru": "Помогать пострадавшим в меру своих сил обязан каждый — не только медики и участники ДТП. Например, вы можете обезопасить место, вызвать помощь и оказать первую помощь." },
     { "p": "Er du innblandet i et trafikkuhell, skal du straks stanse og hjelpe dem som er skadd. Alle som er innblandet, skal oppgi navn og adresse til hverandre. Det gjelder også om uhellet ikke var din skyld.", "ru": "Если вы участник ДТП, вы обязаны сразу остановиться и помочь пострадавшим. Все участники обязаны сообщить друг другу свои имена и адреса. Это касается и тех, кто не виноват в аварии." },
     { "rule": "Er noen drept eller skadd, og skaden ikke er ubetydelig, skal politiet varsles så snart som mulig. Ikke forlat stedet før politiet kommer, med mindre det er nødvendig.", "ru": "Если кто-то погиб или получил травму, и она не пустяковая, нужно как можно скорее сообщить в полицию. Не покидайте место до приезда полиции, если только это не необходимо." },
+    { "rule": "Forstår du, eller må du forstå, at kjøringen kan føre til politietterforskning – for eksempel etter en ulykke der noen er skadd – må du ikke drikke alkohol eller ta andre rusmidler de første 6 timene etter kjøringen.", "ru": "Если вы понимаете (или должны понимать), что из-за поездки может начаться полицейское расследование — например, после ДТП, где кто-то пострадал, — в первые 6 часов после поездки нельзя пить алкоголь или принимать другие одурманивающие вещества." },
+    { "trap": "Forbudet gjelder all alkohol, ikke bare over 0,2 promille – også én øl for å roe nervene. Det gjelder ikke lenger når politiet har tatt blodprøve eller utåndingsprøve, eller har bestemt at det ikke skal tas prøve.", "ru": "Запрет касается любого алкоголя, а не только свыше 0,2 промилле, — даже одной бутылки пива, чтобы успокоиться. Он перестаёт действовать, когда полиция взяла у вас анализ крови или пробу выдыхаемого воздуха либо решила, что проба браться не будет." },
     { "list": [
       ["Skader du en parkert bil og eieren ikke er der, skal du snarest mulig gi beskjed til eieren eller politiet. Du kan for eksempel legge igjen en lapp med navn og telefonnummer på bilen.", "Если вы повредили припаркованную машину, а владельца рядом нет, нужно как можно скорее сообщить владельцу или в полицию. Например, можно оставить на машине записку с именем и номером телефона."],
       ["Kjører du på elg eller annet hjortevilt, skal du melde fra til politiet (02800) – også om dyret løper inn i skogen. Ikke følg etter dyret. Du bør merke stedet, slik at det skadde dyret kan bli funnet.", "Если вы сбили лося или другое оленевое животное, сообщите в полицию (02800) — даже если зверь убежал в лес. Не идите за животным. Желательно отметить место, чтобы раненое животное можно было найти."]
@@ -40,12 +50,14 @@
     { "fig": { "sign": "fare_elg" }, "no": "Fareskilt: elg. Her kan det komme elg ut i veien.", "ru": "Предупреждающий знак «Лось»: здесь на дорогу может выйти лось." }
   ],
   "sources": [
-    ["Vegtrafikkloven § 12 – plikter ved trafikkuhell (Lovdata)", "https://lovdata.no/lov/1965-06-18-4"],
+    ["Vegtrafikkloven § 12 og § 22 – plikter ved trafikkuhell og alkohol etter kjøringen (Lovdata)", "https://lovdata.no/lov/1965-06-18-4"],
     ["Forskrift om bruk av kjøretøy §§ 1-5 og 1-6 – varseltrekant og refleksvest (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1990-01-25-92"],
     ["Først på ulykkesstedet (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/trafikksikkerhet/ulykke-langs-veien/forst-pa-ulykkesstedet/"],
     ["Plikter når du kjører på et dyr (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/traffic-safety/ulykke-langs-veien/duties-in-the-event-of-hitting-an-animal/"],
     ["Hjerte- og lungeredning og sideleie (Helsenorge)", "https://www.helsenorge.no/forstehjelp/hjerte-og-lungeredning/"],
-    ["Førstehjelp ved blødninger (Helsenorge)", "https://www.helsenorge.no/sykdom/forstehjelp-og-skader/forstehjelp-ved-blodninger/"]
+    ["Førstehjelp ved blødninger (Helsenorge)", "https://www.helsenorge.no/sykdom/forstehjelp-og-skader/forstehjelp-ved-blodninger/"],
+    ["Etterfølgende alkoholinntak (Store norske leksikon)", "https://snl.no/etterfølgende_alkoholinntak"],
+    ["Ikke bruk mobiltelefonen i tunneler (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/lokalt/region-sor/ikke-bruk-mobiltelefonen-i-tunneler/"]
   ],
   "checked": "2026-10"
 }

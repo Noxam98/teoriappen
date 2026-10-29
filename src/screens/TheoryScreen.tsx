@@ -7,8 +7,9 @@ import { ShareButton } from '../components/ShareButton';
 import { TheoryBlock, TheoryText } from '../components/theory/TheoryBlock';
 import { CATEGORY, QUESTIONS, THEORY, THEORY_BY_CAT } from '../data';
 import { Words } from '../features/brush/Words';
+import { fill, topicName, useT } from '../i18n';
 import { savedScroll, slug } from '../lib/routes';
-import { plural, wordsOf } from '../lib/text';
+import { wordsOf } from '../lib/text';
 import { useApp } from '../state/AppState';
 import type { CategoryId, TheoryChapter } from '../types';
 
@@ -25,11 +26,13 @@ function minutes(ch: TheoryChapter): number {
 
 const questionsIn = (cat: CategoryId) => QUESTIONS.filter(q => q.cat === cat).length;
 
-/** "2026-10" → "октябрь 2026" */
-const fmtMonth = (ym: string) => new Date(`${ym}-01T12:00:00`).toLocaleDateString('ru-RU', { month: 'long', year: 'numeric' }).replace(/\s*г\.?$/, '');
+/** "2026-10" → "октябрь 2026" / "жовтень 2026" */
+const fmtMonth = (ym: string, locale: string) => new Date(`${ym}-01T12:00:00`).toLocaleDateString(locale, { month: 'long', year: 'numeric' }).replace(/\s*(г|р)\.?$/, '');
 
 export function TheoryScreen() {
   const { data, go, startExam } = useApp();
+  const t = useT();
+  const lang = data.prefs.lang;
   const read = THEORY.filter(t => data.read[t.cat]).length;
   const nextUp = THEORY.find(t => !data.read[t.cat]);
 
@@ -37,28 +40,28 @@ export function TheoryScreen() {
     <div className="theory">
       <div className="page-head">
         <div className="eyebrow">Teori</div>
-        <h1>Теория</h1>
-        <p className="muted">Главное из правил по каждой теме экзамена. Текст на норвежском с переводом под каждым абзацем, а любое слово можно перевести кнопкой «Перевод». Если удобнее, главу можно читать только по-русски или только по-норвежски.</p>
-        <p className="theory-note">Главы сверены с законами и правилами на Lovdata и с официальными страницами Statens vegvesen, Helsedirektoratet и Trygg Trafikk; ссылки — в конце каждой главы. Правила иногда меняются: перед экзаменом сверяйтесь с <a href="https://www.vegvesen.no/forerkort/" target="_blank" rel="noopener noreferrer">vegvesen.no</a>.</p>
+        <h1>{t.theory.title}</h1>
+        <p className="muted">{t.theory.intro}</p>
+        <p className="theory-note">{t.theory.note[0]}<a href="https://www.vegvesen.no/forerkort/" target="_blank" rel="noopener noreferrer">{t.theory.note[1]}</a>{t.theory.note[2]}</p>
       </div>
 
       <div className="theory-progress panel">
-        <span className="tnum">Прочитано <b>{read}</b> из {THEORY.length} {plural(THEORY.length, 'главы', 'глав', 'глав')}</span>
+        <span className="tnum">{fill(t.theory.readOf(THEORY.length), { n: read })}</span>
         <span className="meter" aria-hidden="true"><i className="g" style={{ width: `${(read / THEORY.length) * 100}%` }} /></span>
       </div>
 
-      <div className="cats chapters" role="group" aria-label="Главы">
-        {THEORY.map((t, i) => {
-          const c = CATEGORY[t.cat];
-          const n = questionsIn(t.cat);
-          const done = !!data.read[t.cat];
+      <div className="cats chapters" role="group" aria-label={t.theory.chapters}>
+        {THEORY.map((ch, i) => {
+          const c = CATEGORY[ch.cat];
+          const n = questionsIn(ch.cat);
+          const done = !!data.read[ch.cat];
           return (
-            <button key={t.cat} className={done ? 'chapter-row done' : 'chapter-row'} onClick={() => go({ name: 'chapter', cat: t.cat })}>
-              <span className="ic"><CategoryIcon id={t.cat} /></span>
-              <span className="nm"><span className="sr-only">Глава {i + 1}: </span><span data-block lang="nb"><Words text={c.no} /></span><small>{c.ru}</small></span>
+            <button key={ch.cat} className={done ? 'chapter-row done' : 'chapter-row'} onClick={() => go({ name: 'chapter', cat: ch.cat })}>
+              <span className="ic"><CategoryIcon id={ch.cat} /></span>
+              <span className="nm"><span className="sr-only">{t.theory.chapterSr(i + 1)}</span><span data-block lang="nb"><Words text={c.no} /></span><small>{topicName(c, lang)}</small></span>
               <span className="ch-meta tnum">
-                {done ? <span className="ch-done"><Icon name="check" />прочитано</span> : <span>{minutes(t)} мин</span>}
-                <span>{n} {plural(n, 'вопрос', 'вопроса', 'вопросов')}</span>
+                {done ? <span className="ch-done"><Icon name="check" />{t.theory.readMark}</span> : <span>{t.theory.minutes(minutes(ch))}</span>}
+                <span>{t.questions(n)}</span>
               </span>
               <span className="chev" aria-hidden="true"><Icon name="right" /></span>
             </button>
@@ -67,10 +70,10 @@ export function TheoryScreen() {
       </div>
 
       <ActionBar>
-        <button className="btn square" onClick={() => go({ name: 'home' })} aria-label="На главную"><Icon name="left" /></button>
+        <button className="btn square" onClick={() => go({ name: 'home' })} aria-label={t.toHome}><Icon name="left" /></button>
         {nextUp
-          ? <button className="btn primary grow" onClick={() => go({ name: 'chapter', cat: nextUp.cat })}>{read ? 'Продолжить чтение' : 'Начать с первой главы'}<Icon name="right" /></button>
-          : <button className="btn primary grow" onClick={startExam}>Всё прочитано — на экзамен<Icon name="right" /></button>}
+          ? <button className="btn primary grow" onClick={() => go({ name: 'chapter', cat: nextUp.cat })}>{read ? t.theory.continue : t.theory.startFirst}<Icon name="right" /></button>
+          : <button className="btn primary grow" onClick={startExam}>{t.theory.allRead}<Icon name="right" /></button>}
       </ActionBar>
     </div>
   );
@@ -78,11 +81,13 @@ export function TheoryScreen() {
 
 export function ChapterScreen({ cat }: { cat: CategoryId }) {
   const { data, update, go, mark, restored, screen } = useApp();
+  const t = useT();
   const ch = THEORY_BY_CAT[cat];
   const c = CATEGORY[cat];
   const at = THEORY.findIndex(t => t.cat === cat);
   const next = THEORY[at + 1];
-  const lang = data.prefs.theoryLang;
+  const show = { mode: data.prefs.theoryLang, lang: data.prefs.lang };
+  const topic = topicName(c, data.prefs.lang);
   const n = questionsIn(cat);
   const isRead = !!data.read[cat];
   const end = useRef<HTMLDivElement>(null);
@@ -150,27 +155,27 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
     <article className="chapter">
       <div className="read-progress" aria-hidden="true"><i ref={progress} /></div>
       <header className="chapter-head">
-        <div className="eyebrow tnum">Глава {at + 1} из {THEORY.length} · {minutes(ch)} мин</div>
+        <div className="eyebrow tnum">{t.theory.chapterOf(at + 1, THEORY.length, minutes(ch))}</div>
         <div className="chapter-title">
           <span className="ic"><CategoryIcon id={cat} /></span>
           <div>
             <h1 data-block lang="nb"><Words text={c.no} /></h1>
-            <p className="chapter-ru">{c.ru}</p>
+            <p className="chapter-ru">{topic}</p>
           </div>
         </div>
-        <div className="t-p lead"><TheoryText no={ch.lead} ru={ch.leadRu} lang={lang} /></div>
-        <Segmented label="Язык текста" value={lang}
+        <div className="t-p lead"><TheoryText no={ch.lead} ru={ch.leadRu} uk={ch.leadUk} show={show} /></div>
+        <Segmented label={t.theory.textLang} value={show.mode}
           onChange={v => update(d => ({ ...d, prefs: { ...d.prefs, theoryLang: v } }))}
-          options={[{ value: 'both', label: 'Оба языка' }, { value: 'nb', label: 'Norsk' }, { value: 'ru', label: 'Русский' }]} />
+          options={[{ value: 'both', label: t.theory.both }, { value: 'nb', label: 'Norsk' }, { value: 'tr', label: t.langName }]} />
       </header>
 
       <div className="chapter-body">
-        {ch.blocks.map((b, i) => <TheoryBlock key={i} b={b} lang={lang} section={sections[i]} />)}
+        {ch.blocks.map((b, i) => <TheoryBlock key={i} b={b} show={show} section={sections[i]} />)}
       </div>
 
       {!!ch.sources?.length && (
         <section className="sources" aria-labelledby="sources-title">
-          <h2 id="sources-title">Источники{ch.checked && <small className="tnum"> · проверено {fmtMonth(ch.checked)}</small>}</h2>
+          <h2 id="sources-title">{t.theory.sources}{ch.checked && <small className="tnum">{t.theory.checked(fmtMonth(ch.checked, t.locale))}</small>}</h2>
           <ul>
             {ch.sources.map(([title, url]) => <li key={url}><a href={url} target="_blank" rel="noopener noreferrer">{title}</a></li>)}
           </ul>
@@ -178,28 +183,28 @@ export function ChapterScreen({ cat }: { cat: CategoryId }) {
       )}
 
       <div className="chapter-end" ref={end}>
-        {isRead && <p className="ch-done"><Icon name="check" />Глава прочитана</p>}
+        {isRead && <p className="ch-done"><Icon name="check" />{t.theory.chapterRead}</p>}
         {next ? (
           <button className="next-chapter" onClick={() => go({ name: 'chapter', cat: next.cat })}>
-            <span className="eyebrow">Следующая глава</span>
-            <span className="nm"><span className="sr-only">: </span><span data-block lang="nb"><Words text={CATEGORY[next.cat].no} /></span><small>{CATEGORY[next.cat].ru}</small></span>
+            <span className="eyebrow">{t.theory.next}</span>
+            <span className="nm"><span className="sr-only">: </span><span data-block lang="nb"><Words text={CATEGORY[next.cat].no} /></span><small>{topicName(CATEGORY[next.cat], data.prefs.lang)}</small></span>
             <Icon name="right" />
           </button>
         ) : (
           <button className="next-chapter" onClick={() => go({ name: 'theory' })}>
-            <span className="eyebrow">Это последняя глава</span>
-            <span className="nm">Все главы<small>оглавление и прогресс чтения</small></span>
+            <span className="eyebrow">{t.theory.last}</span>
+            <span className="nm">{t.theory.allChapters}<small>{t.theory.allChaptersSub}</small></span>
             <Icon name="right" />
           </button>
         )}
       </div>
 
       <ActionBar>
-        <button className="btn square" onClick={() => go({ name: 'theory' })} aria-label="Все главы"><Icon name="left" /></button>
-        <ShareButton className="btn square" to={{ name: 'chapter', cat, section }} title={`${c.no} — ${c.ru}`}
-          label={section ? 'Поделиться ссылкой на этот раздел' : 'Поделиться ссылкой на главу'} />
+        <button className="btn square" onClick={() => go({ name: 'theory' })} aria-label={t.theory.allChapters}><Icon name="left" /></button>
+        <ShareButton className="btn square" to={{ name: 'chapter', cat, section }} title={`${c.no} — ${topic}`}
+          label={section ? t.theory.shareSection : t.theory.shareChapter} />
         <button className="btn primary grow" onClick={() => go({ name: 'practice', mode: cat })}>
-          <Icon name="play" />Тренировать<span className="wide-only"> тему</span><span className="btn-sub tnum">{n}</span>
+          <Icon name="play" />{t.theory.train}<span className="wide-only">{t.theory.trainWide}</span><span className="btn-sub tnum">{n}</span>
         </button>
       </ActionBar>
     </article>

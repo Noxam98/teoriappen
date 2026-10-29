@@ -171,5 +171,61 @@
     ],
     "f": "Alle har hjelpeplikt. Du skal hjelpe etter beste evne, for eksempel ved å sikre stedet, varsle og gi førstehjelp.",
     "ru": "Обязанность помогать есть у всех. Нужно помочь в меру своих сил: обезопасить место, вызвать помощь, оказать первую помощь."
+  },
+  {
+    "id": "uly-14",
+    "cat": "ulykke",
+    "q": "Du har vært innblandet i en trafikkulykke der en person ble skadd. Du forstår at politiet kan komme til å etterforske saken. Hva gjelder for alkohol?",
+    "img": null,
+    "a": [
+      "Du må ikke drikke alkohol de første 6 timene etter kjøringen",
+      "Du kan drikke så snart du har parkert bilen hjemme",
+      "Du kan drikke litt, så lenge du holder deg under 0,2 promille",
+      "Forbudet gjelder bare hvis ulykken var din skyld"
+    ],
+    "f": "Forstår du, eller må du forstå, at kjøringen kan føre til politietterforskning, må du ikke drikke alkohol eller ta andre rusmidler de første 6 timene etter kjøringen. Forbudet gjelder all alkohol, ikke bare over 0,2 promille.",
+    "ru": "Если вы понимаете (или должны понимать), что из-за этой поездки может начаться полицейское расследование, в первые 6 часов после поездки нельзя пить алкоголь или принимать другие одурманивающие вещества. Запрет касается любого количества алкоголя, а не только свыше 0,2 промилле."
+  },
+  {
+    "id": "uly-15",
+    "cat": "ulykke",
+    "q": "Etter en ulykke kan det være forbudt å drikke alkohol de første 6 timene etter kjøringen. Når gjelder forbudet ikke lenger, selv om det ikke har gått 6 timer?",
+    "img": null,
+    "a": [
+      "Når politiet har tatt prøve av deg, eller har bestemt at det ikke skal tas prøve",
+      "Når du har meldt fra om skaden til forsikringsselskapet",
+      "Når den andre føreren har sagt at det er greit for ham",
+      "Når du har kommet hjem og ikke skal kjøre mer den dagen"
+    ],
+    "f": "Forbudet gjelder ikke lenger når politiet har tatt blodprøve eller utåndingsprøve, eller når politiet har bestemt at det ikke skal tas prøve. Ellers gjelder det i 6 timer etter kjøringen.",
+    "ru": "Запрет перестаёт действовать, когда полиция взяла у вас анализ крови или пробу выдыхаемого воздуха либо решила, что проба браться не будет. В остальных случаях он действует 6 часов после поездки."
+  },
+  {
+    "id": "uly-16",
+    "cat": "ulykke",
+    "q": "Du kommer til en trafikkulykke inne i en lang tunnel. Hvordan bør du varsle?",
+    "img": null,
+    "a": [
+      "Fra nødtelefonen i tunnelen, så Vegtrafikksentralen vet hvor du er",
+      "Med mobilen, fordi det alltid går raskest",
+      "Kjøre ut av tunnelen og ringe fra neste bensinstasjon",
+      "Blinke med lysene til bilene som kjører forbi"
+    ],
+    "f": "Bruk nødtelefonen i tunnelen. Da får Vegtrafikksentralen alarm med en gang og vet hvor du er. Det er bare Vegtrafikksentralen som kan stenge tunnelen.",
+    "ru": "Звоните по аварийному телефону в туннеле. Тогда дорожная диспетчерская (Vegtrafikksentralen) сразу получает сигнал тревоги и знает, где вы находитесь. Закрыть туннель может только эта диспетчерская."
+  },
+  {
+    "id": "uly-17",
+    "cat": "ulykke",
+    "q": "Bilen din står stille på et sted der den er til fare for trafikken, og du kan ikke flytte den med en gang. Hvor skal du sette varseltrekanten?",
+    "img": null,
+    "a": [
+      "I god avstand fra bilen, om mulig minst 150 meter",
+      "Rett bak bilen, så andre ser hvilken bil den hører til",
+      "Omtrent 20 meter bak bilen",
+      "Foran bilen, så møtende trafikk ser den"
+    ],
+    "f": "Varseltrekanten skal stå i god avstand – om mulig minst 150 meter – fra bilen, slik at andre kjørende ser den i tide.",
+    "ru": "Знак аварийной остановки нужно поставить на достаточном расстоянии от машины — по возможности не меньше чем в 150 метрах, — чтобы другие водители вовремя его заметили."
   }
 ]

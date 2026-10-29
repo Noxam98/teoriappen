@@ -1,8 +1,13 @@
 {
   "cat": "mennesket",
-  "lead": "Som fører har du ansvaret for kjøringen og for passasjerene. Her lærer du hvordan alkohol, medisiner, trøtthet, mobil og følelser påvirker deg bak rattet.",
-  "leadRu": "Водитель отвечает за поездку и за пассажиров. Здесь — как алкоголь, лекарства, усталость, телефон и эмоции влияют на вас за рулём.",
+  "lead": "Som fører har du ansvaret for kjøringen og for passasjerene. Her lærer du grunnregelen i trafikken og hvordan helse, alkohol, medisiner, trøtthet, mobil og følelser påvirker deg bak rattet.",
+  "leadRu": "Водитель отвечает за поездку и за пассажиров. Здесь — основное правило движения и то, как здоровье, алкоголь, лекарства, усталость, телефон и эмоции влияют на вас за рулём.",
   "blocks": [
+    { "h": "Grunnregelen og din tilstand", "ru": "Основное правило и ваше состояние" },
+    { "rule": "Grunnregelen (vegtrafikkloven § 3): Alle skal ferdes hensynsfullt og være aktpågivende og varsom, så det ikke oppstår fare eller skade. Du skal heller ikke hindre eller forstyrre annen trafikk unødig.", "ru": "Основное правило (§ 3 закона о дорожном движении): все должны двигаться, уважая других, внимательно и осторожно, чтобы не возникло опасности или ущерба. Кроме того, нельзя без необходимости мешать другим участникам движения." },
+    { "p": "Grunnregelen gjelder alle trafikanter – ikke bare bilførere, men også gående og syklister.", "ru": "Основное правило касается всех участников движения — не только водителей, но и пешеходов, и велосипедистов." },
+    { "p": "Ingen må kjøre når sykdom, svekkelse, trøtthet, rus eller andre grunner gjør at de ikke kan kjøre trygt. Det står i vegtrafikkloven § 21.", "ru": "Никто не имеет права садиться за руль, если из-за болезни, слабости, усталости, опьянения или по другой причине не может вести машину безопасно. Это записано в § 21 закона о дорожном движении." },
+
     { "h": "Alkohol og promille", "ru": "Алкоголь и промилле" },
     { "p": "Det er straffbart å kjøre bil med høyere promille enn 0,2. Selv litt alkohol gir lengre reaksjonstid og dårligere syn og konsentrasjon. Du blir ikke mer forsiktig – du tar større sjanser.", "ru": "Водить машину с уровнем алкоголя выше 0,2 промилле — уголовно наказуемо. Даже немного алкоголя увеличивает время реакции, ухудшает зрение и внимание. Осторожнее вы от этого не становитесь — наоборот, начинаете больше рисковать." },
     { "nums": [
@@ -11,10 +16,16 @@
     ] },
     { "rule": "Bare tid får promillen ned. Kaffe, vann, mat, frisk luft eller trening gjør ikke at alkoholen forsvinner fortere.", "ru": "Снизить промилле может только время. Кофе, вода, еда, свежий воздух или спорт не ускоряют выведение алкоголя." },
     { "trap": "Mange tror at promillen er borte etter en natts søvn. Men søvn gjør ikke at alkoholen forsvinner fortere. Har du drukket sent i går kveld, kan du fortsatt ha promille neste morgen – selv om du føler deg i form.", "ru": "Многие думают, что после ночного сна промилле уже нет. Но сон не ускоряет выведение алкоголя. Если вы пили поздно вечером, утром у вас ещё может быть промилле — даже если вы чувствуете себя хорошо." },
+    { "p": "Har du vært innblandet i en ulykke, og du forstår at politiet kan komme til å etterforske kjøringen, må du ikke drikke alkohol de første 6 timene etter kjøringen. Det gjelder all alkohol, også under 0,2 promille.", "ru": "Если вы попали в ДТП и понимаете, что полиция может начать расследование этой поездки, в первые 6 часов после поездки нельзя пить алкоголь. Это касается любого количества — даже меньше 0,2 промилле." },
 
     { "h": "Medisiner og narkotika", "ru": "Лекарства и наркотики" },
     { "p": "En rød varseltrekant på pakningen betyr at medisinen kan svekke evnen til å kjøre bil trygt. Også medisiner uten varseltrekant kan påvirke kjøringen. Spør lege eller apotek om du kan kjøre.", "ru": "Красный предупреждающий треугольник на упаковке означает, что лекарство может ухудшить способность безопасно управлять машиной. Влиять на вождение могут и лекарства без такого треугольника. Спросите врача или в аптеке, можно ли вам садиться за руль." },
     { "p": "Det er forbudt å kjøre når du er påvirket av narkotika, for eksempel cannabis. Narkotika gir dårligere reaksjonsevne og vurderingsevne.", "ru": "Запрещено водить машину под воздействием наркотиков, например каннабиса. Наркотики ухудшают реакцию и способность оценивать ситуацию." },
+
+    { "h": "Helse og lege", "ru": "Здоровье и врач" },
+    { "p": "Når du søker førerkort første gang, fyller du ut en egenerklæring om helse. Det er først og fremst ditt eget ansvar at du kjører trafikksikkert.", "ru": "Когда вы впервые подаёте заявление на права, вы заполняете декларацию о состоянии здоровья (egenerklæring om helse). За безопасную езду в первую очередь отвечаете вы сами." },
+    { "rule": "Tviler du på om helsen din er god nok til å kjøre trygt, skal du slutte å kjøre og gå til lege før du kjører igjen.", "ru": "Если вы сомневаетесь, позволяет ли здоровье безопасно водить машину, перестаньте ездить и сходите к врачу, прежде чем снова сесть за руль." },
+    { "p": "Mener legen at du ikke oppfyller helsekravene for førerkort, skal legen si fra til deg at du ikke har lov til å kjøre. Vil det vare mer enn 6 måneder, skal legen også sende melding til statsforvalteren.", "ru": "Если врач считает, что вы не соответствуете медицинским требованиям для прав, он обязан сказать вам, что водить нельзя. Если это продлится больше 6 месяцев, врач также должен сообщить об этом губернатору фюльке (statsforvalteren)." },
 
     { "h": "Trøtthet", "ru": "Усталость" },
     { "p": "Når du er trøtt, reagerer du senere, og du kan sovne et øyeblikk bak rattet. Dette er tegn på at du er for trøtt til å kjøre:", "ru": "Когда вы устали, вы реагируете медленнее и можете на мгновение уснуть за рулём. Вот признаки того, что вы слишком устали, чтобы вести машину:" },
@@ -25,11 +36,16 @@
     ] },
     { "rule": "Det eneste som virkelig hjelper mot trøtthet, er søvn. Stopp på et trygt sted og sov i omtrent 15 minutter.", "ru": "От усталости по-настоящему помогает только сон. Остановитесь в безопасном месте и поспите примерно 15 минут." },
     { "trap": "Åpent vindu, høy musikk eller en energidrikk fjerner ikke trøttheten. Å kjøre fortere for å komme raskere fram gjør det bare farligere.", "ru": "Открытое окно, громкая музыка или энергетик усталость не снимают. А ехать быстрее, чтобы скорее доехать, — только опаснее." },
+    { "p": "Skal du kjøre en lang tur, bør du starte uthvilt – ikke dra rett fra jobben. Ta pauser underveis.", "ru": "Если предстоит долгая поездка, лучше отправляться отдохнувшим, а не сразу после работы. Делайте остановки по дороге." },
 
     { "h": "Mobil og oppmerksomhet", "ru": "Телефон и внимание" },
     { "p": "Det er forbudt å bruke mobiltelefon som du holder i hånden, mens du kjører. Forbudet gjelder på alle veier, også i lav fart, når samtalen er kort, og når du står i kø eller venter på grønt lys.", "ru": "Во время движения запрещено пользоваться телефоном, держа его в руке. Запрет действует на всех дорогах — и на малой скорости, и при коротком разговоре, и когда вы стоите в пробке или ждёте зелёного сигнала." },
     { "p": "Handsfree er lov, men samtalen kan likevel ta oppmerksomheten bort fra trafikken. Avslutt samtalen hvis trafikken krever det.", "ru": "Hands-free разрешён, но разговор всё равно отвлекает от дороги. Закончите разговор, если ситуация на дороге требует внимания." },
     { "p": "Se langt fram når du kjører, så oppdager du farer tidlig og får tid til å reagere. Øyekontakt gjør det lettere å vite om andre har sett deg – men du kan ikke være helt sikker.", "ru": "Смотрите далеко вперёд: так вы раньше заметите опасность и успеете среагировать. Зрительный контакт помогает понять, заметили ли вас другие, — но полной уверенности он не даёт." },
+    { "p": "Når du er uoppmerksom, oppdager du faren senere, og reaksjonstiden blir lengre. Da blir også reaksjonslengden og stopplengden lengre.", "ru": "Когда вы невнимательны, вы позже замечаете опасность, и время реакции увеличивается. Вместе с ним растут и путь, пройденный за время реакции, и весь остановочный путь." },
+    { "nums": [
+      ["ca. 44 m", "så langt kjører du i 80 km/t hvis du tar blikket bort fra veien i 2 sekunder", "столько вы проедете вслепую на 80 км/ч, если отведёте взгляд от дороги на 2 секунды"]
+    ] },
 
     { "h": "Erfaring, venner og følelser", "ru": "Опыт, друзья и эмоции" },
     { "p": "Unge førere som nylig har fått førerkort, har høyest risiko for å bli innblandet i en ulykke, særlig de første månedene. De mangler erfaring og tar ofte større sjanser.", "ru": "У молодых водителей, недавно получивших права, самый высокий риск попасть в аварию, особенно в первые месяцы. Им не хватает опыта, и они чаще рискуют." },
@@ -46,7 +62,10 @@
     ["Legemidler som kan påvirke kjøreevnen (Helsedirektoratet)", "https://www.helsedirektoratet.no/veiledere/forerkortveileder/midler-som-kan-pavirke-kjoreevnen-35-37/legemidler-som-kan-pavirke-kjoreevnen"],
     ["Forskrift om forbud mot håndholdt mobiltelefon (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1999-12-17-1309"],
     ["Husk hviletid på veien! (Trygg Trafikk)", "https://www.tryggtrafikk.no/artikler/aktuelt/husk-hviletid-pa-veien/"],
-    ["Førerkortveilederen – syn (Helsedirektoratet)", "https://www.helsedirektoratet.no/veiledere/forerkortveileder/syn-9-13"]
+    ["Førerkortveilederen – syn (Helsedirektoratet)", "https://www.helsedirektoratet.no/veiledere/forerkortveileder/syn-9-13"],
+    ["Vegtrafikkloven §§ 3, 21 og 22 – grunnregelen, førerens tilstand og alkohol (Lovdata)", "https://lovdata.no/lov/1965-06-18-4"],
+    ["Førerkortveilederen – førers ansvar, egenerklæring og meldeplikt (Helsedirektoratet)", "https://www.helsedirektoratet.no/veiledere/forerkortveileder/forers-ansvar-egenerklaring-meldeplikten-2-3"],
+    ["Uoppmerksomhet (Trygg Trafikk)", "https://www.tryggtrafikk.no/wiki/uoppmerksomhet/"]
   ],
   "checked": "2026-10"
 }

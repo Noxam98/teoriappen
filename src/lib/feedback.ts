@@ -1,4 +1,5 @@
 // Feedback after an answer: a sound, a short vibration (Android; iOS ignores it) and a screen-reader announcement.
+import { messages } from '../i18n';
 import { playSound } from './sound';
 
 export const STREAK_STEP = 5;
@@ -7,7 +8,8 @@ export const STREAK_STEP = 5;
 export function answerFeedback(ok: boolean, streak: number, correctText: string, haptics: boolean): void {
   playSound(!ok ? 'wrong' : streak > 0 && streak % STREAK_STEP === 0 ? 'streak' : 'correct');
   vibrate(ok, haptics);
-  announce(ok ? (streak >= STREAK_STEP && streak % STREAK_STEP === 0 ? `Верно, ${streak} подряд` : 'Верно') : `Неверно. Правильный ответ: ${correctText}`);
+  const t = messages().question;
+  announce(ok ? (streak >= STREAK_STEP && streak % STREAK_STEP === 0 ? t.rightStreak(streak) : t.right) : t.wrongAnswer(correctText));
 }
 
 export function vibrate(ok: boolean, enabled: boolean): void {

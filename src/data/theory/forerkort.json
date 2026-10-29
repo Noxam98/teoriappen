@@ -1,18 +1,20 @@
 {
   "cat": "forerkort",
-  "lead": "Her lærer du hva førerkort klasse B gir lov til, hvordan øvelseskjøring og teoriprøven fungerer, og hva prøvetid og prikker betyr.",
-  "leadRu": "Здесь — что разрешают права категории B, как устроены учебная езда и теоретический экзамен и что такое испытательный срок и штрафные баллы.",
+  "lead": "Her lærer du hva førerkort klasse B gir lov til, hvordan øvelseskjøring og teoriprøven fungerer, hva prøvetid og prikker betyr, og hva som skjer hvis du bryter reglene.",
+  "leadRu": "Здесь — что разрешают права категории B, как устроены учебная езда и теоретический экзамен, что такое испытательный срок и штрафные баллы и что бывает за нарушения.",
   "blocks": [
     { "h": "Førerkort klasse B", "ru": "Права категории B" },
     { "nums": [
       ["18 år", "aldersgrense for førerkort klasse B", "минимальный возраст для прав категории B"],
       ["3500 kg", "høyeste tillatte totalvekt for bilen", "наибольшая разрешённая общая масса автомобиля"],
-      ["inntil 8", "sitteplasser i tillegg til førerplassen", "не больше 8 мест помимо водительского"]
+      ["inntil 8", "sitteplasser i tillegg til førerplassen", "не больше 8 мест помимо водительского"],
+      ["80 år", "fra denne alderen trenger du helseattest fra lege for å fornye førerkortet", "с этого возраста для продления прав нужна медицинская справка от врача"]
     ] },
     { "list": [
       ["Ha med førerkortet når du kjører. I Norge kan du velge mellom det fysiske kortet og det digitale førerkortet i appen. I utlandet må du ha med det fysiske kortet.", "Во время езды права должны быть при вас. В Норвегии можно выбрать: пластиковая карточка или цифровые права в приложении. За границей нужна пластиковая карточка."],
       ["Står det i førerkortet at du må bruke briller eller linser, må du alltid bruke dem når du kjører – ikke bare i mørket.", "Если в правах указано, что вам нужны очки или линзы, носите их за рулём всегда — не только в темноте."]
     ] },
+    { "p": "Fra 80 år må du levere helseattest fra lege når du fornyer førerkort klasse B. Har du et tidsbegrenset førerkort på grunn av helsen, trenger du også helseattest.", "ru": "С 80 лет для продления прав категории B нужна медицинская справка от врача (helseattest). Если срок действия ваших прав ограничен по состоянию здоровья, справка тоже нужна." },
 
     { "h": "Øvelseskjøring", "ru": "Учебная езда" },
     { "p": "Du kan øvelseskjøre bil fra du er 16 år. Før du begynner, må du ha gjennomført trafikalt grunnkurs.", "ru": "Учиться водить машину можно с 16 лет. Но сначала нужно пройти базовый курс по дорожному движению (trafikalt grunnkurs)." },
@@ -40,15 +42,27 @@
       ["× 2", "prikker i prøvetiden: 3 prikker blir 6", "баллы в испытательный срок: вместо 3 баллов — 6"],
       ["8 prikker", "i løpet av 3 år: du mister førerretten i 6 måneder", "за 3 года: лишение прав на 6 месяцев"]
     ] },
-    { "rule": "Mister du førerretten i prøvetiden, må du ta både teoriprøven og den praktiske prøven på nytt. Det holder ikke å vente eller betale en bot.", "ru": "Если вы лишились прав в испытательный срок, придётся заново сдать и теоретический, и практический экзамен. Просто подождать или заплатить штраф недостаточно." }
+    { "rule": "Mister du førerretten i prøvetiden, må du ta både teoriprøven og den praktiske prøven på nytt. Det holder ikke å vente eller betale en bot.", "ru": "Если вы лишились прав в испытательный срок, придётся заново сдать и теоретический, и практический экзамен. Просто подождать или заплатить штраф недостаточно." },
+
+    { "h": "Bot, beslag og tap av førerretten", "ru": "Штраф, изъятие прав и лишение права управления" },
+    { "p": "For mindre overtredelser, for eksempel litt for høy fart, kan politiet gi deg et forenklet forelegg – en bot som du kan vedta på stedet. Vedtar du det, er saken avgjort. Vedtar du det ikke, går saken videre og kan ende i retten.", "ru": "За небольшие нарушения, например незначительное превышение скорости, полиция может выписать упрощённое постановление о штрафе (forenklet forelegg), которое можно принять прямо на месте. Если вы его принимаете, дело закрыто. Если нет, дело идёт дальше и может дойти до суда." },
+    { "p": "Er du mistenkt for noe som kan gi tap av førerretten, for eksempel promillekjøring eller svært høy fart, kan politiet ta beslag i førerkortet på stedet. Da har du ikke lov til å kjøre. Tiden uten førerkort trekkes fra tapstiden.", "ru": "Если вас подозревают в нарушении, за которое могут лишить прав, например в езде в нетрезвом виде или с очень высокой скоростью, полиция может изъять права прямо на месте. После этого водить нельзя. Время без прав засчитывается в срок лишения." },
+    { "nums": [
+      ["26 km/t", "eller mer over fartsgrensen når den er 60 km/t eller lavere: du mister førerretten", "или больше сверх ограничения, если оно 60 км/ч или ниже: вас лишат прав"],
+      ["over 0,5 ‰", "til og med 0,8 promille: tap av førerretten i 12–18 måneder", "и до 0,8 промилле включительно: лишение прав на 12–18 месяцев"],
+      ["over 1,2 ‰", "tap av førerretten i minst 2 år", "лишение прав минимум на 2 года"]
+    ] }
   ],
   "sources": [
-    ["Vegtrafikkloven § 24 og § 26 – førerkort og øvingskjøring (Lovdata)", "https://lovdata.no/lov/1965-06-18-4"],
+    ["Vegtrafikkloven §§ 24, 26 og 33 – førerkort, øvingskjøring og beslag (Lovdata)", "https://lovdata.no/lov/1965-06-18-4"],
     ["Hva kan du kjøre med klasse B (Statens vegvesen)", "https://www.vegvesen.no/en/driving-licences/driving-licence-holders/what-are-you-entitled-to-drive/passenger-car-category-b/"],
     ["Digitalt førerkort (Statens vegvesen)", "https://www.vegvesen.no/en/driving-licences/driving-licence-holders/digital-driving-licence/"],
     ["Gjennomføre teoriprøven (Statens vegvesen)", "https://www.vegvesen.no/en/driving-licences/driver-training/theory-test/taking-the-theory-test/"],
     ["Forskrift om prikkbelastning (Lovdata)", "https://lovdata.no/forskrift/2003-09-19-1164"],
-    ["Tapsforskriften kap. 8 – krav om ny førerprøve (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2003-12-19-1660/KAPITTEL_8#%C2%A78-6"]
+    ["Tapsforskriften kap. 8 – krav om ny førerprøve (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2003-12-19-1660/KAPITTEL_8#%C2%A78-6"],
+    ["Forenklet forelegg (Store norske leksikon)", "https://snl.no/forenklet_forelegg"],
+    ["Slik mistar du førarkortet – fart, promille og beslag (Lovdata)", "https://lovdata.no/artikkel/slik_mistar_du_forarkortet_pa_1-2-3/4774"],
+    ["Fornyelse av førerkort når du nærmer deg 80 år (Statens vegvesen)", "https://www.vegvesen.no/en/driving-licences/driving-licence-holders/renewing-your-driving-licence/renewing-your-driving-licence-with-a-health-certificate/if-you-are-approaching-or-over-the-age-of-80/"]
   ],
   "checked": "2026-10"
 }

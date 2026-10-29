@@ -33,6 +33,7 @@
     { "list": [
       ["Trikken skal alltid få fri vei – også når den kommer fra venstre.", "Трамваю всегда уступают дорогу — даже когда он едет слева."],
       ["Utrykningskjøretøy med blålys skal få fri vei, også når de ikke bruker sirene. Kjør rolig til siden, og stans om nødvendig.", "Спецмашине с синими маячками уступают дорогу, даже если сирена не включена. Спокойно прижмитесь к краю и при необходимости остановитесь."],
+      ["Plikten gjelder når utrykningskjøretøyet varsler med blinkende blått lys. Sirene brukes bare når det trengs. Uten blålys gjelder vanlige regler – også for en ambulanse.", "Эта обязанность действует, когда спецмашина подаёт сигнал мигающим синим светом. Сирену включают только при необходимости. Без синих маячков действуют обычные правила — даже для скорой помощи."],
       ["Der fartsgrensen er 60 km/t eller lavere, skal du vike for buss som blinker for å kjøre ut fra holdeplassen.", "Где ограничение 60 км/ч или ниже, уступите автобусу, который включил поворотник, чтобы отъехать от остановки."],
       ["I et vanlig kryss har bussen ingen særlig forkjørsrett.", "На обычном перекрёстке у автобуса нет особого преимущества."]
     ] },
@@ -40,6 +41,11 @@
     { "h": "Ut fra parkeringsplass, innkjørsel og gatetun", "ru": "Выезд с парковки, со двора и из жилой зоны" },
     { "p": "Den som kjører ut fra parkeringsplass, bensinstasjon, gårdsplass, innkjørsel eller gatetun, har vikeplikt for all trafikk på veien. Krysser du et fortau, skal du først vike for de gående der.", "ru": "Кто выезжает с парковки, заправки, со двора, из въезда к дому или из жилой зоны, уступает всем на дороге. Если по пути тротуар — сначала пропустите пешеходов на нём." },
     { "p": "Syklister som kommer fra gang- og sykkelvei ut på kjørebanen, har vikeplikt. Vær likevel forberedt på at de ikke stanser.", "ru": "Велосипедист, который выезжает на проезжую часть с пешеходно-велосипедной дорожки, должен уступить. Но будьте готовы, что он не остановится." },
+
+    { "h": "Rygging og vending", "ru": "Задний ход и разворот" },
+    { "rule": "Den som rygger eller vender, har vikeplikt for alle andre trafikanter. Blinklyset gir deg ingen rett til å snu – vent til veien er fri.", "ru": "Тот, кто едет задним ходом или разворачивается, уступает всем остальным участникам движения. Поворотник не даёт права на разворот — дождитесь, пока дорога освободится." },
+    { "p": "Er utsikten ikke god nok, må du ikke rygge eller vende før en annen passer på, eller du selv har sett at det ikke kan oppstå fare.", "ru": "Если обзора недостаточно, нельзя сдавать назад или разворачиваться, пока кто-то другой не следит за обстановкой или вы сами своими глазами не убедились, что опасности нет." },
+    { "p": "Rygging og vending er forbudt på motorvei og motortrafikkvei og på inn- og utkjøringsveiene til dem. Har du tatt feil avkjøring, kjører du videre og snur der det er lov.", "ru": "Задний ход и разворот запрещены на автомагистрали, на дороге для автомобилей, а также на въездах и съездах с них. Если вы свернули не на тот съезд, езжайте дальше и развернитесь там, где это разрешено." },
 
     { "h": "Gangfelt", "ru": "Пешеходный переход" },
     { "p": "Ved gangfelt uten trafikklys eller politi har du vikeplikt for gående som er i gangfeltet eller på vei ut i det. Hold så lav fart at du kan stanse.", "ru": "У пешеходного перехода без светофора и регулировщика вы уступаете пешеходам, которые уже на переходе или вот-вот на него ступят. Держите такую скорость, чтобы успеть остановиться." },
@@ -57,6 +63,8 @@
     ["Trafikkreglene § 7 – vikeplikt (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A77"],
     ["Trafikkreglene § 8 – kjørefeltskifte og fletting (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A78"],
     ["Trafikkreglene § 10 – fri vei for utrykning og trikk (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A710"],
+    ["Trafikkreglene § 11 – rygging og vending (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A711"],
+    ["Trafikkreglene § 14 – blålys og lydsignal fra utrykningskjøretøy (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A714"],
     ["Trafikkreglene § 9 – gående og gangfelt (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747"],
     ["Skiltforskriften kap. 3 – vikeplikt- og forkjørsskilt (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219/KAPITTEL_3"],
     ["Kjøring i rundkjøring (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/traffic-safety/norwegian-traffic-rules/driving-in-roundabouts/"]

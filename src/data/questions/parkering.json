@@ -164,5 +164,59 @@
     ],
     "f": "Skiltet viser et område der det er tillatt å parkere. Underskilt kan gi regler om tid, betaling eller hvem som kan parkere.",
     "ru": "Знак «P» обозначает место, где разрешена стоянка. Табличка под ним может ограничивать время, оплату или круг пользователей."
+  },
+  {
+    "id": "par-15",
+    "cat": "parkering",
+    "q": "Du skal slippe av en passasjer og vil stanse med to hjul oppe på fortauet. Er det lov?",
+    "img": null,
+    "a": [
+      "Nei, det er forbudt å stanse helt eller delvis på fortau",
+      "Ja, en kort stans for å slippe av passasjerer er alltid lov",
+      "Ja, hvis du slår på nødsignalet",
+      "Ja, hvis det er nok plass igjen til de gående"
+    ],
+    "f": "Det er forbudt å stanse helt eller delvis på fortau, gangvei eller sykkelvei – også for å slippe av en passasjer.",
+    "ru": "Останавливаться полностью или частично на тротуаре, пешеходной или велосипедной дорожке запрещено — даже чтобы высадить пассажира."
+  },
+  {
+    "id": "par-16",
+    "cat": "parkering",
+    "q": "Moren din har parkeringstillatelse for forflytningshemmede som passasjer. Du låner bilen hennes, og hun er ikke med. Kan du parkere på en plass som er reservert for forflytningshemmede?",
+    "img": null,
+    "a": [
+      "Nei, tillatelsen er personlig, og hun må selv være med i bilen",
+      "Ja, hvis tillatelsen ligger synlig i bilen",
+      "Ja, fordi tillatelsen gjelder for bilen",
+      "Ja, men bare i 30 minutter"
+    ],
+    "f": "Parkeringstillatelsen er personlig, og andre må ikke bruke den. Har noen tillatelse som passasjer, må de selv være med i bilen når den parkeres.",
+    "ru": "Разрешение на парковку для людей с ограниченной подвижностью — именное, другим пользоваться им нельзя. Если разрешение выдано как пассажиру, этот человек сам должен быть в машине, когда её паркуют."
+  },
+  {
+    "id": "par-17",
+    "cat": "parkering",
+    "q": "Under skiltet Parkering forbudt står et underskilt med svarte tall: «8–17 (8–15)». Når gjelder forbudet?",
+    "img": null,
+    "a": [
+      "Mandag til fredag kl. 8–17 og lørdag kl. 8–15",
+      "Mandag til fredag kl. 8–17 og søndag kl. 8–15",
+      "Mandag til lørdag kl. 8–17 og søndag kl. 8–15"
+    ],
+    "f": "Svarte tall gjelder hverdager unntatt lørdag. Svarte tall i parentes gjelder lørdag, og røde tall gjelder søndag og helligdager.",
+    "ru": "Чёрные цифры действуют в будни, кроме субботы. Чёрные цифры в скобках — в субботу, а красные — в воскресенье и праздничные дни."
+  },
+  {
+    "id": "par-18",
+    "cat": "parkering",
+    "q": "Under skiltet Parkering står et underskilt som viser en parkeringsskive. Hva betyr det?",
+    "img": null,
+    "a": [
+      "Du kan bare parkere når en parkeringsskive eller en billett viser når du parkerte",
+      "Parkeringen er gratis, og det er ingen tidsgrense",
+      "Bare biler med parkeringstillatelse for forflytningshemmede kan parkere her"
+    ],
+    "f": "Underskiltet betyr at du bare kan parkere når en parkeringsskive eller en billett fra automaten viser når bilen ble parkert.",
+    "ru": "Табличка означает, что парковаться можно, только если парковочный диск или билет из автомата показывает, когда машину поставили."
   }
 ]

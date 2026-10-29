@@ -248,5 +248,59 @@
     ],
     "f": "Slipp gassen forsiktig og hold rattet rett. Unngå brå bremsing og brå bevegelser med rattet til dekkene har fått grep.",
     "ru": "Плавно отпустите газ и держите руль прямо. Не делайте резких торможений и поворотов руля, пока шины снова не сцепятся с дорогой."
+  },
+  {
+    "id": "far-19",
+    "cat": "fart",
+    "q": "En bil kjører veldig tett bak deg. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Øke avstanden til bilen foran, så du kan bremse tidlig og mykt",
+      "Bremse brått, så føreren bak forstår at bilen er for nær",
+      "Øke farten, så du kommer lenger unna bilen bak",
+      "Legge deg nærmere bilen foran, så bilen bak ikke kjører forbi"
+    ],
+    "f": "Med stor avstand foran kan du bremse tidlig og mykt. Da får også bilen bak bedre tid. Ikke brems brått, og slipp bilen forbi når det er trygt.",
+    "ru": "При большой дистанции впереди вы можете тормозить заранее и плавно — тогда и у машины сзади будет больше времени. Не тормозите резко и пропустите машину вперёд, когда это безопасно."
+  },
+  {
+    "id": "far-20",
+    "cat": "fart",
+    "q": "Hva menes med sikkerhetssonen rundt bilen?",
+    "img": null,
+    "a": [
+      "Rommet foran, bak og til sidene som gir deg tid og plass til å reagere",
+      "Den delen av bilen som beskytter deg ved en kollisjon",
+      "Området ved en skole der fartsgrensen er 30 km/t",
+      "Bare avstanden til bilen foran deg"
+    ],
+    "f": "Sikkerhetssonen får du ved å holde avstand til andre og til farer rundt bilen – foran, bak og til sidene. Den gir deg tid og plass til å reagere hvis noe uventet skjer.",
+    "ru": "Зону безопасности вы создаёте, держа дистанцию до других участников движения и до опасностей вокруг машины — спереди, сзади и по бокам. Она даёт вам время и место, чтобы среагировать, если случится что-то неожиданное."
+  },
+  {
+    "id": "far-21",
+    "cat": "fart",
+    "q": "Du kjører i en gate med parkerte biler langs høyre side. Hvorfor bør du holde god avstand til dem?",
+    "img": null,
+    "a": [
+      "En bildør kan plutselig bli åpnet rett foran deg",
+      "Det er forbudt å kjøre nærmere enn 2 meter fra parkerte biler",
+      "Det trengs ikke, avstand til siden er bare viktig for syklister"
+    ],
+    "f": "Ved parkerte biler kan en bildør plutselig bli åpnet. Hold derfor god nok avstand til siden.",
+    "ru": "У припаркованных машин может внезапно открыться дверь. Поэтому держите достаточный боковой интервал."
+  },
+  {
+    "id": "far-22",
+    "cat": "fart",
+    "q": "En gående blir påkjørt av en bil. Hva betyr det om bilen kjører i 50 km/t i stedet for 30 km/t?",
+    "img": null,
+    "a": [
+      "Sjansen for at den gående overlever, blir mye mindre",
+      "Det betyr lite, fordi både 30 og 50 km/t er lav fart",
+      "Skadene blir omtrent like store i 30 og 50 km/t"
+    ],
+    "f": "Farten betyr mye for den som blir påkjørt. I 30 km/t overlever de fleste gående en påkjørsel. I 50 km/t dør de fleste.",
+    "ru": "Скорость очень важна для того, кого сбили. При 30 км/ч большинство пешеходов выживает после наезда, при 50 км/ч большинство погибает."
   }
 ]

@@ -1,5 +1,6 @@
 import { useBrush } from '../../features/brush/BrushProvider';
 import { Words } from '../../features/brush/Words';
+import { useT } from '../../i18n';
 import type { Question } from '../../types';
 import { Icon } from '../Icons';
 
@@ -16,6 +17,7 @@ interface Props {
 /** Answer plates 1–4, like the answer keys (letters are taken by the cars in the pictures). Index 0 of q.a is the correct answer. */
 export function Options({ q, order, chosen, reveal = false, onPick }: Props) {
   const brush = useBrush();
+  const t = useT().question;
 
   const pick = (oi: number, target: EventTarget | null) => {
     if (reveal || !onPick) return;
@@ -37,7 +39,7 @@ export function Options({ q, order, chosen, reveal = false, onPick }: Props) {
   const focusable = order.includes(chosen ?? -1) ? chosen : order[0];
 
   return (
-    <div className="opts" role="radiogroup" aria-label="Svaralternativer — варианты ответа">
+    <div className="opts" role="radiogroup" aria-label={t.options}>
       {order.map((oi, k) => {
         const state = reveal ? (oi === 0 ? ' right' : oi === chosen ? ' wrong' : '') : '';
         return (
@@ -48,8 +50,8 @@ export function Options({ q, order, chosen, reveal = false, onPick }: Props) {
             <span className="key">{k + 1}</span>
             <span className="otext" data-block lang="nb"><Words text={q.a[oi]} /></span>
             <span className="mark">
-              {reveal && oi === 0 ? <><Icon name="check" /><span className="sr-only">правильный ответ</span></>
-                : reveal && oi === chosen ? <><Icon name="cross" /><span className="sr-only">ваш ответ, неверно</span></> : null}
+              {reveal && oi === 0 ? <><Icon name="check" /><span className="sr-only">{t.rightSr}</span></>
+                : reveal && oi === chosen ? <><Icon name="cross" /><span className="sr-only">{t.wrongSr}</span></> : null}
             </span>
           </div>
         );

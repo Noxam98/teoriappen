@@ -229,5 +229,60 @@
     ],
     "f": "Vekselvis blinkende rødt lys betyr stopp. Ved jernbaneovergang viser det at et tog kommer. Du må ikke kjøre forbi signalet, men stanse ved stopplinjen eller i god avstand før signalet.",
     "ru": "Попеременно мигающий красный означает «стоп». На железнодорожном переезде он показывает, что приближается поезд. Проезжать мимо светофора нельзя: остановитесь у стоп-линии или на безопасном расстоянии до светофора."
+  },
+  {
+    "id": "sig-17",
+    "cat": "lyssignal",
+    "q": "En politibetjent står i krysset med den ene armen løftet rett opp. Hva betyr det?",
+    "img": null,
+    "a": [
+      "Alle skal stanse, men den som er for nær til å stanse trygt, kan kjøre videre",
+      "Bare trafikk som kommer forfra, skal stanse",
+      "Du kan kjøre videre, men du skal sette ned farten",
+      "Politiet ber deg kjøre inn til siden for kontroll"
+    ],
+    "f": "Armen løftet rett opp betyr at alle trafikanter skal stanse. Er du så nær at du ikke kan stanse uten fare, kan du kjøre videre. Er du allerede i krysset, skal du kjøre ut av det.",
+    "ru": "Поднятая вверх рука означает, что остановиться должны все участники движения. Если вы так близко, что не можете остановиться без опасности, можно ехать дальше. Если вы уже на перекрёстке, покиньте его."
+  },
+  {
+    "id": "sig-18",
+    "cat": "lyssignal",
+    "q": "En politibetjent dirigerer trafikken i et kryss. Hun står med ansiktet mot deg og holder armen strakt ut til siden. Hva skal du gjøre?",
+    "img": null,
+    "a": [
+      "Stanse, fordi trafikk forfra og bakfra skal stanse",
+      "Kjøre, fordi armen viser at veien er åpen",
+      "Svinge i den retningen armen peker",
+      "Kjøre hvis lyssignalet viser grønt for deg"
+    ],
+    "f": "Når politiet holder armen strakt ut til siden, skal trafikk som kommer forfra eller bakfra, stanse. Trafikk som kommer fra siden, kan kjøre. Politiets tegn går foran lyssignalet.",
+    "ru": "Когда полицейский держит руку вытянутой в сторону, те, кто приближается к нему спереди или сзади, должны остановиться. Те, кто подъезжает сбоку, могут ехать. Сигналы полицейского важнее светофора."
+  },
+  {
+    "id": "sig-19",
+    "cat": "lyssignal",
+    "q": "Det er mørkt. En politibetjent på veien foran deg svinger en lykt med rødt lys fram og tilbake. Hva betyr det?",
+    "img": null,
+    "a": [
+      "Du skal stanse, fordi det er et stopptegn fra politiet",
+      "Du skal sette ned farten og kjøre forsiktig forbi",
+      "Du skal blende ned og kjøre videre"
+    ],
+    "f": "En lykt med rødt lys som svinges fram og tilbake, betyr at trafikanter som kjører mot lyset, skal stanse.",
+    "ru": "Если полицейский машет фонарём с красным светом из стороны в сторону, все, кто движется в сторону этого света, должны остановиться."
+  },
+  {
+    "id": "sig-20",
+    "cat": "lyssignal",
+    "q": "Statens vegvesen har kontroll langs veien og gir deg tegn til å kjøre inn. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Du skal stanse for kontroll, på samme måte som når politiet krever det",
+      "Du må bare stanse hvis det er politiet som gir tegn",
+      "Du må bare stanse hvis du kjører lastebil eller buss",
+      "Du kan kjøre videre hvis du ikke har gjort noe galt"
+    ],
+    "f": "Du skal straks stanse for kontroll når politiet eller Statens vegvesen krever det. Anvisninger fra politiet, Statens vegvesen, tollvesenet og militærpolitiet går foran lyssignal, skilt og oppmerking.",
+    "ru": "Вы обязаны сразу остановиться для проверки, когда этого требует полиция или Дорожное управление (Statens vegvesen). Указания полиции, Statens vegvesen, таможни и военной полиции важнее светофора, знаков и разметки."
   }
 ]

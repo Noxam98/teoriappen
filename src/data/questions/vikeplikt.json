@@ -1064,5 +1064,72 @@
     ],
     "f": "Er det stopplinje, stanser du foran den. Uten stopplinje stanser du så nær den kryssende veien som mulig.",
     "ru": "Если есть стоп-линия, останавливайтесь перед ней. Если нет — как можно ближе к пересекаемой дороге."
+  },
+  {
+    "id": "vik-46",
+    "cat": "vikeplikt",
+    "q": "Du skal vende (snu) bilen i en gate uten skilt. En bil kommer imot deg. Hvem har vikeplikt?",
+    "img": null,
+    "a": [
+      "Du, fordi den som vender, har vikeplikt for andre trafikanter",
+      "Den møtende bilen, fordi du blinker",
+      "Den møtende bilen, fordi du allerede har begynt å snu",
+      "Den som kommer først, kjører først"
+    ],
+    "f": "Den som rygger eller vender, har vikeplikt for alle andre trafikanter. Vent til veien er fri før du snur.",
+    "ru": "Тот, кто едет задним ходом или разворачивается, уступает всем остальным участникам движения. Подождите, пока дорога освободится, и только потом разворачивайтесь."
+  },
+  {
+    "id": "vik-47",
+    "cat": "vikeplikt",
+    "q": "Du skal rygge ut fra en parkeringsplass. En høy varebil ved siden av hindrer utsikten, så du ser ikke om det kommer noen. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du må ikke rygge før en annen passer på, eller du selv har sett at det ikke kan oppstå fare",
+      "Du kan rygge sakte, fordi de som kommer, har vikeplikt for deg",
+      "Du kan rygge hvis du tuter først",
+      "Du kan rygge hvis du slår på nødsignalet"
+    ],
+    "f": "Den som rygger, har vikeplikt. Er utsikten ikke god nok, må du ikke rygge uten at en annen passer på, eller at du selv har sett at det ikke kan oppstå fare.",
+    "ru": "Тот, кто едет задним ходом, обязан уступать. Если обзора недостаточно, сдавать назад можно, только когда кто-то другой следит за обстановкой или вы сами своими глазами убедились, что опасности нет."
+  },
+  {
+    "id": "vik-48",
+    "cat": "vikeplikt",
+    "q": "Du skal ut av motorveien, men tar feil avkjøring. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Kjører videre og snur et sted der det er lov",
+      "Rygger forsiktig tilbake til motorveien med nødsignal på",
+      "Snur på avkjøringsveien hvis det ikke kommer noen"
+    ],
+    "f": "Rygging og vending er forbudt på motorvei og motortrafikkvei og på inn- og utkjøringsveiene til dem. Kjør videre, og snu der det er lov.",
+    "ru": "Задний ход и разворот запрещены на автомагистрали, на дороге для автомобилей, а также на въездах и съездах с них. Езжайте дальше и развернитесь там, где это разрешено."
+  },
+  {
+    "id": "vik-49",
+    "cat": "vikeplikt",
+    "q": "Et utrykningskjøretøy kommer bak deg med blinkende blålys, men uten sirene. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Du skal gi det fri vei, selv om sirenen ikke er på",
+      "Du trenger bare å vike når både blålys og sirene er på",
+      "Du kan kjøre som vanlig, fordi det ikke er en utrykning"
+    ],
+    "f": "Du skal gi fri vei når utrykningskjøretøyet varsler med blinkende blått lys. Sirene brukes bare når det trengs, så den er ikke alltid på.",
+    "ru": "Уступать дорогу нужно, когда спецмашина подаёт сигнал мигающим синим светом. Сирену включают только при необходимости, поэтому она звучит не всегда."
+  },
+  {
+    "id": "vik-50",
+    "cat": "vikeplikt",
+    "q": "Du kjører inn i et kryss uten skilt. En ambulanse kommer fra venstre uten blålys og sirene. Hvem har vikeplikt?",
+    "img": null,
+    "a": [
+      "Ambulansen, fordi vanlige regler gjelder når den ikke bruker blålys",
+      "Du, fordi en ambulanse alltid har forkjørsrett",
+      "Du, fordi ambulansen kanskje er på vei til en pasient"
+    ],
+    "f": "Plikten til å gi fri vei gjelder når utrykningskjøretøyet varsler med blinkende blått lys. Uten blålys gjelder vanlige regler, og du kommer fra høyre for ambulansen.",
+    "ru": "Обязанность уступить дорогу действует, когда спецмашина подаёт сигнал мигающим синим светом. Без маячков действуют обычные правила, а вы приближаетесь справа от скорой."
   }
 ]

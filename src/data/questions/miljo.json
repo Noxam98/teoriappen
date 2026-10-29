@@ -102,5 +102,59 @@
     ],
     "f": "Korte turer med kald motor gir mye utslipp per kilometer. Planlegging og samkjøring gir færre turer.",
     "ru": "Короткие поездки на холодном двигателе дают много выбросов на километр. Планирование и совместные поездки уменьшают число поездок."
+  },
+  {
+    "id": "mil-09",
+    "cat": "miljo",
+    "q": "Du kjører elbil og slipper gassen. Hva skjer da vanligvis?",
+    "img": null,
+    "a": [
+      "Elmotoren bremser bilen og lader batteriet litt",
+      "Bilen bruker mer strøm enn når du gasser",
+      "Bilen ruller fritt uten å bremse, som når giret står i fri",
+      "Bremseklossene lager strøm som lader batteriet"
+    ],
+    "f": "Når du slipper gassen, virker elmotoren som en generator. Den bremser bilen og gjør bevegelsen om til strøm som lader batteriet.",
+    "ru": "Когда вы отпускаете педаль газа, электромотор работает как генератор: он тормозит машину и превращает её движение в электричество, которое подзаряжает батарею."
+  },
+  {
+    "id": "mil-10",
+    "cat": "miljo",
+    "q": "Du venter på en venn i et boligområde. Kan du la motoren gå på tomgang?",
+    "img": null,
+    "a": [
+      "Nei, i boligområder er tomgang som gir unødig støy eller eksos forbudt",
+      "Ja, så lenge bilen står lovlig parkert",
+      "Ja, tomgang er bare forbudt i sentrum av store byer",
+      "Ja, hvis du ikke venter mer enn en time"
+    ],
+    "f": "I eller ved bebyggelse er det forbudt å bruke motoren på tomgang når det gir unødig støy eller unødig utslipp av røyk eller gass. Slå av motoren mens du venter.",
+    "ru": "В населённых пунктах и рядом с жильём запрещено оставлять двигатель на холостом ходу, если это создаёт лишний шум или лишние выбросы дыма или газа. Выключите двигатель, пока ждёте."
+  },
+  {
+    "id": "mil-11",
+    "cat": "miljo",
+    "q": "Du skal kvitte deg med en gammel bil som ikke skal brukes mer. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du leverer den til et godkjent mottak for bilvrak og får vrakpant",
+      "Du tar av skiltene og lar bilen stå i skogen",
+      "Du lar bilen stå på en offentlig parkeringsplass til kommunen henter den"
+    ],
+    "f": "Gamle biler inneholder stoffer som kan skade helse og miljø. Lever bilen til et godkjent mottak, så får du vrakpant, og Statens vegvesen får beskjed automatisk.",
+    "ru": "В старых машинах есть вещества, вредные для здоровья и природы. Сдайте машину в официальный пункт приёма — вы получите утилизационную премию (vrakpant), а Statens vegvesen получит уведомление автоматически."
+  },
+  {
+    "id": "mil-12",
+    "cat": "miljo",
+    "q": "Hvor er det best for miljøet å vaske bilen?",
+    "img": null,
+    "a": [
+      "I en vaskehall, som samler opp mye av olje og vaskemidler",
+      "På asfalten i gata, så vannet renner rett i sluket",
+      "Ved en bekk, så du har nok vann til å skylle bilen"
+    ],
+    "f": "Vaskevann fra gater og innkjørsler renner ofte urenset ut i elver, innsjøer og fjorder. En vaskehall samler opp mye av olje og vaskemidler.",
+    "ru": "Вода после мойки на улицах и у домов часто без очистки стекает в реки, озёра и фьорды. Автомойка задерживает большую часть масла и моющих средств."
   }
 ]

@@ -23,19 +23,31 @@
       ["Bruk motorvarmer om vinteren. Det gir mindre slitasje på motoren og mindre forbruk og utslipp ved kaldstart.", "Зимой пользуйтесь подогревателем двигателя. Он уменьшает износ двигателя, а также расход и выбросы при холодном запуске."],
       ["Korte turer med kald motor gir mye utslipp per kilometer.", "Короткие поездки на холодном двигателе дают много выбросов на километр."]
     ] },
+    { "rule": "I eller ved bebyggelse er det forbudt å bruke motoren på tomgang når det gir unødig støy eller unødig utslipp av røyk eller gass. Slå av motoren når du venter.", "ru": "В населённых пунктах и рядом с жильём запрещено оставлять двигатель на холостом ходу, если это создаёт лишний шум или лишние выбросы дыма или газа. Выключайте двигатель, когда ждёте." },
+
+    { "h": "Elbil og energi", "ru": "Электромобиль и энергия" },
+    { "p": "Når du slipper gassen i en elbil, virker elmotoren vanligvis som en generator. Den bremser bilen og gjør bevegelsen om til strøm som lader batteriet. Dette kalles regenerativ bremsing.", "ru": "Когда вы отпускаете педаль газа в электромобиле, электромотор обычно работает как генератор. Он тормозит машину и превращает её движение в электричество, которое подзаряжает батарею. Это называется рекуперативным торможением." },
 
     { "h": "Piggdekk og svevestøv", "ru": "Шипованные шины и мелкая пыль" },
     { "p": "Piggene river opp asfalten. Det gir svevestøv i lufta, som er skadelig å puste inn. Derfor må du i noen byer betale gebyr for å kjøre med piggdekk.", "ru": "Шипы разрушают асфальт. В воздухе появляется мелкая пыль, которой вредно дышать. Поэтому в некоторых городах за езду на шипованных шинах нужно платить сбор." },
 
     { "h": "Færre bilturer", "ru": "Меньше поездок на машине" },
-    { "p": "Planlegg turene, slik at du kan gjøre flere ærend på én tur. Samkjør når du kan, og gå eller sykle på korte turer.", "ru": "Планируйте поездки, чтобы за один раз сделать несколько дел. Ездите вместе с другими, когда это возможно, а короткие расстояния проходите пешком или проезжайте на велосипеде." }
+    { "p": "Planlegg turene, slik at du kan gjøre flere ærend på én tur. Samkjør når du kan, og gå eller sykle på korte turer.", "ru": "Планируйте поездки, чтобы за один раз сделать несколько дел. Ездите вместе с другими, когда это возможно, а короткие расстояния проходите пешком или проезжайте на велосипеде." },
+
+    { "h": "Bilvask og bilvrak", "ru": "Мойка и утилизация машины" },
+    { "p": "Vask bilen i en vaskehall. Vaskevann fra gater og innkjørsler renner ofte urenset ut i elver, innsjøer og fjorder. En vaskehall samler opp mye av olje og vaskemidler.", "ru": "Мойте машину на автомойке. Вода после мойки на улицах и у домов часто без очистки стекает в реки, озёра и фьорды. Автомойка задерживает большую часть масла и моющих средств." },
+    { "p": "Gamle biler inneholder stoffer som kan skade helse og miljø. Skal bilen ikke brukes mer, leverer du den til et godkjent mottak. Der får du vrakpant, og Statens vegvesen får automatisk beskjed om at bilen er vraket.", "ru": "В старых машинах есть вещества, вредные для здоровья и природы. Если машиной больше не будут пользоваться, сдайте её в официальный пункт приёма. Там вы получите утилизационную премию (vrakpant), а Statens vegvesen автоматически получит уведомление, что машина утилизирована." }
   ],
   "sources": [
     ["Økonomisk kjøring (NAF)", "https://www.naf.no/bilhold/kostnader/okonomisk-kjoring"],
     ["Motorvarmer – kaldstart, slitasje og utslipp (NAF)", "https://www.naf.no/bilhold/bilutstyr/slik-fungerer-motorvarmeren"],
     ["Drivstoffsparing: motorbrems i gir og tomgang (ADAC, tysk)", "https://www.adac.de/verkehr/tanken-kraftstoff-antrieb/tipps-zum-tanken/sprit-sparen-tipps/"],
     ["Piggdekkgebyr og svevestøv (Bergen kommune)", "https://www.bergen.kommune.no/innbyggerhjelpen/vann-vei-og-trafikk/kjoretoy/piggdekk/piggdekk"],
-    ["Svevestøv og helse (Folkehelseinstituttet)", "https://www.fhi.no/mh/luftforurensninger/luftkvalitet/temakapitler/svevestov/"]
+    ["Svevestøv og helse (Folkehelseinstituttet)", "https://www.fhi.no/mh/luftforurensninger/luftkvalitet/temakapitler/svevestov/"],
+    ["Trafikkreglene § 16 – tomgang og unødig støy (Lovdata)", "https://lovdata.no/forskrift/1986-03-21-747/§16"],
+    ["Regenerativ bremsing (Store norske leksikon)", "https://snl.no/regenerativ_bremsing"],
+    ["Vrakpant for bil (Miljødirektoratet)", "https://www.miljodirektoratet.no/ansvarsomrader/avfall/vrakpant/vrakpant-for-bil-bat-campingvogn-og-lignende/"],
+    ["Avløp og miljø – vask bilen i vaskehall (Bergen kommune)", "https://www.bergen.kommune.no/innbyggerhjelpen/vann-vei-og-trafikk/vann-og-avlop/avlop-og-avlopshandtering/avlop-og-miljo"]
   ],
   "checked": "2026-10"
 }

@@ -28,6 +28,7 @@
       ["Fartsdemper (fartshump): senk farten i god tid før den. Ikke brems når du er oppå den.", "Искусственная неровность («лежачий полицейский»): снизьте скорость заранее, а не тормозите на ней самой."],
       ["Ikke kjør unødvendig sakte, slik at du hindrer trafikken bak deg. Det kan føre til farlige forbikjøringer.", "Не езжайте без причины так медленно, что мешаете тем, кто сзади: это провоцирует опасные обгоны."]
     ] },
+    { "p": "Farten betyr mye for den som blir påkjørt. Blir en gående påkjørt i 30 km/t, overlever de fleste. I 50 km/t dør de fleste.", "ru": "Скорость очень важна для того, кого сбили. Если пешехода сбили на 30 км/ч, большинство выживает. На 50 км/ч большинство погибает." },
     { "trap": "Viser skiltet 30 km/t ved en skole, er ikke 30 km/t alltid trygt. Barn er uforutsigbare, så du må være klar til å stoppe – også under fartsgrensen.", "ru": "Если у школы знак 30 км/ч, это не значит, что 30 км/ч всегда безопасно. Дети непредсказуемы: будьте готовы остановиться, даже если едете медленнее разрешённого." },
 
     { "h": "Reaksjonslengde, bremselengde og stopplengde", "ru": "Путь реакции, тормозной и остановочный путь" },
@@ -46,6 +47,14 @@
     { "p": "Bruk tresekundersregelen. Velg et fast punkt, for eksempel et skilt. Når bilen foran passerer punktet, bør det gå minst 3 sekunder før du passerer det samme punktet.", "ru": "Пользуйтесь правилом трёх секунд. Выберите неподвижный ориентир, например знак. Когда машина впереди его проехала, желательно, чтобы до вашего проезда мимо него прошло не меньше 3 секунд." },
     { "p": "Tre sekunder er et minimum på tørr vei med god sikt. På våt og glatt vei blir bremselengden mye lengre, så da trenger du større avstand.", "ru": "Три секунды — это минимум для сухой дороги и хорошей видимости. На мокрой и скользкой дороге тормозной путь намного длиннее, поэтому дистанция нужна больше." },
 
+    { "h": "Sikkerhetssoner", "ru": "Зоны безопасности" },
+    { "p": "Sikkerhetssonen er rommet rundt bilen – foran, bak og til sidene. Du får den ved å holde avstand til andre trafikanter og til farer. Den gir deg tid og plass til å reagere hvis noe uventet skjer.", "ru": "Зона безопасности — это пространство вокруг машины: спереди, сзади и по бокам. Вы создаёте её, держа дистанцию до других участников движения и до опасностей. Она даёт вам время и место, чтобы среагировать, если случится что-то неожиданное." },
+    { "list": [
+      ["Foran: hold minst 3 sekunders avstand til bilen foran, og mer på glatt vei.", "Спереди: держите не меньше 3 секунд до машины впереди, а на скользкой дороге — больше."],
+      ["Til sidene: hold god avstand til parkerte biler, fordi en bildør plutselig kan bli åpnet. Gi syklister god sideavstand.", "По бокам: держитесь подальше от припаркованных машин — у них может внезапно открыться дверь. Оставляйте велосипедистам большой боковой интервал."],
+      ["Bak: kjører noen veldig tett bak deg, øk avstanden til bilen foran. Da kan du bremse tidlig og mykt. Ikke brems brått, og slipp bilen forbi når det er trygt.", "Сзади: если кто-то едет вплотную за вами, увеличьте дистанцию до машины впереди — тогда вы сможете тормозить заранее и плавно. Не тормозите резко и пропустите машину вперёд, когда это безопасно."]
+    ] },
+
     { "h": "Vannplaning", "ru": "Аквапланирование" },
     { "p": "Ved vannplaning flyter dekkene på et lag med vann og mister kontakten med veien. Da kan du verken styre eller bremse. Faren øker med høy fart, slitte dekk og mye vann på veien.", "ru": "При аквапланировании шины «плывут» по слою воды и теряют контакт с дорогой. Тогда машина не слушается ни руля, ни тормозов. Риск растёт при большой скорости, изношенных шинах и большом количестве воды на дороге." },
     { "list": [
@@ -60,7 +69,9 @@
     ["Tempo 100 – godkjenning av tilhenger (Statens vegvesen)", "https://www.vegvesen.no/nn/koyretoy/eige-og-vedlikehalde/tilhengjar/tempo100/"],
     ["Nye fartsgrenser for tilhengere, 2022 (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/2022/03/nye-fartsgrenser-for-tilhengere/"],
     ["Fart og kroppens tåleevne – reaksjons- og bremselengde (Trygg Trafikk)", "https://www.tryggtrafikk.no/kunnskap-om-trafikksikkerhet/fart-og-fartsgrenser/fart-og-kroppens-taleevne/"],
-    ["Kjør pent i påsken – minst 3 sekunders avstand (Trygg Trafikk)", "https://www.tryggtrafikk.no/artikler/pressemelding/kjor-pent-i-pasken/"]
+    ["Kjør pent i påsken – minst 3 sekunders avstand (Trygg Trafikk)", "https://www.tryggtrafikk.no/artikler/pressemelding/kjor-pent-i-pasken/"],
+    ["Læreplan klasse A1 – sikkerhetssone og handlingsrom (Statens vegvesen)", "https://www.vegvesen.no/globalassets/fag/handboker/hb-v850a1.pdf"],
+    ["Derfor må du holde fartsgrensen – påkjørt i 30 og 50 km/t (Trygg Trafikk)", "https://tryggtrafikk.no/kunnskap-om-trafikksikkerhet/fart-og-fartsgrenser/derfor-ma-du-holde-fartsgrensen"]
   ],
   "checked": "2026-10"
 }

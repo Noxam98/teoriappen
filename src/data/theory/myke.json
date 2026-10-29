@@ -30,6 +30,12 @@
       ["Ikke tut for å få syklisten til å flytte seg.", "Не сигнальте, чтобы велосипедист посторонился."],
       ["Se i speilet og over skulderen etter syklister før du åpner døren.", "Прежде чем открыть дверь, посмотрите в зеркало и через плечо, нет ли велосипедистов."]
     ] },
+    { "p": "Store kjøretøy, som lastebiler og busser, har store blindsoner. En syklist eller gående rett ved siden av en lastebil som svinger til høyre, kan være i blindsonen, og sjåføren ser dem kanskje ikke. Kan du ikke se sjåføren, er det ikke sikkert at sjåføren ser deg.", "ru": "У больших машин — грузовиков и автобусов — большие слепые зоны. Велосипедист или пешеход рядом с грузовиком, который поворачивает направо, может оказаться в слепой зоне, и водитель его не увидит. Если вы не видите водителя, возможно, и он не видит вас." },
+
+    { "h": "Elsparkesykler", "ru": "Электросамокаты" },
+    { "p": "En elsparkesykkel er et lite elektrisk kjøretøy. Den følger stort sett de samme reglene som en sykkel. Den kan kjøre i kjørebanen, i sykkelfeltet og på sykkelveien. På fortauet og gangveien kan den kjøre når det ikke er til hinder for gående.", "ru": "Электросамокат — небольшое электрическое транспортное средство. В основном для него действуют те же правила, что и для велосипеда. На нём можно ехать по проезжей части, по велополосе и по велодорожке. По тротуару и пешеходной дорожке — если это не мешает пешеходам." },
+    { "p": "Elsparkesykler er nesten lydløse, kan kjøre ganske fort og er mindre synlige enn en bil. De kan komme brått ut i veien, for eksempel fra fortauet mot et gangfelt. Senk farten og vær klar til å stoppe.", "ru": "Электросамокаты почти бесшумные, могут ехать довольно быстро и менее заметны, чем машина. Они могут внезапно выехать на дорогу — например, с тротуара на пешеходный переход. Снизьте скорость и будьте готовы остановиться." },
+    { "trap": "Mange tror at du alltid har vikeplikt for den som er i et gangfelt. Den som kjører sykkel eller elsparkesykkel over gangfeltet, regnes ikke som gående og har vikeplikt. Går personen av og triller, har du vikeplikt. Uansett skal du være aktpågivende og bremse hvis det trengs.", "ru": "Многие думают, что вы всегда уступаете тому, кто на пешеходном переходе. Но тот, кто пересекает переход верхом на велосипеде или электросамокате, не считается пешеходом и сам обязан уступить. Если человек слезет и поведёт самокат рядом, уступаете вы. В любом случае вы должны быть внимательны и тормозить, если нужно." },
 
     { "h": "Motorsykler", "ru": "Мотоциклы" },
     { "p": "Motorsykler er smale og blir lett skjult, for eksempel bak andre biler. Det er også vanskelig å bedømme hvor fort de kommer.", "ru": "Мотоциклы узкие, их легко не заметить — например, за другими машинами. Также трудно оценить, с какой скоростью они приближаются." },
@@ -53,7 +59,9 @@
     ["I mørket kan refleks bety liv eller død (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/nasjonalt/i-morket-kan-refleks-bety-liv-eller-dod/"],
     ["Trafikkskilt Barn (Store norske leksikon)", "https://snl.no/Barn_-_trafikkskilt"],
     ["Ikke stikk av etter å ha kjørt på dyr (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/nasjonalt/ikke-stikk-etter-a-ha-kjort-pa-dyr/"],
-    ["I møte med hest (Trygg Trafikk)", "https://www.tryggtrafikk.no/tips/bil/tips-og-rad-om-bilkjoring/i-mote-med-hest/"]
+    ["I møte med hest (Trygg Trafikk)", "https://www.tryggtrafikk.no/tips/bil/tips-og-rad-om-bilkjoring/i-mote-med-hest/"],
+    ["Regler for elsparkesykkel – fortau og gangfelt (Statens vegvesen)", "https://www.vegvesen.no/globalassets/trafikk/trafikksikkerhet/regler-sparkesykkel.pdf"],
+    ["Samspill i trafikken – blindsoner på lastebil og buss (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/trafikksikkerhet/kampanjer/samspill-i-trafikken/"]
   ],
   "checked": "2026-10"
 }

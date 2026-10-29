@@ -13,7 +13,9 @@ import { answerFeedback } from '../lib/feedback';
 import { playSound } from '../lib/sound';
 import { shuffle } from '../lib/text';
 import { useApp } from '../state/AppState';
-import type { AppData, PracticeMode, PracticeRound, Screen } from '../types';
+import { topicName, useT } from '../i18n';
+import type { Messages } from '../i18n/ru';
+import type { AppData, Lang, PracticeMode, PracticeRound, Screen } from '../types';
 
 type PracticeScreenSpec = Extract<Screen, { name: 'practice' }>;
 
@@ -50,14 +52,16 @@ function playOnce(name: 'begin') {
   playSound(name);
 }
 
-export function practiceTitle(mode: PracticeMode): [string, string] {
-  if (mode === 'all') return ['Alle temaer', 'все темы вперемешку'];
-  if (mode === 'wrong' || mode === 'list') return ['Feil', 'работа над ошибками'];
-  return [CATEGORY[mode].no, CATEGORY[mode].ru];
+/** The name of a practice round: Norwegian and in the reader's language. */
+export function practiceTitle(mode: PracticeMode, t: Messages, lang: Lang): [string, string] {
+  if (mode === 'all') return ['Alle temaer', t.practice.all];
+  if (mode === 'wrong' || mode === 'list') return ['Feil', t.practice.mistakes];
+  return [CATEGORY[mode].no, topicName(CATEGORY[mode], lang)];
 }
 
 export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
   const { data, update, go, mark, restored, answer, finishPractice } = useApp();
+  const t = useT();
   const [round] = useState(() => openRound(screen, data, restored));
   const { ids, instant, start } = round;
   const [i, setI] = useState(round.i);
@@ -93,7 +97,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
   const revealed = instant && handedIn !== undefined;
   const right = Object.entries(answers).filter(([, a]) => a === 0).length;
   const done = Object.keys(answers).length;
-  const [no, ru] = practiceTitle(screen.mode);
+  const [no, ru] = practiceTitle(screen.mode, t, data.prefs.lang);
 
   const pick = (oi: number) => {
     if (!q || revealed) return;
@@ -143,14 +147,14 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
 
   return (
     <div className="screen-q">
-      <h1 className="sr-only">Тренировка: {no}, вопрос {i + 1} из {ids.length}</h1>
+      <h1 className="sr-only">{t.practice.heading(no, i + 1, ids.length)}</h1>
       <div className="examhead">
         <div className="examhead-row">
           <span className="topic"><b data-block lang="nb"><Words text={no} /></b><small>{ru}</small></span>
           <span className="sp" />
           <span className="counter tnum"><b>{i + 1}</b>/{ids.length}</span>
           {instant && done > 0 && <span className="score-chip tnum"><Icon name="check" />{right}<small>/{done}</small></span>}
-          {instant && streak >= 3 && <span key={streak} className="streak-chip tnum" title="Правильных ответов подряд">серия {streak}</span>}
+          {instant && streak >= 3 && <span key={streak} className="streak-chip tnum" title={t.practice.streakTitle}>{t.practice.streak(streak)}</span>}
         </div>
         <div className="pbar" aria-hidden="true"><i style={{ width: `${(i / ids.length) * 100}%` }} /></div>
       </div>
@@ -160,8 +164,8 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
         {revealed && <div ref={explainRef}><Explanation q={q} correct={chosen === 0} /></div>}
       </QuestionCard>
 
-      <ActionBar label="Навигация по вопросам">
-        <button className="btn ghost-strong" onClick={() => finish(true)}>Завершить</button>
+      <ActionBar label={t.exam.nav}>
+        <button className="btn ghost-strong" onClick={() => finish(true)}>{t.practice.finish}</button>
         <button className={!canMain ? 'btn grow' : revealed && handedIn === 0 ? 'btn ok grow' : 'btn primary grow'} disabled={!canMain} onClick={main}>
           {checking ? <>Sjekk <Icon name="check" /></> : <>{i + 1 < ids.length ? 'Neste' : 'Ferdig'} <Icon name="right" /></>}
         </button>

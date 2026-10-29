@@ -45,26 +45,27 @@ export type Figure =
  */
 export type TheoryBlock =
   /** subheading */
-  | { h: string; ru: string }
-  | { p: string; ru: string }
+  | { h: string; ru: string; uk?: string }
+  | { p: string; ru: string; uk?: string }
   /** the rule to remember, highlighted */
-  | { rule: string; ru: string }
+  | { rule: string; ru: string; uk?: string }
   /** a typical mistake on the exam */
-  | { trap: string; ru: string }
-  /** bullet list: [Norwegian, Russian] */
-  | { list: [string, string][] }
+  | { trap: string; ru: string; uk?: string }
+  /** bullet list: [Norwegian, Russian, Ukrainian] */
+  | { list: [string, string, string?][] }
   /** a picture with a caption */
-  | { fig: Figure; no: string; ru: string }
-  /** signs with their names: [sign, Norwegian, Russian] */
-  | { signs: [string, string, string][] }
-  /** numbers to know: [value, Norwegian, Russian], e.g. ["0,2 ‰", "promillegrense", "допустимое промилле"] */
-  | { nums: [string, string, string][] };
+  | { fig: Figure; no: string; ru: string; uk?: string }
+  /** signs with their names: [sign, Norwegian, Russian, Ukrainian] */
+  | { signs: [string, string, string, string?][] }
+  /** numbers to know: [value, Norwegian, Russian, Ukrainian], e.g. ["0,2 ‰", "promillegrense", "допустимое промилле", "допустимий рівень"] */
+  | { nums: [string, string, string, string?][] };
 
 export interface TheoryChapter {
   cat: CategoryId;
   /** One or two sentences under the title. */
   lead: string;
   leadRu: string;
+  leadUk?: string;
   blocks: TheoryBlock[];
   /** Official sources the chapter was checked against: [title, https URL]. */
   sources?: [string, string][];
@@ -84,6 +85,8 @@ export interface Question {
   f: string;
   /** Explanation in Russian. */
   ru: string;
+  /** Explanation in Ukrainian. */
+  uk?: string;
   /**
    * The options name the signs of the picture by number ("Skilt 1 …", "Skilt 2 …"): the signs get numbers,
    * and the options are shown in that order instead of shuffled, so plate 1 is always sign 1.
@@ -105,7 +108,11 @@ export interface VocabItem {
   t: number;
 }
 
-export type TheoryLang = 'both' | 'nb' | 'ru';
+/** The language of translations and of the interface. */
+export type Lang = 'ru' | 'uk';
+
+/** Theory text: Norwegian with the translation under it, Norwegian only, or the translation only. */
+export type TheoryLang = 'both' | 'nb' | 'tr';
 
 /** When the correct answer is shown: right after each question, or only at the end. */
 export type RevealMode = 'instant' | 'end';
@@ -161,8 +168,8 @@ export interface Prefs {
   volume: 0 | 1 | 2;
   size: 0 | 1 | 2;
   ru: boolean;
-  /** Theory text: Norwegian with the Russian under it, Norwegian only, or Russian only. */
   theoryLang: TheoryLang;
+  lang: Lang;
   seenBrushHint: boolean;
 }
 

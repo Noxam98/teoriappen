@@ -1,3 +1,5 @@
+import { MESSAGES } from '../i18n';
+import type { Lang } from '../types';
 // Optional "translate in context" via Claude. Works only when the page is opened inside the claude.ai
 // artifact viewer (window.claude exists there). Locally the app simply hides the button.
 
@@ -41,14 +43,11 @@ export function classifyError(e: unknown): ClaudeFailure {
   return 'failed';
 }
 
-export async function translateInContext(phrase: string, sentence: string, signal: AbortSignal): Promise<ContextTranslation> {
+export async function translateInContext(phrase: string, sentence: string, lang: Lang, signal: AbortSignal): Promise<ContextTranslation> {
   const sample = await getSample();
   if (!sample) throw { code: 'not_granted', message: 'Claude is not available here' } satisfies SampleError;
-  const what = phrase.includes(' ') ? 'норвежское выражение' : 'норвежское слово';
-  const prompt = `Ты помогаешь русскоязычному человеку готовиться к теоретическому экзамену на водительские права в Норвегии (класс B).
-Переведи ${what} «${phrase}» на русский язык именно в контексте этого предложения:
-"${sentence.slice(0, 600)}"
-Ответь только JSON: {"translation": "краткий перевод в этом контексте", "base": "словарная форма (с артиклем en/ei/et или å), если это одно слово, иначе пустая строка", "note": "одно короткое пояснение по-русски о грамматике или о значении термина в ПДД, до 20 слов", "sentence": "перевод всего предложения на русский"}`;
+  const t = MESSAGES[lang].claude;
+  const prompt = t.prompt(phrase.includes(' ') ? t.phrase : t.word, phrase, sentence.slice(0, 600));
   const r = await sample.json<ContextTranslation>(prompt, { modelTier: 'quick', signal });
   return { translation: String(r?.translation ?? ''), base: r?.base, note: r?.note, sentence: r?.sentence };
 }

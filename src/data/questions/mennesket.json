@@ -241,5 +241,103 @@
     ],
     "f": "Øyekontakt gjør det lettere å vite om andre har sett deg. Men du kan ikke være helt sikker, så vær fortsatt forsiktig.",
     "ru": "Зрительный контакт помогает понять, заметили ли вас другие. Но полной уверенности он не даёт, поэтому оставайтесь осторожны."
+  },
+  {
+    "id": "men-19",
+    "cat": "mennesket",
+    "q": "Hva sier grunnregelen i vegtrafikkloven § 3?",
+    "img": null,
+    "a": [
+      "Du skal være hensynsfull, aktpågivende og varsom, så det ikke oppstår fare eller skade",
+      "Du kan alltid kjøre så fort som fartsgrensen tillater, uansett forhold",
+      "Du trenger bare å ta hensyn til andre når du har vikeplikt",
+      "Du skal først og fremst komme raskt fram og aldri kjøre sakte"
+    ],
+    "f": "Grunnregelen sier at alle skal ferdes hensynsfullt og være aktpågivende og varsom, så det ikke oppstår fare eller skade. Du skal heller ikke hindre eller forstyrre annen trafikk unødig.",
+    "ru": "Основное правило гласит: все должны двигаться, уважая других, внимательно и осторожно, чтобы не возникло опасности или ущерба. Кроме того, нельзя без необходимости мешать другим участникам движения."
+  },
+  {
+    "id": "men-20",
+    "cat": "mennesket",
+    "q": "Hvem gjelder grunnregelen i vegtrafikkloven § 3 for?",
+    "img": null,
+    "a": [
+      "Alle trafikanter, også gående og syklister",
+      "Bare dem som kjører bil",
+      "Bare førere som har førerkort",
+      "Bare yrkessjåfører i arbeid"
+    ],
+    "f": "Grunnregelen gjelder alle som ferdes på veien – bilførere, syklister, gående og andre trafikanter.",
+    "ru": "Основное правило касается всех, кто находится на дороге: водителей, велосипедистов, пешеходов и других участников движения."
+  },
+  {
+    "id": "men-21",
+    "cat": "mennesket",
+    "q": "Du er syk og svært trøtt, og du kjenner at du ikke kan kjøre trygt. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Du må ikke kjøre",
+      "Du kan kjøre hvis du holder lav fart",
+      "Du kan kjøre korte turer i nærheten",
+      "Det er bare forbudt hvis du har tatt medisin"
+    ],
+    "f": "Ingen må kjøre når sykdom, svekkelse, trøtthet eller andre grunner gjør at de ikke kan kjøre trygt. Det står i vegtrafikkloven § 21.",
+    "ru": "Никто не имеет права садиться за руль, если из-за болезни, слабости, усталости или по другой причине не может вести машину безопасно. Это записано в § 21 закона о дорожном движении."
+  },
+  {
+    "id": "men-22",
+    "cat": "mennesket",
+    "q": "Du har fått en sykdom og er usikker på om du kan kjøre trygt. Hva skal du gjøre?",
+    "img": null,
+    "a": [
+      "Slutte å kjøre og gå til lege før du kjører igjen",
+      "Kjøre som vanlig til legen sier noe annet",
+      "Kjøre bare om dagen til du blir frisk",
+      "Vente med å gjøre noe til førerkortet skal fornyes"
+    ],
+    "f": "Tviler du på om helsen din er god nok til å kjøre trygt, skal du slutte å kjøre og gå til lege før du kjører igjen. Det er først og fremst ditt eget ansvar at du kjører trafikksikkert.",
+    "ru": "Если вы сомневаетесь, позволяет ли здоровье безопасно водить машину, нужно перестать ездить и сходить к врачу, прежде чем снова сесть за руль. За безопасную езду в первую очередь отвечаете вы сами."
+  },
+  {
+    "id": "men-23",
+    "cat": "mennesket",
+    "q": "Du skal kjøre en lang tur i ferien. Hva bør du gjøre for ikke å bli for trøtt?",
+    "img": null,
+    "a": [
+      "Starte uthvilt og ta pauser underveis",
+      "Kjøre rett fra jobben, så du kommer tidlig fram",
+      "Kjøre hele veien uten stopp, så turen går fortere",
+      "Drikke mye kaffe i stedet for å ta pauser"
+    ],
+    "f": "Start uthvilt – ikke dra rett fra jobben på en lang tur. Ta pauser underveis, og stopp og sov litt hvis du blir trøtt.",
+    "ru": "Отправляйтесь в путь отдохнувшим — не выезжайте в долгую поездку сразу после работы. Делайте остановки по дороге, а если почувствуете усталость, остановитесь и немного поспите."
+  },
+  {
+    "id": "men-24",
+    "cat": "mennesket",
+    "q": "Du kjører i 80 km/t og tar blikket bort fra veien i 2 sekunder. Omtrent hvor langt kjører du uten å se veien?",
+    "img": null,
+    "a": [
+      "Omtrent 44 meter",
+      "Omtrent 8 meter",
+      "Omtrent 16 meter",
+      "Omtrent 160 meter"
+    ],
+    "f": "I 80 km/t kjører bilen omtrent 22 meter i sekundet. På 2 sekunder kjører du altså omtrent 44 meter i blinde.",
+    "ru": "При 80 км/ч машина проезжает примерно 22 метра в секунду. Значит, за 2 секунды вы проедете вслепую около 44 метров."
+  },
+  {
+    "id": "men-25",
+    "cat": "mennesket",
+    "q": "Du er uoppmerksom fordi du tenker på noe annet. Hva skjer med reaksjonstiden din?",
+    "img": null,
+    "a": [
+      "Den blir lengre, så bilen kjører lenger før du bremser",
+      "Den blir kortere, fordi du er avslappet",
+      "Den blir ikke påvirket, så lenge du ser framover",
+      "Den blir bare lengre når det er mørkt"
+    ],
+    "f": "Når du er uoppmerksom, oppdager du faren senere, og reaksjonstiden blir lengre. Da blir både reaksjonslengden og stopplengden lengre.",
+    "ru": "Когда вы невнимательны, вы позже замечаете опасность, и время реакции увеличивается. Вместе с ним растут и путь, пройденный за время реакции, и весь остановочный путь."
   }
 ]

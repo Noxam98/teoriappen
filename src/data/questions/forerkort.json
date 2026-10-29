@@ -217,5 +217,75 @@
     ],
     "f": "Aldersgrensen for førerkort klasse B er 18 år. Øvelseskjøring kan starte fra 16 år.",
     "ru": "Права категории B можно получить с 18 лет. Учебную езду можно начинать с 16 лет."
+  },
+  {
+    "id": "fk-17",
+    "cat": "forerkort",
+    "q": "Politiet stanser deg fordi du har kjørt litt for fort, og gir deg et forenklet forelegg. Hva skjer hvis du vedtar det?",
+    "img": null,
+    "a": [
+      "Du betaler boten, og saken er avgjort",
+      "Saken går alltid videre til retten",
+      "Du mister førerkortet med en gang",
+      "Du må ta teoriprøven på nytt"
+    ],
+    "f": "Et forenklet forelegg er en bot som du kan vedta på stedet. Vedtar du det, er saken avgjort. Vedtar du det ikke, går saken videre til politiet og kan ende i retten.",
+    "ru": "Упрощённое постановление о штрафе (forenklet forelegg) — это штраф, который можно принять прямо на месте. Если вы его принимаете, дело закрыто. Если нет, делом займётся полиция, и оно может дойти до суда."
+  },
+  {
+    "id": "fk-18",
+    "cat": "forerkort",
+    "q": "Politiet stanser deg og mistenker at du har kjørt med høy promille. Hva kan politiet gjøre med førerkortet ditt?",
+    "img": null,
+    "a": [
+      "Ta beslag i førerkortet med en gang",
+      "Ingenting før saken har vært i retten",
+      "Bare gi deg prikker i førerkortet",
+      "Bare gi deg en skriftlig advarsel"
+    ],
+    "f": "Er du mistenkt for noe som kan gi tap av førerretten, for eksempel promillekjøring, kan politiet ta beslag i førerkortet på stedet. Da har du ikke lov til å kjøre, og tiden uten førerkort trekkes fra tapstiden.",
+    "ru": "Если вас подозревают в нарушении, за которое могут лишить прав (например, езда в нетрезвом виде), полиция может изъять права прямо на месте. После этого водить нельзя, а время без прав засчитывается в срок лишения."
+  },
+  {
+    "id": "fk-19",
+    "cat": "forerkort",
+    "q": "Fartsgrensen er 50 km/t, og du kjører i 80 km/t. Hva må du regne med hvis du blir tatt?",
+    "img": null,
+    "a": [
+      "Bot og tap av førerretten",
+      "Bare en bot",
+      "Bare 2 prikker",
+      "Bare en muntlig advarsel"
+    ],
+    "f": "Er fartsgrensen 60 km/t eller lavere, mister du førerretten hvis du kjører 26 km/t eller mer over grensen. 80 km/t i en 50-sone er 30 km/t for fort.",
+    "ru": "Если ограничение скорости 60 км/ч или ниже, при превышении на 26 км/ч и больше вас лишат прав. 80 км/ч в зоне 50 — это превышение на 30 км/ч."
+  },
+  {
+    "id": "fk-20",
+    "cat": "forerkort",
+    "q": "Fra hvilken alder må du ha helseattest fra lege for å fornye førerkort klasse B?",
+    "img": null,
+    "a": [
+      "80 år",
+      "75 år",
+      "70 år",
+      "65 år"
+    ],
+    "f": "Fra 80 år må du levere helseattest fra lege når du fornyer førerkort klasse B. Har du et tidsbegrenset førerkort på grunn av helsen, trenger du også helseattest.",
+    "ru": "С 80 лет для продления прав категории B нужна медицинская справка от врача (helseattest). Если срок действия ваших прав ограничен по состоянию здоровья, справка тоже нужна."
+  },
+  {
+    "id": "fk-21",
+    "cat": "forerkort",
+    "q": "Du blir tatt for å ha kjørt bil med over 1,2 promille. Hvor lenge mister du førerretten minst?",
+    "img": null,
+    "a": [
+      "2 år",
+      "3 måneder",
+      "6 måneder",
+      "1 år"
+    ],
+    "f": "Ved over 1,2 promille mister du førerretten i minst 2 år. Også lavere promille kan gi tap: over 0,5 til 0,8 promille gir 12–18 måneder.",
+    "ru": "При уровне алкоголя выше 1,2 промилле вас лишат прав минимум на 2 года. Лишить прав могут и при более низком уровне: свыше 0,5 до 0,8 промилле — на 12–18 месяцев."
   }
 ]

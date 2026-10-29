@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect } from 'react';
+import { setLang } from './i18n';
 import { savedScroll } from './lib/routes';
 import { setSoundPrefs } from './lib/sound';
 import { Toolbar } from './components/Toolbar';
@@ -43,6 +44,8 @@ function Layout() {
     document.body.classList.add(`size-${data.prefs.size}`);
   }, [data.prefs.size]);
   useEffect(() => setSoundPrefs(data.prefs.sound, data.prefs.volume), [data.prefs.sound, data.prefs.volume]);
+  // render-time, so that code outside React (announcements, the dictionary) already uses the new language
+  setLang(data.prefs.lang);
 
   return (
     <>

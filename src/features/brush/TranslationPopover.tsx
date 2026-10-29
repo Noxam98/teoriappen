@@ -2,10 +2,13 @@ import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 're
 import { useSwipeDown } from '../../hooks/useSwipeDown';
 import { Icon } from '../../components/Icons';
 import { classifyError, getSample, translateInContext, type ContextTranslation } from '../../lib/claude';
+import { useT } from '../../i18n';
+import type { Messages } from '../../i18n/ru';
 import { firstVariant, gloss, lookup, phrasesIn } from '../../lib/dictionary';
 import { playSound } from '../../lib/sound';
 import { speak, useNorwegianVoice } from '../../lib/speech';
 import { useApp } from '../../state/AppState';
+import type { Lang } from '../../types';
 import { useBrush, type TranslationRequest } from './BrushProvider';
 
 type Ai =
@@ -16,10 +19,10 @@ type Ai =
 
 let claudeBlocked = false;
 
-/** Dictionary result for what the user painted: what to show and what to save to "Мой словарь". */
-function translate(req: TranslationRequest): { body: ReactNode; lemma: string; tr: string; gram: string } {
+/** Dictionary result for what the user painted: what to show and what to save to the vocabulary. */
+function translate(req: TranslationRequest, t: Messages['popover'], lang: Lang): { body: ReactNode; lemma: string; tr: string; gram: string } {
   if (req.words.length === 1) {
-    const r = lookup(req.words[0]);
+    const r = lookup(req.words[0], lang);
     if (r?.kind === 'entry') {
       const [lemma, tr, gram = ''] = r.entry;
       return {
@@ -28,7 +31,7 @@ function translate(req: TranslationRequest): { body: ReactNode; lemma: string; t
           <>
             <div className="lemma"><b>{lemma}</b>{gram && ` · ${gram}`}</div>
             <div className="tr">{tr}</div>
-            {r.approx && <div className="lemma">похожее слово из словаря</div>}
+            {r.approx && <div className="lemma">{t.similar}</div>}
           </>
         ),
       };
@@ -36,32 +39,32 @@ function translate(req: TranslationRequest): { body: ReactNode; lemma: string; t
     if (r?.kind === 'compound') {
       const tr = r.parts.map(([, e]) => firstVariant(e[1])).join(' + ');
       return {
-        lemma: '', tr, gram: 'составное слово',
+        lemma: '', tr, gram: t.compound,
         body: (
           <>
-            <div className="lemma">составное слово</div>
+            <div className="lemma">{t.compound}</div>
             <div className="tr">{tr}</div>
             <div className="parts">{r.parts.map(([w, e]) => <div key={w}><b>{w}</b><span>{e[1]}</span></div>)}</div>
           </>
         ),
       };
     }
-    return { lemma: '', tr: '', gram: '', body: <div className="none">Этого слова нет во встроенном словаре.</div> };
+    return { lemma: '', tr: '', gram: '', body: <div className="none">{t.notFound}</div> };
   }
-  const found = phrasesIn(req.words);
+  const found = phrasesIn(req.words, lang);
   const whole = found.length === 1 && found[0][0].split(' ').length === req.words.length;
-  const tr = found.length ? found.map(([, t]) => t).join('; ') : req.words.map(w => firstVariant(gloss(w))).join(' ');
+  const tr = found.length ? found.map(([, x]) => x).join('; ') : req.words.map(w => firstVariant(gloss(w, lang))).join(' ');
   return {
-    lemma: '', tr, gram: 'выражение',
+    lemma: '', tr, gram: t.phrase,
     body: (
       <>
-        {found.map(([p, t]) => (
+        {found.map(([p, x]) => (
           <div key={p}>
-            <div className="lemma">{whole ? 'выражение' : <><b>{p}</b> · выражение</>}</div>
-            <div className="tr">{t}</div>
+            <div className="lemma">{whole ? t.phrase : <><b>{p}</b> · {t.phrase}</>}</div>
+            <div className="tr">{x}</div>
           </div>
         ))}
-        <div className="parts">{req.words.map((w, i) => <div key={i}><b>{w}</b><span>{gloss(w)}</span></div>)}</div>
+        <div className="parts">{req.words.map((w, i) => <div key={i}><b>{w}</b><span>{gloss(w, lang)}</span></div>)}</div>
       </>
     ),
   };
@@ -76,6 +79,8 @@ export function TranslationPopover() {
 function Popover({ req }: { req: TranslationRequest }) {
   const { close } = useBrush();
   const { data, toggleVocab } = useApp();
+  const tt = useT();
+  const p = tt.popover;
   const voice = useNorwegianVoice();
   const ref = useRef<HTMLDivElement>(null);
   const grip = useRef<HTMLDivElement>(null);
@@ -87,7 +92,7 @@ function Popover({ req }: { req: TranslationRequest }) {
 
   const key = req.words.map(w => w.toLowerCase()).join(' ');
   const saved = data.vocab.some(v => v.w === key);
-  const t = translate(req);
+  const res = translate(req, p, data.prefs.lang);
 
   useEffect(() => {
     playSound('magic');
@@ -110,7 +115,7 @@ function Popover({ req }: { req: TranslationRequest }) {
     abort.current = new AbortController();
     setAi({ state: 'loading' });
     try {
-      const result = await translateInContext(req.text, req.context, abort.current.signal);
+      const result = await translateInContext(req.text, req.context, data.prefs.lang, abort.current.signal);
       setAi({ state: 'done', result });
     } catch (e) {
       const kind = classifyError(e);
@@ -118,30 +123,28 @@ function Popover({ req }: { req: TranslationRequest }) {
       if (kind === 'blocked') { claudeBlocked = true; setCanAsk(false); }
       setAi({
         state: 'error',
-        message: kind === 'blocked' ? 'Доступ к Claude не разрешён — пользуйтесь встроенным словарём.'
-          : kind === 'busy' ? 'Слишком много запросов. Попробуйте чуть позже.'
-          : 'Не получилось получить перевод. Попробуйте ещё раз.',
+        message: kind === 'blocked' ? p.blocked : kind === 'busy' ? p.busy : p.failed,
       });
     }
   }
 
   function save() {
-    const tr = t.tr || (ai.state === 'done' ? ai.result.translation : '');
-    if (toggleVocab({ w: key, show: req.text, lemma: t.lemma, tr, gram: t.gram, ctx: req.context.slice(0, 220) })) playSound('save');
+    const tr = res.tr || (ai.state === 'done' ? ai.result.translation : '');
+    if (toggleVocab({ w: key, show: req.text, lemma: res.lemma, tr, gram: res.gram, ctx: req.context.slice(0, 220) })) playSound('save');
   }
 
   return (
-    <div className="pop" ref={ref} role="dialog" aria-label={`Перевод: ${req.text}`} style={pos ?? { visibility: 'hidden' }}>
+    <div className="pop" ref={ref} role="dialog" aria-label={p.label(req.text)} style={pos ?? { visibility: 'hidden' }}>
       <div className="pop-grip" ref={grip} aria-hidden="true"><span /></div>
       <div className="ph">
         <div className="pw" lang="nb">{req.text}</div>
-        <button className="iconbtn" onClick={close} aria-label="Закрыть"><Icon name="close" /></button>
+        <button className="iconbtn" onClick={close} aria-label={tt.close}><Icon name="close" /></button>
       </div>
-      {t.body}
+      {res.body}
       {ai.state !== 'idle' && (
         <div className="ai">
-          <div className="lbl">Claude · в контексте</div>
-          {ai.state === 'loading' && <div>Думаю…</div>}
+          <div className="lbl">{p.ctxLabel}</div>
+          {ai.state === 'loading' && <div>{p.thinking}</div>}
           {ai.state === 'error' && <div>{ai.message}</div>}
           {ai.state === 'done' && (
             <>
@@ -150,7 +153,7 @@ function Popover({ req }: { req: TranslationRequest }) {
               {ai.result.note && <div>{ai.result.note}</div>}
               {ai.result.sentence && (
                 <details>
-                  <summary>Перевод всего предложения</summary>
+                  <summary>{p.sentence}</summary>
                   <div className="sent">{ai.result.sentence}</div>
                 </details>
               )}
@@ -161,11 +164,11 @@ function Popover({ req }: { req: TranslationRequest }) {
       <div className="acts">
         {voice && <button className="btn" onClick={() => speak(req.text, voice)}><Icon name="speak" />Uttale</button>}
         <button className={saved ? 'btn on' : 'btn'} onClick={save}>
-          <Icon name={saved ? 'starOn' : 'star'} />{saved ? 'В словаре' : 'В словарь'}
+          <Icon name={saved ? 'starOn' : 'star'} />{saved ? p.saved : p.save}
         </button>
         {canAsk && (
-          <button className="btn" onClick={ask} disabled={ai.state === 'loading'} title="Перевод с учётом всего предложения">
-            <Icon name="spark" />Перевод в контексте
+          <button className="btn" onClick={ask} disabled={ai.state === 'loading'} title={p.ctxTitle}>
+            <Icon name="spark" />{p.ctx}
           </button>
         )}
       </div>

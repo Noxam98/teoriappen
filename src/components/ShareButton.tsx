@@ -1,3 +1,4 @@
+import { useT } from '../i18n';
 import { shareableLink } from '../lib/routes';
 import { useApp } from '../state/AppState';
 import type { Screen } from '../types';
@@ -9,6 +10,7 @@ import { Icon } from './Icons';
  */
 export function ShareButton({ to, title, label, className = 'iconbtn' }: { to: Screen; title: string; label: string; className?: string }) {
   const { notify } = useApp();
+  const t = useT();
   const url = shareableLink(to);
   if (!url) return null;
 
@@ -18,7 +20,7 @@ export function ShareButton({ to, title, label, className = 'iconbtn' }: { to: S
     }
     try {
       await navigator.clipboard.writeText(url);
-      notify('Ссылка скопирована');
+      notify(t.linkCopied);
     } catch {
       notify(url);
     }

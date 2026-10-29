@@ -1,7 +1,7 @@
 {
   "cat": "vinter",
-  "lead": "Is, snø, vann og dårlig sikt gjør kjøringen vanskeligere. Her lærer du om vinterdekk, glatt vei, skrens, tåke og vind, kolonnekjøring og brann i tunnel.",
-  "leadRu": "Лёд, снег, вода и плохая видимость усложняют езду. Здесь — о зимних шинах, скользкой дороге, заносах, тумане и ветре, движении в колонне и пожаре в туннеле.",
+  "lead": "Is, snø, vann og dårlig sikt gjør kjøringen vanskeligere. Her lærer du om vinterdekk og kjetting, glatt vei, skrens, tåke og vind, kolonnekjøring og brann i tunnel.",
+  "leadRu": "Лёд, снег, вода и плохая видимость усложняют езду. Здесь — о зимних шинах и цепях, скользкой дороге, заносах, тумане и ветре, движении в колонне и пожаре в туннеле.",
   "blocks": [
     { "h": "Før du kjører om vinteren", "ru": "Перед зимней поездкой" },
     { "p": "Fjern snø og is fra alle ruter, lys, speil og taket før du kjører. Snø fra taket kan gli ned på frontruten når du bremser, eller blåse mot andre trafikanter.", "ru": "Перед поездкой очистите от снега и льда все стёкла, фары, зеркала и крышу. Снег с крыши может съехать на лобовое стекло при торможении или полететь в других участников движения." },
@@ -20,6 +20,11 @@
       ["I noen byer, for eksempel Oslo, Bergen og Trondheim, må du betale piggdekkgebyr når du kjører med piggdekk.", "В некоторых городах, например в Осло, Бергене и Тронхейме, за езду на шипованных шинах нужно платить сбор (piggdekkgebyr)."]
     ] },
     { "trap": "Mange tror at piggdekk er påbudt fra 1. november. Det stemmer ikke: datoene viser bare når du har lov til å bruke piggdekk.", "ru": "Многие думают, что с 1 ноября шипы обязательны. Это не так: даты лишь указывают, когда шипованные шины разрешены." },
+
+    { "h": "Kjetting", "ru": "Цепи противоскольжения" },
+    { "p": "Kjetting gir bedre grep på snø og is. Den legges på drivhjulene – de hjulene som trekker bilen – slik at de ikke spinner og glir. Stram kjettingen igjen etter en kort strekning.", "ru": "Цепи дают лучшее сцепление на снегу и льду. Их надевают на ведущие колёса — те, которые тянут машину, — чтобы они не буксовали и не проскальзывали. Проехав небольшое расстояние, подтяните цепи ещё раз." },
+    { "rule": "For kjetting gjelder de samme datoene som for piggdekk. Utenfor vinterperioden kan du bare bruke kjetting når føret gjør det nødvendig, for eksempel når det har kommet snø på veien.", "ru": "Для цепей действуют те же даты, что и для шипованных шин. Вне зимнего периода цепи можно использовать, только когда этого требует состояние дороги, — например, если на дорогу выпал снег." },
+    { "p": "Biler med tillatt totalvekt over 3500 kg skal ha med kjetting når det kan bli kjøring på snø eller is, og i alle fall fra 1. november. For en vanlig personbil er det ikke påbudt, men det er lurt å ha kjetting med over fjellet.", "ru": "Машины с разрешённой общей массой более 3500 кг должны возить с собой цепи, если можно ожидать езды по снегу или льду, и в любом случае с 1 ноября. Для обычной легковой машины это не обязательно, но цепи разумно брать с собой, если едете через горы." },
 
     { "h": "Glatt vei", "ru": "Скользкая дорога" },
     { "p": "Når temperaturen er rundt 0 grader, er det stor fare for glatt vei. Bruer fryser fort, fordi de blir avkjølt både ovenfra og nedenfra. I skyggen kan det være is selv om veien ellers er bar.", "ru": "Когда температура около нуля, велик риск гололёда. Мосты быстро обледеневают, потому что охлаждаются и сверху, и снизу. В тени может быть лёд, даже если в остальных местах дорога чистая." },
@@ -53,7 +58,8 @@
     ] }
   ],
   "sources": [
-    ["Forskrift om bruk av kjøretøy § 1-4 – dekk og mønsterdybde (Lovdata)", "https://lovdata.no/forskrift/1990-01-25-92/§1-4"],
+    ["Forskrift om bruk av kjøretøy § 1-4 – dekk, mønsterdybde, piggdekk og kjetting (Lovdata)", "https://lovdata.no/forskrift/1990-01-25-92/§1-4"],
+    ["Trucker's guide – kjetting på drivhjulene (Statens vegvesen)", "https://www.vegvesen.no/globalassets/kjoretoy/yrkestransport/truckersguide/donnadiesel_truckersguide_2021-web-no.pdf"],
     ["Skift til vinterhjul før snøen kommer, 2026 (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/2026/10/skift-til-vinterhjul-for-snoen-kommer/"],
     ["Piggdekkgebyr (Oslo kommune)", "https://www.oslo.kommune.no/english/street-transport-and-parking/studded-tyre-fee/"],
     ["Slik kjører du i kolonne (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/reiseinformasjon/kolonnetider/slik-kjorer-du-i-kolonne/"],

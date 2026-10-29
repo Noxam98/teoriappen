@@ -209,5 +209,33 @@
     ],
     "f": "Sterke vindkast kan flytte bilen sidelengs. Lav fart gir deg bedre kontroll.",
     "ru": "Сильные порывы ветра могут сдвинуть машину в сторону. На низкой скорости вы лучше контролируете автомобиль."
+  },
+  {
+    "id": "vin-18",
+    "cat": "vinter",
+    "q": "Det er midt i mai, og det har kommet snø på en fjellovergang. Kan du bruke kjetting på bilen?",
+    "img": null,
+    "a": [
+      "Ja, når føret gjør det nødvendig",
+      "Nei, kjetting er alltid forbudt etter påske",
+      "Ja, men bare hvis bilen veier over 3500 kg",
+      "Nei, kjetting er bare tillatt fra desember til februar"
+    ],
+    "f": "Utenfor vinterperioden kan du bruke kjetting, som piggdekk, bare når føret gjør det nødvendig – for eksempel når det har kommet snø på veien.",
+    "ru": "Вне зимнего периода цепи, как и шипы, можно использовать, только когда этого требует состояние дороги, — например, если на дорогу выпал снег."
+  },
+  {
+    "id": "vin-19",
+    "cat": "vinter",
+    "q": "Du skal legge kjetting på bilen. På hvilke hjul legger du den?",
+    "img": null,
+    "a": [
+      "På drivhjulene, altså de hjulene som trekker bilen",
+      "På hjulene som ikke trekker bilen",
+      "Bare på ett hjul, gjerne bak til høyre",
+      "Det har ingen betydning hvilke hjul du velger"
+    ],
+    "f": "Kjettingen skal hindre at drivhjulene spinner og glir. Derfor legger du den på drivhjulene – de hjulene som trekker bilen.",
+    "ru": "Цепи нужны, чтобы ведущие колёса не буксовали и не проскальзывали. Поэтому их надевают на ведущие колёса — те, которые тянут машину."
   }
 ]

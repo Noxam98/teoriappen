@@ -171,5 +171,59 @@
     ],
     "f": "Hester kan bli redde for lyd og biler som kommer nær. Kjør sakte forbi med god avstand og ikke bruk tuten.",
     "ru": "Лошадь может испугаться шума и близко проезжающих машин. Проезжайте медленно, с большим интервалом и не сигнальте."
+  },
+  {
+    "id": "myk-17",
+    "cat": "myke",
+    "q": "Hvor kan en person kjøre elsparkesykkel?",
+    "img": null,
+    "a": [
+      "I kjørebanen, i sykkelfeltet og på sykkelveien, og på fortauet når det ikke er til hinder for gående",
+      "Bare på fortauet og på gang- og sykkelveien, aldri i kjørebanen",
+      "Bare i kjørebanen, aldri på fortauet eller i sykkelfeltet"
+    ],
+    "f": "En elsparkesykkel følger stort sett de samme reglene som en sykkel. Den kan kjøre i kjørebanen og i sykkelfeltet, og på fortauet når det ikke er til hinder for gående.",
+    "ru": "Для электросамоката в основном действуют те же правила, что и для велосипеда. На нём можно ехать по проезжей части и по велополосе, а по тротуару — если это не мешает пешеходам."
+  },
+  {
+    "id": "myk-18",
+    "cat": "myke",
+    "q": "Du kjører i en gate. En person på elsparkesykkel kommer fort på fortauet mot et gangfelt foran deg. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Senke farten og være klar til å stoppe, fordi elsparkesykkelen kan komme brått ut i veien",
+      "Holde farten, fordi elsparkesykler alltid stopper før de kjører ut i veien",
+      "Kjøre fortere, så du er forbi gangfeltet før elsparkesykkelen kommer fram"
+    ],
+    "f": "Elsparkesykler er nesten lydløse, kan kjøre ganske fort og er mindre synlige enn en bil. De kan komme brått ut fra fortauet. Senk farten og vær klar til å stoppe.",
+    "ru": "Электросамокаты почти бесшумные, могут ехать довольно быстро и менее заметны, чем машина. Они могут внезапно выехать с тротуара. Снизьте скорость и будьте готовы остановиться."
+  },
+  {
+    "id": "myk-19",
+    "cat": "myke",
+    "q": "En person kjører elsparkesykkel ut i gangfeltet foran deg uten å gå av. Hva er riktig?",
+    "img": {
+      "road": "gangfelt"
+    },
+    "a": [
+      "Personen regnes ikke som gående og har vikeplikt, men du må likevel være klar til å bremse",
+      "Du har vikeplikt, fordi alle som er i et gangfelt, regnes som gående",
+      "Personen har forkjørsrett, fordi elsparkesykkelen er i gangfeltet før deg"
+    ],
+    "f": "Den som kjører sykkel eller elsparkesykkel over gangfeltet, regnes ikke som gående og har vikeplikt. Går personen av og triller, har du vikeplikt. Uansett skal du være aktpågivende og bremse hvis det trengs.",
+    "ru": "Тот, кто пересекает пешеходный переход верхом на велосипеде или электросамокате, не считается пешеходом и сам обязан уступить. Если человек слезет и поведёт самокат рядом, уступить обязаны вы. В любом случае вы должны быть внимательны и тормозить, если нужно."
+  },
+  {
+    "id": "myk-20",
+    "cat": "myke",
+    "q": "En lastebil skal svinge til høyre i et kryss. En syklist står rett ved siden av lastebilen, på høyre side. Hvorfor er dette farlig?",
+    "img": null,
+    "a": [
+      "Syklisten kan være i blindsonen, så sjåføren ser kanskje ikke syklisten",
+      "Det er ikke farlig, fordi sjåføren sitter høyt og ser alt rundt lastebilen",
+      "Det er ikke farlig, fordi sjåføren alltid ser syklister i speilene"
+    ],
+    "f": "Store kjøretøy, som lastebiler og busser, har store blindsoner. En syklist rett ved siden av en lastebil som svinger til høyre, kan være i blindsonen. Kan du ikke se sjåføren, er det ikke sikkert at sjåføren ser deg.",
+    "ru": "У больших машин — грузовиков и автобусов — большие слепые зоны. Велосипедист рядом с грузовиком, который поворачивает направо, может оказаться в слепой зоне. Если вы не видите водителя, возможно, и он не видит вас."
   }
 ]
