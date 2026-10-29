@@ -54,7 +54,6 @@
 
 .fig { display: flex; justify-content: center; align-items: center; gap: 12px; padding: 14px; border-radius: var(--r); background: var(--surface-2); }
 .fig .sign { height: 116px; width: auto; max-width: 100%; filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .2)); }
-.fig .sign.wide { height: 96px; }
 .fig-signs .sign { height: 88px; }
 .fig-sign { display: grid; justify-items: center; gap: 8px; min-width: 0; }
 /* the number under a sign looks like the number on its answer plate */

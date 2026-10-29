@@ -1,0 +1,18 @@
+{
+  "fare_sving_h": "100.1", "fare_sving_v": "100.2", "fare_svinger": "102.1", "fare_bakke_ned": "104.2",
+  "fare_smalere": "106.1", "fare_ujevn": "108", "fare_vegarbeid": "110", "fare_glatt": "116", "fare_gangfelt": "140",
+  "fare_barn": "142", "fare_sykkel": "144", "fare_elg": "146.1", "fare_lyssignal": "132", "fare_jernbane_bom": "134",
+  "fare_jernbane": "135", "fare_motende": "148", "fare_ko": "149", "fare_kryss": "124", "fare_rundkjoring": "126",
+  "fare_annen": "156", "tunnel": "122",
+  "vikeplikt": "202", "stopp": "204", "forkjorsveg": "206", "slutt_forkjorsveg": "208", "moteplikt": "212", "forkjorsrett_mote": "214",
+  "innkjoring_forbudt": "302", "forbudt_alle": "306.0", "forbudt_motorvogn": "306.1", "forbudt_venstresving": "330.2",
+  "forbudt_hoyresving": "330.1", "forbudt_uvending": "332", "forbikjoring_forbudt": "334", "slutt_forbikjoring": "336",
+  "fartssone_30": "366", "stans_forbudt": "370", "parkering_forbudt": "372",
+  "fart_30": "362.30", "fart_40": "362.40", "fart_50": "362.50", "fart_60": "362.60", "fart_70": "362.70", "fart_80": "362.80",
+  "fart_90": "362.90", "fart_100": "362.100", "fart_110": "362.110",
+  "slutt_fart_60": "364.60", "slutt_fart_70": "364.70", "slutt_fart_80": "364.80",
+  "pabudt_rett_fram": "402.3", "pabudt_hoyre": "402.4", "pabudt_felt_hoyre": "404.1", "rundkjoring": "406",
+  "gangveg": "518", "sykkelveg": "520", "gang_sykkelveg": "522", "gangfelt": "516.H", "motorveg": "502", "slutt_motorveg": "504",
+  "motortrafikkveg": "503", "envegskjoring": "526.1", "blindveg": "527.1", "parkering": "552", "moteplass": "524",
+  "kollektivfelt": "508.1", "gatetun": "540", "gagate": "548"
+}

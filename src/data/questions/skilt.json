@@ -532,9 +532,9 @@
       "Forbudsskilt",
       "Fareskilt"
     ],
-    "f": "Skiltet viser sykkelvei. Det er rundt og blått som et påbudsskilt, men i Norge er det et opplysningsskilt. Det samme gjelder gangvei og gang- og sykkelvei.",
-    "ru": "Знак обозначает велосипедную дорожку. Он круглый и синий, как предписывающий, но в Норвегии это информационный знак (opplysningsskilt). То же касается пешеходной и пешеходно-велосипедной дорожки.",
-    "uk": "Знак позначає велосипедну доріжку. Він круглий і синій, як наказовий, але в Норвегії це інформаційний знак (opplysningsskilt). Те саме стосується пішохідної та пішохідно-велосипедної доріжки.",
+    "f": "Skiltet viser sykkelvei. Det er blått og firkantet, og i Norge er det et opplysningsskilt – ikke et påbudsskilt. Det samme gjelder gangvei og gang- og sykkelvei.",
+    "ru": "Знак обозначает велосипедную дорожку. Он синий и квадратный, и в Норвегии это информационный знак (opplysningsskilt), а не предписывающий. То же касается пешеходной и пешеходно-велосипедной дорожки.",
+    "uk": "Знак позначає велосипедну доріжку. Він синій і квадратний, і в Норвегії це інформаційний знак (opplysningsskilt), а не наказовий. Те саме стосується пішохідної та пішохідно-велосипедної доріжки.",
     "theory": "skilt/opplysningsskilt"
   },
   {
@@ -1182,6 +1182,6 @@
     "f": "Det er forbudt å stanse i tunnel, hvis ikke trafikken eller et uhell tvinger deg til det. Bruk nærlys og hold god avstand.",
     "ru": "В тоннеле запрещено останавливаться, если только к этому не вынуждает движение или авария. Включите ближний свет и держите дистанцию.",
     "uk": "У тунелі заборонено зупинятися, якщо тільки до цього не змушує дорожній рух або аварія. Увімкніть ближнє світло й тримайте дистанцію.",
-    "theory": "skilt/opplysningsskilt"
+    "theory": "skilt/fareskilt"
   }
 ]

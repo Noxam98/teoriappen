@@ -26,11 +26,8 @@ const KINDS = ['car', 'bus', 'bike', 'tram', 'utrykning', 'truck'];
 const ORDER = ['n', 'e', 's', 'w'];
 const WORD = /[A-Za-zÀ-ÖØ-öø-ÿ]+(?:-[A-Za-zÀ-ÖØ-öø-ÿ]+)*/g;
 
-// sign names are the keys of the SIGNS table in catalog.tsx (+ generated speed signs)
-const catalog = readFileSync(join(root, 'src/components/figures/signs/catalog.tsx'), 'utf8');
-const SIGNS = new Set([...catalog.matchAll(/^ {2}(\w+): \(\) =>/gm)].map(m => m[1]));
-for (const n of [30, 40, 50, 60, 70, 80, 90, 100, 110]) SIGNS.add(`fart_${n}`);
-for (const n of [60, 70, 80]) SIGNS.add(`slutt_fart_${n}`);
+// sign names are the keys of the official drawings (src/components/figures/signs/official.ts, scripts/sign-numbers.json)
+const SIGNS = new Set(Object.keys(read('scripts/sign-numbers.json')));
 
 const errors = [];
 const err = (id, msg) => errors.push(`${id}: ${msg}`);
