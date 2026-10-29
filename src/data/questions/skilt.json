@@ -25,10 +25,10 @@
       "sign": "stopp"
     },
     "a": [
-      "Stanser helt før du kjører videre",
+      "Stanser alltid helt før du kjører videre",
       "Kjører videre uten å stanse fordi veien er fri",
       "Senker farten til gangfart og kjører videre",
-      "Stanser bare hvis det kommer trafikk fra høyre"
+      "Stanser når det kommer trafikk fra høyre"
     ],
     "f": "Ved stoppskilt skal du alltid stanse helt, ved stopplinjen eller der du får god oversikt. Deretter skal du vike for trafikken på veien.",
     "ru": "У знака STOP нужно всегда полностью остановиться (у стоп-линии или там, где хороший обзор), даже если дорога свободна, а затем уступить дорогу.",
@@ -250,7 +250,7 @@
     },
     "a": [
       "Fram til skiltet Slutt på forbikjøringsforbud",
-      "Fram til neste veikryss, hvis ikke et underskilt sier noe annet",
+      "Fram til neste veikryss, med mindre et underskilt sier noe annet",
       "I 1 kilometer",
       "Til du kommer inn i tettbygd strøk"
     ],
@@ -290,7 +290,7 @@
     },
     "a": [
       "Til du passerer et nytt fartsgrenseskilt eller et skilt om slutt på fartsgrensen",
-      "Fram til neste veikryss, hvis det ikke står et nytt skilt etter krysset",
+      "Fram til neste veikryss, når det ikke står et nytt skilt etter krysset",
       "I 1 kilometer, hvis ikke et underskilt viser en annen strekning",
       "Til du kjører ut av tettbygd strøk, selv om det ikke kommer et nytt skilt"
     ],
@@ -328,7 +328,7 @@
       "Du må tilpasse farten til forholdene, selv om skiltet tillater 90 km/t",
       "Du skal holde 90 km/t, så du ikke hindrer trafikken bak deg",
       "Du kan kjøre i 90 km/t hvis du har lyset på og holder god avstand",
-      "Du trenger bare å senke farten når veien er glatt av is eller snø"
+      "Du må senke farten når veien er glatt av is eller snø, ikke i regn"
     ],
     "f": "Fartsgrensen er den høyeste tillatte farten under gode forhold. Ved regn, mørke eller dårlig sikt skal du kjøre saktere.",
     "ru": "Ограничение — это максимум при хороших условиях. В дождь, в темноте или при плохой видимости нужно ехать медленнее.",
@@ -420,8 +420,8 @@
     },
     "a": [
       "Ja, fartsgrensen gjelder hele døgnet hvis ikke et underskilt sier noe annet",
-      "Nei, den gjelder bare om dagen, når skolen er åpen",
-      "Nei, om kvelden gjelder den generelle fartsgrensen på 50 km/t",
+      "Nei, den gjelder om dagen, når skolen er åpen",
+      "Om kvelden gjelder den generelle fartsgrensen på 50 km/t",
       "Nei, når det ikke er barn ute, kan du kjøre etter forholdene på veien"
     ],
     "f": "Et fartsgrenseskilt gjelder hele døgnet. Bare et underskilt med tidspunkt kan begrense når det gjelder.",
@@ -457,7 +457,7 @@
     "a": [
       "Ja, kort stans for å slippe av eller på passasjerer er tillatt",
       "Nei, skiltet betyr at det er forbudt å stanse i det hele tatt",
-      "Ja, men bare hvis du har nødsignal på",
+      "Ja, men du må ha nødsignal på",
       "Nei, bare drosjer kan stanse her"
     ],
     "f": "Parkering forbudt betyr at du ikke kan parkere. Du kan likevel stanse kort for at passasjerer skal gå av eller på, eller for å laste av og på.",
@@ -475,7 +475,7 @@
     "a": [
       "På den siden av veien der skiltet står, fram til neste veikryss",
       "På begge sider av veien i 100 meter",
-      "Bare rett ved skiltet",
+      "Rett ved skiltet, ikke lenger",
       "På den siden av veien der skiltet står, i 100 meter etter skiltet"
     ],
     "f": "Skiltet gjelder på den siden av veien der det står, og fram til neste veikryss, hvis ikke underskilt sier noe annet.",
@@ -677,7 +677,7 @@
     "a": [
       "Senke farten og se etter arbeidere og maskiner",
       "Holde vanlig fart hvis du ikke ser noen arbeidere",
-      "Senke farten bare hvis skiltet har gul bunn",
+      "Holde farten, med mindre skiltet har gul bunn",
       "Stanse og vente til arbeidet er ferdig"
     ],
     "f": "Skiltet varsler om veiarbeid. Kjør forsiktig, følg skiltene og ta hensyn til folk som arbeider på veien. Midlertidige fareskilt ved veiarbeid kan ha gul bunn.",
@@ -694,9 +694,9 @@
     },
     "a": [
       "Kjøre jevnt og forsiktig, uten brå bremsing eller ratting",
-      "Kjøre som vanlig, siden skiltet bare gjelder om vinteren",
+      "Kjøre som vanlig, unntatt om vinteren",
       "Bremse hardt med en gang hvis du kjenner at veien er glatt",
-      "Senke farten bare hvis du ser is på veien"
+      "Vente med å senke farten til du ser is på veien"
     ],
     "f": "Skiltet varsler om glatt kjørebane, for eksempel på grunn av is eller vann. Senk farten og unngå brå bevegelser.",
     "ru": "Знак «Скользкая дорога» (лёд, вода). Снизьте скорость, избегайте резкого торможения и резких движений рулём.",
@@ -731,8 +731,8 @@
     "a": [
       "Senke farten og være ekstra oppmerksom på barn",
       "Bruke lydhornet, så barna vet at du kommer",
-      "Senke farten bare når skolen er åpen",
-      "Holde vanlig fart hvis du ikke ser barn ved veien"
+      "Senke farten når skolen er åpen, ikke om kvelden",
+      "Holde vanlig fart til du ser barn ved veien"
     ],
     "f": "Skiltet varsler om at barn ofte ferdes ved veien, for eksempel ved en skole eller lekeplass. Barn kan plutselig springe ut i veien.",
     "ru": "Знак «Дети»: рядом часто бывают дети (школа, детская площадка). Ребёнок может внезапно выбежать на дорогу.",
@@ -771,7 +771,7 @@
     "a": [
       "I skumringen og i mørket",
       "Midt på dagen om sommeren",
-      "Bare når det er tåke",
+      "Når det er tåke",
       "Når det er mye trafikk på veien"
     ],
     "f": "Elgen er mest i bevegelse i skumringen og om natten. Senk farten og følg med langs veikantene.",
@@ -938,9 +938,9 @@
     },
     "a": [
       "Nei, veien er for gående",
-      "Ja, i gangfart",
-      "Ja, hvis du skal parkere",
-      "Ja, hvis du skal kjøre til en eiendom ved veien"
+      "I gangfart er det tillatt",
+      "Ja, når du skal parkere",
+      "Ja, for å kjøre til en eiendom ved veien"
     ],
     "f": "Skiltet viser gangvei. Veien er for gående, og det er ikke lov å kjøre bil der.",
     "ru": "Знак «Пешеходная дорожка»: она для пешеходов, ехать на машине нельзя.",
@@ -974,7 +974,7 @@
     },
     "a": [
       "Stanser og slipper den gående over",
-      "Kjører videre fordi du bare har vikeplikt når personen er ute i gangfeltet",
+      "Kjører videre før personen går ut i gangfeltet",
       "Bruker lydhornet for å varsle den gående",
       "Kjører forbi på venstre side av gangfeltet"
     ],
@@ -1103,7 +1103,7 @@
     },
     "a": [
       "Bare på plasser som er merket for parkering",
-      "Hvor du vil, så lenge du ikke hindrer andre",
+      "Hvor du vil, uten å hindre andre",
       "Der det ikke står skilt om parkering forbudt",
       "Ingen steder, heller ikke på merkede plasser"
     ],
@@ -1123,7 +1123,7 @@
       "Gågate: kjøring med motorvogn er forbudt, unntatt det et underskilt tillater",
       "Gatetun: du kan kjøre bil i gangfart og parkere på plasser som er merket",
       "Gangfelt: du har vikeplikt for gående som krysser gaten",
-      "Gågate: du kan kjøre bil der hvis du holder gangfart"
+      "Gågate: du kan kjøre bil der i gangfart"
     ],
     "f": "Gågate er for gående. Hvis et underskilt tillater for eksempel varelevering, skal du kjøre i gangfart og ta hensyn til de gående.",
     "ru": "«Пешеходная улица» (gågate): движение механических ТС запрещено, кроме исключений на табличке (например, доставка). Тогда ехать со скоростью пешехода.",
@@ -1159,7 +1159,7 @@
       "Kjørefeltet er først og fremst for buss",
       "Feltet er for alle biler med passasjerer",
       "Feltet er bare for syklende",
-      "Feltet er bare for lastebiler"
+      "Feltet er for lastebiler"
     ],
     "f": "Kollektivfelt er først og fremst for buss. Drosje kan bruke feltet når skiltet viser det. Motorsykkel, moped og sykkel kan også kjøre der. Vanlige personbiler kan ikke bruke feltet hvis ikke skilt tillater det. For elbil kan det gjelde egne regler – se på skiltene.",
     "ru": "Полоса для общественного транспорта — прежде всего для автобусов. Такси — если это указано на знаке. Мотоциклам, мопедам и велосипедам тоже можно. Обычным легковым машинам нельзя, если знак этого не разрешает. Для электромобилей могут действовать особые правила — смотрите на знаки.",

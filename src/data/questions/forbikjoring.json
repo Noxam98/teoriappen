@@ -6,7 +6,7 @@
     "img": null,
     "a": [
       "Nei, forbikjøring er forbudt ved bakketopp der sikten er dårlig",
-      "Ja, hvis det ikke er sperrelinje eller skilt som forbyr det",
+      "Uten sperrelinje eller skilt kan du kjøre forbi",
       "Ja, hvis bilen foran kjører mye saktere enn fartsgrensen"
     ],
     "f": "Forbikjøring er forbudt ved bakketopper og i kurver der sikten er for dårlig til at du kan se at veien er fri.",
@@ -38,8 +38,8 @@
     "img": null,
     "a": [
       "Nei, du må ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet",
-      "Ja, hvis du ikke ser noen gående ved gangfeltet",
-      "Ja, hvis du kjører sakte og er klar til å stanse for gående i gangfeltet"
+      "Ja, når du ikke ser noen gående ved gangfeltet",
+      "Du kan kjøre sakte forbi og være klar til å stanse for gående i gangfeltet"
     ],
     "f": "Når du nærmer deg et gangfelt, må du ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet. Bilen du vil kjøre forbi, kan skjule en gående.",
     "ru": "Подъезжая к пешеходному переходу, нельзя обгонять транспорт, который закрывает обзор перехода: обгоняемая машина может закрывать пешехода.",
@@ -53,8 +53,8 @@
     "img": null,
     "a": [
       "Stanse, fordi det kan være en gående i gangfeltet som du ikke ser",
-      "Kjøre forsiktig forbi, siden ditt eget felt er ledig",
-      "Kjøre videre, fordi det bare er bilen i det andre feltet som må stanse"
+      "Kjøre forsiktig forbi, fordi ditt eget felt er ledig",
+      "Kjøre videre, fordi det er bilen i det andre feltet som må stanse"
     ],
     "f": "Du må ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet. Når et kjøretøy har stanset foran et gangfelt, er det ofte for å slippe en gående over. Den gående kan være skjult, så du må stanse.",
     "ru": "Нельзя проезжать мимо транспорта, который закрывает обзор перехода. Если соседняя машина остановилась перед переходом, скорее всего, она пропускает пешехода, которого вам может быть не видно. Нужно остановиться.",
@@ -68,7 +68,7 @@
     "img": null,
     "a": [
       "Nei, forbikjøring er forbudt like før og i et slikt kryss",
-      "Ja, hvis du ser at det ikke kommer biler inn i krysset",
+      "Det er lov når du ser at ingen biler kommer inn i krysset",
       "Ja, hvis bilen foran ikke skal svinge i krysset"
     ],
     "f": "Forbikjøring er som hovedregel forbudt like før og i veikryss. I et kryss med høyreregel kan det komme trafikk fra høyre som du må vike for.",
@@ -102,7 +102,7 @@
       "Når kjøretøyet foran har gitt tegn og plassert seg for å svinge til venstre",
       "Når kjøretøyet foran kjører sakte i venstre felt og ikke slipper deg forbi",
       "Når det er god plass på veiskulderen til høyre for kjøretøyet",
-      "Aldri"
+      "Det er forbudt å kjøre forbi på høyre side"
     ],
     "f": "Som hovedregel skal du kjøre forbi på venstre side. Et kjøretøy som har gitt tegn og plassert seg for å svinge til venstre, skal du kjøre forbi på høyre side. På vei med flere felt i samme retning er det også lov når det er kø i alle feltene.",
     "ru": "Обычно обгоняют слева. Транспорт, который показал сигнал и занял положение для левого поворота, нужно обгонять справа. На дороге с несколькими полосами в одном направлении справа можно проехать и тогда, когда во всех полосах очередь.",
@@ -179,7 +179,7 @@
     "a": [
       "Så du har tid til å reagere, og så andre som kjører forbi, får plass til å kjøre inn igjen",
       "Det er bare nødvendig når du selv skal kjøre forbi bilene foran deg",
-      "Det er bare nødvendig når det er mørkt eller glatt, ellers kan du godt ligge tett bak"
+      "Det er nødvendig når det er mørkt eller glatt, ellers kan du godt ligge tett bak bilen"
     ],
     "f": "God avstand gir deg tid til å reagere. Den gir også plass til biler som kjører forbi kolonnen og må inn igjen.",
     "ru": "Достаточная дистанция даёт время на реакцию и оставляет место обгоняющим машинам, которым нужно вернуться в свою полосу.",

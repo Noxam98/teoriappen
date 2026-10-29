@@ -101,7 +101,7 @@
     "img": null,
     "a": [
       "Ta ny teoriprøve og ny praktisk prøve",
-      "Bare vente til tapsperioden er over",
+      "Vente til tapsperioden er over, så får du det tilbake",
       "Ta ny praktisk prøve, men ikke ny teoriprøve"
     ],
     "f": "Mister du førerretten i prøvetiden, må du ta både teoriprøven og den praktiske prøven på nytt.",
@@ -195,7 +195,7 @@
     "img": null,
     "a": [
       "Ja, enten det fysiske førerkortet eller det digitale førerkortet i appen",
-      "Ja, men bare det fysiske kortet, fordi appen ikke gjelder som førerkort",
+      "Ja, og det må være det fysiske kortet, fordi appen ikke gjelder som førerkort",
       "Nei, du trenger bare å ha det med når du kjører i utlandet"
     ],
     "f": "Du skal ha med førerkortet når du kjører. I Norge kan du bruke det digitale førerkortet i appen. I utlandet må du ha med det fysiske kortet.",
@@ -210,7 +210,7 @@
     "img": null,
     "a": [
       "Du må alltid bruke briller eller linser når du kjører",
-      "Du må bare bruke dem når det er mørkt eller dårlig sikt",
+      "Om dagen i godt vær kan du kjøre uten dem",
       "Du må bare bruke dem når du skal kjøre lange turer"
     ],
     "f": "Er det krav om synskorreksjon i førerkortet, må du alltid bruke briller eller linser når du kjører.",
@@ -274,7 +274,7 @@
     "a": [
       "Ta beslag i førerkortet med en gang",
       "Ingenting før saken har vært i retten",
-      "Bare gi deg prikker i førerkortet",
+      "Gi deg prikker, men la deg beholde førerkortet",
       "Bare gi deg en skriftlig advarsel"
     ],
     "f": "Er du mistenkt for noe som kan gi tap av førerretten, for eksempel promillekjøring, kan politiet ta beslag i førerkortet på stedet. Da har du ikke lov til å kjøre, og tiden uten førerkort trekkes fra tapstiden.",
@@ -291,7 +291,7 @@
       "Bot og tap av førerretten",
       "Bot og prikker, men ikke tap av førerretten",
       "Bare 2 prikker",
-      "Bare en muntlig advarsel"
+      "En muntlig advarsel"
     ],
     "f": "Er fartsgrensen 60 km/t eller lavere, mister du førerretten hvis du kjører 26 km/t eller mer over grensen. 80 km/t i en 50-sone er 30 km/t for fort.",
     "ru": "Если ограничение скорости 60 км/ч или ниже, при превышении на 26 км/ч и больше вас лишат прав. 80 км/ч в зоне 50 — это превышение на 30 км/ч.",

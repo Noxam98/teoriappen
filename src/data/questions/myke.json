@@ -145,7 +145,7 @@
     },
     "a": [
       "Senke farten og følge godt med langs veikantene",
-      "Holde farten, fordi elgen bare er ute om natten",
+      "Holde farten, fordi elgen er ute om natten og ikke i skumringen",
       "Tute når du ser en elg, så den løper bort fra veien"
     ],
     "f": "Elg er ofte i bevegelse i skumringen og om natten. Senk farten og følg med langs veikantene.",
@@ -160,7 +160,7 @@
     "img": null,
     "a": [
       "At flere elger kan komme etter",
-      "At det aldri kommer flere dyr",
+      "At det ikke kommer flere dyr etter den",
       "At elgen alltid stopper for biler"
     ],
     "f": "Elg kan gå sammen med kalv eller andre elger. Når én elg har krysset, kan flere komme etter.",
@@ -205,7 +205,7 @@
     "img": null,
     "a": [
       "I kjørebanen, i sykkelfeltet og på sykkelveien, og på fortauet når det ikke er til hinder for gående",
-      "Bare på fortauet og på gang- og sykkelveien, aldri i kjørebanen og aldri i sykkelfeltet",
+      "På fortauet og på gang- og sykkelveien, men ikke i kjørebanen og heller ikke i sykkelfeltet",
       "Bare i kjørebanen og i sykkelfeltet, men aldri på fortauet, selv om det er helt tomt for gående"
     ],
     "f": "En elsparkesykkel følger stort sett de samme reglene som en sykkel. Den kan kjøre i kjørebanen og i sykkelfeltet, og på fortauet når det ikke er til hinder for gående.",
@@ -220,8 +220,8 @@
     "img": null,
     "a": [
       "Senke farten og være klar til å stoppe, fordi elsparkesykkelen kan komme brått ut i veien",
-      "Holde farten, fordi elsparkesykler alltid stopper før de kjører ut i veien",
-      "Holde farten, fordi den som kjører elsparkesykkel over gangfeltet, alltid har vikeplikt"
+      "Holde farten, fordi personen på elsparkesykkelen sikkert har sett bilen din og stopper",
+      "Tute for å varsle personen og holde farten, så du ikke hindrer trafikken bak deg"
     ],
     "f": "Elsparkesykler er nesten lydløse, kan kjøre ganske fort og er mindre synlige enn en bil. De kan komme brått ut fra fortauet. Senk farten og vær klar til å stoppe.",
     "ru": "Электросамокаты почти бесшумные, могут ехать довольно быстро и менее заметны, чем машина. Они могут внезапно выехать с тротуара. Снизьте скорость и будьте готовы остановиться.",
@@ -236,7 +236,7 @@
       "road": "gangfelt"
     },
     "a": [
-      "Personen regnes ikke som gående og har vikeplikt, men du må likevel være klar til å bremse",
+      "Personen regnes ikke som gående og har vikeplikt, men du må uansett være klar til å bremse",
       "Du har vikeplikt, fordi alle som er i et gangfelt, regnes som gående og skal slippe over",
       "Personen har forkjørsrett, fordi elsparkesykkelen kom ut i gangfeltet før du kom fram"
     ],
@@ -253,7 +253,7 @@
     "a": [
       "Syklisten kan være i blindsonen, så sjåføren ser kanskje ikke syklisten",
       "Det er bare farlig i mørket, fordi sjåføren da ikke ser syklisten i speilene",
-      "Det er bare farlig hvis lastebilen svinger uten å bruke blinklyset"
+      "Det er ikke farlig når lastebilen blinker til høyre i god tid"
     ],
     "f": "Store kjøretøy, som lastebiler og busser, har store blindsoner. En syklist rett ved siden av en lastebil som svinger til høyre, kan være i blindsonen. Kan du ikke se sjåføren, er det ikke sikkert at sjåføren ser deg.",
     "ru": "У больших машин — грузовиков и автобусов — большие слепые зоны. Велосипедист рядом с грузовиком, который поворачивает направо, может оказаться в слепой зоне. Если вы не видите водителя, возможно, и он не видит вас.",

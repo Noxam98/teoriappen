@@ -6,7 +6,7 @@
     "img": null,
     "a": [
       "Alle som sitter i bilen, både foran og bak",
-      "Bare føreren og passasjeren i forsetet",
+      "Føreren og passasjeren i forsetet, ikke de som sitter bak",
       "Bare føreren og voksne passasjerer",
       "Alle, unntatt på korte turer i byen"
     ],
@@ -37,7 +37,7 @@
     "img": null,
     "a": [
       "Passasjeren selv",
-      "Bare føreren",
+      "Føreren av bilen",
       "Eieren av bilen"
     ],
     "f": "Passasjerer som er 15 år eller eldre, har selv ansvaret for å bruke bilbelte og kan selv få bot.",
@@ -53,7 +53,7 @@
     "a": [
       "Barnet skal bruke godkjent sikringsutstyr som passer til vekt og høyde",
       "Barnet kan bruke vanlig bilbelte, så lenge det sitter i baksetet",
-      "Barnet trenger sikringsutstyr bare hvis det finnes i bilen"
+      "Har bilen ikke barnesete, kan barnet kjøre uten sikringsutstyr"
     ],
     "f": "Barn som er lavere enn 135 cm, skal alltid bruke godkjent sikringsutstyr som passer til barnets vekt og høyde.",
     "ru": "Дети ростом ниже 135 см должны всегда использовать одобренное детское удерживающее устройство, подходящее по весу и росту.",
@@ -67,8 +67,8 @@
     "img": null,
     "a": [
       "Det er bare lov hvis airbagen er koblet ut",
-      "Det er lov hvis barnet er over ett år",
-      "Det er alltid lov hvis setet er godt festet"
+      "Det er lov for barn som er over ett år",
+      "Det er lov når setet er godt festet med bilbeltet"
     ],
     "f": "Et bakovervendt barnesete må aldri stå foran en aktiv airbag. Airbagen kan skade barnet alvorlig.",
     "ru": "Детское кресло, установленное против хода движения, нельзя ставить перед включённой подушкой безопасности: она может тяжело травмировать ребёнка.",
@@ -112,7 +112,7 @@
     "img": null,
     "a": [
       "Ved en kollisjon kan de bli kastet framover med stor kraft og skade noen",
-      "De kan bli kastet framover, men bare ved kollisjon i over 80 km/t",
+      "De kan bli kastet framover ved kollisjon i over 80 km/t, ikke i lav fart",
       "Det er bare viktig for tunge gjenstander som veier over 50 kg"
     ],
     "f": "Ved en kollisjon blir løse gjenstander kastet framover med en kraft som er mange ganger større enn vekten deres.",
@@ -172,7 +172,7 @@
     "img": null,
     "a": [
       "Bilens og tilhengerens tillatte totalvekt kan til sammen ikke være mer enn 3500 kg",
-      "Det er bare lov hvis tilhengeren med lasten veier under 750 kg akkurat nå",
+      "Det som teller, er at tilhengeren med lasten veier under 750 kg akkurat nå",
       "Det er lov uten grenser for vekt, så lenge bilen er godkjent for tilhengeren"
     ],
     "f": "Med klasse B kan tilhengeren veie mer enn 750 kg hvis tillatt totalvekt for bil og tilhenger til sammen ikke er over 3500 kg. Det er tillatt totalvekt som teller, ikke hvor mye tilhengeren veier akkurat nå.",
@@ -187,7 +187,7 @@
     "img": null,
     "a": [
       "At tilhengeren er riktig koblet, at lysene virker og at lasten er sikret",
-      "Bare at dekkene på tilhengeren har nok luft og ikke er slitte",
+      "At dekkene på tilhengeren har nok luft, resten er ikke så viktig",
       "At koblingen er i orden, men lysene trenger du bare å sjekke i mørket"
     ],
     "f": "Før kjøring skal du sjekke koblingen, lysene, dekkene og at lasten er sikret og riktig plassert.",

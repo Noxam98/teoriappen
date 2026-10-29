@@ -88,7 +88,7 @@
     "img": null,
     "a": [
       "Reaksjonslengden og bremselengden til sammen",
-      "Bare den strekningen bilen bremser",
+      "Strekningen bilen kjører mens den bremser",
       "Avstanden til bilen foran deg",
       "Strekningen bilen kjører mens du reagerer"
     ],
@@ -168,8 +168,8 @@
     "a": [
       "Når tilhengeren er godkjent for Tempo 100, bilen oppfyller kravene, og fartsgrensen er 100 km/t eller høyere",
       "Når tilhengeren har egne bremser, bilen har ABS, og fartsgrensen er 100 km/t eller høyere",
-      "Når tilhengeren er godkjent for Tempo 100, uansett hvilken bil som trekker den",
-      "Aldri, for med tilhenger er 80 km/t alltid den høyeste lovlige farten"
+      "Når tilhengeren er godkjent for Tempo 100, selv om bilen ikke har ABS",
+      "Det kan du ikke: med tilhenger er 80 km/t den høyeste lovlige farten"
     ],
     "f": "Tilhengeren må være godkjent for Tempo 100 og ha Tempo 100-merket. Bilen må blant annet ha ABS og en tillatt totalvekt på høyst 3500 kg. Da kan du kjøre i 100 km/t der fartsgrensen tillater det. Ellers er grensen 80 km/t.",
     "ru": "Прицеп должен быть одобрен по Tempo 100 и иметь наклейку Tempo 100. У машины, среди прочего, должна быть ABS и разрешённая полная масса не больше 3500 кг. Тогда можно ехать 100 км/ч там, где это позволяет ограничение. Иначе максимум — 80 км/ч.",
@@ -182,10 +182,10 @@
     "q": "Fartsgrensen er 80 km/t, men det er tett tåke. Hva er riktig?",
     "img": null,
     "a": [
-      "Du må tilpasse farten etter sikten, selv om det betyr at du kjører mye saktere enn 80 km/t",
-      "Du kan alltid kjøre 80 km/t når det er skiltet, også i tett tåke",
+      "Du må alltid tilpasse farten etter sikten, selv om du da kjører mye saktere enn 80 km/t",
+      "Du kan kjøre 80 km/t når det er skiltet, også i tett tåke",
       "Du skal holde omtrent 80 km/t, fordi du ikke må hindre trafikken som kommer bak deg",
-      "Du kan kjøre 80 km/t hvis du har tåkelys på, fordi da ser andre deg"
+      "Tåkelys gjør at andre ser deg, så du kan kjøre 80 km/t"
     ],
     "f": "Fartsgrensen er den høyeste tillatte farten under gode forhold. Du skal alltid tilpasse farten etter sikt, føre og trafikk.",
     "ru": "Ограничение — это максимум для хороших условий. Скорость всегда нужно подбирать под видимость, состояние дороги и движение.",
@@ -201,8 +201,8 @@
     },
     "a": [
       "På alle veiene i området, helt til du passerer skiltet for slutt på sonen",
-      "Bare på veien du kjører på, fram til neste kryss",
-      "Bare de første 100 meterne etter skiltet, så gjelder vanlig fartsgrense"
+      "På veien du kjører på, fram til neste kryss",
+      "De første 100 meterne etter skiltet, så gjelder vanlig fartsgrense"
     ],
     "f": "Fartsgrensesone betyr at fartsgrensen gjelder på alle veiene i sonen, til du kjører ut av sonen.",
     "ru": "Зона ограничения скорости: лимит действует на всех улицах внутри зоны, пока вы её не покинете (знак конца зоны).",
@@ -216,8 +216,8 @@
     "img": null,
     "a": [
       "Nei, du skal ikke hindre annen trafikk ved å kjøre unødvendig sakte",
-      "Ja, så lenge du holder deg under fartsgrensen, bestemmer du farten selv",
-      "Ja, det er alltid tryggest å kjøre sakte"
+      "Ja, under fartsgrensen bestemmer du selv hvor sakte du vil kjøre",
+      "Lav fart er alltid tryggest, så det er tillatt"
     ],
     "f": "Du skal ikke uten grunn kjøre så sakte at du hindrer annen trafikk. For lav fart kan føre til farlige forbikjøringer.",
     "ru": "Нельзя без причины ехать так медленно, что мешаешь другим. Слишком низкая скорость провоцирует опасные обгоны.",
@@ -232,7 +232,7 @@
     "a": [
       "Senke farten i god tid før fartsdemperen",
       "Bremse kraftig når du er oppå fartsdemperen",
-      "Holde farten, fartsdempere er bare for tunge kjøretøy"
+      "Holde farten, fartsdempere er laget for tunge kjøretøy"
     ],
     "f": "Fartsdempere skal få ned farten der det er mange myke trafikanter. Senk farten i god tid, ikke brems på selve humpen.",
     "ru": "Искусственные неровности («лежачие полицейские») ставят там, где много пешеходов и велосипедистов. Снижайте скорость заранее, а не тормозите на самой неровности.",
@@ -246,7 +246,7 @@
     "img": null,
     "a": [
       "Du bør kjøre så sakte at du kan stoppe hvis et barn plutselig springer ut i veien",
-      "Du kan alltid kjøre 30 km/t, fordi skiltet viser hva som er trygt ved skolen",
+      "Du kan holde 30 km/t hele tiden, fordi skiltet viser hva som er trygt ved skolen",
       "Barna har ansvaret for å se seg for, så du kan holde farten"
     ],
     "f": "Barn er uforutsigbare. Ved skoler og lekeplasser må du være klar til å stoppe, også under fartsgrensen.",

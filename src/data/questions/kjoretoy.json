@@ -23,7 +23,7 @@
     "a": [
       "At lys, dekk og bremser virker, og at rutene er rene",
       "Bare at det er nok drivstoff i tanken",
-      "Ingenting, hvis bilen har vært på EU-kontroll"
+      "Ingenting etter at bilen har vært på EU-kontroll"
     ],
     "f": "En enkel kontroll før kjøring er lys, dekk, bremser, styring og fri sikt. EU-kontrollen gjelder ikke feil som oppstår senere.",
     "ru": "Перед поездкой стоит проверить фары, шины, тормоза, рулевое управление и обзор (чистые стёкла). Техосмотр (EU-kontroll) не защищает от неисправностей, появившихся позже.",
@@ -193,8 +193,8 @@
     "a": [
       "Nei, bilen er ikke i forsvarlig stand og skal ikke kjøres",
       "Ja, hvis du kjører sakte og holder god avstand",
-      "Ja, hvis du kjører rett til verkstedet med en gang",
-      "Ja, men bare i dagslys og på veier med lite trafikk"
+      "Ja, men da må du kjøre rett til verkstedet med en gang",
+      "Det er lov i dagslys og på veier med lite trafikk"
     ],
     "f": "Et kjøretøy med feil som gir fare for trafikksikkerheten, skal ikke brukes. Feilen må rettes først.",
     "ru": "Автомобиль с неисправностью, опасной для безопасности движения, использовать нельзя. Сначала нужно устранить неисправность.",
@@ -224,7 +224,7 @@
     "a": [
       "Retter varm luft mot ruten med viften, gjerne med klimaanlegget på",
       "Tørker et lite hull i duggen med hånden og kjører videre",
-      "Slår av klimaanlegget, fordi det bare skal brukes om sommeren"
+      "Slår av klimaanlegget, fordi det er laget for å brukes om sommeren"
     ],
     "f": "Du må ha fri sikt. Vifte og defroster fjerner dugg, og klimaanlegget gjør luften tørrere.",
     "ru": "Обзор должен быть свободным. Вентилятор и обдув стекла убирают запотевание, а кондиционер делает воздух суше.",
@@ -299,10 +299,10 @@
     "q": "Bilen din har adaptiv cruisekontroll, som holder farten og avstanden til bilen foran. Hva er riktig?",
     "img": null,
     "a": [
-      "Du må hele tiden følge med og være klar til å bremse selv",
+      "Du må alltid følge med og være klar til å bremse selv",
       "Systemet har ansvaret for avstanden, så du kan se på mobilen",
       "Du trenger ikke tilpasse farten etter føret og sikten",
-      "Systemet stanser alltid for gående og syklende"
+      "Systemet ser gående og syklende, så du trenger ikke følge med på dem"
     ],
     "f": "Førerstøttesystemer hjelper deg, men de kan ikke overta kjøringen. Du er fortsatt fører og har ansvaret, så du må følge med og gripe inn når det trengs.",
     "ru": "Системы помощи водителю помогают, но не могут взять управление на себя. Водитель — по-прежнему вы, и отвечаете тоже вы: следите за дорогой и вмешивайтесь, когда нужно.",
@@ -318,7 +318,7 @@
       "Sensorer og kamera kan bli dekket, slik at systemene virker dårlig eller slår seg av",
       "Systemene virker som vanlig, fordi snø og is ikke har noe å si for sensorene",
       "Systemene renser sensorene selv, så du trenger ikke tenke på det",
-      "Det er bare filassistenten som kan bli påvirket, fordi den ser linjene på veien"
+      "Det er filassistenten som kan bli påvirket, men automatisk nødbrems virker som vanlig"
     ],
     "f": "Snø, is og skitt kan dekke sensorer og kamera, og da kan systemene virke dårlig eller slå seg av. Hold sensorer og kamera rene, og stol aldri blindt på systemene.",
     "ru": "Снег, лёд и грязь могут закрыть датчики и камеры, и тогда системы работают плохо или отключаются. Держите датчики и камеры чистыми и никогда не полагайтесь на системы слепо.",
@@ -412,7 +412,7 @@
     "img": null,
     "a": [
       "Del 1 skal ligge i bilen, og del 2 bør ligge på et trygt sted utenfor bilen",
-      "Begge delene bør alltid ligge i hanskerommet, slik at politiet kan se dem",
+      "Begge delene bør ligge i hanskerommet, slik at politiet kan se dem ved kontroll",
       "Begge delene bør ligge hjemme på et trygt sted, aldri i bilen",
       "Del 1 bør ligge hjemme på et trygt sted, og del 2 skal ligge i bilen"
     ],

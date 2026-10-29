@@ -86,7 +86,7 @@
     "a": [
       "Ringer 113 og starter hjerte-lunge-redning med 30 kompresjoner og 2 innblåsninger",
       "Legger personen i stabilt sideleie og venter til ambulansen kommer",
-      "Ringer 113 og gir bare innblåsninger helt til personen begynner å puste igjen"
+      "Ringer 113 og gir innblåsninger uten brystkompresjoner til personen puster igjen"
     ],
     "f": "Når personen ikke puster normalt, skal du varsle 113 og starte hjerte-lunge-redning (HLR): 30 brystkompresjoner og 2 innblåsninger.",
     "ru": "Если человек не дышит нормально, позвоните 113 и начните сердечно-лёгочную реанимацию (HLR): 30 нажатий на грудную клетку и 2 вдоха.",
@@ -115,8 +115,8 @@
     "img": null,
     "a": [
       "Bare når personen er i fare der den er, for eksempel ved brann",
-      "Alltid, så fort som mulig, slik at du kan gi førstehjelp",
-      "Aldri, fordi det alltid kan gjøre skadene verre"
+      "Så fort som mulig, slik at du kan gi førstehjelp utenfor bilen",
+      "Ikke før ambulansen kommer, heller ikke når det brenner i bilen"
     ],
     "f": "Skadde bør ikke flyttes unødvendig, fordi det kan gjøre skadene verre. Hvis det er fare for brann eller nye ulykker, bør du flytte personen.",
     "ru": "Пострадавших не следует перемещать без необходимости — это может усугубить травмы. Но если есть угроза пожара или новой аварии, человека следует переместить.",
@@ -191,7 +191,7 @@
     "a": [
       "Ja, alle har plikt til å hjelpe skadde så godt de kan",
       "Nei, bare de som var innblandet i ulykken",
-      "Nei, bare helsepersonell har plikt til å hjelpe"
+      "Plikten gjelder helsepersonell, ikke vanlige bilister"
     ],
     "f": "Alle har hjelpeplikt. Du skal hjelpe etter beste evne, for eksempel ved å sikre stedet, varsle og gi førstehjelp.",
     "ru": "Обязанность помогать есть у всех. Нужно помочь в меру своих сил: обезопасить место, вызвать помощь, оказать первую помощь.",
@@ -252,7 +252,7 @@
     "q": "Bilen din står stille på et sted der den er til fare for trafikken, og du kan ikke flytte den med en gang. Hvor skal du sette varseltrekanten?",
     "img": null,
     "a": [
-      "I god avstand fra bilen, om mulig minst 150 meter",
+      "I god avstand fra bilen, hvis mulig minst 150 meter",
       "Rett bak bilen, så andre ser hvilken bil den hører til",
       "Omtrent 20 meter bak bilen",
       "Foran bilen, så møtende trafikk ser den"

@@ -53,8 +53,8 @@
     "img": null,
     "a": [
       "For å sjekke blindsonen, som du ikke ser i speilene",
-      "Det trengs bare hvis bilen ikke har blindsonevarsler",
-      "Det trengs bare på motorvei, der det går fort",
+      "Det trengs ikke i en bil med blindsonevarsler",
+      "Det trengs på motorvei, der det går fort, ikke i byen",
       "For å vise andre at du skal skifte felt"
     ],
     "f": "Speilene viser ikke alt. I blindsonen kan det være en bil, en motorsykkel eller en syklist. Se derfor over skulderen før du skifter felt.",
@@ -119,7 +119,7 @@
     "a": [
       "Like før du skal kjøre ut av rundkjøringen",
       "Når du kjører inn i rundkjøringen, uansett hvor du skal",
-      "Du skal aldri blinke i en rundkjøring",
+      "Du skal ikke blinke i en rundkjøring",
       "Hele tiden mens du kjører i rundkjøringen"
     ],
     "f": "Blink til høyre like før du kjører ut, etter at du har passert avkjøringen før den du skal ta. Skal du ta første avkjøring, blinker du allerede før du kjører inn.",
@@ -194,7 +194,7 @@
     "img": null,
     "a": [
       "Etter glidelåsprinsippet: én bil fra hvert felt annenhver gang",
-      "Bilene i feltet som fortsetter, skal aldri slippe noen inn",
+      "Bilene i feltet som fortsetter, skal ikke slippe noen inn",
       "Bilene i feltet som slutter, skal skifte felt så tidlig som mulig",
       "De som blinker først, kjører først inn i feltet som fortsetter"
     ],
@@ -213,7 +213,7 @@
     "a": [
       "Nei, kollektivfeltet er for buss, drosje og andre som skiltet tillater",
       "Ja, når det er kø og nesten ingen kjører i kollektivfeltet",
-      "Ja, hvis du kjører forsiktig og ikke hindrer noen av bussene i feltet"
+      "Du kan bruke det forsiktig, uten å hindre noen av bussene i feltet"
     ],
     "f": "Kollektivfeltet er for kollektivtrafikk og kjøretøy som skiltet tillater. En bensinbil må ikke bruke det for å komme forbi køen.",
     "ru": "Полоса для общественного транспорта предназначена для автобусов, такси и тех, кому это разрешают знаки. Бензиновой машине нельзя объезжать по ней пробку.",
@@ -293,9 +293,9 @@
     },
     "a": [
       "Du skal ha lyset på, holde god avstand og ikke stanse, rygge eller vende",
-      "Du kan slå av lyset hvis tunnelen er godt opplyst",
+      "I en godt opplyst tunnel kan du slå av lyset",
       "Du kan rygge ut igjen hvis du har kjørt feil og ingen er bak deg",
-      "Du kan stanse kort ved kanten hvis du har nødsignalet på"
+      "Du kan stanse kort ved kanten og slå på nødsignalet"
     ],
     "f": "I tunnel skal du ha lyset på og holde god avstand. Det er forbudt å stanse (utenom nødsituasjoner), rygge og vende.",
     "ru": "В тоннеле фары должны быть включены, нужно держать дистанцию. Останавливаться (кроме экстренных случаев), двигаться задним ходом и разворачиваться запрещено.",
@@ -310,7 +310,7 @@
       "sign": "motorveg"
     },
     "a": [
-      "Høyre felt, venstre felt brukes når du kjører forbi",
+      "Høyre felt, og venstre felt bare når du kjører forbi",
       "Venstre felt, fordi trafikken der går raskest og mest jevnt",
       "Det feltet som har minst trafikk, så du kommer raskest fram"
     ],
@@ -371,7 +371,7 @@
     "q": "Når kan du bruke tuten (lydsignalet)?",
     "img": null,
     "a": [
-      "Når det trengs, for eksempel for å varsle en annen trafikant om fare",
+      "Bare når det trengs, for eksempel for å varsle om fare",
       "Når bilen foran ikke kjører med en gang lyset i krysset blir grønt",
       "Når du vil vise at en annen bilist har gjort en feil",
       "Når du vil hilse på noen du kjenner"

@@ -22,7 +22,7 @@
     "img": null,
     "a": [
       "Kjørelyset lyser ikke opp veien godt nok, og på mange biler er baklysene da ikke tent",
-      "Kjørelyset er bare laget for tunnel og tåke, og i mørket skal du alltid ha fjernlys",
+      "Kjørelyset er laget for kjøring i tunnel og tåke, og i mørket skal du bruke fjernlys",
       "Kjørelyset er så sterkt at det blender både møtende trafikk og førere foran deg"
     ],
     "f": "Kjørelys er laget for å bli sett om dagen. I mørket trenger du nærlys, og da er også baklysene på.",
@@ -37,7 +37,7 @@
     "img": null,
     "a": [
       "Nærlys",
-      "Bare kjørelys",
+      "Kjørelys",
       "Tåkebaklys"
     ],
     "f": "I tunnel skal du ha nærlys, slik at du ser godt og blir sett, også bakfra.",
@@ -82,7 +82,7 @@
     "img": null,
     "a": [
       "Du skal blende ned, fordi fjernlyset kan blende føreren foran gjennom speilene",
-      "Du kan beholde fjernlyset, fordi det bare blender førere som kommer mot deg",
+      "Du kan beholde fjernlyset, fordi fjernlys ikke blender førere som kjører foran deg",
       "Du kan beholde fjernlyset, fordi det lyser opp veien for føreren foran deg"
     ],
     "f": "Fjernlyset kan blende føreren foran deg gjennom speilene. Blend ned når du kjører bak andre.",
@@ -205,7 +205,7 @@
     "img": null,
     "a": [
       "Justere lyset ned med lysreguleringen, så du ikke blender møtende",
-      "Ingenting, fordi lyset alltid justerer seg selv når bilen er lastet",
+      "Ingenting, fordi lasten bak ikke påvirker hvor frontlysene peker",
       "Justere lyset opp, så du ser lenger når bilen er tungt lastet"
     ],
     "f": "Tung last bak gjør at fronten løfter seg og lyset peker høyere. Juster lyset ned, så du ikke blender andre.",

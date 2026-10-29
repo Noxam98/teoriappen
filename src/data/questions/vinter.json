@@ -36,8 +36,8 @@
     "img": null,
     "a": [
       "Sjekke vær- og føremeldingen og ha med varme klær og kjetting",
-      "Regne med at veien alltid er åpen, så du trenger ikke sjekke noe",
-      "Fylle bare litt drivstoff, fordi du kan fylle mer etter fjellet"
+      "Regne med at veien er åpen, så du trenger ikke sjekke noe",
+      "Fylle litt drivstoff og vente med resten til etter fjellet"
     ],
     "f": "På fjellet kan været endre seg raskt, og veien kan bli stengt. Planlegg turen og ha med utstyr hvis du blir stående. Fyll tanken før du kjører over fjellet.",
     "ru": "В горах погода может быстро меняться, а дорогу могут закрыть. Планируйте поездку и возьмите с собой снаряжение на случай, если придётся долго стоять. Перед поездкой через перевал заправьте полный бак.",
@@ -99,7 +99,7 @@
     "a": [
       "Nei, men dekkene må være tilpasset føret",
       "Ja, for alle personbiler fra 1. november",
-      "Ja, men bare i Nordland, Troms og Finnmark"
+      "I Nordland, Troms og Finnmark er det påbudt"
     ],
     "f": "Verken piggdekk eller piggfrie vinterdekk er påbudt, men dekkene skal gi godt nok veigrep på det føret du kjører på.",
     "ru": "Ни шипованные, ни зимние нешипованные шины не обязательны, но шины должны обеспечивать достаточное сцепление на том покрытии, по которому вы едете.",
@@ -204,7 +204,7 @@
     "a": [
       "Du skal følge kolonnelederens anvisninger og ikke kjøre forbi",
       "Du kan kjøre forbi kolonnelederen hvis bilen har firehjulstrekk",
-      "Du kan selv velge farten, så lenge du holder deg i kolonnen"
+      "Du kan selv velge farten, men du må holde deg i kolonnen"
     ],
     "f": "Ved kolonnekjøring bestemmer kolonnelederen farten. Du skal holde deg i kolonnen og følge anvisningene.",
     "ru": "При движении в колонне скорость задаёт ведущий колонны. Нужно оставаться в колонне и выполнять его указания.",
@@ -248,10 +248,10 @@
     "q": "Det er midt i mai, og det har kommet snø på en fjellovergang. Kan du bruke kjetting på bilen?",
     "img": null,
     "a": [
-      "Ja, når føret gjør det nødvendig",
-      "Nei, kjetting er alltid forbudt etter påske",
-      "Ja, men bare hvis bilen veier over 3500 kg",
-      "Nei, kjetting er bare tillatt fra desember til februar"
+      "Ja, men bare når føret gjør det nødvendig",
+      "Nei, kjetting er forbudt etter påske",
+      "Ja, for biler som veier over 3500 kg",
+      "Nei, kjetting kan brukes fra desember til februar, ikke i mai"
     ],
     "f": "Utenfor vinterperioden kan du bruke kjetting, som piggdekk, bare når føret gjør det nødvendig – for eksempel når det har kommet snø på veien.",
     "ru": "Вне зимнего периода цепи, как и шипы, можно использовать, только когда этого требует состояние дороги, — например, если на дорогу выпал снег.",
@@ -266,7 +266,7 @@
     "a": [
       "På drivhjulene, altså de hjulene som trekker bilen",
       "På hjulene som ikke trekker bilen",
-      "Alltid på hjulene bak, uansett hvilke hjul som trekker",
+      "På hjulene bak, uansett hvilke hjul som trekker",
       "Det har ingen betydning hvilke hjul du velger"
     ],
     "f": "Kjettingen skal hindre at drivhjulene spinner og glir. Derfor legger du den på drivhjulene – de hjulene som trekker bilen.",

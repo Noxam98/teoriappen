@@ -9,7 +9,7 @@
     "a": [
       "Du skal stanse før stopplinjen",
       "Du kan kjøre hvis krysset er fritt",
-      "Du kan svinge til høyre hvis veien er fri"
+      "Du kan svinge til høyre, ikke kjøre rett fram"
     ],
     "f": "Rødt lys betyr stopp. Du skal stanse før stopplinjen, eller før lyssignalet hvis det ikke er stopplinje.",
     "ru": "Красный сигнал означает «стоп». Останавливайтесь перед стоп-линией, а если её нет — перед светофором.",
@@ -60,7 +60,7 @@
     "a": [
       "Kjøre videre med forsiktighet",
       "Bremse så hardt du kan",
-      "Stanse, fordi gult lys betyr stopp uansett"
+      "Stanse helt, fordi du ikke må kjøre på gult lys"
     ],
     "f": "Er du så nær at du ikke kan stanse på en trygg måte, kan du kjøre videre på gult lys. En brå stans kan føre til at noen kjører inn i deg bakfra.",
     "ru": "Если вы так близко, что не можете безопасно остановиться, можно проехать на жёлтый. Резкое торможение может привести к удару сзади.",
@@ -77,7 +77,7 @@
     "a": [
       "Du skal være ekstra oppmerksom, og skilt og vanlige vikepliktsregler gjelder",
       "Du har forkjørsrett, men du skal kjøre ekstra forsiktig gjennom krysset",
-      "Du skal alltid stanse helt før krysset, som ved et stoppskilt"
+      "Du skal stanse helt før krysset, som ved et stoppskilt"
     ],
     "f": "Blinkende gult lys er et varsel. Lyssignalet regulerer ikke trafikken, så skilt og vanlige vikepliktsregler gjelder.",
     "ru": "Мигающий жёлтый — это предупреждение. Светофор в этот момент не регулирует движение: действуют знаки и обычные правила приоритета.",
@@ -93,7 +93,7 @@
     },
     "a": [
       "Slippe de gående over før du svinger",
-      "Svinge, fordi du har grønt lys",
+      "Svinge med en gang lyset er grønt",
       "Svinge, fordi de gående skal vike for biler som svinger"
     ],
     "f": "Grønt lys gir deg lov til å kjøre, men når du svinger, skal du slippe over gående som krysser veien du svinger inn i.",
@@ -111,7 +111,7 @@
     "a": [
       "Du må vike for den møtende bilen",
       "Den møtende bilen må vike fordi du blinker",
-      "Dere kan kjøre samtidig fordi begge har grønt"
+      "Begge har grønt, så dere kan kjøre samtidig"
     ],
     "f": "Grønt lys betyr ikke at veien er fri. Når du svinger til venstre, skal du vike for møtende som kjører rett fram eller svinger til høyre.",
     "ru": "Зелёный не означает, что путь свободен. Поворачивая налево, вы уступаете встречным, которые едут прямо или направо.",
@@ -127,7 +127,7 @@
     },
     "a": [
       "Du kan kjøre i den retningen pilen viser",
-      "Du må stanse, fordi pilen bare gjelder for buss",
+      "Du må stanse – pilen gjelder for buss",
       "Du kan kjøre i alle retninger"
     ],
     "f": "En grønn pil gir lov til å kjøre i pilens retning. Vær likevel oppmerksom på andre trafikanter.",
@@ -208,7 +208,7 @@
     "a": [
       "Du har vikeplikt for trafikken på den kryssende veien",
       "Høyreregelen gjelder, fordi lyssignalet ikke virker",
-      "Du har forkjørsrett fordi lyset blinker"
+      "Det blinkende lyset gir deg forkjørsrett"
     ],
     "f": "Når lyset blinker gult, er det skiltene som gjelder. Vikepliktskiltet gir deg vikeplikt for trafikken på veien du krysser.",
     "ru": "При мигающем жёлтом действуют знаки. Знак «Уступи дорогу» обязывает вас пропустить транспорт на пересекаемой дороге.",
@@ -221,7 +221,7 @@
     "q": "I et lyskryss ser du et eget signal med hvite lys i stedet for farger. Hvem gjelder det for?",
     "img": null,
     "a": [
-      "For kollektivtrafikken, som buss og trikk",
+      "Bare for kollektivtrafikk, som buss og trikk",
       "For alle kjøretøy som skal kjøre rett fram",
       "Bare for syklister som kjører i sykkelfeltet"
     ],
@@ -239,8 +239,8 @@
     },
     "a": [
       "Nei, du må vente på grønt lys eller grønn pil",
-      "Ja, i Norge er høyresving på rødt lov hvis veien er fri",
-      "Ja, hvis du stanser helt først"
+      "Ja, i Norge er høyresving på rødt lov når veien er fri",
+      "Du kan svinge etter at du har stanset helt"
     ],
     "f": "I Norge er det ikke lov å svinge til høyre på rødt lys. Du må vente til du får grønt.",
     "ru": "В Норвегии поворот направо на красный запрещён. Нужно ждать зелёного.",
@@ -316,8 +316,8 @@
     "img": null,
     "a": [
       "Du skal stanse for kontroll, på samme måte som når politiet krever det",
-      "Du må bare stanse hvis det er politiet som gir tegn, ikke Statens vegvesen",
-      "Du må bare stanse hvis du kjører lastebil eller buss",
+      "Du må stanse for politiet, ikke for Statens vegvesen",
+      "Plikten til å stanse for kontroll gjelder lastebil og buss, ikke personbil",
       "Du kan kjøre videre hvis du ikke har gjort noe galt"
     ],
     "f": "Du skal straks stanse for kontroll når politiet eller Statens vegvesen krever det. Anvisninger fra politiet, Statens vegvesen, tollvesenet og militærpolitiet går foran lyssignal, skilt og oppmerking.",

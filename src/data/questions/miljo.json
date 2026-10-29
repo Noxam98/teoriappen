@@ -21,7 +21,7 @@
     "img": null,
     "a": [
       "Det gir unødvendig forurensning og drivstofforbruk",
-      "Det er alltid forbudt, også langt fra byer og bebyggelse",
+      "Det er forbudt, også langt fra byer og bebyggelse",
       "Motoren trenger å gå lenge på tomgang for å bli varm"
     ],
     "f": "Tomgang gir utslipp uten at du kommer noen vei. Motoren blir raskere varm når du kjører rolig.",
@@ -36,7 +36,7 @@
     "img": null,
     "a": [
       "Forbruket øker fordi luftmotstanden blir større",
-      "Forbruket øker bare når det ligger mye tungt i den",
+      "Det er vekten som øker forbruket, ikke luftmotstanden",
       "Det har ingen betydning, fordi en tom takboks er lett"
     ],
     "f": "Takboks og takstativ øker luftmotstanden. Ta dem av når du ikke trenger dem.",
@@ -142,7 +142,7 @@
     "img": null,
     "a": [
       "Nei, i boligområder er tomgang som gir unødig støy eller eksos forbudt",
-      "Ja, så lenge bilen står lovlig parkert og du sitter i den",
+      "Det er lov når bilen står lovlig parkert og du sitter i den",
       "Ja, tomgang er bare forbudt i sentrum av store byer, som Oslo og Bergen",
       "Ja, hvis det er kaldt ute og du vil at bilen skal være varm"
     ],

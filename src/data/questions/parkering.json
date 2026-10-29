@@ -57,8 +57,8 @@
     },
     "a": [
       "Nei, på forkjørsvei med fartsgrense over 50 km/t er det forbudt å parkere på kjørebanen",
-      "Ja, hvis du slår på nødsignalet, så andre trafikanter ser at bilen står der",
-      "Ja, på forkjørsvei er det bare forbudt å parkere når fartsgrensen er over 80 km/t"
+      "Det er lov når du slår på nødsignalet, så andre trafikanter ser at bilen står der",
+      "Ja, på forkjørsvei er det først forbudt å parkere når fartsgrensen er over 80 km/t"
     ],
     "f": "På forkjørsvei med fartsgrense over 50 km/t er det forbudt å parkere på kjørebanen. Trafikken går fort, og parkerte biler er farlige.",
     "ru": "На главной дороге (forkjørsvei) с ограничением скорости выше 50 км/ч стоянка на проезжей части запрещена: там высокая скорость, и стоящие машины опасны.",
@@ -88,7 +88,7 @@
     "a": [
       "Ja, hvis ikke skilt, oppmerking eller andre regler forbyr parkering der",
       "Nei, i gate med toveistrafikk må du alltid parkere på høyre side",
-      "Ja, men bare hvis du slår på nødsignalet"
+      "Ja, men du må ha nødsignalet på mens bilen står der"
     ],
     "f": "Det er lov å parkere mot kjøreretningen. Men skiltene for parkering gjelder som regel i kjøreretningen, så det kan være vanskeligere å se hvilket skilt som gjelder der du står.",
     "ru": "Ставить машину против направления движения разрешено. Но знаки стоянки, как правило, действуют по направлению движения, поэтому труднее понять, какой знак относится к месту, где вы стоите.",
@@ -104,7 +104,7 @@
     },
     "a": [
       "På begge sider av gaten",
-      "Bare på høyre side",
+      "På høyre side, ikke på venstre",
       "Bare på venstre side"
     ],
     "f": "I gater med envegskjøring kan du parkere både på høyre og venstre side, hvis ikke skilt eller oppmerking sier noe annet.",
@@ -165,7 +165,7 @@
     "a": [
       "Fordi andre trafikanter kan komme brått på bilen og ikke rekke å stoppe",
       "Fordi det er forbudt å stanse på alle veier utenfor tettbygd strøk",
-      "Det er bare forbudt når det er mørkt, fordi andre da ser bilen dårlig"
+      "Det er forbudt i mørket, ikke om dagen, fordi andre da ser bilen dårlig"
     ],
     "f": "I en uoversiktlig kurve ser ikke andre bilen din før de er nær. Da kan det skje en påkjøring.",
     "ru": "В плохо просматриваемом повороте другие водители увидят вашу машину слишком поздно — возможен наезд.",
@@ -182,7 +182,7 @@
     "a": [
       "Parkering er tillatt",
       "Parkering er forbudt",
-      "Plass der du bare kan stanse i en nødsituasjon"
+      "Plass for stans i en nødsituasjon"
     ],
     "f": "Skiltet viser et område der det er tillatt å parkere. Underskilt kan gi regler om tid, betaling eller hvem som kan parkere.",
     "ru": "Знак «P» обозначает место, где разрешена стоянка. Табличка под ним может ограничивать время, оплату или круг пользователей.",
@@ -196,9 +196,9 @@
     "img": null,
     "a": [
       "Nei, det er forbudt å stanse helt eller delvis på fortau",
-      "Ja, en kort stans for å slippe av passasjerer er alltid lov",
-      "Ja, hvis du slår på nødsignalet",
-      "Ja, hvis det er nok plass igjen til de gående"
+      "En kort stans for å slippe av passasjerer er lov på fortauet",
+      "Ja, med nødsignalet på",
+      "Ja, når det er nok plass igjen til de gående"
     ],
     "f": "Det er forbudt å stanse helt eller delvis på fortau, gangvei eller sykkelvei – også for å slippe av en passasjer.",
     "ru": "Останавливаться полностью или частично на тротуаре, пешеходной или велосипедной дорожке запрещено — даже чтобы высадить пассажира.",
@@ -214,7 +214,7 @@
       "Nei, tillatelsen er personlig, og hun må selv være med i bilen",
       "Ja, hvis tillatelsen ligger godt synlig i frontruta",
       "Ja, fordi tillatelsen følger bilen og ikke personen",
-      "Ja, men bare en kort stund, for eksempel i 30 minutter"
+      "Det er lov å stå der en kort stund, for eksempel i 30 minutter"
     ],
     "f": "Parkeringstillatelsen er personlig, og andre må ikke bruke den. Har noen tillatelse som passasjer, må de selv være med i bilen når den parkeres.",
     "ru": "Разрешение на парковку для людей с ограниченной подвижностью — именное, другим пользоваться им нельзя. Если разрешение выдано как пассажиру, этот человек сам должен быть в машине, когда её паркуют.",
