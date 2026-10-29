@@ -5,6 +5,7 @@ import { Explanation } from '../components/question/Explanation';
 import { Options } from '../components/question/Options';
 import { QuestionCard } from '../components/question/QuestionCard';
 import { CATEGORY, QUESTIONS, QUESTION_BY_ID } from '../data';
+import { Words } from '../features/brush/Words';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
 import { wrongQuestionIds } from '../lib/exam';
 import { answerFeedback } from '../lib/feedback';
@@ -109,7 +110,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
       <h1 className="sr-only">Тренировка: {no}, вопрос {i + 1} из {ids.length}</h1>
       <div className="examhead">
         <div className="examhead-row">
-          <span className="topic"><b>{no}</b><small>{ru}</small></span>
+          <span className="topic"><b data-block lang="nb"><Words text={no} /></b><small>{ru}</small></span>
           <span className="sp" />
           <span className="counter tnum"><b>{i + 1}</b>/{ids.length}</span>
           {instant && done > 0 && <span className="score-chip tnum"><Icon name="check" />{right}<small>/{done}</small></span>}

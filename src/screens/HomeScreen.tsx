@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { CategoryIcon } from '../components/CategoryIcon';
+import { Words } from '../features/brush/Words';
 import { ProgressRing } from '../components/Gauges';
 import { Icon } from '../components/Icons';
 import { Segmented } from '../components/Segmented';
@@ -94,7 +95,7 @@ export function HomeScreen() {
           return (
             <button key={c.id} className="cat" onClick={() => go({ name: 'practice', mode: c.id })}>
               <span className="ic"><CategoryIcon id={c.id} /></span>
-              <span className="nm"><span className="sr-only">Тренировать тему: </span>{c.no}<small>{c.ru}</small></span>
+              <span className="nm"><span className="sr-only">Тренировать тему: </span><span data-block lang="nb"><Words text={c.no} /></span><small>{c.ru}</small></span>
               <span className="go" aria-hidden="true"><Icon name="play" /></span>
               <span className="cat-progress">
                 <span className="meter" aria-hidden="true">

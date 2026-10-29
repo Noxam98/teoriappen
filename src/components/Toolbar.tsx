@@ -1,12 +1,18 @@
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useBrush } from '../features/brush/BrushProvider';
 import { useApp } from '../state/AppState';
 import { Icon } from './Icons';
 import { SettingsSheet } from './SettingsSheet';
 
 export function Toolbar() {
-  const { data, update, go } = useApp();
+  const { data, update, go, visit } = useApp();
   const brush = useBrush();
+  const [nothingToTranslate, setNothing] = useState(false);
+  useEffect(() => {
+    if (!brush.on) return;
+    const id = requestAnimationFrame(() => setNothing(!document.querySelector('main [data-block] .w')));
+    return () => cancelAnimationFrame(id);
+  }, [brush.on, visit]);
   const [settings, setSettings] = useState(false);
   const firstVisit = !data.prefs.seenBrushHint;
   const bar = useRef<HTMLElement>(null);
@@ -55,8 +61,14 @@ export function Toolbar() {
         <div className="brushhint">
           <div className="wrap">
             <Icon name="translate" />
-            <span className="hint-long">Перевод включён: нажмите на норвежское слово или проведите по нескольким словам. Выключить — кнопка «Перевод» или Esc.</span>
-            <span className="hint-short">Нажмите на слово — появится перевод</span>
+            {nothingToTranslate ? (
+              <span>Здесь нет норвежского текста. Откройте тему или вопрос.</span>
+            ) : (
+              <>
+                <span className="hint-long">Перевод включён: нажмите на подчёркнутое слово или проведите по нескольким словам. Выключить — кнопка «Перевод» или Esc.</span>
+                <span className="hint-short">Нажмите на подчёркнутое слово</span>
+              </>
+            )}
           </div>
         </div>
       )}

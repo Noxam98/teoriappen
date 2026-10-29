@@ -13,7 +13,7 @@ export function useAnswerKeys(keys: Keys): void {
   ref.current = keys;
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (document.querySelector('.modal') || e.metaKey || e.ctrlKey || e.altKey) return;
+      if (document.querySelector('.modal') || document.body.classList.contains('brush-on') || e.metaKey || e.ctrlKey || e.altKey) return;
       const target = e.target as Element;
       if (target.closest?.('input, textarea, .opt')) return;
       const k = '1234'.indexOf(e.key) >= 0 ? '1234'.indexOf(e.key) : 'abcd'.indexOf(e.key.toLowerCase());

@@ -40,12 +40,12 @@ export function ResultScreen() {
       <section className={`result-hero ${isExam ? (res.pass ? 'pass' : 'fail') : 'practice'}`}>
         {isExam ? (
           <div className={res.pass ? 'bigstamp pass' : 'bigstamp fail'}>
-            {res.pass ? 'Bestått' : 'Ikke bestått'}<small>{res.pass ? 'экзамен сдан' : 'экзамен не сдан'}</small>
+            <span data-block lang="nb"><Words text={res.pass ? 'Bestått' : 'Ikke bestått'} /></span><small>{res.pass ? 'экзамен сдан' : 'экзамен не сдан'}</small>
           </div>
         ) : (
           <div className="practice-title">
             <div className="eyebrow">Тренировка завершена</div>
-            <h2>{L.practice?.title[0]}</h2>
+            <h2 data-block lang="nb"><Words text={L.practice?.title[0] ?? ''} /></h2>
             <small>{L.practice?.title[1]}</small>
           </div>
         )}

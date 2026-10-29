@@ -3,8 +3,24 @@
 .w.saved { text-decoration: underline dotted var(--blue); text-decoration-thickness: 2px; text-underline-offset: 4px; }
 body.brush-on [data-block] { touch-action: pan-y; -webkit-user-select: none; user-select: none; }
 body.brush-on .w { cursor: pointer; }
-body.brush-on .w:hover { background: var(--paint); }
-.w[data-paint] {
+/* "Перевод" mode: every translatable word looks tappable, everything else steps back and can't be pressed */
+body.brush-on .w {
+  text-decoration: underline dotted var(--word-hint-line); text-decoration-thickness: 2px; text-underline-offset: 4px;
+}
+/* the chosen word (or the words a finger drags over) is highlighted while its translation is open */
+@media (hover: hover) { body.brush-on .w:hover { background: var(--word-hint); } }
+body.brush-on main * { pointer-events: none; }
+body.brush-on main .w { pointer-events: auto; }
+body.brush-on main:has([data-block]) > :not([data-block]):not(:has([data-block])),
+body.brush-on main :has([data-block]) > :not([data-block]):not(:has([data-block])),
+body.brush-on main:not(:has([data-block])) > *,
+body.brush-on .bar .brand, body.brush-on .bar .tool.icon {
+  opacity: .28; filter: grayscale(.8); transition: opacity .2s, filter .2s;
+}
+body.brush-on .bar .brand, body.brush-on .bar .tool.icon { pointer-events: none; }
+body.brush-on main .opt { border-style: dashed; background: transparent; box-shadow: none; }
+body.brush-on main .cat .go { box-shadow: none; }
+body.brush-on .w[data-paint], .w[data-paint] {
   background: linear-gradient(176deg, transparent 18%, var(--paint) 18%, var(--paint) 86%, transparent 86%);
   box-shadow: 4px 0 0 -1px var(--paint), -4px 0 0 -1px var(--paint);
 }
