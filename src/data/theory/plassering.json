@@ -32,7 +32,8 @@
     { "trap": "Ikke blink til høyre allerede når du kjører inn i rundkjøringen, hvis du skal lenger rundt. Da tror andre at du skal ut i første avkjøring.", "ru": "Не включайте правый поворотник уже при въезде на круг, если вам дальше: другие решат, что вы съезжаете на первом съезде." },
 
     { "h": "Motorvei og tunnel", "ru": "Автомагистраль и тоннель" },
-    { "p": "I akselerasjonsfeltet øker du farten til omtrent samme fart som trafikken på motorveien. Du har vikeplikt, og du kjører inn når det er en ledig luke. Unngå å stanse i enden av feltet.", "ru": "На полосе разгона наберите примерно ту же скорость, что у потока на магистрали. Вы уступаете дорогу и встраиваетесь в свободный промежуток. Старайтесь не останавливаться в конце полосы разгона." },
+    { "p": "I akselerasjonsfeltet (felt for fartsøkning) øker du farten til omtrent samme fart som trafikken på motorveien. Du skal tilpasse farten til trafikken i feltet du skal inn i, og kjøre inn når det er en ledig luke. De som allerede kjører på motorveien, skal gjøre det lettere for deg å komme inn. Unngå å stanse i enden av feltet.", "ru": "На полосе разгона (felt for fartsøkning) наберите примерно ту же скорость, что у потока на магистрали. Подстройте скорость под поток в полосе, куда вы въезжаете, и встраивайтесь, когда есть свободный промежуток. Те, кто уже едет по магистрали, должны облегчить вам въезд. Старайтесь не останавливаться в конце полосы разгона." },
+    { "trap": "Noen steder er det ikke et akselerasjonsfelt, men et vikepliktskilt der du kjører inn på veien. Da har du vikeplikt for trafikken på veien.", "ru": "В некоторых местах на въезде нет полосы разгона, а стоит знак «Уступите дорогу». Тогда вы обязаны уступить транспорту на дороге." },
     { "p": "Når du skal av motorveien, blinker du i god tid og kjører inn i retardasjonsfeltet. Senk farten der, ikke på selve motorveien.", "ru": "Чтобы съехать с магистрали, заранее включите поворотник и перейдите на полосу торможения. Снижайте скорость на ней, а не на самой магистрали." },
     { "list": [
       ["På motorvei og motortrafikkvei er det forbudt å vende og å rygge.", "На автомагистрали и на дороге для автомобилей запрещено разворачиваться и ехать задним ходом."],
@@ -50,7 +51,8 @@
     ["Trafikkreglene § 6 – svinging (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747"],
     ["Trafikkreglene § 7 – vikeplikt ved svinging (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A77"],
     ["Trafikkreglene § 8 – kjørefeltskifte og fletting (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A78"],
-    ["Kjøring i rundkjøring (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/traffic-safety/norwegian-traffic-rules/driving-in-roundabouts/"]
+    ["Kjøring i rundkjøring (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/traffic-safety/norwegian-traffic-rules/driving-in-roundabouts/"],
+    ["Vikeplikt i ulike trafikksituasjoner – felt for fartsøkning (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/trafikksikkerhet/trafikkregler/vikeplikt/vikeplikt-ulike-trafikksituasjoner/"]
   ],
   "checked": "2026-10"
 }

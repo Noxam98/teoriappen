@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
-import { createExam, gradeExam, recordAnswer, setClock } from '../lib/exam';
+import { createExam, fixNumberedOrders, gradeExam, recordAnswer, setClock } from '../lib/exam';
 import { playSound } from '../lib/sound';
 import { loadData, saveData } from '../lib/storage';
 import type { AppData, ExamSession, FinishedExam, Screen, VocabItem } from '../types';
@@ -30,7 +30,10 @@ function withClock(d: AppData, running: boolean, now: number): AppData {
 }
 
 export function AppProvider({ children }: { children: ReactNode }) {
-  const [data, setData] = useState<AppData>(() => withClock(loadData(), onScreen(), Date.now()));
+  const [data, setData] = useState<AppData>(() => {
+    const d = withClock(loadData(), onScreen(), Date.now());
+    return d.cur ? { ...d, cur: fixNumberedOrders(d.cur) } : d;
+  });
   const [nav, setNav] = useState<{ screen: Screen; visit: number }>({ screen: { name: 'home' }, visit: 0 });
   const latest = useRef(data);
   latest.current = data;

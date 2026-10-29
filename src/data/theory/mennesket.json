@@ -7,13 +7,13 @@
     { "p": "Det er straffbart å kjøre bil med høyere promille enn 0,2. Selv litt alkohol gir lengre reaksjonstid og dårligere syn og konsentrasjon. Du blir ikke mer forsiktig – du tar større sjanser.", "ru": "Водить машину с уровнем алкоголя выше 0,2 промилле — уголовно наказуемо. Даже немного алкоголя увеличивает время реакции, ухудшает зрение и внимание. Осторожнее вы от этого не становитесь — наоборот, начинаете больше рисковать." },
     { "nums": [
       ["0,2 ‰", "promillegrensen for å kjøre bil", "допустимый уровень алкоголя для вождения"],
-      ["0,1–0,15 ‰", "omtrent så mye alkohol kroppen forbrenner i timen", "примерно столько алкоголя организм перерабатывает за час"]
+      ["ca. 0,15 ‰", "så mye synker promillen i gjennomsnitt i timen", "примерно на столько в среднем снижается промилле за час"]
     ] },
     { "rule": "Bare tid får promillen ned. Kaffe, vann, mat, frisk luft eller trening gjør ikke at alkoholen forsvinner fortere.", "ru": "Снизить промилле может только время. Кофе, вода, еда, свежий воздух или спорт не ускоряют выведение алкоголя." },
     { "trap": "Mange tror at promillen er borte etter en natts søvn. Men søvn gjør ikke at alkoholen forsvinner fortere. Har du drukket sent i går kveld, kan du fortsatt ha promille neste morgen – selv om du føler deg i form.", "ru": "Многие думают, что после ночного сна промилле уже нет. Но сон не ускоряет выведение алкоголя. Если вы пили поздно вечером, утром у вас ещё может быть промилле — даже если вы чувствуете себя хорошо." },
 
     { "h": "Medisiner og narkotika", "ru": "Лекарства и наркотики" },
-    { "p": "En rød varseltrekant på pakningen betyr at medisinen kan svekke evnen til å kjøre bil trygt. Spør lege eller apotek om du kan kjøre.", "ru": "Красный предупреждающий треугольник на упаковке означает, что лекарство может ухудшить способность безопасно управлять машиной. Спросите врача или в аптеке, можно ли вам садиться за руль." },
+    { "p": "En rød varseltrekant på pakningen betyr at medisinen kan svekke evnen til å kjøre bil trygt. Også medisiner uten varseltrekant kan påvirke kjøringen. Spør lege eller apotek om du kan kjøre.", "ru": "Красный предупреждающий треугольник на упаковке означает, что лекарство может ухудшить способность безопасно управлять машиной. Влиять на вождение могут и лекарства без такого треугольника. Спросите врача или в аптеке, можно ли вам садиться за руль." },
     { "p": "Det er forbudt å kjøre når du er påvirket av narkotika, for eksempel cannabis. Narkotika gir dårligere reaksjonsevne og vurderingsevne.", "ru": "Запрещено водить машину под воздействием наркотиков, например каннабиса. Наркотики ухудшают реакцию и способность оценивать ситуацию." },
 
     { "h": "Trøtthet", "ru": "Усталость" },
@@ -23,8 +23,8 @@
       ["Du husker ikke de siste kilometerne du har kjørt.", "Вы не помните последние километры пути."],
       ["Du har vansker med å holde bilen i feltet.", "Вам трудно удерживать машину в своей полосе."]
     ] },
-    { "rule": "Det eneste som virkelig hjelper mot trøtthet, er søvn. Stopp på et trygt sted og sov i 15–20 minutter.", "ru": "От усталости по-настоящему помогает только сон. Остановитесь в безопасном месте и поспите 15–20 минут." },
-    { "trap": "Åpent vindu, høy musikk eller en energidrikk hjelper ikke mot trøtthet. Å kjøre fortere for å komme raskere fram gjør det bare farligere.", "ru": "Открытое окно, громкая музыка или энергетик от усталости не помогают. А ехать быстрее, чтобы скорее доехать, — только опаснее." },
+    { "rule": "Det eneste som virkelig hjelper mot trøtthet, er søvn. Stopp på et trygt sted og sov i omtrent 15 minutter.", "ru": "От усталости по-настоящему помогает только сон. Остановитесь в безопасном месте и поспите примерно 15 минут." },
+    { "trap": "Åpent vindu, høy musikk eller en energidrikk fjerner ikke trøttheten. Å kjøre fortere for å komme raskere fram gjør det bare farligere.", "ru": "Открытое окно, громкая музыка или энергетик усталость не снимают. А ехать быстрее, чтобы скорее доехать, — только опаснее." },
 
     { "h": "Mobil og oppmerksomhet", "ru": "Телефон и внимание" },
     { "p": "Det er forbudt å bruke mobiltelefon som du holder i hånden, mens du kjører. Forbudet gjelder på alle veier, også i lav fart, når samtalen er kort, og når du står i kø eller venter på grønt lys.", "ru": "Во время движения запрещено пользоваться телефоном, держа его в руке. Запрет действует на всех дорогах — и на малой скорости, и при коротком разговоре, и когда вы стоите в пробке или ждёте зелёного сигнала." },
@@ -32,12 +32,21 @@
     { "p": "Se langt fram når du kjører, så oppdager du farer tidlig og får tid til å reagere. Øyekontakt gjør det lettere å vite om andre har sett deg – men du kan ikke være helt sikker.", "ru": "Смотрите далеко вперёд: так вы раньше заметите опасность и успеете среагировать. Зрительный контакт помогает понять, заметили ли вас другие, — но полной уверенности он не даёт." },
 
     { "h": "Erfaring, venner og følelser", "ru": "Опыт, друзья и эмоции" },
-    { "p": "Unge førere som nylig har fått førerkort, har høyest risiko for å bli innblandet i en ulykke. De mangler erfaring og tar ofte større sjanser.", "ru": "У молодых водителей, недавно получивших права, самый высокий риск попасть в аварию. Им не хватает опыта, и они чаще рискуют." },
+    { "p": "Unge førere som nylig har fått førerkort, har høyest risiko for å bli innblandet i en ulykke, særlig de første månedene. De mangler erfaring og tar ofte større sjanser.", "ru": "У молодых водителей, недавно получивших права, самый высокий риск попасть в аварию, особенно в первые месяцы. Им не хватает опыта, и они чаще рискуют." },
     { "rule": "Det er du som fører som har ansvaret for kjøringen og for passasjerene. Ikke la venner i bilen presse deg til å kjøre fortere enn det som er trygt.", "ru": "За поездку и за пассажиров отвечаете вы как водитель. Не позволяйте друзьям в машине уговорить вас ехать быстрее, чем безопасно." },
-    { "p": "Sinne og stress gir dårligere vurderinger og mer risikofylt kjøring. Blir du sint på en annen bilist, skal du ikke la sinnet styre kjøringen. Hold avstand, og la situasjonen gå over.", "ru": "Злость и стресс ухудшают оценку ситуации и делают езду опаснее. Если другой водитель вас разозлил, не позволяйте злости управлять вашей ездой. Держите дистанцию и дайте ситуации успокоиться." },
+    { "p": "Sinne og stress gir dårligere vurderinger og mer risikofylt kjøring. Blir du sint på en annen bilist, bør du ikke la sinnet styre kjøringen. Hold avstand, og la situasjonen gå over.", "ru": "Злость и стресс ухудшают оценку ситуации и делают езду опаснее. Если другой водитель вас разозлил, не позволяйте злости управлять вашей ездой. Держите дистанцию и дайте ситуации успокоиться." },
 
     { "h": "Syn og eldre trafikanter", "ru": "Зрение и пожилые участники движения" },
     { "p": "Trenger du briller eller linser for å oppfylle synskravet, skal du alltid bruke dem når du kjører. Det gjelder også om dagen og på korte turer.", "ru": "Если вам нужны очки или линзы, чтобы соответствовать требованиям к зрению, носите их за рулём всегда — и днём, и в коротких поездках." },
     { "p": "Eldre kan ha dårligere syn, hørsel og bevegelighet. Skal en eldre person krysse veien foran deg, gi personen god tid og vær klar til å stoppe.", "ru": "У пожилых людей может быть хуже зрение, слух и подвижность. Если пожилой человек переходит дорогу перед вами, дайте ему достаточно времени и будьте готовы остановиться." }
-  ]
+  ],
+  "sources": [
+    ["Promillekjøring – grensen 0,2 (Store norske leksikon)", "https://snl.no/promillekjøring"],
+    ["Alkohol – forbrenning i kroppen (Store medisinske leksikon)", "https://sml.snl.no/alkohol_-_rusmiddel"],
+    ["Legemidler som kan påvirke kjøreevnen (Helsedirektoratet)", "https://www.helsedirektoratet.no/veiledere/forerkortveileder/midler-som-kan-pavirke-kjoreevnen-35-37/legemidler-som-kan-pavirke-kjoreevnen"],
+    ["Forskrift om forbud mot håndholdt mobiltelefon (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1999-12-17-1309"],
+    ["Husk hviletid på veien! (Trygg Trafikk)", "https://www.tryggtrafikk.no/artikler/aktuelt/husk-hviletid-pa-veien/"],
+    ["Førerkortveilederen – syn (Helsedirektoratet)", "https://www.helsedirektoratet.no/veiledere/forerkortveileder/syn-9-13"]
+  ],
+  "checked": "2026-10"
 }

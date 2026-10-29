@@ -147,8 +147,8 @@
       "Stoppe i enden av akselerasjonsfeltet og vente på en stor luke",
       "Kjøre sakte inn, så de andre må bremse for deg"
     ],
-    "f": "Bruk akselerasjonsfeltet til å komme opp i fart. Du har vikeplikt for trafikken på motorveien og skal kjøre inn i en ledig luke.",
-    "ru": "Используйте полосу разгона, чтобы набрать скорость потока. Вы уступаете транспорту на магистрали и встраиваетесь в свободный промежуток."
+    "f": "Bruk akselerasjonsfeltet til å komme opp i fart. Du skal tilpasse farten til trafikken på motorveien og kjøre inn i en ledig luke. De som allerede kjører på motorveien, skal gjøre det lettere for deg å komme inn.",
+    "ru": "Используйте полосу разгона, чтобы набрать скорость потока. Подстройте скорость под поток на магистрали и встраивайтесь в свободный промежуток. Те, кто уже едет по магистрали, должны облегчить вам въезд."
   },
   {
     "id": "pla-12",

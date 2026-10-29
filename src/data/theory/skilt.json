@@ -57,7 +57,7 @@
       ["forkjorsrett_mote", "Forkjørsrett ved møting: på den smale strekningen skal møtende vike for deg", "Преимущество перед встречным движением: на узком участке встречные уступают вам"]
     ] },
     { "rule": "Ved vikepliktskilt stanser du bare hvis det er nødvendig. Ved stoppskilt stanser du alltid helt – også når veien er fri og du har god oversikt.", "ru": "У знака «Уступите дорогу» останавливаются, только если нужно. У знака «Стоп» — всегда полностью, даже если дорога свободна и всё хорошо видно." },
-    { "p": "Forkjørsveien gjelder fram til skiltet Slutt på forkjørsvei. Utenfor tettbygd strøk er det forbudt å parkere på forkjørsvei.", "ru": "Главная дорога действует до знака «Конец главной дороги». Вне населённых пунктов стоянка на главной дороге запрещена." },
+    { "p": "Forkjørsveien gjelder fram til skiltet Slutt på forkjørsvei. På forkjørsvei med fartsgrense over 50 km/t er det forbudt å parkere på kjørebanen.", "ru": "Главная дорога действует до знака «Конец главной дороги». На главной дороге с ограничением скорости выше 50 км/ч стоянка на проезжей части запрещена." },
     { "trap": "Møteplikt og forkjørsrett ved møting er lette å blande. Den røde pilen viser alltid hvem som skal vike. Peker den oppover, i din retning, er det du – peker den nedover, er det de møtende.", "ru": "Эти два знака легко перепутать. Красная стрелка всегда показывает того, кто уступает. Если она смотрит вверх, по вашему направлению, — уступаете вы, если вниз — встречные." },
 
     { "h": "Forbudsskilt", "ru": "Запрещающие знаки" },
@@ -73,7 +73,7 @@
       ["slutt_forbikjoring", "Slutt på forbikjøringsforbud", "Конец запрета обгона"]
     ] },
     { "p": "En syklist, en tohjuls moped eller en motorsykkel uten sidevogn kan du kjøre forbi når det er trygt, også der forbikjøring er forbudt. Forbudet gjelder fram til skiltet Slutt på forbikjøringsforbud, hvis ikke et underskilt viser en annen strekning.", "ru": "Велосипедиста, двухколёсный мопед или мотоцикл без коляски обгонять можно, когда это безопасно, — даже там, где обгон запрещён. Запрет действует до знака «Конец запрета обгона», если табличка не указывает другую длину участка." },
-    { "fig": { "signs": ["slutt_forbikjoring", "slutt_forkjorsveg", "slutt_fart_80"] }, "no": "Tynne, skrå streker viser at noe slutter. A: slutt på forbikjøringsforbud, B: slutt på forkjørsvei, C: slutt på fartsgrense 80.", "ru": "Тонкие косые полосы означают, что действие чего-то заканчивается. A — конец запрета обгона, B — конец главной дороги, C — конец ограничения 80." },
+    { "fig": { "signs": ["slutt_forbikjoring", "slutt_forkjorsveg", "slutt_fart_80"] }, "no": "Tynne, skrå streker viser at noe slutter. Fra venstre: slutt på forbikjøringsforbud, slutt på forkjørsvei og slutt på fartsgrense 80.", "ru": "Тонкие косые полосы означают, что действие чего-то заканчивается. Слева направо: конец запрета обгона, конец главной дороги и конец ограничения 80." },
     { "signs": [
       ["stans_forbudt", "Stans forbudt: du kan ikke stanse i det hele tatt, heller ikke for å slippe av en passasjer", "Остановка запрещена: останавливаться нельзя совсем, даже чтобы высадить пассажира"],
       ["parkering_forbudt", "Parkering forbudt: du kan stanse kort for at passasjerer skal gå av eller på, eller for å laste av og på", "Стоянка запрещена: можно ненадолго остановиться, чтобы пассажиры вышли или сели, или чтобы погрузить и выгрузить вещи"]
@@ -81,7 +81,7 @@
     { "p": "Ved Stans forbudt kan du bare stanse hvis trafikken eller en farlig situasjon tvinger deg til det. Begge skiltene gjelder på den siden av veien der de står, fram til neste veikryss, hvis ikke et underskilt sier noe annet.", "ru": "При знаке «Остановка запрещена» останавливаться можно, только если к этому вынуждает движение или опасная ситуация. Оба знака действуют на той стороне дороги, где стоят, до ближайшего перекрёстка, если табличка не говорит иное." },
     { "trap": "Se på de røde strekene. To streker som krysser hverandre betyr stans forbudt. Én strek betyr parkering forbudt – da er en kort stans for passasjerer lov.", "ru": "Смотрите на красные полосы. Две перекрещённые полосы — остановка запрещена. Одна полоса — стоянка запрещена: короткая остановка ради пассажиров разрешена." },
     { "p": "Fartsgrenseskilt er også forbudsskilt: du har ikke lov til å kjøre fortere enn tallet viser. Det er den høyeste farten under gode forhold. I regn, mørke eller dårlig sikt skal du kjøre saktere.", "ru": "Знаки ограничения скорости тоже запрещающие: ехать быстрее указанного числа нельзя. Это максимум при хороших условиях. В дождь, в темноте или при плохой видимости нужно ехать медленнее." },
-    { "p": "Skiltet gjelder hele døgnet, hvis ikke et underskilt viser tid. Det gjelder til du passerer et nytt fartsgrenseskilt, et skilt om slutt på fartsgrensen eller et skilt for fartsgrensesone.", "ru": "Знак действует круглосуточно, если табличка не указывает время. Он действует, пока вы не проедете новый знак ограничения, знак конца ограничения или знак зоны ограничения скорости." },
+    { "p": "Skiltet gjelder hele døgnet, hvis ikke et underskilt viser tid. Det gjelder til du passerer et nytt fartsgrenseskilt, et skilt om slutt på fartsgrensen, et skilt for fartsgrensesone eller et skilt for gatetun eller gågate.", "ru": "Знак действует круглосуточно, если табличка не указывает время. Он действует, пока вы не проедете новый знак ограничения, знак конца ограничения, знак зоны ограничения скорости или знак жилой зоны (gatetun) либо пешеходной улицы (gågate)." },
     { "signs": [
       ["fart_50", "Fartsgrense: du kan kjøre høyst 50 km/t", "Ограничение скорости: не более 50 км/ч"],
       ["fartssone_30", "Fartsgrensesone: 30 km/t på alle veier i området, også etter kryss, til du kjører ut av sonen", "Зона ограничения скорости: 30 км/ч на всех улицах зоны, в том числе после перекрёстков, пока вы из неё не выедете"],
@@ -120,7 +120,7 @@
     ] },
     { "signs": [
       ["gangfelt", "Gangfelt: vik for gående som er i gangfeltet eller på vei ut i det", "Пешеходный переход: уступите пешеходам, которые уже на переходе или собираются на него ступить"],
-      ["gatetun", "Gatetun: kjør i gangfart. Gående kan bruke hele gaten, og du kan bare parkere på merkede plasser", "Жилая зона: ехать со скоростью пешехода. Пешеходы могут ходить по всей улице, парковаться можно только на отмеченных местах"],
+      ["gatetun", "Gatetun: kjør i gangfart, og vik for gående. Du kan bare parkere på plasser som er merket for det", "Жилая зона: ехать со скоростью пешехода и уступать пешеходам. Парковаться можно только на отмеченных для этого местах"],
       ["gagate", "Gågate: forbudt å kjøre med motorvogn, unntatt det et underskilt tillater, for eksempel varelevering. Kjør da i gangfart", "Пешеходная улица: механическим ТС ехать нельзя, кроме того, что разрешает табличка, например доставки. Тогда — со скоростью пешехода"]
     ] },
     { "signs": [

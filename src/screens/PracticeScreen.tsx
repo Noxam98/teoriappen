@@ -7,7 +7,7 @@ import { QuestionCard } from '../components/question/QuestionCard';
 import { CATEGORY, QUESTIONS, QUESTION_BY_ID } from '../data';
 import { Words } from '../features/brush/Words';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
-import { wrongQuestionIds } from '../lib/exam';
+import { optionOrder, wrongQuestionIds } from '../lib/exam';
 import { answerFeedback } from '../lib/feedback';
 import { playSound } from '../lib/sound';
 import { shuffle } from '../lib/text';
@@ -55,9 +55,9 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
   const id = ids[i];
   const q = id ? QUESTION_BY_ID[id] : null;
   const order = id ? orders[id] ?? [] : [];
-  // each question gets its own shuffled option order once
+  // each question gets its own option order once
   useEffect(() => {
-    if (q && !orders[q.id]) setOrders(o => ({ ...o, [q.id]: shuffle(q.a.map((_, k) => k)) }));
+    if (q && !orders[q.id]) setOrders(o => ({ ...o, [q.id]: optionOrder(q) }));
   }, [q, orders]);
 
   const chosen = id ? answers[id] : undefined;
@@ -127,7 +127,7 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
       <ActionBar label="Навигация по вопросам">
         <button className="btn ghost-strong" onClick={() => finish(true)}>Завершить</button>
         <button className={chosen !== undefined ? 'btn primary grow' : 'btn grow'} disabled={chosen === undefined} onClick={next}>
-          <span translate="no">{i + 1 < ids.length ? 'Neste' : 'Ferdig'}</span> <Icon name="right" />
+          {i + 1 < ids.length ? 'Neste' : 'Ferdig'} <Icon name="right" />
         </button>
       </ActionBar>
     </div>

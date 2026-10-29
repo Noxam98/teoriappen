@@ -13,7 +13,7 @@ interface Props {
   onPick?: (option: number) => void;
 }
 
-/** Answer plates 1–4, like the answer keys (letters are taken by the cars and signs in the pictures). Index 0 of q.a is the correct answer. */
+/** Answer plates 1–4, like the answer keys (letters are taken by the cars in the pictures). Index 0 of q.a is the correct answer. */
 export function Options({ q, order, chosen, reveal = false, onPick }: Props) {
   const brush = useBrush();
 
@@ -45,7 +45,7 @@ export function Options({ q, order, chosen, reveal = false, onPick }: Props) {
             aria-disabled={reveal || undefined}
             onClick={e => pick(oi, e.target)}
             onKeyDown={e => { if (moveFocus(e, k)) return; if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(oi, null); } }}>
-            <span className="key" translate="no">{k + 1}</span>
+            <span className="key">{k + 1}</span>
             <span className="otext" data-block lang="nb"><Words text={q.a[oi]} /></span>
             <span className="mark">
               {reveal && oi === 0 ? <><Icon name="check" /><span className="sr-only">правильный ответ</span></>

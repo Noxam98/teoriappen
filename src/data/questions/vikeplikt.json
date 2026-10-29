@@ -952,8 +952,8 @@
       "Svinge foran dem, fordi det ikke er gangfelt",
       "Kjøre sakte rundt dem"
     ],
-    "f": "Når du svinger i et kryss, skal du la gående som krysser veien du svinger inn i, gå over. Det gjelder også der det ikke er gangfelt.",
-    "ru": "При повороте на перекрёстке вы должны дать пешеходам, пересекающим дорогу, на которую вы поворачиваете, перейти её. Это действует и там, где нет пешеходного перехода."
+    "f": "Når du svinger, har du vikeplikt for gående som skal rett fram på kjørebanen – også der det ikke er gangfelt. De gående som krysser veien du svinger inn i, skal derfor få gå over først.",
+    "ru": "При повороте вы уступаете пешеходам, которые движутся прямо по проезжей части, — и там, где нет пешеходного перехода. Поэтому пешеходы, которые переходят дорогу, на которую вы поворачиваете, проходят первыми."
   },
   {
     "id": "vik-38",

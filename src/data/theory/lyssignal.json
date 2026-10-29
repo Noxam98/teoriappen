@@ -31,8 +31,15 @@
 
     { "h": "Andre lyssignaler", "ru": "Другие сигналы" },
     { "list": [
-      ["Et signal med hvite streker eller symboler i stedet for farger er for kollektivtrafikken, som buss og trikk. Det gjelder ikke for deg som kjører vanlig bil – følg det vanlige lyssignalet.", "Сигнал с белыми полосками или символами вместо цветов — для общественного транспорта, например автобусов и трамваев. На обычной машине он к вам не относится — следуйте обычному светофору."],
-      ["To røde lys som blinker vekselvis, betyr stopp. Ved en jernbaneovergang viser de at et tog kommer: stans før bommen eller stopplinjen.", "Два попеременно мигающих красных сигнала означают «стоп». На железнодорожном переезде они показывают, что приближается поезд: остановитесь перед шлагбаумом или стоп-линией."]
+      ["Et signal med hvite lys i stedet for farger er for kollektivtrafikken, som buss og trikk. Det gjelder ikke for deg som kjører vanlig bil i vanlig kjørefelt – følg det vanlige lyssignalet.", "Сигнал с белыми огнями вместо цветных — для общественного транспорта, например автобусов и трамваев. Если вы едете на обычной машине по обычной полосе, он к вам не относится — следуйте обычному светофору."],
+      ["To røde lys som blinker vekselvis, betyr stopp: du må ikke kjøre forbi signalet. Stans ved stopplinjen eller i god avstand før signalet. Ved en jernbaneovergang viser lysene at et tog kommer. Slike lys finnes også for eksempel ved bruer som kan åpnes, og ved tunneler.", "Два попеременно мигающих красных сигнала означают «стоп»: проезжать мимо светофора нельзя. Остановитесь у стоп-линии или на безопасном расстоянии до светофора. На железнодорожном переезде они показывают, что приближается поезд. Такие сигналы бывают и в других местах, например у разводных мостов и у тоннелей."]
     ] }
-  ]
+  ],
+  "sources": [
+    ["Skiltforskriften kap. 12 § 24 – trafikklyssignaler (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219/KAPITTEL_13#%C2%A724"],
+    ["Trafikkreglene § 3 – anvisninger fra politi, lyssignal, skilt og oppmerking (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747"],
+    ["Trafikkreglene § 7 – vikeplikt ved svinging (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A77"],
+    ["Håndbok N303 Trafikksignalanlegg – betydningen av lysene (Statens vegvesen)", "https://www.vegvesen.no/globalassets/fag/handboker/hb-n303.pdf"]
+  ],
+  "checked": "2026-10"
 }

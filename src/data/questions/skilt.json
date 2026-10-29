@@ -50,18 +50,18 @@
   {
     "id": "sk-04",
     "cat": "skilt",
-    "q": "Du kjører på en vei med dette skiltet, utenfor tettbygd strøk. Hva er forbudt her?",
+    "q": "Du kjører på en vei med dette skiltet. Fartsgrensen er 80 km/t. Hva er forbudt her?",
     "img": {
       "sign": "forkjorsveg"
     },
     "a": [
-      "Å parkere",
+      "Å parkere på kjørebanen",
       "Å kjøre forbi en traktor",
       "Å bruke nærlys om dagen",
-      "Å kjøre i 80 km/t når det ikke er skiltet en annen fartsgrense"
+      "Å svinge av til en sidevei"
     ],
-    "f": "På forkjørsvei utenfor tettbygd strøk er det forbudt å parkere.",
-    "ru": "На главной дороге (forkjørsvei) вне населённого пункта стоянка запрещена."
+    "f": "På forkjørsvei med fartsgrense over 50 km/t er det forbudt å parkere på kjørebanen.",
+    "ru": "На главной дороге (forkjørsvei) с ограничением скорости выше 50 км/ч стоянка на проезжей части запрещена."
   },
   {
     "id": "sk-05",
@@ -170,13 +170,14 @@
         "forbudt_uvending"
       ]
     },
+    "byNumber": true,
     "a": [
-      "Skilt A (til venstre)",
-      "Skilt B (i midten)",
-      "Skilt C (til høyre)"
+      "Skilt 1 (til venstre)",
+      "Skilt 2 (i midten)",
+      "Skilt 3 (til høyre)"
     ],
-    "f": "Skilt A forbyr venstresving, skilt B forbyr høyresving, og skilt C forbyr u-sving.",
-    "ru": "Знак A (левый) запрещает поворот налево, B (средний) — поворот направо, C (правый) — разворот."
+    "f": "Skilt 1 forbyr venstresving, skilt 2 forbyr høyresving, og skilt 3 forbyr u-sving.",
+    "ru": "Знак 1 запрещает поворот налево, знак 2 — поворот направо, знак 3 — разворот."
   },
   {
     "id": "sk-12",
@@ -189,13 +190,14 @@
         "forbudt_uvending"
       ]
     },
+    "byNumber": true,
     "a": [
-      "Skilt C (til høyre)",
-      "Skilt A (til venstre)",
-      "Skilt B (i midten)"
+      "Skilt 3 (til høyre)",
+      "Skilt 1 (til venstre)",
+      "Skilt 2 (i midten)"
     ],
-    "f": "Skilt C, med en pil som går rundt og tilbake, forbyr u-sving. Skilt A og B forbyr venstresving og høyresving.",
-    "ru": "Знак C — со стрелкой, которая загибается назад, — запрещает разворот. Знаки A и B запрещают поворот налево и направо."
+    "f": "Skilt 3, med en pil som går rundt og tilbake, forbyr u-sving. Skilt 1 og 2 forbyr venstresving og høyresving.",
+    "ru": "Знак 3 — со стрелкой, которая загибается назад, — запрещает разворот. Знаки 1 и 2 запрещают поворот налево и направо."
   },
   {
     "id": "sk-13",
@@ -240,13 +242,14 @@
         "slutt_fart_80"
       ]
     },
+    "byNumber": true,
     "a": [
-      "Skilt A (til venstre)",
-      "Skilt B (i midten)",
-      "Skilt C (til høyre)"
+      "Skilt 1 (til venstre)",
+      "Skilt 2 (i midten)",
+      "Skilt 3 (til høyre)"
     ],
-    "f": "Skilt A betyr slutt på forbikjøringsforbud. Skilt B betyr slutt på forkjørsvei, og skilt C betyr slutt på særskilt fartsgrense.",
-    "ru": "Знак A — конец запрета обгона, B — конец главной дороги, C — конец особого ограничения скорости."
+    "f": "Skilt 1 betyr slutt på forbikjøringsforbud. Skilt 2 betyr slutt på forkjørsvei, og skilt 3 betyr slutt på særskilt fartsgrense.",
+    "ru": "Знак 1 — конец запрета обгона, знак 2 — конец главной дороги, знак 3 — конец особого ограничения скорости."
   },
   {
     "id": "sk-16",
@@ -261,8 +264,8 @@
       "Bare i 500 meter",
       "Bare om dagen"
     ],
-    "f": "Et fartsgrenseskilt gjelder til du passerer et nytt fartsgrenseskilt, et skilt om slutt på særskilt fartsgrense eller et skilt for fartsgrensesone.",
-    "ru": "Ограничение скорости действует, пока вы не проедете новый знак ограничения, знак «Конец ограничения» или знак зоны."
+    "f": "Et fartsgrenseskilt gjelder til du passerer et nytt fartsgrenseskilt, et skilt om slutt på særskilt fartsgrense, et skilt for fartsgrensesone eller et skilt for gatetun eller gågate.",
+    "ru": "Ограничение скорости действует, пока вы не проедете новый знак ограничения, знак «Конец ограничения», знак зоны или знак жилой зоны (gatetun) либо пешеходной улицы (gågate)."
   },
   {
     "id": "sk-17",
@@ -339,13 +342,14 @@
         "fart_80"
       ]
     },
+    "byNumber": true,
     "a": [
-      "Skilt C (til høyre)",
-      "Skilt A (til venstre)",
-      "Skilt B (i midten)"
+      "Skilt 3 (til høyre)",
+      "Skilt 1 (til venstre)",
+      "Skilt 2 (i midten)"
     ],
-    "f": "Den generelle fartsgrensen utenfor tettbygd strøk er 80 km/t – det viser skilt C. I tettbygd strøk er den 50 km/t.",
-    "ru": "Общее ограничение вне населённых пунктов — 80 км/ч, это знак C. В населённом пункте — 50 км/ч."
+    "f": "Den generelle fartsgrensen utenfor tettbygd strøk er 80 km/t – det viser skilt 3. I tettbygd strøk er den 50 km/t.",
+    "ru": "Общее ограничение вне населённых пунктов — 80 км/ч, это знак 3. В населённом пункте — 50 км/ч."
   },
   {
     "id": "sk-22",
@@ -582,13 +586,14 @@
         "fare_ko"
       ]
     },
+    "byNumber": true,
     "a": [
-      "Skilt A (til venstre)",
-      "Skilt B (i midten)",
-      "Skilt C (til høyre)"
+      "Skilt 1 (til venstre)",
+      "Skilt 2 (i midten)",
+      "Skilt 3 (til høyre)"
     ],
-    "f": "Skilt A varsler om møtende trafikk. Skilt B varsler om at veien blir smalere, og skilt C varsler om kø.",
-    "ru": "Знак A — «Встречное движение», B — «Сужение дороги», C — «Затор»."
+    "f": "Skilt 1 varsler om møtende trafikk. Skilt 2 varsler om at veien blir smalere, og skilt 3 varsler om kø.",
+    "ru": "Знак 1 — «Встречное движение», знак 2 — «Сужение дороги», знак 3 — «Затор»."
   },
   {
     "id": "sk-37",
@@ -665,13 +670,14 @@
         "fare_sykkel"
       ]
     },
+    "byNumber": true,
     "a": [
-      "Skilt C (til høyre)",
-      "Skilt A (til venstre)",
-      "Skilt B (i midten)"
+      "Skilt 3 (til høyre)",
+      "Skilt 1 (til venstre)",
+      "Skilt 2 (i midten)"
     ],
-    "f": "Skilt C varsler om syklende. Skilt A varsler om lyssignal, og skilt B om rundkjøring.",
-    "ru": "Знак C — «Велосипедисты», A — «Светофор», B — «Кольцевое движение»."
+    "f": "Skilt 3 varsler om syklende. Skilt 1 varsler om lyssignal, og skilt 2 om rundkjøring.",
+    "ru": "Знак 3 — «Велосипедисты», знак 1 — «Светофор», знак 2 — «Кольцевое движение»."
   },
   {
     "id": "sk-42",
@@ -716,13 +722,13 @@
       ]
     },
     "a": [
-      "Skilt A varsler om jernbaneovergang med bom, skilt B om jernbaneovergang uten bom",
-      "Skilt A varsler om jernbaneovergang uten bom, skilt B om jernbaneovergang med bom",
+      "Skiltet med gjerde varsler om jernbaneovergang med bom, skiltet med lokomotiv om jernbaneovergang uten bom",
+      "Skiltet med gjerde varsler om jernbaneovergang uten bom, skiltet med lokomotiv om jernbaneovergang med bom",
       "Begge varsler om trikk",
-      "Skilt A gjelder bare om natten"
+      "Skiltet med gjerde gjelder bare om natten"
     ],
-    "f": "Skilt A, med et gjerde, varsler om jernbaneovergang med bom. Skilt B, med et lokomotiv, varsler om jernbaneovergang uten bom. Der må du se og lytte godt etter tog.",
-    "ru": "Знак A (с забором) — переезд со шлагбаумом. Знак B (с паровозом) — переезд без шлагбаума: там нужно особенно внимательно смотреть и слушать, нет ли поезда."
+    "f": "Skiltet med et gjerde varsler om jernbaneovergang med bom. Skiltet med et lokomotiv varsler om jernbaneovergang uten bom. Der må du se og lytte godt etter tog.",
+    "ru": "Знак с изображением забора — переезд со шлагбаумом. Знак с паровозом — переезд без шлагбаума: там нужно особенно внимательно смотреть и слушать, нет ли поезда."
   },
   {
     "id": "sk-45",
@@ -967,8 +973,8 @@
       "50 km/t",
       "Så fort som forholdene tillater"
     ],
-    "f": "Gatetun er et område der gående kan bruke hele gaten, og barn kan leke. Kjørende skal kjøre i gangfart og ta hensyn til de gående.",
-    "ru": "«Жилая зона» (gatetun): пешеходы могут ходить по всей улице, дети играют. Ехать — со скоростью пешехода, с особым вниманием к пешеходам."
+    "f": "I gatetun skal du kjøre i gangfart, og du har vikeplikt for gående. Barn kan leke der.",
+    "ru": "В жилой зоне (gatetun) едут со скоростью пешехода и уступают пешеходам. Там могут играть дети."
   },
   {
     "id": "sk-60",

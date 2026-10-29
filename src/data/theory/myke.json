@@ -24,7 +24,7 @@
     { "trap": "Mange tror at nærlys viser en gående på lang avstand. Uten refleks ser du personen først på 25–30 meter – det er kortere enn stopplengden i vanlig fart på landeveien.", "ru": "Многие думают, что ближний свет показывает пешехода издалека. Без светоотражателя вы увидите его лишь с 25–30 метров — это меньше остановочного пути на обычной загородной скорости." },
 
     { "h": "Syklister", "ru": "Велосипедисты" },
-    { "p": "Syklister kan vingle, for eksempel på grunn av hull i veien eller vind. Hold god sideavstand når du kjører forbi, gjerne minst 1,5 meter.", "ru": "Велосипедист может вильнуть, например из-за ямы или ветра. При обгоне держите большой боковой интервал, желательно не меньше 1,5 метра." },
+    { "p": "Syklister kan vingle, for eksempel på grunn av hull i veien eller vind. Hold god sideavstand når du kjører forbi. Statens vegvesen anbefaler minst 1,5 meter.", "ru": "Велосипедист может вильнуть, например из-за ямы или ветра. При обгоне держите большой боковой интервал. Дорожное управление (Statens vegvesen) рекомендует не меньше 1,5 метра." },
     { "list": [
       ["Kjør forbi bare når det er trygt. Kommer det en møtende bil på en smal vei, vent bak syklisten.", "Обгоняйте, только когда это безопасно. Если на узкой дороге едет встречная машина, подождите позади велосипедиста."],
       ["Ikke tut for å få syklisten til å flytte seg.", "Не сигнальте, чтобы велосипедист посторонился."],
@@ -44,7 +44,16 @@
       ["Sauer og andre dyr kan plutselig gå ut i veien. Senk farten og vær klar til å stoppe.", "Овцы и другие животные могут внезапно выйти на дорогу. Снизьте скорость и будьте готовы остановиться."],
       ["Hester kan bli redde for lyd og biler som kommer nær. Kjør sakte forbi med god avstand.", "Лошадь может испугаться шума и близко проезжающих машин. Проезжайте медленно и с большим интервалом."],
       ["Ikke bruk tuten mot dyr. Dyret kan bli redd og gjøre uventede ting.", "Не сигнальте животным: они могут испугаться и повести себя непредсказуемо."],
-      ["Kjører du på elg eller annet hjortevilt, skal du melde fra til politiet. Merk stedet, så dyret blir lettere å finne.", "Если вы сбили лося, оленя или косулю, вы обязаны сообщить в полицию. Отметьте место, чтобы животное было легче найти."]
+      ["Kjører du på elg, rådyr, sau eller et annet stort dyr, skal du melde fra til politiet. Si nøyaktig hvor det skjedde, og merk gjerne stedet, så dyret blir lettere å finne.", "Если вы сбили лося, косулю, овцу или другое крупное животное, вы обязаны сообщить в полицию. Точно укажите место и по возможности отметьте его, чтобы животное было легче найти."]
     ] }
-  ]
+  ],
+  "sources": [
+    ["Trafikkreglene § 9 – gående og gangfelt (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747"],
+    ["Vikeplikt i ulike trafikksituasjoner (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/trafikksikkerhet/trafikkregler/vikeplikt/vikeplikt-ulike-trafikksituasjoner/"],
+    ["I mørket kan refleks bety liv eller død (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/nasjonalt/i-morket-kan-refleks-bety-liv-eller-dod/"],
+    ["Trafikkskilt Barn (Store norske leksikon)", "https://snl.no/Barn_-_trafikkskilt"],
+    ["Ikke stikk av etter å ha kjørt på dyr (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/nasjonalt/ikke-stikk-etter-a-ha-kjort-pa-dyr/"],
+    ["I møte med hest (Trygg Trafikk)", "https://www.tryggtrafikk.no/tips/bil/tips-og-rad-om-bilkjoring/i-mote-med-hest/"]
+  ],
+  "checked": "2026-10"
 }

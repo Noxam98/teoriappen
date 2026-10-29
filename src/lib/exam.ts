@@ -1,5 +1,5 @@
 import { CATEGORIES, QUESTIONS, QUESTION_BY_ID } from '../data';
-import type { AppData, ExamSession, FinishedExam, QuestionStat, RevealMode } from '../types';
+import type { AppData, ExamSession, FinishedExam, Question, QuestionStat, RevealMode } from '../types';
 import { shuffle } from './text';
 
 export const EXAM_QUESTIONS = 45;
@@ -26,7 +26,7 @@ export function createExam(stats: Record<string, QuestionStat>, reveal: RevealMo
   const now = Date.now();
   return {
     ids,
-    perm: Object.fromEntries(ids.map(id => [id, shuffle(QUESTION_BY_ID[id].a.map((_, i) => i))])),
+    perm: Object.fromEntries(ids.map(id => [id, optionOrder(QUESTION_BY_ID[id])])),
     ans: {},
     flag: {},
     i: 0,
@@ -34,6 +34,20 @@ export function createExam(stats: Record<string, QuestionStat>, reveal: RevealMo
     end: now + EXAM_MINUTES * 60_000,
     reveal,
   };
+}
+
+/** Display order of the options: shuffled, or sign 1, 2, 3 … when the options refer to numbered signs. */
+export function optionOrder(q: Question): number[] {
+  const order = q.a.map((_, i) => i);
+  if (!q.byNumber) return shuffle(order);
+  return order.sort((x, y) => q.a[x].localeCompare(q.a[y], 'nb', { numeric: true }));
+}
+
+/** An exam saved before a question got numbered signs still shows that question's options in sign order. */
+export function fixNumberedOrders(s: ExamSession): ExamSession {
+  const stale = s.ids.filter(id => QUESTION_BY_ID[id]?.byNumber && s.perm[id]?.join() !== optionOrder(QUESTION_BY_ID[id]).join());
+  if (!stale.length) return s;
+  return { ...s, perm: { ...s.perm, ...Object.fromEntries(stale.map(id => [id, optionOrder(QUESTION_BY_ID[id])])) } };
 }
 
 /** Time left on the exam clock; a paused clock stands still. */

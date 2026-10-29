@@ -32,7 +32,7 @@ export function VocabScreen() {
   return (
     <div className="vocab">
       <div className="page-head">
-        <div className="eyebrow" translate="no">Ordliste</div>
+        <div className="eyebrow">Ordliste</div>
         <h1>Мой словарь</h1>
         <p className="muted">{list.length ? `${list.length} ${plural(list.length, 'слово', 'слова', 'слов')} из переводов` : 'Здесь появятся слова, которые вы сохраните из перевода.'}</p>
       </div>

@@ -84,6 +84,11 @@ export interface Question {
   f: string;
   /** Explanation in Russian. */
   ru: string;
+  /**
+   * The options name the signs of the picture by number ("Skilt 1 …", "Skilt 2 …"): the signs get numbers,
+   * and the options are shown in that order instead of shuffled, so plate 1 is always sign 1.
+   */
+  byNumber?: boolean;
 }
 
 /** [dictionary form, Russian translation, grammar note] */

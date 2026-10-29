@@ -34,7 +34,7 @@ export function TheoryScreen() {
   return (
     <div className="theory">
       <div className="page-head">
-        <div className="eyebrow" translate="no">Teori</div>
+        <div className="eyebrow">Teori</div>
         <h1>Теория</h1>
         <p className="muted">Главное из правил по каждой теме экзамена. Текст на норвежском, под каждым абзацем — перевод, а любое слово можно перевести кнопкой «Перевод».</p>
         <p className="theory-note">Главы сверены с официальными источниками — законами на Lovdata и страницами Statens vegvesen; ссылки в конце каждой главы. Правила иногда меняются: перед экзаменом сверяйтесь с <a href="https://www.vegvesen.no/forerkort/" target="_blank" rel="noopener noreferrer">vegvesen.no</a>.</p>

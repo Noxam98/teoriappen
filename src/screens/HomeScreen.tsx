@@ -30,7 +30,7 @@ export function HomeScreen() {
       <section className="hero">
         <div className="hero-top">
           <div className="hero-title">
-            <div className="eyebrow" translate="no">Førerkort klasse B</div>
+            <div className="eyebrow">Førerkort klasse B</div>
             <h1>Teoriprøven</h1>
             <p>Тренажёр теоретического экзамена. Вопросы на норвежском, а любое слово можно перевести кнопкой «Перевод» вверху.</p>
           </div>
@@ -119,7 +119,7 @@ export function HomeScreen() {
         <div className="history">
           {recent.map(e => (
             <div key={e.date} className="hrow">
-              <span className={e.pass ? 'stamp pass' : 'stamp fail'} translate="no">{e.pass ? 'Bestått' : 'Ikke bestått'}</span>
+              <span className={e.pass ? 'stamp pass' : 'stamp fail'}>{e.pass ? 'Bestått' : 'Ikke bestått'}</span>
               <span className="tnum"><b>{e.right}</b>/{e.n} · {e.n - e.right} {plural(e.n - e.right, 'ошибка', 'ошибки', 'ошибок')}</span>
               <span className="muted tnum small">{new Date(e.date).toLocaleDateString('ru-RU', { day: 'numeric', month: 'short' })}</span>
             </div>

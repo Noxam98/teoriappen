@@ -144,8 +144,8 @@
       "Vikepliktskiltet gjelder alltid foran lyssignalet",
       "Du må både stanse og vente på grønt"
     ],
-    "f": "Lyssignal går foran skilt. Vikepliktskiltet ved et lyskryss gjelder når lyset er slått av eller blinker gult.",
-    "ru": "Светофор имеет приоритет над знаками. Знак «Уступи дорогу» у светофора действует, когда светофор выключен или мигает жёлтым."
+    "f": "Lyssignalet går foran vikepliktskiltet. Vikepliktskiltet ved et lyskryss gjelder når lyset er slått av eller blinker gult.",
+    "ru": "Светофор имеет приоритет над знаком «Уступите дорогу». Этот знак у светофора действует, когда светофор выключен или мигает жёлтым."
   },
   {
     "id": "sig-11",
@@ -192,15 +192,15 @@
   {
     "id": "sig-14",
     "cat": "lyssignal",
-    "q": "I et lyskryss ser du et eget signal med hvite streker i stedet for farger. Hvem gjelder det for?",
+    "q": "I et lyskryss ser du et eget signal med hvite lys i stedet for farger. Hvem gjelder det for?",
     "img": null,
     "a": [
       "For kollektivtrafikken, som buss og trikk",
       "For alle kjøretøy",
       "Bare for syklister"
     ],
-    "f": "Et signal med hvite streker eller symboler er et signal for kollektivtrafikk, som buss og trikk. Det gjelder ikke for deg som kjører vanlig bil.",
-    "ru": "Сигналы с белыми полосками или символами — это светофор для общественного транспорта, например автобусов и трамваев. Для вас на обычной машине он не действует."
+    "f": "Et signal med hvite lys er et signal for kollektivtrafikk, som buss og trikk. Det gjelder ikke for deg som kjører vanlig bil i vanlig kjørefelt.",
+    "ru": "Сигнал с белыми огнями — это светофор для общественного транспорта, например автобусов и трамваев. Если вы едете на обычной машине по обычной полосе, он к вам не относится."
   },
   {
     "id": "sig-15",
@@ -227,7 +227,7 @@
       "Du kan kjøre forsiktig over hvis du ikke ser toget",
       "Overgangen er ute av drift, så du kan kjøre"
     ],
-    "f": "Vekselvis blinkende rødt lys betyr stopp. Ved jernbaneovergang viser det at et tog kommer, og du må stanse før bommen eller stopplinjen.",
-    "ru": "Попеременно мигающий красный означает «стоп». На железнодорожном переезде он показывает, что приближается поезд: остановитесь перед шлагбаумом или стоп-линией."
+    "f": "Vekselvis blinkende rødt lys betyr stopp. Ved jernbaneovergang viser det at et tog kommer. Du må ikke kjøre forbi signalet, men stanse ved stopplinjen eller i god avstand før signalet.",
+    "ru": "Попеременно мигающий красный означает «стоп». На железнодорожном переезде он показывает, что приближается поезд. Проезжать мимо светофора нельзя: остановитесь у стоп-линии или на безопасном расстоянии до светофора."
   }
 ]

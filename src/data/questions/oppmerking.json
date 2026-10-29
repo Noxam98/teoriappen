@@ -8,7 +8,7 @@
     },
     "a": [
       "Det er en sperrelinje: du må ikke kjøre over eller på den",
-      "Det er en skillelinje: du kan kjøre over når det er trygt",
+      "Det er en kjørefeltlinje: du kan kjøre over når det er trygt",
       "Det er en kantlinje som viser hvor veien slutter",
       "Det er en varsellinje: du kan kjøre forbi uten å tenke på sikten"
     ],
@@ -23,13 +23,13 @@
       "road": "varsellinje"
     },
     "a": [
-      "At det kommer en sperrelinje eller et sted med dårlig sikt",
+      "At sikten framover er for kort til vanlig forbikjøring",
       "At veien snart blir envegskjørt",
       "At det er forbudt å kjøre over linjen",
       "At du nærmer deg en parkeringsplass"
     ],
-    "f": "En varsellinje har lange streker og korte mellomrom. Den varsler om sperrelinje lenger fram eller om at sikten er dårlig. Vær forsiktig med forbikjøring.",
-    "ru": "Varsellinje — длинные штрихи с короткими промежутками. Предупреждает о сплошной линии впереди или о плохой видимости. Обгон — с большой осторожностью."
+    "f": "En varsellinje har lange streker og korte mellomrom. Den betyr at sikten framover er for kort til vanlig forbikjøring. Vær forsiktig med forbikjøring.",
+    "ru": "Varsellinje — длинные штрихи с короткими промежутками. Она означает, что видимость впереди слишком мала для обычного обгона. С обгоном — осторожно."
   },
   {
     "id": "opp-03",
@@ -44,8 +44,8 @@
       "Bare for å kjøre inn på en parkeringsplass",
       "Bare om natten når det er lite trafikk"
     ],
-    "f": "Skillelinjen har korte streker og lange mellomrom. Den skiller kjøreretningene, og du kan kjøre over den når det er trygt.",
-    "ru": "Skillelinje — короткие штрихи с длинными промежутками. Разделяет встречные потоки; пересекать можно, когда это безопасно."
+    "f": "Dette er en kjørefeltlinje: korte streker og lange mellomrom. Her skiller den kjøreretningene, og du kan kjøre over den når det er trygt.",
+    "ru": "Это kjørefeltlinje — короткие штрихи с длинными промежутками. Здесь она разделяет встречные потоки; пересекать её можно, когда это безопасно."
   },
   {
     "id": "opp-04",
@@ -103,13 +103,13 @@
       "road": "haitenner"
     },
     "a": [
-      "Det er en vikepliktlinje: du har vikeplikt, og du skal stanse ved linjen hvis det er nødvendig",
+      "Det er en vikelinje: du har vikeplikt, og du skal stanse ved linjen hvis det er nødvendig",
       "Det er en stopplinje: du må alltid stanse",
       "Det er en fartshump",
       "Det er et gangfelt"
     ],
-    "f": "Trekantene kalles haitenner og er en vikepliktlinje. Du skal vike for trafikken på veien du kommer til, og stanse ved linjen om nødvendig.",
-    "ru": "Белые треугольники («зубы акулы», haitenner) — линия «Уступите дорогу». Уступайте транспорту на пересекаемой дороге; при необходимости остановитесь у линии."
+    "f": "Trekantene kalles haitenner. Det er en vikelinje, og den viser hvor vikeplikten begynner. Du skal vike for trafikken på veien du kommer til, og stanse ved linjen om nødvendig.",
+    "ru": "Белые треугольники («зубы акулы», haitenner) — это vikelinje, линия «Уступите дорогу». Она показывает, где начинается обязанность уступить. Уступайте транспорту на дороге, к которой подъезжаете; при необходимости остановитесь у линии."
   },
   {
     "id": "opp-08",
@@ -119,13 +119,13 @@
       "road": "stopplinje"
     },
     "a": [
-      "Ved stopplinjen",
+      "Rett foran stopplinjen",
       "Midt i krysset",
       "Der det passer, bare du stanser før krysset",
       "Du trenger ikke stanse hvis veien er fri"
     ],
-    "f": "Ved stoppskilt skal du stanse ved stopplinjen. Hvis du ikke ser trafikken derfra, kjører du forsiktig litt fram og stanser igjen.",
-    "ru": "При знаке STOP останавливаются у стоп-линии. Если оттуда не видно дорогу, медленно продвиньтесь вперёд и остановитесь ещё раз."
+    "f": "Ved stoppskilt skal du stanse rett foran stopplinjen. Ser du ikke trafikken derfra, bør du kjøre forsiktig litt fram og stanse igjen.",
+    "ru": "При знаке STOP нужно остановиться прямо перед стоп-линией. Если оттуда не видно дорогу, медленно продвиньтесь вперёд и остановитесь ещё раз."
   },
   {
     "id": "opp-09",
@@ -178,18 +178,18 @@
   {
     "id": "opp-12",
     "cat": "oppmerking",
-    "q": "Mellom feltene er det et område med skrå streker. Kan du kjøre på dette området?",
+    "q": "Mellom feltene er det et område med skrå streker og en heltrukket linje rundt. Kan du kjøre på dette området?",
     "img": {
       "road": "sperreflate"
     },
     "a": [
-      "Nei, det er en sperreflate som du ikke skal kjøre på",
+      "Nei, det er et sperreområde, og du må ikke kjøre på det",
       "Ja, når du skal kjøre forbi",
       "Ja, hvis du skal parkere kort",
       "Ja, det er et ekstra kjørefelt i rushtiden"
     ],
-    "f": "Området med skrå streker er en sperreflate. Du skal ikke kjøre eller stanse på den.",
-    "ru": "Участок с косыми полосами — sperreflate (островок безопасности из разметки). По нему нельзя ехать и на нём нельзя останавливаться."
+    "f": "Området med skrå streker er et sperreområde. Når det er avgrenset av en heltrukket linje, må du ikke kjøre eller stanse på det.",
+    "ru": "Участок с косыми полосами — sperreområde (запрещённая зона разметки). Если он обведён сплошной линией, по нему нельзя ехать и на нём нельзя останавливаться."
   },
   {
     "id": "opp-13",
@@ -246,7 +246,7 @@
       "Det er forbudt å svinge til venstre",
       "Feltet er for møtende trafikk"
     ],
-    "f": "Piler i kjørebanen viser hvilken retning feltet er for. Velg feltet i god tid før krysset.",
-    "ru": "Стрелки на проезжей части показывают, для какого направления полоса. Выбирайте полосу заранее, до перекрёстка."
+    "f": "Piler i kjørebanen viser hvilken retning feltet er for. Er feltet avgrenset med sperrelinje, er pilen et påbud. Velg feltet i god tid før krysset.",
+    "ru": "Стрелки на проезжей части показывают, для какого направления полоса. Если полоса отделена сплошной линией, ехать нужно туда, куда указывает стрелка. Выбирайте полосу заранее, до перекрёстка."
   }
 ]

@@ -40,7 +40,7 @@ export function Toolbar() {
             <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#333" strokeWidth={2} />
             <polygon points="50,18 82,50 50,82 18,50" fill="#f6c400" />
           </svg>
-          <span className="brand-text" translate="no"><small>Førerkort B</small><b>Teoriprøven</b></span>
+          <span className="brand-text"><small>Førerkort B</small><b>Teoriprøven</b></span>
           <span className="sr-only">— на главную</span>
         </button>
         <div className="tools">

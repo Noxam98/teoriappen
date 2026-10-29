@@ -44,15 +44,15 @@
   {
     "id": "men-04",
     "cat": "mennesket",
-    "q": "Omtrent hvor mye alkohol forbrenner kroppen per time?",
+    "q": "Omtrent hvor mye synker promillen per time?",
     "img": null,
     "a": [
-      "Omtrent 0,1–0,15 promille",
+      "Omtrent 0,15 promille",
       "Omtrent 0,5 promille",
       "Omtrent 1 promille"
     ],
-    "f": "Kroppen forbrenner omtrent 0,1–0,15 promille i timen. Høy promille kan derfor vare i mange timer.",
-    "ru": "Организм перерабатывает примерно 0,1–0,15 промилле в час. Поэтому высокий уровень алкоголя может держаться много часов."
+    "f": "Promillen synker i gjennomsnitt med omtrent 0,15 i timen, men det er forskjell fra person til person. Høy promille kan derfor vare i mange timer.",
+    "ru": "В среднем промилле снижается примерно на 0,15 в час, но у разных людей по-разному. Поэтому высокий уровень алкоголя может держаться много часов."
   },
   {
     "id": "men-05",
@@ -116,13 +116,13 @@
     "q": "Du blir trøtt under kjøring. Hva er det beste du kan gjøre?",
     "img": null,
     "a": [
-      "Stoppe på et trygt sted og sove 15–20 minutter",
+      "Stoppe på et trygt sted og sove i omtrent 15 minutter",
       "Åpne vinduet og skru opp musikken",
       "Drikke en energidrikk og kjøre videre",
       "Kjøre fortere for å komme raskere fram"
     ],
-    "f": "Det eneste som virkelig hjelper mot trøtthet, er søvn. En kort pause med 15–20 minutters søvn hjelper for en stund.",
-    "ru": "Единственное, что действительно помогает от усталости, — это сон. Короткая остановка и сон 15–20 минут помогают на какое-то время."
+    "f": "Det eneste som virkelig hjelper mot trøtthet, er søvn. En kort pause der du sover i omtrent 15 minutter, hjelper for en stund.",
+    "ru": "Единственное, что действительно помогает от усталости, — это сон. Короткая остановка, чтобы поспать примерно 15 минут, помогает на какое-то время."
   },
   {
     "id": "men-10",
@@ -174,8 +174,8 @@
       "Førere mellom 40 og 50 år",
       "Erfarne yrkessjåfører"
     ],
-    "f": "Unge og nye førere har høyest ulykkesrisiko, blant annet fordi de mangler erfaring og ofte tar større sjanser.",
-    "ru": "У молодых водителей, недавно получивших права, самый высокий риск аварий: им не хватает опыта, и они чаще рискуют."
+    "f": "Unge og nye førere har høyest ulykkesrisiko, særlig de første månedene. Det er blant annet fordi de mangler erfaring og ofte tar større sjanser.",
+    "ru": "У молодых водителей, недавно получивших права, самый высокий риск аварий, особенно в первые месяцы: им не хватает опыта, и они чаще рискуют."
   },
   {
     "id": "men-14",

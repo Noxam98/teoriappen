@@ -94,12 +94,12 @@ export function ExamScreen() {
           )}
           <span className="sp" />
           <button className="iconbtn framed" onClick={() => setDialog('grid')} title="Обзор вопросов" aria-label="Обзор вопросов"><Icon name="grid" /></button>
-          <button className="btn primary small-btn" onClick={() => setDialog('submit')} translate="no">Lever</button>
+          <button className="btn primary small-btn" onClick={() => setDialog('submit')}>Lever</button>
         </div>
         <div className="pbar" aria-hidden="true"><i style={{ width: `${(done / E.ids.length) * 100}%` }} /></div>
       </div>
 
-      <QuestionCard key={id} q={q} number={E.i + 1} note={E.flag[id] ? <span className="flag-note" translate="no"><Icon name="flag" />merket</span> : ''}>
+      <QuestionCard key={id} q={q} number={E.i + 1} note={E.flag[id] ? <span className="flag-note"><Icon name="flag" />merket</span> : ''}>
         <Options q={q} order={E.perm[id]} chosen={E.ans[id]} reveal={locked} onPick={pick} />
         {locked && <Explanation q={q} correct={E.ans[id] === 0} />}
       </QuestionCard>
@@ -112,11 +112,11 @@ export function ExamScreen() {
         <button className="btn square" disabled={E.i === 0} onClick={() => step(-1)} aria-label="Forrige — предыдущий вопрос"><Icon name="left" /></button>
         <button className="btn flagbtn" aria-pressed={!!E.flag[id]} title="Отметить, чтобы вернуться позже"
           onClick={() => { if (!E.flag[id]) playSound('flag'); change(s => ({ ...s, flag: { ...s.flag, [id]: !s.flag[id] } })); }}>
-          <Icon name="flag" /><span translate="no">Merk</span>
+          <Icon name="flag" />Merk
         </button>
         {last
-          ? <button className="btn primary grow" onClick={() => setDialog('submit')} translate="no">Lever prøven</button>
-          : <button className={E.ans[id] !== undefined ? 'btn primary grow' : 'btn grow'} onClick={() => step(1)}><span translate="no">Neste</span> <Icon name="right" /></button>}
+          ? <button className="btn primary grow" onClick={() => setDialog('submit')}>Lever prøven</button>
+          : <button className={E.ans[id] !== undefined ? 'btn primary grow' : 'btn grow'} onClick={() => step(1)}>Neste <Icon name="right" /></button>}
       </ActionBar>
 
       {dialog === 'grid' && (
@@ -147,7 +147,7 @@ export function ExamScreen() {
         <Sheet title="Lever prøven? · Сдать экзамен?" onClose={() => setDialog(null)}
           actions={<>
             <button className="btn" onClick={() => setDialog(null)}>Вернуться</button>
-            <button className="btn primary" data-autofocus onClick={() => { setDialog(null); finishExam(false); go({ name: 'result' }); }} translate="no">Lever prøven</button>
+            <button className="btn primary" data-autofocus onClick={() => { setDialog(null); finishExam(false); go({ name: 'result' }); }}>Lever prøven</button>
           </>}>
           <p className="mtext">
             {unanswered

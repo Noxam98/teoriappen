@@ -8,7 +8,7 @@ import { Figure } from '../figures/Figure';
 export function QuestionBody({ q }: { q: Question }) {
   return (
     <div className={q.img ? 'qbody has-fig' : 'qbody'}>
-      <Figure spec={q.img} />
+      <Figure spec={q.img} numbered={q.byNumber} />
       <p className="qtext" data-block lang="nb"><Words text={q.q} /></p>
     </div>
   );
@@ -19,7 +19,7 @@ export function QuestionCard({ q, number, note, children }: { q: Question; numbe
   return (
     <article className="qcard">
       <div className="qmeta">
-        <span className="qn" translate="no">Spørsmål {number}</span>
+        <span className="qn">Spørsmål {number}</span>
         <span className="qc">{note ?? CATEGORY[q.cat].no}</span>
       </div>
       <QuestionBody q={q} />

@@ -63,6 +63,13 @@ for (const file of readdirSync(join(root, dir)).filter(f => f.endsWith('.json'))
     if (!Array.isArray(q.a) || q.a.length < 3 || q.a.length > 4) err(id, '"a" needs 3–4 options (correct one first)');
     else if (new Set(q.a).size !== q.a.length) err(id, 'duplicate options');
     checkFigure(id, q.img);
+    if (q.byNumber !== undefined) {
+      // options name the numbered signs: "Skilt 1 …", "Skilt 2 …", each sign once
+      const nums = (q.a ?? []).map(a => Number(/^Skilt (\d)\b/.exec(a)?.[1]));
+      const n = q.img?.signs?.length ?? 0;
+      if (q.byNumber !== true || !n) err(id, '"byNumber" needs a picture with several signs');
+      else if (nums.some(x => !(x >= 1 && x <= n)) || new Set(nums).size !== nums.length) err(id, `with "byNumber" every option starts with "Skilt 1" … "Skilt ${n}", each number once`);
+    }
     for (const text of [q.q, ...(q.a ?? []), q.f]) checkWords(id, text);
   }
 }
