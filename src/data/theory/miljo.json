@@ -6,10 +6,10 @@
     { "h": "Jevn og planlagt kjøring", "ru": "Плавная и продуманная езда" },
     { "p": "Se langt fram, og planlegg kjøringen. Hold jevn fart, og skift opp tidlig, slik at motoren går med lavt turtall. Unngå kraftige akselerasjoner og harde nedbremsinger.", "ru": "Смотрите далеко вперёд и планируйте езду. Держите ровную скорость и рано переключайтесь на повышенную передачу, чтобы двигатель работал на низких оборотах. Избегайте резких разгонов и торможений." },
     { "rule": "Nærmer du deg et rødt lys eller en kø, slipper du gassen tidlig og lar bilen rulle med giret inne. Da bruker de fleste moderne biler nesten ikke drivstoff, og du sparer bremsene.", "ru": "Когда приближаетесь к красному сигналу или пробке, заранее отпустите газ и катитесь на включённой передаче. Большинство современных машин при этом почти не расходует топливо, а тормоза меньше изнашиваются." },
-    { "trap": "Det lønner seg ikke å sette giret i fri og rulle. Da bruker motoren drivstoff på tomgang. Det er heller ikke lurt å gasse helt fram til krysset og bremse hardt.", "ru": "Катиться на нейтрали невыгодно: двигатель при этом расходует топливо на холостом ходу. Неразумно и разгоняться до самого перекрёстка, а потом резко тормозить." },
+    { "trap": "Når du skal bremse ned, lønner det seg ikke å sette giret i fri. Da går motoren på tomgang og bruker drivstoff. Det er heller ikke lurt å gasse helt fram til krysset og bremse hardt.", "ru": "Когда вы замедляетесь, переключаться на нейтраль невыгодно: двигатель тогда работает на холостом ходу и расходует топливо. Неразумно и разгоняться до самого перекрёстка, а потом резко тормозить." },
 
     { "h": "Fart og luftmotstand", "ru": "Скорость и сопротивление воздуха" },
-    { "p": "Luftmotstanden øker kraftig med farten. Litt lavere fart på landeveien gir mye lavere forbruk.", "ru": "Сопротивление воздуха сильно растёт с увеличением скорости. Немного меньшая скорость на трассе заметно снижает расход." },
+    { "p": "Luftmotstanden øker kraftig med farten. Litt lavere fart på landeveien gir merkbart lavere forbruk.", "ru": "Сопротивление воздуха сильно растёт с увеличением скорости. Немного меньшая скорость на трассе заметно снижает расход." },
     { "list": [
       ["Takboks og takstativ øker luftmotstanden. Ta dem av når du ikke trenger dem.", "Бокс и багажник на крыше увеличивают сопротивление воздуха. Снимайте их, когда они не нужны."],
       ["Ikke ha unødvendig last i bilen.", "Не возите в машине лишний груз."],
@@ -21,7 +21,7 @@
     { "list": [
       ["Unngå tomgang. Det gir unødvendig forurensning og forbruk uten at du kommer noen vei.", "Не оставляйте двигатель работать на холостом ходу. Это лишнее загрязнение и расход без всякой пользы."],
       ["Bruk motorvarmer om vinteren. Det gir mindre slitasje på motoren og mindre forbruk og utslipp ved kaldstart.", "Зимой пользуйтесь подогревателем двигателя. Он уменьшает износ двигателя, а также расход и выбросы при холодном запуске."],
-      ["Korte turer med kald motor gir mest utslipp per kilometer.", "Короткие поездки на холодном двигателе дают больше всего выбросов на километр."]
+      ["Korte turer med kald motor gir mye utslipp per kilometer.", "Короткие поездки на холодном двигателе дают много выбросов на километр."]
     ] },
 
     { "h": "Piggdekk og svevestøv", "ru": "Шипованные шины и мелкая пыль" },
@@ -29,5 +29,13 @@
 
     { "h": "Færre bilturer", "ru": "Меньше поездок на машине" },
     { "p": "Planlegg turene, slik at du kan gjøre flere ærend på én tur. Samkjør når du kan, og gå eller sykle på korte turer.", "ru": "Планируйте поездки, чтобы за один раз сделать несколько дел. Ездите вместе с другими, когда это возможно, а короткие расстояния проходите пешком или проезжайте на велосипеде." }
-  ]
+  ],
+  "sources": [
+    ["Økonomisk kjøring (NAF)", "https://www.naf.no/bilhold/kostnader/okonomisk-kjoring"],
+    ["Motorvarmer – kaldstart, slitasje og utslipp (NAF)", "https://www.naf.no/bilhold/bilutstyr/slik-fungerer-motorvarmeren"],
+    ["Drivstoffsparing: motorbrems i gir og tomgang (ADAC, tysk)", "https://www.adac.de/verkehr/tanken-kraftstoff-antrieb/tipps-zum-tanken/sprit-sparen-tipps/"],
+    ["Piggdekkgebyr og svevestøv (Bergen kommune)", "https://www.bergen.kommune.no/innbyggerhjelpen/vann-vei-og-trafikk/kjoretoy/piggdekk/piggdekk"],
+    ["Svevestøv og helse (Folkehelseinstituttet)", "https://www.fhi.no/mh/luftforurensninger/luftkvalitet/temakapitler/svevestov/"]
+  ],
+  "checked": "2026-10"
 }

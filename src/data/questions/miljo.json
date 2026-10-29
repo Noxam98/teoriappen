@@ -87,7 +87,7 @@
       "Forbruket blir lavere fordi du kommer raskere fram",
       "Farten har ingen betydning for forbruket"
     ],
-    "f": "Luftmotstanden øker kraftig med farten. Litt lavere fart på landeveien gir mye lavere forbruk.",
+    "f": "Luftmotstanden øker kraftig med farten. Litt lavere fart på landeveien gir merkbart lavere forbruk.",
     "ru": "Сопротивление воздуха сильно растёт с увеличением скорости. Немного меньшая скорость на трассе заметно снижает расход."
   },
   {
@@ -100,7 +100,7 @@
       "Kjøre mange korte turer med kald motor",
       "Ha mye unødvendig last i bilen"
     ],
-    "f": "Korte turer med kald motor gir mest utslipp per kilometer. Planlegging og samkjøring gir færre turer.",
-    "ru": "Короткие поездки на холодном двигателе дают больше всего выбросов на километр. Планирование и совместные поездки уменьшают число поездок."
+    "f": "Korte turer med kald motor gir mye utslipp per kilometer. Planlegging og samkjøring gir færre turer.",
+    "ru": "Короткие поездки на холодном двигателе дают много выбросов на километр. Планирование и совместные поездки уменьшают число поездок."
   }
 ]

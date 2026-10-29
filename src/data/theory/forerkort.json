@@ -10,7 +10,7 @@
       ["inntil 8", "sitteplasser i tillegg til førerplassen", "не больше 8 мест помимо водительского"]
     ] },
     { "list": [
-      ["Ha med førerkortet når du kjører: enten det fysiske kortet eller det digitale førerkortet i appen.", "Во время езды права должны быть при вас: либо пластиковая карточка, либо цифровые права в приложении."],
+      ["Ha med førerkortet når du kjører. I Norge kan du velge mellom det fysiske kortet og det digitale førerkortet i appen. I utlandet må du ha med det fysiske kortet.", "Во время езды права должны быть при вас. В Норвегии можно выбрать: пластиковая карточка или цифровые права в приложении. За границей нужна пластиковая карточка."],
       ["Står det i førerkortet at du må bruke briller eller linser, må du alltid bruke dem når du kjører – ikke bare i mørket.", "Если в правах указано, что вам нужны очки или линзы, носите их за рулём всегда — не только в темноте."]
     ] },
 
@@ -22,14 +22,15 @@
       ["Ledsageren må ha hatt førerkort klasse B sammenhengende de siste 5 årene.", "Сопровождающий должен непрерывно иметь права категории B последние 5 лет."],
       ["Ledsageren må være edru og oppmerksom hele tiden.", "Сопровождающий должен быть трезвым и всё время внимательным."]
     ] },
-    { "rule": "Under øvelseskjøring regnes ledsageren som fører av bilen – ikke eleven bak rattet. Ledsageren har derfor ansvaret for kjøringen.", "ru": "Во время учебной езды водителем считается сопровождающий, а не ученик за рулём. Поэтому за езду отвечает сопровождающий." },
+    { "rule": "Under øvelseskjøring regnes ledsageren som fører av bilen – ikke eleven bak rattet. Ledsageren har derfor hovedansvaret for kjøringen, men eleven har også ansvar.", "ru": "Во время учебной езды водителем считается сопровождающий, а не ученик за рулём. Поэтому основная ответственность за езду лежит на сопровождающем, но ученик тоже несёт ответственность." },
 
     { "h": "Teoriprøven", "ru": "Теоретический экзамен" },
     { "nums": [
       ["45", "spørsmål på teoriprøven", "вопросов на экзамене"],
       ["90 min", "tid til å svare", "время на ответы"],
       ["inntil 7", "feil, og du består likevel (minst 38 av 45 riktige)", "ошибок — и экзамен всё равно сдан (нужно не меньше 38 верных ответов из 45)"],
-      ["2 uker", "ventetid før ny prøve hvis du ikke består", "сколько ждать пересдачи, если не сдали"]
+      ["2 uker", "ventetid før ny prøve hvis du ikke består", "сколько ждать пересдачи, если не сдали"],
+      ["3 år", "så lenge gjelder en bestått teoriprøve: innen da må du ha bestått den praktiske prøven", "столько действует сданная теория: за это время нужно сдать практический экзамен"]
     ] },
 
     { "h": "Prøvetid og prikker", "ru": "Испытательный срок и штрафные баллы" },
@@ -40,5 +41,14 @@
       ["8 prikker", "i løpet av 3 år: du mister førerretten i 6 måneder", "за 3 года: лишение прав на 6 месяцев"]
     ] },
     { "rule": "Mister du førerretten i prøvetiden, må du ta både teoriprøven og den praktiske prøven på nytt. Det holder ikke å vente eller betale en bot.", "ru": "Если вы лишились прав в испытательный срок, придётся заново сдать и теоретический, и практический экзамен. Просто подождать или заплатить штраф недостаточно." }
-  ]
+  ],
+  "sources": [
+    ["Vegtrafikkloven § 24 og § 26 – førerkort og øvingskjøring (Lovdata)", "https://lovdata.no/lov/1965-06-18-4"],
+    ["Hva kan du kjøre med klasse B (Statens vegvesen)", "https://www.vegvesen.no/en/driving-licences/driving-licence-holders/what-are-you-entitled-to-drive/passenger-car-category-b/"],
+    ["Digitalt førerkort (Statens vegvesen)", "https://www.vegvesen.no/en/driving-licences/driving-licence-holders/digital-driving-licence/"],
+    ["Gjennomføre teoriprøven (Statens vegvesen)", "https://www.vegvesen.no/en/driving-licences/driver-training/theory-test/taking-the-theory-test/"],
+    ["Forskrift om prikkbelastning (Lovdata)", "https://lovdata.no/forskrift/2003-09-19-1164"],
+    ["Tapsforskriften kap. 8 – krav om ny førerprøve (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2003-12-19-1660/KAPITTEL_8#%C2%A78-6"]
+  ],
+  "checked": "2026-10"
 }

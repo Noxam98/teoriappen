@@ -5,22 +5,22 @@
   "blocks": [
     { "h": "Bilbelte", "ru": "Ремень безопасности" },
     { "p": "Alle som sitter i bilen, skal bruke bilbelte eller annet godkjent sikringsutstyr. Det gjelder både foran og bak, og også på korte turer i byen.", "ru": "Все, кто сидит в машине, должны быть пристёгнуты ремнём или другим одобренным удерживающим устройством. Это касается и переднего, и заднего сиденья — и коротких поездок по городу тоже." },
-    { "rule": "Føreren har ansvaret for at passasjerer under 15 år er sikret. Passasjerer som er 15 år eller eldre, har selv ansvaret og kan selv få bot.", "ru": "Водитель отвечает за то, чтобы пассажиры младше 15 лет были пристёгнуты. Пассажиры от 15 лет отвечают за себя сами и сами получают штраф." },
+    { "rule": "Føreren har ansvaret for at passasjerer under 15 år er sikret. Passasjerer som er 15 år eller eldre, har selv ansvaret og kan selv få bot.", "ru": "Водитель отвечает за то, чтобы пассажиры младше 15 лет были пристёгнуты. Пассажиры от 15 лет отвечают за себя сами и сами могут получить штраф." },
 
     { "h": "Airbag og nakkestøtte", "ru": "Подушка безопасности и подголовник" },
     { "p": "Airbagen virker sammen med bilbeltet og erstatter det ikke. Uten belte kan airbagen gi alvorlige skader. Du bør heller ikke sitte helt inntil rattet.", "ru": "Подушка безопасности работает вместе с ремнём и не заменяет его. Без ремня подушка может причинить серьёзные травмы. Также не стоит сидеть вплотную к рулю." },
-    { "p": "Nakkestøtten beskytter mot nakkeskader ved påkjøring bakfra. Overkanten bør være omtrent i høyde med toppen av hodet, og nakkestøtten skal være nær hodet.", "ru": "Подголовник защищает шею при ударе сзади. Его верхний край должен быть примерно на уровне макушки, а сам подголовник — близко к голове." },
+    { "p": "Nakkestøtten beskytter mot nakkeskader ved påkjøring bakfra. Overkanten bør være omtrent i høyde med toppen av hodet, og nakkestøtten bør være nær hodet.", "ru": "Подголовник защищает шею при ударе сзади. Его верхний край лучше выставить примерно на уровне макушки, а сам подголовник — близко к голове." },
     { "trap": "En nakkestøtte som står så lavt som mulig eller i høyde med skuldrene, beskytter dårlig. Ved en påkjøring bakfra kan hodet bli kastet bakover over den.", "ru": "Подголовник, опущенный до упора или на уровень плеч, защищает плохо. При ударе сзади голову может откинуть назад через него." },
 
     { "h": "Barn i bilen", "ru": "Дети в машине" },
-    { "p": "Barn som er lavere enn 135 cm, skal alltid bruke godkjent sikringsutstyr som passer til barnets vekt og høyde. Vanlig bilbelte er ikke nok.", "ru": "Дети ростом ниже 135 см должны всегда использовать одобренное детское удерживающее устройство, подходящее по весу и росту. Одного обычного ремня недостаточно." },
+    { "p": "Barn som er lavere enn 135 cm, skal alltid bruke godkjent sikringsutstyr som passer til barnets vekt og høyde. Vanlig bilbelte er ikke nok. Barn mellom 135 og 150 cm skal bruke slikt utstyr hvis det finnes i bilen. Hvis ikke, kan de bruke vanlig bilbelte.", "ru": "Дети ростом ниже 135 см должны всегда использовать одобренное детское удерживающее устройство, подходящее по весу и росту. Одного обычного ремня недостаточно. Дети ростом от 135 до 150 см должны пользоваться таким устройством, если оно есть в машине. Если его нет, можно пристегнуть их обычным ремнём." },
     { "p": "Små barn har stort hode og svak nakke. Derfor bør de sitte bakovervendt så lenge som mulig. Et bakovervendt sete beskytter hodet og nakken best ved en kollisjon forfra.", "ru": "У маленьких детей большая голова и слабая шея. Поэтому им лучше как можно дольше ездить в кресле против хода движения: оно лучше всего защищает голову и шею при лобовом столкновении." },
     { "rule": "Et bakovervendt barnesete må aldri stå foran en aktiv airbag. I forsetet er det bare lov hvis airbagen er koblet ut.", "ru": "Детское кресло против хода движения никогда нельзя ставить перед включённой подушкой безопасности. На переднем сиденье это допустимо, только если подушка отключена." },
-    { "p": "Barn under 140 cm skal ikke sitte foran en aktiv airbag. Kan airbagen ikke kobles ut, er baksetet det tryggeste stedet.", "ru": "Детей ростом ниже 140 см нельзя сажать перед включённой подушкой безопасности. Если её нельзя отключить, самое безопасное место — заднее сиденье." },
+    { "p": "Barn som er lavere enn 140 cm, bør ikke sitte foran en aktiv airbag. Dette er et råd fra Statens vegvesen, ikke et forbud. Kan airbagen ikke kobles ut, er baksetet det tryggeste stedet.", "ru": "Детей ростом ниже 140 см не рекомендуется сажать перед включённой подушкой безопасности. Это совет Дорожного управления (Statens vegvesen), а не запрет. Если подушку нельзя отключить, самое безопасное место — заднее сиденье." },
     { "nums": [
       ["15 år", "fra denne alderen har passasjeren selv ansvaret for bilbeltet", "с этого возраста пассажир сам отвечает за ремень"],
       ["135 cm", "lavere enn dette: godkjent sikringsutstyr for barn", "ниже этого роста — обязательно детское удерживающее устройство"],
-      ["140 cm", "lavere enn dette: ikke foran en aktiv airbag", "ниже этого роста — не сажать перед включённой подушкой"]
+      ["140 cm", "lavere enn dette: bør ikke sitte foran en aktiv airbag", "ниже этого роста — лучше не сажать перед включённой подушкой"]
     ] },
 
     { "h": "Last i og på bilen", "ru": "Груз в машине и на ней" },
@@ -32,7 +32,8 @@
     { "nums": [
       ["750 kg", "tillatt totalvekt for en tilhenger du alltid kan trekke med klasse B", "разрешённая масса прицепа, который всегда можно буксировать с категорией B"],
       ["3500 kg", "høyeste tillatte totalvekt for bil og tilhenger til sammen når tilhengeren er tyngre", "наибольшая суммарная разрешённая масса машины и прицепа, если прицеп тяжелее"],
-      ["80 km/t", "høyeste fart med tilhenger, hvis den ikke er godkjent for Tempo 100", "наибольшая скорость с прицепом, если он не допущен к Tempo 100"]
+      ["80 km/t", "høyeste fart med tilhenger uten Tempo 100 – også hvis tilhengeren ikke har bremser", "наибольшая скорость с прицепом без Tempo 100 — даже если у прицепа нет тормозов"],
+      ["100 km/t", "høyeste fart med Tempo 100: tilhengeren er godkjent for det, og bilen har blant annet ABS og tillatt totalvekt på høyst 3500 kg", "наибольшая скорость по Tempo 100: прицеп допущен к этой программе, а у машины, среди прочего, есть ABS и разрешённая максимальная масса не больше 3500 кг"]
     ] },
     { "trap": "Det er tillatt totalvekt som teller, ikke hvor mye tilhengeren veier akkurat nå. Hva bilen kan trekke, står i vognkortet.", "ru": "Считается разрешённая максимальная масса, а не то, сколько прицеп весит прямо сейчас. Что машине можно буксировать, указано в регистрационном свидетельстве (vognkort)." },
     { "p": "Tung last på tilhengeren skal ligge lavt og over hjulakselen. Feil plassering kan gjøre at tilhengeren slingrer. Før du kjører, sjekk dette:", "ru": "Тяжёлый груз на прицепе кладут низко и над осью колёс. При неправильном размещении прицеп может начать раскачиваться. Перед поездкой проверьте:" },
@@ -42,5 +43,14 @@
       ["Dekkene er i orden.", "Шины в порядке."],
       ["Lasten er sikret og riktig plassert.", "Груз закреплён и правильно размещён."]
     ] }
-  ]
+  ],
+  "sources": [
+    ["Bilbelteforskriften – bruk av bilbelte og sikring av barn (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1979-09-21-7"],
+    ["Regelverket for sikring av barn i bil (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/trafikksikkerhet/sikker-kjoring/sikring-av-barn-i-bil/regelverket-for-sikring-av-barn/"],
+    ["Forskrift om bruk av kjøretøy kap. 3 – sikring av last (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1990-01-25-92/KAPITTEL_4#%C2%A73-3"],
+    ["Hva kan du kjøre med førerkort klasse B? (Statens vegvesen)", "https://www.vegvesen.no/en/driving-licences/driving-licence-holders/what-are-you-entitled-to-drive/passenger-car-category-b/"],
+    ["Nye fartsgrenser for tilhengere, 2022 (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/2022/03/nye-fartsgrenser-for-tilhengere/"],
+    ["Krav til bil og tilhenger for Tempo 100 (Statens vegvesen)", "https://www.vegvesen.no/en/vehicles/own-and-maintain/trailer/tempo100/requirements-applying-to-towing-vehicles-and-trailers-to-be-approved-for-tempo-100/"]
+  ],
+  "checked": "2026-10"
 }

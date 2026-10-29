@@ -42,7 +42,7 @@
   {
     "id": "lys-04",
     "cat": "lys",
-    "q": "Hvilket lys bør du bruke når du kjører på en mørk landevei uten møtende trafikk?",
+    "q": "Hvilket lys bør du bruke når du kjører på en mørk landevei uten annen trafikk?",
     "img": null,
     "a": [
       "Fjernlys",

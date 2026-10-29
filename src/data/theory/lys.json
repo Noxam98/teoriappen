@@ -6,7 +6,7 @@
     { "h": "Lys om dagen", "ru": "Свет днём" },
     { "p": "I Norge skal bilen alltid ha nærlys eller kjørelys på under kjøring. Det gjelder også om dagen i godt vær.", "ru": "В Норвегии во время движения всегда должен гореть ближний свет или дневные ходовые огни (kjørelys). Даже днём в хорошую погоду." },
     { "p": "Kjørelys er laget for at bilen skal bli sett om dagen. Det lyser ikke opp veien godt nok, og på mange biler er baklysene ikke tent når du bare har kjørelys.", "ru": "Дневные ходовые огни нужны, чтобы машину было видно днём. Дорогу они освещают плохо, а на многих машинах задние фонари при этом не горят." },
-    { "rule": "Når det er mørkt, og når du kjører i tunnel, skal du bruke nærlys. Da ser du godt, og andre ser deg – også bakfra.", "ru": "В темноте и в тоннеле включайте ближний свет. Тогда вы хорошо видите дорогу, а вас видно другим — в том числе сзади." },
+    { "rule": "Når det er mørkt, når sikten er dårlig, og når du kjører i tunnel, er kjørelys ikke nok. Da skal du bruke nærlys eller fjernlys. Da ser du godt, og andre ser deg – også bakfra.", "ru": "В темноте, при плохой видимости и в тоннеле дневных ходовых огней недостаточно. Тогда нужно включить ближний или дальний свет. Так вы хорошо видите дорогу, а вас видно другим — в том числе сзади." },
     { "signs": [
       ["tunnel", "Tunnel: bruk nærlys i tunnelen", "Тоннель: в тоннеле включайте ближний свет"]
     ] },
@@ -39,5 +39,13 @@
     { "h": "Rene og riktig innstilte lys", "ru": "Чистые и правильно отрегулированные фары" },
     { "p": "Skitne lykter lyser mye svakere og sprer lyset, slik at andre kan bli blendet. Hold lys og ruter rene, særlig om vinteren.", "ru": "Грязные фары светят намного слабее и рассеивают свет, так что могут ослепить других. Держите фары и стёкла чистыми, особенно зимой." },
     { "rule": "Er bilen tungt lastet bak, løfter fronten seg, og lyset peker høyere. Juster lyset ned med lysreguleringen, så du ikke blender møtende.", "ru": "Если машина сильно нагружена сзади, её перед приподнимается, и фары светят выше. Опустите свет корректором фар, чтобы не слепить встречных." }
-  ]
+  ],
+  "sources": [
+    ["Trafikkreglene § 15 – bruk av lys (Lovdata)", "https://lovdata.no/forskrift/1986-03-21-747/§15"],
+    ["Lys på bilen (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/traffic-safety/norwegian-traffic-rules/car-lights/"],
+    ["Skru på lyset i høstmørket! (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/nasjonalt/skru-pa-lyset-i-hostmorket/"],
+    ["Forskrift om bruk av kjøretøy § 1-6 – varsling ved nødstans (Lovdata)", "https://lovdata.no/forskrift/1990-01-25-92/§1-6"],
+    ["Refleks og synlighet (Trygg Trafikk)", "https://www.tryggtrafikk.no/ga/refleks/refleksbruk-og-synlighet/"]
+  ],
+  "checked": "2026-10"
 }

@@ -189,13 +189,13 @@
     "q": "Det brenner i en bil foran deg i en tunnel, og du kan ikke kjøre ut. Hva gjør du?",
     "img": null,
     "a": [
-      "Stanser inntil siden, slår av motoren, lar nøkkelen stå i og går til nærmeste nødutgang",
+      "Stanser inntil siden med nødsignal på, lar nøkkelen stå i og går til nærmeste nødutgang",
       "Rygger ut av tunnelen",
       "Blir sittende i bilen med vinduene lukket",
       "Tar med bilnøkkelen og går mot brannen for å se"
     ],
-    "f": "Kan du ikke kjøre ut, skal du stanse, slå av motoren og la nøkkelen stå i så bilen kan flyttes. Gå bort fra røyken til nærmeste nødutgang.",
-    "ru": "Если выехать нельзя, остановитесь, заглушите двигатель и оставьте ключ, чтобы машину могли переставить. Уходите от дыма к ближайшему аварийному выходу."
+    "f": "Kan du ikke kjøre ut, skal du stanse inntil siden med nødsignal på og la nøkkelen stå i, så bilen kan flyttes. Gå bort fra røyken til nærmeste nødutgang.",
+    "ru": "Если выехать нельзя, остановитесь у края с включённой аварийной сигнализацией и оставьте ключ, чтобы машину могли переставить. Уходите от дыма к ближайшему аварийному выходу."
   },
   {
     "id": "vin-17",

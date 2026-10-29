@@ -133,8 +133,8 @@
       "Eleven som sitter bak rattet",
       "Den som eier bilen"
     ],
-    "f": "Ved øvelseskjøring regnes ledsageren som fører. Ledsageren har derfor ansvaret for kjøringen og må være edru og oppmerksom.",
-    "ru": "Во время учебной езды водителем считается сопровождающий. Поэтому он отвечает за езду и должен быть трезвым и внимательным."
+    "f": "Ved øvelseskjøring regnes ledsageren som fører. Ledsageren har derfor hovedansvaret for kjøringen og må være edru og oppmerksom.",
+    "ru": "Во время учебной езды водителем считается сопровождающий. Поэтому основная ответственность за езду лежит на нём, и он должен быть трезвым и внимательным."
   },
   {
     "id": "fk-11",
@@ -174,8 +174,8 @@
       "Nei, det holder at førerkortet ligger hjemme",
       "Bare når du kjører i utlandet"
     ],
-    "f": "Du skal ha med førerkortet når du kjører. I Norge kan du bruke det digitale førerkortet i appen.",
-    "ru": "Во время езды права должны быть при вас. В Норвегии можно пользоваться цифровыми правами в приложении."
+    "f": "Du skal ha med førerkortet når du kjører. I Norge kan du bruke det digitale førerkortet i appen. I utlandet må du ha med det fysiske kortet.",
+    "ru": "Во время езды права должны быть при вас. В Норвегии можно пользоваться цифровыми правами в приложении. За границей нужна пластиковая карточка."
   },
   {
     "id": "fk-14",

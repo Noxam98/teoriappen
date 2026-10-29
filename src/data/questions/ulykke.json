@@ -104,8 +104,8 @@
       "Alltid, så fort som mulig",
       "Aldri, uansett hva som skjer"
     ],
-    "f": "Skadde bør ikke flyttes unødvendig, fordi det kan gjøre skadene verre. Hvis det er fare for brann eller nye ulykker, må du flytte personen.",
-    "ru": "Пострадавших не следует перемещать без необходимости — это может усугубить травмы. Но если есть угроза пожара или новой аварии, человека нужно переместить."
+    "f": "Skadde bør ikke flyttes unødvendig, fordi det kan gjøre skadene verre. Hvis det er fare for brann eller nye ulykker, bør du flytte personen.",
+    "ru": "Пострадавших не следует перемещать без необходимости — это может усугубить травмы. Но если есть угроза пожара или новой аварии, человека следует переместить."
   },
   {
     "id": "uly-09",
@@ -113,25 +113,25 @@
     "q": "Du er innblandet i en trafikkulykke der noen er skadd. Hva har du plikt til å gjøre?",
     "img": null,
     "a": [
-      "Stanse, hjelpe de skadde og oppgi navn og adresse",
+      "Stanse, hjelpe de skadde, oppgi navn og adresse og sørge for at politiet blir varslet",
       "Bare ringe forsikringsselskapet",
       "Kjøre videre hvis ulykken ikke var din skyld"
     ],
-    "f": "Den som er innblandet i en trafikkulykke, skal stanse, hjelpe skadde og oppgi navn og adresse. Dette gjelder også om du ikke har skyld.",
-    "ru": "Участник ДТП обязан остановиться, помочь пострадавшим и назвать своё имя и адрес. Это касается и тех, кто не виноват в аварии."
+    "f": "Den som er innblandet i et trafikkuhell, skal straks stanse og hjelpe skadde, og alle som er innblandet, skal oppgi navn og adresse. Er noen skadd, og skaden ikke er ubetydelig, skal politiet varsles så snart som mulig. Dette gjelder også om du ikke har skyld.",
+    "ru": "Участник ДТП обязан сразу остановиться и помочь пострадавшим, а все участники должны назвать свои имена и адреса. Если кто-то получил травму, и она не пустяковая, нужно как можно скорее сообщить в полицию. Это касается и тех, кто не виноват в аварии."
   },
   {
     "id": "uly-10",
     "cat": "ulykke",
-    "q": "Du kjører på en elg, og dyret løper inn i skogen. Hva må du gjøre?",
+    "q": "Du kjører på en elg, og dyret løper inn i skogen. Hva bør du gjøre?",
     "img": null,
     "a": [
       "Melde fra til politiet og merke stedet der det skjedde",
       "Ingenting, siden dyret løp vekk",
       "Følge etter dyret inn i skogen"
     ],
-    "f": "Påkjørsel av elg og annet hjortevilt skal meldes til politiet. Merk stedet, slik at det skadde dyret kan bli funnet.",
-    "ru": "О наезде на лося или другого оленевого нужно сообщить в полицию. Отметьте место, чтобы раненое животное можно было найти."
+    "f": "Påkjørsel av elg og annet hjortevilt skal meldes til politiet (02800), også når dyret løper vekk. Ikke følg etter dyret. Du bør merke stedet, slik at det skadde dyret kan bli funnet.",
+    "ru": "О наезде на лося или другое оленевое животное нужно сообщить в полицию (02800), даже если зверь убежал. Не идите за животным. Желательно отметить место, чтобы раненое животное можно было найти."
   },
   {
     "id": "uly-11",
@@ -149,15 +149,15 @@
   {
     "id": "uly-12",
     "cat": "ulykke",
-    "q": "Hvorfor bør du ta på refleksvest når du går ut av bilen på et ulykkessted?",
+    "q": "Hvorfor skal du ta på refleksvest når du går ut av bilen på et ulykkessted?",
     "img": null,
     "a": [
       "Slik at andre trafikanter ser deg bedre",
       "Fordi den beskytter mot kulde",
       "Slik at politiet ser at du er vitne"
     ],
-    "f": "Refleksvesten gjør at du blir sett mye tidligere, særlig i mørket. Den er påbudt å ha i bilen.",
-    "ru": "Светоотражающий жилет делает вас заметным гораздо раньше, особенно в темноте. Жилет обязательно должен быть в машине."
+    "f": "Refleksvesten gjør at du blir sett mye tidligere, særlig i mørket. Den er påbudt å ha i bilen, og du skal bruke den når du går ut av bilen ved nødstans langs veien.",
+    "ru": "Светоотражающий жилет делает вас заметным гораздо раньше, особенно в темноте. Жилет обязательно должен быть в машине, и его нужно надевать, когда вы выходите из машины при вынужденной остановке на дороге."
   },
   {
     "id": "uly-13",

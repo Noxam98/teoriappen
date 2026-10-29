@@ -14,9 +14,10 @@
       ["1,6 mm", "minste mønsterdybde resten av året", "минимальная глубина протектора в остальное время года"]
     ] },
     { "list": [
-      ["Piggdekk er tillatt fra 1. november til og med første søndag etter 2. påskedag.", "Шипованные шины разрешены с 1 ноября до первого воскресенья после второго дня Пасхи включительно."],
-      ["I Nordland, Troms og Finnmark er perioden fra 16. oktober til 30. april.", "В Нурланне, Тромсе и Финнмарке — с 16 октября по 30 апреля."],
-      ["Utenfor perioden kan du bare bruke piggdekk når føret gjør det nødvendig.", "Вне этого периода шипы можно использовать, только если этого требует состояние дороги."]
+      ["Piggdekk er tillatt fra 1. november til og med første søndag etter 2. påskedag. Dette er også vinterperioden for kravet om 3 mm mønsterdybde.", "Шипованные шины разрешены с 1 ноября до первого воскресенья после второго дня Пасхи включительно. Это же зимний период, когда протектор должен быть не меньше 3 мм."],
+      ["I Nordland, Troms og Finnmark er perioden fra 16. oktober til og med 30. april.", "В Нурланне, Тромсе и Финнмарке этот период — с 16 октября по 30 апреля включительно."],
+      ["Utenfor perioden kan du bare bruke piggdekk når føret gjør det nødvendig.", "Вне этого периода шипы можно использовать, только если этого требует состояние дороги."],
+      ["I noen byer, for eksempel Oslo, Bergen og Trondheim, må du betale piggdekkgebyr når du kjører med piggdekk.", "В некоторых городах, например в Осло, Бергене и Тронхейме, за езду на шипованных шинах нужно платить сбор (piggdekkgebyr)."]
     ] },
     { "trap": "Mange tror at piggdekk er påbudt fra 1. november. Det stemmer ikke: datoene viser bare når du har lov til å bruke piggdekk.", "ru": "Многие думают, что с 1 ноября шипы обязательны. Это не так: даты лишь указывают, когда шипованные шины разрешены." },
 
@@ -46,8 +47,18 @@
     { "fig": { "sign": "tunnel" }, "no": "Skiltet viser at det kommer en tunnel.", "ru": "Знак «Туннель»: впереди туннель." },
     { "list": [
       ["Brenner det i tunnelen, kjører du ut hvis du kan.", "Если в туннеле пожар, выезжайте из него, если это возможно."],
-      ["Kan du ikke kjøre ut, stanser du inntil siden og slår av motoren. La nøkkelen stå i, slik at bilen kan flyttes.", "Если выехать нельзя, остановитесь у края и заглушите двигатель. Оставьте ключ в машине, чтобы её могли переставить."],
-      ["Gå bort fra røyken til nærmeste nødutgang. Ikke bli sittende i bilen.", "Уходите от дыма к ближайшему аварийному выходу. Не оставайтесь в машине."]
+      ["Kan du ikke kjøre ut, stanser du inntil siden og setter på nødsignal. La nøkkelen stå i, slik at bilen kan flyttes.", "Если выехать нельзя, остановитесь у края и включите аварийную сигнализацию. Оставьте ключ в машине, чтобы её могли переставить."],
+      ["Gå bort fra røyken til nærmeste nødutgang. Ikke bli sittende i bilen.", "Уходите от дыма к ближайшему аварийному выходу. Не оставайтесь в машине."],
+      ["Varsle fra nødtelefonen i tunnelen, ikke fra mobilen. Da vet Vegtrafikksentralen hvor du er.", "Сообщите о пожаре по аварийному телефону в туннеле, а не по мобильному. Тогда диспетчерская (Vegtrafikksentralen) сразу знает, где вы."]
     ] }
-  ]
+  ],
+  "sources": [
+    ["Forskrift om bruk av kjøretøy § 1-4 – dekk og mønsterdybde (Lovdata)", "https://lovdata.no/forskrift/1990-01-25-92/§1-4"],
+    ["Skift til vinterhjul før snøen kommer, 2026 (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/2026/10/skift-til-vinterhjul-for-snoen-kommer/"],
+    ["Piggdekkgebyr (Oslo kommune)", "https://www.oslo.kommune.no/english/street-transport-and-parking/studded-tyre-fee/"],
+    ["Slik kjører du i kolonne (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/reiseinformasjon/kolonnetider/slik-kjorer-du-i-kolonne/"],
+    ["Brann i tunnel (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/trafikksikkerhet/trygg-i-tunnel/brann-i-tunnel/"],
+    ["Oslofjordforbindelsen – ofte stilte spørsmål, om bilnøkkelen (Statens vegvesen)", "https://www.vegvesen.no/vegprosjekter/prosjekt/oslofjordforbindelsen/ofte-stilte-sporsmal/"]
+  ],
+  "checked": "2026-10"
 }

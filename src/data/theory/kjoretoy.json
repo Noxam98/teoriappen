@@ -17,7 +17,7 @@
     { "p": "For lavt lufttrykk i dekkene gir dårligere styring og veigrep, mer slitasje og høyere drivstofforbruk. Sjekk dekktrykket jevnlig.", "ru": "Слишком низкое давление в шинах ухудшает управляемость и сцепление с дорогой, увеличивает износ шин и расход топлива. Регулярно проверяйте давление." },
     { "nums": [
       ["1,6 mm", "minste mønsterdybde utenfor vinterperioden", "минимальная глубина протектора вне зимнего периода"],
-      ["3 mm", "minste mønsterdybde i vinterperioden (personbil)", "минимальная глубина протектора в зимний период (легковой автомобиль)"]
+      ["3 mm", "minste mønsterdybde i vinterperioden (bil inntil 3500 kg)", "минимальная глубина протектора в зимний период (машина до 3500 кг)"]
     ] },
     { "trap": "EU-kontrollen viser bare at bilen var i orden den dagen den ble kontrollert. Feil kan oppstå senere, så du må sjekke bilen selv før du kjører.", "ru": "Техосмотр (EU-kontroll) подтверждает только, что машина была исправна в день проверки. Неисправности могут появиться позже, поэтому перед поездкой проверяйте машину сами." },
 
@@ -45,8 +45,17 @@
       ["2 år", "deretter EU-kontroll hvert andre år", "затем техосмотр каждые два года"]
     ] },
     { "list": [
-      ["Ansvarsforsikring er påbudt for alle registrerte biler. Den dekker skader på andre personer og det de eier. Kasko er frivillig.", "Страховка гражданской ответственности (ansvarsforsikring) обязательна для всех зарегистрированных машин. Она покрывает ущерб другим людям и их имуществу. Каско — добровольная страховка."],
+      ["Ansvarsforsikring er påbudt for alle registrerte biler. Den dekker blant annet skader på andre personer og det de eier. Kasko er frivillig.", "Страховка гражданской ответственности (ansvarsforsikring) обязательна для всех зарегистрированных машин. Она покрывает, среди прочего, ущерб другим людям и их имуществу. Каско — добровольная страховка."],
       ["Vognkortet er bilens registreringsbevis. Der står blant annet tillatt totalvekt, tillatt tilhengervekt og antall sitteplasser.", "Vognkort — свидетельство о регистрации машины. В нём указаны, среди прочего, разрешённая общая масса, допустимая масса прицепа и число мест."]
     ] }
-  ]
+  ],
+  "sources": [
+    ["Vegtrafikkloven § 23 – ansvar for kjøretøyets stand (Lovdata)", "https://lovdata.no/lov/1965-06-18-4/§23"],
+    ["Forskrift om bruk av kjøretøy § 1-4 – dekk og mønsterdybde (Lovdata)", "https://lovdata.no/forskrift/1990-01-25-92/§1-4"],
+    ["Dekkrav (Statens vegvesen)", "https://www.vegvesen.no/en/vehicles/own-and-maintain/tyre-requirements/"],
+    ["Forskrift om periodisk kontroll av kjøretøy – frister (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2009-05-13-591/KAPITTEL_2"],
+    ["Når kan du ta EU-kontroll? (Statens vegvesen)", "https://www.vegvesen.no/en/vehicles/own-and-maintain/eu-mandatory-roadworthiness-test-eu-test/when-can-you-take-the-test/"],
+    ["Bilansvarslova § 15 – plikt til trafikkforsikring (Lovdata)", "https://lovdata.no/lov/1961-02-03"]
+  ],
+  "checked": "2026-10"
 }

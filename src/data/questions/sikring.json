@@ -36,8 +36,8 @@
       "Bare føreren",
       "Eieren av bilen"
     ],
-    "f": "Passasjerer som er 15 år eller eldre, har selv ansvaret for å bruke bilbelte.",
-    "ru": "Пассажиры от 15 лет и старше сами отвечают за то, чтобы пристегнуться, и штраф получают сами."
+    "f": "Passasjerer som er 15 år eller eldre, har selv ansvaret for å bruke bilbelte og kan selv få bot.",
+    "ru": "Пассажиры от 15 лет и старше сами отвечают за то, чтобы пристегнуться, и штраф тоже могут получить сами."
   },
   {
     "id": "sik-04",
@@ -88,8 +88,8 @@
       "I forsetet, fordi airbagen beskytter barnet",
       "I forsetet, hvis barnet bruker vanlig bilbelte"
     ],
-    "f": "Barn under 140 cm skal ikke sitte foran en aktiv airbag. Baksetet er det tryggeste stedet.",
-    "ru": "Детей ростом ниже 140 см нельзя сажать перед включённой подушкой безопасности. Самое безопасное место — заднее сиденье."
+    "f": "Statens vegvesen råder til at barn som er lavere enn 140 cm, ikke sitter foran en aktiv airbag. Baksetet er det tryggeste stedet.",
+    "ru": "Дорожное управление (Statens vegvesen) советует не сажать детей ростом ниже 140 см перед включённой подушкой безопасности. Самое безопасное место — заднее сиденье."
   },
   {
     "id": "sik-08",
@@ -192,8 +192,8 @@
       "Så lavt som mulig",
       "I høyde med skuldrene"
     ],
-    "f": "En riktig innstilt nakkestøtte beskytter mot nakkeskader ved påkjøring bakfra. Den skal være høyt og nær hodet.",
-    "ru": "Правильно отрегулированный подголовник защищает шею при ударе сзади. Он должен быть высоко и близко к голове."
+    "f": "En riktig innstilt nakkestøtte beskytter mot nakkeskader ved påkjøring bakfra. Den bør stå høyt og nær hodet.",
+    "ru": "Правильно отрегулированный подголовник защищает шею при ударе сзади. Его следует поднять высоко и придвинуть близко к голове."
   },
   {
     "id": "sik-17",
