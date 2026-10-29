@@ -224,16 +224,26 @@
   {
     "id": "par-17",
     "cat": "parkering",
-    "q": "Under skiltet Parkering forbudt står et underskilt med svarte tall: «8–17 (8–15)». Når gjelder forbudet?",
-    "img": null,
+    "q": "Under skiltet Parkering forbudt står dette underskiltet. Når gjelder forbudet?",
+    "img": {
+      "sign": "parkering_forbudt",
+      "under": [
+        {
+          "text": "8–17"
+        },
+        {
+          "text": "(8–15)"
+        }
+      ]
+    },
     "a": [
       "Mandag til fredag kl. 8–17 og lørdag kl. 8–15",
       "Mandag til fredag kl. 8–17 og søndag kl. 8–15",
       "Mandag til lørdag kl. 8–17 og søndag kl. 8–15"
     ],
-    "f": "Svarte tall uten parentes gjelder hverdager unntatt lørdag, altså mandag til fredag. Svarte tall i parentes gjelder lørdag. Søndager og helligdager vises med røde tall. Her er alle tallene svarte, så på søndag gjelder ikke forbudet.",
-    "ru": "Чёрные цифры без скобок — будни, кроме субботы, то есть с понедельника по пятницу. Чёрные цифры в скобках — суббота. Воскресенье и праздники обозначают красными цифрами. Здесь все цифры чёрные, поэтому в воскресенье запрет не действует.",
-    "uk": "Чорні цифри без дужок — будні дні, крім суботи, тобто з понеділка по п'ятницю. Чорні цифри в дужках — субота. Неділю та свята позначають червоними цифрами. Тут усі цифри чорні, тому в неділю заборона не діє.",
+    "f": "Svarte tall uten parentes gjelder hverdager unntatt lørdag, altså mandag til fredag: kl. 8–17. Svarte tall i parentes gjelder lørdag: kl. 8–15. Søndag og helligdager vises med røde tall, og her er det ingen røde tall. Derfor gjelder ikke forbudet på søndag.",
+    "ru": "Чёрные цифры без скобок — будни, кроме субботы, то есть с понедельника по пятницу: с 8 до 17. Чёрные цифры в скобках — суббота: с 8 до 15. Воскресенье и праздники обозначают красными цифрами, а их здесь нет. Поэтому в воскресенье запрет не действует.",
+    "uk": "Чорні цифри без дужок — будні дні, крім суботи, тобто з понеділка по п'ятницю: з 8 до 17. Чорні цифри в дужках — субота: з 8 до 15. Неділю та свята позначають червоними цифрами, а їх тут немає. Тому в неділю заборона не діє.",
     "theory": "parkering/underskilt-med-tid-og-parkeringsskive"
   },
   {

@@ -154,9 +154,15 @@ for (const file of chapters) {
 function checkFigure(id, img) {
   if (img == null) return;
   const keys = Object.keys(img);
-  if (keys.length !== 1) return err(id, 'img must have exactly one key');
   const [type] = keys;
-  if (type === 'sign') { if (!SIGNS.has(img.sign)) err(id, `unknown sign "${img.sign}"`); }
+  // a sign may have a time plate under it: { "sign": "…", "under": [{ "text": "8–17" }, { "text": "(8–15)" }, { "text": "10–14", "red": true }] }
+  if (keys.length !== 1 && !(type === 'sign' && keys.join() === 'sign,under')) return err(id, 'img must have exactly one key (a sign may add "under")');
+  if (type === 'sign') {
+    if (!SIGNS.has(img.sign)) err(id, `unknown sign "${img.sign}"`);
+    if (img.under !== undefined && (!Array.isArray(img.under) || !img.under.length || img.under.length > 4
+      || img.under.some(l => typeof l?.text !== 'string' || !/^\(?\d{1,2}(–\d{1,2})?\)?$/.test(l.text) || (l.red !== undefined && l.red !== true))))
+      err(id, '"under": 1–4 lines like { "text": "8–17" }, { "text": "(8–15)" } or { "text": "10–14", "red": true }');
+  }
   else if (type === 'signs') { for (const s of img.signs) if (!SIGNS.has(s)) err(id, `unknown sign "${s}"`); }
   else if (type === 'light') { if (!LIGHTS.includes(img.light)) err(id, `unknown light "${img.light}"`); }
   else if (type === 'road') { if (!ROADS.includes(img.road)) err(id, `unknown road marking "${img.road}"`); }

@@ -63,6 +63,9 @@
 .fig .road { width: 100%; max-width: 210px; height: auto; border-radius: 10px; }
 .fig .scene { width: 100%; max-width: 290px; height: auto; border-radius: 10px; }
 .fig-scene, .fig-road { padding: 6px; }
+/* a sign with a time plate: --k is the picture's height over the sign's, so the sign keeps its size */
+.fig .sign.with-plate { height: calc(116px * var(--k)); }
+@media (min-width: 720px) { .fig .sign.with-plate { height: calc(150px * var(--k)); } }
 @media (min-width: 720px) { .fig .sign { height: 150px; } .fig-signs .sign { height: 108px; } .fig .light { height: 190px; } .fig .road { max-width: 230px; } }
 
 /* answer plates */

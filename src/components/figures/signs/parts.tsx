@@ -36,6 +36,21 @@ export const BlueDisc = ({ children }: Kids) => (
   </>
 );
 
+/** Underskilt «Tid» (806) below a sign: a white plate with a black frame, one time span per line. */
+export const PLATE = { gap: 6, line: 19, pad: 6 };
+export const plateHeight = (lines: number) => PLATE.pad * 2 + PLATE.line * lines;
+export const TimePlate = ({ lines, y }: { lines: { text: string; red?: boolean }[]; y: number }) => (
+  <g transform={`translate(0 ${y})`}>
+    <rect x={8} y={0.75} width={84} height={plateHeight(lines.length) - 1.5} rx={4} fill="#fff" stroke={COLOR.ink} strokeWidth={1.5} />
+    <g data-area="under">
+      {lines.map((l, i) => (
+        <text key={i} x={50} y={PLATE.pad + PLATE.line * i + 15} textAnchor="middle" fontFamily={SIGN_FONT} fontWeight={700} fontSize={17}
+          fill={l.red ? COLOR.red : COLOR.ink}>{l.text}</text>
+      ))}
+    </g>
+  </g>
+);
+
 /** Opplysningsskilt: blue square (or wide rectangle). */
 export const BluePlate = ({ children, wide = false }: Kids & { wide?: boolean }) => (
   <>

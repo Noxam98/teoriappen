@@ -32,8 +32,12 @@ export interface Scene {
   pedAt?: 'kerb' | 'crossing';
 }
 
+/** A line of the underskilt «Tid» (806): black for weekdays, in parentheses for Saturdays, red for Sundays and holidays. */
+export interface TimeLine { text: string; red?: boolean }
+
 export type Figure =
-  | { sign: string }
+  /** a sign; `under`: a time plate under it */
+  | { sign: string; under?: TimeLine[] }
   | { signs: string[] }
   | { light: LightState }
   | { road: RoadKind }

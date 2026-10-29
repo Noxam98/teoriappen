@@ -4,10 +4,10 @@ import { RoadMarking } from './RoadMarking';
 import { Sign } from './Sign';
 import { TrafficLight } from './TrafficLight';
 
-/** The picture of a question: a sign, several signs (`numbered` 1, 2, 3 when the options refer to them), a traffic light, a road marking or a junction. */
+/** The picture of a question: a sign (with a time plate under it), several signs (`numbered` 1, 2, 3 when the options refer to them), a traffic light, a road marking or a junction. */
 export function Figure({ spec, numbered = false }: { spec: FigureSpec | null; numbered?: boolean }) {
   if (!spec) return null;
-  if ('sign' in spec) return <div className="fig fig-sign"><Sign name={spec.sign} /></div>;
+  if ('sign' in spec) return <div className="fig fig-sign"><Sign name={spec.sign} under={spec.under} /></div>;
   if ('signs' in spec) return (
     <div className="fig fig-signs">
       {spec.signs.map((s, i) => (

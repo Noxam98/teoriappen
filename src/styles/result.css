@@ -43,6 +43,7 @@
 .ritem-body.has-fig { grid-template-columns: 96px minmax(0, 1fr); align-items: start; }
 .ritem .fig { padding: 6px; border-radius: 10px; }
 .ritem .fig .sign { height: 70px; }
+.ritem .fig .sign.with-plate { height: calc(70px * var(--k)); }
 .ritem .fig-signs { flex-direction: column; gap: 4px; }
 .ritem .fig-signs .sign { height: 44px; }
 .ritem .fig .light { height: 84px; }
