@@ -199,6 +199,9 @@ const SIGNS: Record<string, () => ReactElement> = {
     </BlueDisc>
   ),
   rundkjoring: () => <BlueDisc><RoundArrows cx={50} cy={50} r={24} c="#fff" sw={7} /></BlueDisc>,
+
+  // ---- Opplysningsskilt (information) ----
+  // gangveg, sykkelveg, gang- og sykkelveg (518–522) are round and blue but count as opplysningsskilt in Norway
   gangveg: () => <BlueDisc><Place x={27} y={24} s={1.25}><Person c="#fff" /></Place></BlueDisc>,
   sykkelveg: () => <BlueDisc><Place x={22} y={34} s={1.3}><Bicycle c="#fff" sw={3.4} /></Place></BlueDisc>,
   gang_sykkelveg: () => (
@@ -208,7 +211,6 @@ const SIGNS: Record<string, () => ReactElement> = {
     </BlueDisc>
   ),
 
-  // ---- Opplysningsskilt (information) ----
   gangfelt: () => (
     <BluePlate>
       <path d="M50 11 L90 84 H10 Z" fill="#fff" stroke="#fff" strokeWidth={4} strokeLinejoin="round" />
