@@ -20,9 +20,13 @@ def get(url, binary=False, tries=5):
             time.sleep(5 * (k + 1))
     raise RuntimeError(url)
 
-files, cont = {}, {}
-while True:
-    q = {"action": "query", "format": "json", "generator": "allimages", "gaiprefix": "Norwegian-road-sign-",
+# Commons names the Norwegian signs in several ways; the main set is «Norway road sign 100.1.svg»
+PREFIXES = ["Norwegian-road-sign-", "Norway road sign ", "Norway-road-sign-", "Norwegian road sign ", "Norway Road Sign "]
+files = {}
+for prefix in PREFIXES:
+  cont = {}
+  while True:
+    q = {"action": "query", "format": "json", "generator": "allimages", "gaiprefix": prefix,
          "gailimit": "50", "prop": "imageinfo", "iiprop": "url|extmetadata",
          "iiextmetadatafilter": "ImageDescription|ObjectName|LicenseShortName", **cont}
     d = get(API + "?" + urllib.parse.urlencode(q))
@@ -39,6 +43,7 @@ while True:
         break
     cont = dict(d["continue"])
     time.sleep(1)
+  print(prefix, len(files), "files so far", flush=True)
 
 print(len(files), "files", flush=True)
 for name, f in sorted(files.items()):
