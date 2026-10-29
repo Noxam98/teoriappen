@@ -10,13 +10,13 @@
     { "h": "Høyreregelen", "ru": "Правило правой руки" },
     { "p": "I kryss uten skilt gjelder høyreregelen: du skal vike for trafikk som kommer fra høyre. Regelen gjelder også i T-kryss – også når du kjører på den gjennomgående veien.", "ru": "На перекрёстке без знаков действует правило правой руки: уступайте тем, кто приближается справа. Оно действует и на Т-образном перекрёстке — даже если вы едете по дороге, которая идёт насквозь." },
     { "fig": { "scene": { "type": "x", "veh": [{ "id": "A", "from": "s", "go": "straight", "me": true }, { "id": "B", "from": "e", "go": "straight" }] } }, "no": "Ingen skilt: bil B kommer fra høyre for deg. Du har vikeplikt.", "ru": "Знаков нет: машина B приближается справа от вас. Уступаете вы." },
-    { "rule": "Høyreregelen gjelder alle kjøretøy på kjørebanen – også syklister og busser. Unntak er trikken og utrykningskjøretøy med blålys.", "ru": "Правило правой руки касается всех на проезжей части — и велосипедистов, и автобусов. Исключения — трамвай и спецмашины с синими маячками." },
+    { "rule": "Høyreregelen gjelder alle kjøretøy på kjørebanen – også syklister og busser. Unntak er trikken og utrykningskjøretøy med blålys.", "ru": "Правило правой руки касается всех транспортных средств на проезжей части — и велосипедистов, и автобусов. Исключения — трамвай и спецмашины с синими маячками." },
     { "trap": "Mange tror at den som kjører på den største veien, alltid kjører først. Uten skilt gjelder høyreregelen fullt ut – også i T-kryss.", "ru": "Многие думают, что едущий по более крупной дороге всегда проезжает первым. Без знаков полностью действует правило правой руки — и на Т-образном перекрёстке тоже." },
 
     { "h": "Når du svinger til venstre", "ru": "Поворот налево" },
     { "p": "Når du svinger til venstre, har du vikeplikt for møtende trafikk som kjører rett fram eller svinger til høyre. Det gjelder også når dere begge kjører på forkjørsvei.", "ru": "При повороте налево вы уступаете встречным, которые едут прямо или поворачивают направо. Это действует, даже если вы оба едете по главной дороге." },
     { "fig": { "scene": { "type": "x", "veh": [{ "id": "A", "from": "s", "go": "left", "me": true }, { "id": "B", "from": "n", "go": "straight" }] } }, "no": "Du svinger til venstre, og bil B kjører rett fram. Bil B kjører først.", "ru": "Вы поворачиваете налево, машина B едет прямо. B проезжает первой." },
-    { "p": "Når du svinger, skal du også slippe over gående som krysser veien du svinger inn i – selv om det ikke er gangfelt der.", "ru": "При повороте пропустите и пешеходов, которые переходят дорогу, на которую вы поворачиваете, — даже если там нет пешеходного перехода." },
+    { "p": "Når du svinger, skal du også slippe over gående som krysser veien du svinger inn i – selv om det ikke er gangfelt der. Du har også vikeplikt for gående og syklister som skal rett fram på kjørebanen eller veiskulderen, for eksempel i et sykkelfelt.", "ru": "При повороте пропустите и пешеходов, которые переходят дорогу, на которую вы поворачиваете, — даже если там нет пешеходного перехода. Также уступите пешеходам и велосипедистам, которые движутся прямо по проезжей части или по обочине, например по велополосе." },
 
     { "h": "Skilt som bestemmer vikeplikten", "ru": "Знаки, которые решают, кто уступает" },
     { "signs": [
@@ -26,13 +26,13 @@
       ["slutt_forkjorsveg", "Slutt på forkjørsvei: høyreregelen gjelder igjen", "Конец главной дороги: снова действует правило правой руки"]
     ] },
     { "p": "Skilt gjelder foran høyreregelen. Kommer en bil fra høyre og har vikepliktskilt, er det den som skal vike for deg.", "ru": "Знаки важнее правила правой руки. Если у машины справа знак «Уступите дорогу», уступает она." },
-    { "rule": "Ved stoppskilt skal du alltid stanse helt, selv om veien er fri. Er det stopplinje, stanser du ved den. Ellers stanser du like før den kryssende veien, der du har god oversikt.", "ru": "У знака «Стоп» всегда останавливайтесь полностью, даже если дорога свободна. Есть стоп-линия — у неё; нет — прямо перед пересекаемой дорогой, там, где хороший обзор." },
+    { "rule": "Ved stoppskilt skal du alltid stanse helt, selv om veien er fri. Er det stopplinje, stanser du foran den. Ellers stanser du så nær den kryssende veien som mulig.", "ru": "У знака «Стоп» всегда останавливайтесь полностью, даже если дорога свободна. Есть стоп-линия — перед ней; нет — как можно ближе к пересекаемой дороге." },
     { "trap": "Har både du og en møtende bil vikepliktskilt, gjelder vanlige regler mellom dere: den som svinger til venstre, skal vike for den som kjører rett fram.", "ru": "Если и у вас, и у встречной машины знак «Уступите дорогу», между вами действуют обычные правила: поворачивающий налево уступает тому, кто едет прямо." },
 
     { "h": "Trikk, utrykning og buss", "ru": "Трамвай, спецмашины и автобус" },
     { "list": [
       ["Trikken skal alltid få fri vei – også når den kommer fra venstre.", "Трамваю всегда уступают дорогу — даже когда он едет слева."],
-      ["Utrykningskjøretøy med blålys og sirene skal få fri vei. Kjør rolig til siden, og stans om nødvendig.", "Спецмашине с синими маячками и сиреной уступают дорогу. Спокойно прижмитесь к краю и при необходимости остановитесь."],
+      ["Utrykningskjøretøy med blålys skal få fri vei, også når de ikke bruker sirene. Kjør rolig til siden, og stans om nødvendig.", "Спецмашине с синими маячками уступают дорогу, даже если сирена не включена. Спокойно прижмитесь к краю и при необходимости остановитесь."],
       ["Der fartsgrensen er 60 km/t eller lavere, skal du vike for buss som blinker for å kjøre ut fra holdeplassen.", "Где ограничение 60 км/ч или ниже, уступите автобусу, который включил поворотник, чтобы отъехать от остановки."],
       ["I et vanlig kryss har bussen ingen særlig forkjørsrett.", "На обычном перекрёстке у автобуса нет особого преимущества."]
     ] },
@@ -42,15 +42,24 @@
     { "p": "Syklister som kommer fra gang- og sykkelvei ut på kjørebanen, har vikeplikt. Vær likevel forberedt på at de ikke stanser.", "ru": "Велосипедист, который выезжает на проезжую часть с пешеходно-велосипедной дорожки, должен уступить. Но будьте готовы, что он не остановится." },
 
     { "h": "Gangfelt", "ru": "Пешеходный переход" },
-    { "p": "Du har vikeplikt for gående som er i gangfeltet eller på vei ut i det. Hold så lav fart at du kan stanse.", "ru": "Вы уступаете пешеходам, которые уже на переходе или вот-вот на него ступят. Держите такую скорость, чтобы успеть остановиться." },
+    { "p": "Ved gangfelt uten trafikklys eller politi har du vikeplikt for gående som er i gangfeltet eller på vei ut i det. Hold så lav fart at du kan stanse.", "ru": "У пешеходного перехода без светофора и регулировщика вы уступаете пешеходам, которые уже на переходе или вот-вот на него ступят. Держите такую скорость, чтобы успеть остановиться." },
     { "fig": { "scene": { "type": "x", "veh": [{ "id": "A", "from": "s", "go": "right", "me": true }], "ped": ["e"], "pedAt": "crossing" } }, "no": "Du svinger til høyre: slipp fotgjengeren over først.", "ru": "Вы поворачиваете направо: сначала пропустите пешехода." },
 
     { "h": "Rundkjøring, fletting og kø", "ru": "Круговое движение, слияние полос и пробка" },
     { "list": [
       ["Ved innkjøring i rundkjøring er det vanligvis vikepliktskilt: vik for dem som allerede er i rundkjøringen.", "На въезде на круг обычно стоит знак «Уступите дорогу»: уступайте тем, кто уже едет по кругу."],
       ["Blink til høyre før du kjører ut av rundkjøringen.", "Перед съездом с круга включите правый поворотник."],
-      ["Når kjørefeltet ditt slutter, har du vikeplikt når du skifter felt. Flett inn annenhver bil – som en glidelås.", "Когда ваша полоса заканчивается, при перестроении уступаете вы. Вливайтесь по очереди, через одну машину — как застёжка-молния."],
+      ["Når to vanlige kjørefelt blir til ett, har ingen vikeplikt. Alle skal tilpasse farten, slik at bilene kan kjøre vekselvis – som en glidelås. Ellers har den som skifter felt, vikeplikt.", "Когда две обычные полосы сливаются в одну, никто не обязан уступать: все подстраивают скорость, чтобы машины проезжали поочерёдно, — как застёжка-молния. В остальных случаях при перестроении уступает тот, кто перестраивается."],
       ["Ikke kjør inn i et kryss hvis du kan bli stående der og hindre kryssende trafikk.", "Не въезжайте на перекрёсток, если можете застрять на нём и помешать поперечному движению."]
     ] }
-  ]
+  ],
+  "sources": [
+    ["Trafikkreglene § 7 – vikeplikt (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A77"],
+    ["Trafikkreglene § 8 – kjørefeltskifte og fletting (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A78"],
+    ["Trafikkreglene § 10 – fri vei for utrykning og trikk (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A710"],
+    ["Trafikkreglene § 9 – gående og gangfelt (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747"],
+    ["Skiltforskriften kap. 3 – vikeplikt- og forkjørsskilt (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219/KAPITTEL_3"],
+    ["Kjøring i rundkjøring (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/traffic-safety/norwegian-traffic-rules/driving-in-roundabouts/"]
+  ],
+  "checked": "2026-10"
 }

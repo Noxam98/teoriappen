@@ -872,8 +872,8 @@
       "30 km/t",
       "Inntil 20 km/t"
     ],
-    "f": "I gatetun skal du kjøre i gangfart. Gående kan bruke hele gaten, og barn kan leke der.",
-    "ru": "В жилой зоне (gatetun) едут со скоростью пешехода. Пешеходы могут идти по всей ширине улицы, там играют дети."
+    "f": "I gatetun skal du kjøre i gangfart, og du har vikeplikt for gående. Barn kan leke der.",
+    "ru": "В жилой зоне (gatetun) едут со скоростью пешехода и уступают пешеходам. Там могут играть дети."
   },
   {
     "id": "vik-31",
@@ -912,7 +912,7 @@
       "Ja, men bare hvis holdeplassen har busslomme"
     ],
     "f": "Vikeplikten for buss fra holdeplass gjelder på veier med fartsgrense 60 km/t eller lavere. På raskere veier må bussen vente til det er klart, men du bør gjøre det lettere for den.",
-    "ru": "Обязанность пропускать автобус, отъезжающий от остановки, действует только на дорогах с ограничением 60 км/ч или ниже. На более быстрых дорогах автобус ждёт сам, но вежливо облегчить ему выезд."
+    "ru": "Обязанность пропускать автобус, отъезжающий от остановки, действует только на дорогах с ограничением 60 км/ч или ниже. На более быстрых дорогах автобус ждёт сам, но вам стоит облегчить ему выезд."
   },
   {
     "id": "vik-34",
@@ -999,15 +999,15 @@
   {
     "id": "vik-41",
     "cat": "vikeplikt",
-    "q": "Kjørefeltet ditt slutter, og du må flytte over i feltet ved siden av. Hva gjelder?",
+    "q": "To vanlige kjørefelt i samme retning blir til ett, og feltet ditt slutter. Hva gjelder?",
     "img": null,
     "a": [
-      "Du skifter felt og har vikeplikt, men det er vanlig å flette inn annenhver bil som en glidelås",
-      "Trafikken i det andre feltet har vikeplikt for deg",
-      "Du skal stanse der feltet slutter og vente til det andre feltet er tomt"
+      "Ingen har vikeplikt: alle tilpasser farten, og bilene kjører vekselvis, som en glidelås",
+      "Den som kjører i feltet som slutter, må stanse og vente til det andre feltet er tomt",
+      "Trafikken i feltet som fortsetter, har forkjørsrett og trenger ikke slippe noen inn"
     ],
-    "f": "Den som skifter felt, har vikeplikt. Når et felt slutter, bør alle samarbeide og flette inn annenhver bil – glidelåsprinsippet.",
-    "ru": "Перестраивающийся уступает. Когда полоса заканчивается, водители должны помогать друг другу и встраиваться поочерёдно — по принципу «застёжки-молнии» (glidelås)."
+    "f": "Når antallet vanlige kjørefelt blir mindre, gjelder ikke den vanlige vikeplikten ved feltskifte. Farten skal tilpasses gjensidig, slik at bilene kan kjøre vekselvis – glidelåsprinsippet.",
+    "ru": "Когда количество обычных полос уменьшается, обычная обязанность уступать при перестроении не действует. Все взаимно подстраивают скорость, чтобы машины проезжали поочерёдно, — принцип «застёжки-молнии» (glidelås)."
   },
   {
     "id": "vik-42",
@@ -1058,11 +1058,11 @@
     "q": "Hvor skal du stanse ved et stoppskilt hvis det ikke er noen stopplinje?",
     "img": null,
     "a": [
-      "Like før den kryssende veien, der du har god oversikt",
+      "Så nær den kryssende veien som mulig",
       "Ved selve skiltet, selv om du ikke ser noe derfra",
       "Ute i den kryssende veien, slik at du ser bedre"
     ],
-    "f": "Er det stopplinje, stanser du ved den. Uten stopplinje stanser du like før den kryssende veien, der du har god oversikt.",
-    "ru": "Если есть стоп-линия, останавливайтесь перед ней. Если нет — непосредственно перед пересекаемой дорогой, там, где хорошо видно движение."
+    "f": "Er det stopplinje, stanser du foran den. Uten stopplinje stanser du så nær den kryssende veien som mulig.",
+    "ru": "Если есть стоп-линия, останавливайтесь перед ней. Если нет — как можно ближе к пересекаемой дороге."
   }
 ]

@@ -110,8 +110,8 @@
       "Omtrent et halvt sekund",
       "Det holder med én billengde"
     ],
-    "f": "Tresekundersregelen: Velg et fast punkt. Når bilen foran passerer punktet, skal det gå minst 3 sekunder før du passerer det samme punktet.",
-    "ru": "Правило трёх секунд: выберите неподвижный ориентир. Когда машина впереди его проехала, до вашего проезда должно пройти не меньше 3 секунд."
+    "f": "Tresekundersregelen: Velg et fast punkt. Når bilen foran passerer punktet, bør det gå minst 3 sekunder før du passerer det samme punktet.",
+    "ru": "Правило трёх секунд: выберите неподвижный ориентир. Когда машина впереди его проехала, желательно, чтобы до вашего проезда прошло не меньше 3 секунд."
   },
   {
     "id": "far-09",
@@ -137,8 +137,8 @@
       "60 km/t",
       "70 km/t"
     ],
-    "f": "Med tilhenger er høyeste tillatte fart 80 km/t, selv om fartsgrensen på veien er høyere. Bare tilhengere som er godkjent for Tempo 100, kan kjøre i 100 km/t.",
-    "ru": "С прицепом максимальная скорость — 80 км/ч, даже если на дороге разрешено больше. 100 км/ч можно только с прицепом, одобренным по программе Tempo 100."
+    "f": "Uten Tempo 100-godkjenning er høyeste tillatte fart med tilhenger 80 km/t, selv om fartsgrensen på veien er høyere. For å kjøre i 100 km/t må både tilhengeren og bilen oppfylle kravene i Tempo 100.",
+    "ru": "Без одобрения по Tempo 100 максимальная скорость с прицепом — 80 км/ч, даже если на дороге разрешено больше. Чтобы ехать 100 км/ч, требованиям Tempo 100 должны отвечать и прицеп, и машина."
   },
   {
     "id": "far-11",
@@ -146,13 +146,13 @@
     "q": "Når kan du kjøre i 100 km/t med tilhenger?",
     "img": null,
     "a": [
-      "Når tilhengeren er godkjent for Tempo 100 og fartsgrensen er 100 km/t eller høyere",
+      "Når tilhengeren er godkjent for Tempo 100, bilen oppfyller kravene, og fartsgrensen er 100 km/t eller høyere",
       "Når tilhengeren har egne bremser",
       "Når tilhengeren er tom",
       "Aldri, 80 km/t gjelder alltid med tilhenger"
     ],
-    "f": "Tilhengere som er godkjent for Tempo 100, kan kjøre i 100 km/t der fartsgrensen tillater det. Ellers er grensen 80 km/t.",
-    "ru": "С прицепом, одобренным по Tempo 100, можно ехать 100 км/ч там, где это позволяет ограничение. Иначе максимум — 80 км/ч."
+    "f": "Tilhengeren må være godkjent for Tempo 100 og ha Tempo 100-merket. Bilen må blant annet ha ABS og en tillatt totalvekt på høyst 3500 kg. Da kan du kjøre i 100 km/t der fartsgrensen tillater det. Ellers er grensen 80 km/t.",
+    "ru": "Прицеп должен быть одобрен по Tempo 100 и иметь наклейку Tempo 100. У машины, среди прочего, должна быть ABS и разрешённая полная масса не больше 3500 кг. Тогда можно ехать 100 км/ч там, где это позволяет ограничение. Иначе максимум — 80 км/ч."
   },
   {
     "id": "far-12",

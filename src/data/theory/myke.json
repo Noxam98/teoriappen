@@ -1,7 +1,7 @@
 {
   "cat": "myke",
-  "lead": "Myke trafikanter er gående, syklister og motorsyklister. De har ingen bil rundt seg som beskytter dem, og det er du som må ta hensyn – også til barn og dyr i veien.",
-  "leadRu": "Незащищённые участники движения (myke trafikanter) — пешеходы, велосипедисты и мотоциклисты. Их не защищает кузов машины, поэтому быть внимательным должны вы — и к детям, и к животным на дороге.",
+  "lead": "Myke trafikanter, for eksempel gående og syklister, har ingen bil rundt seg som beskytter dem. Det har heller ikke motorsyklister. Det er du som må ta hensyn – også til barn og dyr i veien.",
+  "leadRu": "Незащищённых участников движения (myke trafikanter), например пешеходов и велосипедистов, не защищает кузов машины. Мотоциклистов тоже. Поэтому быть внимательным должны вы — и к детям, и к животным на дороге.",
   "blocks": [
     { "h": "Barn", "ru": "Дети" },
     { "p": "Barn er små og vanskelige å se. De kan gjøre uventede ting, for eksempel springe rett ut i veien. Der det kommer en ball, kan det komme et barn etter.", "ru": "Дети маленькие, их трудно заметить. Они могут повести себя неожиданно — например, выбежать прямо на дорогу. За мячом может выбежать ребёнок." },
@@ -44,7 +44,7 @@
       ["Sauer og andre dyr kan plutselig gå ut i veien. Senk farten og vær klar til å stoppe.", "Овцы и другие животные могут внезапно выйти на дорогу. Снизьте скорость и будьте готовы остановиться."],
       ["Hester kan bli redde for lyd og biler som kommer nær. Kjør sakte forbi med god avstand.", "Лошадь может испугаться шума и близко проезжающих машин. Проезжайте медленно и с большим интервалом."],
       ["Ikke bruk tuten mot dyr. Dyret kan bli redd og gjøre uventede ting.", "Не сигнальте животным: они могут испугаться и повести себя непредсказуемо."],
-      ["Kjører du på elg eller annet hjortevilt, skal du melde fra til politiet og merke stedet.", "Если вы сбили лося, оленя или косулю, сообщите в полицию и отметьте место."]
+      ["Kjører du på elg eller annet hjortevilt, skal du melde fra til politiet. Merk stedet, så dyret blir lettere å finne.", "Если вы сбили лося, оленя или косулю, вы обязаны сообщить в полицию. Отметьте место, чтобы животное было легче найти."]
     ] }
   ]
 }

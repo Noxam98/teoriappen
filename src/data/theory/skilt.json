@@ -9,7 +9,7 @@
       ["fare_ujevn", "Fareskilt: trekantede med rød kant. De varsler om en fare lenger fram.", "Предупреждающие знаки: треугольные с красной каймой. Предупреждают об опасности впереди."],
       ["vikeplikt", "Vikeplikt- og forkjørsskilt: de viser hvem som skal vike. De har ulike former, for eksempel en trekant med spissen ned.", "Знаки приоритета: показывают, кто кому уступает. Формы у них разные, например треугольник вершиной вниз."],
       ["fart_40", "Forbudsskilt: som regel runde med rød kant. De sier hva du ikke har lov til.", "Запрещающие знаки: обычно круглые с красной каймой. Говорят, чего делать нельзя."],
-      ["sykkelveg", "Påbudsskilt: runde og blå med hvitt symbol. De sier hva du skal gjøre.", "Предписывающие знаки: круглые синие с белым символом. Говорят, что нужно делать."],
+      ["pabudt_rett_fram", "Påbudsskilt: runde og blå med hvitt symbol. De sier hva du skal gjøre.", "Предписывающие знаки: круглые синие с белым символом. Говорят, что нужно делать."],
       ["parkering", "Opplysningsskilt: som regel blå og firkantede. De gir informasjon om veien.", "Информационные знаки: обычно синие прямоугольные. Сообщают сведения о дороге."]
     ] },
     { "p": "Under skiltet kan det stå et underskilt. Det kan for eksempel vise avstanden til faren, hvor langt eller når skiltet gjelder, eller hvem som har unntak.", "ru": "Под знаком может быть табличка. Она показывает, например, расстояние до опасности, на каком участке или в какое время действует знак, или для кого сделано исключение." },
@@ -26,10 +26,10 @@
       ["fare_glatt", "Glatt kjørebane: veien kan være glatt av is eller vann", "Скользкая дорога: возможны лёд или вода"],
       ["fare_vegarbeid", "Veiarbeid: folk og maskiner arbeider på eller ved veien", "Дорожные работы: на дороге или рядом работают люди и техника"]
     ] },
-    { "p": "Når du ser et fareskilt, skal du senke farten og være klar til å stanse. I bratt bakke nedover bruker du lavt gir og motorbremsen, slik at bremsene ikke blir for varme. På glatt vei kjører du jevnt, uten brå bremsing eller ratting.", "ru": "Увидев предупреждающий знак, снизьте скорость и будьте готовы остановиться. На крутом спуске включите пониженную передачу и тормозите двигателем, чтобы не перегреть тормоза. На скользкой дороге двигайтесь плавно, без резкого торможения и резких движений рулём." },
+    { "p": "Når du ser et fareskilt, bør du senke farten og være klar til å stanse. I bratt bakke nedover bruker du lavt gir og motorbremsen, slik at bremsene ikke blir for varme. På glatt vei kjører du jevnt, uten brå bremsing eller ratting.", "ru": "Увидев предупреждающий знак, стоит снизить скорость и быть готовым остановиться. На крутом спуске включите пониженную передачу и тормозите двигателем, чтобы не перегреть тормоза. На скользкой дороге двигайтесь плавно, без резкого торможения и резких движений рулём." },
     { "p": "Ved veiarbeid kan fareskiltene ha gul bunn. Da er de midlertidige. Følg skiltene, og se etter folk som arbeider på veien.", "ru": "У дорожных работ предупреждающие знаки могут быть на жёлтом фоне — это временные знаки. Следуйте знакам и следите за людьми, которые работают на дороге." },
     { "signs": [
-      ["fare_kryss", "Veikryss: et kryss lenger fram", "Перекрёсток впереди"],
+      ["fare_kryss", "Farlig veikryss: et kryss lenger fram der høyreregelen gjelder", "Опасный перекрёсток впереди, где действует правило правой руки"],
       ["fare_rundkjoring", "Rundkjøring: en rundkjøring lenger fram", "Круговое движение впереди"],
       ["fare_lyssignal", "Lyssignal: et lyssignal lenger fram", "Светофор впереди"],
       ["fare_motende", "Møtende trafikk: det kommer trafikk mot deg", "Встречное движение"],
@@ -40,11 +40,11 @@
       ["fare_barn", "Barn: barn ferdes ofte ved veien, for eksempel ved en skole. De kan plutselig springe ut i veien", "Дети: у дороги часто бывают дети, например возле школы. Ребёнок может внезапно выбежать на дорогу"],
       ["fare_sykkel", "Syklende: det er ofte syklende på eller ved veien", "Велосипедисты: на дороге или рядом часто бывают велосипедисты"],
       ["fare_elg", "Elg: elg kan komme ut i veien, mest i skumringen og i mørket", "Лоси: лось может выйти на дорогу, чаще всего в сумерках и в темноте"],
-      ["fare_jernbane_bom", "Jernbaneovergang med bom", "Железнодорожный переезд со шлагбаумом"],
-      ["fare_jernbane", "Jernbaneovergang uten bom", "Железнодорожный переезд без шлагбаума"],
+      ["fare_jernbane_bom", "Planovergang med bom: en jernbaneovergang med bom lenger fram", "Железнодорожный переезд со шлагбаумом впереди"],
+      ["fare_jernbane", "Planovergang uten bom: en jernbaneovergang uten bom lenger fram", "Железнодорожный переезд без шлагбаума впереди"],
       ["fare_annen", "Annen fare: et underskilt forteller ofte hva faren er", "Прочие опасности: табличка под знаком часто объясняет, какая именно"]
     ] },
-    { "trap": "De to skiltene for jernbaneovergang er lette å blande. Skiltet med en bom betyr at overgangen har bom. Skiltet med et lokomotiv betyr at det ikke er bom – da må du selv se og lytte godt etter tog.", "ru": "Два знака переезда легко перепутать. Знак со шлагбаумом — переезд со шлагбаумом. Знак с паровозом — шлагбаума нет, поэтому сами внимательно смотрите и слушайте, нет ли поезда." },
+    { "trap": "De to skiltene for jernbaneovergang er lette å blande. Skiltet med et gjerde betyr at overgangen har bom. Skiltet med et lokomotiv betyr at det ikke er bom – da må du selv se og lytte godt etter tog.", "ru": "Два знака переезда легко перепутать. Знак с изображением забора — переезд со шлагбаумом. Знак с паровозом — шлагбаума нет, поэтому сами внимательно смотрите и слушайте, нет ли поезда." },
     { "p": "Blinker rødt lys ved overgangen, eller går bommene ned, skal du stanse før bommen. Vent til bommen er oppe igjen.", "ru": "Если на переезде мигает красный или опускается шлагбаум, остановитесь перед шлагбаумом. Ждите, пока он снова поднимется." },
 
     { "h": "Vikeplikt- og forkjørsskilt", "ru": "Знаки приоритета" },
@@ -65,7 +65,7 @@
     { "signs": [
       ["innkjoring_forbudt", "Innkjøring forbudt: du kan ikke kjøre inn fra denne siden. Skiltet står ofte i enden av en envegskjørt gate", "Въезд запрещён: с этой стороны въезжать нельзя. Часто стоит в конце улицы с односторонним движением"],
       ["forbudt_alle", "Forbudt for alle kjøretøy: du kan ikke kjøre her med noe kjøretøy", "Движение запрещено: здесь нельзя ехать ни на каком транспортном средстве"],
-      ["forbudt_motorvogn", "Forbudt for motorvogn: gjelder kjøretøy med motor, som bil og motorsykkel. Syklende kan kjøre her", "Движение механических ТС запрещено: касается всех транспортных средств с мотором, например автомобилей и мотоциклов. Велосипедистам можно"],
+      ["forbudt_motorvogn", "Forbudt for motorvogn: gjelder kjøretøy med motor, som bil, motorsykkel og moped. Syklende kan kjøre her", "Движение механических ТС запрещено: касается транспортных средств с мотором, например автомобилей, мотоциклов и мопедов. Велосипедистам можно"],
       ["forbudt_venstresving", "Forbudt å svinge til venstre", "Поворот налево запрещён"],
       ["forbudt_hoyresving", "Forbudt å svinge til høyre", "Поворот направо запрещён"],
       ["forbudt_uvending", "Forbudt å snu: pilen går rundt og tilbake (u-sving)", "Разворот запрещён: стрелка поворачивает назад"],
@@ -95,29 +95,26 @@
     { "rule": "Når den særskilte fartsgrensen slutter, gjelder den generelle igjen: 50 km/t i tettbygd strøk og 80 km/t utenfor.", "ru": "Когда особое ограничение заканчивается, снова действует общее: 50 км/ч в населённом пункте и 80 км/ч вне его." },
 
     { "h": "Påbudsskilt", "ru": "Предписывающие знаки" },
-    { "p": "Påbudsskilt er runde og blå med hvitt symbol. De sier hvor du skal kjøre, eller hvem veien er for.", "ru": "Предписывающие знаки круглые синие с белым символом. Они говорят, куда нужно ехать или для кого предназначена дорога." },
+    { "p": "Påbudsskilt er runde og blå med hvitt symbol. De sier hva du skal gjøre, for eksempel hvor du skal kjøre.", "ru": "Предписывающие знаки круглые синие с белым символом. Они говорят, что нужно делать, например куда нужно ехать." },
     { "signs": [
       ["pabudt_rett_fram", "Påbudt kjøreretning: du må kjøre rett fram", "Движение только прямо"],
       ["pabudt_hoyre", "Påbudt kjøreretning: du må kjøre til høyre", "Движение только направо"],
       ["pabudt_felt_hoyre", "Påbudt kjørefelt: kjør på høyre side av trafikkøya eller hindringen", "Объезд справа: объезжайте островок или препятствие справа"],
-      ["rundkjoring", "Rundkjøring: kjør rundt mot klokka, med øya på venstre side", "Круговое движение: против часовой стрелки, островок слева от вас"],
-      ["gangveg", "Gangvei: veien er for gående. Du kan ikke kjøre bil her", "Пешеходная дорожка: для пешеходов, на машине ехать нельзя"],
-      ["sykkelveg", "Sykkelvei: veien er for syklende", "Велосипедная дорожка: для велосипедистов"],
-      ["gang_sykkelveg", "Gang- og sykkelvei: for gående og syklende. Motorvogn bare hvis et underskilt tillater det", "Пешеходно-велосипедная дорожка: для пешеходов и велосипедистов. Машинам — только если разрешает табличка"]
+      ["rundkjoring", "Rundkjøring: kjør rundt mot klokka, med øya på venstre side", "Круговое движение: против часовой стрелки, островок слева от вас"]
     ] },
     { "p": "Ved en rundkjøring står det som regel også et vikepliktskilt. Da skal du vike for dem som allerede kjører i rundkjøringen.", "ru": "У кругового движения обычно стоит и знак «Уступите дорогу». Тогда уступайте тем, кто уже едет по кругу." },
-    { "trap": "En pil kan bety tre ulike ting. På et påbudsskilt må du kjøre dit pilen viser, men har skiltet rød kant og en rød strek over pilen, er det forbudt å kjøre dit. På et firkantet blått skilt betyr pilen envegskjøring.", "ru": "Стрелка может означать три разные вещи. На предписывающем знаке (круглом синем) ехать нужно туда, куда она показывает, а если у знака красная кайма и красная черта поверх стрелки — туда ехать запрещено. На синем прямоугольном знаке стрелка означает одностороннее движение." },
+    { "trap": "En pil kan bety tre ulike ting. På et påbudsskilt må du kjøre dit pilen viser, men har skiltet rød kant og en rød strek over pilen, er det forbudt å kjøre dit. Et firkantet blått skilt med en stor hvit pil betyr envegskjøring.", "ru": "Стрелка может означать три разные вещи. На предписывающем знаке (круглом синем) ехать нужно туда, куда она показывает, а если у знака красная кайма и красная черта поверх стрелки — туда ехать запрещено. Синий прямоугольный знак с одной большой белой стрелкой означает одностороннее движение." },
 
     { "h": "Opplysningsskilt", "ru": "Информационные знаки" },
     { "p": "Opplysningsskilt er som regel blå og firkantede. Mange av dem viser en type vei med egne regler.", "ru": "Информационные знаки обычно синие прямоугольные. Многие из них обозначают тип дороги со своими правилами." },
     { "signs": [
-      ["motorveg", "Motorvei: forbudt å rygge, snu, stanse og parkere. Gående, syklende og mopeder kan ikke bruke veien", "Автомагистраль: запрещено ехать задним ходом, разворачиваться, останавливаться и парковаться. Пешеходам, велосипедистам и мопедам нельзя"],
+      ["motorveg", "Motorvei: bare for motorvogner som lovlig kan kjøre minst 40 km/t. Gående, syklende og mopeder kan ikke bruke veien. Forbudt å rygge, snu, stanse og parkere", "Автомагистраль: только для механических ТС, которые по закону могут ехать не медленнее 40 км/ч. Пешеходам, велосипедистам и мопедам нельзя. Запрещено ехать задним ходом, разворачиваться, останавливаться и парковаться"],
       ["slutt_motorveg", "Slutt på motorvei: reglene for motorvei gjelder ikke lenger. Vær klar for kryss, møtende, gående og syklende", "Конец автомагистрали: её правила больше не действуют. Будьте готовы к перекрёсткам, встречным машинам, пешеходам и велосипедистам"],
-      ["motortrafikkveg", "Motortrafikkvei: bare for motorvogner. Gående, syklende og mopeder kan ikke bruke veien", "Дорога для автомобилей: только для механических ТС. Пешеходам, велосипедистам и мопедам нельзя"],
+      ["motortrafikkveg", "Motortrafikkvei: bare for motorvogner som lovlig kan kjøre minst 40 km/t. Gående, syklende og mopeder kan ikke bruke veien. Forbudt å rygge og snu", "Дорога для автомобилей: только для механических ТС, которые по закону могут ехать не медленнее 40 км/ч. Пешеходам, велосипедистам и мопедам нельзя. Запрещено ехать задним ходом и разворачиваться"],
       ["envegskjoring", "Envegskjøring: all trafikk kjører i pilens retning", "Одностороннее движение: весь транспорт едет по стрелке"],
       ["blindveg", "Blindvei: veien fører ikke videre", "Тупик: сквозного проезда нет"],
-      ["kollektivfelt", "Kollektivfelt: feltet er for buss og drosje. Personbil bare hvis et skilt tillater det", "Полоса для общественного транспорта: для автобусов и такси. Легковым — только если разрешает знак"],
-      ["tunnel", "Tunnel: forbudt å snu, rygge og stanse. Bruk nærlys, og hold god avstand", "Тоннель: запрещено разворачиваться, ехать задним ходом и останавливаться. Включите ближний свет и держите дистанцию"],
+      ["kollektivfelt", "Kollektivfelt: først og fremst for buss. Drosje bare når skiltet viser det. Motorsykkel, moped og sykkel kan også kjøre der. Vanlig personbil bare hvis et skilt tillater det – for elbil kan det gjelde egne regler", "Полоса для общественного транспорта: прежде всего для автобусов. Такси — только если это указано на знаке. Мотоциклам, мопедам и велосипедам тоже можно. Обычным легковым машинам — только если разрешает знак; для электромобилей могут действовать особые правила"],
+      ["tunnel", "Tunnel: forbudt å stanse. Bruk nærlys, og hold god avstand", "Тоннель: останавливаться запрещено. Включите ближний свет и держите дистанцию"],
       ["moteplass", "Møteplass: et bredere sted på en smal vei der kjøretøy kan møtes. Du må ikke parkere der", "Место для разъезда: расширение узкой дороги, чтобы встречные могли разъехаться. Парковаться там нельзя"],
       ["parkering", "Parkering: her er det lov å parkere", "Место стоянки: здесь можно парковаться"]
     ] },
@@ -125,6 +122,21 @@
       ["gangfelt", "Gangfelt: vik for gående som er i gangfeltet eller på vei ut i det", "Пешеходный переход: уступите пешеходам, которые уже на переходе или собираются на него ступить"],
       ["gatetun", "Gatetun: kjør i gangfart. Gående kan bruke hele gaten, og du kan bare parkere på merkede plasser", "Жилая зона: ехать со скоростью пешехода. Пешеходы могут ходить по всей улице, парковаться можно только на отмеченных местах"],
       ["gagate", "Gågate: forbudt å kjøre med motorvogn, unntatt det et underskilt tillater, for eksempel varelevering. Kjør da i gangfart", "Пешеходная улица: механическим ТС ехать нельзя, кроме того, что разрешает табличка, например доставки. Тогда — со скоростью пешехода"]
-    ] }
-  ]
+    ] },
+    { "signs": [
+      ["gangveg", "Gangvei: veien er for gående. Du kan ikke kjøre bil her", "Пешеходная дорожка: для пешеходов, на машине ехать нельзя"],
+      ["sykkelveg", "Sykkelvei: veien er for syklende. Du kan ikke kjøre bil her", "Велосипедная дорожка: для велосипедистов, на машине ехать нельзя"],
+      ["gang_sykkelveg", "Gang- og sykkelvei: for gående og syklende. Bil bare hvis et underskilt tillater det", "Пешеходно-велосипедная дорожка: для пешеходов и велосипедистов. Машинам — только если разрешает табличка"]
+    ] },
+    { "trap": "Skiltene for gangvei, sykkelvei og gang- og sykkelvei er runde og blå, akkurat som påbudsskilt. Men i Norge hører de til opplysningsskiltene.", "ru": "Знаки пешеходной, велосипедной и пешеходно-велосипедной дорожки круглые и синие, как предписывающие. Но в Норвегии они относятся к информационным знакам." }
+  ],
+  "sources": [
+    ["Skiltforskriften – trafikkskilt og betydning (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219"],
+    ["Skiltforskriften kap. 4 – forbudsskilt (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219/KAPITTEL_4"],
+    ["Trafikkreglene § 11 – rygging og vending (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A711"],
+    ["Trafikkreglene § 17 – stans og parkering (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A717"],
+    ["Trafikkskilt (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/langs-veien/trafikkskilt"],
+    ["Hvem kan bruke kollektivfeltet? (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/along-the-road/norwegian-traffic-rules/the-public-transport-lane/"]
+  ],
+  "checked": "2026-10"
 }

@@ -33,12 +33,12 @@
     "q": "Du skal svinge til høyre i et kryss. Hvordan plasserer du bilen?",
     "img": null,
     "a": [
-      "Så langt til høyre som det er hensiktsmessig",
+      "Så nær høyre kant av kjørebanen som mulig",
       "Nær midtlinjen",
       "Litt ut mot venstre for å få en bredere sving"
     ],
-    "f": "Når du skal svinge til høyre, skal du holde så langt til høyre som det er hensiktsmessig, og svinge i en kort bue.",
-    "ru": "Перед правым поворотом держитесь как можно правее (насколько целесообразно) и поворачивайте по короткой дуге."
+    "f": "Når du skal svinge til høyre, skal du holde deg så nær høyre kant av kjørebanen som mulig, og svinge i en kort bue.",
+    "ru": "Перед правым поворотом держитесь как можно ближе к правому краю проезжей части и поворачивайте по короткой дуге."
   },
   {
     "id": "pla-04",
@@ -108,8 +108,8 @@
       "Du skal aldri blinke i en rundkjøring",
       "Hele tiden mens du kjører i rundkjøringen"
     ],
-    "f": "Blink til høyre like før du kjører ut, etter at du har passert avkjøringen før den du skal ta. Da vet andre at du forlater rundkjøringen.",
-    "ru": "Правый поворотник включайте перед выездом — после того как проехали предыдущий съезд. Так другие поймут, что вы покидаете кольцо."
+    "f": "Blink til høyre like før du kjører ut, etter at du har passert avkjøringen før den du skal ta. Skal du ta første avkjøring, blinker du allerede før du kjører inn.",
+    "ru": "Правый поворотник включайте перед выездом — после того как проехали предыдущий съезд. Если вам на первый съезд, включите его ещё до въезда на круг."
   },
   {
     "id": "pla-09",
@@ -127,15 +127,15 @@
   {
     "id": "pla-10",
     "cat": "plassering",
-    "q": "Du kjører i venstre felt i en rundkjøring med to felt og skal ta neste avkjøring. Hva gjør du?",
+    "q": "Du kjører i venstre felt i en rundkjøring med to felt og skal ta neste avkjøring. Avkjøringen har bare ett felt. Hva gjør du?",
     "img": null,
     "a": [
       "Blinker til høyre, skifter til høyre felt når det er ledig, og viker for trafikken der",
       "Kjører rett ut fra venstre felt",
       "Stanser i rundkjøringen til høyre felt er tomt"
     ],
-    "f": "Før du kjører ut, må du over i høyre felt. Når du skifter felt, har du vikeplikt for trafikken i høyre felt.",
-    "ru": "Перед выездом нужно перестроиться в правую полосу; при перестроении вы уступаете тем, кто едет в правой полосе."
+    "f": "Avkjøringen har bare ett felt, så du må over i høyre felt før du kjører ut. Når du skifter felt, har du vikeplikt for trafikken i høyre felt.",
+    "ru": "У съезда только одна полоса, поэтому перед выездом нужно перестроиться в правую полосу; при перестроении вы уступаете тем, кто едет в правой полосе."
   },
   {
     "id": "pla-11",
@@ -143,11 +143,11 @@
     "q": "Du skal kjøre inn på motorveien fra et akselerasjonsfelt. Hva bør du gjøre?",
     "img": null,
     "a": [
-      "Øke farten til omtrent samme fart som trafikken på motorveien og flette inn når det er ledig",
+      "Øke farten til omtrent samme fart som trafikken på motorveien og kjøre inn når det er ledig",
       "Stoppe i enden av akselerasjonsfeltet og vente på en stor luke",
       "Kjøre sakte inn, så de andre må bremse for deg"
     ],
-    "f": "Bruk akselerasjonsfeltet til å komme opp i fart. Du har vikeplikt for trafikken på motorveien og skal flette inn i en ledig luke.",
+    "f": "Bruk akselerasjonsfeltet til å komme opp i fart. Du har vikeplikt for trafikken på motorveien og skal kjøre inn i en ledig luke.",
     "ru": "Используйте полосу разгона, чтобы набрать скорость потока. Вы уступаете транспорту на магистрали и встраиваетесь в свободный промежуток."
   },
   {
@@ -174,23 +174,23 @@
       "Den største bilen kjører først",
       "De som blinker, kjører først"
     ],
-    "f": "Glidelåsprinsippet gir jevn trafikk: kjør fram til der feltene møtes, og flett inn én og én annenhver gang.",
-    "ru": "Принцип «молнии»: доезжайте до места сужения и встраивайтесь поочерёдно — по одной машине из каждой полосы."
+    "f": "Når antallet kjørefelt blir mindre, skal alle tilpasse farten, slik at bilene kan kjøre vekselvis. Kjør fram til der feltene møtes, og flett inn én og én.",
+    "ru": "Когда полос становится меньше, все подстраивают скорость, чтобы машины проезжали поочерёдно. Доезжайте до места сужения и встраивайтесь по одной машине."
   },
   {
     "id": "pla-14",
     "cat": "plassering",
-    "q": "Du kjører en vanlig personbil uten passasjerer. Det er kø, men kollektivfeltet er nesten tomt. Kan du bruke kollektivfeltet?",
+    "q": "Du kjører en bensinbil uten passasjerer. Det er kø, men kollektivfeltet er nesten tomt. Kan du bruke kollektivfeltet?",
     "img": {
       "sign": "kollektivfelt"
     },
     "a": [
-      "Nei, kollektivfeltet er for buss, drosje og andre som er særskilt tillatt",
+      "Nei, kollektivfeltet er for buss, drosje og andre som skiltet tillater",
       "Ja, når det er kø",
       "Ja, hvis du kjører under 30 km/t"
     ],
-    "f": "Kollektivfeltet er forbeholdt kollektivtrafikk og kjøretøy som er særskilt tillatt. Vanlige biler må ikke bruke det for å komme forbi køen.",
-    "ru": "Полоса для общественного транспорта предназначена для автобусов, такси и тех, кому это специально разрешено. Обычной машине нельзя объезжать по ней пробку."
+    "f": "Kollektivfeltet er for kollektivtrafikk og kjøretøy som skiltet tillater. En bensinbil må ikke bruke det for å komme forbi køen.",
+    "ru": "Полоса для общественного транспорта предназначена для автобусов, такси и тех, кому это разрешают знаки. Бензиновой машине нельзя объезжать по ней пробку."
   },
   {
     "id": "pla-15",
@@ -241,12 +241,12 @@
       "sign": "envegskjoring"
     },
     "a": [
-      "Så langt til venstre som det er hensiktsmessig",
+      "Så nær venstre kant som mulig",
       "Nær midten av gaten",
       "Så langt til høyre som mulig"
     ],
-    "f": "I gate med envegskjøring er det ingen møtende trafikk. Skal du svinge til venstre, plasserer du deg så langt til venstre som det er hensiktsmessig.",
-    "ru": "На улице с односторонним движением встречных нет. Перед левым поворотом займите крайнее левое положение (насколько целесообразно)."
+    "f": "I gate med envegskjøring er det ingen møtende trafikk. Skal du svinge til venstre, plasserer du deg så nær venstre kant som mulig.",
+    "ru": "На улице с односторонним движением встречных нет. Перед левым поворотом держитесь как можно ближе к левому краю."
   },
   {
     "id": "pla-19",

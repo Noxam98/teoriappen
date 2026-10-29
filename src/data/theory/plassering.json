@@ -9,30 +9,30 @@
 
     { "h": "Plassering før du svinger", "ru": "Положение перед поворотом" },
     { "list": [
-      ["Til høyre: hold så langt til høyre som det er hensiktsmessig, og sving i en kort bue.", "Направо: держитесь правее, насколько это целесообразно, и поворачивайте по короткой дуге."],
+      ["Til høyre: hold deg så nær høyre kant av kjørebanen som mulig, og sving i en kort bue.", "Направо: держитесь как можно ближе к правому краю проезжей части и поворачивайте по короткой дуге."],
       ["Til venstre på vei med toveistrafikk: plasser deg nær midten av veien, i ditt eget felt. Da kan trafikken bak deg passere på høyre side.", "Налево на дороге с двусторонним движением: займите место ближе к середине дороги, в своей полосе. Тогда те, кто сзади, смогут объехать вас справа."],
-      ["Til venstre i gate med envegskjøring: plasser deg så langt til venstre som det er hensiktsmessig.", "Налево на улице с односторонним движением: держитесь левее, насколько это целесообразно."],
+      ["Til venstre i gate med envegskjøring: plasser deg så nær venstre kant som mulig.", "Налево на улице с односторонним движением: держитесь как можно ближе к левому краю."],
       ["Velg riktig felt og blink i god tid før krysset, slik at andre forstår hva du skal gjøre.", "Заранее, до перекрёстка, займите нужную полосу и включите поворотник, чтобы другие поняли ваш манёвр."]
     ] },
     { "fig": { "sign": "envegskjoring" }, "no": "Envegskjøring: all trafikk kjører i samme retning. Før venstresving holder du deg til venstre.", "ru": "Одностороннее движение: весь транспорт едет в одну сторону. Перед левым поворотом держитесь левее." },
-    { "trap": "I gate med envegskjøring er det ingen møtende trafikk. Før venstresving legger du deg derfor ikke nær midten, men så langt til venstre som det er hensiktsmessig.", "ru": "На улице с односторонним движением встречных нет. Поэтому перед левым поворотом занимайте не середину, а положение левее, насколько это целесообразно." },
+    { "trap": "I gate med envegskjøring er det ingen møtende trafikk. Før venstresving legger du deg derfor ikke nær midten, men så nær venstre kant som mulig.", "ru": "На улице с односторонним движением встречных нет. Поэтому перед левым поворотом занимайте не середину, а положение как можно ближе к левому краю." },
 
     { "h": "Skifte felt", "ru": "Перестроение" },
     { "p": "Se i speilet, blink i god tid og se over skulderen før du skifter felt. Over skulderen ser du blindsonen. Der kan det være en bil, en motorsykkel eller en syklist som du ikke ser i speilene.", "ru": "Посмотрите в зеркало, заранее включите поворотник и посмотрите через плечо, прежде чем перестраиваться. Так вы проверите «слепую зону»: там может быть машина, мотоцикл или велосипедист, которых не видно в зеркалах." },
     { "rule": "Når du skifter felt, har du vikeplikt for trafikken i feltet du skal over i. Blinklyset gir deg ingen rett – det viser bare hva du vil gjøre.", "ru": "При перестроении вы уступаете транспорту в полосе, куда переходите. Поворотник не даёт вам никаких прав — он лишь показывает ваше намерение." },
-    { "p": "Når to felt blir til ett og trafikken går sakte, gjelder glidelåsprinsippet. Kjør fram til der feltene møtes, og flett inn én bil fra hvert felt annenhver gang.", "ru": "Когда две полосы сливаются в одну и движение медленное, действует принцип «молнии». Доезжайте до места сужения и встраивайтесь поочерёдно — по одной машине из каждой полосы." },
+    { "p": "Når to vanlige kjørefelt i samme retning blir til ett, har ingen vikeplikt. Alle skal tilpasse farten, slik at bilene kan kjøre vekselvis, én fra hvert felt (glidelåsprinsippet). I kø bør du kjøre helt fram til der feltene møtes.", "ru": "Когда две обычные полосы одного направления сливаются в одну, никто не обязан уступать. Все подстраивают скорость, чтобы машины проезжали поочерёдно, по одной из каждой полосы (принцип «молнии»). В пробке лучше доехать до самого места сужения." },
 
     { "h": "Rundkjøring", "ru": "Круговое движение" },
     { "list": [
       ["Skal du ta første avkjøring eller kjøre rett fram, velger du høyre felt.", "На первый съезд или прямо — выбирайте правую полосу."],
       ["Skal du mer enn halvveis rundt, velger du venstre felt, hvis ikke oppmerkingen viser noe annet.", "Если вам дальше половины круга — левую полосу, если разметка не показывает иное."],
-      ["Blink til høyre like før du kjører ut, når du har passert avkjøringen før den du skal ta.", "Правый поворотник включайте прямо перед съездом — когда проехали съезд перед вашим."],
-      ["Ligger du i venstre felt og skal ut, må du først over i høyre felt. Da har du vikeplikt for trafikken der.", "Если вы в левой полосе и хотите съехать, сначала перестройтесь в правую — и уступите тем, кто в ней едет."]
+      ["Skal du ta første avkjøring, blinker du til høyre før du kjører inn. Ellers blinker du til høyre når du har passert avkjøringen før den du skal ta.", "На первый съезд — включите правый поворотник ещё до въезда на круг. В остальных случаях — когда проехали съезд перед вашим."],
+      ["Skifter du felt i rundkjøringen, for eksempel fra venstre til høyre felt før du kjører ut, har du vikeplikt for trafikken i feltet du skal over i.", "Если вы перестраиваетесь на круге, например из левой полосы в правую перед съездом, уступите тем, кто едет в полосе, куда вы переходите."]
     ] },
     { "trap": "Ikke blink til høyre allerede når du kjører inn i rundkjøringen, hvis du skal lenger rundt. Da tror andre at du skal ut i første avkjøring.", "ru": "Не включайте правый поворотник уже при въезде на круг, если вам дальше: другие решат, что вы съезжаете на первом съезде." },
 
     { "h": "Motorvei og tunnel", "ru": "Автомагистраль и тоннель" },
-    { "p": "I akselerasjonsfeltet øker du farten til omtrent samme fart som trafikken på motorveien. Du har vikeplikt, og du fletter inn når det er en ledig luke. Unngå å stanse i enden av feltet.", "ru": "На полосе разгона наберите примерно ту же скорость, что у потока на магистрали. Вы уступаете дорогу и встраиваетесь в свободный промежуток. Старайтесь не останавливаться в конце полосы разгона." },
+    { "p": "I akselerasjonsfeltet øker du farten til omtrent samme fart som trafikken på motorveien. Du har vikeplikt, og du kjører inn når det er en ledig luke. Unngå å stanse i enden av feltet.", "ru": "На полосе разгона наберите примерно ту же скорость, что у потока на магистрали. Вы уступаете дорогу и встраиваетесь в свободный промежуток. Старайтесь не останавливаться в конце полосы разгона." },
     { "p": "Når du skal av motorveien, blinker du i god tid og kjører inn i retardasjonsfeltet. Senk farten der, ikke på selve motorveien.", "ru": "Чтобы съехать с магистрали, заранее включите поворотник и перейдите на полосу торможения. Снижайте скорость на ней, а не на самой магистрали." },
     { "list": [
       ["På motorvei og motortrafikkvei er det forbudt å vende og å rygge.", "На автомагистрали и на дороге для автомобилей запрещено разворачиваться и ехать задним ходом."],
@@ -40,9 +40,17 @@
     ] },
 
     { "h": "Kollektivfelt, sykkelfelt og rygging", "ru": "Полоса для общественного транспорта, велополоса и задний ход" },
-    { "fig": { "road": "kollektivfelt" }, "no": "Kollektivfeltet til høyre for deg er for buss, drosje og andre som er særskilt tillatt. Med vanlig personbil kan du ikke kjøre der, heller ikke når det er kø.", "ru": "Полоса справа от вас — для автобусов, такси и тех, кому это специально разрешено. Обычной легковой машине туда нельзя, даже в пробку." },
+    { "fig": { "road": "kollektivfelt" }, "no": "Kollektivfeltet til høyre for deg er for buss, drosje og andre som skiltet tillater. Med en bensinbil eller dieselbil kan du ikke bruke feltet for å komme forbi køen.", "ru": "Полоса справа от вас — для автобусов, такси и тех, кому это разрешают знаки. На бензиновой или дизельной машине по ней нельзя объезжать пробку." },
     { "fig": { "road": "sykkelfelt" }, "no": "Sykkelfelt til høyre for deg. Svinger du til høyre, krysser du feltet og har vikeplikt for syklister som skal rett fram.", "ru": "Справа от вас велополоса. Поворачивая направо, вы её пересекаете и уступаете велосипедистам, которые едут прямо." },
     { "p": "Se i speilet og over skulderen før du svinger over sykkelfeltet. Du må ikke kjøre inn i sykkelfeltet og stanse der.", "ru": "Перед тем как пересечь велополосу, посмотрите в зеркало и через плечо. Заезжать на велополосу и останавливаться на ней нельзя." },
     { "p": "Når du rygger, har du ansvaret for at det skjer uten fare. Forsikre deg om at det ikke er noen bak bilen, og rygg sakte og bare et kort stykke. Har bilen ryggekamera, må du likevel se deg om.", "ru": "Когда вы едете задним ходом, вы отвечаете за безопасность. Убедитесь, что за машиной никого нет, двигайтесь медленно и только на короткое расстояние. Даже если есть камера заднего вида, всё равно оглянитесь." }
-  ]
+  ],
+  "sources": [
+    ["Trafikkreglene § 5 – kjøretøyets plass på veien (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A75"],
+    ["Trafikkreglene § 6 – svinging (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747"],
+    ["Trafikkreglene § 7 – vikeplikt ved svinging (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A77"],
+    ["Trafikkreglene § 8 – kjørefeltskifte og fletting (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A78"],
+    ["Kjøring i rundkjøring (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/traffic-safety/norwegian-traffic-rules/driving-in-roundabouts/"]
+  ],
+  "checked": "2026-10"
 }

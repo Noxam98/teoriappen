@@ -30,28 +30,28 @@
   {
     "id": "fob-03",
     "cat": "forbikjoring",
-    "q": "Er det lov å kjøre forbi et annet kjøretøy like før eller i et gangfelt uten lysregulering?",
+    "q": "Du nærmer deg et gangfelt. Bilen foran deg hindrer sikten til gangfeltet. Er det lov å kjøre forbi bilen?",
     "img": null,
     "a": [
-      "Nei, det er forbudt",
-      "Ja, hvis det ikke er gående i nærheten",
+      "Nei, du må ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet",
+      "Ja, hvis du ikke ser noen gående",
       "Ja, men bare i tettbygd strøk"
     ],
-    "f": "Forbikjøring er forbudt like før og i gangfelt. Bilen du kjører forbi, kan skjule en gående.",
-    "ru": "Обгон запрещён непосредственно перед пешеходным переходом и на нём: обгоняемая машина может закрывать пешехода."
+    "f": "Når du nærmer deg et gangfelt, må du ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet. Bilen du vil kjøre forbi, kan skjule en gående.",
+    "ru": "Подъезжая к пешеходному переходу, нельзя обгонять транспорт, который закрывает обзор перехода: обгоняемая машина может закрывать пешехода."
   },
   {
     "id": "fob-04",
     "cat": "forbikjoring",
-    "q": "Du kjører på en vei med to felt i din retning. Bilen i feltet ved siden av deg har stanset foran et gangfelt. Hva bør du gjøre?",
+    "q": "Du kjører på en vei med to felt i din retning. Bilen i feltet ved siden av deg har stanset foran et gangfelt. Hva skal du gjøre?",
     "img": null,
     "a": [
       "Stanse, fordi det kan være en gående i gangfeltet som du ikke ser",
       "Kjøre forbi forsiktig, siden ditt felt er ledig",
       "Tute for å varsle den gående og kjøre videre"
     ],
-    "f": "Når et kjøretøy har stanset foran et gangfelt, er det ofte for å slippe en gående over. Den gående kan være skjult, så du må stanse.",
-    "ru": "Если соседняя машина остановилась перед переходом, скорее всего, она пропускает пешехода, которого вам может быть не видно. Нужно остановиться."
+    "f": "Du må ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet. Når et kjøretøy har stanset foran et gangfelt, er det ofte for å slippe en gående over. Den gående kan være skjult, så du må stanse.",
+    "ru": "Нельзя проезжать мимо транспорта, который закрывает обзор перехода. Если соседняя машина остановилась перед переходом, скорее всего, она пропускает пешехода, которого вам может быть не видно. Нужно остановиться."
   },
   {
     "id": "fob-05",
@@ -69,17 +69,17 @@
   {
     "id": "fob-06",
     "cat": "forbikjoring",
-    "q": "Du ser dette skiltet og nærmer deg en jernbaneovergang uten bommer. Kan du kjøre forbi bilen foran like før overgangen?",
+    "q": "Du ser dette skiltet og nærmer deg en jernbaneovergang uten bommer. Bilen foran kjører sakte. Hva bør du gjøre?",
     "img": {
       "sign": "fare_jernbane"
     },
     "a": [
-      "Nei, det er forbudt",
-      "Ja, hvis det ikke kommer tog",
-      "Ja, hvis bilen foran kjører sakte"
+      "Vente med å kjøre forbi til du er over sporet, og følge godt med på om det kommer tog",
+      "Kjøre forbi før overgangen, så du kommer raskt over sporet",
+      "Holde vanlig fart, fordi toget må vike for deg"
     ],
-    "f": "Like før og på en jernbaneovergang er forbikjøring forbudt. Du må ha full oversikt og kunne stanse for tog.",
-    "ru": "Обгон запрещён непосредственно перед железнодорожным переездом и на нём: нужно хорошо видеть ситуацию и быть готовым остановиться перед поездом."
+    "f": "Ved en jernbaneovergang må du følge med på om det kommer tog. Vent med å kjøre forbi til du er over sporet, så du har full oversikt og kan stanse for tog.",
+    "ru": "У железнодорожного переезда нужно следить, не идёт ли поезд. Подождите с обгоном, пока не проедете пути: так вы хорошо видите ситуацию и можете остановиться перед поездом."
   },
   {
     "id": "fob-07",
@@ -92,8 +92,8 @@
       "Når det er god plass på veiskulderen",
       "Aldri"
     ],
-    "f": "Som hovedregel skal du kjøre forbi på venstre side. På høyre side kan du kjøre forbi et kjøretøy som skal svinge til venstre, og på vei med flere felt i samme retning.",
-    "ru": "Обычно обгоняют слева. Справа можно обогнать транспорт, который поворачивает налево, а также на дорогах с несколькими полосами в одном направлении."
+    "f": "Som hovedregel skal du kjøre forbi på venstre side. Et kjøretøy som har gitt tegn og plassert seg for å svinge til venstre, skal du kjøre forbi på høyre side. På vei med flere felt i samme retning er det også lov når det er kø i alle feltene.",
+    "ru": "Обычно обгоняют слева. Транспорт, который показал сигнал и занял положение для левого поворота, нужно обгонять справа. На дороге с несколькими полосами в одном направлении справа можно проехать и тогда, когда во всех полосах очередь."
   },
   {
     "id": "fob-08",
@@ -188,7 +188,7 @@
       "Stanse midt i veien og vente"
     ],
     "f": "Møteplasser er laget for at biler skal kunne passere hverandre på smal vei. Den som er nærmest møteplassen, bør bruke den.",
-    "ru": "Разъездные карманы (møteplass) сделаны для разъезда на узкой дороге. Пользуется им тот, кто к нему ближе."
+    "ru": "Разъездные карманы (møteplass) сделаны для разъезда на узкой дороге. Воспользоваться им следует тому, кто к нему ближе."
   },
   {
     "id": "fob-15",
@@ -229,6 +229,6 @@
       "Stanse og blinke med lysene til lastebilen viker"
     ],
     "f": "Et tungt kjøretøy i oppoverbakke kan ha vanskelig for å komme i gang igjen. Den som kjører nedover, bør derfor vike når det er mulig.",
-    "ru": "Тяжёлой машине трудно снова тронуться в гору. Поэтому тот, кто едет вниз, как правило, должен уступить, если это возможно."
+    "ru": "Тяжёлой машине трудно снова тронуться в гору. Поэтому тому, кто едет вниз, следует уступить, если это возможно."
   }
 ]

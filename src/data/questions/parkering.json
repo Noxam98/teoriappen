@@ -45,17 +45,17 @@
   {
     "id": "par-05",
     "cat": "parkering",
-    "q": "Du kjører på en vei med dette skiltet, utenfor tettbygd strøk. Kan du parkere i veikanten?",
+    "q": "Du kjører på en vei med dette skiltet. Fartsgrensen er 80 km/t. Kan du parkere på kjørebanen?",
     "img": {
       "sign": "forkjorsveg"
     },
     "a": [
-      "Nei, parkering er forbudt på forkjørsvei utenfor tettbygd strøk",
+      "Nei, på forkjørsvei med fartsgrense over 50 km/t er det forbudt å parkere på kjørebanen",
       "Ja, hvis du slår på nødsignal",
       "Ja, men bare om natten"
     ],
-    "f": "På forkjørsvei utenfor tettbygd strøk er det forbudt å parkere. Trafikken går fort, og parkerte biler er farlige.",
-    "ru": "На главной дороге (forkjørsvei) вне населённых пунктов стоянка запрещена: там высокая скорость, и стоящие машины опасны."
+    "f": "På forkjørsvei med fartsgrense over 50 km/t er det forbudt å parkere på kjørebanen. Trafikken går fort, og parkerte biler er farlige.",
+    "ru": "На главной дороге (forkjørsvei) с ограничением скорости выше 50 км/ч стоянка на проезжей части запрещена: там высокая скорость, и стоящие машины опасны."
   },
   {
     "id": "par-06",
@@ -73,15 +73,15 @@
   {
     "id": "par-08",
     "cat": "parkering",
-    "q": "Du skal parkere i en gate med toveistrafikk. På hvilken side av gaten skal du parkere?",
+    "q": "Du er i en gate med toveistrafikk. Det er ledig plass på venstre side, mot kjøreretningen. Er det lov å parkere der?",
     "img": null,
     "a": [
-      "På høyre side i kjøreretningen",
-      "På den siden der det er ledig plass, uansett kjøreretning",
-      "På venstre side i kjøreretningen"
+      "Ja, hvis ikke skilt, oppmerking eller andre regler forbyr parkering der",
+      "Nei, i gate med toveistrafikk må du alltid parkere på høyre side",
+      "Ja, men bare hvis du slår på nødsignalet"
     ],
-    "f": "Du skal parkere på høyre side av veien i kjøreretningen. I gater med envegskjøring kan du parkere på begge sider.",
-    "ru": "Ставить машину нужно у правого края по направлению движения. На улицах с односторонним движением — можно с обеих сторон."
+    "f": "Det er lov å parkere mot kjøreretningen. Men skiltene for parkering gjelder som regel i kjøreretningen, så det kan være vanskeligere å se hvilket skilt som gjelder der du står.",
+    "ru": "Ставить машину против направления движения разрешено. Но знаки стоянки, как правило, действуют по направлению движения, поэтому труднее понять, какой знак относится к месту, где вы стоите."
   },
   {
     "id": "par-09",

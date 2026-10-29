@@ -8,9 +8,10 @@
     { "nums": [
       ["50 km/t", "generell fartsgrense i tettbygd strøk", "общее ограничение в населённом пункте"],
       ["80 km/t", "generell fartsgrense utenfor tettbygd strøk", "общее ограничение вне населённых пунктов"],
-      ["80 km/t", "høyeste fart med tilhenger", "наибольшая скорость с прицепом"],
-      ["100 km/t", "med tilhenger som er godkjent for Tempo 100, der fartsgrensen er 100 km/t eller høyere", "с прицепом, одобренным по Tempo 100, где ограничение 100 км/ч или выше"]
+      ["80 km/t", "høyeste fart med tilhenger, også uten bremser", "наибольшая скорость с прицепом, в том числе без тормозов"],
+      ["100 km/t", "med tilhenger godkjent for Tempo 100 og en bil som oppfyller kravene, der fartsgrensen er 100 km/t eller høyere", "с прицепом, одобренным по Tempo 100, и машиной, которая отвечает требованиям, — где ограничение 100 км/ч или выше"]
     ] },
+    { "p": "Tempo 100: Tilhengeren må være godkjent av Statens vegvesen og ha Tempo 100-merket bak. Bilen må ha ABS og en tillatt totalvekt på høyst 3500 kg, og den må ikke være for lett i forhold til tilhengeren. Mangler ett av kravene, er grensen 80 km/t. Fra 2022 gjelder 80 km/t også for tilhenger uten bremser.", "ru": "Tempo 100: прицеп должен быть одобрен Дорожным управлением (Statens vegvesen) и иметь сзади наклейку Tempo 100. У машины должна быть ABS и разрешённая полная масса не больше 3500 кг, и она не должна быть слишком лёгкой по сравнению с прицепом. Если не выполнено хотя бы одно условие, максимум — 80 км/ч. С 2022 года 80 км/ч разрешено и с прицепом без тормозов." },
     { "signs": [
       ["fart_60", "Fartsgrense: her kan du kjøre høyst 60 km/t", "Ограничение скорости: здесь не быстрее 60 км/ч"],
       ["slutt_fart_60", "Slutt på særskilt fartsgrense: nå gjelder den generelle fartsgrensen", "Конец особого ограничения: снова действует общее ограничение"],
@@ -42,8 +43,8 @@
     { "trap": "Mange tror at bremselengden blir dobbelt så lang når du kjører dobbelt så fort. Øker du farten fra 40 til 80 km/t, blir den omtrent fire ganger så lang.", "ru": "Многие думают, что при скорости вдвое выше тормозной путь тоже вдвое длиннее. Если разогнаться с 40 до 80 км/ч, он станет примерно в четыре раза длиннее." },
 
     { "h": "Avstand til bilen foran", "ru": "Дистанция до машины впереди" },
-    { "p": "Bruk tresekundersregelen. Velg et fast punkt, for eksempel et skilt. Når bilen foran passerer punktet, skal det gå minst 3 sekunder før du passerer det samme punktet.", "ru": "Пользуйтесь правилом трёх секунд. Выберите неподвижный ориентир, например знак. Когда машина впереди его проехала, до вашего проезда мимо него должно пройти не меньше 3 секунд." },
-    { "p": "Tre sekunder gjelder på tørr vei med god sikt. På våt og glatt vei blir bremselengden mye lengre, så da trenger du større avstand.", "ru": "Три секунды — это для сухой дороги и хорошей видимости. На мокрой и скользкой дороге тормозной путь намного длиннее, поэтому дистанция нужна больше." },
+    { "p": "Bruk tresekundersregelen. Velg et fast punkt, for eksempel et skilt. Når bilen foran passerer punktet, bør det gå minst 3 sekunder før du passerer det samme punktet.", "ru": "Пользуйтесь правилом трёх секунд. Выберите неподвижный ориентир, например знак. Когда машина впереди его проехала, желательно, чтобы до вашего проезда мимо него прошло не меньше 3 секунд." },
+    { "p": "Tre sekunder er et minimum på tørr vei med god sikt. På våt og glatt vei blir bremselengden mye lengre, så da trenger du større avstand.", "ru": "Три секунды — это минимум для сухой дороги и хорошей видимости. На мокрой и скользкой дороге тормозной путь намного длиннее, поэтому дистанция нужна больше." },
 
     { "h": "Vannplaning", "ru": "Аквапланирование" },
     { "p": "Ved vannplaning flyter dekkene på et lag med vann og mister kontakten med veien. Da kan du verken styre eller bremse. Faren øker med høy fart, slitte dekk og mye vann på veien.", "ru": "При аквапланировании шины «плывут» по слою воды и теряют контакт с дорогой. Тогда машина не слушается ни руля, ни тормозов. Риск растёт при большой скорости, изношенных шинах и большом количестве воды на дороге." },
@@ -52,5 +53,14 @@
       ["Hold rattet rett.", "Держите руль прямо."],
       ["Ikke brems hardt og ikke vri brått på rattet før dekkene har fått grep igjen.", "Не тормозите резко и не дёргайте руль, пока шины снова не сцепятся с дорогой."]
     ] }
-  ]
+  ],
+  "sources": [
+    ["Vegtrafikkloven § 6 – fartsgrenser og tilpasset fart (Lovdata)", "https://lovdata.no/lov/1965-06-18-4/kapii"],
+    ["Trafikkreglene § 13 – kjørefarten, tilhenger og gangfart (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A713"],
+    ["Tempo 100 – godkjenning av tilhenger (Statens vegvesen)", "https://www.vegvesen.no/nn/koyretoy/eige-og-vedlikehalde/tilhengjar/tempo100/"],
+    ["Nye fartsgrenser for tilhengere, 2022 (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/2022/03/nye-fartsgrenser-for-tilhengere/"],
+    ["Fart og kroppens tåleevne – reaksjons- og bremselengde (Trygg Trafikk)", "https://www.tryggtrafikk.no/kunnskap-om-trafikksikkerhet/fart-og-fartsgrenser/fart-og-kroppens-taleevne/"],
+    ["Kjør pent i påsken – minst 3 sekunders avstand (Trygg Trafikk)", "https://www.tryggtrafikk.no/artikler/pressemelding/kjor-pent-i-pasken/"]
+  ],
+  "checked": "2026-10"
 }

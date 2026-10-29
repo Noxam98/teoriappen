@@ -4,7 +4,7 @@
   "leadRu": "Разметка — это линии, стрелки и другие знаки на проезжей части. Она показывает, где ехать и какие линии пересекать нельзя.",
   "blocks": [
     { "h": "Gule og hvite linjer", "ru": "Жёлтые и белые линии" },
-    { "p": "Gule linjer skiller trafikk som kjører i motsatte retninger. Hvite linjer skiller kjørefelt med samme kjøreretning og viser kanten av kjørebanen.", "ru": "Жёлтые линии разделяют потоки, которые едут навстречу друг другу. Белые разделяют полосы одного направления и показывают край проезжей части." },
+    { "p": "Gule linjer skiller trafikk som kjører i motsatte retninger. Hvite linjer skiller kjørefelt med samme kjøreretning og viser som regel kanten av kjørebanen.", "ru": "Жёлтые линии разделяют потоки, которые едут навстречу друг другу. Белые разделяют полосы одного направления и обычно показывают край проезжей части." },
 
     { "h": "Linjer midt i veien", "ru": "Линии посередине дороги" },
     { "p": "Jo mer maling det er i linjen, jo farligere er det å kjøre over den.", "ru": "Чем больше краски в линии, тем опаснее её пересекать." },
@@ -26,9 +26,9 @@
     { "h": "Felt, sperreflate og gangfelt", "ru": "Особые полосы, островки и переходы" },
     { "fig": { "road": "sykkelfelt" }, "no": "Sykkelfelt: et eget felt for syklende ved kanten av kjørebanen.", "ru": "Велосипедная полоса: отдельная полоса для велосипедистов у края проезжей части." },
     { "list": [
-      ["Du må ikke stanse eller parkere i sykkelfeltet – heller ikke for å slippe av en passasjer.", "На велополосе нельзя останавливаться и парковаться — даже чтобы высадить пассажира."],
+      ["Du må ikke stanse eller parkere i sykkelfeltet eller i kollektivfeltet – heller ikke for å slippe av en passasjer.", "На велополосе и на полосе для общественного транспорта нельзя останавливаться и парковаться — даже чтобы высадить пассажира."],
       ["Svinger du til høyre over sykkelfeltet, har du vikeplikt for syklende som skal rett fram. Se i speilet og over skulderen før du svinger.", "Поворачивая направо через велополосу, вы уступаете велосипедистам, которые едут прямо. Перед поворотом посмотрите в зеркало и через плечо."],
-      ["Kollektivfelt er for buss og drosje. Med vanlig personbil kan du ikke kjøre der hvis ikke skilt tillater det – heller ikke når det er kø.", "Полоса для общественного транспорта — для автобусов и такси. Обычной легковой машине туда нельзя, если знак этого не разрешает, — даже в пробке."],
+      ["Kollektivfelt er først og fremst for buss. Med vanlig personbil kan du ikke kjøre der hvis ikke skilt tillater det – heller ikke når det er kø. For elbil kan det gjelde egne regler – se på skiltene.", "Полоса для общественного транспорта — прежде всего для автобусов. Обычной легковой машине туда нельзя, если знак этого не разрешает, — даже в пробке. Для электромобилей могут действовать особые правила — смотрите на знаки."],
       ["Piler i feltet viser hvilken retning feltet er for. En pil til venstre betyr at feltet er for dem som skal svinge til venstre. Velg feltet i god tid før krysset.", "Стрелки на полосе показывают, для какого направления она предназначена. Стрелка налево — полоса для тех, кто поворачивает налево. Выбирайте полосу заранее, до перекрёстка."]
     ] },
     { "fig": { "road": "sperreflate" }, "no": "Sperreflate: et område med skrå streker mellom feltene. Du skal ikke kjøre eller stanse på den.", "ru": "Островок из разметки: участок с косыми полосами между полосами движения. По нему нельзя ехать и на нём нельзя останавливаться." },

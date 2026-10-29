@@ -156,8 +156,8 @@
       "Motorsykler",
       "Varebiler"
     ],
-    "f": "Forbudt for motorvogn gjelder alle kjøretøy med motor, som bil og motorsykkel. Syklende kan bruke veien.",
-    "ru": "Знак «Движение механических ТС запрещено»: нельзя всем транспортным средствам с мотором (авто, мотоциклы). Велосипедисты могут ехать."
+    "f": "Forbudt for motorvogn gjelder kjøretøy med motor, som bil, motorsykkel og moped. Syklende kan bruke veien.",
+    "ru": "Знак «Движение механических ТС запрещено»: нельзя транспортным средствам с мотором (автомобили, мотоциклы, мопеды). Велосипедисты могут ехать."
   },
   {
     "id": "sk-11",
@@ -267,7 +267,7 @@
   {
     "id": "sk-17",
     "cat": "skilt",
-    "q": "Du kjører personbil med tilhenger. Tilhengeren er ikke godkjent for 100 km/t. Hvor fort kan du høyst kjøre etter dette skiltet?",
+    "q": "Du kjører personbil med tilhenger. Tilhengeren har bremser, men er ikke godkjent for 100 km/t. Hvor fort kan du høyst kjøre etter dette skiltet?",
     "img": {
       "sign": "fart_100"
     },
@@ -467,13 +467,13 @@
       "sign": "sykkelveg"
     },
     "a": [
-      "Påbudsskilt",
       "Opplysningsskilt",
+      "Påbudsskilt",
       "Forbudsskilt",
       "Fareskilt"
     ],
-    "f": "Påbudsskilt er runde og blå med hvitt symbol. Dette skiltet viser sykkelvei.",
-    "ru": "Предписывающие знаки (påbudsskilt) — круглые синие с белым символом. Этот знак обозначает велосипедную дорожку."
+    "f": "Skiltet viser sykkelvei. Det er rundt og blått som et påbudsskilt, men i Norge er det et opplysningsskilt. Det samme gjelder gangvei og gang- og sykkelvei.",
+    "ru": "Знак обозначает велосипедную дорожку. Он круглый и синий, как предписывающий, но в Норвегии это информационный знак (opplysningsskilt). То же касается пешеходной и пешеходно-велосипедной дорожки."
   },
   {
     "id": "sk-30",
@@ -721,8 +721,8 @@
       "Begge varsler om trikk",
       "Skiltet til venstre gjelder bare om natten"
     ],
-    "f": "Skiltet med en bom varsler om jernbaneovergang med bom. Skiltet med et lokomotiv varsler om jernbaneovergang uten bom. Der må du se og lytte godt etter tog.",
-    "ru": "Знак со шлагбаумом — переезд со шлагбаумом. Знак с паровозом — переезд без шлагбаума: там нужно особенно внимательно смотреть и слушать, нет ли поезда."
+    "f": "Skiltet med et gjerde varsler om jernbaneovergang med bom. Skiltet med et lokomotiv varsler om jernbaneovergang uten bom. Der må du se og lytte godt etter tog.",
+    "ru": "Знак с изображением забора — переезд со шлагбаумом. Знак с паровозом — переезд без шлагбаума: там нужно особенно внимательно смотреть и слушать, нет ли поезда."
   },
   {
     "id": "sk-45",
@@ -748,13 +748,13 @@
       "sign": "fare_kryss"
     },
     "a": [
-      "Et veikryss",
+      "Et farlig veikryss der høyreregelen gjelder",
       "Et sykehus",
       "En jernbaneovergang",
       "En kirke"
     ],
-    "f": "Skiltet varsler om et veikryss lenger fram. Følg med på trafikk fra sideveiene og på hvem som har vikeplikt.",
-    "ru": "Знак «Пересечение дорог»: впереди перекрёсток. Следите за транспортом с боковых дорог и за правилами очерёдности."
+    "f": "Skiltet varsler om et farlig veikryss lenger fram. Der gjelder høyreregelen: du har vikeplikt for trafikk fra høyre. Følg godt med på trafikk fra sideveiene.",
+    "ru": "Знак «Опасный перекрёсток»: впереди перекрёсток, где действует правило правой руки — вы уступаете тем, кто едет справа. Внимательно следите за транспортом с боковых дорог."
   },
   {
     "id": "sk-47",
@@ -852,8 +852,8 @@
       "Gatetun der biler kan kjøre i gangfart",
       "Holdeplass for skolebuss"
     ],
-    "f": "Gang- og sykkelvei er for gående og syklende. Motorvogner kan ikke kjøre der, med mindre et underskilt tillater det.",
-    "ru": "«Пешеходно-велосипедная дорожка»: для пешеходов и велосипедистов. Машинам нельзя, если табличка не разрешает."
+    "f": "Gang- og sykkelvei er for gående og syklende. Skiltet er et opplysningsskilt. Med bil kan du ikke kjøre der, med mindre et underskilt tillater det.",
+    "ru": "«Пешеходно-велосипедная дорожка»: для пешеходов и велосипедистов. Это информационный знак. На машине туда нельзя, если табличка не разрешает."
   },
   {
     "id": "sk-53",
@@ -919,8 +919,8 @@
       "Lastebiler",
       "Busser"
     ],
-    "f": "Motortrafikkvei er bare for motorvogner. Gående, syklende og mopeder kan ikke bruke veien.",
-    "ru": "Дорога для автомобилей (motortrafikkvei) — только для механических ТС. Пешеходам, велосипедистам и мопедам нельзя."
+    "f": "Motortrafikkvei er bare for motorvogner som lovlig kan kjøre minst 40 km/t. Gående, syklende og mopeder kan ikke bruke veien.",
+    "ru": "Дорога для автомобилей (motortrafikkvei) — только для механических ТС, которые по закону могут ехать не медленнее 40 км/ч. Пешеходам, велосипедистам и мопедам нельзя."
   },
   {
     "id": "sk-57",
@@ -1026,13 +1026,13 @@
       "sign": "kollektivfelt"
     },
     "a": [
-      "Kjørefeltet er for kollektivtrafikk, som buss og drosje",
+      "Kjørefeltet er først og fremst for buss",
       "Feltet er for alle biler med passasjerer",
-      "Feltet er for syklende",
+      "Feltet er bare for syklende",
       "Feltet er bare for lastebiler"
     ],
-    "f": "Kollektivfelt er først og fremst for buss og drosje. Vanlige personbiler kan ikke bruke feltet hvis ikke skilt tillater det.",
-    "ru": "Полоса для общественного транспорта (автобусы и такси). Обычные легковые машины не могут ехать по ней, если знак этого не разрешает."
+    "f": "Kollektivfelt er først og fremst for buss. Drosje kan bruke feltet når skiltet viser det. Motorsykkel, moped og sykkel kan også kjøre der. Vanlige personbiler kan ikke bruke feltet hvis ikke skilt tillater det. For elbil kan det gjelde egne regler – se på skiltene.",
+    "ru": "Полоса для общественного транспорта — прежде всего для автобусов. Такси — если это указано на знаке. Мотоциклам, мопедам и велосипедам тоже можно. Обычным легковым машинам нельзя, если знак этого не разрешает. Для электромобилей могут действовать особые правила — смотрите на знаки."
   },
   {
     "id": "sk-64",
@@ -1042,12 +1042,12 @@
       "sign": "tunnel"
     },
     "a": [
-      "Å snu og å rygge",
+      "Å stanse",
       "Å kjøre med nærlys",
       "Å holde god avstand til bilen foran",
       "Å kjøre i fartsgrensen"
     ],
-    "f": "I tunnel er det forbudt å snu, rygge og stanse. Bruk nærlys og hold god avstand.",
-    "ru": "В тоннеле запрещено разворачиваться, ехать задним ходом и останавливаться. Включите ближний свет и держите дистанцию."
+    "f": "Det er forbudt å stanse i tunnel, hvis ikke trafikken eller et uhell tvinger deg til det. Bruk nærlys og hold god avstand.",
+    "ru": "В тоннеле запрещено останавливаться, если только к этому не вынуждает движение или авария. Включите ближний свет и держите дистанцию."
   }
 ]

@@ -20,27 +20,38 @@
       ["I et gangfelt og nærmere enn 5 meter foran det.", "На пешеходном переходе и ближе 5 метров перед ним."],
       ["I sykkelfelt.", "На велополосе."],
       ["I tunnel, unntatt i en nødsituasjon eller når trafikken står stille.", "В тоннеле — кроме экстренных случаев или когда стоит весь поток."],
-      ["I en uoversiktlig kurve.", "На плохо просматриваемом повороте."],
-      ["På motorvei og motortrafikkvei.", "На автомагистрали и на дороге для автомобилей."]
+      ["I en uoversiktlig kurve, på en bakketopp eller et annet sted med dårlig sikt.", "На плохо просматриваемом повороте, на вершине подъёма или в другом месте с плохой видимостью."],
+      ["På motorvei og motortrafikkvei.", "На автомагистрали и на дороге для автомобилей."],
+      ["På en holdeplass for buss og nærmere enn 20 meter fra holdeplasskiltet. Her kan du likevel stanse for at passasjerer skal gå av eller på, hvis du ikke hindrer bussen.", "На автобусной остановке и ближе 20 метров от её знака. Но здесь можно остановиться, чтобы пассажиры вышли или сели, если вы не мешаете автобусу."]
     ] },
     { "p": "Biler som står i eller nær et kryss, hindrer sikten og den svingende trafikken. I en uoversiktlig kurve ser ikke andre bilen din før de er nær, og de rekker kanskje ikke å stoppe.", "ru": "Машины, стоящие на перекрёстке или рядом с ним, мешают обзору и поворачивающему транспорту. На плохо просматриваемом повороте другие увидят вашу машину слишком поздно и могут не успеть остановиться." },
     { "nums": [
       ["5 m", "minste avstand fra et veikryss når du stanser", "минимальное расстояние от перекрёстка при остановке"],
-      ["5 m", "minste avstand foran et gangfelt når du stanser", "минимальное расстояние перед пешеходным переходом при остановке"]
+      ["5 m", "minste avstand foran et gangfelt når du stanser", "минимальное расстояние перед пешеходным переходом при остановке"],
+      ["20 m", "minste avstand fra skiltet for en holdeplass for buss når du stanser", "минимальное расстояние от знака автобусной остановки при остановке"]
     ] },
 
     { "h": "Her er det forbudt å parkere", "ru": "Где запрещена стоянка" },
     { "list": [
-      ["På forkjørsvei utenfor tettbygd strøk. Der går trafikken fort, og parkerte biler er farlige.", "На главной дороге вне населённых пунктов: там высокая скорость, и стоящие машины опасны."],
+      ["På kjørebanen på en forkjørsvei med fartsgrense over 50 km/t. Der går trafikken fort, og parkerte biler er farlige.", "На проезжей части главной дороги с ограничением скорости выше 50 км/ч: там высокая скорость, и стоящие машины опасны."],
       ["Foran en inn- eller utkjørsel til en eiendom.", "Перед въездом или выездом с участка."],
       ["På en møteplass.", "В разъездном кармане."],
       ["I gatetun, unntatt på plasser som er merket for parkering.", "В жилой зоне — кроме мест, отмеченных для стоянки."]
     ] },
-    { "trap": "Nødsignal gjør ikke en ulovlig stans lovlig. Du kan ikke stanse inntil et kryss eller parkere på forkjørsvei bare fordi du slår på nødsignalet.", "ru": "Аварийная сигнализация не делает запрещённую остановку разрешённой. Нельзя остановиться вплотную к перекрёстку или оставить машину на главной дороге только потому, что вы включили «аварийку»." },
+    { "trap": "Nødsignal gjør ikke en ulovlig stans lovlig. Du kan ikke stanse inntil et kryss eller parkere på en forkjørsvei med høy fartsgrense bare fordi du slår på nødsignalet.", "ru": "Аварийная сигнализация не делает запрещённую остановку разрешённой. Нельзя остановиться вплотную к перекрёстку или оставить машину на главной дороге с высоким ограничением скорости только потому, что вы включили «аварийку»." },
 
     { "h": "Slik parkerer du", "ru": "Как правильно поставить машину" },
-    { "p": "I gate med toveistrafikk skal du parkere på høyre side i kjøreretningen. I gate med envegskjøring kan du parkere på begge sider, hvis ikke skilt eller oppmerking sier noe annet.", "ru": "На улице с двусторонним движением ставьте машину у правого края по направлению движения. На улице с односторонним движением — с любой стороны, если знаки или разметка не говорят иное." },
+    { "p": "Du kan parkere på begge sider av veien, også mot kjøreretningen, hvis ikke skilt, oppmerking eller andre regler forbyr det. Det gjelder både i gate med toveistrafikk og i gate med envegskjøring.", "ru": "Ставить машину можно с обеих сторон дороги, в том числе против направления движения, если знаки, разметка или другие правила этого не запрещают. Это касается и улиц с двусторонним, и улиц с односторонним движением." },
+    { "trap": "Skiltene for parkering gjelder som regel i kjøreretningen. Står bilen mot kjøreretningen, kan det være vanskelig å se hvilket skilt som gjelder der du står.", "ru": "Знаки стоянки, как правило, действуют по направлению движения. Если машина стоит против движения, бывает трудно понять, какой знак относится к месту, где вы стоите." },
     { "p": "I en bratt nedoverbakke bruker du parkeringsbremsen og setter bilen i gir eller P. Vri forhjulene inn mot fortauskanten, så bilen stopper mot den hvis den begynner å rulle.", "ru": "На крутом спуске затяните стояночный тормоз и включите передачу или P. Поверните передние колёса к бордюру — тогда машина упрётся в него, если покатится." },
     { "rule": "Se i speilet og over skulderen før du åpner døren. En dør som åpnes brått, kan treffe en syklist.", "ru": "Прежде чем открыть дверь, посмотрите в зеркало и через плечо. Резко открытая дверь может сбить велосипедиста." }
-  ]
+  ],
+  "sources": [
+    ["Trafikkreglene § 17 – stans og parkering (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A717"],
+    ["Trafikkreglene § 1 – definisjoner (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A71"],
+    ["Forbud mot å stanse (Statens vegvesen)", "https://vegvesen.no/trafikkinformasjon/langs-veien/parkering/forbud-mot-a-stanse"],
+    ["Hvor gjelder parkeringsskiltet? (Statens vegvesen)", "https://www.vegvesen.no/trafikkinformasjon/langs-veien/parkering/hvor-gjelder-parkeringsskiltet/"],
+    ["Skiltforskriften – skilt 370 og 372 (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219"]
+  ],
+  "checked": "2026-10"
 }

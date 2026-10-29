@@ -7,8 +7,7 @@
     { "p": "Det er straffbart å kjøre bil med høyere promille enn 0,2. Selv litt alkohol gir lengre reaksjonstid og dårligere syn og konsentrasjon. Du blir ikke mer forsiktig – du tar større sjanser.", "ru": "Водить машину с уровнем алкоголя выше 0,2 промилле — уголовно наказуемо. Даже немного алкоголя увеличивает время реакции, ухудшает зрение и внимание. Осторожнее вы от этого не становитесь — наоборот, начинаете больше рисковать." },
     { "nums": [
       ["0,2 ‰", "promillegrensen for å kjøre bil", "допустимый уровень алкоголя для вождения"],
-      ["0,1–0,15 ‰", "så mye alkohol kroppen forbrenner i timen", "столько алкоголя организм перерабатывает за час"],
-      ["7–10 timer", "omtrent så lang tid tar det før en promille på 1,0 er borte", "примерно столько времени нужно, чтобы ушли 1,0 промилле"]
+      ["0,1–0,15 ‰", "omtrent så mye alkohol kroppen forbrenner i timen", "примерно столько алкоголя организм перерабатывает за час"]
     ] },
     { "rule": "Bare tid får promillen ned. Kaffe, vann, mat, frisk luft eller trening gjør ikke at alkoholen forsvinner fortere.", "ru": "Снизить промилле может только время. Кофе, вода, еда, свежий воздух или спорт не ускоряют выведение алкоголя." },
     { "trap": "Mange tror at promillen er borte etter en natts søvn. Men søvn gjør ikke at alkoholen forsvinner fortere. Har du drukket sent i går kveld, kan du fortsatt ha promille neste morgen – selv om du føler deg i form.", "ru": "Многие думают, что после ночного сна промилле уже нет. Но сон не ускоряет выведение алкоголя. Если вы пили поздно вечером, утром у вас ещё может быть промилле — даже если вы чувствуете себя хорошо." },
@@ -28,7 +27,7 @@
     { "trap": "Åpent vindu, høy musikk eller en energidrikk hjelper ikke mot trøtthet. Å kjøre fortere for å komme raskere fram gjør det bare farligere.", "ru": "Открытое окно, громкая музыка или энергетик от усталости не помогают. А ехать быстрее, чтобы скорее доехать, — только опаснее." },
 
     { "h": "Mobil og oppmerksomhet", "ru": "Телефон и внимание" },
-    { "p": "Det er forbudt å bruke mobiltelefon som du holder i hånden, mens du kjører. Forbudet gjelder på alle veier, også i lav fart og når samtalen er kort.", "ru": "Во время движения запрещено пользоваться телефоном, держа его в руке. Запрет действует на всех дорогах — и на малой скорости, и если разговор короткий." },
+    { "p": "Det er forbudt å bruke mobiltelefon som du holder i hånden, mens du kjører. Forbudet gjelder på alle veier, også i lav fart, når samtalen er kort, og når du står i kø eller venter på grønt lys.", "ru": "Во время движения запрещено пользоваться телефоном, держа его в руке. Запрет действует на всех дорогах — и на малой скорости, и при коротком разговоре, и когда вы стоите в пробке или ждёте зелёного сигнала." },
     { "p": "Handsfree er lov, men samtalen kan likevel ta oppmerksomheten bort fra trafikken. Avslutt samtalen hvis trafikken krever det.", "ru": "Hands-free разрешён, но разговор всё равно отвлекает от дороги. Закончите разговор, если ситуация на дороге требует внимания." },
     { "p": "Se langt fram når du kjører, så oppdager du farer tidlig og får tid til å reagere. Øyekontakt gjør det lettere å vite om andre har sett deg – men du kan ikke være helt sikker.", "ru": "Смотрите далеко вперёд: так вы раньше заметите опасность и успеете среагировать. Зрительный контакт помогает понять, заметили ли вас другие, — но полной уверенности он не даёт." },
 

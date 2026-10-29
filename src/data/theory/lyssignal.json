@@ -31,7 +31,7 @@
 
     { "h": "Andre lyssignaler", "ru": "Другие сигналы" },
     { "list": [
-      ["Et signal med hvite streker eller symboler i stedet for farger er for kollektivtrafikken. Det gjelder bare for buss og trikk, ikke for deg som kjører bil.", "Сигнал с белыми полосками или символами вместо цветов — для общественного транспорта. Он действует только для автобусов и трамваев, а не для вас на легковой машине."],
+      ["Et signal med hvite streker eller symboler i stedet for farger er for kollektivtrafikken, som buss og trikk. Det gjelder ikke for deg som kjører vanlig bil – følg det vanlige lyssignalet.", "Сигнал с белыми полосками или символами вместо цветов — для общественного транспорта, например автобусов и трамваев. На обычной машине он к вам не относится — следуйте обычному светофору."],
       ["To røde lys som blinker vekselvis, betyr stopp. Ved en jernbaneovergang viser de at et tog kommer: stans før bommen eller stopplinjen.", "Два попеременно мигающих красных сигнала означают «стоп». На железнодорожном переезде они показывают, что приближается поезд: остановитесь перед шлагбаумом или стоп-линией."]
     ] }
   ]

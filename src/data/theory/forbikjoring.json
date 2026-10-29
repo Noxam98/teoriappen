@@ -18,10 +18,11 @@
     { "h": "Her er forbikjøring forbudt", "ru": "Где обгон запрещён" },
     { "list": [
       ["Foran en bakketopp og i en kurve der sikten er for dårlig til at du ser at veien er fri.", "Перед вершиной подъёма и на повороте, где видимость слишком плохая, чтобы убедиться, что дорога свободна."],
-      ["Like før og i et gangfelt uten lysregulering. Har en bil i feltet ved siden av deg stanset foran gangfeltet, skal du også stanse – den kan slippe over en gående du ikke ser.", "Непосредственно перед нерегулируемым пешеходным переходом и на нём. Если машина в соседней полосе остановилась перед переходом, остановитесь и вы: возможно, она пропускает пешехода, которого вам не видно."],
-      ["Like før og på en jernbaneovergang uten bommer.", "Непосредственно перед железнодорожным переездом без шлагбаумов и на нём."],
+      ["Før et gangfelt: du må ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet. Har en bil i feltet ved siden av deg stanset foran gangfeltet, skal du ikke kjøre forbi den – den kan slippe over en gående du ikke ser.", "Перед пешеходным переходом нельзя обгонять транспорт, который закрывает вам обзор перехода. Если машина в соседней полосе остановилась перед переходом, не проезжайте мимо неё: возможно, она пропускает пешехода, которого вам не видно."],
       ["Like før og i et veikryss, som hovedregel. Der høyreregelen gjelder, kan det komme trafikk fra høyre som du skal vike for.", "Непосредственно перед перекрёстком и на нём — как правило. Где действует правило правой руки, справа может появиться транспорт, которому вы обязаны уступить."]
     ] },
+    { "p": "Forbudet i veikryss gjelder ikke når trafikken fra sideveien har vikeplikt etter skilt, for eksempel når du kjører på forkjørsvei. Det gjelder heller ikke i kryss med trafikklys eller politi, på vei med minst to felt i din retning, eller når du kjører forbi på høyre side.", "ru": "Запрет у перекрёстка не действует, если транспорт со второстепенной дороги уступает по знаку — например, когда вы едете по главной дороге. Не действует он и на перекрёстке со светофором или регулировщиком, на дороге, где в вашем направлении не меньше двух полос, а также при обгоне справа." },
+    { "p": "Nærmer du deg en jernbaneovergang uten bommer, bør du vente med å kjøre forbi til du er over sporet. Følg godt med på om det kommer tog.", "ru": "Если вы подъезжаете к железнодорожному переезду без шлагбаумов, лучше подождите с обгоном, пока не проедете пути. Внимательно следите, не идёт ли поезд." },
     { "fig": { "road": "sperrelinje" }, "no": "Sperrelinje midt i veien: du må ikke krysse den eller kjøre på den.", "ru": "Сплошная линия посередине дороги: её нельзя пересекать и нельзя наезжать на неё." },
     { "trap": "Sperrelinjen gjelder også når kjøretøyet foran kjører veldig sakte. Kjører en traktor i 25 km/t foran deg, må du likevel vente til sperrelinjen slutter.", "ru": "Сплошная линия действует, даже если впереди едут очень медленно. Если перед вами трактор со скоростью 25 км/ч, всё равно ждите, пока сплошная закончится." },
     { "signs": [
@@ -30,18 +31,19 @@
     ] },
 
     { "h": "Forbi på høyre side", "ru": "Обгон справа" },
-    { "p": "Du kan kjøre forbi på høyre side når kjøretøyet foran har gitt tegn og plassert seg for å svinge til venstre. Det er også lov på vei med flere felt i samme retning.", "ru": "Справа можно обогнать того, кто показал сигнал и занял положение для левого поворота. Также это разрешено на дороге с несколькими полосами в одном направлении." },
+    { "p": "Har kjøretøyet foran gitt tegn og plassert seg for å svinge til venstre, skal du kjøre forbi på høyre side. På vei med flere felt i samme retning kan du også kjøre forbi på høyre side når trafikken er så tett at det er kø i alle feltene.", "ru": "Если транспорт впереди показал сигнал и занял положение для левого поворота, обгонять его нужно справа. На дороге с несколькими полосами в одном направлении справа можно проехать и тогда, когда движение такое плотное, что во всех полосах очередь." },
+    { "trap": "Selv om bilen i venstre felt kjører sakte, har du ikke lov til å kjøre forbi den på høyre side. Det er bare lov når det er kø i alle feltene.", "ru": "Даже если машина в левой полосе едет медленно, обгонять её справа нельзя. Это разрешено, только когда во всех полосах очередь." },
 
     { "h": "Når noen kjører forbi deg", "ru": "Когда обгоняют вас" },
     { "p": "Den som blir forbikjørt, skal holde til høyre og ikke øke farten. Senk gjerne farten litt hvis det trengs for at forbikjøringen skal gå trygt.", "ru": "Тот, кого обгоняют, держится правее и не увеличивает скорость. При необходимости немного сбросьте скорость, чтобы обгон прошёл безопасно." },
     { "trap": "Ikke øk farten når noen kjører forbi deg. Da kan den som kjører forbi, bli stående lenge i feltet for møtende trafikk.", "ru": "Не прибавляйте скорость, когда вас обгоняют: обгоняющий может надолго застрять на встречной полосе." },
-    { "p": "Kjører du i kolonne, skal du holde god avstand til bilen foran. Da har du tid til å reagere, og biler som kjører forbi kolonnen, får plass til å kjøre inn igjen.", "ru": "В колонне держите хорошую дистанцию до машины впереди. Так у вас есть время на реакцию, а обгоняющим колонну есть куда вернуться в свою полосу." },
+    { "p": "Kjører du i kolonne, bør du holde god avstand til bilen foran. Da har du tid til å reagere, og biler som kjører forbi kolonnen, får plass til å kjøre inn igjen.", "ru": "В колонне старайтесь держать хорошую дистанцию до машины впереди. Так у вас есть время на реакцию, а обгоняющим колонну есть куда вернуться в свою полосу." },
 
     { "h": "Møting på smal vei", "ru": "Встречный разъезд на узкой дороге" },
     { "list": [
       ["Står det en hindring i ditt felt, for eksempel en parkert bil, skal du vike for møtende trafikk.", "Если препятствие в вашей полосе, например припаркованная машина, уступите встречным."],
       ["Er du nærmest møteplassen, kjører du inn på den og slipper den møtende forbi.", "Если разъездной карман ближе к вам, заезжайте в него и пропустите встречного."],
-      ["I en bratt og smal bakke bør den som kjører nedover, vike for et tungt kjøretøy som kjører oppover. Det kan ha vanskelig for å komme i gang igjen i bakken.", "На крутом узком склоне тот, кто едет вниз, должен уступить тяжёлой машине, которая едет вверх: ей трудно снова тронуться в гору."]
+      ["I en bratt og smal bakke bør den som kjører nedover, vike for et tungt kjøretøy som kjører oppover. Det kan ha vanskelig for å komme i gang igjen i bakken.", "На крутом узком склоне тому, кто едет вниз, следует уступить тяжёлой машине, которая едет вверх: ей трудно снова тронуться в гору."]
     ] },
     { "signs": [
       ["moteplikt", "Møteplikt: du skal vike for møtende trafikk på den smale strekningen", "Преимущество встречного движения: на узком участке уступите встречным"],
@@ -49,5 +51,10 @@
       ["moteplass", "Møteplass: et bredere sted på smal vei der kjøretøy kan møtes", "Разъездной карман: расширение узкой дороги для встречного разъезда"]
     ] },
     { "rule": "Se på den røde pilen: den viser hvem som skal vike. På det runde skiltet Møteplikt er den røde pilen din, så du skal vike. På det blå skiltet viser den røde pilen de møtende, så de skal vike for deg.", "ru": "Смотрите на красную стрелку: она показывает, кто уступает. На круглом знаке «Møteplikt» красная стрелка — ваша, значит, уступаете вы. На синем знаке красная стрелка — у встречных, значит, уступают они." }
-  ]
+  ],
+  "sources": [
+    ["Trafikkreglene § 12 – forbikjøring (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1986-03-21-747/%C2%A712"],
+    ["Skiltforskriften – trafikkskilt og vegoppmerking (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/2005-10-07-1219"]
+  ],
+  "checked": "2026-10"
 }

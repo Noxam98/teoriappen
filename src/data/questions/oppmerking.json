@@ -162,7 +162,7 @@
   {
     "id": "opp-11",
     "cat": "oppmerking",
-    "q": "Det er kø i feltet ditt. Feltet til høyre er merket KOLLEKTIV. Kan du kjøre der med vanlig personbil for å komme raskere fram?",
+    "q": "Det er kø i feltet ditt. Feltet til høyre er merket KOLLEKTIVFELT. Kan du kjøre der med vanlig personbil for å komme raskere fram?",
     "img": {
       "road": "kollektivfelt"
     },
@@ -172,8 +172,8 @@
       "Ja, hvis du har passasjerer i bilen",
       "Ja, hvis du kjører saktere enn bussene"
     ],
-    "f": "Kollektivfelt er for buss og drosje. Vanlige personbiler kan ikke kjøre der hvis ikke skilt tillater det.",
-    "ru": "Полоса KOLLEKTIV — для автобусов и такси. Обычным легковым машинам туда нельзя, если знак не разрешает."
+    "f": "Kollektivfelt er først og fremst for buss. Vanlige personbiler kan ikke kjøre der hvis ikke skilt tillater det – heller ikke når det er kø.",
+    "ru": "Полоса KOLLEKTIVFELT — прежде всего для автобусов. Обычным легковым машинам туда нельзя, если знак не разрешает, — даже в пробке."
   },
   {
     "id": "opp-12",
@@ -215,11 +215,11 @@
     "a": [
       "De skiller trafikk som kjører i motsatte retninger",
       "De skiller kjørefelt med samme kjøreretning",
-      "De viser kanten av veien",
+      "De viser hvor syklende skal kjøre",
       "De viser hvor du kan parkere"
     ],
-    "f": "Gule linjer skiller trafikk i motsatte retninger. Hvite linjer skiller felt med samme kjøreretning og viser kanten av kjørebanen.",
-    "ru": "Жёлтые линии разделяют встречные потоки. Белые — полосы одного направления и край проезжей части."
+    "f": "Gule linjer skiller trafikk i motsatte retninger. Hvite linjer skiller felt med samme kjøreretning og viser som regel kanten av kjørebanen.",
+    "ru": "Жёлтые линии разделяют встречные потоки. Белые — полосы одного направления и обычно край проезжей части."
   },
   {
     "id": "opp-15",
