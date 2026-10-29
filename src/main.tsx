@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import '@fontsource-variable/golos-text';
 import '@fontsource/barlow-semi-condensed/latin-600.css';
 import '@fontsource/barlow-semi-condensed/latin-700.css';
+// the wide Barlow of the underskilt plates: close to the sign font (Trafikkalfabetet)
+import '@fontsource/barlow/latin-600.css';
 import App from './App';
 import './styles/index.css';
 

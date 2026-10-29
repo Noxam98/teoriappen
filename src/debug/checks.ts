@@ -59,7 +59,7 @@ const AREAS: Record<string, Area> = {
   end: disc(44),
   plate: rect(7, 7, 93, 93),
   'plate-wide': rect(7, 7, 133, 93),
-  under: p => Math.min(p.x - 10, 90 - p.x), // the times of a time plate stay inside its frame
+  under: p => Math.min(p.x - 2.5, 97.5 - p.x), // the texts of an underskilt stay inside its frame
 };
 
 export function checkSign(svg: SVGSVGElement, where: string, out: Problem[]) {
