@@ -10,6 +10,7 @@ import type { Prefs, RevealMode } from '../types';
 import { Icon } from './Icons';
 import { Segmented } from './Segmented';
 import { Sheet } from './Sheet';
+import { SupportLink } from './Support';
 
 export const revealOptions = (t: Messages): { value: RevealMode; label: string; hint: string }[] => [
   { value: 'instant', label: t.settings.instant, hint: t.settings.instantHint },
@@ -105,6 +106,12 @@ export function SettingsSheet({ onClose }: { onClose: () => void }) {
           )}
         </section>
       )}
+
+      <section className="setting">
+        <h3>{t.support.heading}</h3>
+        <p className="setting-note">{t.support.text}</p>
+        <SupportLink className="btn ghost-strong" />
+      </section>
 
       <section className="setting">
         <h3>{s.progress}</h3>

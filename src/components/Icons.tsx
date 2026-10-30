@@ -14,6 +14,7 @@ const PATHS = {
   trash: <path d="M4 7 H20 M9 7 V4.5 H15 V7 M6.5 7 L7.5 20 H16.5 L17.5 7" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round" strokeLinecap="round" />,
   left: <path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" />,
   right: <path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" />,
+  coffee: <path d="M4.5 9 H16 V13.5 A5 5 0 0 1 11 18.5 H9.5 A5 5 0 0 1 4.5 13.5 Z M16 10.5 H17.5 A2.5 2.5 0 0 1 17.5 15.5 H15.3 M3.5 21 H17 M8 3.5 Q7 5 8 6.5 M12 3.5 Q11 5 12 6.5" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
   book: <><path d="M5 4.5 A1.5 1.5 0 0 1 6.5 3 H19 V18 H6.5 A1.5 1.5 0 0 0 5 19.5 Z M5 19.5 A1.5 1.5 0 0 0 6.5 21 H19 V18" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round" /><path d="M9 8 H15 M9 11 H13" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" /></>,
   textSize: <path d="M3 19 L8 6 L13 19 M5 15 H11 M14 19 L17.5 10 L21 19 M15.3 16 H19.7" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />,
   play: <path d="M8.5 5.5 L18.5 12 L8.5 18.5 Z" fill="currentColor" stroke="currentColor" strokeWidth={1.6} strokeLinejoin="round" />,

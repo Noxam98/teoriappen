@@ -7,6 +7,7 @@ import { Icon } from '../components/Icons';
 import { laterOf, ReadingList, ReadingSheet } from '../components/later/Reading';
 import { Explanation } from '../components/question/Explanation';
 import { QuestionShare } from '../components/question/QuestionCard';
+import { SupportLink } from '../components/Support';
 import { CATEGORY, QUESTION_BY_ID, THEORY_BY_CAT } from '../data';
 import { Words } from '../features/brush/Words';
 import { MAX_ERRORS } from '../lib/exam';
@@ -111,6 +112,9 @@ export function ResultScreen() {
         {practiced && THEORY_BY_CAT[practiced] && <button className="btn" onClick={() => go({ name: 'chapter', cat: practiced })}><Icon name="theory" />{r.theoryTitle}</button>}
         <button className="btn ghost" onClick={() => go({ name: 'home' })}><Icon name="home" />{t.toHome}</button>
       </div>
+      {isExam && res.pass && (
+        <p className="support-line">{t.support.passed} <SupportLink className="text-link" /></p>
+      )}
 
       {res.n > 0 && <>
         <div className="section-title tight">

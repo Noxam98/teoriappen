@@ -5,6 +5,7 @@ import { Words } from '../features/brush/Words';
 import { ProgressRing } from '../components/Gauges';
 import { Icon } from '../components/Icons';
 import { Segmented } from '../components/Segmented';
+import { SupportFooter } from '../components/Support';
 import { revealOptions } from '../components/SettingsSheet';
 import { CATEGORIES, QUESTIONS, QUESTION_BY_ID, THEORY } from '../data';
 import { useNow } from '../hooks/useNow';
@@ -124,6 +125,8 @@ export function HomeScreen() {
         {history.length > 5 && <button className="text-link" onClick={() => go({ name: 'history' })}>{t.history.all}<Icon name="right" /></button>}
       </div>
       {history.length ? <HistoryList entries={history.slice(0, 5)} /> : <div className="empty">{t.history.empty}</div>}
+
+      <SupportFooter />
     </div>
   );
 }

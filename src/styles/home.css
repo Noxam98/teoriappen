@@ -98,3 +98,20 @@
 .stamp { font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: .78rem; padding: 2px 8px; border-radius: 6px; border: 2px solid currentColor; white-space: nowrap; }
 .stamp.pass { color: var(--ok); }
 .stamp.fail { color: var(--bad); }
+
+/* the end of the page: «buy the author a coffee» and the note that the app is not official */
+.home-foot { display: grid; gap: 12px; margin-top: 30px; }
+.support { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 12px; align-items: center; padding: 14px; }
+.support-ic { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--note); color: var(--streak-ink); }
+.support-ic svg { width: 24px; height: 24px; }
+.support p b { display: block; }
+.support p small { display: block; margin-top: 2px; color: var(--ink-2); font-size: .86rem; line-height: 1.4; }
+.support .btn { grid-column: 1 / -1; }
+/* a link styled as a button (here and in the settings) or as a text link (after a passed exam) */
+.support-link { text-decoration: none; }
+.btn.support-link { color: var(--ink); }
+@media (min-width: 560px) {
+  .support { grid-template-columns: 44px minmax(0, 1fr) auto; }
+  .support .btn { grid-column: auto; }
+}
+.unofficial { padding-inline: 8px; text-align: center; color: var(--ink-2); font-size: .8rem; line-height: 1.4; }
