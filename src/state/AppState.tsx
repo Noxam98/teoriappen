@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from 'react';
-import { createExam, fixNumberedOrders, gradeExam, recordAnswer, setClock, testId } from '../lib/exam';
+import { createExam, fixOptionOrders, gradeExam, recordAnswer, setClock, testId } from '../lib/exam';
 import { fromHash, rememberScroll, setAddress, toHash } from '../lib/routes';
 import { playSound } from '../lib/sound';
 import { loadData, saveData } from '../lib/storage';
@@ -46,7 +46,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [data, setData] = useState<AppData>(() => {
     const d = withClock(loadData(), onScreen(), Date.now());
     // an exam begun before the reading list existed is named by its start, fixed now
-    return d.cur ? { ...d, cur: { ...fixNumberedOrders(d.cur), tid: testId(d.cur) } } : d;
+    return d.cur ? { ...d, cur: { ...fixOptionOrders(d.cur), tid: testId(d.cur) } } : d;
   });
   const [nav, setNav] = useState<{ screen: Screen; visit: number; restored: boolean }>(() => ({ screen: fromHash(location.hash), visit: 0, restored: true }));
   const navRef = useRef(nav);

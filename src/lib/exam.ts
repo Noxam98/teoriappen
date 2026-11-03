@@ -44,9 +44,14 @@ export function optionOrder(q: Question): number[] {
   return order.sort((x, y) => q.a[x].localeCompare(q.a[y], 'nb', { numeric: true }));
 }
 
-/** An exam saved before a question got numbered signs still shows that question's options in sign order. */
-export function fixNumberedOrders(s: ExamSession): ExamSession {
-  const stale = s.ids.filter(id => QUESTION_BY_ID[id]?.byNumber && s.perm[id]?.join() !== optionOrder(QUESTION_BY_ID[id]).join());
+/** A test saved before a question changed gets a fresh option order: for numbered signs, or when an option was added. */
+export function fixOptionOrders<T extends { ids: string[]; perm: Record<string, number[]> }>(s: T): T {
+  const stale = s.ids.filter(id => {
+    const q = QUESTION_BY_ID[id];
+    const saved = s.perm[id];
+    if (!q || !saved) return false;
+    return q.byNumber ? saved.join() !== optionOrder(q).join() : saved.length !== q.a.length;
+  });
   if (!stale.length) return s;
   return { ...s, perm: { ...s.perm, ...Object.fromEntries(stale.map(id => [id, optionOrder(QUESTION_BY_ID[id])])) } };
 }

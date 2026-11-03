@@ -8,7 +8,7 @@ import { CATEGORY, QUESTIONS, QUESTION_BY_ID } from '../data';
 import { Words } from '../features/brush/Words';
 import { useAnswerKeys } from '../hooks/useAnswerKeys';
 import { useRevealScroll } from '../hooks/useRevealScroll';
-import { optionOrder, wrongQuestionIds } from '../lib/exam';
+import { fixOptionOrders, optionOrder, wrongQuestionIds } from '../lib/exam';
 import { answerFeedback } from '../lib/feedback';
 import { playSound } from '../lib/sound';
 import { shuffle } from '../lib/text';
@@ -37,7 +37,7 @@ function openRound(screen: PracticeScreenSpec, data: AppData, restored: boolean)
   const saved = data.practice;
   if (restored && saved && saved.mode === screen.mode && (screen.mode !== 'list' || sameSet(saved.ids, screen.ids ?? []))
     && (!screen.q || saved.ids.includes(screen.q))) {
-    return { ...saved, perm: { ...orders(saved.ids), ...saved.perm }, i: screen.q ? saved.ids.indexOf(screen.q) : saved.i };
+    return { ...fixOptionOrders({ ...saved, perm: { ...orders(saved.ids), ...saved.perm } }), i: screen.q ? saved.ids.indexOf(screen.q) : saved.i };
   }
   let ids = buildList(screen, data.stats);
   if (screen.q) ids = [screen.q, ...ids.filter(x => x !== screen.q)];
