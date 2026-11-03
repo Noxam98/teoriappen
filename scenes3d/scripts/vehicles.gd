@@ -67,7 +67,8 @@ static func _lamp(c: Color, energy: float) -> StandardMaterial3D:
 
 ## Ореол маячка: белая сердцевина, насыщенный синий и четыре луча. Прозрачность обычная, а не сложение:
 ## сложенный синий на жёлтой стене дал бы белёсое пятно.
-static func _flare() -> ImageTexture:
+## plain: мягкое пятно без сердцевины и лучей, для дыма.
+static func _flare(glow_color: Color = Color(0.02, 0.2, 1.0), plain: bool = false) -> ImageTexture:
 	var n: int = 128
 	var image := Image.create(n, n, false, Image.FORMAT_RGBA8)
 	for py: int in n:
@@ -79,14 +80,27 @@ static func _flare() -> ImageTexture:
 			var rays: float = (exp(-absf(v) * 34.0) + exp(-absf(u) * 34.0)) * edge * edge
 			var glow: float = pow(edge, 2.4) * 1.5
 			var core: float = 1.0 - smoothstep(0.03, 0.15, r)
-			var c: Color = Color(0.02, 0.2, 1.0).lerp(Color(0.85, 0.92, 1.0), core)
+			var c: Color = glow_color.lerp(Color(0.85, 0.92, 1.0).lerp(Color.WHITE, 0.5), core)
 			c.a = clampf(glow + rays * 0.9, 0.0, 1.0)
+			if plain:
+				c = Color(glow_color, clampf(pow(edge, 1.6) * 1.15, 0.0, 1.0))
 			image.set_pixel(px, py, c)
 	return ImageTexture.create_from_image(image)
 
 
+## Поворотник: side 1 справа, -1 слева. Спереди и сзади лампа с янтарным ореолом.
+## from_behind: камера сзади, передний ореол просвечивал бы сквозь кузов, поэтому он только у заднего фонаря.
+static func blink(root: Node3D, side: float, front_z: float, rear_z: float, half_w: float, y_front: float, y_rear: float, from_behind: bool = false) -> void:
+	var amber: StandardMaterial3D = _lamp(Color(1.0, 0.5, 0.02), 3.0)
+	var flare: ImageTexture = _flare(Color(1.0, 0.5, 0.03))
+	for spot: Vector3 in [Vector3(side * half_w, y_front, front_z), Vector3(side * half_w, y_rear, rear_z)]:
+		Car.box(root, Vector3(0.14, 0.09, 0.04), spot, amber)
+		if not from_behind or spot.z > 0.0:
+			_beacon(root, spot, 0.95, flare)
+
+
 ## Ореол всегда лицом к камере и поверх кузова: иначе крыша срезает его нижнюю половину.
-static func _beacon(root: Node3D, pos: Vector3, size: float, flare: Texture2D) -> void:
+static func _beacon(root: Node3D, pos: Vector3, size: float, flare: Texture2D, alpha: float = 1.0) -> void:
 	var m := StandardMaterial3D.new()
 	m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
@@ -94,6 +108,7 @@ static func _beacon(root: Node3D, pos: Vector3, size: float, flare: Texture2D) -
 	m.no_depth_test = true
 	m.disable_fog = true
 	m.albedo_texture = flare
+	m.albedo_color = Color(1.0, 1.0, 1.0, alpha)
 	var quad := QuadMesh.new()
 	quad.size = Vector2(size, size)
 	quad.material = m
@@ -395,7 +410,8 @@ static func tram(color: Color) -> Node3D:
 	return root
 
 
-static func ambulance() -> Node3D:
+## lit: включены ли маячки. Выключенные остаются тёмными колпаками без ореола.
+static func ambulance(lit: bool = true) -> Node3D:
 	var root := Node3D.new()
 	var color := Color(0.93, 0.8, 0.08)
 	var L: float = 3.0
@@ -444,18 +460,19 @@ static func ambulance() -> Node3D:
 				w.rotation.y = PI
 			root.add_child(w)
 	# Зелёной доли в синем почти нет: при большей яркости AgX выбеливает цвет.
-	var blue: StandardMaterial3D = _lamp(Color(0.005, 0.07, 1.0), 2.4)
+	var blue: StandardMaterial3D = _lamp(Color(0.005, 0.07, 1.0), 2.4) if lit else Car.mat(Color(0.03, 0.06, 0.3), 0.25)
 	Car.box(root, Vector3(1.7, 0.09, 0.36), Vector3(0, 2.5, -0.68), dark)
 	for sx: float in [-1.0, 1.0]:
 		Car.box(root, Vector3(0.62, 0.2, 0.32), Vector3(sx * 0.5, 2.64, -0.68), blue)
 		Car.box(root, Vector3(0.22, 0.09, 0.26), Vector3(sx * 0.6, 2.54, 2.72), blue)
 		Car.box(root, Vector3(0.26, 0.1, 0.03), Vector3(sx * 0.42, 0.84, -2.92), blue)
 	# Кадр застывает на вспышке: левая лампа горит сильнее правой. Днём одной светящейся лампы не видно.
-	var flare: ImageTexture = _flare()
-	_beacon(root, Vector3(-0.5, 2.68, -0.68), 3.0, flare)
-	_beacon(root, Vector3(0.5, 2.68, -0.68), 1.9, flare)
-	_beacon(root, Vector3(-0.42, 0.84, -2.98), 1.3, flare)
-	_beacon(root, Vector3(0.42, 0.84, -2.98), 0.8, flare)
+	if lit:
+		var flare: ImageTexture = _flare()
+		_beacon(root, Vector3(-0.5, 2.68, -0.68), 3.0, flare)
+		_beacon(root, Vector3(0.5, 2.68, -0.68), 1.9, flare)
+		_beacon(root, Vector3(-0.42, 0.84, -2.98), 1.3, flare)
+		_beacon(root, Vector3(0.42, 0.84, -2.98), 0.8, flare)
 	for sx: float in [-1.0, 1.0]:
 		Car.box(root, Vector3(0.34, 0.12, 0.03), Vector3(sx * 0.6, 1.0, -2.91), _lamp(Color(0.95, 0.96, 0.92), 0.35))
 		Car.box(root, Vector3(0.12, 0.4, 0.03), Vector3(sx * 0.86, 1.0, 2.91), _lamp(Color(0.72, 0.03, 0.04), 0.3))
@@ -468,6 +485,178 @@ static func ambulance() -> Node3D:
 	_text(root, "AMBULANSE", Vector3(0, 1.3, -2.915), PI, 0.17, Color(0.06, 0.25, 0.12))
 	Car.box(root, Vector3(0.52, 0.115, 0.02), Vector3(0, 0.62, -2.915), Car.mat(Color(0.86, 0.86, 0.82), 0.5))
 	Car.box(root, Vector3(0.52, 0.115, 0.02), Vector3(0, 0.62, 2.915), Car.mat(Color(0.86, 0.86, 0.82), 0.5))
+	return root
+
+
+## Фары на ночной сцене. beam: low ближний, high дальний, park только габариты.
+## toward_camera: машина едет навстречу камере, видны белые фары, иначе красные огни сзади.
+## tail: размер красного ореола, у своей машины меньше, она ближе к камере.
+static func lights(root: Node3D, beam: String, toward_camera: bool, tail_size: float = 0.55) -> void:
+	var white: ImageTexture = _flare(Color(1.0, 0.92, 0.72))
+	var red: ImageTexture = _flare(Color(0.95, 0.03, 0.04))
+	for sx: float in [-1.0, 1.0]:
+		var head := Vector3(sx * 0.62, 0.72, -2.05)
+		var tail := Vector3(sx * 0.66, 0.92, 2.18)
+		Car.box(root, Vector3(0.3, 0.09, 0.03), tail, _lamp(Color(0.9, 0.02, 0.03), 2.5))
+		if beam == "park":
+			Car.box(root, Vector3(0.1, 0.06, 0.03), head, _lamp(Color(1.0, 0.95, 0.8), 1.5))
+		else:
+			Car.box(root, Vector3(0.28, 0.12, 0.03), head, _lamp(Color(1.0, 0.95, 0.8), 6.0))
+			var spot := SpotLight3D.new()
+			# Источник выше настоящей фары: при низком свете дорога дальше 15 м получает почти скользящий луч.
+			spot.position = Vector3(head.x, 1.7, head.z)
+			spot.rotation.x = -0.06 if beam == "low" else -0.012
+			spot.spot_range = 70.0 if beam == "low" else 190.0
+			spot.spot_angle = 30.0 if beam == "low" else 17.0
+			spot.spot_attenuation = 0.5
+			spot.light_energy = 42.0 if beam == "low" else (14.0 if toward_camera else 150.0)
+			spot.light_color = Color(1.0, 0.96, 0.86)
+			root.add_child(spot)
+		if toward_camera and beam != "park":
+			_beacon(root, head + Vector3(0.0, 0.0, -0.05), 2.2 if beam == "low" else 6.0, white)
+		elif not toward_camera:
+			_beacon(root, tail, tail_size, red)
+
+
+## Брызги из-под задних колёс на мокрой дороге.
+static func spray(root: Node3D) -> void:
+	var mist: ImageTexture = _flare(Color(0.82, 0.85, 0.89), true)
+	for sx: float in [-1.0, 1.0]:
+		_beacon(root, Vector3(sx * 0.75, 0.22, 2.45), 0.95, mist, 0.2)
+		_beacon(root, Vector3(sx * 0.6, 0.3, 3.2), 1.4, mist, 0.12)
+
+
+## Огонь и дым над машиной: пламя у капота, дым поднимается и расходится под потолком.
+static func fire(root: Node3D) -> void:
+	var flame: ImageTexture = _flare(Color(1.0, 0.4, 0.03))
+	var smoke: ImageTexture = _flare(Color(0.09, 0.09, 0.1), true)
+	var r := RandomNumberGenerator.new()
+	r.seed = 5
+	for k: int in 22:
+		var t: float = k / 21.0
+		_beacon(root, Vector3(r.randf_range(-0.5, 0.5) * (1.0 + t * 4.0), 1.6 + t * 3.6, -1.2 - t * 5.0 + r.randf_range(-1.0, 1.0)), 2.6 + t * 5.0, smoke)
+	for spot: Array in [[0.0, 1.05, -1.3, 3.6], [-0.5, 1.4, -0.9, 3.0], [0.45, 1.25, -1.6, 2.8], [0.0, 2.0, -1.0, 3.2]]:
+		_beacon(root, Vector3(spot[0], spot[1], spot[2]), spot[3], flame)
+
+
+## Грузовик: кабина над осью, кузов-фургон. semi: длинный тягач с полуприцепом. Смотрит вдоль -z.
+static func truck(color: Color = Color(0.1, 0.24, 0.5), semi: bool = false) -> Node3D:
+	var root := Node3D.new()
+	var half: float = 8.25 if semi else 4.5
+	var dark: StandardMaterial3D = Car.mat(Color(0.03, 0.03, 0.035), 0.75)
+	var steel: StandardMaterial3D = Car.mat(Color(0.5, 0.52, 0.54), 0.4, 0.6)
+	var box_m: StandardMaterial3D = Car.mat(Color(0.88, 0.88, 0.85), 0.55)
+	var rib: StandardMaterial3D = Car.mat(Color(0.74, 0.75, 0.74), 0.5, 0.2)
+	var paint: StandardMaterial3D = Car.mat(color, 0.35, 0.2)
+	# Кабина.
+	var cab := Node3D.new()
+	cab.position.z = -half + 1.25
+	root.add_child(cab)
+	var L: float = 1.25
+	var H: float = 3.3
+	var W: float = 1.24
+	var side := '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 330" width="1000" height="1320"><rect width="250" height="330" fill="#000"/>'
+	side += '<path d="M14 130 L24 34 L150 34 L150 130 Z" fill="#f00" stroke="#0f0" stroke-width="3"/>'
+	side += '<path d="M8 136 L156 136 L156 268 L8 268 Z" fill="none" stroke="#0f0" stroke-width="2"/>'
+	side += '<rect y="268" width="250" height="62" fill="#0f0"/></svg>'
+	var front := '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 330" width="992" height="1320"><rect width="248" height="330" fill="#000"/>'
+	front += '<rect x="16" y="26" width="216" height="104" rx="8" fill="#f00" stroke="#0f0" stroke-width="3"/>'
+	for k: int in 5:
+		front += '<rect x="52" y="%d" width="144" height="6" fill="#0f0"/>' % (152 + k * 13)
+	front += '<rect x="10" y="240" width="228" height="90" fill="#0f0"/></svg>'
+	var top := '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 250" width="992" height="1000"><rect width="248" height="250" fill="#000"/></svg>'
+	var rear := '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 330" width="992" height="1320"><rect width="248" height="330" fill="#000"/><rect y="250" width="248" height="80" fill="#0f0"/></svg>'
+	var params: Dictionary = _params(L, H, W, 9.0, 0.52, 0.01, side, "truck", top, front, rear, 0.9)
+	Car.shell(cab, _body([[-1.25, 2.3, 1.1], [-1.23, 2.7, 1.17], [-1.18, 3.02, 1.21], [-1.02, 3.22, 1.23], [-0.72, 3.3, 1.24], [1.08, 3.3, 1.24], [1.25, 3.2, 1.22]], 0.62, 0.14, Car.shell_material(color, params)), params)
+	# Салон виден через стекло: пол, панель, сиденья, руль, водитель.
+	Car.box(cab, Vector3(2.3, 0.06, 2.3), Vector3(0, 1.62, 0.0), dark)
+	Car.box(cab, Vector3(2.3, 0.5, 0.3), Vector3(0, 1.88, -1.02), dark)
+	Car.box(cab, Vector3(2.3, 1.5, 0.05), Vector3(0, 2.4, 0.95), Car.mat(Color(0.32, 0.32, 0.33), 0.8))
+	Car.steering(cab, Vector3(-0.55, 2.2, -0.74), 0.24, 0.9, dark)
+	var seat: StandardMaterial3D = Car.mat(Color(0.09, 0.09, 0.1), 0.9)
+	for sx: float in [-0.55, 0.55]:
+		var s1 := MeshInstance3D.new()
+		s1.mesh = Mesher.pillow(Vector3(sx, 2.0, 0.08), Vector3(0.27, 0.09, 0.27), seat)
+		cab.add_child(s1)
+		var s2 := MeshInstance3D.new()
+		s2.mesh = Mesher.pillow(Vector3(sx, 2.48, 0.38), Vector3(0.26, 0.42, 0.09), seat, 0.12)
+		cab.add_child(s2)
+	Car.occupant(cab, Vector3(-0.55, 2.05, 0.06), Color(0.2, 0.26, 0.34), [Vector3(-0.72, 2.28, -0.72), Vector3(-0.38, 2.28, -0.72)])
+	# Кабина снаружи: козырёк, зеркала, фары, бампер, ступени.
+	Car.box(cab, Vector3(2.3, 0.05, 0.26), Vector3(0, 3.1, -1.27), dark, Vector3(0.25, 0.0, 0.0))
+	for sx: float in [-1.0, 1.0]:
+		Car.box(cab, Vector3(0.22, 0.05, 0.05), Vector3(sx * 1.32, 2.72, -1.02), steel)
+		Car.box(cab, Vector3(0.1, 0.5, 0.24), Vector3(sx * 1.42, 2.46, -1.02), dark)
+		Car.box(cab, Vector3(0.42, 0.16, 0.03), Vector3(sx * 0.78, 1.06, -1.27), _lamp(Color(0.95, 0.95, 0.85), 0.6))
+		Car.box(cab, Vector3(0.14, 0.1, 0.03), Vector3(sx * 1.08, 1.26, -1.25), _lamp(Color(0.95, 0.5, 0.05), 0.5))
+		Car.box(cab, Vector3(0.05, 0.05, 0.5), Vector3(sx * 1.2, 0.92, -0.5), steel)
+	Car.box(cab, Vector3(0.52, 0.11, 0.02), Vector3(0, 0.86, -1.28), Car.mat(Color(0.86, 0.86, 0.82), 0.5))
+	if semi:
+		var fairing := MeshInstance3D.new()
+		fairing.mesh = Mesher.pillow(Vector3(0, 3.55, 0.25), Vector3(1.1, 0.3, 0.95), paint, 0.0)
+		cab.add_child(fairing)
+	# Рама и колёса.
+	var wheel_r: float = 0.52
+	var axles: Array = [-half + 0.9]
+	if semi:
+		axles.append_array([-half + 4.0, half - 3.6, half - 2.3, half - 1.0])
+	else:
+		axles.append(half - 2.2)
+	Car.box(root, Vector3(1.0, 0.3, half * 2.0 - 0.6), Vector3(0, 0.78, 0.0), dark)
+	for k: int in axles.size():
+		var z: float = axles[k]
+		Car.box(root, Vector3(2.0, 0.12, 0.12), Vector3(0, wheel_r, z), dark)
+		for sx: float in [-1.0, 1.0]:
+			var offsets: Array = [1.08] if k == 0 else [1.08, 0.78]
+			for ox: float in offsets:
+				var w: Node3D = Car.wheel(wheel_r)
+				w.position = Vector3(sx * ox, wheel_r, z)
+				if sx < 0.0:
+					w.rotation.y = PI
+				w.scale = Vector3(1.25, 1.0, 1.0)
+				root.add_child(w)
+			if k > 0:
+				Car.box(root, Vector3(0.5, 0.05, 1.3), Vector3(sx * 0.98, wheel_r * 2.0 + 0.1, z), dark)
+				Car.box(root, Vector3(0.5, 0.42, 0.03), Vector3(sx * 0.98, 0.36, z + 0.72), dark)
+	# Фургон.
+	var z0: float = (-half + 3.05) if semi else (-half + 2.65)
+	var z1: float = half
+	var bottom: float = 1.22
+	var roof: float = 3.95 if semi else 3.7
+	var mid: float = (z0 + z1) / 2.0
+	Car.box(root, Vector3(2.5, roof - bottom, z1 - z0), Vector3(0, (roof + bottom) / 2.0, mid), box_m)
+	if not semi:
+		Car.box(root, Vector3(2.4, 0.12, z1 - z0), Vector3(0, 1.1, mid), dark)
+	for sx: float in [-1.0, 1.0]:
+		Car.box(root, Vector3(0.02, 0.1, z1 - z0), Vector3(sx * 1.26, roof - 0.05, mid), rib)
+		Car.box(root, Vector3(0.02, 0.12, z1 - z0), Vector3(sx * 1.26, bottom + 0.06, mid), rib)
+		Car.box(root, Vector3(0.015, 0.34, z1 - z0 - 0.2), Vector3(sx * 1.262, bottom + 0.6, mid), paint)
+		var z_rib: float = z0 + 1.2
+		while z_rib < z1 - 0.3:
+			Car.box(root, Vector3(0.018, roof - bottom - 0.2, 0.06), Vector3(sx * 1.26, (roof + bottom) / 2.0, z_rib), rib)
+			z_rib += 1.2
+		# Боковая защита и габариты.
+		var guard_a: float = axles[0] + 1.0 if not semi else -half + 5.0
+		var guard_b: float = axles[axles.size() - 1] - 1.0 if not semi else half - 4.4
+		for y: float in [0.62, 0.86]:
+			Car.box(root, Vector3(0.03, 0.09, guard_b - guard_a), Vector3(sx * 1.2, y, (guard_a + guard_b) / 2.0), steel)
+		var z_lamp: float = z0 + 0.8
+		while z_lamp < z1:
+			Car.box(root, Vector3(0.02, 0.06, 0.12), Vector3(sx * 1.265, bottom + 0.12, z_lamp), _lamp(Color(0.95, 0.5, 0.05), 0.6))
+			z_lamp += 2.6
+		# Задний торец: петли, запоры, фонари.
+		for y: float in [bottom + 0.5, (roof + bottom) / 2.0, roof - 0.5]:
+			Car.box(root, Vector3(0.12, 0.08, 0.03), Vector3(sx * 1.18, y, half + 0.015), steel)
+		Car.box(root, Vector3(0.035, roof - bottom - 0.3, 0.03), Vector3(sx * 0.45, (roof + bottom) / 2.0, half + 0.02), steel)
+		Car.box(root, Vector3(0.36, 0.16, 0.03), Vector3(sx * 0.92, 1.0, half - 0.02), _lamp(Color(0.8, 0.02, 0.03), 0.5))
+	Car.box(root, Vector3(0.03, roof - bottom - 0.1, 0.02), Vector3(0, (roof + bottom) / 2.0, half + 0.01), dark)
+	Car.box(root, Vector3(2.45, 0.14, 0.08), Vector3(0, 0.66, half - 0.12), dark)
+	Car.box(root, Vector3(0.52, 0.11, 0.02), Vector3(0, 0.9, half), Car.mat(Color(0.86, 0.86, 0.82), 0.5))
+	if semi:
+		# Опорные стойки полуприцепа.
+		for sx: float in [-1.0, 1.0]:
+			Car.box(root, Vector3(0.1, 0.9, 0.1), Vector3(sx * 0.95, 0.74, -0.6), steel)
+			Car.box(root, Vector3(0.22, 0.05, 0.3), Vector3(sx * 0.95, 0.3, -0.6), steel)
 	return root
 
 

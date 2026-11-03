@@ -243,7 +243,9 @@
     "id": "uly-16",
     "cat": "ulykke",
     "q": "Du kommer til en trafikkulykke inne i en lang tunnel. Hvordan bør du varsle?",
-    "img": null,
+    "img": {
+      "view": "uly-16"
+    },
     "a": [
       "Fra nødtelefonen i tunnelen, så Vegtrafikksentralen vet hvor du er",
       "Med mobilen, fordi det går raskest å ringe 113 direkte og få hjelp med en gang",
@@ -259,7 +261,9 @@
     "id": "uly-17",
     "cat": "ulykke",
     "q": "Bilen din står stille på et sted der den er til fare for trafikken, og du kan ikke flytte den med en gang. Hvor skal du sette varseltrekanten?",
-    "img": null,
+    "img": {
+      "view": "uly-17"
+    },
     "a": [
       "I god avstand fra bilen, hvis mulig minst 150 meter",
       "Rett bak bilen, så andre ser hvilken bil den hører til",
@@ -323,7 +327,9 @@
     "id": "uly-21",
     "cat": "ulykke",
     "q": "Det brenner i en bil i tunnelen, og du kan ikke kjøre ut. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "uly-21"
+    },
     "a": [
       "Du stanser ved siden av veien med nødsignal på og går ut til fots",
       "Du blir sittende i bilen med lukkede vinduer til røyken er blåst bort",

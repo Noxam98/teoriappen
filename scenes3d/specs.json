@@ -1178,5 +1178,1355 @@
    ],
    "pedAt": "crossing"
   }
+ },
+ "vik-32": {
+  "kind": "skillelinje",
+  "env": "street",
+  "actors": [
+   {
+    "what": "bus",
+    "x": 2.2,
+    "z": -17.0,
+    "blink": "left"
+   }
+  ],
+  "type": "road"
+ },
+ "vik-33": {
+  "kind": "skillelinje",
+  "actors": [
+   {
+    "what": "bus",
+    "x": 2.25,
+    "z": -17.0,
+    "blink": "left"
+   }
+  ],
+  "type": "road"
+ },
+ "vik-37": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "DU",
+     "from": "s",
+     "go": "left",
+     "me": true
+    }
+   ],
+   "ped": [
+    "w"
+   ],
+   "pedAt": "road"
+  }
+ },
+ "vik-40": {
+  "kind": "skillelinje",
+  "env": "street",
+  "cross": "both",
+  "zc": -14.0,
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -21.5,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "sedan"
+   },
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -28.0,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch"
+   },
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -34.5,
+    "color": [
+     0.08,
+     0.09,
+     0.11
+    ],
+    "kind": "suv"
+   },
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -41.0,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "sedan"
+   }
+  ],
+  "type": "road"
+ },
+ "vik-45": {
+  "kind": "skillelinje",
+  "env": "street",
+  "cross": "both",
+  "zc": -14.0,
+  "signs": [
+   {
+    "id": "stopp",
+    "x": 4.4,
+    "z": -9.6,
+    "w": 0.9
+   }
+  ],
+  "type": "road"
+ },
+ "vik-50": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "DU",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight",
+     "kind": "utrykning",
+     "lit": false
+    }
+   ]
+  }
+ },
+ "vik-52": {
+  "type": "junction",
+  "scene": {
+   "type": "t",
+   "signs": {
+    "s": "vikeplikt"
+   },
+   "veh": [
+    {
+     "id": "DU",
+     "from": "s",
+     "go": "left",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "right",
+     "blink": "right",
+     "noarrow": true
+    }
+   ]
+  }
+ },
+ "vik-56": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "DU",
+     "from": "s",
+     "go": "left",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "n",
+     "go": "left"
+    }
+   ]
+  }
+ },
+ "par-08": {
+  "kind": "skillelinje",
+  "env": "street",
+  "actors": [
+   {
+    "what": "car",
+    "x": -2.5,
+    "z": -11.0,
+    "yaw": 3.14159,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "sedan"
+   },
+   {
+    "what": "car",
+    "x": -2.5,
+    "z": -27.5,
+    "yaw": 3.14159,
+    "color": [
+     0.06,
+     0.24,
+     0.16
+    ],
+    "kind": "hatch"
+   },
+   {
+    "what": "car",
+    "x": -2.5,
+    "z": -34.0,
+    "yaw": 3.14159,
+    "color": [
+     0.08,
+     0.09,
+     0.11
+    ],
+    "kind": "suv"
+   }
+  ],
+  "type": "road"
+ },
+ "far-21": {
+  "kind": "skillelinje",
+  "env": "street",
+  "actors": [
+   {
+    "what": "car",
+    "x": 2.55,
+    "z": -11.0,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch"
+   },
+   {
+    "what": "car",
+    "x": 2.55,
+    "z": -17.5,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "sedan"
+   },
+   {
+    "what": "car",
+    "x": 2.55,
+    "z": -24.0,
+    "color": [
+     0.08,
+     0.09,
+     0.11
+    ],
+    "kind": "suv"
+   },
+   {
+    "what": "car",
+    "x": 2.55,
+    "z": -30.5,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "hatch"
+   }
+  ],
+  "type": "road"
+ },
+ "myk-01": {
+  "kind": "skillelinje",
+  "env": "street",
+  "actors": [
+   {
+    "what": "ball",
+    "x": 1.4,
+    "z": -9.5
+   },
+   {
+    "what": "car",
+    "x": 2.55,
+    "z": -15.0,
+    "color": [
+     0.06,
+     0.24,
+     0.16
+    ],
+    "kind": "suv"
+   }
+  ],
+  "type": "road"
+ },
+ "myk-02": {
+  "kind": "skillelinje",
+  "env": "street",
+  "actors": [
+   {
+    "what": "person",
+    "x": 3.95,
+    "z": -10.0,
+    "yaw": 1.5708,
+    "base": 0.14,
+    "height": 1.2,
+    "stride": 0.3,
+    "top": [
+     0.9,
+     0.72,
+     0.12
+    ],
+    "legs": [
+     0.14,
+     0.2,
+     0.42
+    ]
+   },
+   {
+    "what": "person",
+    "x": 5.0,
+    "z": -11.6,
+    "yaw": 2.4,
+    "base": 0.14,
+    "height": 1.05,
+    "stride": 0.34,
+    "top": [
+     0.16,
+     0.5,
+     0.62
+    ],
+    "legs": [
+     0.5,
+     0.14,
+     0.2
+    ]
+   }
+  ],
+  "type": "road"
+ },
+ "myk-07": {
+  "kind": "skillelinje",
+  "env": "street",
+  "actors": [
+   {
+    "what": "person",
+    "x": 4.5,
+    "z": -9.5,
+    "yaw": 3.14159,
+    "base": 0.14,
+    "cane": true,
+    "top": [
+     0.16,
+     0.2,
+     0.3
+    ]
+   }
+  ],
+  "type": "road"
+ },
+ "myk-25": {
+  "kind": "skillelinje",
+  "env": "street",
+  "actors": [
+   {
+    "what": "person",
+    "x": 3.95,
+    "z": -9.5,
+    "yaw": 1.5708,
+    "base": 0.14,
+    "cane": true,
+    "top": [
+     0.42,
+     0.3,
+     0.2
+    ]
+   }
+  ],
+  "type": "road"
+ },
+ "pla-05": {
+  "kind": "skillelinje",
+  "env": "street",
+  "right": 7.0,
+  "type": "road",
+  "lanes": "skille",
+  "own_x": 5.25,
+  "own_blink": "left",
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -3.0,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch"
+   }
+  ]
+ },
+ "pla-07": {
+  "kind": "skillelinje",
+  "env": "street",
+  "right": 7.0,
+  "type": "road",
+  "lanes": "skille",
+  "own_x": 5.25,
+  "own_blink": "left",
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -5.5,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "sedan"
+   },
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -15.0,
+    "color": [
+     0.08,
+     0.09,
+     0.11
+    ],
+    "kind": "suv"
+   }
+  ]
+ },
+ "pla-26": {
+  "kind": "skillelinje",
+  "env": "street",
+  "right": 7.0,
+  "type": "road",
+  "lanes": "skille",
+  "own_x": 1.75,
+  "actors": [
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -30.0,
+    "yaw": 3.14159,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "hatch"
+   }
+  ]
+ },
+ "fob-04": {
+  "kind": "gangfelt",
+  "env": "street",
+  "right": 7.0,
+  "type": "road",
+  "lanes": "skille",
+  "own_x": 5.25,
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -9.8,
+    "color": [
+     0.08,
+     0.09,
+     0.11
+    ],
+    "kind": "suv"
+   }
+  ]
+ },
+ "opp-18": {
+  "kind": "skillelinje",
+  "env": "street",
+  "right": 7.0,
+  "type": "road",
+  "lanes": "varsel",
+  "own_x": 5.25,
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -12.0,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "sedan"
+   }
+  ]
+ },
+ "opp-16": {
+  "kind": "skillelinje",
+  "env": "street",
+  "right": 7.0,
+  "type": "road",
+  "lanes": "skille",
+  "own_x": 1.75,
+  "cross": "both",
+  "zc": -26.0,
+  "lane_arrow": [
+   1.75,
+   -9.0
+  ],
+  "actors": []
+ },
+ "sig-09": {
+  "kind": "skillelinje",
+  "env": "street",
+  "cross": "both",
+  "zc": -12.0,
+  "type": "road",
+  "actors": [
+   {
+    "what": "signal",
+    "x": 5.0,
+    "z": -6.3,
+    "state": "green"
+   },
+   {
+    "what": "signal",
+    "x": -5.0,
+    "z": -6.3,
+    "state": "green"
+   },
+   {
+    "what": "police",
+    "x": 0.0,
+    "z": -12.0,
+    "yaw": 3.14159,
+    "pose": "side"
+   }
+  ]
+ },
+ "sig-12": {
+  "kind": "skillelinje",
+  "env": "street",
+  "cross": "both",
+  "zc": -12.0,
+  "type": "road",
+  "actors": [
+   {
+    "what": "signal",
+    "x": 5.0,
+    "z": -6.3,
+    "state": "off"
+   },
+   {
+    "what": "signal",
+    "x": -5.0,
+    "z": -6.3,
+    "state": "off"
+   }
+  ]
+ },
+ "sig-17": {
+  "kind": "skillelinje",
+  "env": "street",
+  "cross": "both",
+  "zc": -12.0,
+  "type": "road",
+  "actors": [
+   {
+    "what": "police",
+    "x": 0.0,
+    "z": -12.0,
+    "yaw": 3.14159,
+    "pose": "up"
+   }
+  ]
+ },
+ "sig-18": {
+  "kind": "skillelinje",
+  "env": "street",
+  "cross": "both",
+  "zc": -12.0,
+  "type": "road",
+  "actors": [
+   {
+    "what": "police",
+    "x": 0.0,
+    "z": -12.0,
+    "yaw": 3.14159,
+    "pose": "side"
+   }
+  ]
+ },
+ "far-12": {
+  "kind": "skillelinje",
+  "fog": 20.0,
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -30.0,
+    "yaw": 3.14159,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "suv"
+   }
+  ]
+ },
+ "vin-13": {
+  "kind": "skillelinje",
+  "fog": 20.0,
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -22.0,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "hatch"
+   }
+  ]
+ },
+ "lys-04": {
+  "kind": "skillelinje",
+  "night": true,
+  "type": "road",
+  "beam": "high",
+  "actors": []
+ },
+ "lys-05": {
+  "kind": "skillelinje",
+  "night": true,
+  "type": "road",
+  "beam": "high",
+  "actors": [
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -85.0,
+    "yaw": 3.14159,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "sedan",
+    "lights": "low"
+   }
+  ]
+ },
+ "lys-06": {
+  "kind": "skillelinje",
+  "night": true,
+  "type": "road",
+  "beam": "high",
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -17.0,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch",
+    "lights": "low"
+   }
+  ]
+ },
+ "lys-07": {
+  "kind": "skillelinje",
+  "night": true,
+  "type": "road",
+  "beam": "low",
+  "actors": [
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -42.0,
+    "yaw": 3.14159,
+    "color": [
+     0.08,
+     0.09,
+     0.11
+    ],
+    "kind": "suv",
+    "lights": "high"
+   }
+  ]
+ },
+ "lys-11": {
+  "kind": "skillelinje",
+  "night": true,
+  "type": "road",
+  "beam": "park",
+  "own_x": 2.7,
+  "actors": []
+ },
+ "lys-13": {
+  "kind": "skillelinje",
+  "night": true,
+  "type": "road",
+  "beam": "low",
+  "actors": []
+ },
+ "myk-03": {
+  "kind": "skillelinje",
+  "night": true,
+  "type": "road",
+  "beam": "low",
+  "actors": [
+   {
+    "what": "person",
+    "x": 3.2,
+    "z": -19.0,
+    "yaw": 3.14159,
+    "top": [
+     0.03,
+     0.03,
+     0.04
+    ],
+    "legs": [
+     0.025,
+     0.025,
+     0.03
+    ]
+   }
+  ]
+ },
+ "sig-19": {
+  "kind": "skillelinje",
+  "night": true,
+  "type": "road",
+  "beam": "low",
+  "actors": [
+   {
+    "what": "police",
+    "x": 1.75,
+    "z": -24.0,
+    "yaw": 3.14159,
+    "pose": "side",
+    "lantern": true
+   }
+  ]
+ },
+ "myk-20": {
+  "kind": "sykkelfelt",
+  "env": "street",
+  "cross": "right",
+  "zc": -19.0,
+  "type": "road",
+  "actors": [
+   {
+    "what": "truck",
+    "x": 1.6,
+    "z": -10.0,
+    "blink": "right"
+   },
+   {
+    "what": "cyclist",
+    "x": 3.95,
+    "z": -12.5
+   }
+  ]
+ },
+ "pla-22": {
+  "kind": "skillelinje",
+  "env": "street",
+  "right": 7.0,
+  "lanes": "skille",
+  "own_x": 1.75,
+  "type": "road",
+  "actors": [
+   {
+    "what": "truck",
+    "x": 5.25,
+    "z": -3.0,
+    "color": [
+     0.5,
+     0.1,
+     0.08
+    ]
+   }
+  ]
+ },
+ "fob-13": {
+  "kind": "skillelinje",
+  "type": "road",
+  "actors": [
+   {
+    "what": "truck",
+    "x": 1.75,
+    "z": -15.0,
+    "semi": true
+   }
+  ],
+  "own_x": -1.75
+ },
+ "fob-18": {
+  "kind": "blank",
+  "hill": "down",
+  "left": 2.7,
+  "right": 2.7,
+  "own_x": 1.0,
+  "type": "road",
+  "actors": [
+   {
+    "what": "truck",
+    "x": -0.95,
+    "z": -26.0,
+    "yaw": 3.14159,
+    "color": [
+     0.45,
+     0.1,
+     0.08
+    ]
+   }
+  ]
+ },
+ "fob-26": {
+  "kind": "skillelinje",
+  "type": "road",
+  "actors": [
+   {
+    "what": "truck",
+    "x": 1.75,
+    "z": -13.5,
+    "blink": "right",
+    "color": [
+     0.06,
+     0.3,
+     0.2
+    ]
+   }
+  ]
+ },
+ "fob-27": {
+  "kind": "skillelinje",
+  "own_x": -1.75,
+  "type": "road",
+  "actors": [
+   {
+    "what": "truck",
+    "x": 1.75,
+    "z": -9.5,
+    "color": [
+     0.1,
+     0.24,
+     0.5
+    ]
+   },
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -48.0,
+    "yaw": 3.14159,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "sedan"
+   }
+  ]
+ },
+ "pla-30": {
+  "type": "round",
+  "lanes": 1,
+  "me": {
+   "lane": 1.75,
+   "go": "left"
+  },
+  "cars": [
+   {
+    "a": 140.0,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "hatch"
+   }
+  ]
+ },
+ "vik-39": {
+  "type": "round",
+  "lanes": 1,
+  "me": {
+   "lane": 1.75,
+   "go": "straight"
+  },
+  "cars": [
+   {
+    "a": 250.0,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ]
+   }
+  ]
+ },
+ "pla-09": {
+  "type": "round",
+  "lanes": 2,
+  "me": {
+   "lane": 5.25,
+   "go": "left"
+  },
+  "arrow": "exit"
+ },
+ "pla-10": {
+  "type": "round",
+  "lanes": 2,
+  "me": {
+   "ring": 25.0,
+   "lane": "inner",
+   "go": "right"
+  },
+  "arrow": "exit",
+  "cars": [
+   {
+    "a": 36.0,
+    "lane": "outer",
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "hatch"
+   }
+  ]
+ },
+ "lys-03": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "type": "road",
+  "portal": -26.0,
+  "actors": []
+ },
+ "vin-21": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -11.0,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "sedan",
+    "lights": "park"
+   },
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -17.5,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch",
+    "lights": "park"
+   },
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -24.0,
+    "color": [
+     0.08,
+     0.09,
+     0.11
+    ],
+    "kind": "suv",
+    "lights": "park"
+   },
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -30.5,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "sedan",
+    "lights": "park"
+   }
+  ]
+ },
+ "vin-16": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -15.0,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "sedan",
+    "fire": true
+   }
+  ]
+ },
+ "uly-21": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -17.0,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "suv",
+    "fire": true
+   }
+  ]
+ },
+ "uly-16": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.1,
+    "z": -15.0,
+    "yaw": 0.55,
+    "color": [
+     0.08,
+     0.09,
+     0.11
+    ],
+    "kind": "sedan",
+    "hazard": true
+   },
+   {
+    "what": "car",
+    "x": -0.4,
+    "z": -20.5,
+    "yaw": -0.8,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "hatch",
+    "hazard": true
+   }
+  ]
+ },
+ "kjt-19": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "type": "road",
+  "own_x": 2.6,
+  "own_hazard": true,
+  "actors": []
+ },
+ "uly-17": {
+  "kind": "skillelinje",
+  "own_hazard": true,
+  "type": "road",
+  "actors": []
+ },
+ "vin-03": {
+  "kind": "blank",
+  "winter": true,
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -44.0,
+    "yaw": 3.14159,
+    "color": [
+     0.08,
+     0.09,
+     0.11
+    ],
+    "kind": "suv"
+   }
+  ]
+ },
+ "vin-15": {
+  "kind": "blank",
+  "winter": true,
+  "type": "road",
+  "fog": 5.0,
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -10.0,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "sedan"
+   },
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -18.0,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch"
+   },
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -26.0,
+    "color": [
+     0.08,
+     0.09,
+     0.11
+    ],
+    "kind": "suv"
+   },
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -34.0,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "sedan"
+   }
+  ],
+  "weather": "snow"
+ },
+ "vin-18": {
+  "kind": "blank",
+  "winter": true,
+  "type": "road",
+  "fog": 3.0,
+  "actors": [],
+  "weather": "snow"
+ },
+ "vin-04": {
+  "kind": "blank",
+  "winter": true,
+  "type": "road",
+  "env": "street",
+  "own_snow": true,
+  "actors": [
+   {
+    "what": "car",
+    "x": -2.5,
+    "z": -14.0,
+    "yaw": 3.14159,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch"
+   }
+  ]
+ },
+ "vin-25": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "portal": -26.0,
+  "type": "road",
+  "actors": [],
+  "portal_style": "box",
+  "closed": true
+ },
+ "vin-26": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "type": "road",
+  "actors": []
+ },
+ "vin-27": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "type": "road",
+  "wall_text": "HAVARILOMME",
+  "actors": []
+ },
+ "vin-28": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "portal": -26.0,
+  "type": "road",
+  "actors": [],
+  "portal_style": "grass"
+ },
+ "vin-29": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "portal": -26.0,
+  "type": "road",
+  "actors": [],
+  "portal_style": "raw"
+ },
+ "vin-30": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "type": "road",
+  "actors": [
+   {
+    "what": "truck",
+    "x": -1.75,
+    "z": -27.0,
+    "yaw": 3.14159,
+    "color": [
+     0.1,
+     0.24,
+     0.5
+    ]
+   }
+  ]
+ },
+ "vin-31": {
+  "kind": "skillelinje",
+  "env": "tunnel",
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": 2.8,
+    "z": -14.0,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch"
+   }
+  ]
+ },
+ "far-09": {
+  "kind": "skillelinje",
+  "weather": "rain",
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -15.0,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch",
+    "lights": "park"
+   }
+  ]
+ },
+ "far-17": {
+  "kind": "skillelinje",
+  "weather": "rain",
+  "type": "road",
+  "actors": []
+ },
+ "far-18": {
+  "kind": "skillelinje",
+  "weather": "rain",
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -38.0,
+    "yaw": 3.14159,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "suv",
+    "lights": "park"
+   }
+  ]
+ },
+ "vin-12": {
+  "kind": "skillelinje",
+  "env": "street",
+  "weather": "rain",
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": 1.75,
+    "z": -17.0,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "sedan",
+    "lights": "park"
+   }
+  ]
+ },
+ "kjt-21": {
+  "kind": "blank",
+  "winter": true,
+  "weather": "snow",
+  "env": "street",
+  "own_snow": true,
+  "type": "road",
+  "actors": [
+   {
+    "what": "car",
+    "x": -2.5,
+    "z": -15.0,
+    "yaw": 3.14159,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch"
+   }
+  ]
  }
 }

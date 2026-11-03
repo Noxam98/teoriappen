@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "validate": "node scripts/validate-data.mjs",
     "lab": "vite --open /debug.html",
-    "scenes": "godot --path scenes3d -- scene=all dir=../src/assets/scenes",
+    "scenes": "node scripts/render-scenes.mjs",
     "scenes:check": "godot --headless --path scenes3d -- check=all"
   },
   "dependencies": {

@@ -133,7 +133,9 @@
     "id": "far-09",
     "cat": "fart",
     "q": "Veien er våt og glatt. Hva bør du gjøre med avstanden til kjøretøyet foran?",
-    "img": null,
+    "img": {
+      "view": "far-09"
+    },
     "a": [
       "Øke avstanden, fordi bremselengden blir lengre",
       "Beholde den samme avstanden som på tørr vei, fordi du kjører like fort",
@@ -181,7 +183,9 @@
     "id": "far-12",
     "cat": "fart",
     "q": "Fartsgrensen er 80 km/t, men det er tett tåke. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "far-12"
+    },
     "a": [
       "Du må alltid tilpasse farten etter sikten, selv om du da kjører mye saktere enn 80 km/t",
       "Du kan kjøre 80 km/t når det er skiltet, også i tett tåke",
@@ -263,7 +267,9 @@
     "id": "far-17",
     "cat": "fart",
     "q": "Hva er vannplaning?",
-    "img": null,
+    "img": {
+      "view": "far-17"
+    },
     "a": [
       "At dekkene mister kontakten med veien fordi de flyter på et lag med vann",
       "At bremsene blir våte når det regner, så de virker dårligere enn vanlig",
@@ -279,7 +285,9 @@
     "id": "far-18",
     "cat": "fart",
     "q": "Bilen begynner å vannplane. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "far-18"
+    },
     "a": [
       "Slippe gassen og holde rattet rett til dekkene får grep igjen",
       "Bremse så hardt du kan, så bilen stanser før det blir enda verre",
@@ -327,7 +335,9 @@
     "id": "far-21",
     "cat": "fart",
     "q": "Du kjører i en gate med parkerte biler langs høyre side. Hvorfor bør du holde god avstand til dem?",
-    "img": null,
+    "img": {
+      "view": "far-21"
+    },
     "a": [
       "En bildør kan plutselig bli åpnet rett foran deg",
       "Det er forbudt å kjøre nærmere enn 2 meter fra parkerte biler",

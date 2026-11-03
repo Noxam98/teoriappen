@@ -291,7 +291,9 @@
     "id": "kjt-19",
     "cat": "kjoretoy",
     "q": "Bilen stanser i en tunnel fordi drivstoffet er tomt. Hva gjør du?",
-    "img": null,
+    "img": {
+      "view": "kjt-19"
+    },
     "a": [
       "Setter på nødsignal, tar på refleksvest og ringer fra nødtelefonen i tunnelen",
       "Blir sittende i bilen og venter til noen stanser og hjelper deg",
@@ -323,7 +325,9 @@
     "id": "kjt-21",
     "cat": "kjoretoy",
     "q": "Det har kommet snø og is på bilen. Hva kan det bety for førerstøttesystemene, for eksempel automatisk nødbrems?",
-    "img": null,
+    "img": {
+      "view": "kjt-21"
+    },
     "a": [
       "Sensorer og kamera kan bli dekket, slik at systemene virker dårlig eller slår seg av",
       "Systemene virker som vanlig, fordi snø og is ikke har noe å si for sensorene",

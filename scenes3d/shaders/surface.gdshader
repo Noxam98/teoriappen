@@ -15,6 +15,8 @@ uniform float bump = 0.35;
 uniform float slab_size = 0.0;
 uniform float wheel_tracks = 0.0;
 uniform float tracks_half = 1.75;
+// Мокрая дорога: темнее, блестит, в низинах лужи.
+uniform float wet = 0.0;
 
 varying vec3 wp;
 
@@ -46,11 +48,19 @@ void fragment() {
 		float joint = smoothstep(0.47, 0.495, max(g.x, g.y));
 		col *= 1.0 - joint * 0.45;
 	}
+	float pool = 0.0;
+	if (wet > 0.0) {
+		// Лужи вытянуты вдоль дороги: вода стоит в колеях.
+		pool = smoothstep(0.54, 0.64, texture(noise, vec2(wp.x * 0.1, wp.z * 0.035)).r * 0.65 + texture(noise, wp.xz * 0.21).r * 0.35) * wet;
+		col *= mix(1.0, 0.5, wet);
+		col *= 1.0 - pool * 0.3;
+		r = mix(mix(r, 0.3, wet), 0.05, pool);
+	}
 	float e = 0.03;
 	float dx = field(p + vec2(e, 0.0)) - f;
 	float dz = field(p + vec2(0.0, e)) - f;
-	NORMAL = normalize(NORMAL + (VIEW_MATRIX * vec4(-dx, 0.0, -dz, 0.0)).xyz * bump * 6.0);
+	NORMAL = normalize(NORMAL + (VIEW_MATRIX * vec4(-dx, 0.0, -dz, 0.0)).xyz * bump * 6.0 * (1.0 - pool));
 	ALBEDO = col;
 	ROUGHNESS = r;
-	SPECULAR = 0.35;
+	SPECULAR = mix(0.35, 0.55, wet);
 }

@@ -3,7 +3,9 @@
     "id": "myk-01",
     "cat": "myke",
     "q": "En ball triller ut i veien foran deg i et boligområde. Hva bør du forvente?",
-    "img": null,
+    "img": {
+      "view": "myk-01"
+    },
     "a": [
       "At et barn kan komme løpende etter ballen",
       "At ballen ikke betyr noe for kjøringen",
@@ -19,7 +21,9 @@
     "id": "myk-02",
     "cat": "myke",
     "q": "Du ser barn som leker ved veikanten. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "myk-02"
+    },
     "a": [
       "Senke farten og være klar til å stoppe, fordi barn kan gjøre uventede ting",
       "Tute for å varsle barna og holde farten, så du ikke stopper trafikken",
@@ -35,7 +39,9 @@
     "id": "myk-03",
     "cat": "myke",
     "q": "En gående med mørke klær og uten refleks går langs veien i mørket. Omtrent hvor langt unna kan du se personen med nærlys?",
-    "img": null,
+    "img": {
+      "view": "myk-03"
+    },
     "a": [
       "Omtrent 25–30 meter",
       "Omtrent 140 meter",
@@ -85,7 +91,9 @@
     "id": "myk-07",
     "cat": "myke",
     "q": "Du ser en gående med hvit stokk ved veien. Hva betyr det?",
-    "img": null,
+    "img": {
+      "view": "myk-07"
+    },
     "a": [
       "Personen er blind eller svaksynt, og du må ta ekstra hensyn",
       "Personen er eldre og trenger en stokk for å kunne gå",
@@ -269,7 +277,9 @@
     "id": "myk-20",
     "cat": "myke",
     "q": "En lastebil skal svinge til høyre i et kryss. En syklist står rett ved siden av lastebilen, på høyre side. Hvorfor er dette farlig?",
-    "img": null,
+    "img": {
+      "view": "myk-20"
+    },
     "a": [
       "Syklisten kan være i blindsonen, så sjåføren ser kanskje ikke syklisten",
       "Det er farlig i mørket, fordi sjåføren da ikke ser syklisten i speilene, men ikke om dagen",
@@ -355,7 +365,9 @@
     "id": "myk-25",
     "cat": "myke",
     "q": "Du skal passere en person med hvit stokk eller førerhund ved veien. Hva krever trafikkreglene?",
-    "img": null,
+    "img": {
+      "view": "myk-25"
+    },
     "a": [
       "At du holder lav nok fart og stanser straks hvis det trengs",
       "At du stanser hvis personen står ved et gangfelt, ellers er det ingen særlige krav",

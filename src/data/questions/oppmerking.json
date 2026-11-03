@@ -269,7 +269,9 @@
     "id": "opp-16",
     "cat": "oppmerking",
     "q": "Foran et kryss er det malt en pil som peker til venstre i feltet ditt. Hva betyr det?",
-    "img": null,
+    "img": {
+      "view": "opp-16"
+    },
     "a": [
       "Feltet er for kjørende som skal svinge til venstre",
       "Du må bytte til feltet til venstre før krysset",
@@ -303,7 +305,9 @@
     "id": "opp-18",
     "cat": "oppmerking",
     "q": "På en vei med to felt i samme retning er det en hvit linje mellom feltene, med lange streker og korte mellomrom. Hva betyr den?",
-    "img": null,
+    "img": {
+      "view": "opp-18"
+    },
     "a": [
       "Det er fare ved å skifte felt her",
       "Sikten framover er for kort til vanlig forbikjøring",

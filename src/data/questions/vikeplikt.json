@@ -551,7 +551,9 @@
     "id": "vik-32",
     "cat": "vikeplikt",
     "q": "Du kjører på en vei med fartsgrense 50 km/t. En buss ved holdeplassen foran deg blinker til venstre for å kjøre ut. Hva skal du gjøre?",
-    "img": null,
+    "img": {
+      "view": "vik-32"
+    },
     "a": [
       "Sette ned farten og slippe bussen ut",
       "Kjøre forbi før bussen kommer ut",
@@ -567,7 +569,9 @@
     "id": "vik-33",
     "cat": "vikeplikt",
     "q": "På en vei med fartsgrense 80 km/t blinker en buss for å kjøre ut fra holdeplassen. Har du vikeplikt for bussen?",
-    "img": null,
+    "img": {
+      "view": "vik-33"
+    },
     "a": [
       "Nei, den regelen gjelder bare der fartsgrensen er 60 km/t eller lavere",
       "På alle veier skal du slippe ut en buss som blinker fra holdeplassen",
@@ -617,7 +621,9 @@
     "id": "vik-37",
     "cat": "vikeplikt",
     "q": "Du svinger til venstre i et kryss uten gangfelt. Noen gående holder på å krysse veien du svinger inn i. Hva skal du gjøre?",
-    "img": null,
+    "img": {
+      "view": "vik-37"
+    },
     "a": [
       "Slippe de gående over først, selv om det ikke er gangfelt",
       "Svinge foran dem, fordi det ikke er gangfelt",
@@ -651,7 +657,9 @@
     "id": "vik-39",
     "cat": "vikeplikt",
     "q": "Når skal du bruke blinklys til høyre i en rundkjøring?",
-    "img": null,
+    "img": {
+      "view": "vik-39"
+    },
     "a": [
       "Før du kjører ut av rundkjøringen",
       "Når du kjører inn, også når du skal langt rundt",
@@ -667,7 +675,9 @@
     "id": "vik-40",
     "cat": "vikeplikt",
     "q": "Du skal kjøre rett fram gjennom et kryss, men det står kø på den andre siden. Hva skal du gjøre?",
-    "img": null,
+    "img": {
+      "view": "vik-40"
+    },
     "a": [
       "Vente før krysset til det er plass til bilen på den andre siden",
       "Kjøre inn i krysset og vente der til køen begynner å flytte seg",
@@ -751,7 +761,9 @@
     "id": "vik-45",
     "cat": "vikeplikt",
     "q": "Hvor skal du stanse ved et stoppskilt hvis det ikke er noen stopplinje?",
-    "img": null,
+    "img": {
+      "view": "vik-45"
+    },
     "a": [
       "Så nær den kryssende veien som mulig",
       "Ved selve skiltet, selv om du ikke ser noe derfra",
@@ -831,7 +843,9 @@
     "id": "vik-50",
     "cat": "vikeplikt",
     "q": "Du kjører inn i et kryss uten skilt. En ambulanse kommer fra venstre uten blålys og sirene. Hvem har vikeplikt?",
-    "img": null,
+    "img": {
+      "view": "vik-50"
+    },
     "a": [
       "Ambulansen, fordi vanlige regler gjelder når den ikke bruker blålys",
       "Du, fordi en ambulanse har forkjørsrett, også når den kjører uten blålys",
@@ -865,7 +879,9 @@
     "id": "vik-52",
     "cat": "vikeplikt",
     "q": "Du har vikepliktskilt og skal ut på veien. En bil kommer fra venstre og blinker til høyre, inn mot veien du står i. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "vik-52"
+    },
     "a": [
       "Vente til du ser at bilen faktisk svinger, og først da kjøre ut",
       "Kjøre ut med en gang, fordi blinklyset viser at bilen skal svinge",
@@ -933,7 +949,9 @@
     "id": "vik-56",
     "cat": "vikeplikt",
     "q": "Du skal svinge til venstre i et kryss. En møtende bil skal også svinge til venstre. Hvordan kan dere gjøre det?",
-    "img": null,
+    "img": {
+      "view": "vik-56"
+    },
     "a": [
       "Dere kan svinge samtidig, til venstre for hverandre, så banene ikke krysser",
       "Dere må kjøre rundt hverandre, slik at dere passerer til høyre for hverandre",

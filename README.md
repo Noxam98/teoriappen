@@ -81,7 +81,7 @@ npm run build:single
 
 ```bash
 godot --headless --path scenes3d --import
-npm run scenes         # рендер всех сцен
+npm run scenes         # рендер всех сцен, 4 процесса; npm run scenes -- 2, если мало памяти
 npm run scenes:check   # проверка без рендера
 ```
 

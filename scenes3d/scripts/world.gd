@@ -35,6 +35,16 @@ var tufts_dropped: int = 0
 var _plant_radius: Dictionary = {}
 ## Дымка: множитель плотности тумана и воздушной перспективы.
 const HAZE: float = 1.08
+## Больше 1: густой туман вместо обычной дымки, задания про туман. Число задаёт плотность.
+var fog_scale: float = 1.0
+## Ночь в заданиях должна читаться: глаз привык к темноте, поэтому экспозиция выше, чем на «Острове».
+var night_scene: bool = false
+## Внутри туннеля: солнца нет, свет только от светильников.
+var tunnel_scene: bool = false
+## Зима: снег вместо травы и гравия, трава не растёт, горы белые.
+var winter: bool = false
+## Дождь: дорога мокрая, воздух серее.
+var rainy: bool = false
 const CLEARANCE: float = 4.5
 ## Вылет травинок от центра пучка при самом большом масштабе.
 const TUFT_MARGIN: float = 0.35
@@ -134,6 +144,24 @@ func setup_light(scene_hour: float = 11.0, turn: float = 0.0, clouds: float = 0.
 	environment.fog_density = lerpf(0.00018, 0.00034, maxf(low_sun, night)) * HAZE
 	environment.ambient_light_energy = lerpf(1.0, 0.9, day) + night * 0.6
 	environment.tonemap_exposure = lerpf(1.0, 1.25, night)
+	if tunnel_scene:
+		sun.light_energy = 0.0
+		environment.ambient_light_energy = 0.1
+		environment.fog_density = 0.0
+		environment.tonemap_exposure = 1.3
+	if night_scene:
+		environment.tonemap_exposure = 2.3
+		environment.ambient_light_energy += 0.3
+	# Густой туман: своя плотность и цвет. Небо и горы тонут в нём, солнце почти не пробивается.
+	if fog_scale > 1.0:
+		environment.fog_aerial_perspective = 0.0
+		environment.fog_density = 0.0016 * fog_scale
+		environment.fog_sky_affect = 1.0
+		environment.fog_light_color = Color(0.5, 0.53, 0.57) if rainy else Color(0.74, 0.77, 0.8)
+		environment.fog_light_energy = 1.0
+		environment.fog_sun_scatter = 0.0
+		sun.light_energy *= 0.3
+		environment.ambient_light_energy += 0.2
 
 
 ## Дальние горы вокруг всей сцены.
@@ -153,6 +181,8 @@ func hills() -> void:
 		var n: float = noise.get_noise_2d(x, z) * 0.5 + 0.5
 		return smoothstep(1300.0, 5000.0, d) * (30.0 + n * n * 760.0) - 0.6
 	var tint := func(y: float, n: float) -> Color:
+		if winter:
+			return Color(0.84, 0.87, 0.91).lerp(Color(0.93, 0.95, 0.97), n)
 		if y > 640.0 + n * 90.0:
 			return Color(0.86, 0.89, 0.92)
 		if y > 470.0 + n * 50.0:
@@ -194,14 +224,21 @@ func surface(a: Color, b: Color, params: Dictionary = {}) -> ShaderMaterial:
 
 
 func asphalt(tracks: float = 0.1) -> ShaderMaterial:
-	return surface(Color(0.225, 0.22, 0.21), Color(0.3, 0.295, 0.285), {"fine_scale": 2.7, "fine_amount": 0.62, "mid_amount": 0.14, "big_amount": 0.24, "mid_scale": 0.31, "big_scale": 0.031, "rough": 0.92, "bump": 0.06, "wheel_tracks": tracks})
+	var m: ShaderMaterial = surface(Color(0.225, 0.22, 0.21), Color(0.3, 0.295, 0.285), {"fine_scale": 2.7, "fine_amount": 0.62, "mid_amount": 0.14, "big_amount": 0.24, "mid_scale": 0.31, "big_scale": 0.031, "rough": 0.92, "bump": 0.06, "wheel_tracks": tracks})
+	if rainy:
+		m.set_shader_parameter("wet", 1.0)
+	return m
 
 
 func grass_ground() -> ShaderMaterial:
+	if winter:
+		return surface(Color(0.8, 0.83, 0.88), Color(0.95, 0.96, 0.98), {"fine_scale": 0.9, "mid_scale": 0.11})
 	return surface(Color(0.2, 0.31, 0.1), Color(0.37, 0.45, 0.16), {"fine_scale": 0.9, "mid_scale": 0.11, "big_scale": 0.012, "rough": 1.0, "bump": 1.0})
 
 
 func gravel() -> ShaderMaterial:
+	if winter:
+		return grass_ground()
 	return surface(Color(0.36, 0.33, 0.28), Color(0.55, 0.51, 0.44), {"fine_scale": 2.6, "fine_amount": 0.72, "mid_amount": 0.2, "big_amount": 0.08, "rough": 1.0, "bump": 1.0})
 
 
@@ -348,6 +385,61 @@ func lot(x0: float, z0: float, sx: float, sz: float, w: float, d: float, radius:
 	add_mesh(Mesher.prism(pave, -0.02, 0.14, pavement(), kerb()))
 	if with_grass:
 		var g: PackedVector2Array = outline.call(x0 + sx * walk, z0 + sz * walk, w - walk, d - walk, maxf(0.0, radius - walk))
+		add_mesh(Mesher.prism(g, 0.1, 0.17, grass_ground(), kerb()))
+		_lawns.append_array(Geometry2D.offset_polygon(g, -TUFT_MARGIN))
+
+
+## Падающий дождь или снег. Капли стоят только в поле зрения камеры: кадр один, за его пределами они не нужны.
+## Ближе 5,5 м их нет: у самого объектива капля закрыла бы полкадра.
+func precipitation(kind: String) -> void:
+	var rain: bool = kind == "rain"
+	var quad := QuadMesh.new()
+	quad.size = Vector2(0.009, 0.62) if rain else Vector2(0.052, 0.052)
+	var m := StandardMaterial3D.new()
+	m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	m.cull_mode = BaseMaterial3D.CULL_DISABLED
+	m.disable_fog = true
+	if rain:
+		m.albedo_color = Color(0.88, 0.91, 0.95, 0.24)
+	else:
+		m.albedo_color = Color(1.0, 1.0, 1.0, 0.95)
+		m.albedo_texture = Vehicles._flare(Color.WHITE, true)
+	quad.material = m
+	var mm := MultiMesh.new()
+	mm.transform_format = MultiMesh.TRANSFORM_3D
+	mm.mesh = quad
+	mm.instance_count = 3400 if rain else 7000
+	var r := RandomNumberGenerator.new()
+	r.seed = 21
+	var view: Basis = camera.global_basis
+	var eye: Vector3 = camera.global_position
+	var right: Vector3 = view.x
+	for i: int in mm.instance_count:
+		var d: float = lerpf(5.5, 58.0, r.randf())
+		var p: Vector3 = eye + view * Vector3(r.randf_range(-0.62, 0.62) * d, r.randf_range(-0.42, 0.42) * d, -d)
+		var size: float = r.randf_range(0.7, 1.3)
+		if p.y < 0.0:
+			p.y = r.randf_range(0.05, 6.0)
+		var b: Basis
+		if rain:
+			# Косые струи: стоят почти вертикально и смотрят на камеру.
+			var up: Vector3 = (Vector3.UP + right * 0.09).normalized()
+			b = Basis(right, up, right.cross(up)).scaled(Vector3(size, size, 1.0))
+		else:
+			b = view.scaled(Vector3(size, size, 1.0))
+		mm.set_instance_transform(i, Transform3D(b, p))
+	var inst := MultiMeshInstance3D.new()
+	inst.multimesh = mm
+	inst.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	add_child(inst)
+
+
+## Участок произвольной формы: тротуар по краю и газон внутри.
+func lot_outline(pave: PackedVector2Array, walk: float = 2.5) -> void:
+	add_mesh(Mesher.prism(pave, -0.02, 0.14, pavement(), kerb()))
+	var inner: Array = Geometry2D.offset_polygon(pave, -walk)
+	for g: PackedVector2Array in inner:
 		add_mesh(Mesher.prism(g, 0.1, 0.17, grass_ground(), kerb()))
 		_lawns.append_array(Geometry2D.offset_polygon(g, -TUFT_MARGIN))
 
@@ -804,6 +896,8 @@ func tufts_along(path: PackedVector2Array, a: float, b: float, count: int, to: f
 ## force сажает без проверки: так самопроверка ставит ловушку для audit.
 func _tuft(x: float, z: float, base: float, force: bool = false) -> void:
 	var b := Basis(Vector3.UP, rng.randf() * TAU).scaled(Vector3.ONE * rng.randf_range(0.7, 1.5))
+	if winter:
+		return
 	if not force and not grass_free(x, z):
 		tufts_dropped += 1
 		return

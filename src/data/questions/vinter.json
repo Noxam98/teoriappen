@@ -35,7 +35,9 @@
     "id": "vin-03",
     "cat": "vinter",
     "q": "Du skal kjøre over en fjellovergang om vinteren. Hva er lurt å gjøre før du kjører?",
-    "img": null,
+    "img": {
+      "view": "vin-03"
+    },
     "a": [
       "Sjekke vær- og føremeldingen og ha med varme klær og kjetting",
       "Regne med at veien er åpen, så du trenger ikke sjekke noe",
@@ -51,7 +53,9 @@
     "id": "vin-04",
     "cat": "vinter",
     "q": "Det har snødd på bilen din i natt. Hva må du gjøre før du kjører?",
-    "img": null,
+    "img": {
+      "view": "vin-04"
+    },
     "a": [
       "Fjerne snø og is fra alle ruter, lys, speil og taket",
       "Fjerne snø fra frontruten og bakruten, men la taket være",
@@ -163,7 +167,9 @@
     "id": "vin-12",
     "cat": "vinter",
     "q": "Hva øker risikoen for vannplaning?",
-    "img": null,
+    "img": {
+      "view": "vin-12"
+    },
     "a": [
       "Høy fart og slitte dekk",
       "Lav fart og nye dekk",
@@ -179,7 +185,9 @@
     "id": "vin-13",
     "cat": "vinter",
     "q": "Du kjører i tett tåke. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "vin-13"
+    },
     "a": [
       "Senke farten så du kan stanse på den strekningen du ser er fri",
       "Bruke fjernlys, slik at du ser lenger fram i tåken",
@@ -211,7 +219,9 @@
     "id": "vin-15",
     "cat": "vinter",
     "q": "Du kjører i kolonne over en fjellovergang om vinteren. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "vin-15"
+    },
     "a": [
       "Du skal følge kolonnelederens anvisninger og ikke kjøre forbi",
       "Du kan kjøre forbi kolonnelederen hvis bilen har firehjulstrekk",
@@ -227,7 +237,9 @@
     "id": "vin-16",
     "cat": "vinter",
     "q": "Det brenner i en bil foran deg i en tunnel, og du kan ikke kjøre ut. Hva gjør du?",
-    "img": null,
+    "img": {
+      "view": "vin-16"
+    },
     "a": [
       "Stanser inntil siden med nødsignal på, lar nøkkelen stå i og går til nærmeste nødutgang",
       "Stanser inntil siden, låser bilen, tar med nøkkelen og går til nærmeste nødutgang",
@@ -259,7 +271,9 @@
     "id": "vin-18",
     "cat": "vinter",
     "q": "Det er midt i mai, og det har kommet snø på en fjellovergang. Kan du bruke kjetting på bilen?",
-    "img": null,
+    "img": {
+      "view": "vin-18"
+    },
     "a": [
       "Ja, men bare når føret gjør det nødvendig",
       "Nei, kjetting er forbudt etter påske",
@@ -307,7 +321,9 @@
     "id": "vin-21",
     "cat": "vinter",
     "q": "Trafikken stanser i en tunnel, og det står kø foran deg. Du ser verken røyk eller flammer. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "vin-21"
+    },
     "a": [
       "Holde god avstand til bilen foran og sette på nødsignal, så bilene bak blir varslet",
       "Kjøre tett inntil bilen foran, slik at flest mulig biler får plass inne i tunnelen bak deg",
@@ -373,5 +389,147 @@
     "ru": "Знак предупреждает об опасности скользкой дороги, а табличка уточняет когда: когда дорога мокрая. Снизьте скорость заранее и избегайте резкого торможения. ABS не даёт колёсам заблокироваться, но сцепления не добавляет.",
     "uk": "Знак попереджає про небезпеку слизької дороги, а табличка уточнює коли: коли дорога мокра. Знизьте швидкість заздалегідь і уникайте різкого гальмування. ABS не дає колесам заблокуватися, але зчеплення не додає.",
     "theory": "vinter/glatt-vei"
+  },
+  {
+    "id": "vin-25",
+    "cat": "vinter",
+    "q": "Foran tunnelen blinker et rødt lys, og bommen er nede. Hva betyr det?",
+    "img": {
+      "view": "vin-25"
+    },
+    "a": [
+      "Tunnelen er stengt, og du skal ikke kjøre inn",
+      "Det er kø i tunnelen, så du kan kjøre forbi bommen hvis du kjører sakte",
+      "Tunnelen er stengt for tunge kjøretøy, men personbiler kan kjøre forbi",
+      "Det er en jernbaneovergang like foran, så du venter til toget har passert"
+    ],
+    "f": "Bom som er nede eller rødt blinkende lys utenfor tunnelen betyr at tunnelen er stengt, ofte fordi noe har skjedd inne i den. Du skal ikke kjøre inn, selv om du ikke ser noe galt.",
+    "ru": "Опущенный шлагбаум или мигающий красный свет перед туннелем означают, что туннель закрыт, часто потому, что внутри что-то случилось. Въезжать нельзя, даже если вы не видите ничего подозрительного.",
+    "uk": "Опущений шлагбаум або блимаюче червоне світло перед тунелем означають, що тунель закрито, часто тому, що всередині щось сталося. В’їжджати не можна, навіть якщо ви не бачите нічого підозрілого.",
+    "theory": "vinter/kolonne-og-tunnel"
+  },
+  {
+    "id": "vin-26",
+    "cat": "vinter",
+    "q": "Du tar et brannslukningsapparat ned fra veggen i en tunnel. Hva skjer da?",
+    "img": {
+      "view": "vin-26"
+    },
+    "a": [
+      "Det går automatisk alarm hos Vegtrafikksentralen, så de vet hvor du er",
+      "Ingenting skjer før du har ringt 110 og sagt hvor i tunnelen du er",
+      "Det går alarm hos brannvesenet, men bare hvis du også ringer fra nødtelefonen",
+      "Tunnelen blir stengt først når apparatet er tomt og satt tilbake på veggen"
+    ],
+    "f": "Når du løfter apparatet ned, går det automatisk alarm hos Vegtrafikksentralen. Da vet de hvor du er, og de kan sette i gang tiltak for tunnelen.",
+    "ru": "Как только вы снимаете огнетушитель со стены, в центре управления движением (Vegtrafikksentralen) автоматически срабатывает сигнал тревоги. Там узнают, где вы находитесь, и могут принять меры по туннелю.",
+    "uk": "Щойно ви знімаєте вогнегасник зі стіни, у центрі керування рухом (Vegtrafikksentralen) автоматично спрацьовує сигнал тривоги. Там дізнаються, де ви перебуваєте, і можуть вжити заходів щодо тунелю.",
+    "theory": "vinter/kolonne-og-tunnel"
+  },
+  {
+    "id": "vin-27",
+    "cat": "vinter",
+    "q": "Bilen begynner å miste kraft i en tunnel, og skiltet viser en havarilomme like foran. Hva bør du gjøre?",
+    "img": {
+      "view": "vin-27"
+    },
+    "a": [
+      "Stanse i havarilommen og sette på nødsignal",
+      "Stanse med en gang i kjørefeltet og sette på nødsignal",
+      "Snu bilen og kjøre tilbake til nærmeste innkjøring",
+      "Kjøre videre uten nødsignal til du er ute av tunnelen"
+    ],
+    "f": "I havarilommen står du tryggere og er ikke i veien for andre trafikanter og nødetatene. Rekker du ikke dit, kjører du så langt til siden du kan. Nødsignalet varsler dem som kommer bak deg.",
+    "ru": "В аварийном кармане безопаснее, и вы не мешаете другим участникам движения и экстренным службам. Если не успеваете до него доехать, прижмитесь к краю как можно дальше. Аварийная сигнализация предупредит тех, кто едет сзади.",
+    "uk": "В аварійній кишені безпечніше, і ви не заважаєте іншим учасникам руху та екстреним службам. Якщо не встигаєте до неї доїхати, притисніться до краю якнайдалі. Аварійна сигналізація попередить тих, хто їде позаду.",
+    "theory": "vinter/kolonne-og-tunnel"
+  },
+  {
+    "id": "vin-28",
+    "cat": "vinter",
+    "q": "Du kjører ofte gjennom en lang tunnel. Hva er det lurt å legge merke til?",
+    "img": {
+      "view": "vin-28"
+    },
+    "a": [
+      "Hvor nødtelefoner, brannslukningsapparater og rømningsveier er",
+      "Hvor mobilen har best dekning, så du kan ringe 110 derfra",
+      "Hvor langt det er mellom lysene i taket, så du kan bedømme farten",
+      "Hvor du kan snu bilen hvis det blir kø inne i tunnelen"
+    ],
+    "f": "Hvis noe skjer, har du liten tid. Da hjelper det å vite hvor sikkerhetsutstyret og rømningsveiene er. Nødtelefonen er bedre enn mobilen, fordi Vegtrafikksentralen da ser hvor du ringer fra.",
+    "ru": "Если что-то случится, времени будет мало, и тогда важно знать, где находятся средства безопасности и пути эвакуации. Аварийный телефон лучше мобильного: Vegtrafikksentralen сразу видит, откуда вы звоните.",
+    "uk": "Якщо щось станеться, часу буде мало, і тоді важливо знати, де розташовані засоби безпеки та шляхи евакуації. Аварійний телефон кращий за мобільний: Vegtrafikksentralen одразу бачить, звідки ви телефонуєте.",
+    "theory": "vinter/kolonne-og-tunnel"
+  },
+  {
+    "id": "vin-29",
+    "cat": "vinter",
+    "q": "Hvorfor er det lurt å ha radioen på når du kjører gjennom en lang tunnel?",
+    "img": {
+      "view": "vin-29"
+    },
+    "a": [
+      "Du kan få nyttig informasjon der hvis det skjer noe i tunnelen",
+      "Det er påbudt, og du kan få bot hvis radioen er av i tunnelen",
+      "Lyden hjelper deg å holde riktig avstand til bilen foran deg",
+      "Radioen varsler deg automatisk når farten din er for høy"
+    ],
+    "f": "Hvis det skjer noe i tunnelen, kan det komme nyttig informasjon på radioen. Du skal fortsatt følge med på trafikken og på skilt og signaler.",
+    "ru": "Если в туннеле что-то случится, по радио могут передать полезную информацию. При этом всё равно следите за движением, знаками и сигналами.",
+    "uk": "Якщо в тунелі щось станеться, по радіо можуть передати корисну інформацію. Водночас усе одно стежте за рухом, знаками й сигналами.",
+    "theory": "vinter/kolonne-og-tunnel"
+  },
+  {
+    "id": "vin-30",
+    "cat": "vinter",
+    "q": "En tung lastebil kommer imot deg i en tunnel. Hva bør du være forberedt på?",
+    "img": {
+      "view": "vin-30"
+    },
+    "a": [
+      "At lufttrykket kan endre seg når den passerer, så du holder godt i rattet",
+      "At lastebilen må stanse for deg, fordi den er bredere enn bilen din",
+      "At du må slå av lyset til lastebilen har passert, så føreren ikke blir blendet",
+      "At du må stanse inntil veggen til lastebilen har passert deg"
+    ],
+    "f": "Tunge kjøretøy kan gi høyere lufttrykk når de passerer deg, og det kan du merke på bilen. Hold godt i rattet og fortsett i feltet ditt. Du skal ikke stanse i tunnelen, og lyset skal være på.",
+    "ru": "Тяжёлый транспорт при разъезде может создавать повышенное давление воздуха, и машина это почувствует. Крепче держите руль и продолжайте ехать в своей полосе. Останавливаться в туннеле нельзя, а свет должен быть включён.",
+    "uk": "Важкий транспорт під час роз’їзду може створювати підвищений тиск повітря, і автомобіль це відчує. Міцніше тримайте кермо й продовжуйте їхати своєю смугою. Зупинятися в тунелі не можна, а світло має бути ввімкнене.",
+    "theory": "vinter/kolonne-og-tunnel"
+  },
+  {
+    "id": "vin-31",
+    "cat": "vinter",
+    "q": "Hvorfor er det forbudt å stanse i en tunnel?",
+    "img": {
+      "view": "vin-31"
+    },
+    "a": [
+      "Det øker faren for uhell, og biler som står, gjør det vanskeligere for nødetatene",
+      "Eksosen blir farlig for dem som sitter i bilen etter bare noen få minutter",
+      "Tunnelen blir automatisk stengt når en bil står stille i mer enn ett minutt",
+      "Forbudet er der bare fordi tunge kjøretøy trenger hele bredden av tunnelen"
+    ],
+    "f": "Stans i tunnel gir større fare for uhell. Ved brann, ulykke eller akutt sykdom gjør biler som står, og kø det vanskelig for nødetatene å komme fram. Forbudet står i trafikkreglene § 17. Havarilommen er for motorstopp og for dem som trenger hjelp.",
+    "ru": "Остановка в туннеле повышает риск аварии. При пожаре, ДТП или внезапной болезни стоящие машины и пробка мешают экстренным службам добраться до места. Запрет закреплён в § 17 правил движения. Аварийный карман нужен при поломке двигателя и для тех, кому нужна помощь.",
+    "uk": "Зупинка в тунелі підвищує ризик аварії. Під час пожежі, ДТП або раптової хвороби машини, що стоять, і затор заважають екстреним службам дістатися до місця. Заборону закріплено в § 17 правил руху. Аварійна кишеня потрібна в разі поломки двигуна й для тих, кому потрібна допомога.",
+    "theory": "vinter/kolonne-og-tunnel"
+  },
+  {
+    "id": "vin-32",
+    "cat": "vinter",
+    "q": "Det brenner i en bil inne i tunnelen, men du kan fortsatt kjøre ut. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Kjører ut, varsler møtende trafikk og ringer fra nødtelefonen når du er ute",
+      "Stanser ved siden av den brennende bilen og venter der på brannvesenet",
+      "Snur bilen i tunnelen og kjører tilbake samme vei som du kom",
+      "Kjører ut uten å varsle noen, fordi Vegtrafikksentralen alltid ser det selv"
+    ],
+    "f": "Kom deg raskt ut og ikke vent på hjelp. Kan du kjøre ut, gjør du det, varsler møtende trafikk og ringer Vegtrafikksentralen fra en nødtelefon når du er ute. Kan du ikke kjøre ut, stanser du på siden av veien med nødsignal på og går ut til fots.",
+    "ru": "Быстро выбирайтесь и не ждите помощи. Если можете выехать, выезжайте, предупредите встречных и позвоните в Vegtrafikksentralen с аварийного телефона уже снаружи. Если выехать нельзя, остановитесь у края дороги с аварийной сигнализацией и выходите пешком.",
+    "uk": "Швидко вибирайтеся й не чекайте на допомогу. Якщо можете виїхати, виїжджайте, попередьте зустрічних і зателефонуйте до Vegtrafikksentralen з аварійного телефона вже назовні. Якщо виїхати не можна, зупиніться біля краю дороги з аварійною сигналізацією й виходьте пішки.",
+    "theory": "vinter/kolonne-og-tunnel"
   }
 ]

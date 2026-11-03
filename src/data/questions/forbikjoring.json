@@ -57,7 +57,9 @@
     "id": "fob-04",
     "cat": "forbikjoring",
     "q": "Du kjører på en vei med to felt i din retning. Bilen i feltet ved siden av deg har stanset foran et gangfelt. Hva skal du gjøre?",
-    "img": null,
+    "img": {
+      "view": "fob-04"
+    },
     "a": [
       "Stanse, fordi det kan være en gående i gangfeltet som du ikke ser",
       "Kjøre forsiktig forbi, fordi ditt eget felt er ledig",
@@ -211,7 +213,9 @@
     "id": "fob-13",
     "cat": "forbikjoring",
     "q": "Du skal kjøre forbi et langt vogntog på landeveien. Hva bør du tenke på?",
-    "img": null,
+    "img": {
+      "view": "fob-13"
+    },
     "a": [
       "Forbikjøringen tar lang tid og lang strekning, så du trenger mye fri vei framover",
       "Vogntoget må slippe deg inn igjen, så du trenger ikke tenke på plassen foran det",
@@ -281,7 +285,9 @@
     "id": "fob-18",
     "cat": "forbikjoring",
     "q": "Du kjører nedover en bratt og smal bakke og møter en tung lastebil som kjører oppover. Det er ikke plass til å passere. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "fob-18"
+    },
     "a": [
       "Vike for lastebilen, fordi det er vanskelig for den å starte igjen i bakken",
       "Fortsette, fordi den som kjører nedover, har forkjørsrett i en bratt bakke",
@@ -415,7 +421,9 @@
     "id": "fob-26",
     "cat": "forbikjoring",
     "q": "Lastebilen foran deg blinker til høyre, og du tror sjåføren vil vise at du kan kjøre forbi. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "fob-26"
+    },
     "a": [
       "Du må selv forsikre deg om at forbikjøringen er trygg, fordi blinklyset ikke gir noen garanti",
       "Blinklyset er et fast tegn i trafikkreglene, og det betyr at veien er fri langt nok framover",
@@ -431,7 +439,9 @@
     "id": "fob-27",
     "cat": "forbikjoring",
     "q": "Du har kjørt ut for å kjøre forbi en lastebil, men er ennå ikke på høyde med den. Da kommer det en møtende bil, og du rekker ikke å fullføre. Hva gjør du?",
-    "img": null,
+    "img": {
+      "view": "fob-27"
+    },
     "a": [
       "Avbryter forbikjøringen og kjører inn igjen bak lastebilen",
       "Gir full gass, fordi en forbikjøring du har begynt på, må fullføres",

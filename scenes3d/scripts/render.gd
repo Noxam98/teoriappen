@@ -15,12 +15,26 @@ func _ready() -> void:
 	if options.has("check"):
 		get_tree().quit(await _check_all())
 		return
-	var all: bool = options.get("scene", "all") == "all"
-	var ids: Array = Scenes.specs().keys() if all else Array(String(options["scene"]).split(","))
+	# Манифест отдельно: его пишет scripts/render-scenes.mjs, когда все части отрендерены без ошибок.
+	if options.has("manifest"):
+		_write_manifest(options.get("dir", "user://"), Scenes.specs().keys())
+		get_tree().quit()
+		return
+	var all: bool = options.get("scene", "all") == "all" and not options.has("part")
+	var ids: Array = Scenes.specs().keys() if options.get("scene", "all") == "all" else Array(String(options["scene"]).split(","))
+	# part=2/4: только вторая из четырёх частей, части запускаются параллельно.
+	if options.has("part"):
+		var piece: PackedStringArray = String(options["part"]).split("/")
+		var chosen: Array = []
+		for k: int in ids.size():
+			if k % int(piece[1]) == int(piece[0]) - 1:
+				chosen.push_back(ids[k])
+		ids = chosen
 	var width: int = int(options.get("width", "1920"))
 	var height: int = int(options.get("height", "1200"))
 	var dir: String = options.get("dir", "user://")
-	var frames: int = int(options.get("frames", "150"))
+	# 60 кадров хватает, чтобы свет установился: от 150 картинка не отличается, от 20 уже отличается заметно.
+	var frames: int = int(options.get("frames", "60"))
 	var hour: float = float(options.get("hour", "-1"))
 	var started: int = Time.get_ticks_msec()
 	for id: String in ids:

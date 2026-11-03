@@ -35,7 +35,9 @@
     "id": "lys-03",
     "cat": "lys",
     "q": "Du kjører inn i en tunnel. Hvilket lys bør du bruke?",
-    "img": null,
+    "img": {
+      "view": "lys-03"
+    },
     "a": [
       "Nærlys",
       "Kjørelys",
@@ -51,7 +53,9 @@
     "id": "lys-04",
     "cat": "lys",
     "q": "Hvilket lys bør du bruke når du kjører på en mørk landevei uten annen trafikk?",
-    "img": null,
+    "img": {
+      "view": "lys-04"
+    },
     "a": [
       "Fjernlys",
       "Nærlys",
@@ -67,7 +71,9 @@
     "id": "lys-05",
     "cat": "lys",
     "q": "Du kjører med fjernlys i mørket, og en bil kommer mot deg. Hva skal du gjøre?",
-    "img": null,
+    "img": {
+      "view": "lys-05"
+    },
     "a": [
       "Blende ned til nærlys i god tid, så du ikke blender føreren",
       "Beholde fjernlyset til bilen er rett ved siden av deg",
@@ -83,7 +89,9 @@
     "id": "lys-06",
     "cat": "lys",
     "q": "Du kjører med fjernlys og kommer tett bak en annen bil. Hva gjelder?",
-    "img": null,
+    "img": {
+      "view": "lys-06"
+    },
     "a": [
       "Du skal blende ned, fordi fjernlyset kan blende føreren foran gjennom speilene",
       "Du kan beholde fjernlyset, fordi fjernlys ikke blender førere som kjører foran deg",
@@ -99,7 +107,9 @@
     "id": "lys-07",
     "cat": "lys",
     "q": "Du blir blendet av en møtende bil i mørket. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "lys-07"
+    },
     "a": [
       "Se mot høyre kant av veien og senke farten",
       "Se rett inn i lyset til den møtende bilen",
@@ -163,7 +173,9 @@
     "id": "lys-11",
     "cat": "lys",
     "q": "Du har stanset langs en mørk vei uten gatelys. Hvilket lys bør bilen ha på?",
-    "img": null,
+    "img": {
+      "view": "lys-11"
+    },
     "a": [
       "Parkeringslys",
       "Fjernlys",
@@ -195,7 +207,9 @@
     "id": "lys-13",
     "cat": "lys",
     "q": "Du kjører i mørket med nærlys. Hvordan bør du tilpasse farten?",
-    "img": null,
+    "img": {
+      "view": "lys-13"
+    },
     "a": [
       "Slik at du kan stoppe på den strekningen du ser foran deg",
       "Du kan holde samme fart som om dagen",

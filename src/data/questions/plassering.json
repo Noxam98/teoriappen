@@ -71,7 +71,9 @@
     "id": "pla-05",
     "cat": "plassering",
     "q": "Du skal skifte kjørefelt. Hvem har vikeplikt?",
-    "img": null,
+    "img": {
+      "view": "pla-05"
+    },
     "a": [
       "Du har vikeplikt for trafikken i feltet du skal over i",
       "Trafikken i det andre feltet må slippe deg inn når du blinker",
@@ -103,7 +105,9 @@
     "id": "pla-07",
     "cat": "plassering",
     "q": "Du har slått på blinklyset fordi du vil skifte felt. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "pla-07"
+    },
     "a": [
       "Blinklyset gir deg ingen rett, du må vente til det er ledig",
       "De andre i feltet må slippe deg inn når du har blinket",
@@ -137,7 +141,9 @@
     "id": "pla-09",
     "cat": "plassering",
     "q": "Du skal kjøre inn i en rundkjøring med to felt og ta en avkjøring som er mer enn halvveis rundt. Det er ingen oppmerking som viser feltvalg. Hvilket felt bør du velge?",
-    "img": null,
+    "img": {
+      "view": "pla-09"
+    },
     "a": [
       "Venstre felt",
       "Høyre felt",
@@ -153,7 +159,9 @@
     "id": "pla-10",
     "cat": "plassering",
     "q": "Du kjører i venstre felt i en rundkjøring med to felt og skal ta neste avkjøring. Avkjøringen har bare ett felt. Hva gjør du?",
-    "img": null,
+    "img": {
+      "view": "pla-10"
+    },
     "a": [
       "Blinker til høyre, skifter til høyre felt når det er ledig, og viker for trafikken der",
       "Blinker til høyre og kjører rett ut fra venstre felt, fordi trafikken i høyre felt må vike",
@@ -357,7 +365,9 @@
     "id": "pla-22",
     "cat": "plassering",
     "q": "Du kjører på en vei med to felt i din retning, og du ligger ved siden av en lastebil. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "pla-22"
+    },
     "a": [
       "Du bør ikke bli liggende lenge ved siden av den, fordi du kan være i blindsonen til sjåføren",
       "Du kan godt ligge ved siden av den, fordi sjåføren alltid ser deg i speilene",
@@ -421,7 +431,9 @@
     "id": "pla-26",
     "cat": "plassering",
     "q": "Du skal kjøre rett fram i en by. Gaten har to felt i din retning, og det er lite trafikk. Hvilket felt skal du bruke?",
-    "img": null,
+    "img": {
+      "view": "pla-26"
+    },
     "a": [
       "Høyre felt, når ingen regel påbyr eller tillater venstre felt",
       "Det feltet du vil, fordi valget av felt er fritt i tettbygd strøk når det er lite trafikk",
@@ -499,7 +511,9 @@
     "id": "pla-30",
     "cat": "plassering",
     "q": "Du skal til venstre i en rundkjøring med fire veier. Hvordan bruker du blinklyset?",
-    "img": null,
+    "img": {
+      "view": "pla-30"
+    },
     "a": [
       "Blinker til venstre før du kjører inn, og til høyre når du passerer siste avkjøring før din",
       "Blinker til høyre før du kjører inn, og lar blinklyset stå på til du har kjørt ut",

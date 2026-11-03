@@ -147,7 +147,9 @@
     "id": "sig-09",
     "cat": "lyssignal",
     "q": "En politibetjent dirigerer trafikken i et lyskryss. Du har grønt lys, men politiet gir tegn til at du skal stanse. Hva skal du gjøre?",
-    "img": null,
+    "img": {
+      "view": "sig-09"
+    },
     "a": [
       "Stanse, fordi politiets tegn går foran lyssignalet",
       "Kjøre, fordi grønt lys går foran politiets tegn",
@@ -197,7 +199,9 @@
     "id": "sig-12",
     "cat": "lyssignal",
     "q": "Lyssignalene i et kryss er helt slukket, og det står ingen skilt. Hva gjelder?",
-    "img": null,
+    "img": {
+      "view": "sig-12"
+    },
     "a": [
       "Høyreregelen, som i andre kryss uten skilt eller lys",
       "Den som kommer fra den største veien, har forkjørsrett",
@@ -281,7 +285,9 @@
     "id": "sig-17",
     "cat": "lyssignal",
     "q": "En politibetjent står i krysset med den ene armen løftet rett opp. Hva betyr det?",
-    "img": null,
+    "img": {
+      "view": "sig-17"
+    },
     "a": [
       "Alle skal stanse, men den som er for nær til å stanse trygt, kan kjøre videre",
       "Trafikk forfra og bakfra skal stanse, mens trafikk fra siden kan kjøre videre",
@@ -297,7 +303,9 @@
     "id": "sig-18",
     "cat": "lyssignal",
     "q": "En politibetjent dirigerer trafikken i et kryss. Hun står med ansiktet mot deg og holder armen strakt ut til siden. Hva skal du gjøre?",
-    "img": null,
+    "img": {
+      "view": "sig-18"
+    },
     "a": [
       "Stanse, fordi trafikk forfra og bakfra skal stanse",
       "Kjøre, fordi armen viser at veien er åpen",
@@ -313,7 +321,9 @@
     "id": "sig-19",
     "cat": "lyssignal",
     "q": "Det er mørkt. En politibetjent på veien foran deg svinger en lykt med rødt lys fram og tilbake. Hva betyr det?",
-    "img": null,
+    "img": {
+      "view": "sig-19"
+    },
     "a": [
       "Du skal stanse, fordi det er et stopptegn fra politiet",
       "Du skal sette ned farten og kjøre forsiktig forbi",

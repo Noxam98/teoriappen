@@ -33,11 +33,17 @@ static func build(id: String, w: World) -> void:
 		"lyudi":
 			_lyudi(w)
 		_:
+			# Варианты въезда в туннель, для выбора глазами: portal-collar, portal-grass, portal-box, portal-raw.
+			if id.begins_with("portal-"):
+				RoadScene.build(w, {"kind": "skillelinje", "env": "tunnel", "portal": -26.0, "portal_style": id.trim_prefix("portal-"), "actors": [], "type": "road"}, id)
+				return
 			var spec: Dictionary = Scenes.specs().get(id, {})
 			if spec.is_empty():
 				push_error("нет сцены " + id)
 			elif spec["type"] == "junction":
 				Junction.build(w, spec["scene"], id)
+			elif spec["type"] == "round":
+				Roundabout.build(w, spec, id)
 			else:
 				RoadScene.build(w, spec, id)
 

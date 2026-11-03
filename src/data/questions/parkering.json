@@ -89,7 +89,9 @@
     "id": "par-08",
     "cat": "parkering",
     "q": "Du er i en gate med toveistrafikk. Det er ledig plass på venstre side, mot kjøreretningen. Er det lov å parkere der?",
-    "img": null,
+    "img": {
+      "view": "par-08"
+    },
     "a": [
       "Ja, hvis ikke skilt, oppmerking eller andre regler forbyr parkering der",
       "Nei, i gate med toveistrafikk må du alltid parkere på høyre side",

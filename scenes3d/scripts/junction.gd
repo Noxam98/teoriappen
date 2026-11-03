@@ -109,9 +109,13 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 	for leg: String in ped:
 		var o: Vector2 = OUT[leg]
 		var across: Vector2 = right_of(o)
-		_zebra(w, o, across)
-		var walker: Vector2 = o * (HW + 2.5) + across * ((-HW + 1.5) if s.get("pedAt", "") == "crossing" else (-HW - 0.9))
-		var base: float = 0.0 if s.get("pedAt", "") == "crossing" else 0.14
+		# pedAt: crossing идёт по переходу, road идёт по дороге там, где перехода нет, иначе ждёт на тротуаре.
+		var at_where: String = s.get("pedAt", "")
+		var on_road: bool = at_where == "crossing" or at_where == "road"
+		if at_where != "road":
+			_zebra(w, o, across)
+		var walker: Vector2 = o * (HW + 2.5) + across * ((-HW + 1.5) if on_road else (-HW - 0.9))
+		var base: float = 0.0 if on_road else 0.14
 		var pp: Node3D = w.person(walker.x, walker.y, yaw_of(across), Color(0.8, 0.45, 0.08), Color(0.1, 0.13, 0.22), base)
 		pp.name = "ped"
 	# Транспорт, стрелки и подписи.
@@ -144,7 +148,7 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 			"tram":
 				node = Vehicles.tram(Color(0.16, 0.36, 0.62))
 			"utrykning":
-				node = Vehicles.ambulance()
+				node = Vehicles.ambulance(v.get("lit", true))
 			"bike":
 				node = Person.cyclist(body_color, Color(0.12, 0.13, 0.2))
 			_:
@@ -160,6 +164,13 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 		var towards_camera: bool = d_out.dot(-OUT[me["from"]]) < -0.5
 		var exit_p: Vector2 = d_out * (HW + (2.2 if towards_camera else 6.5)) + d_right * lane
 		var corner: Vector2 = entry + head * (exit_p - entry).dot(head)
+		# Встречные левые повороты проходят перед друг другом, их пути не пересекаются.
+		var opposite_left: bool = false
+		for other: Dictionary in veh:
+			if other != v and v["go"] == "left" and other["go"] == "left" and OUT[other["from"]].dot(o) < -0.5:
+				opposite_left = true
+		if opposite_left:
+			corner = (o + d_out) * 0.3
 		var points := PackedVector2Array([front, entry])
 		if v["go"] == "straight":
 			points = PackedVector2Array([front, exit_p])
@@ -167,7 +178,10 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 			for k: int in range(1, 17):
 				var a: float = k / 16.0
 				points.push_back(entry.lerp(corner, a).lerp(corner.lerp(exit_p, a), a))
-		w.arrow(_even(points), tag.darkened(0.05))
+		if not v.get("noarrow", false):
+			w.arrow(_even(points), tag.darkened(0.05))
+		if v.has("blink"):
+			Vehicles.blink(node, 1.0 if v["blink"] == "right" else -1.0, -1.95, 2.2, 0.8, 0.72, 0.9)
 		if kind == "tram":
 			var far: Vector2 = o * 250.0 + right * lane
 			var away: Vector2 = d_out * 250.0 + d_right * lane
