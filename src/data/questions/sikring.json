@@ -163,7 +163,9 @@
     "id": "sik-11",
     "cat": "sikring",
     "q": "Du har førerkort klasse B. Hvilken tilhenger kan du trekke uten krav til vogntogets samlede vekt, så lenge bilen er godkjent for tilhengeren?",
-    "img": null,
+    "img": {
+      "view": "sik-11"
+    },
     "a": [
       "En tilhenger med tillatt totalvekt på inntil 750 kg",
       "En tilhenger med tillatt totalvekt på inntil 1500 kg",
@@ -179,7 +181,9 @@
     "id": "sik-12",
     "cat": "sikring",
     "q": "Du har førerkort klasse B og vil trekke en tilhenger med tillatt totalvekt over 750 kg. Hva gjelder?",
-    "img": null,
+    "img": {
+      "view": "sik-12"
+    },
     "a": [
       "Bilens og tilhengerens tillatte totalvekt kan til sammen ikke være mer enn 3500 kg",
       "Det som teller, er at tilhengeren med lasten veier under 750 kg akkurat nå",
@@ -195,7 +199,9 @@
     "id": "sik-14",
     "cat": "sikring",
     "q": "Hva bør du sjekke før du kjører med tilhenger?",
-    "img": null,
+    "img": {
+      "view": "sik-14"
+    },
     "a": [
       "At tilhengeren er riktig koblet, at lysene virker og at lasten er sikret",
       "At dekkene på tilhengeren har nok luft, resten er ikke så viktig",
@@ -211,7 +217,9 @@
     "id": "sik-15",
     "cat": "sikring",
     "q": "Hvor bør du plassere tung last på en tilhenger?",
-    "img": null,
+    "img": {
+      "view": "sik-15"
+    },
     "a": [
       "Lavt og over hjulakselen",
       "Bakerst på tilhengeren",

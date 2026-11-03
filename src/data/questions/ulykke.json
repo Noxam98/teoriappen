@@ -3,7 +3,9 @@
     "id": "uly-01",
     "cat": "ulykke",
     "q": "Du kommer først til en trafikkulykke. Hva gjør du først?",
-    "img": null,
+    "img": {
+      "view": "uly-01"
+    },
     "a": [
       "Sikrer ulykkesstedet slik at det ikke skjer flere ulykker",
       "Flytter alle skadde ut av bilene med en gang",
@@ -19,7 +21,9 @@
     "id": "uly-02",
     "cat": "ulykke",
     "q": "Hvordan sikrer du et ulykkessted?",
-    "img": null,
+    "img": {
+      "view": "uly-02"
+    },
     "a": [
       "Slår på nødsignal, tar på refleksvest og setter ut varseltrekant i god avstand",
       "Setter ut varseltrekanten rett bak de skadde bilene, så den er lett å se",
@@ -131,7 +135,9 @@
     "id": "uly-09",
     "cat": "ulykke",
     "q": "Du er innblandet i en trafikkulykke der noen er skadd. Hva har du plikt til å gjøre?",
-    "img": null,
+    "img": {
+      "view": "uly-09"
+    },
     "a": [
       "Stanse, hjelpe de skadde, oppgi navn og adresse og sørge for at politiet blir varslet",
       "Stanse og melde fra til forsikringsselskapet, men ikke til politiet",
@@ -179,7 +185,9 @@
     "id": "uly-12",
     "cat": "ulykke",
     "q": "Hvorfor skal du ta på refleksvest når du går ut av bilen på et ulykkessted?",
-    "img": null,
+    "img": {
+      "view": "uly-12"
+    },
     "a": [
       "Slik at andre trafikanter ser deg bedre",
       "Slik at de skadde ser at det kommer hjelp",
@@ -195,7 +203,9 @@
     "id": "uly-13",
     "cat": "ulykke",
     "q": "Du kommer til en ulykke der ingen har begynt å hjelpe ennå. Har du plikt til å hjelpe?",
-    "img": null,
+    "img": {
+      "view": "uly-13"
+    },
     "a": [
       "Ja, alle har plikt til å hjelpe skadde så godt de kan",
       "Nei, bare de som var innblandet i ulykken",
@@ -279,7 +289,9 @@
     "id": "uly-18",
     "cat": "ulykke",
     "q": "Du kjører forbi et trafikkuhell som du ikke var innblandet i. Politi og ambulanse er allerede der, og ingen trenger mer hjelp. Må du stanse?",
-    "img": null,
+    "img": {
+      "view": "uly-18"
+    },
     "a": [
       "Nei, andre enn de innblandede skal stanse og hjelpe hvis det er nødvendig",
       "Ja, alle som kommer til et trafikkuhell, skal stanse, også når hjelpen er på plass",

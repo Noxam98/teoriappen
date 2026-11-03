@@ -57,7 +57,9 @@
     "id": "myk-04",
     "cat": "myke",
     "q": "Hvorfor bør gående bruke refleks når det er mørkt?",
-    "img": null,
+    "img": {
+      "view": "myk-04"
+    },
     "a": [
       "Bilførere ser dem da på mye lengre avstand",
       "Refleksen gir gående forkjørsrett",
@@ -127,7 +129,9 @@
     "id": "myk-11",
     "cat": "myke",
     "q": "Hvorfor kan det være vanskelig å se og vurdere motorsykler i trafikken?",
-    "img": null,
+    "img": {
+      "view": "myk-11"
+    },
     "a": [
       "De er smale, og det er vanskelig å bedømme fart og avstand",
       "De har ikke lys på om dagen, så de er vanskelige å se",
@@ -143,7 +147,9 @@
     "id": "myk-12",
     "cat": "myke",
     "q": "Du skal svinge til venstre, og en motorsykkel kommer mot deg. Hva bør du tenke på?",
-    "img": null,
+    "img": {
+      "view": "myk-12"
+    },
     "a": [
       "Motorsykkelen kan være nærmere og kjøre fortere enn du tror",
       "Motorsykkelen har vikeplikt, fordi bilen din er i krysset først",

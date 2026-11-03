@@ -259,7 +259,9 @@
     "id": "men-17",
     "cat": "mennesket",
     "q": "En eldre person skal krysse veien foran deg. Hva bør du tenke på?",
-    "img": null,
+    "img": {
+      "view": "men-17"
+    },
     "a": [
       "Personen kan gå sakte og trenge mer tid, så du må være klar til å stoppe",
       "Eldre personer har lang erfaring i trafikken, så de venter til du er forbi",
@@ -451,7 +453,9 @@
     "id": "men-29",
     "cat": "mennesket",
     "q": "Du har kjørt fort lenge på motorveien og tar nå av på rampen. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "men-29"
+    },
     "a": [
       "Du kan være fartsblind, så se på fartsmåleren: Farten er ofte høyere enn den føles",
       "Du kan være fartsblind, så stol på følelsen: Fartsmåleren viser feil etter lang kjøring",
@@ -483,7 +487,9 @@
     "id": "men-31",
     "cat": "mennesket",
     "q": "Du kjører i 80 km/t med nærlys. En gående uten refleks dukker opp omtrent 25 meter foran deg. Hvor lang tid har du på deg?",
-    "img": null,
+    "img": {
+      "view": "men-31"
+    },
     "a": [
       "Omtrent 1 sekund",
       "Omtrent 3 sekunder",

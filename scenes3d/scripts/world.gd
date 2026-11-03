@@ -820,21 +820,26 @@ func add_mover(node: Node3D) -> void:
 
 
 func _rect_free(rect: Rect2) -> bool:
+	# Настоящее расстояние от прямоугольника до оси дороги, а не попадание в квадрат вокруг неё:
+	# на диагональном участке изгиба угол квадрата задевал бы то, что стоит далеко от полосы.
+	var centre: Vector2 = rect.get_center()
+	var half: Vector2 = rect.size / 2.0
 	for c: Array in _corridors:
 		var path: PackedVector2Array = c[0]
-		var grown: Rect2 = rect.grow(float(c[1]))
+		var limit: float = float(c[1])
 		for i: int in range(1, path.size()):
 			var a: Vector2 = path[i - 1]
 			var b: Vector2 = path[i]
 			var n: int = maxi(1, ceili(a.distance_to(b) / 0.5))
 			for k: int in n + 1:
-				if grown.has_point(a.lerp(b, float(k) / n)):
+				var q: Vector2 = a.lerp(b, float(k) / n)
+				var dx: float = maxf(absf(q.x - centre.x) - half.x, 0.0)
+				var dz: float = maxf(absf(q.y - centre.y) - half.y, 0.0)
+				if dx * dx + dz * dz < limit * limit:
 					return false
 	return true
 
 
-## Проверка собранной сцены: на проезжей части нет деревьев, домов, столбов и знаков.
-## Возвращает список нарушений. Пустой список значит, что картинку можно сохранять.
 func audit() -> PackedStringArray:
 	var bad := PackedStringArray()
 	for kind: String in _plants:
@@ -864,7 +869,7 @@ func _audit_node(node: Node, bad: PackedStringArray) -> void:
 			if box.position.y < CLEARANCE:
 				var rect := Rect2(box.position.x, box.position.z, box.size.x, box.size.z)
 				if not _rect_free(rect):
-					bad.push_back("%s (%.1f, %.1f) стоит на проезжей части" % [child.name, box.get_center().x, box.get_center().z])
+					bad.push_back("%s %s (%.1f, %.1f), размер %.1f × %.1f × %.1f, стоит на проезжей части" % [child.name, child.mesh.get_class(), box.get_center().x, box.get_center().z, box.size.x, box.size.y, box.size.z])
 		_audit_node(child, bad)
 
 

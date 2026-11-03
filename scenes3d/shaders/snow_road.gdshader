@@ -3,6 +3,9 @@ shader_type spatial;
 
 uniform sampler2D noise : filter_linear_mipmap_anisotropic, repeat_enable;
 
+// На изгибе полосы идут не вдоль оси z, поэтому снег лежит пятнами без разделения на полосы.
+uniform bool plain = false;
+
 varying vec3 wp;
 
 float n(vec2 p) {
@@ -24,7 +27,7 @@ void fragment() {
 	// Расстояние от середины своей полосы. Край разъезженной части рваный и всё время гуляет.
 	float lane = abs(abs(wp.x) - 1.75);
 	float wander = (along - 0.5) * 1.5 + (blotch - 0.5) * 1.2 + (fine - 0.5) * 0.5;
-	float snow = smoothstep(0.75, 1.5, lane + wander);
+	float snow = plain ? 0.12 + smoothstep(0.44, 0.66, blotch * 0.6 + fine * 0.4) * 0.42 : smoothstep(0.75, 1.5, lane + wander);
 	// Посреди полосы местами остаются пятна укатанного снега.
 	float patches = smoothstep(0.58, 0.74, n(vec2(p.x * 0.42 + 9.1, p.y * 0.04)) * 0.55 + blotch * 0.45);
 	snow = max(snow, patches * 0.5);

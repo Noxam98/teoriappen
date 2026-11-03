@@ -44,6 +44,10 @@ static func build(id: String, w: World) -> void:
 				Junction.build(w, spec["scene"], id)
 			elif spec["type"] == "round":
 				Roundabout.build(w, spec, id)
+			elif spec["type"] == "exit":
+				Exits.build(w, spec, id)
+			elif spec["type"] == "motorway":
+				Motorway.build(w, spec, id)
 			else:
 				RoadScene.build(w, spec, id)
 

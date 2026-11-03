@@ -269,7 +269,9 @@
     "id": "sig-16",
     "cat": "lyssignal",
     "q": "Ved en jernbaneovergang blinker to røde lys vekselvis. Hva betyr det?",
-    "img": null,
+    "img": {
+      "view": "sig-16"
+    },
     "a": [
       "Du skal stanse, fordi et tog nærmer seg",
       "Du kan kjøre forsiktig over hvis du ikke ser toget",

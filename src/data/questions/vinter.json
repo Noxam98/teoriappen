@@ -135,7 +135,9 @@
     "id": "vin-09",
     "cat": "vinter",
     "q": "På glatt vei fortsetter bilen rett fram i en sving selv om du svinger med rattet. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "vin-09"
+    },
     "a": [
       "Slippe gassen og rette opp rattet litt, slik at forhjulene får grep igjen",
       "Svinge enda mer med rattet, slik at bilen kommer seg rundt svingen",
@@ -151,7 +153,9 @@
     "id": "vin-10",
     "cat": "vinter",
     "q": "Bakenden av bilen skrenser ut i en sving. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "vin-10"
+    },
     "a": [
       "Se dit du vil kjøre og styre i den retningen",
       "Bremse hardt og holde rattet helt stille",
@@ -520,7 +524,9 @@
     "id": "vin-32",
     "cat": "vinter",
     "q": "Det brenner i en bil inne i tunnelen, men du kan fortsatt kjøre ut. Hva gjør du?",
-    "img": null,
+    "img": {
+      "view": "vin-32"
+    },
     "a": [
       "Kjører ut, varsler møtende trafikk og ringer fra nødtelefonen når du er ute",
       "Stanser ved siden av den brennende bilen og venter der på brannvesenet",

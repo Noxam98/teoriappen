@@ -54,19 +54,32 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 	for k: int in 9:
 		w.plant_free("bush", sin(k * 0.7) * (inner - 3.4), cos(k * 0.7) * (inner - 3.4), 0.5, 0.2)
 	if lanes == 2:
-		w.line(_circle((inner + outer) / 2.0), 0.0, World.WHITE, 0.11, 2.5, 3.5)
+		# Ледельинье 1 и 1 м внутри кольца.
+		w.line(_circle((inner + outer) / 2.0), 0.0, World.WHITE, 0.1, 1.0, 1.0)
 	for leg: String in ["s", "e", "n", "w"]:
 		var o: Vector2 = Junction.OUT[leg]
 		var r: Vector2 = Junction.right_of(-o)
-		var path := World.straight(o.x * (outer + 10.0), o.y * (outer + 10.0), o.x * 280.0, o.y * 280.0, 6.0)
+		var path := World.straight(o.x * (outer + 13.0), o.y * (outer + 13.0), o.x * 280.0, o.y * 280.0, 6.0)
 		w.keep_clear(World.straight(o.x * outer, o.y * outer, o.x * 280.0, o.y * 280.0, 6.0), hw)
-		w.line(path, 0.0, World.YELLOW, 0.11, 3.0, 9.0)
+		# N302:2025, 7.4 и рис. 7.4—1: осевая в городе 3 и 1 м доходит до штриховки и приподнятого островка с жёлтым контуром.
+		w.line(path, 0.0, World.YELLOW, 0.1, 3.0, 1.0)
 		if lanes == 2:
 			for side: float in [-3.5, 3.5]:
 				var off := World.straight(o.x * (outer + 1.0) + r.x * side, o.y * (outer + 1.0) + r.y * side, o.x * 280.0 + r.x * side, o.y * 280.0 + r.y * side, 6.0)
-				w.line(off, 0.0, World.WHITE, 0.11, 3.0, 9.0)
-		# Разделительный островок краской и зубы вдоль въезда.
-		w.paint_poly(PackedVector2Array([o * (outer + 0.5) + r * 0.85, o * (outer + 0.5) - r * 0.85, o * (outer + 10.0)]))
+				w.line(off, 0.0, World.WHITE, 0.1, 3.0, 1.0)
+		var isle := PackedVector2Array([o * (outer + 0.7) + r * 0.95, o * (outer + 0.7) - r * 0.95, o * (outer + 7.0) - r * 0.4, o * (outer + 7.0) + r * 0.4])
+		w.add_mesh(Mesher.prism(isle, -0.02, 0.16, w.grass_ground(), w.kerb()))
+		# Контур островка жёлтый, как на рис. 7.4—1.
+		var ring_line := PackedVector2Array([o * (outer + 0.45) + r * 1.15, o * (outer + 7.25) + r * 0.6, o * (outer + 7.25) - r * 0.6, o * (outer + 0.45) - r * 1.15])
+		w.line(ring_line, 0.0, World.YELLOW, 0.12)
+		# Жёлтые границы и штриховка перед островком.
+		for side: float in [-1.0, 1.0]:
+			w.paint_poly(PackedVector2Array([o * (outer + 7.0) + r * side * 0.55, o * (outer + 7.0) + r * side * 0.43, o * (outer + 13.0) + r * side * 0.02, o * (outer + 13.0) + r * side * 0.12]), World.YELLOW)
+		var hatch: float = outer + 7.6
+		while hatch < outer + 12.4:
+			var hw_h: float = 0.5 * (outer + 13.0 - hatch) / 6.0
+			w.paint_poly(PackedVector2Array([o * hatch - r * hw_h, o * (hatch + 0.28) - r * hw_h, o * (hatch + 0.9) + r * hw_h, o * (hatch + 0.62) + r * hw_h]), World.YELLOW)
+			hatch += 1.1
 		var count: int = 5 * lanes
 		var step: float = (hw - 1.1) / count
 		for k: int in count:
@@ -75,9 +88,9 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 			w.paint_poly(PackedVector2Array([a, b, (a + b) / 2.0 + o * 0.85]))
 		var yaw: float = atan2(o.x, o.y)
 		var at: Vector2 = o * (outer + 2.2) + r * (hw + 1.0)
-		w.road_sign("vikeplikt", at.x, at.y, 0.78, 2.0, yaw, [], 0.14)
-		var far: Vector2 = at + o * 2.2
-		w.road_sign("rundkjoring", far.x, far.y, 0.72, 2.0, yaw, [], 0.14)
+		# 406 только вместе с 202 на одной стойке, меньший номер наверху (N300:2026, 1.3.2 и 5.4.3).
+		w.road_sign("rundkjoring", at.x, at.y, 0.6, 2.0, yaw, [], 0.14)
+		w.road_sign("vikeplikt", at.x, at.y, 0.78, 2.65, yaw, [], 0.14)
 	_vehicles(w, s, inner, outer, hw, lanes)
 	_dress(w, outer, hw)
 

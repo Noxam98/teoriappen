@@ -2,7 +2,7 @@
   {
     "id": "opp-01",
     "cat": "oppmerking",
-    "q": "Hva betyr linjen midt i veien på bildet?",
+    "q": "Hva betyr linjen mellom feltene på bildet?",
     "img": {
       "view": "opp-01"
     },
@@ -12,9 +12,9 @@
       "Det er en kantlinje som viser hvor veien slutter",
       "Det er en varsellinje: du kan kjøre forbi uten å tenke på sikten"
     ],
-    "f": "En heltrukket gul linje midt i veien er en sperrelinje. Du må ikke kjøre over den eller på den.",
-    "ru": "Сплошная жёлтая линия по центру — это sperrelinje (сплошная разделительная). Пересекать её и ехать по ней нельзя.",
-    "uk": "Суцільна жовта лінія посередині — це sperrelinje (суцільна розділювальна). Перетинати її та їхати нею не можна.",
+    "f": "En heltrukket linje mellom feltene er en sperrelinje. Du må ikke kjøre over den eller på den, heller ikke når den er hvit.",
+    "ru": "Сплошная линия между полосами — это sperrelinje. По ней и через неё ехать нельзя, даже если она белая.",
+    "uk": "Суцільна лінія між смугами — це sperrelinje. По ній і через неї їхати не можна, навіть якщо вона біла.",
     "theory": "oppmerking/linjer-midt-i-veien"
   },
   {
@@ -182,7 +182,7 @@
   {
     "id": "opp-11",
     "cat": "oppmerking",
-    "q": "Det er kø i feltet ditt. Feltet til høyre er merket KOLLEKTIVFELT. Kan du kjøre der med vanlig personbil for å komme raskere fram?",
+    "q": "Det er kø i feltet ditt. Feltet til høyre er et kollektivfelt, merket BUSS. Kan du kjøre der med vanlig personbil for å komme raskere fram?",
     "img": {
       "view": "opp-11"
     },
@@ -339,7 +339,9 @@
     "id": "opp-20",
     "cat": "oppmerking",
     "q": "Du kjører forbi og er i feltet for møtende. Nå kommer en kombinert linje der sperrelinjen er nærmest deg. Kan du kjøre tilbake til høyre side?",
-    "img": null,
+    "img": {
+      "view": "opp-20"
+    },
     "a": [
       "Ja, du kan kjøre tilbake, selv om sperrelinjen er nærmest deg",
       "Nei, du må bli i dette feltet til sperrelinjen slutter",

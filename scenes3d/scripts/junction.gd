@@ -88,20 +88,38 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 		var o: Vector2 = OUT[leg]
 		w.keep_clear(World.straight(0.0, 0.0, o.x * 250.0, o.y * 250.0, 2.0), HW)
 		var near: float = HW + (6.0 if ped.has(leg) else 2.2)
+		# N302:2025, 7.3.1: на главной дороге осевая проходит через перекрёсток, на равнозначном прерывается.
+		var rules: Dictionary = s.get("signs", {})
+		var yields: bool = rules.get(leg, "") == "vikeplikt" or rules.get(leg, "") == "stopp"
+		if not rules.is_empty() and not yields and not ped.has(leg):
+			near = 0.0
 		var path := World.straight(o.x * near, o.y * near, o.x * 250.0, o.y * 250.0)
-		w.line(path, 0.0, World.YELLOW, 0.11, 3.0, 9.0)
+		# У регулируемого перекрёстка и перед переходом осевая предупреждающая, 3 и 1 м (7.3.1 и 8.1), дальше обычная.
+		if not rules.is_empty() or ped.has(leg):
+			var warn: float = near + 45.0
+			w.line(World.straight(o.x * near, o.y * near, o.x * warn, o.y * warn), 0.0, World.YELLOW, 0.1, 3.0, 1.0)
+			path = World.straight(o.x * warn, o.y * warn, o.x * 250.0, o.y * 250.0)
+		w.line(path, 0.0, World.YELLOW, 0.1, 1.0, 3.0)
 	# Знаки и разметка перед ними.
 	var signs: Dictionary = s.get("signs", {})
 	for leg: String in signs:
 		var o: Vector2 = OUT[leg]
 		var r: Vector2 = right_of(-o)
 		var p: Vector2 = o * (HW + 3.6) + r * (HW + 1.15)
-		w.road_sign(signs[leg], p.x, p.y, 0.95, 1.95, atan2(o.x, o.y), [], 0.14)
+		var sign_yaw: float = atan2(o.x, o.y)
+		if signs[leg] == "forkjorsveg":
+			# Знак главной дороги ставят после перекрёстка, по ходу тех, кто уезжает по этой ветке (N300:2026, 3.4.3).
+			p = o * (HW + 9.0) + right_of(o) * (HW + 1.15)
+			sign_yaw = atan2(-o.x, -o.y)
+		w.road_sign(signs[leg], p.x, p.y, 0.95, 1.95, sign_yaw, [], 0.14)
+		# Штриховая кромка главной дороги поперёк устья второстепенной, зубцы или линия примерно в 1 м от неё.
+		if signs[leg] == "vikeplikt" or signs[leg] == "stopp":
+			w.line(World.straight(o.x * HW - r.x * HW, o.y * HW - r.y * HW, o.x * HW + r.x * HW, o.y * HW + r.y * HW, 1.0), 0.0, World.WHITE, 0.1, 2.0, 2.0)
 		if signs[leg] == "vikeplikt":
 			_teeth(w, o, r)
 		elif signs[leg] == "stopp":
-			var a: Vector2 = o * (HW + 0.7)
-			var b: Vector2 = o * (HW + 1.2)
+			var a: Vector2 = o * (HW + 1.0)
+			var b: Vector2 = o * (HW + 1.5)
 			var c: Vector2 = a + r * (HW - 0.15)
 			var d: Vector2 = b + r * (HW - 0.15)
 			w.paint_poly(PackedVector2Array([a, c, d, b]))
@@ -151,6 +169,8 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 				node = Vehicles.ambulance(v.get("lit", true))
 			"bike":
 				node = Person.cyclist(body_color, Color(0.12, 0.13, 0.2))
+			"mc":
+				node = Vehicles.motorcycle(body_color)
 			_:
 				node = Car.make(body_color, kinds[w.rng.randi() % kinds.size()])
 		node.position = Vector3(centre.x, 0.0, centre.y)
@@ -201,7 +221,7 @@ static func _teeth(w: World, o: Vector2, r: Vector2) -> void:
 	var count: int = 5
 	var step: float = (HW - 0.25) / count
 	for k: int in count:
-		var a: Vector2 = o * (HW + 0.6) + r * (0.14 + step * k + 0.04)
+		var a: Vector2 = o * (HW + 1.0) + r * (0.14 + step * k + 0.04)
 		var b: Vector2 = a + r * (step - 0.1)
 		var tip: Vector2 = (a + b) / 2.0 + o * 0.85
 		w.paint_poly(PackedVector2Array([a, b, tip]))

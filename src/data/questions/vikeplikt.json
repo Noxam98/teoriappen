@@ -453,7 +453,9 @@
     "id": "vik-26",
     "cat": "vikeplikt",
     "q": "Du skal kjøre ut fra en parkeringsplass og inn på en vei. Hva gjelder?",
-    "img": null,
+    "img": {
+      "view": "vik-26"
+    },
     "a": [
       "Du har vikeplikt for all trafikk på veien",
       "Du har vikeplikt for trafikk fra høyre, som i et vanlig kryss",
@@ -469,7 +471,9 @@
     "id": "vik-27",
     "cat": "vikeplikt",
     "q": "Du kjører ut fra en privat innkjørsel. En bil kommer fra venstre på veien. Hvem har vikeplikt?",
-    "img": null,
+    "img": {
+      "view": "vik-27"
+    },
     "a": [
       "Du har vikeplikt, fordi du kommer fra en innkjørsel",
       "Bilen fra venstre, fordi du kommer fra høyre",
@@ -485,7 +489,9 @@
     "id": "vik-28",
     "cat": "vikeplikt",
     "q": "Du kjører ut fra en bensinstasjon og må krysse et fortau. En fotgjenger går på fortauet. Hva gjelder?",
-    "img": null,
+    "img": {
+      "view": "vik-28"
+    },
     "a": [
       "Du skal vike for fotgjengeren",
       "Fotgjengeren skal vike for deg",
@@ -501,7 +507,9 @@
     "id": "vik-29",
     "cat": "vikeplikt",
     "q": "En syklist kommer fra en gang- og sykkelvei og skal ut på kjørebanen foran deg. Hvem har vikeplikt?",
-    "img": null,
+    "img": {
+      "view": "vik-29"
+    },
     "a": [
       "Syklisten, som kommer fra en gang- og sykkelvei",
       "Du, fordi syklisten kommer fra høyre",
@@ -535,7 +543,9 @@
     "id": "vik-31",
     "cat": "vikeplikt",
     "q": "Du kjører ut fra et gatetun og inn på en vanlig vei. Hva gjelder?",
-    "img": null,
+    "img": {
+      "view": "vik-31"
+    },
     "a": [
       "Du har vikeplikt for trafikken på veien",
       "Høyreregelen gjelder",
@@ -587,7 +597,9 @@
     "id": "vik-34",
     "cat": "vikeplikt",
     "q": "Et utrykningskjøretøy med blålys og sirene kommer bak deg. Hva skal du gjøre?",
-    "img": null,
+    "img": {
+      "view": "vik-34"
+    },
     "a": [
       "Kjøre til siden, slippe det forbi og stanse hvis det trengs",
       "Øke farten, så du kommer unna og ikke er i veien for det",
@@ -693,7 +705,9 @@
     "id": "vik-41",
     "cat": "vikeplikt",
     "q": "To vanlige kjørefelt i samme retning blir til ett. Hva gjelder?",
-    "img": null,
+    "img": {
+      "view": "vik-41"
+    },
     "a": [
       "Ingen har vikeplikt: alle tilpasser farten, og bilene kjører vekselvis, som en glidelås",
       "Den som kjører i feltet som slutter, må stanse og vente til det andre feltet er tomt",
@@ -795,7 +809,9 @@
     "id": "vik-47",
     "cat": "vikeplikt",
     "q": "Du skal rygge ut fra en parkeringsplass. En høy varebil ved siden av hindrer utsikten, så du ser ikke om det kommer noen. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "vik-47"
+    },
     "a": [
       "Du må ikke rygge før en annen passer på, eller du selv har sett at det ikke kan oppstå fare",
       "Du kan rygge sakte ut, fordi de som kommer bak deg, har vikeplikt for den som rygger",
@@ -811,7 +827,9 @@
     "id": "vik-48",
     "cat": "vikeplikt",
     "q": "Du skal ut av motorveien, men tar feil avkjøring. Hva gjør du?",
-    "img": null,
+    "img": {
+      "view": "vik-48"
+    },
     "a": [
       "Kjører videre og snur et sted der det er lov",
       "Rygger forsiktig tilbake til motorveien med nødsignal på",
@@ -827,7 +845,9 @@
     "id": "vik-49",
     "cat": "vikeplikt",
     "q": "Et utrykningskjøretøy kommer bak deg med blinkende blålys, men uten sirene. Hva gjelder?",
-    "img": null,
+    "img": {
+      "view": "vik-49"
+    },
     "a": [
       "Du skal gi det fri vei, selv om sirenen ikke er på",
       "Uten sirene trenger du ikke å vike",
@@ -897,7 +917,9 @@
     "id": "vik-53",
     "cat": "vikeplikt",
     "q": "Du skal svinge til venstre på en vei med ett felt i hver retning. En bil kommer bak deg. Hvorfor skal du også plassere deg nær midten av veien, ikke bare blinke?",
-    "img": null,
+    "img": {
+      "view": "vik-53"
+    },
     "a": [
       "Bilen bak ser hva du skal, og den kan kjøre forbi på høyre side",
       "Bilen bak må da stanse og vente bak deg til du har svingt ferdig",

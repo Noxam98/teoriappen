@@ -371,7 +371,9 @@
     "id": "fob-23",
     "cat": "forbikjoring",
     "q": "Du nærmer deg et gangfelt. En varebil foran deg skjuler en del av det. Den delen du ser, er tom. Kan du kjøre forbi varebilen?",
-    "img": null,
+    "img": {
+      "view": "fob-23"
+    },
     "a": [
       "Nei, det er forbudt når et kjøretøy hindrer noen del av sikten til gangfeltet",
       "Ja, når du ser at det ikke er noen gående på den delen av gangfeltet du kan se",
@@ -405,7 +407,9 @@
     "id": "fob-25",
     "cat": "forbikjoring",
     "q": "Bommene går ned mens bilen din står på planovergangen. Foran deg er veien fri. Hva gjør du?",
-    "img": null,
+    "img": {
+      "view": "fob-25"
+    },
     "a": [
       "Kjører videre gjennom bommen, som er laget for å knekke lett",
       "Stanser og venter i bilen til toget har passert og bommene går opp igjen",

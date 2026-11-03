@@ -117,7 +117,9 @@
     "id": "far-08",
     "cat": "fart",
     "q": "Hvor stor tidsavstand bør du minst ha til kjøretøyet foran på tørr vei og med god sikt?",
-    "img": null,
+    "img": {
+      "view": "far-08"
+    },
     "a": [
       "Omtrent 3 sekunder",
       "Omtrent 1 sekund",
@@ -151,7 +153,9 @@
     "id": "far-10",
     "cat": "fart",
     "q": "Du kjører personbil med tilhenger på en vei med fartsgrense 90 km/t. Tilhengeren er ikke godkjent for Tempo 100. Hva er den høyeste farten du kan kjøre?",
-    "img": null,
+    "img": {
+      "view": "far-10"
+    },
     "a": [
       "80 km/t",
       "90 km/t",
@@ -167,7 +171,9 @@
     "id": "far-11",
     "cat": "fart",
     "q": "Når kan du kjøre i 100 km/t med tilhenger?",
-    "img": null,
+    "img": {
+      "view": "far-11"
+    },
     "a": [
       "Når tilhengeren er godkjent for Tempo 100, bilen oppfyller kravene, og fartsgrensen er 100 km/t eller høyere",
       "Når tilhengeren har egne bremser og lav vekt, bilen har ABS, og fartsgrensen er 100 km/t eller høyere",
@@ -235,7 +241,9 @@
     "id": "far-15",
     "cat": "fart",
     "q": "Du nærmer deg en fartsdemper (fartshump). Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "far-15"
+    },
     "a": [
       "Senke farten i god tid før fartsdemperen",
       "Bremse kraftig når du er oppå fartsdemperen",
@@ -251,7 +259,9 @@
     "id": "far-16",
     "cat": "fart",
     "q": "Du kjører forbi en skole når elevene går hjem. Fartsgrensen er 30 km/t. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "far-16"
+    },
     "a": [
       "Du bør kjøre så sakte at du kan stoppe hvis et barn plutselig springer ut i veien",
       "Du kan holde 30 km/t hele tiden, fordi skiltet viser hva som er trygt ved skolen",
@@ -303,7 +313,9 @@
     "id": "far-19",
     "cat": "fart",
     "q": "En bil kjører veldig tett bak deg. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "far-19"
+    },
     "a": [
       "Øke avstanden til bilen foran, så du kan bremse tidlig og mykt",
       "Bremse brått, så føreren bak forstår at bilen er for nær",
@@ -369,7 +381,9 @@
     "id": "far-23",
     "cat": "fart",
     "q": "Du kjører i 72 km/t og holder 3 sekunders avstand til bilen foran. Omtrent hvor mange meter er det?",
-    "img": null,
+    "img": {
+      "view": "far-23"
+    },
     "a": [
       "Omtrent 60 meter",
       "Omtrent 216 meter",
@@ -417,7 +431,9 @@
     "id": "far-26",
     "cat": "fart",
     "q": "Hva er riktig om tresekundersregelen?",
-    "img": null,
+    "img": {
+      "view": "far-26"
+    },
     "a": [
       "Tre sekunder er et minimum i gode forhold, men på glatt vei eller i dårlig sikt kan det være for lite",
       "Tre sekunder er et krav i trafikkreglene, og det gjelder likt i all slags vær og på alt slags føre hele året",
@@ -433,7 +449,9 @@
     "id": "far-27",
     "cat": "fart",
     "q": "Hva sier trafikkreglene om avstanden til kjøretøyet foran?",
-    "img": null,
+    "img": {
+      "view": "far-27"
+    },
     "a": [
       "Den skal være så stor at du ikke kjører på hvis kjøretøyet foran senker farten eller stanser",
       "Den skal være minst 3 sekunder på tørr vei og minst 6 sekunder på våt og glatt vei, målt ved et fast punkt",

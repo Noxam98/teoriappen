@@ -1337,7 +1337,9 @@
     "id": "sk-72",
     "cat": "skilt",
     "q": "Hva betyr det at kryssene på en vei er planskilte?",
-    "img": null,
+    "img": {
+      "view": "sk-72"
+    },
     "a": [
       "Veiene krysser hverandre i ulik høyde, og du kjører av og på via ramper",
       "Veiene krysser hverandre i samme høyde, men trafikken styres av lyssignal",
@@ -1353,7 +1355,9 @@
     "id": "sk-73",
     "cat": "skilt",
     "q": "To vanlige kjørefelt blir til ett, og skiltet Sammenfletting står ved veien. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "sk-73"
+    },
     "a": [
       "Kjøre fram i feltet ditt og flette der veien snevrer inn",
       "Skifte felt så tidlig du kan, fordi det er feil å kjøre helt fram i feltet som slutter",
@@ -1369,7 +1373,9 @@
     "id": "sk-74",
     "cat": "skilt",
     "q": "Hva er riktig om skiltene Sammenfletting og Kjørefelt slutter?",
-    "img": null,
+    "img": {
+      "view": "sk-74"
+    },
     "a": [
       "Ved Kjørefelt slutter har du vikeplikt, ved Sammenfletting veksler bilene på å kjøre inn",
       "Ved Sammenfletting har du vikeplikt, ved Kjørefelt slutter veksler bilene på å kjøre inn",
@@ -1385,7 +1391,9 @@
     "id": "sk-75",
     "cat": "skilt",
     "q": "Du kjører personbil og passerer skiltet Forbikjøringsforbud for lastebil. Foran deg kjører en lastebil sakte. Kan du kjøre forbi den?",
-    "img": null,
+    "img": {
+      "view": "sk-75"
+    },
     "a": [
       "Ja, hvis det er trygt: forbudet gjelder lastebiler som kjører forbi andre",
       "Nei, skiltet betyr at det er forbudt å kjøre forbi lastebiler på denne strekningen",

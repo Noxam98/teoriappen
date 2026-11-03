@@ -2,7 +2,7 @@
 // named «NO road sign <number>.svg») into src/components/figures/signs/official.ts:
 //   node scripts/import-signs.mjs <folder with the SVG files>
 // Which sign is which: scripts/sign-numbers.json ({ "<key in the app>": "<sign number>" }).
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { optimize } from 'svgo';
 
@@ -11,10 +11,20 @@ if (!dir) throw new Error('usage: node scripts/import-signs.mjs <folder with «N
 const root = new URL('..', import.meta.url).pathname;
 const numbers = JSON.parse(readFileSync(join(root, 'scripts/sign-numbers.json'), 'utf8'));
 
+const target = join(root, 'src/components/figures/signs/official.ts');
+const previous = existsSync(target) ? readFileSync(target, 'utf8') : '';
 const out = [];
 let refs = 0;
 for (const [key, nr] of Object.entries(numbers)) {
-  const raw = readFileSync(join(dir, `NO road sign ${nr}.svg`), 'utf8');
+  const file = join(dir, `NO road sign ${nr}.svg`);
+  // Нет файла в папке: оставляем уже импортированный знак, чтобы добавлять новые, не скачивая все заново.
+  if (!existsSync(file)) {
+    const kept = previous.split('\n').find(line => line.startsWith(`  ${key}: { nr: '${nr}',`));
+    if (!kept) throw new Error(`${nr}: no file and no earlier import`);
+    out.push(kept);
+    continue;
+  }
+  const raw = readFileSync(file, 'utf8');
   const { data } = optimize(raw, {
     multipass: true,
     floatPrecision: 4,

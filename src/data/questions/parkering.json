@@ -141,7 +141,9 @@
     "id": "par-11",
     "cat": "parkering",
     "q": "Du har parkert langs en gate og skal gå ut av bilen. Hva bør du gjøre før du åpner døren?",
-    "img": null,
+    "img": {
+      "view": "par-11"
+    },
     "a": [
       "Se i speilet og over skulderen etter syklister og andre trafikanter",
       "Se bare i speilet, fordi det viser alt som kommer bakfra",
@@ -173,7 +175,9 @@
     "id": "par-13",
     "cat": "parkering",
     "q": "Hvorfor er det forbudt å stanse i en uoversiktlig kurve?",
-    "img": null,
+    "img": {
+      "view": "par-13"
+    },
     "a": [
       "Fordi andre trafikanter kan komme brått på bilen og ikke rekke å stoppe",
       "Fordi det er forbudt å stanse på alle veier utenfor tettbygd strøk",

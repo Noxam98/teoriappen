@@ -177,7 +177,9 @@
     "id": "pla-11",
     "cat": "plassering",
     "q": "Du skal kjøre inn på motorveien fra et akselerasjonsfelt. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "pla-11"
+    },
     "a": [
       "Øke farten til omtrent samme fart som trafikken på motorveien og kjøre inn når det er ledig",
       "Stoppe i enden av akselerasjonsfeltet og vente til det kommer en stor luke i trafikken",
@@ -193,7 +195,9 @@
     "id": "pla-12",
     "cat": "plassering",
     "q": "Du skal kjøre av motorveien. Hvor bør du senke farten?",
-    "img": null,
+    "img": {
+      "view": "pla-12"
+    },
     "a": [
       "I retardasjonsfeltet, etter at du har kjørt ut av motorveien",
       "På motorveien, så du kommer inn i retardasjonsfeltet i lav fart",
@@ -209,7 +213,9 @@
     "id": "pla-13",
     "cat": "plassering",
     "q": "To kjørefelt går sammen til ett, og trafikken går sakte. Hvordan bør bilene flette sammen?",
-    "img": null,
+    "img": {
+      "view": "pla-13"
+    },
     "a": [
       "Etter glidelåsprinsippet: én bil fra hvert felt annenhver gang",
       "Bilene i feltet som fortsetter, skal ikke slippe noen inn",
@@ -415,7 +421,9 @@
     "id": "pla-25",
     "cat": "plassering",
     "q": "På motorveien blir to kjørefelt til ett. Du kjører i feltet som fortsetter. En bil i feltet som slutter, skal inn foran deg. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "pla-25"
+    },
     "a": [
       "Du skal tilpasse farten, så bilene kan kjøre vekselvis inn i feltet",
       "Du kan holde farten, fordi bilen i feltet som slutter, har vikeplikt",
@@ -524,5 +532,167 @@
     "ru": "Дорожное управление советует помочь другим: включите левый поворотник перед въездом на круг. Правый поворотник включите, когда проезжаете последний съезд перед вашим, и не выключайте, пока не выедете. Если включить правый уже перед въездом, другие решат, что вы съезжаете на первом съезде.",
     "uk": "Дорожнє управління радить допомогти іншим: увімкніть лівий покажчик повороту перед в'їздом на коло. Правий покажчик увімкніть, коли проїжджаєте останній з'їзд перед вашим, і не вимикайте, доки не виїдете. Якщо ввімкнути правий уже перед в'їздом, інші вирішать, що ви з'їжджаєте на першому з'їзді.",
     "theory": "plassering/rundkjoring"
+  },
+  {
+    "id": "pla-31",
+    "cat": "plassering",
+    "q": "Du kjører i feltet for fartsøkning og skal inn på motorveien. Hva sier trafikkreglene?",
+    "img": {
+      "view": "pla-31"
+    },
+    "a": [
+      "Du skal tilpasse farten til trafikken i feltet du skal inn i",
+      "Du kan kjøre rett inn, fordi trafikken på motorveien skal slippe deg inn",
+      "Du skal stanse der feltet slutter og vente på en stor luke",
+      "Du skal holde 80 km/t, også når trafikken på motorveien kjører saktere"
+    ],
+    "f": "Trafikkreglene § 8 sier at du skal tilpasse farten til trafikken i feltet du skal inn i. De som kjører der, skal gjøre det lettere for deg, men du kan ikke regne med at de stanser. Bruk feltet til å komme opp i fart.",
+    "ru": "§ 8 правил движения требует подстроить скорость под поток в полосе, в которую вы въезжаете. Те, кто едет там, должны облегчить вам въезд, но рассчитывать, что они остановятся, нельзя. Используйте полосу, чтобы набрать скорость.",
+    "uk": "§ 8 правил руху вимагає підлаштувати швидкість під потік у смузі, до якої ви в’їжджаєте. Ті, хто їде там, мають полегшити вам в’їзд, але розраховувати, що вони зупиняться, не можна. Використайте смугу, щоб набрати швидкість.",
+    "theory": "plassering/motorvei-og-tunnel"
+  },
+  {
+    "id": "pla-32",
+    "cat": "plassering",
+    "q": "Du kjører i høyre felt på motorveien, og en bil er på vei inn fra feltet for fartsøkning. Hva er riktig?",
+    "img": {
+      "view": "pla-32"
+    },
+    "a": [
+      "Du skal gjøre det lettere for bilen å komme inn",
+      "Du kan holde farten, fordi bilen har vikeplikt og må vente til det er tomt",
+      "Du skal stanse og slippe bilen inn foran deg",
+      "Du må skifte til venstre felt, selv om det er biler der"
+    ],
+    "f": "Kjørende i feltet ved siden av skal lette utkjøringen fra feltet for fartsøkning, står det i § 8. Du kan for eksempel justere farten litt, eller skifte felt hvis det er trygt. Du skal ikke stanse på motorveien.",
+    "ru": "По § 8 тот, кто едет в соседней полосе, должен облегчить выезд с полосы разгона. Например, немного измените скорость или перестройтесь, если это безопасно. Останавливаться на магистрали нельзя.",
+    "uk": "За § 8 той, хто їде сусідньою смугою, має полегшити виїзд зі смуги розгону. Наприклад, трохи змініть швидкість або перестройтеся, якщо це безпечно. Зупинятися на магістралі не можна.",
+    "theory": "plassering/motorvei-og-tunnel"
+  },
+  {
+    "id": "pla-33",
+    "cat": "plassering",
+    "q": "Du skal forlate motorveien, og det er et felt for fartsreduksjon foran deg. Når skal du kjøre inn i det?",
+    "img": {
+      "view": "pla-33"
+    },
+    "a": [
+      "Så snart du kan, der feltet begynner",
+      "Helt på slutten av feltet, så du holder farten lengst mulig",
+      "Først når du har senket farten til 50 km/t på motorveien",
+      "Når du ser rampen, også om du må krysse sperreflaten"
+    ],
+    "f": "Den som vil forlate veien, skal snarest mulig kjøre inn i feltet for fartsreduksjon, står det i § 8. Senk farten der, ikke i feltet du kommer fra, så du ikke hindrer trafikken bak deg.",
+    "ru": "По § 8 тот, кто хочет покинуть дорогу, должен как можно раньше перейти на полосу торможения. Снижайте скорость на ней, а не в прежней полосе, чтобы не мешать тем, кто едет сзади.",
+    "uk": "За § 8 той, хто хоче залишити дорогу, має якнайраніше перейти на смугу гальмування. Знижуйте швидкість на ній, а не в попередній смузі, щоб не заважати тим, хто їде позаду.",
+    "theory": "plassering/motorvei-og-tunnel"
+  },
+  {
+    "id": "pla-34",
+    "cat": "plassering",
+    "q": "Du har kjørt inn på innkjøringsveien til en motortrafikkvei, men ser at du skal i motsatt retning. Hva gjør du?",
+    "img": {
+      "view": "pla-34"
+    },
+    "a": [
+      "Kjører videre og snur et sted der det er lov",
+      "Rygger forsiktig tilbake langs kanten, fordi du ennå ikke er på selve veien",
+      "Vender på innkjøringsveien hvis ingen kommer bak deg",
+      "Stanser ved kanten og venter til noen kan hjelpe deg å rygge"
+    ],
+    "f": "Rygging og vending er forbudt på motorvei og motortrafikkvei, og også på inn- og utkjøringsveiene til dem (§ 11). Du må kjøre videre til neste mulighet for å snu.",
+    "ru": "Задний ход и разворот запрещены на автомагистрали и на дороге для автомобилей, а также на въездах и съездах с них (§ 11). Нужно ехать дальше до следующей возможности развернуться.",
+    "uk": "Задній хід і розворот заборонені на автомагістралі та на дорозі для автомобілів, а також на в’їздах і з’їздах із них (§ 11). Потрібно їхати далі до наступної можливості розвернутися.",
+    "theory": "plassering/motorvei-og-tunnel"
+  },
+  {
+    "id": "pla-35",
+    "cat": "plassering",
+    "q": "Hva er riktig om motortrafikkvei?",
+    "img": {
+      "view": "pla-35"
+    },
+    "a": [
+      "Bare motorvogner som lovlig kan kjøre minst 40 km/t, kan bruke den, og moped er forbudt",
+      "Moped kan kjøre der, hvis den holder seg helt til høyre i kjørefeltet",
+      "Syklister kan bruke veiskulderen, men gående kan ikke være der",
+      "Alle kjøretøy kan bruke den, men traktor må ha på blinkende lys"
+    ],
+    "f": "Skiltet viser at veien er motortrafikkvei. Her kan bare motorvogn eller vogntog kjøre, og de må lovlig kunne kjøre minst 40 km/t på vannrett vei. Moped er forbudt (§ 4). Stans, rygging og vending er også forbudt.",
+    "ru": "Знак показывает дорогу для автомобилей. Здесь могут ехать только механические транспортные средства и автопоезда, которым разрешено ехать не медленнее 40 км/ч на ровной дороге. Мопедам въезд запрещён (§ 4). Остановка, задний ход и разворот тоже запрещены.",
+    "uk": "Знак показує дорогу для автомобілів. Тут можуть їхати лише механічні транспортні засоби й автопоїзди, яким дозволено їхати не повільніше 40 км/год на рівній дорозі. Мопедам в’їзд заборонено (§ 4). Зупинка, задній хід і розворот теж заборонені.",
+    "theory": "plassering/motorvei-og-tunnel"
+  },
+  {
+    "id": "pla-36",
+    "cat": "plassering",
+    "q": "Du er på utkjøringsveien fra motorveien og vil stanse for å se på kartet. Er det lov?",
+    "img": {
+      "view": "pla-36"
+    },
+    "a": [
+      "Nei, det er forbudt å stanse på inn- og utkjøringsveier til motorvei",
+      "Ja, hvis du stanser helt til høyre og setter på nødsignal",
+      "Ja, fordi forbudet bare gjelder på selve motorveien",
+      "Ja, hvis du ikke står der lenger enn fem minutter"
+    ],
+    "f": "Forbudet i § 17 gjelder både på motorvei og motortrafikkvei og på inn- og utkjøringsveiene til dem. Kjør videre til et sted der det er trygt og lov å stanse.",
+    "ru": "Запрет из § 17 действует и на автомагистрали и дороге для автомобилей, и на въездах и съездах с них. Доезжайте до места, где останавливаться безопасно и разрешено.",
+    "uk": "Заборона з § 17 діє і на автомагістралі та дорозі для автомобілів, і на в’їздах і з’їздах із них. Доїдьте до місця, де зупинятися безпечно й дозволено.",
+    "theory": "plassering/motorvei-og-tunnel"
+  },
+  {
+    "id": "pla-37",
+    "cat": "plassering",
+    "q": "Du har kommet inn på veien fra en rampe, og feltet ditt har fortsatt et stykke. Nå går det sammen med feltet ved siden av, og skiltet Sammenfletting står ved veien. Hva gjelder?",
+    "img": {
+      "view": "pla-37"
+    },
+    "a": [
+      "Ingen har vikeplikt: alle tilpasser farten, og bilene kjører vekselvis",
+      "Du har vikeplikt, fordi du kommer fra rampen",
+      "Trafikken på veien har vikeplikt for dem som kommer fra rampen",
+      "Den som har høyest fart, skal kjøre inn først"
+    ],
+    "f": "Når antallet vanlige kjørefelt blir mindre, skal farten tilpasses gjensidig, slik at bilene kan kjøre vekselvis (§ 8). Det er dette skiltet Sammenfletting varsler om. I et felt for fartsøkning er det annerledes: Der tilpasser du farten til trafikken i feltet du skal inn i.",
+    "ru": "Когда обычных полос становится меньше, все подстраивают скорость друг под друга, чтобы машины ехали поочерёдно (§ 8). Об этом и предупреждает знак Sammenfletting. На полосе разгона иначе: там вы подстраиваетесь под поток в полосе, в которую въезжаете.",
+    "uk": "Коли звичайних смуг стає менше, усі підлаштовують швидкість одне під одного, щоб машини їхали по черзі (§ 8). Про це й попереджає знак Sammenfletting. На смузі розгону інакше: там ви підлаштовуєтеся під потік у смузі, до якої в’їжджаєте.",
+    "theory": "plassering/skifte-felt"
+  },
+  {
+    "id": "pla-38",
+    "cat": "plassering",
+    "q": "Feltet ditt slutter, og skiltet Kjørefelt slutter står ved veien. Hva gjelder?",
+    "img": {
+      "view": "pla-38"
+    },
+    "a": [
+      "Du skal skifte felt, og du har vikeplikt for dem i feltet du skal inn i",
+      "Ingen har vikeplikt, og bilene skal kjøre vekselvis som en glidelås",
+      "Bilene i det andre feltet har vikeplikt for deg, fordi feltet ditt slutter",
+      "Du skal stanse der feltet slutter, selv om det er ledig ved siden av deg"
+    ],
+    "f": "Ved skiltet Kjørefelt slutter skal du skifte felt, og du har vikeplikt etter trafikkreglene. Det er forskjellen fra skiltet Sammenfletting, der bilene kjører vekselvis. Skiltet brukes på vei med tre eller flere felt i samme retning, og når for eksempel et kollektivfelt slutter.",
+    "ru": "При знаке Kjørefelt slutter нужно перестроиться, и вы уступаете дорогу по правилам движения. В этом отличие от знака Sammenfletting, при котором машины едут поочерёдно. Этот знак ставят на дорогах с тремя и более полосами в одну сторону, а также, например, в конце автобусной полосы.",
+    "uk": "Біля знака Kjørefelt slutter потрібно перестроїтися, і ви поступаєтеся дорогою за правилами руху. У цьому відмінність від знака Sammenfletting, за якого машини їдуть по черзі. Цей знак ставлять на дорогах із трьома й більше смугами в один бік, а також, наприклад, наприкінці автобусної смуги.",
+    "theory": "plassering/skifte-felt"
+  },
+  {
+    "id": "pla-39",
+    "cat": "plassering",
+    "q": "Du skal inn på veien fra et kort påkjøringsfelt, og skiltet Vikeplikt står ved feltet. Hva gjelder?",
+    "img": {
+      "view": "pla-39"
+    },
+    "a": [
+      "Du har vikeplikt for trafikken på veien, og du må stanse hvis det ikke er ledig",
+      "Bilene kjører vekselvis, fordi feltet ditt og feltet på veien går sammen",
+      "Trafikken på veien skal slippe deg inn, så du kan kjøre inn uten å vente",
+      "Du skal holde god fart hele veien, fordi du ikke får stanse i påkjøringsfeltet"
+    ],
+    "f": "Et påkjøringsfelt som er for kort til fletting, har skiltet Vikeplikt. Da har du vikeplikt for trafikken på veien. Det er ulikt et felt for fartsøkning, der du tilpasser farten, og skiltet Sammenfletting, der bilene kjører vekselvis.",
+    "ru": "Короткая полоса въезда, на которой нельзя встроиться поочерёдно, обозначается знаком Vikeplikt. Тогда вы уступаете дорогу транспорту на дороге. Иначе на полосе разгона, где вы подстраиваете скорость, и при знаке Sammenfletting, где машины едут поочерёдно.",
+    "uk": "Коротка смуга в’їзду, на якій не можна вбудуватися по черзі, позначається знаком Vikeplikt. Тоді ви поступаєтеся дорогою транспорту на дорозі. Інакше на смузі розгону, де ви підлаштовуєте швидкість, і за знака Sammenfletting, де машини їдуть по черзі.",
+    "theory": "plassering/motorvei-og-tunnel"
   }
 ]
