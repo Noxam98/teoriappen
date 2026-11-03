@@ -62,7 +62,9 @@ func _ready() -> void:
 		image.convert(Image.FORMAT_RGB8)
 		image.resize(width / 2, height / 2, Image.INTERPOLATE_LANCZOS)
 		var out: String = dir.path_join(id + ".webp")
-		var error: Error = image.save_webp(out, true, float(options.get("quality", "0.8")))
+		# В густом тумане плавные переходы при обычном сжатии распадаются на ступени.
+		var foggy: bool = float(Scenes.specs().get(id, {}).get("fog", 1.0)) >= 10.0
+		var error: Error = image.save_webp(out, true, 0.97 if foggy else float(options.get("quality", "0.8")))
 		if options.has("png"):
 			image.save_png(String(options["png"]).path_join(id + ".png"))
 		print("%s код %d, %d КБ" % [id, error, FileAccess.get_file_as_bytes(out).size() / 1024])

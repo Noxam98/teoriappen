@@ -89,8 +89,9 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 		var yaw: float = atan2(o.x, o.y)
 		var at: Vector2 = o * (outer + 2.2) + r * (hw + 1.0)
 		# 406 только вместе с 202 на одной стойке, меньший номер наверху (N300:2026, 1.3.2 и 5.4.3).
-		w.road_sign("rundkjoring", at.x, at.y, 0.6, 2.0, yaw, [], 0.14)
-		w.road_sign("vikeplikt", at.x, at.y, 0.78, 2.65, yaw, [], 0.14)
+		# Размеры 202 MS и 406 LS (N300, 3.4.1 и 5.4.3), над тротуаром низ 2,5 м (1.3.3).
+		w.road_sign("rundkjoring", at.x, at.y, 0.6, 2.36, yaw, [], 0.14)
+		w.road_sign("vikeplikt", at.x, at.y, 0.9, 3.0, yaw, [], 0.14)
 	_vehicles(w, s, inner, outer, hw, lanes)
 	_dress(w, outer, hw)
 

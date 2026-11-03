@@ -111,7 +111,7 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 			# Знак главной дороги ставят после перекрёстка, по ходу тех, кто уезжает по этой ветке (N300:2026, 3.4.3).
 			p = o * (HW + 9.0) + right_of(o) * (HW + 1.15)
 			sign_yaw = atan2(-o.x, -o.y)
-		w.road_sign(signs[leg], p.x, p.y, 0.95, 1.95, sign_yaw, [], 0.14)
+		w.road_sign(signs[leg], p.x, p.y, 0.9, 2.36, sign_yaw, [], 0.14)
 		# Штриховая кромка главной дороги поперёк устья второстепенной, зубцы или линия примерно в 1 м от неё.
 		if signs[leg] == "vikeplikt" or signs[leg] == "stopp":
 			w.line(World.straight(o.x * HW - r.x * HW, o.y * HW - r.y * HW, o.x * HW + r.x * HW, o.y * HW + r.y * HW, 1.0), 0.0, World.WHITE, 0.1, 2.0, 2.0)

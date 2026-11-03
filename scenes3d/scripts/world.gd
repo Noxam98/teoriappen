@@ -145,8 +145,14 @@ func setup_light(scene_hour: float = 11.0, turn: float = 0.0, clouds: float = 0.
 	environment.ambient_light_energy = lerpf(1.0, 0.9, day) + night * 0.6
 	environment.tonemap_exposure = lerpf(1.0, 1.25, night)
 	if tunnel_scene:
+		# Глобальное освещение в закрытом туннеле иногда подхватывало цвет предыдущей сцены и пятнами красило пол.
+		environment.sdfgi_enabled = false
 		sun.light_energy = 0.0
-		environment.ambient_light_energy = 0.1
+		# Без глобального освещения небо давало холодный синий свет: внутри только тёплый рассеянный от светильников.
+		environment.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
+		environment.ambient_light_color = Color(0.95, 0.86, 0.72)
+		environment.ambient_light_energy = 0.32
+		environment.reflected_light_source = Environment.REFLECTION_SOURCE_DISABLED
 		environment.fog_density = 0.0
 		environment.tonemap_exposure = 1.3
 	if night_scene:

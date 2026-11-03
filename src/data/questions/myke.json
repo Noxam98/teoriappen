@@ -233,14 +233,14 @@
     "q": "Hvor kan en person kjøre elsparkesykkel?",
     "img": null,
     "a": [
-      "I kjørebanen, i sykkelfeltet og på sykkelveien, og på fortauet når det ikke er til hinder for gående",
+      "I kjørebanen, i sykkelfeltet og på sykkelveien, og på fortauet når det er lite gangtrafikk og ingen fare for gående",
       "På fortauet og på gang- og sykkelveien, men ikke i kjørebanen og heller ikke i sykkelfeltet",
       "I kjørebanen og i sykkelfeltet, men ikke på fortauet, selv om det er helt tomt for gående",
       "I kjørebanen og på fortauet, men ikke i sykkelfeltet, fordi det feltet er forbeholdt dem som sykler"
     ],
-    "f": "En elsparkesykkel følger stort sett de samme reglene som en sykkel. Den kan kjøre i kjørebanen og i sykkelfeltet, og på fortauet når det ikke er til hinder for gående.",
-    "ru": "Для электросамоката в основном действуют те же правила, что и для велосипеда. На нём можно ехать по проезжей части и по велополосе, а по тротуару — если это не мешает пешеходам.",
-    "uk": "Для електросамоката здебільшого діють ті самі правила, що й для велосипеда. На ньому можна їхати проїзною частиною та велосмугою, а тротуаром — якщо це не заважає пішоходам.",
+    "f": "En elsparkesykkel følger stort sett de samme reglene som en sykkel. Den kan kjøre i kjørebanen og i sykkelfeltet. På fortauet kan den kjøre når det er lite gangtrafikk, og kjøringen ikke er til fare eller hinder for gående. Forbi gående skal farten være nær gangfart og høyst 6 km/t.",
+    "ru": "Для электросамоката в основном действуют те же правила, что и для велосипеда. На нём можно ехать по проезжей части и по велополосе. По тротуару можно, когда пешеходов мало и езда не создаёт им опасности или помех. Мимо пешеходов нужно ехать почти со скоростью шага и не быстрее 6 км/ч.",
+    "uk": "Для електросамоката здебільшого діють ті самі правила, що й для велосипеда. На ньому можна їхати проїзною частиною та велосмугою. Тротуаром можна, коли пішоходів мало і їзда не створює їм небезпеки чи перешкод. Повз пішоходів потрібно їхати майже зі швидкістю кроку і не швидше ніж 6 км/год.",
     "theory": "myke/elsparkesykler"
   },
   {

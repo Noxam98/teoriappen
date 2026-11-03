@@ -422,17 +422,17 @@
   {
     "id": "kjt-27",
     "cat": "kjoretoy",
-    "q": "Vognkortet har en teknisk del (del 1) og en eierdel (del 2). Hvor bør delene være?",
+    "q": "Vognkortet har en teknisk del (del 1) og en eierdel (del 2). Hvor skal delene være?",
     "img": null,
     "a": [
-      "Del 1 skal ligge i bilen, og del 2 bør ligge på et trygt sted utenfor bilen",
+      "Del 1 skal følge med under kjøring, og del 2 skal oppbevares atskilt fra bilen",
       "Begge delene bør ligge i hanskerommet, slik at politiet kan se dem ved kontroll",
       "Begge delene bør ligge hjemme på et trygt sted, aldri i bilen",
       "Del 1 bør ligge hjemme på et trygt sted, og del 2 skal ligge i bilen"
     ],
-    "f": "Den tekniske delen av vognkortet skal oppbevares i bilen. Eierdelen bør du ha på et trygt sted, atskilt fra bilen.",
-    "ru": "Техническую часть свидетельства о регистрации (vognkort) нужно хранить в машине. Часть владельца лучше держать в надёжном месте, отдельно от машины.",
-    "uk": "Технічну частину свідоцтва про реєстрацію (vognkort) потрібно зберігати в автомобілі. Частину власника краще тримати в надійному місці, окремо від автомобіля.",
+    "f": "Den tekniske delen av vognkortet skal alltid følge med under kjøring. Eierdelen skal den registrerte eieren oppbevare atskilt fra bilen.",
+    "ru": "Техническая часть свидетельства о регистрации (vognkort) всегда должна быть с собой во время поездки. Часть владельца зарегистрированный владелец должен хранить отдельно от машины.",
+    "uk": "Технічна частина свідоцтва про реєстрацію (vognkort) завжди має бути із собою під час поїздки. Частину власника зареєстрований власник має зберігати окремо від автомобіля.",
     "theory": "kjoretoy/eu-kontroll-forsikring-og-vognkort"
   },
   {

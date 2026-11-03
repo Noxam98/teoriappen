@@ -79,7 +79,18 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 			w.lot(-left, 90.0, -1.0, -1.0, 240.0, 400.0, 0.0, 2.6)
 	else:
 		var edge: float = maxf(left, right) - 0.25
-		if s.has("taper"):
+		if s.get("gravel_road", false):
+			var half_g: float = maxf(left, right)
+			w.add_mesh(Mesher.strip(whole, -half_g - 0.3, half_g + 0.3, -0.008, w.gravel(), w.elev))
+			w._strips.push_back([whole, half_g + 0.3])
+			var main := World.straight(-240.0, zc, 240.0, zc, 3.0)
+			w.road(main, 3.5, 0.9, 0.12)
+			for side: float in [1.0, -1.0]:
+				var ze: float = zc + side * 3.25
+				w.line(World.straight(-240.0, ze, -half_g - 1.0, ze, 3.0), 0.0, World.WHITE, 0.1)
+				w.line(World.straight(-half_g - 1.0, ze, half_g + 1.0, ze, 1.0), 0.0, World.WHITE, 0.1, 2.0, 2.0)
+				w.line(World.straight(half_g + 1.0, ze, 240.0, ze, 3.0), 0.0, World.WHITE, 0.1)
+		elif s.has("taper"):
 			_taper_road(w, s, whole)
 		else:
 			w.road(whole, maxf(left, right), 0.9, 0.12)
@@ -87,12 +98,12 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 			var narrow: bool = left + right < 6.0
 			if s.has("bay"):
 				# Вдоль кармана край штриховой, его рисует _bus_bay.
-				w.line(whole, edge, World.WHITE, 0.12, 0.0, 0.0, 0.0, 70.0 - float(s["bay"][0]) - 8.0, 0.35)
-				w.line(whole, edge, World.WHITE, 0.12, 0.0, 0.0, 70.0 - float(s["bay"][1]) + 8.0, INF, 0.35)
+				w.line(whole, edge, World.WHITE, 0.1, 0.0, 0.0, 0.0, 70.0 - float(s["bay"][0]) - 8.0, 0.35)
+				w.line(whole, edge, World.WHITE, 0.1, 0.0, 0.0, 70.0 - float(s["bay"][1]) + 8.0, INF, 0.35)
 			else:
-				w.line(whole, edge, World.WHITE, 0.12, 3.0 if narrow else 0.0, 3.0 if narrow else 0.0, 0.0, INF, 0.35)
-			w.line(whole, -edge, World.WHITE, 0.12, 3.0 if narrow else 0.0, 3.0 if narrow else 0.0, 0.0, INF, 0.35)
-		if env != "tunnel" and not s.has("taper") and not s.has("bay"):
+				w.line(whole, edge, World.WHITE, 0.1, 3.0 if narrow else 0.0, 3.0 if narrow else 0.0, 0.0, INF, 0.35)
+			w.line(whole, -edge, World.WHITE, 0.1, 3.0 if narrow else 0.0, 3.0 if narrow else 0.0, 0.0, INF, 0.35)
+		if env != "tunnel" and not s.has("taper") and not s.has("bay") and not s.get("gravel_road", false):
 			w.posts(whole, edge + 1.5, 25.0, 12.0)
 			w.posts(whole, -edge - 1.5, 25.0, 24.0)
 	var road_mid: float = (right - left) / 2.0
@@ -110,7 +121,7 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 		var way := World.straight(right, pz, 70.0, pz, 4.0)
 		w.add_mesh(Mesher.strip(way, -1.4, 1.4, -0.008, w.asphalt(0.0)))
 		w.keep_clear(way, 1.6)
-		w.road_sign("gang_sykkelveg", right + 3.0, pz - 2.4, 0.7, 2.0, 0.0)
+		w.road_sign("gang_sykkelveg", right + 3.0, pz - 2.4, 0.4, 2.0, 0.0)
 	if s.has("bay"):
 		_bus_bay(w, s["bay"], right)
 	if s.has("kantstopp"):
@@ -155,7 +166,7 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 		_dressing(w, env, cross, zc, left, right)
 	for sign: Dictionary in s.get("signs", []):
 		var under: Array = sign.get("under", [])
-		w.road_sign(sign["id"], sign["x"], sign["z"], sign.get("w", 0.85), sign.get("bottom", 1.95), sign.get("yaw", 0.0), under, 0.14 if env == "street" else 0.0)
+		w.road_sign(sign["id"], sign["x"], sign["z"], sign.get("w", 0.85), sign.get("bottom", 2.36 if env == "street" else 2.0), sign.get("yaw", 0.0), under, 0.14 if env == "street" else 0.0)
 
 	# Участники движения.
 	for a: Dictionary in s.get("actors", []):
@@ -264,7 +275,7 @@ static func _tunnel(w: World, z_from: float, portal: bool, style: String = "coll
 		# Аварийный карман справа: свод там расходится наружу.
 		if not niche:
 			return 0.0
-		return 3.0 * smoothstep(-20.0, -26.0, z) * smoothstep(-52.0, -46.0, z)
+		return 3.0 * smoothstep(-18.0, -48.0, z) * smoothstep(-108.0, -78.0, z)
 	var wall: float = 3.4
 	var top: float = 6.3
 	var rock := ShaderMaterial.new()
@@ -283,20 +294,20 @@ static func _tunnel(w: World, z_from: float, portal: bool, style: String = "coll
 			ring.push_back(Vector3(hw * cx + maxf(cx, 0.0) * extra, wall + (top - wall) * sin(t), z))
 		ring.push_back(Vector3(-hw, -0.05, z))
 		rings.push_back(ring)
-		z -= 2.0 if niche and z < -14.0 and z > -60.0 else 10.0
+		z -= 2.0 if niche and z < -14.0 and z > -112.0 else 10.0
 	w.add_mesh(Mesher.loft(rings, rock, false), true)
 	# Пол вместо травы и гравия: внутри туннеля их быть не должно.
 	var floor_path := World.straight(0.0, z_from, 0.0, -520.0, 10.0)
 	w._strips.push_back([floor_path, hw + 0.6])
 	w.add_mesh(Mesher.strip(floor_path, -hw, hw, -0.006, Car.mat(Color(0.2, 0.2, 0.21), 0.9)))
 	if niche:
-		var bay := PackedVector2Array([Vector2(hw - 0.5, -20.0), Vector2(hw + 3.0, -26.0), Vector2(hw + 3.0, -46.0), Vector2(hw - 0.5, -52.0)])
+		var bay := PackedVector2Array([Vector2(hw - 0.5, -18.0), Vector2(hw + 3.0, -48.0), Vector2(hw + 3.0, -78.0), Vector2(hw - 0.5, -108.0)])
 		var bay_m: StandardMaterial3D = Car.mat(Color(0.2, 0.2, 0.21), 0.9)
 		w.add_mesh(Mesher.prism(bay, -0.02, 0.0, bay_m, bay_m))
 		# Знак 555 прямо перед карманом, под ним символы 605 и 606 (N300:2026, 6.4.36).
-		w.road_sign("nodtelefon", hw - 0.55, -18.0, 0.34, 2.0, 0.0)
-		w.road_sign("brannslokker", hw - 0.17, -18.0, 0.34, 2.0, 0.0)
-		w.road_sign("havarilomme", hw - 0.36, -18.0, 0.62, 2.42, 0.0)
+		w.road_sign("nodtelefon", hw - 0.55, -16.0, 0.34, 2.0, 0.0)
+		w.road_sign("brannslokker", hw - 0.17, -16.0, 0.34, 2.0, 0.0)
+		w.road_sign("havarilomme", hw - 0.36, -16.0, 0.6, 2.42, 0.0)
 	# Светлые панели на стенах с тёмными швами.
 	var panel := ShaderMaterial.new()
 	panel.shader = TUNNEL
@@ -315,9 +326,9 @@ static func _tunnel(w: World, z_from: float, portal: bool, style: String = "coll
 	for side: float in [-1.0, 1.0]:
 		var wall_x: float = hw - 0.1
 		if niche and side > 0.0:
-			w.add_mesh(Mesher.prism(PackedVector2Array([Vector2(wall_x, z_from), Vector2(wall_x + 0.06, z_from), Vector2(wall_x + 0.06, -20.0), Vector2(wall_x, -20.0)]), 0.0, 2.7, panel, panel))
-			w.add_mesh(Mesher.prism(PackedVector2Array([Vector2(wall_x, -52.0), Vector2(wall_x + 0.06, -52.0), Vector2(wall_x + 0.06, -520.0), Vector2(wall_x, -520.0)]), 0.0, 2.7, panel, panel))
-			w.add_mesh(Mesher.prism(PackedVector2Array([Vector2(hw + 2.9, -26.0), Vector2(hw + 2.96, -26.0), Vector2(hw + 2.96, -46.0), Vector2(hw + 2.9, -46.0)]), 0.0, 2.7, panel, panel))
+			w.add_mesh(Mesher.prism(PackedVector2Array([Vector2(wall_x, z_from), Vector2(wall_x + 0.06, z_from), Vector2(wall_x + 0.06, -18.0), Vector2(wall_x, -18.0)]), 0.0, 2.7, panel, panel))
+			w.add_mesh(Mesher.prism(PackedVector2Array([Vector2(wall_x, -18.0), Vector2(hw + 2.9, -48.0), Vector2(hw + 2.9, -78.0), Vector2(wall_x, -108.0), Vector2(wall_x + 0.06, -108.0), Vector2(hw + 2.96, -78.0), Vector2(hw + 2.96, -48.0), Vector2(wall_x + 0.06, -18.0)]), 0.0, 2.7, panel, panel))
+			w.add_mesh(Mesher.prism(PackedVector2Array([Vector2(wall_x, -108.0), Vector2(wall_x + 0.06, -108.0), Vector2(wall_x + 0.06, -520.0), Vector2(wall_x, -520.0)]), 0.0, 2.7, panel, panel))
 		else:
 			w.add_mesh(Mesher.prism(PackedVector2Array([Vector2(side * wall_x, z_from), Vector2(side * (wall_x + 0.06), z_from), Vector2(side * (wall_x + 0.06), -520.0), Vector2(side * wall_x, -520.0)]), 0.0, 2.7, panel, panel))
 		# Верхняя кромка панелей и кабельный лоток над ней.
@@ -566,8 +577,9 @@ static func _curve_path(c: Dictionary) -> PackedVector2Array:
 
 ## Две полосы переходят в одну: правая сужается между taper[0] и taper[1]. divided: встречная отделена отбойником.
 static func _taper_road(w: World, s: Dictionary, whole: PackedVector2Array) -> void:
-	var t0: float = s["taper"][0]
-	var t1: float = s["taper"][1]
+	# taper: конец линии и знак, конец полной ширины, конец сужения. От знака до сужения 150 м при 80 км/ч и 200 м на магистрали.
+	var t0: float = s["taper"][1]
+	var t1: float = s["taper"][2]
 	var divided: bool = s.get("divided", false)
 	var near: float = -0.75 if divided else -3.5
 	var straight_part := PackedVector2Array([Vector2(3.5, 70.0), Vector2(7.0, 70.0), Vector2(7.0, t0), Vector2(3.5, t1)])
@@ -579,7 +591,7 @@ static func _taper_road(w: World, s: Dictionary, whole: PackedVector2Array) -> v
 	w._strips.push_back([whole, 4.4 if not divided else 9.5])
 	w._strips.push_back([PackedVector2Array([Vector2(5.2, 70.0), Vector2(5.2, t0), Vector2(3.5, t1)]), 2.8])
 	var edge := PackedVector2Array([Vector2(6.75, 70.0), Vector2(6.75, t0), Vector2(3.25, t1), Vector2(3.25, -260.0)])
-	w.line(edge, 0.0, World.WHITE, 0.3 if divided else 0.12)
+	w.line(edge, 0.0, World.WHITE, 0.3 if divided else 0.1)
 	if divided:
 		# Отдельная проезжая часть для встречных, между ними газон и отбойник.
 		# Профиль по N100:2023, 3.3.3: внутренняя обочина 0,75 м, разделитель 2 м.
@@ -595,25 +607,28 @@ static func _taper_road(w: World, s: Dictionary, whole: PackedVector2Array) -> v
 			Car.box(w, Vector3(0.09, 0.72, 0.09), Vector3(-1.82, 0.36, post), steel)
 			post -= 2.5
 	else:
-		w.line(whole, -3.25, World.WHITE, 0.12)
+		w.line(whole, -3.25, World.WHITE, 0.1)
 
 
 ## Лежачий полицейский поперёк дороги: плавный горб и белые треугольники на вершине.
 static func _hump(w: World, z: float, left: float, right: float) -> void:
+	var half: float = 2.5
+	var x0: float = -left + 0.15
+	var x1: float = right - 0.15
 	var rings: Array = []
 	for k: int in 11:
 		var t: float = -1.0 + k / 5.0
-		var h: float = 0.11 * (0.5 + 0.5 * cos(t * PI))
-		rings.push_back(PackedVector3Array([Vector3(-left, -0.01, z + t * 2.2), Vector3(right, -0.01, z + t * 2.2), Vector3(right, h, z + t * 2.2), Vector3(-left, h, z + t * 2.2)]))
+		var h: float = 0.1 * (0.5 + 0.5 * cos(t * PI))
+		rings.push_back(PackedVector3Array([Vector3(x0, -0.01, z + t * half), Vector3(x1, -0.01, z + t * half), Vector3(x1, h, z + t * half), Vector3(x0, h, z + t * half)]))
 	w.add_mesh(Mesher.loft(rings, w.asphalt(0.0)))
-	# Обозначение 1027: шашечки в два ряда на вершине горба, клетка 0,5 м (N302:2025, табл. 3.3—1).
 	var paint: ShaderMaterial = w._paint(World.WHITE, 0.3)
-	for row: int in 2:
-		var x: float = -left + (0.5 if row == 1 else 0.0)
-		while x < right - 0.4:
-			var z0: float = z + 0.5 - row * 0.5
-			w.add_mesh(Mesher.prism(PackedVector2Array([Vector2(x, z0), Vector2(x + 0.5, z0), Vector2(x + 0.5, z0 - 0.5), Vector2(x, z0 - 0.5)]), 0.1, 0.116, paint, paint))
-			x += 1.0
+	for edge_z: float in [z + half - 0.1, z - half + 1.1]:
+		for row: int in 2:
+			var x: float = x0 + (0.5 if row == 1 else 0.0)
+			while x < x1 - 0.4:
+				var q: float = edge_z - row * 0.5
+				w.add_mesh(Mesher.prism(PackedVector2Array([Vector2(x, q), Vector2(x + 0.5, q), Vector2(x + 0.5, q - 0.5), Vector2(x, q - 0.5)]), 0.03, 0.046, paint, paint))
+				x += 1.0
 
 
 ## Закрытый туннель и переезд: опущенный шлагбаум поперёк дороги и красные огни на стойке.
@@ -660,7 +675,7 @@ static func _box_portal(w: World, z0: float, hw: float, concrete: Material) -> v
 static func _lanes(w: World, kind: String, s: Dictionary, path: PackedVector2Array, zc: float, cross: String) -> void:
 	var lanes: String = s.get("lanes", "")
 	if lanes == "sperre":
-		w.line(path, 3.5, World.WHITE, 0.12)
+		w.line(path, 3.5, World.WHITE, 0.1)
 	elif lanes != "":
 		# Длина штрихов зависит от скорости: в городе 1 и 3 м или 3 и 1 м, за городом 3 и 9 м или 9 и 3 м (табл. 3.1—1).
 		var town: bool = s.get("env", "") == "street"
@@ -669,17 +684,17 @@ static func _lanes(w: World, kind: String, s: Dictionary, path: PackedVector2Arr
 		var pause: Array = [70.0 + 11.5, 70.0 + 18.5] if kind == "gangfelt" else ([70.0 - zc - 7.0, 70.0 - zc + 7.0] if cross != "" else [])
 		if s.has("taper"):
 			# Знак 530: линия кончается там, где начинается сужение, дальше её быть не должно (N302:2025, 5.6).
-			w.line(path, 3.5, World.WHITE, 0.11, dash, gap, 0.0, 70.0 - float(s["taper"][0]))
+			w.line(path, 3.5, World.WHITE, 0.1, dash, gap, 0.0, 70.0 - float(s["taper"][0]))
 		elif pause.is_empty():
-			w.line(path, 3.5, World.WHITE, 0.11, dash, gap)
+			w.line(path, 3.5, World.WHITE, 0.1, dash, gap)
 		elif kind == "gangfelt":
 			# Перед переходом между попутными полосами сплошная на половину остановочного пути (8.1).
-			w.line(path, 3.5, World.WHITE, 0.11, dash, gap, 0.0, pause[0] - 25.0)
-			w.line(path, 3.5, World.WHITE, 0.12, 0.0, 0.0, pause[0] - 25.0, pause[0])
-			w.line(path, 3.5, World.WHITE, 0.11, dash, gap, pause[1])
+			w.line(path, 3.5, World.WHITE, 0.1, dash, gap, 0.0, pause[0] - 25.0)
+			w.line(path, 3.5, World.WHITE, 0.1, 0.0, 0.0, pause[0] - 25.0, pause[0])
+			w.line(path, 3.5, World.WHITE, 0.1, dash, gap, pause[1])
 		else:
-			w.line(path, 3.5, World.WHITE, 0.11, dash, gap, 0.0, pause[0])
-			w.line(path, 3.5, World.WHITE, 0.11, dash, gap, pause[1])
+			w.line(path, 3.5, World.WHITE, 0.1, dash, gap, 0.0, pause[0])
+			w.line(path, 3.5, World.WHITE, 0.1, dash, gap, pause[1])
 	if s.has("lane_arrow"):
 		var c := Vector2(s["lane_arrow"][0], s["lane_arrow"][1])
 		w.paint_poly(PackedVector2Array([c + Vector2(-0.1, 0.0), c + Vector2(0.1, 0.0), c + Vector2(0.1, -3.5), c + Vector2(-0.1, -3.5)]))
@@ -735,7 +750,7 @@ static func _marking(w: World, kind: String, s: Dictionary, path: PackedVector2A
 	var dash_on: float = 1.0 if town else 3.0
 	var dash_off: float = 3.0 if town else 9.0
 	var skille := func(x: float, from: float = 0.0, to: float = INF) -> void:
-		w.line(path, x, y, 0.1 if town else 0.12, dash_on, dash_off, from, to)
+		w.line(path, x, y, 0.1, dash_on, dash_off, from, to)
 	var to_cross: float = 70.0 - zc - 7.0
 	var from_cross: float = 70.0 - zc + 7.0
 	match kind:
@@ -744,7 +759,7 @@ static func _marking(w: World, kind: String, s: Dictionary, path: PackedVector2A
 			w.line(path, -0.11, y, 0.11)
 			w.line(path, 0.11, y, 0.11)
 		"varsellinje":
-			w.line(path, 0.0, y, 0.12, 9.0, 3.0)
+			w.line(path, 0.0, y, 0.1, 9.0, 3.0)
 		"skillelinje":
 			# На перекрёстке осевая прерывается (N302:2025, 7.2).
 			if cross != "":
@@ -753,11 +768,11 @@ static func _marking(w: World, kind: String, s: Dictionary, path: PackedVector2A
 			else:
 				skille.call(0.0)
 		"sperre_varsel":
-			w.line(path, -0.12, y, 0.11, 9.0, 3.0)
-			w.line(path, 0.12, y, 0.12)
+			w.line(path, -0.1, y, 0.1, 9.0, 3.0)
+			w.line(path, 0.1, y, 0.1)
 		"varsel_sperre":
-			w.line(path, -0.12, y, 0.12)
-			w.line(path, 0.12, y, 0.11, 9.0, 3.0)
+			w.line(path, -0.1, y, 0.1)
+			w.line(path, 0.1, y, 0.1, 9.0, 3.0)
 		"haitenner":
 			# Подъезд к главной дороге: осевая предупреждающая до самой линии, 3 и 1 м (7.3.1).
 			w.line(path, 0.0, y, 0.1, 3.0, 1.0, 0.0, to_cross + 2.4)
@@ -824,8 +839,9 @@ static func _marking(w: World, kind: String, s: Dictionary, path: PackedVector2A
 			while x < right - 0.2:
 				w.bar(x, -16.0, x + 0.5, -13.0)
 				x += 1.0
-			w.road_sign("gangfelt", right + 0.85, -12.3, 0.75, 2.0, 0.0, [], 0.14)
-			w.road_sign("gangfelt", -left - 0.85, -16.6, 0.75, 2.0, PI, [], 0.14)
+			# Двусторонние, по обе стороны, не дальше 2 м до перехода; при ширине от 7 м размер MS (N300, 6.4.14).
+			w.road_sign("gangfelt", right + 0.85, -12.3, 0.8, 2.36, 0.0, [], 0.14)
+			w.road_sign("gangfelt", -left - 0.85, -16.6, 0.8, 2.36, PI, [], 0.14)
 
 
 ## Боковая дорога: осевая линия и край.

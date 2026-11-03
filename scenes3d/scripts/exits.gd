@@ -49,7 +49,7 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 	for a: Dictionary in s.get("actors", []):
 		RoadScene._actor(w, a, "street")
 	for sign: Dictionary in s.get("signs", []):
-		w.road_sign(sign["id"], sign["x"], sign["z"], sign.get("w", 0.85), 2.0, sign.get("yaw", 0.0), [], 0.14)
+		w.road_sign(sign["id"], sign["x"], sign["z"], sign.get("w", 0.85), 2.36, sign.get("yaw", 0.0), [], 0.14)
 	_dress(w, gap, style)
 
 
@@ -65,7 +65,7 @@ static func _parking(w: World, gap: float, own_x: float) -> void:
 			w.car(colors[n % colors.size()], x + 1.3, 13.6, PI, kinds[n % kinds.size()])
 		x += 2.6
 		n += 1
-	w.road_sign("parkering", gap - 1.6, HW + WALK + 1.0, 0.72, 2.0, 0.0, [], 0.0)
+	w.road_sign("parkering", gap - 1.6, HW + WALK + 1.0, 0.5, 2.0, 0.0, [], 0.0)
 
 
 static func _station(w: World) -> void:

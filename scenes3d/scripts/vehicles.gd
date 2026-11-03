@@ -513,7 +513,7 @@ static func lights(root: Node3D, beam: String, toward_camera: bool, tail_size: f
 			spot.spot_range = 70.0 if beam == "low" else 190.0
 			spot.spot_angle = 30.0 if beam == "low" else 17.0
 			spot.spot_attenuation = 0.5
-			spot.light_energy = 42.0 if beam == "low" else (14.0 if toward_camera else 150.0)
+			spot.light_energy = 42.0 if beam == "low" else (14.0 if toward_camera else 90.0)
 			spot.light_color = Color(1.0, 0.96, 0.86)
 			root.add_child(spot)
 		if toward_camera and beam != "park":

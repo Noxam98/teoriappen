@@ -458,11 +458,11 @@
       "Tanten din (40 år), førerkort klasse B uten avbrudd i 20 år",
       "Broren din (24 år), førerkort klasse B uten avbrudd i 6 år",
       "Onkelen din (55 år), førerkort klasse B uten avbrudd i 4 år",
-      "Moren din (50 år), førerkort klasse B i 30 år, men mistet førerretten i 6 måneder i fjor"
+      "Moren din (50 år), førerkort klasse B i 30 år, men mistet førerretten i 6 måneder i fjor på grunn av høy fart"
     ],
-    "f": "Ledsageren må ha fylt 25 år og ha hatt førerkort i samme klasse sammenhengende de siste 5 årene. Broren er for ung, og onkelen har hatt førerkort for kort tid. Moren fyller ikke kravet, fordi førerretten ble avbrutt i fjor.",
-    "ru": "Сопровождающему должно быть не меньше 25 лет, и он должен иметь права той же категории непрерывно последние 5 лет. Брат слишком молод, а дядя получил права слишком недавно. Мать не подходит, потому что в прошлом году её право управления прерывалось.",
-    "uk": "Супровідникові має бути не менше 25 років, і він повинен мати посвідчення водія тієї самої категорії безперервно останні 5 років. Брат надто молодий, а дядько отримав посвідчення надто недавно. Мати не підходить, тому що торік її право керування переривалося.",
+    "f": "Ledsageren må ha fylt 25 år og ha hatt førerkort i samme klasse sammenhengende de siste 5 årene. Broren er for ung, og onkelen har hatt førerkort for kort tid. Moren fyller ikke kravet, fordi førerretten ble avbrutt i fjor. Unntaket er når førerretten er tilbakekalt i seks måneder eller mindre på grunn av helse.",
+    "ru": "Сопровождающему должно быть не меньше 25 лет, и он должен иметь права той же категории непрерывно последние 5 лет. Брат слишком молод, а дядя получил права слишком недавно. Мать не подходит, потому что в прошлом году её право управления прерывалось. Исключение: если право отзывали на шесть месяцев или меньше по состоянию здоровья.",
+    "uk": "Супровідникові має бути не менше 25 років, і він повинен мати посвідчення водія тієї самої категорії безперервно останні 5 років. Брат надто молодий, а дядько отримав посвідчення надто недавно. Мати не підходить, тому що торік її право керування переривалося. Виняток: якщо право відкликали на шість місяців або менше через стан здоров’я.",
     "theory": "forerkort/ovelseskjoring"
   },
   {

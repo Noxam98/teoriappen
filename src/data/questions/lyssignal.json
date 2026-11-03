@@ -190,9 +190,9 @@
       "Lyssignal – politiets tegn – skilt – vanlige trafikkregler",
       "Vanlige trafikkregler – skilt – lyssignal – politiets tegn"
     ],
-    "f": "Politiets tegn går foran alt. Deretter kommer lyssignaler, så skilt og veioppmerking, og til slutt de vanlige trafikkreglene.",
-    "ru": "Сначала сигналы полиции, затем светофор, затем знаки и разметка, и в последнюю очередь — общие правила движения.",
-    "uk": "Спочатку сигнали поліції, потім світлофор, потім знаки й розмітка, і в останню чергу — загальні правила дорожнього руху.",
+    "f": "Politiets tegn går foran alt. Deretter kommer lyssignaler, så skilt og veioppmerking, og til slutt de vanlige trafikkreglene. Lyssignalet går foran skilt om vikeplikt, men et skilt som forbyr å svinge, gjelder også ved grønt lys.",
+    "ru": "Сначала сигналы полиции, затем светофор, затем знаки и разметка, и в последнюю очередь — общие правила движения. Светофор важнее знаков о преимуществе, но знак, запрещающий поворот, действует и при зелёном свете.",
+    "uk": "Спочатку сигнали поліції, потім світлофор, потім знаки й розмітка, і в останню чергу — загальні правила дорожнього руху. Світлофор важливіший за знаки про перевагу, але знак, що забороняє поворот, діє і за зеленого світла.",
     "theory": "lyssignal/politiet-gar-foran-alt"
   },
   {
@@ -420,9 +420,9 @@
       "Du kan kjøre, fordi lyssignal går foran skilt og stoppspak",
       "Du kan kjøre sakte forbi, fordi stoppspaken er et varsel om veiarbeid"
     ],
-    "f": "Politiets tegn går foran lyssignal og skilt, men det samme gjelder anvisning fra andre som har myndighet til å regulere trafikken, for eksempel ved veiarbeid. Rekkefølgen er altså slik: anvisning fra person, lyssignal, skilt og oppmerking, vanlige trafikkregler.",
-    "ru": "Сигналы полицейского важнее светофора и знаков, но то же относится к указаниям других людей, которым дано право регулировать движение, например на дорожных работах. Порядок такой: указание человека, светофор, знаки и разметка, обычные правила.",
-    "uk": "Сигнали поліцейського важливіші за світлофор і знаки, але те саме стосується вказівок інших людей, яким надано право регулювати рух, наприклад на дорожніх роботах. Порядок такий: вказівка людини, світлофор, знаки й розмітка, звичайні правила.",
+    "f": "Politiets tegn går foran lyssignal og skilt, men det samme gjelder anvisning fra andre som har myndighet til å regulere trafikken, for eksempel ved veiarbeid. Rekkefølgen er altså slik: anvisning fra person, lyssignal, skilt og oppmerking, vanlige trafikkregler. Lyssignalet går foran skilt om vikeplikt, men ikke foran alle andre skilt.",
+    "ru": "Сигналы полицейского важнее светофора и знаков, но то же относится к указаниям других людей, которым дано право регулировать движение, например на дорожных работах. Порядок такой: указание человека, светофор, знаки и разметка, обычные правила. Светофор важнее знаков о преимуществе, но не всех остальных знаков.",
+    "uk": "Сигнали поліцейського важливіші за світлофор і знаки, але те саме стосується вказівок інших людей, яким надано право регулювати рух, наприклад на дорожніх роботах. Порядок такий: вказівка людини, світлофор, знаки й розмітка, звичайні правила. Світлофор важливіший за знаки про перевагу, але не за всі інші знаки.",
     "theory": "lyssignal/tegn-fra-politiet"
   },
   {

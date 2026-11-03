@@ -25,7 +25,7 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 	w.ground()
 	var motorvei: bool = s.get("road", "motorvei") == "motorvei"
 	var mode: String = s.get("mode", "plain")
-	edge_w = 0.3 if motorvei else 0.15
+	edge_w = 0.3 if motorvei and not s.get("urban", false) else 0.15
 	var lanes: int = (3 if mode == "drop" else 2) if motorvei else 1
 	var r: float = LANE * lanes
 	var surface: ShaderMaterial = w.asphalt(0.12)
@@ -36,9 +36,9 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 		_rect(w, opp - 2.0 * LANE - OUTER, opp + INNER, TOP_Z, FAR_Z, surface)
 		w.keep_clear(World.straight(r / 2.0, TOP_Z, r / 2.0, FAR_Z, 6.0), r / 2.0)
 		w.keep_clear(World.straight(opp - LANE, TOP_Z, opp - LANE, FAR_Z, 6.0), LANE)
-		_line_x(w, -0.15, YEL(), 0.3)
-		_line_x(w, opp + 0.15, YEL(), 0.3)
-		_line_x(w, opp - 2.0 * LANE - 0.15, World.WHITE, 0.3)
+		_line_x(w, -edge_w / 2.0, YEL(), edge_w)
+		_line_x(w, opp + edge_w / 2.0, YEL(), edge_w)
+		_line_x(w, opp - 2.0 * LANE - edge_w / 2.0, World.WHITE, edge_w)
 		_dash_x(w, opp - LANE, World.WHITE, 0.15, 3.0, 9.0)
 		for k: int in range(1, lanes):
 			if mode == "drop" and k == lanes - 1:
@@ -79,7 +79,21 @@ static func build(w: World, s: Dictionary, id: String) -> void:
 	if s.has("over"):
 		_overpass(w, s["over"], r)
 	for sign: Dictionary in s.get("signs", []):
-		w.road_sign(sign["id"], sign["x"], sign["z"], sign.get("w", 0.85), sign.get("bottom", 2.0), sign.get("yaw", 0.0), sign.get("under", []))
+		var sx: float = sign.get("x", 0.0)
+		var sz: float = sign["z"]
+		var syaw: float = sign.get("yaw", 0.0)
+		if sign.has("ramp_right") and path_in.size() > 2:
+			# Знак справа от съезда: у точки пути на этой высоте z, лицом к едущим.
+			var at_k: int = 1
+			for k: int in range(1, path_in.size() - 1):
+				if absf(path_in[k].y - sz) < absf(path_in[at_k].y - sz):
+					at_k = k
+			var dir: Vector2 = (path_in[at_k + 1] - path_in[at_k - 1]).normalized()
+			var spot: Vector2 = path_in[at_k] + Vector2(-dir.y, dir.x) * float(sign["ramp_right"])
+			sx = spot.x
+			sz = spot.y
+			syaw = atan2(-dir.x, -dir.y)
+		w.road_sign(sign["id"], sx, sz, sign.get("w", 0.85), sign.get("bottom", 2.0), syaw, sign.get("under", []))
 	if s.has("plate"):
 		var pl: Array = s["plate"]
 		Car.box(w, Vector3(2.9, 0.7, 0.06), Vector3(pl[1], 3.0, pl[2]), Car.mat(Color(0.04, 0.2, 0.55), 0.5))
@@ -219,14 +233,16 @@ static func _on_lane(w: World, r: float, join: float, surface: Material) -> Pack
 
 ## Sammenfletting (5.6, N300 6.4.24): линия между полосами кончается у знака, в сужении ни линий, ни стрелок.
 static func _merge_lane(w: World, r: float, surface: Material) -> float:
-	var full: float = -16.0
-	var tip: float = -48.0
+	# Линия кончается у знака, дальше 150 м полной ширины без линий, потом сужение.
+	var line_end: float = -16.0
+	var full: float = line_end - 150.0
+	var tip: float = full - 40.0
 	var o: float = r + LANE
 	var shoulder: float = 1.0
 	w.add_mesh(Mesher.prism(PackedVector2Array([Vector2(r, TOP_Z), Vector2(o + shoulder, TOP_Z), Vector2(o + shoulder, full), Vector2(r + shoulder, tip), Vector2(r, tip)]), -0.02, 0.0, surface, surface))
 	_rect(w, r, r + shoulder, tip, FAR_Z, surface)
 	w.keep_clear(World.straight(r + LANE / 2.0, TOP_Z, r + LANE / 2.0, tip, 6.0), LANE / 2.0)
-	_dash_x(w, r, World.WHITE, 0.15, 3.0, 9.0, TOP_Z, full)
+	_dash_x(w, r, World.WHITE, 0.15, 3.0, 9.0, TOP_Z, line_end)
 	w.line(PackedVector2Array([Vector2(o + 0.08, TOP_Z), Vector2(o + 0.08, full), Vector2(r + 0.08, tip), Vector2(r + 0.08, FAR_Z)]), 0.0, World.WHITE, edge_w)
 	return o
 
@@ -267,8 +283,8 @@ static func _yield_lane(w: World, r: float, surface: Material) -> float:
 ## Полоса торможения (7.6.3): появляется сужением, вдоль неё широкий штрих, у носа сплошная и штриховка.
 static func _off_lane(w: World, r: float, surface: Material, leave: float) -> float:
 	var o: float = r + LANE
-	var start: float = leave + 52.0
-	var open: float = leave + 34.0
+	var start: float = leave + 150.0
+	var open: float = leave + 110.0
 	var solid_from: float = leave + 16.0
 	var shoulder: float = OUTER if r > LANE else 1.0
 	_rect(w, r, r + shoulder, TOP_Z, start, surface)
