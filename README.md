@@ -81,7 +81,7 @@ npm run build:single
 
 ```bash
 godot --headless --path scenes3d --import
-npm run scenes         # рендер всех сцен, 4 процесса; npm run scenes -- 2, если мало памяти
+npm run scenes         # рендер всех сцен: 5 кадров/с, видеокарта в среднем около 12–18 Вт, лимит 20 Вт; выбор сцен: npm run scenes -- scene=vik-32,vik-33
 npm run scenes:check   # проверка без рендера
 ```
 
