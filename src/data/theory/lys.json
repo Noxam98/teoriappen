@@ -15,10 +15,14 @@
     { "list": [
       { "no": "Blend ned til nærlys i god tid før du møter en bil.", "ru": "Переключайтесь на ближний свет заблаговременно, до встречи со встречной машиной.", "uk": "Перемикайте дальнє світло на ближнє завчасно, ще до роз'їзду із зустрічною машиною." },
       { "no": "Blend ned når du kjører bak en annen bil. Fjernlyset kan blende føreren foran deg gjennom speilene.", "ru": "Переключайтесь на ближний, когда едете за другой машиной: дальний свет может ослепить водителя впереди через зеркала.", "uk": "Перемикайте на ближнє, коли їдете за іншою машиною: дальнє світло може засліпити водія попереду через дзеркала." },
+      { "no": "Regelen om å blende ned gjelder også når du møter tog, trikk og fartøy langs veien.", "ru": "Правило о переключении на ближний свет действует и при встрече с поездом, трамваем и судном вдоль дороги.", "uk": "Правило про перемикання на ближнє світло діє і під час зустрічі з поїздом, трамваєм і судном уздовж дороги." },
       { "no": "I tåke gir fjernlys dårligere sikt, fordi lyset blir reflektert i tåken.", "ru": "В тумане дальний свет ухудшает видимость: туман отражает его обратно.", "uk": "У тумані дальнє світло погіршує видимість: туман відбиває його назад." }
     ] },
     { "p": "I mørket ser du kortere enn om dagen. Du må tilpasse farten slik at du kan stoppe på den strekningen lyset viser deg.", "ru": "В темноте видно ближе, чем днём. Выбирайте скорость так, чтобы успеть остановиться в пределах участка, освещённого фарами.", "uk": "У темряві видно не так далеко, як удень. Обирайте швидкість так, щоб устигнути зупинитися в межах ділянки, освітленої фарами." },
+    { "p": "Hele stopplengden må være kortere enn det du ser. I 80 km/t på tørr vei er stopplengden omtrent 54 m (22 m reaksjonslengde og 32 m bremselengde), mens nærlyset kanskje bare lyser opp omtrent 40 m. Da må du senke farten eller bruke fjernlys når du ikke blender andre.", "ru": "Весь остановочный путь должен быть короче видимого участка. На 80 км/ч на сухой дороге он составляет примерно 54 м (22 м пути реакции и 32 м тормозного пути), а ближний свет может освещать только примерно 40 м. Поэтому нужно снизить скорость или включить дальний свет, когда он никого не ослепляет.", "uk": "Весь зупинний шлях має бути коротшим за видиму ділянку. На швидкості 80 км/год на сухій дорозі він становить приблизно 54 м (22 м шляху реакції та 32 м гальмівного шляху), а ближнє світло може освітлювати лише приблизно 40 м. Тому треба знизити швидкість або ввімкнути дальнє світло, коли воно нікого не засліплює." },
     { "nums": [
+      { "value": "minst 40 m", "no": "så langt framover skal nærlyset minst lyse opp veien, og mange biler lyser lenger", "ru": "как минимум на столько вперёд должен освещать дорогу ближний свет, а на многих машинах он светит дальше", "uk": "щонайменше на стільки вперед має освітлювати дорогу ближнє світло, а на багатьох автомобілях воно світить далі" },
+      { "value": "100 m", "no": "minst så langt framover lyser fjernlyset opp veien", "ru": "минимум на столько вперёд дальний свет освещает дорогу", "uk": "щонайменше на стільки вперед дальнє світло освітлює дорогу" },
       { "value": "25–30 m", "no": "så langt unna ser du en gående med mørke klær når du har nærlys", "ru": "с такого расстояния при ближнем свете виден пешеход в тёмной одежде", "uk": "з такої відстані за ближнього світла видно пішохода в темному одязі" },
       { "value": "140 m", "no": "så langt unna ser du en gående med refleks når du har nærlys", "ru": "с такого расстояния при ближнем свете виден пешеход со светоотражателем", "uk": "з такої відстані за ближнього світла видно пішохода зі світловідбивачем" }
     ] },
@@ -31,7 +35,8 @@
     { "list": [
       { "no": "Tåkebaklys bruker du bare når sikten er sterkt nedsatt, for eksempel i tett tåke eller snøvær.", "ru": "Задний противотуманный фонарь включают только при сильно ухудшенной видимости, например в густом тумане или снегопаде.", "uk": "Задній протитуманний ліхтар вмикають лише за значно погіршеної видимості, наприклад у густому тумані чи під час снігопаду." },
       { "no": "Nødsignal betyr at alle blinklysene blinker samtidig. Bruk det når bilen står stille på et sted der den kan være til fare, for eksempel ved motorstopp eller ulykke.", "ru": "Аварийная сигнализация — все поворотники мигают одновременно. Включайте её, когда машина стоит там, где может создать опасность, например при поломке двигателя или ДТП.", "uk": "Аварійна сигналізація — усі покажчики повороту блимають одночасно. Вмикайте її, коли машина стоїть там, де може створити небезпеку, наприклад у разі поломки двигуна чи ДТП." },
-      { "no": "Står bilen på en mørk vei uten gatelys, skal den ha parkeringslys på, slik at andre ser den.", "ru": "Если машина стоит на тёмной дороге без уличного освещения, у неё должны гореть габаритные огни, чтобы её было видно.", "uk": "Якщо машина стоїть на темній дорозі без вуличного освітлення, у неї мають горіти габаритні вогні, щоб її було видно." }
+      { "no": "Tåkelys foran skal ikke brukes sammen med nærlys.", "ru": "Передние противотуманные фары нельзя использовать вместе с ближним светом.", "uk": "Передні протитуманні фари не можна використовувати разом із ближнім світлом." },
+      { "no": "Står bilen på en mørk vei uten gatelys, skal den ha parkeringslys på, slik at andre ser den. Nærlys og fjernlys skal da ikke være på.", "ru": "Если машина стоит на тёмной дороге без уличного освещения, у неё должны гореть габаритные огни, чтобы её было видно. Ближний и дальний свет при этом гореть не должны.", "uk": "Якщо машина стоїть на темній дорозі без вуличного освітлення, у неї мають горіти габаритні вогні, щоб її було видно. Ближнє й дальнє світло при цьому горіти не повинні." }
     ] },
     { "trap": "Tåkebaklys er ikke for vanlig mørke, lett regn eller kø. Det sterke lyset kan blende den som kjører bak deg og gjøre det vanskelig å se bremselysene dine. Slå det av når sikten blir bedre.", "ru": "Задний противотуманный фонарь не для обычной темноты, лёгкого дождя или пробки. Его яркий свет может ослепить едущего сзади и мешать ему видеть ваши стоп-сигналы. Выключите его, когда видимость улучшится.", "uk": "Задній протитуманний ліхтар не для звичайної темряви, легкого дощу чи затору. Його яскраве світло може засліпити того, хто їде позаду, і заважати йому бачити ваші стоп-сигнали. Вимкніть його, коли видимість покращиться." },
 
@@ -44,7 +49,12 @@
     ["Lys på bilen (Statens vegvesen)", "https://www.vegvesen.no/en/traffic-information/traffic-safety/norwegian-traffic-rules/car-lights/"],
     ["Skru på lyset i høstmørket! (Statens vegvesen)", "https://www.vegvesen.no/om-oss/presse/aktuelt/nasjonalt/skru-pa-lyset-i-hostmorket/"],
     ["Forskrift om bruk av kjøretøy § 1-6 – varsling ved nødstans (Lovdata)", "https://lovdata.no/forskrift/1990-01-25-92/§1-6"],
-    ["Refleks og synlighet (Trygg Trafikk)", "https://www.tryggtrafikk.no/ga/refleks/refleksbruk-og-synlighet/"]
+    ["Refleks og synlighet (Trygg Trafikk)", "https://www.tryggtrafikk.no/ga/refleks/refleksbruk-og-synlighet/"],
+    ["Trafikkreglene § 13 – stanse på den strekningen du har oversikt over (Lovdata)", "https://lovdata.no/forskrift/1986-03-21-747"],
+    ["Lysutstyr på biler i Norge, tabell 4.7.1 (Trafikksikkerhetshåndboken, TØI)", "https://www.tshandbok.no/del-2/4-kjoeretoeyteknikk-og-personlig-verneutstyr/doc679/"],
+    ["Kjøretøyforskriften § 28-4 – nærlys og fjernlys (Lovdata)", "https://lovdata.no/dokument/SF/forskrift/1994-10-04-918/KAPITTEL_28"],
+    ["Lys på bil (NAF)", "https://www.naf.no/bilhold/teknisk/bilens-lys"],
+    ["Synlighet i trafikken, veileder (Statens vegvesen)", "https://www.vegvesen.no/globalassets/fag/fokusomrader/trafikksikkerhet/kursmateriell-erfarne-fotgjengere/synlighet-i-trafikken-veileder.pdf?v=4993e4"]
   ],
-  "checked": "2026-10"
+  "checked": "2026-11"
 }

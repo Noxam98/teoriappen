@@ -22,7 +22,7 @@
     "img": null,
     "a": [
       "Du kan fortsatt ha promille, fordi kroppen forbrenner alkohol sakte",
-      "Etter en natts søvn er alkoholen alltid ute av kroppen",
+      "Etter en natts søvn er alkoholen ute av kroppen",
       "Føler du deg i form og ikke kjenner noe til alkoholen, kan du kjøre",
       "Kaffe og en kald dusj får promillen til å synke fortere"
     ],
@@ -55,7 +55,8 @@
     "a": [
       "Omtrent 0,15 promille",
       "Omtrent 0,5 promille",
-      "Omtrent 1 promille"
+      "Omtrent 1 promille",
+      "Omtrent 0,3 promille"
     ],
     "f": "Promillen synker i gjennomsnitt med omtrent 0,15 i timen, men det er forskjell fra person til person. Høy promille kan derfor vare i mange timer.",
     "ru": "В среднем промилле снижается примерно на 0,15 в час, но у разных людей по-разному. Поэтому высокий уровень алкоголя может держаться много часов.",
@@ -102,7 +103,7 @@
     "a": [
       "Reaksjonstiden blir lengre, og føreren tar større sjanser",
       "Føreren blir mer forsiktig og kjører derfor saktere",
-      "Alkohol påvirker bare synet, ikke reaksjonstiden",
+      "Alkohol påvirker synet, men ikke reaksjonstiden",
       "Alkohol påvirker ikke føreren før promillen er over 1"
     ],
     "f": "Selv litt alkohol gir lengre reaksjonstid, dårligere syn og konsentrasjon og mer risikovillig kjøring.",
@@ -151,7 +152,7 @@
       "Det er forbudt å bruke mobiltelefon som du holder i hånden",
       "Det er lov å ringe med mobilen i hånden hvis samtalen er kort",
       "Det er lov å bruke mobilen i hånden når farten er under 30 km/t",
-      "Det er bare forbudt på motorvei"
+      "Det er forbudt på motorvei, men lov på andre veier"
     ],
     "f": "Det er forbudt å bruke håndholdt mobiltelefon under kjøring. Mobilbruk tar oppmerksomheten bort fra trafikken.",
     "ru": "Во время движения запрещено пользоваться телефоном, держа его в руке. Телефон отвлекает внимание от дороги.",
@@ -166,7 +167,8 @@
     "a": [
       "Det er lov, men samtalen kan ta oppmerksomheten bort fra trafikken",
       "Det er forbudt å ringe mens du kjører, også når du bruker handsfree",
-      "Det er helt ufarlig, fordi du har begge hendene på rattet"
+      "Det er helt ufarlig, fordi du har begge hendene på rattet",
+      "Det er lov i tettbygd strøk, men forbudt der fartsgrensen er over 60 km/t"
     ],
     "f": "Handsfree er lov, men en samtale kan likevel gjøre deg mindre oppmerksom. Avslutt samtalen hvis trafikken krever det.",
     "ru": "Hands-free разрешён, но разговор всё равно отвлекает. Закончите разговор, если ситуация на дороге требует внимания.",
@@ -181,7 +183,8 @@
     "a": [
       "For å oppdage farer tidlig og få tid til å reagere",
       "For å slippe å bruke speilene og se deg over skulderen",
-      "Så du ikke blir blendet av lysene til møtende biler"
+      "Så du ikke blir blendet av lysene til møtende biler",
+      "Så du kan holde kortere avstand til bilen foran deg"
     ],
     "f": "Når du ser langt fram, oppdager du farer tidlig og får mer tid til å planlegge og reagere.",
     "ru": "Когда вы смотрите далеко вперёд, вы раньше замечаете опасность и получаете больше времени, чтобы спланировать действия и среагировать.",
@@ -196,7 +199,8 @@
     "a": [
       "Unge førere som nylig har fått førerkort",
       "Førere mellom 40 og 50 år som kjører mye",
-      "Erfarne yrkessjåfører som kjører langt hver dag"
+      "Erfarne yrkessjåfører som kjører langt hver dag",
+      "Førere i 30-årene som kjører mye i byen"
     ],
     "f": "Unge og nye førere har høyest ulykkesrisiko, særlig de første månedene. Det er blant annet fordi de mangler erfaring og ofte tar større sjanser.",
     "ru": "У молодых водителей, недавно получивших права, самый высокий риск аварий, особенно в первые месяцы: им не хватает опыта, и они чаще рискуют.",
@@ -211,7 +215,8 @@
     "a": [
       "Holde en trygg fart, fordi det er du som fører som har ansvaret",
       "Kjøre litt fortere, fordi det er passasjerene som har ansvaret da",
-      "Kjøre fortere enn fartsgrensen på rette strekninger med god sikt"
+      "Kjøre fortere enn fartsgrensen på rette strekninger med god sikt",
+      "Følge fartsgrensen til dere er ute av byen, og så kjøre litt fortere"
     ],
     "f": "Som fører har du ansvaret for kjøringen og for passasjerene. Ikke la deg presse til å kjøre fortere enn det som er trygt.",
     "ru": "Как водитель вы отвечаете за поездку и за пассажиров. Не поддавайтесь давлению и не превышайте безопасную скорость.",
@@ -226,7 +231,8 @@
     "a": [
       "Du bør roe deg ned og ikke la sinnet styre kjøringen",
       "Du bør kjøre tett bak bilen for å vise at du er sint",
-      "Du bør tute og blinke med lysene"
+      "Du bør tute og blinke med lysene",
+      "Du bør kjøre forbi bilen så snart det er lov, så du slipper den"
     ],
     "f": "Sinne og stress gir dårligere vurderinger og mer risikofylt kjøring. Hold avstand og la situasjonen gå over.",
     "ru": "Злость и стресс ухудшают оценку ситуации и делают езду опаснее. Держите дистанцию и дайте ситуации успокоиться.",
@@ -241,7 +247,8 @@
     "a": [
       "Du skal alltid bruke brillene når du kjører",
       "Du trenger brillene i mørket, ikke om dagen",
-      "Du kan la være å bruke brillene på korte turer"
+      "Du kan la være å bruke brillene på korte turer",
+      "Du kan bytte til solbriller uten styrke når solen er sterk"
     ],
     "f": "Hvis du trenger briller eller linser for å oppfylle synskravet, skal du alltid bruke dem når du kjører.",
     "ru": "Если вам нужны очки или линзы, чтобы соответствовать требованиям к зрению, вы обязаны всегда носить их за рулём.",
@@ -256,7 +263,8 @@
     "a": [
       "Personen kan gå sakte og trenge mer tid, så du må være klar til å stoppe",
       "Eldre personer har lang erfaring i trafikken, så de venter til du er forbi",
-      "Du kan kjøre forbi raskt, før personen kommer ut i veien"
+      "Du kan kjøre forbi raskt, før personen kommer ut i veien",
+      "Personen har vikeplikt utenfor gangfelt, så du kan holde farten som før"
     ],
     "f": "Eldre kan ha dårligere syn, hørsel og bevegelighet. Gi dem god tid og vær klar til å stoppe.",
     "ru": "У пожилых людей может быть хуже зрение, слух и подвижность. Дайте им достаточно времени и будьте готовы остановиться.",
@@ -270,8 +278,9 @@
     "img": null,
     "a": [
       "Da vet du lettere om de har sett deg",
-      "Da får du alltid forkjørsrett",
-      "Det er påbudt i alle veikryss"
+      "Da slipper du vikeplikten overfor dem",
+      "Det er påbudt i kryss uten trafikklys",
+      "Da er du sikker på at de lar deg kjøre først"
     ],
     "f": "Øyekontakt gjør det lettere å vite om andre har sett deg. Men du kan ikke være helt sikker, så vær fortsatt forsiktig.",
     "ru": "Зрительный контакт помогает понять, заметили ли вас другие. Но полной уверенности он не даёт, поэтому оставайтесь осторожны.",
@@ -285,8 +294,8 @@
     "img": null,
     "a": [
       "Du skal være hensynsfull, aktpågivende og varsom, så det ikke oppstår fare eller skade",
-      "Du kan kjøre så fort som fartsgrensen tillater, uansett forhold",
-      "Du trenger bare å ta hensyn til andre trafikanter når du har vikeplikt for dem",
+      "Du kan kjøre så fort som fartsgrensen tillater, også i dårlig vær",
+      "Du skal først og fremst ta hensyn til dem du har vikeplikt for",
       "Det er nok at du følger skilt og oppmerking, resten er ikke ditt ansvar som fører"
     ],
     "f": "Grunnregelen sier at alle skal ferdes hensynsfullt og være aktpågivende og varsom, så det ikke oppstår fare eller skade. Du skal heller ikke hindre eller forstyrre annen trafikk unødig.",
@@ -303,7 +312,7 @@
       "Alle trafikanter, også gående og syklister",
       "Dem som kjører bil eller motorsykkel, ikke gående",
       "Førere som har førerkort, ikke syklister",
-      "Bare yrkessjåfører som kjører i arbeid"
+      "Yrkessjåfører som kjører i arbeid"
     ],
     "f": "Grunnregelen gjelder alle som ferdes på veien – bilførere, syklister, gående og andre trafikanter.",
     "ru": "Основное правило касается всех, кто находится на дороге: водителей, велосипедистов, пешеходов и других участников движения.",
@@ -334,7 +343,7 @@
     "a": [
       "Slutte å kjøre og gå til lege før du kjører igjen",
       "Kjøre som vanlig til legen sier noe annet",
-      "Kjøre bare om dagen til du blir frisk",
+      "Kjøre om dagen, men ikke i mørket, til du blir frisk",
       "Vente med å gjøre noe til førerkortet skal fornyes"
     ],
     "f": "Tviler du på om helsen din er god nok til å kjøre trygt, skal du slutte å kjøre og gå til lege før du kjører igjen. Det er først og fremst ditt eget ansvar at du kjører trafikksikkert.",
@@ -383,11 +392,187 @@
       "Den blir lengre, så bilen kjører lenger før du bremser",
       "Den blir kortere, fordi du er avslappet",
       "Den blir ikke påvirket når du holder blikket på veien foran deg",
-      "Den blir bare lengre når det er mørkt"
+      "Den blir lengre i mørket, men ikke i dagslys"
     ],
     "f": "Når du er uoppmerksom, oppdager du faren senere, og reaksjonstiden blir lengre. Da blir både reaksjonslengden og stopplengden lengre.",
     "ru": "Когда вы невнимательны, вы позже замечаете опасность, и время реакции увеличивается. Вместе с ним растут и путь, пройденный за время реакции, и весь остановочный путь.",
     "uk": "Коли ви неуважні, ви пізніше помічаєте небезпеку, і час реакції збільшується. Разом із ним зростають і шлях, пройдений за час реакції, і весь зупинний шлях.",
+    "theory": "mennesket/mobil-og-oppmerksomhet"
+  },
+  {
+    "id": "men-26",
+    "cat": "mennesket",
+    "q": "Noe beveger seg ute i sidesynet, og blikket ditt blir automatisk dratt dit. Hva kalles dette?",
+    "img": null,
+    "a": [
+      "Varslingsrefleks",
+      "Fartsblindhet",
+      "Reaksjonstid",
+      "Overblikk"
+    ],
+    "f": "Beveger noe seg i sidesynet, gir hjernen beskjed om å rette blikket dit. Det kalles varslingsrefleksen. Etterpå ser du nærmere på det med skarpsynet. Reaksjonstid er noe annet: Det er tiden fra du oppdager en fare til du begynner å bremse.",
+    "ru": "Если что-то движется в боковом зрении, мозг даёт команду перевести туда взгляд. Это называется предупреждающим рефлексом (varslingsrefleks). Затем вы рассматриваете это центральным, самым чётким зрением. Время реакции — другое понятие: это время от момента, когда вы заметили опасность, до начала торможения.",
+    "uk": "Якщо щось рухається в бічному зорі, мозок дає команду перевести туди погляд. Це називається попереджувальним рефлексом (varslingsrefleks). Потім ви роздивляєтеся це центральним, найчіткішим зором. Час реакції — інше поняття: це час від моменту, коли ви помітили небезпеку, до початку гальмування.",
+    "theory": "mennesket/syn-overblikk-og-fart"
+  },
+  {
+    "id": "men-27",
+    "cat": "mennesket",
+    "q": "Hva skjer med det effektive synsfeltet ditt når farten øker?",
+    "img": null,
+    "a": [
+      "Det blir smalere, og du oppfatter mindre av det som skjer på sidene",
+      "Det blir bredere, fordi du automatisk følger med på mer av veien",
+      "Det er like bredt som før, men det du ser langt framme, blir mindre skarpt",
+      "Det blir smalere i mørket, men i dagslys er det like bredt som før"
+    ],
+    "f": "Jo høyere fart du har, desto smalere blir det effektive synsfeltet, og varslingsrefleksen virker dårligere. Du oppfatter da mindre av det som skjer på sidene. Derfor er lav fart viktig der noen kan komme fra siden, for eksempel ved skoler og i boligområder.",
+    "ru": "Чем выше скорость, тем меньше эффективное поле зрения и тем хуже работает предупреждающий рефлекс. Вы замечаете меньше того, что происходит по сторонам. Поэтому низкая скорость важна там, где кто-то может появиться сбоку, например у школ и в жилых районах.",
+    "uk": "Що вища швидкість, то менше ефективне поле зору і то гірше працює попереджувальний рефлекс. Ви помічаєте менше з того, що відбувається по боках. Тому низька швидкість важлива там, де хтось може з'явитися збоку, наприклад біля шкіл і в житлових районах.",
+    "theory": "mennesket/syn-overblikk-og-fart"
+  },
+  {
+    "id": "men-28",
+    "cat": "mennesket",
+    "q": "Du leter etter et gatenavn på et skilt mens du kjører gjennom et travelt kryss. Hva er den største faren?",
+    "img": null,
+    "a": [
+      "Du kan overse folk og biler, selv om de er rett foran deg",
+      "Du blir fartsblind og tror at du kjører saktere enn du gjør",
+      "Du bruker sidesynet for mye, så du ser dårligere rett fram",
+      "Du får lengre bremselengde fordi du ser bort fra veien"
+    ],
+    "f": "Oppmerksomheten er selektiv. Leter du etter én ting, kan du overse annet, selv om du ser rett på det. Hold blikket i bevegelse, så du har overblikk over hele trafikkbildet. Må du lese deg fram, stans heller på et trygt sted.",
+    "ru": "Внимание избирательно. Если вы ищете что-то одно, можно не заметить другое, даже глядя прямо на него. Двигайте взглядом, чтобы видеть всю дорожную обстановку (overblikk). Если нужно что-то прочитать, чтобы найти дорогу, лучше остановитесь в безопасном месте.",
+    "uk": "Увага вибіркова. Якщо ви шукаєте щось одне, можна не помітити інше, навіть дивлячись прямо на нього. Переводьте погляд, щоб бачити всю дорожню обстановку (overblikk). Якщо треба щось прочитати, щоб знайти дорогу, краще зупиніться в безпечному місці.",
+    "theory": "mennesket/syn-overblikk-og-fart"
+  },
+  {
+    "id": "men-29",
+    "cat": "mennesket",
+    "q": "Du har kjørt fort lenge på motorveien og tar nå av på rampen. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du kan være fartsblind, så se på fartsmåleren: Farten er ofte høyere enn den føles",
+      "Du kan være fartsblind, så stol på følelsen: Fartsmåleren viser feil etter lang kjøring",
+      "Etter lang tid i høy fart føles farten høyere enn den er, så du bremser lett for tidlig",
+      "Etter lang tid i høy fart blir sidesynet bedre, så du kan vente lenger med å bremse"
+    ],
+    "f": "Har du kjørt fort lenge, venner du deg til farten og merker den ikke lenger så godt. Det kalles fartsblindhet. Da kan du komme for fort inn på rampen. Se på fartsmåleren, særlig når du tar av fra motorveien, og ikke stol på følelsen.",
+    "ru": "Если вы долго ехали быстро, вы привыкаете к скорости и уже не так хорошо её ощущаете. Это называется «слепотой к скорости» (fartsblindhet). Можно въехать на съезд слишком быстро. Смотрите на спидометр, особенно при съезде с автомагистрали, и не полагайтесь на ощущения.",
+    "uk": "Якщо ви довго їхали швидко, ви звикаєте до швидкості й уже не так добре її відчуваєте. Це називається «сліпотою до швидкості» (fartsblindhet). Можна в'їхати на з'їзд занадто швидко. Дивіться на спідометр, особливо коли з'їжджаєте з автомагістралі, і не покладайтеся на відчуття.",
+    "theory": "mennesket/syn-overblikk-og-fart"
+  },
+  {
+    "id": "men-30",
+    "cat": "mennesket",
+    "q": "Hva er riktig om å bedømme fart og avstand?",
+    "img": null,
+    "a": [
+      "Farten til en bil som kommer mot deg, er vanskelig å bedømme, særlig langt unna",
+      "I tåke virker bilen foran nærmere enn den er, så du holder lett for stor avstand",
+      "Farten føles høyere i en stille og komfortabel bil enn i en bråkete bil",
+      "Farten føles høyere i åpent landskap enn på en vei med trær tett inntil"
+    ],
+    "f": "Mennesker er dårlige til å bedømme farten til noe som kommer mot dem, særlig på lang avstand. Derfor trenger du god margin når du kjører forbi. I tåke virker ting lenger borte enn de er. Farten føles lavere i en stille bil og i åpent landskap, så sjekk fartsmåleren.",
+    "ru": "Людям трудно оценить скорость того, что движется им навстречу, особенно издалека. Поэтому при обгоне нужен большой запас. В тумане предметы кажутся дальше, чем они есть. В тихой машине и на открытой местности скорость ощущается ниже, поэтому проверяйте спидометр.",
+    "uk": "Людям важко оцінити швидкість того, що рухається їм назустріч, особливо здалеку. Тому під час обгону потрібен великий запас. У тумані предмети здаються далі, ніж вони є. У тихому автомобілі й на відкритій місцевості швидкість відчувається нижчою, тому перевіряйте спідометр.",
+    "theory": "mennesket/syn-overblikk-og-fart"
+  },
+  {
+    "id": "men-31",
+    "cat": "mennesket",
+    "q": "Du kjører i 80 km/t med nærlys. En gående uten refleks dukker opp omtrent 25 meter foran deg. Hvor lang tid har du på deg?",
+    "img": null,
+    "a": [
+      "Omtrent 1 sekund",
+      "Omtrent 3 sekunder",
+      "Omtrent 5 sekunder",
+      "Omtrent 10 sekunder"
+    ],
+    "f": "I 80 km/t kjører bilen omtrent 22 meter i sekundet, så 25 meter tar omtrent 1 sekund. Reaksjonstiden alene er vanligvis omtrent 1 sekund, så du rekker nesten ikke å begynne å bremse. Derfor må du senke farten i mørket: Du skal kunne stanse på den strekningen du har oversikt over.",
+    "ru": "На 80 км/ч машина проезжает примерно 22 метра в секунду, так что 25 метров — это примерно 1 секунда. Одно только время реакции обычно около 1 секунды, поэтому вы почти не успеете начать тормозить. Вот почему в темноте нужно снижать скорость: вы должны успеть остановиться в пределах видимого участка дороги.",
+    "uk": "На швидкості 80 км/год автомобіль проїжджає приблизно 22 метри за секунду, тож 25 метрів — це приблизно 1 секунда. Сам лише час реакції зазвичай становить близько 1 секунди, тому ви майже не встигнете почати гальмувати. Ось чому в темряві треба знижувати швидкість: ви маєте встигнути зупинитися в межах видимої ділянки дороги.",
+    "theory": "mennesket/syn-overblikk-og-fart"
+  },
+  {
+    "id": "men-32",
+    "cat": "mennesket",
+    "q": "Du kjører i 80 km/t på godt føre. Stopplengden er omtrent 54 meter når du er oppmerksom og reagerer på 1 sekund. Hva blir den hvis du er uoppmerksom og reagerer etter 3 sekunder?",
+    "img": null,
+    "a": [
+      "Omtrent 98 meter",
+      "Omtrent 76 meter",
+      "Omtrent 162 meter",
+      "Omtrent 66 meter"
+    ],
+    "f": "I 80 km/t kjører du omtrent 22 meter i sekundet. 2 ekstra sekunder gir 44 meter ekstra, altså omtrent 98 meter. Bremselengden er den samme, det er reaksjonslengden som øker. 66 meter er reaksjonslengden alene, og stopplengden blir ikke tre ganger så lang.",
+    "ru": "На 80 км/ч вы проезжаете примерно 22 метра в секунду. 2 лишние секунды — это ещё 44 метра, то есть всего около 98 метров. Тормозной путь остаётся прежним, растёт путь реакции. 66 метров — это один только путь реакции, а весь остановочный путь не становится втрое длиннее.",
+    "uk": "На швидкості 80 км/год ви проїжджаєте приблизно 22 метри за секунду. 2 зайві секунди — це ще 44 метри, тобто загалом близько 98 метрів. Гальмівний шлях залишається таким самим, зростає шлях реакції. 66 метрів — це лише шлях реакції, а весь зупинний шлях не стає втричі довшим.",
+    "theory": "mennesket/reaksjonstid"
+  },
+  {
+    "id": "men-33",
+    "cat": "mennesket",
+    "q": "Hva er riktig om medisiner og bilkjøring?",
+    "img": null,
+    "a": [
+      "Også medisiner uten rød varseltrekant kan svekke evnen til å kjøre",
+      "Føler du deg opplagt, kan du kjøre, selv om medisinen er ny og har rød varseltrekant",
+      "Alkohol svekker virkningen av medisinen, så litt av begge deler er ufarlig",
+      "Det er legen som har ansvaret hvis du kjører mens du er påvirket av medisin"
+    ],
+    "f": "Varseltrekanten er bare veiledende, og mange medisiner som kan påvirke kjøringen, har ikke slik merking. Mange medisiner virker mest i starten, så det er ikke nok at du føler deg opplagt. Medisin og alkohol kan forsterke hverandre. Du har selv ansvar for å vurdere om du er skikket til å kjøre.",
+    "ru": "Предупреждающий треугольник — лишь ориентир, и многие лекарства, способные повлиять на вождение, такой отметки не имеют. Многие лекарства действуют сильнее всего в начале приёма, поэтому хорошего самочувствия недостаточно. Лекарства и алкоголь могут усиливать действие друг друга. Вы сами отвечаете за то, чтобы оценить, можете ли вы вести машину.",
+    "uk": "Попереджувальний трикутник — лише орієнтир, і багато ліків, здатних вплинути на керування, такої позначки не мають. Багато ліків діють найсильніше на початку прийому, тому доброго самопочуття недостатньо. Ліки й алкоголь можуть посилювати дію одне одного. Ви самі відповідаєте за те, щоб оцінити, чи можете керувати автомобілем.",
+    "theory": "mennesket/medisiner-og-narkotika"
+  },
+  {
+    "id": "men-34",
+    "cat": "mennesket",
+    "q": "Du merker at du blir trøtt og har kaffe med deg. Hva hjelper best?",
+    "img": null,
+    "a": [
+      "Å stanse på et trygt sted, drikke kaffen og sove i omtrent 15 minutter",
+      "Å drikke kaffen og kjøre videre, fordi koffeinen fjerner trøttheten resten av turen",
+      "Å drikke kaffen, åpne vinduet og sette på høy musikk, så du holder deg våken",
+      "Å stanse på et trygt sted, drikke kaffen og gå en kort tur før du kjører videre"
+    ],
+    "f": "Det eneste som virkelig hjelper mot trøtthet, er søvn. Kaffe hjelper bare en kort stund, men sammen med en kort lur kan det holde deg våken lenger. Åpne vinduer, musikk og radio har ikke vist seg å ha noen effekt.",
+    "ru": "По-настоящему от усталости помогает только сон. Кофе помогает лишь ненадолго, но вместе с коротким сном может дольше удерживать вас в бодром состоянии. Открытые окна, музыка и радио, как показали исследования, никакого эффекта не дают.",
+    "uk": "По-справжньому від утоми допомагає лише сон. Кава допомагає лише ненадовго, але разом із коротким сном може довше тримати вас бадьорими. Відчинені вікна, музика й радіо, як показали дослідження, жодного ефекту не дають.",
+    "theory": "mennesket/trotthet"
+  },
+  {
+    "id": "men-35",
+    "cat": "mennesket",
+    "q": "Hva er riktig om å sovne bak rattet?",
+    "img": null,
+    "a": [
+      "De fleste som sovner, har kjent seg trøtte på forhånd, men fortsatt å kjøre",
+      "De fleste som sovner, merket ingenting på forhånd, så det går ikke an å forebygge",
+      "Risikoen er størst midt på dagen, fordi det da er mest trafikk på veiene",
+      "Det skjer sjeldnere på rette og fine veier, fordi det er lett å følge veien der"
+    ],
+    "f": "De aller fleste som sovner bak rattet, har kjent seg trøtte på forhånd, men fortsetter likevel å kjøre. Mange sovner selv om de har åpnet vinduet eller satt på musikk. Risikoen er klart størst om natten, og det skjer oftest på rette og ensformige strekninger.",
+    "ru": "Большинство из тех, кто засыпает за рулём, заранее чувствовали усталость, но всё равно продолжали ехать. Многие засыпают, даже открыв окно или включив музыку. Риск явно выше всего ночью, а чаще всего это случается на прямых и однообразных участках.",
+    "uk": "Більшість із тих, хто засинає за кермом, заздалегідь відчували втому, але все одно їхали далі. Багато хто засинає, навіть відчинивши вікно чи ввімкнувши музику. Ризик явно найвищий уночі, а найчастіше це стається на прямих і одноманітних ділянках.",
+    "theory": "mennesket/trotthet"
+  },
+  {
+    "id": "men-36",
+    "cat": "mennesket",
+    "q": "Mobilen din står i en holder som er festet ved rattet. Hva kan du bruke den til mens du kjører?",
+    "img": null,
+    "a": [
+      "Å starte, gjennomføre og avslutte en samtale",
+      "Å skrive korte meldinger når veien er rett og oversiktlig",
+      "Å lese meldinger når du står stille i kø eller ved rødt lys",
+      "Å bruke nettet og sosiale medier, fordi du ikke holder mobilen"
+    ],
+    "f": "Med holder eller handsfree kan du starte, gjennomføre og avslutte en samtale. Annen bruk er forbudt, også meldinger og sosiale medier. Stans i kø og ved rødt lys regnes også som kjøring. Holderen skal sitte godt festet nær rattet.",
+    "ru": "С держателем или hands-free можно начать разговор, говорить и закончить его. Всё остальное запрещено, в том числе сообщения и соцсети. Остановка в пробке и на красный сигнал тоже считается вождением. Держатель должен быть надёжно закреплён рядом с рулём.",
+    "uk": "З тримачем або hands-free можна почати розмову, говорити й закінчити її. Усе інше заборонено, зокрема повідомлення й соцмережі. Зупинка в заторі та на червоний сигнал теж вважається керуванням. Тримач має бути надійно закріплений поруч із кермом.",
     "theory": "mennesket/mobil-og-oppmerksomhet"
   }
 ]

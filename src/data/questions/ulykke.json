@@ -23,7 +23,8 @@
     "a": [
       "Slår på nødsignal, tar på refleksvest og setter ut varseltrekant i god avstand",
       "Setter ut varseltrekanten rett bak de skadde bilene, så den er lett å se",
-      "Slår på nødsignal og går rett ut uten refleksvest, så du ikke mister tid"
+      "Slår på nødsignal og går rett ut uten refleksvest, så du ikke mister tid",
+      "Slår på nødsignal og blir i bilen til politiet kommer og sikrer stedet"
     ],
     "f": "Nødsignal, refleksvest og varseltrekant varsler andre trafikanter i tide. Varseltrekant og refleksvest er påbudt å ha i bilen.",
     "ru": "Аварийная сигнализация, светоотражающий жилет и знак аварийной остановки вовремя предупреждают других. Знак и жилет обязательно должны быть в машине.",
@@ -86,7 +87,8 @@
     "a": [
       "Ringer 113 og starter hjerte-lunge-redning med 30 kompresjoner og 2 innblåsninger",
       "Legger personen i stabilt sideleie og venter til ambulansen kommer",
-      "Ringer 113 og gir innblåsninger uten brystkompresjoner til personen puster igjen"
+      "Ringer 113 og gir innblåsninger uten brystkompresjoner til personen puster igjen",
+      "Ringer 113 og starter hjerte-lunge-redning med 15 brystkompresjoner og 2 innblåsninger"
     ],
     "f": "Når personen ikke puster normalt, skal du varsle 113 og starte hjerte-lunge-redning (HLR): 30 brystkompresjoner og 2 innblåsninger.",
     "ru": "Если человек не дышит нормально, позвоните 113 и начните сердечно-лёгочную реанимацию (HLR): 30 нажатий на грудную клетку и 2 вдоха.",
@@ -101,7 +103,8 @@
     "a": [
       "Trykker direkte på såret, gjerne med en kompress eller et tøystykke",
       "Vasker såret godt med vann før du gjør noe annet",
-      "Lar det blø en stund først, slik at skitt kommer ut av såret"
+      "Lar det blø en stund først, slik at skitt kommer ut av såret",
+      "Holder armen høyt og venter på ambulansen uten å trykke på såret"
     ],
     "f": "Kraftig blødning stoppes med direkte trykk på såret. Hold trykket til hjelpen kommer.",
     "ru": "Сильное кровотечение останавливают прямым давлением на рану. Держите давление до прибытия помощи.",
@@ -116,7 +119,8 @@
     "a": [
       "Bare når personen er i fare der den er, for eksempel ved brann",
       "Så fort som mulig, slik at du kan gi førstehjelp utenfor bilen",
-      "Ikke før ambulansen kommer, heller ikke når det brenner i bilen"
+      "Ikke før ambulansen kommer, heller ikke når det brenner i bilen",
+      "Når personen sitter ubekvemt, så den kan ligge bedre mens dere venter på hjelpen"
     ],
     "f": "Skadde bør ikke flyttes unødvendig, fordi det kan gjøre skadene verre. Hvis det er fare for brann eller nye ulykker, bør du flytte personen.",
     "ru": "Пострадавших не следует перемещать без необходимости — это может усугубить травмы. Но если есть угроза пожара или новой аварии, человека следует переместить.",
@@ -131,7 +135,8 @@
     "a": [
       "Stanse, hjelpe de skadde, oppgi navn og adresse og sørge for at politiet blir varslet",
       "Stanse og melde fra til forsikringsselskapet, men ikke til politiet",
-      "Kjøre videre hvis ulykken ikke var din skyld, og andre allerede har stanset for å hjelpe"
+      "Kjøre videre hvis ulykken ikke var din skyld, og andre allerede har stanset for å hjelpe",
+      "Stanse og oppgi navn og adresse, men overlate all hjelp til ambulansen når den kommer"
     ],
     "f": "Den som er innblandet i et trafikkuhell, skal straks stanse og hjelpe skadde, og alle som er innblandet, skal oppgi navn og adresse. Er noen skadd, og skaden ikke er ubetydelig, skal politiet varsles så snart som mulig. Dette gjelder også om du ikke har skyld.",
     "ru": "Участник ДТП обязан сразу остановиться и помочь пострадавшим, а все участники должны назвать свои имена и адреса. Если кто-то получил травму, и она не пустяковая, нужно как можно скорее сообщить в полицию. Это касается и тех, кто не виноват в аварии.",
@@ -146,7 +151,8 @@
     "a": [
       "Melde fra til politiet og merke stedet der det skjedde",
       "Ingenting, siden dyret løp vekk og sikkert ikke er skadd",
-      "Følge etter dyret inn i skogen for å se om det er skadd"
+      "Følge etter dyret inn i skogen for å se om det er skadd",
+      "Melde fra til forsikringsselskapet, som så varsler politiet for deg"
     ],
     "f": "Påkjørsel av elg og annet hjortevilt skal meldes til politiet (02800), også når dyret løper vekk. Ikke følg etter dyret. Du bør merke stedet, slik at det skadde dyret kan bli funnet.",
     "ru": "О наезде на лося или другое оленевое животное нужно сообщить в полицию (02800), даже если зверь убежал. Не идите за животным. Желательно отметить место, чтобы раненое животное можно было найти.",
@@ -161,7 +167,8 @@
     "a": [
       "Legger igjen navn og kontaktinformasjon på bilen, eller melder fra til politiet",
       "Kjører derfra, fordi en liten bulk på en parkert bil ikke trenger å meldes til noen",
-      "Venter ved bilen til eieren kommer, uansett hvor lenge det tar"
+      "Venter ved bilen til eieren kommer, fordi det ikke er nok å legge igjen en lapp",
+      "Melder fra til forsikringsselskapet ditt, men ikke til eieren eller politiet"
     ],
     "f": "Skader du en parkert bil, skal eieren eller politiet varsles så snart som mulig. Du kan legge igjen en lapp med navn og telefonnummer.",
     "ru": "Если вы повредили припаркованную машину, нужно как можно скорее сообщить владельцу или в полицию. Можно оставить записку с именем и номером телефона.",
@@ -176,7 +183,8 @@
     "a": [
       "Slik at andre trafikanter ser deg bedre",
       "Slik at de skadde ser at det kommer hjelp",
-      "Slik at politiet ser at du er vitne"
+      "Slik at politiet ser at du er vitne",
+      "Slik at ambulansen ser hvem som har varslet"
     ],
     "f": "Refleksvesten gjør at du blir sett mye tidligere, særlig i mørket. Den er påbudt å ha i bilen, og du skal bruke den når du går ut av bilen ved nødstans langs veien.",
     "ru": "Светоотражающий жилет делает вас заметным гораздо раньше, особенно в темноте. Жилет обязательно должен быть в машине, и его нужно надевать, когда вы выходите из машины при вынужденной остановке на дороге.",
@@ -191,7 +199,8 @@
     "a": [
       "Ja, alle har plikt til å hjelpe skadde så godt de kan",
       "Nei, bare de som var innblandet i ulykken",
-      "Plikten gjelder helsepersonell, ikke vanlige bilister"
+      "Plikten gjelder helsepersonell, ikke vanlige bilister",
+      "Ja, hvis du har tatt førstehjelpskurs og vet hva du skal gjøre"
     ],
     "f": "Alle har hjelpeplikt. Du skal hjelpe etter beste evne, for eksempel ved å sikre stedet, varsle og gi førstehjelp.",
     "ru": "Обязанность помогать есть у всех. Нужно помочь в меру своих сил: обезопасить место, вызвать помощь, оказать первую помощь.",
@@ -237,7 +246,7 @@
     "img": null,
     "a": [
       "Fra nødtelefonen i tunnelen, så Vegtrafikksentralen vet hvor du er",
-      "Med mobilen, fordi det alltid går raskest å ringe 113 direkte",
+      "Med mobilen, fordi det går raskest å ringe 113 direkte og få hjelp med en gang",
       "Kjøre ut av tunnelen og ringe fra neste bensinstasjon",
       "Ringe 112 med mobilen, så politiet kan stenge tunnelen"
     ],
@@ -261,5 +270,69 @@
     "ru": "Знак аварийной остановки нужно поставить на достаточном расстоянии от машины — по возможности не меньше чем в 150 метрах, — чтобы другие водители вовремя его заметили.",
     "uk": "Знак аварійної зупинки треба поставити на достатній відстані від автомобіля — за можливості не менше ніж за 150 метрів, — щоб інші водії вчасно його помітили.",
     "theory": "ulykke/sikre-varsle-hjelpe"
+  },
+  {
+    "id": "uly-18",
+    "cat": "ulykke",
+    "q": "Du kjører forbi et trafikkuhell som du ikke var innblandet i. Politi og ambulanse er allerede der, og ingen trenger mer hjelp. Må du stanse?",
+    "img": null,
+    "a": [
+      "Nei, andre enn de innblandede skal stanse og hjelpe hvis det er nødvendig",
+      "Ja, alle som kommer til et trafikkuhell, skal stanse, også når hjelpen er på plass",
+      "Ja, du skal stanse og oppgi navn og adresse til politiet før du kjører videre",
+      "Nei, plikten gjelder de innblandede, så andre kan kjøre videre selv om ingen hjelper"
+    ],
+    "f": "Den som er innblandet, skal straks stanse og hjelpe, med eller uten skyld. Andre som er i nærheten eller kommer til stedet, har samme plikt hvis det er nødvendig. Her er hjelpen allerede på plass, så du kan kjøre forsiktig forbi.",
+    "ru": "Участник ДТП обязан сразу остановиться и помочь, виноват он или нет. Те, кто оказался рядом или подъехал позже, обязаны сделать то же самое, если это необходимо. Здесь помощь уже на месте, поэтому можно осторожно проехать мимо.",
+    "uk": "Учасник ДТП зобов'язаний одразу зупинитися й допомогти, винен він чи ні. Ті, хто опинився поруч або під'їхав пізніше, зобов'язані зробити те саме, якщо це необхідно. Тут допомога вже на місці, тому можна обережно проїхати повз.",
+    "theory": "ulykke/plikter-etter-en-ulykke"
+  },
+  {
+    "id": "uly-19",
+    "cat": "ulykke",
+    "q": "Du voldte en ulykke der en person ble skadd. Du kjørte videre uten å hjelpe og blir straffet for det. Hva er hovedregelen for førerretten din?",
+    "img": null,
+    "a": [
+      "Du mister den for alltid",
+      "Du mister den i 6 måneder, som ved 8 prikker",
+      "Du mister den i minst 2 år, som ved over 1,2 promille",
+      "Du får 8 prikker, men beholder den hvis du ikke får flere"
+    ],
+    "f": "Har du voldt eller vært med på å volde en ulykke og blir straffet for ikke å ha hjulpet en skadd, skal du miste førerretten for alltid. Kortere tid gis bare i helt spesielle tilfeller. «For alltid» betyr ikke nødvendigvis resten av livet: Politiet kan forkorte tapet, normalt tidligst etter 5 år.",
+    "ru": "Если вы вызвали ДТП или способствовали ему и наказаны за то, что не помогли пострадавшему, вас лишат прав навсегда. Меньший срок возможен только в совсем особых случаях. «Навсегда» не обязательно значит до конца жизни: полиция может сократить срок, обычно не раньше чем через 5 лет.",
+    "uk": "Якщо ви спричинили ДТП або сприяли йому й покарані за те, що не допомогли постраждалому, вас позбавлять права керування назавжди. Менший строк можливий лише в зовсім особливих випадках. «Назавжди» не обов'язково означає до кінця життя: поліція може скоротити строк, зазвичай не раніше ніж через 5 років.",
+    "theory": "ulykke/plikter-etter-en-ulykke"
+  },
+  {
+    "id": "uly-20",
+    "cat": "ulykke",
+    "q": "Du gir hjerte-lunge-redning til en voksen. Hvor dypt og hvor raskt skal du trykke på brystet?",
+    "img": null,
+    "a": [
+      "5–6 cm dypt, 100–120 ganger i minuttet",
+      "2–3 cm dypt, 100–120 ganger i minuttet",
+      "5–6 cm dypt, 130–150 ganger i minuttet",
+      "8–10 cm dypt, 60–80 ganger i minuttet"
+    ],
+    "f": "Trykk midt på brystet, 5–6 cm dypt og 100–120 ganger i minuttet, og la brystet komme helt opp mellom hvert trykk. Etter 30 kompresjoner gir du 2 innblåsninger. Ring 113 først og sett telefonen på høyttaler, så får du veiledning hele tiden. Bruk hjertestarter så snart du kan.",
+    "ru": "Нажимайте на середину грудной клетки на глубину 5–6 см с частотой 100–120 раз в минуту и давайте грудной клетке полностью распрямиться после каждого нажатия. После 30 нажатий сделайте 2 вдоха. Сначала позвоните 113 и включите громкую связь — так вам будут подсказывать всё время. Как можно раньше используйте дефибриллятор (hjertestarter).",
+    "uk": "Натискайте на середину грудної клітки на глибину 5–6 см із частотою 100–120 разів за хвилину і давайте грудній клітці повністю розпрямитися після кожного натискання. Після 30 натискань зробіть 2 вдихи. Спочатку зателефонуйте 113 і ввімкніть гучний зв'язок — так вам підказуватимуть увесь час. Якомога раніше використайте дефібрилятор (hjertestarter).",
+    "theory": "ulykke/livreddende-forstehjelp"
+  },
+  {
+    "id": "uly-21",
+    "cat": "ulykke",
+    "q": "Det brenner i en bil i tunnelen, og du kan ikke kjøre ut. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du stanser ved siden av veien med nødsignal på og går ut til fots",
+      "Du blir sittende i bilen med lukkede vinduer til røyken er blåst bort",
+      "Du stanser midt i kjørefeltet, så utrykningskjøretøyene lett finner deg",
+      "Du bruker mobilen, fordi nødtelefonen ikke varsler Vegtrafikksentralen"
+    ],
+    "f": "Ved brann i tunnel er det viktigst å komme seg raskt ut. Kan du ikke kjøre ut, forlater du bilen på siden av veien med nødsignal på og går ut til fots. Nødtelefonen kobler deg direkte til Vegtrafikksentralen, og det går også alarm der når du løfter ned et brannslukningsapparat.",
+    "ru": "При пожаре в туннеле главное — быстро выбраться. Если выехать нельзя, оставьте машину на обочине с включённой аварийной сигнализацией и выходите пешком. Аварийный телефон соединяет напрямую с дорожной диспетчерской (Vegtrafikksentralen), и туда же автоматически приходит сигнал тревоги, когда вы снимаете огнетушитель.",
+    "uk": "Під час пожежі в тунелі головне — швидко вибратися. Якщо виїхати не можна, залиште автомобіль на узбіччі з увімкненою аварійною сигналізацією і виходьте пішки. Аварійний телефон з'єднує напряму з дорожньою диспетчерською (Vegtrafikksentralen), і туди ж автоматично надходить сигнал тривоги, коли ви знімаєте вогнегасник.",
+    "theory": "ulykke/ulykke-i-tunnel"
   }
 ]

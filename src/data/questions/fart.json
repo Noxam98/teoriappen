@@ -74,7 +74,7 @@
       "Den blir omtrent fire ganger så lang",
       "Den blir omtrent dobbelt så lang",
       "Den blir omtrent tre ganger så lang",
-      "Den blir omtrent like lang"
+      "Den blir omtrent like lang, hvis bremsene er gode"
     ],
     "f": "Bremselengden øker med kvadratet av farten. Dobbel fart gir omtrent fire ganger så lang bremselengde.",
     "ru": "Тормозной путь растёт пропорционально квадрату скорости: при удвоении скорости он становится примерно в 4 раза длиннее.",
@@ -90,7 +90,7 @@
       "Reaksjonslengden og bremselengden til sammen",
       "Strekningen bilen kjører mens den bremser",
       "Avstanden til bilen foran deg",
-      "Strekningen bilen kjører mens du reagerer"
+      "Strekningen bilen kjører mens du oppdager faren og reagerer"
     ],
     "f": "Stopplengden er hele strekningen fra du oppdager faren til bilen står stille: reaksjonslengde pluss bremselengde.",
     "ru": "Остановочный путь — весь путь от момента, когда вы заметили опасность, до полной остановки: путь реакции плюс тормозной путь.",
@@ -104,7 +104,7 @@
     "img": null,
     "a": [
       "Strekningen bilen kjører fra du oppdager en fare til du begynner å bremse",
-      "Strekningen bilen kjører fra du begynner å bremse til bilen står stille",
+      "Strekningen bilen kjører fra du begynner å bremse til bilen står helt stille",
       "Den tiden det tar å bremse helt ned",
       "Avstanden du må holde til bilen foran"
     ],
@@ -136,12 +136,13 @@
     "img": null,
     "a": [
       "Øke avstanden, fordi bremselengden blir lengre",
-      "Beholde den samme avstanden som på tørr vei",
-      "Minske avstanden for å se baklysene bedre"
+      "Beholde den samme avstanden som på tørr vei, fordi du kjører like fort",
+      "Minske avstanden, så du ser baklysene til bilen foran bedre",
+      "Øke avstanden, fordi reaksjonslengden blir lengre på glatt vei"
     ],
-    "f": "På glatt vei blir bremselengden mye lengre. Derfor trenger du større avstand enn 3 sekunder.",
-    "ru": "На скользкой дороге тормозной путь значительно длиннее, поэтому дистанция должна быть больше 3 секунд.",
-    "uk": "На слизькій дорозі гальмівний шлях значно довший, тому дистанція має бути більшою за 3 секунди.",
+    "f": "På glatt vei blir bremselengden mye lengre. Derfor trenger du større avstand enn 3 sekunder. Reaksjonslengden avhenger av farten og reaksjonstiden, ikke av føret.",
+    "ru": "На скользкой дороге тормозной путь значительно длиннее, поэтому дистанция должна быть больше 3 секунд. Путь реакции зависит от скорости и времени реакции, а не от покрытия.",
+    "uk": "На слизькій дорозі гальмівний шлях значно довший, тому дистанція має бути більшою за 3 секунди. Шлях реакції залежить від швидкості й часу реакції, а не від покриття.",
     "theory": "fart/avstand-til-bilen-foran"
   },
   {
@@ -167,7 +168,7 @@
     "img": null,
     "a": [
       "Når tilhengeren er godkjent for Tempo 100, bilen oppfyller kravene, og fartsgrensen er 100 km/t eller høyere",
-      "Når tilhengeren har egne bremser, bilen har ABS, og fartsgrensen er 100 km/t eller høyere",
+      "Når tilhengeren har egne bremser og lav vekt, bilen har ABS, og fartsgrensen er 100 km/t eller høyere",
       "Når tilhengeren er godkjent for Tempo 100, selv om bilen ikke har ABS",
       "Det kan du ikke: med tilhenger er 80 km/t den høyeste lovlige farten"
     ],
@@ -184,7 +185,7 @@
     "a": [
       "Du må alltid tilpasse farten etter sikten, selv om du da kjører mye saktere enn 80 km/t",
       "Du kan kjøre 80 km/t når det er skiltet, også i tett tåke",
-      "Du skal holde omtrent 80 km/t, fordi du ikke må hindre trafikken som kommer bak deg",
+      "Du skal holde omtrent 80 km/t, fordi du ikke må hindre trafikken som kommer bak deg i tåken",
       "Tåkelys gjør at andre ser deg, så du kan kjøre 80 km/t"
     ],
     "f": "Fartsgrensen er den høyeste tillatte farten under gode forhold. Du skal alltid tilpasse farten etter sikt, føre og trafikk.",
@@ -202,7 +203,8 @@
     "a": [
       "På alle veiene i området, helt til du passerer skiltet for slutt på sonen",
       "På veien du kjører på, fram til neste kryss",
-      "De første 100 meterne etter skiltet, så gjelder vanlig fartsgrense"
+      "De første 100 meterne etter skiltet, så gjelder vanlig fartsgrense",
+      "På alle veiene i området, men i tidsrommet 07–17 på hverdager og ellers 50 km/t"
     ],
     "f": "Fartsgrensesone betyr at fartsgrensen gjelder på alle veiene i sonen, til du kjører ut av sonen.",
     "ru": "Зона ограничения скорости: лимит действует на всех улицах внутри зоны, пока вы её не покинете (знак конца зоны).",
@@ -217,7 +219,8 @@
     "a": [
       "Nei, du skal ikke hindre annen trafikk ved å kjøre unødvendig sakte",
       "Ja, under fartsgrensen bestemmer du selv hvor sakte du vil kjøre",
-      "Lav fart er alltid tryggest, så det er tillatt"
+      "Lav fart er alltid tryggest, så det er tillatt",
+      "Ja, når du holder godt til høyre, så de bak kan kjøre forbi når det er ledig"
     ],
     "f": "Du skal ikke uten grunn kjøre så sakte at du hindrer annen trafikk. For lav fart kan føre til farlige forbikjøringer.",
     "ru": "Нельзя без причины ехать так медленно, что мешаешь другим. Слишком низкая скорость провоцирует опасные обгоны.",
@@ -232,7 +235,8 @@
     "a": [
       "Senke farten i god tid før fartsdemperen",
       "Bremse kraftig når du er oppå fartsdemperen",
-      "Holde farten, fartsdempere er laget for tunge kjøretøy"
+      "Holde farten, fartsdempere er laget for tunge kjøretøy",
+      "Styre utenom fartsdemperen, hvis det ikke kommer møtende trafikk"
     ],
     "f": "Fartsdempere skal få ned farten der det er mange myke trafikanter. Senk farten i god tid, ikke brems på selve humpen.",
     "ru": "Искусственные неровности («лежачие полицейские») ставят там, где много пешеходов и велосипедистов. Снижайте скорость заранее, а не тормозите на самой неровности.",
@@ -247,7 +251,8 @@
     "a": [
       "Du bør kjøre så sakte at du kan stoppe hvis et barn plutselig springer ut i veien",
       "Du kan holde 30 km/t hele tiden, fordi skiltet viser hva som er trygt ved skolen",
-      "Barna har ansvaret for å se seg for, så du kan holde farten"
+      "Barna har ansvaret for å se seg for, så du kan holde farten",
+      "Du bør tute når du ser barna, så de holder seg unna veien mens du kjører forbi skolen"
     ],
     "f": "Barn er uforutsigbare. Ved skoler og lekeplasser må du være klar til å stoppe, også under fartsgrensen.",
     "ru": "Дети непредсказуемы. Возле школ и детских площадок будьте готовы остановиться, даже если едете медленнее лимита.",
@@ -262,7 +267,8 @@
     "a": [
       "At dekkene mister kontakten med veien fordi de flyter på et lag med vann",
       "At bremsene blir våte når det regner, så de virker dårligere enn vanlig",
-      "At det kommer vann inn i motoren"
+      "At det kommer vann inn i motoren",
+      "At bilen foran spruter så mye vann på frontruten at du mister sikten framover"
     ],
     "f": "Ved vannplaning ligger dekkene på et lag med vann. Da kan du ikke styre eller bremse. Risikoen øker med høy fart og slitte dekk.",
     "ru": "При аквапланировании шины «плывут» по слою воды: машина не управляется и не тормозит. Риск выше при большой скорости и изношенной резине.",
@@ -276,7 +282,7 @@
     "img": null,
     "a": [
       "Slippe gassen og holde rattet rett til dekkene får grep igjen",
-      "Bremse så hardt du kan, så bilen stanser før det blir verre",
+      "Bremse så hardt du kan, så bilen stanser før det blir enda verre",
       "Svinge kraftig for å komme ut av vannet",
       "Gi mer gass, så bilen kommer fortere gjennom vannet"
     ],
@@ -294,7 +300,7 @@
       "Øke avstanden til bilen foran, så du kan bremse tidlig og mykt",
       "Bremse brått, så føreren bak forstår at bilen er for nær",
       "Øke farten, så du kommer lenger unna bilen bak",
-      "Legge deg nærmere bilen foran, så bilen bak ikke kjører forbi"
+      "Legge deg nærmere bilen foran, så bilen bak ikke prøver å kjøre forbi"
     ],
     "f": "Med stor avstand foran kan du bremse tidlig og mykt. Da får også bilen bak bedre tid. Ikke brems brått, og slipp bilen forbi når det er trygt.",
     "ru": "При большой дистанции впереди вы можете тормозить заранее и плавно — тогда и у машины сзади будет больше времени. Не тормозите резко и пропустите машину вперёд, когда это безопасно.",
@@ -310,7 +316,7 @@
       "Rommet foran, bak og til sidene som gir deg tid og plass til å reagere",
       "Den delen av bilen som beskytter deg ved en kollisjon",
       "Området ved en skole der fartsgrensen er 30 km/t",
-      "Bare avstanden du holder til bilen foran deg, minst 3 sekunder"
+      "Avstanden til bilen foran deg alene, som skal være minst 3 sekunder i gode forhold"
     ],
     "f": "Sikkerhetssonen får du ved å holde avstand til andre og til farer rundt bilen – foran, bak og til sidene. Den gir deg tid og plass til å reagere hvis noe uventet skjer.",
     "ru": "Зону безопасности вы создаёте, держа дистанцию до других участников движения и до опасностей вокруг машины — спереди, сзади и по бокам. Она даёт вам время и место, чтобы среагировать, если случится что-то неожиданное.",
@@ -325,7 +331,8 @@
     "a": [
       "En bildør kan plutselig bli åpnet rett foran deg",
       "Det er forbudt å kjøre nærmere enn 2 meter fra parkerte biler",
-      "Det trengs ikke, avstand til siden er bare viktig for syklister"
+      "Det trengs ikke, avstand til siden er bare viktig for syklister",
+      "Parkerte biler har forkjørsrett når de skal kjøre ut fra kanten"
     ],
     "f": "Ved parkerte biler kan en bildør plutselig bli åpnet. Hold derfor god nok avstand til siden.",
     "ru": "У припаркованных машин может внезапно открыться дверь. Поэтому держите достаточный боковой интервал.",
@@ -340,11 +347,92 @@
     "a": [
       "Sjansen for at den gående overlever, blir mye mindre",
       "Det betyr lite, fordi både 30 og 50 km/t er lav fart",
-      "Skadene blir omtrent like store i 30 og 50 km/t"
+      "Skadene blir omtrent like store i 30 og 50 km/t",
+      "Sjansen blir litt mindre, men de fleste gående overlever også i 50 km/t"
     ],
     "f": "Farten betyr mye for den som blir påkjørt. I 30 km/t overlever de fleste gående en påkjørsel. I 50 km/t dør de fleste.",
     "ru": "Скорость очень важна для того, кого сбили. При 30 км/ч большинство пешеходов выживает после наезда, при 50 км/ч большинство погибает.",
     "uk": "Швидкість дуже важлива для того, кого збили. На швидкості 30 км/год більшість пішоходів виживає після наїзду, на 50 км/год — більшість гине.",
     "theory": "fart/tilpass-farten-etter-forholdene"
+  },
+  {
+    "id": "far-23",
+    "cat": "fart",
+    "q": "Du kjører i 72 km/t og holder 3 sekunders avstand til bilen foran. Omtrent hvor mange meter er det?",
+    "img": null,
+    "a": [
+      "Omtrent 60 meter",
+      "Omtrent 216 meter",
+      "Omtrent 20 meter",
+      "Omtrent 36 meter"
+    ],
+    "f": "Del farten på 3,6, så får du meter per sekund: 72 km/t er 20 meter i sekundet. Tre sekunder blir da 60 meter. 216 får du hvis du glemmer å dele på 3,6, og 20 meter er bare ett sekund.",
+    "ru": "Разделите скорость на 3,6 — получите метры в секунду: 72 км/ч — это 20 м/с. За три секунды это 60 м. 216 получится, если забыть разделить на 3,6, а 20 м — это всего одна секунда.",
+    "uk": "Поділіть швидкість на 3,6 — отримаєте метри за секунду: 72 км/год — це 20 м/с. За три секунди це 60 м. 216 вийде, якщо забути поділити на 3,6, а 20 м — це лише одна секунда.",
+    "theory": "fart/avstand-til-bilen-foran"
+  },
+  {
+    "id": "far-24",
+    "cat": "fart",
+    "q": "Du kjører i 90 km/t og ser ned på mobilen, så det går 2 sekunder før du begynner å bremse. Omtrent hvor lang blir reaksjonslengden?",
+    "img": null,
+    "a": [
+      "Omtrent 50 meter",
+      "Omtrent 25 meter",
+      "Omtrent 180 meter",
+      "Omtrent 100 meter"
+    ],
+    "f": "90 km/t er 25 meter i sekundet, så på 2 sekunder kjører bilen omtrent 50 meter. 25 meter gjelder hvis du reagerer på 1 sekund, og 180 får du hvis du glemmer å dele på 3,6. Reaksjonslengden er farten ganget med tiden du bruker på å reagere.",
+    "ru": "90 км/ч — это 25 метров в секунду, значит, за 2 секунды машина проедет примерно 50 м. 25 м — это если реагировать 1 секунду, а 180 получится, если забыть разделить на 3,6. Путь реакции — это скорость, умноженная на время реакции.",
+    "uk": "90 км/год — це 25 метрів за секунду, отже, за 2 секунди машина проїде приблизно 50 м. 25 м — це якщо реагувати 1 секунду, а 180 вийде, якщо забути поділити на 3,6. Шлях реакції — це швидкість, помножена на час реакції.",
+    "theory": "fart/reaksjonslengde-bremselengde-og-stopplengde"
+  },
+  {
+    "id": "far-25",
+    "cat": "fart",
+    "q": "I 30 km/t er reaksjonslengden 8 meter og bremselengden 5 meter. Du øker farten til 60 km/t. Omtrent hvor lang blir stopplengden?",
+    "img": null,
+    "a": [
+      "Omtrent 36 meter",
+      "Omtrent 26 meter",
+      "Omtrent 52 meter",
+      "Omtrent 28 meter"
+    ],
+    "f": "Dobbel fart gir dobbel reaksjonslengde (16 meter) og fire ganger så lang bremselengde (20 meter). Til sammen er det 36 meter. Dobler du begge, får du 26 meter, og ganger du begge med fire, får du 52 meter.",
+    "ru": "При скорости вдвое выше путь реакции вдвое длиннее (16 м), а тормозной путь — в четыре раза (20 м). Вместе это 36 м. Если удвоить оба, получится 26 м, а если умножить оба на четыре — 52 м.",
+    "uk": "За вдвічі вищої швидкості шлях реакції вдвічі довший (16 м), а гальмівний шлях — у чотири рази (20 м). Разом це 36 м. Якщо подвоїти обидва, вийде 26 м, а якщо помножити обидва на чотири — 52 м.",
+    "theory": "fart/reaksjonslengde-bremselengde-og-stopplengde"
+  },
+  {
+    "id": "far-26",
+    "cat": "fart",
+    "q": "Hva er riktig om tresekundersregelen?",
+    "img": null,
+    "a": [
+      "Tre sekunder er et minimum i gode forhold, men på glatt vei eller i dårlig sikt kan det være for lite",
+      "Tre sekunder er et krav i trafikkreglene, og det gjelder likt i all slags vær og på alt slags føre hele året",
+      "Tre sekunder gir like mange meter avstand, enten du kjører i 50 km/t eller i 100 km/t",
+      "Tre sekunder er nok på snø og is også, fordi tiden du teller, allerede tar hensyn til føret"
+    ],
+    "f": "Tre sekunder er et godt minimum på tørr vei med god sikt. Statens vegvesen peker på at det kan være for lite når det er glatt eller dårlig sikt. Antall meter øker med farten, selv om antall sekunder er det samme. Selve trafikkreglene nevner ikke sekunder.",
+    "ru": "Три секунды — хороший минимум для сухой дороги и хорошей видимости. Дорожное управление (Statens vegvesen) отмечает, что на скользкой дороге или при плохой видимости этого может быть мало. Количество метров растёт со скоростью, хотя секунд столько же. В самих правилах секунды не упоминаются.",
+    "uk": "Три секунди — добрий мінімум для сухої дороги й доброї видимості. Дорожнє управління (Statens vegvesen) зазначає, що на слизькій дорозі чи за поганої видимості цього може бути замало. Кількість метрів зростає зі швидкістю, хоча секунд стільки ж. У самих правилах секунди не згадуються.",
+    "theory": "fart/avstand-til-bilen-foran"
+  },
+  {
+    "id": "far-27",
+    "cat": "fart",
+    "q": "Hva sier trafikkreglene om avstanden til kjøretøyet foran?",
+    "img": null,
+    "a": [
+      "Den skal være så stor at du ikke kjører på hvis kjøretøyet foran senker farten eller stanser",
+      "Den skal være minst 3 sekunder på tørr vei og minst 6 sekunder på våt og glatt vei, målt ved et fast punkt",
+      "Den skal være minst like mange meter som du kjører i km/t, målt fra din bil til bilen foran",
+      "Den skal være minst 50 meter utenfor tettbygd strøk og minst 20 meter i tettbygd strøk"
+    ],
+    "f": "Trafikkreglene gir ikke noe tall. Avstanden skal være så stor at du ikke kjører på hvis kjøretøyet foran senker farten eller stanser, og slik at den som kjører forbi, kan kjøre inn foran deg uten fare. Tre sekunder er en huskeregel for å klare det.",
+    "ru": "Правила не называют конкретного числа. Дистанция должна быть такой, чтобы вы не врезались в машину впереди, если она сбросит скорость или остановится, и чтобы обгоняющий мог без опасности встать перед вами. Три секунды — это памятка, как этого добиться.",
+    "uk": "Правила не називають конкретного числа. Дистанція має бути такою, щоб ви не врізалися в машину попереду, якщо вона зменшить швидкість або зупиниться, і щоб той, хто обганяє, міг безпечно стати перед вами. Три секунди — це пам'ятка, як цього досягти.",
+    "theory": "fart/avstand-til-bilen-foran"
   }
 ]

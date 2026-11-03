@@ -23,7 +23,8 @@
     "a": [
       "Føreren",
       "Passasjeren selv",
-      "Foreldrene, selv om de ikke er med i bilen"
+      "Foreldrene, selv om de ikke er med i bilen",
+      "Den voksne passasjeren som sitter nærmest barnet"
     ],
     "f": "Føreren har ansvaret for at passasjerer under 15 år er sikret.",
     "ru": "Водитель отвечает за то, чтобы пассажиры младше 15 лет были пристёгнуты.",
@@ -38,7 +39,8 @@
     "a": [
       "Passasjeren selv",
       "Føreren av bilen",
-      "Eieren av bilen"
+      "Eieren av bilen",
+      "Både føreren og passasjeren"
     ],
     "f": "Passasjerer som er 15 år eller eldre, har selv ansvaret for å bruke bilbelte og kan selv få bot.",
     "ru": "Пассажиры от 15 лет и старше сами отвечают за то, чтобы пристегнуться, и штраф тоже могут получить сами.",
@@ -53,11 +55,12 @@
     "a": [
       "Barnet skal bruke godkjent sikringsutstyr som passer til vekt og høyde",
       "Barnet kan bruke vanlig bilbelte, så lenge det sitter i baksetet",
-      "Har bilen ikke barnesete, kan barnet kjøre uten sikringsutstyr"
+      "Har bilen ikke barnesete, kan barnet kjøre uten sikringsutstyr",
+      "Har bilen ikke godkjent sikringsutstyr for barn, kan barnet bruke vanlig bilbelte"
     ],
-    "f": "Barn som er lavere enn 135 cm, skal alltid bruke godkjent sikringsutstyr som passer til barnets vekt og høyde.",
-    "ru": "Дети ростом ниже 135 см должны всегда использовать одобренное детское удерживающее устройство, подходящее по весу и росту.",
-    "uk": "Діти зростом менше ніж 135 см завжди повинні користуватися схваленим дитячим утримувальним пристроєм, який підходить їм за вагою та зростом.",
+    "f": "Barn som er lavere enn 135 cm, skal alltid bruke godkjent sikringsutstyr som passer til barnets vekt og høyde. Vanlig bilbelte kan bare barn mellom 135 og 150 cm bruke, og bare når bilen ikke har slikt utstyr.",
+    "ru": "Дети ростом ниже 135 см должны всегда использовать одобренное детское удерживающее устройство, подходящее по весу и росту. Обычным ремнём можно пристёгивать только детей ростом от 135 до 150 см, и только если такого устройства в машине нет.",
+    "uk": "Діти зростом менше ніж 135 см завжди повинні користуватися схваленим дитячим утримувальним пристроєм, який підходить їм за вагою та зростом. Звичайним ременем можна пристібати лише дітей зростом від 135 до 150 см, і лише якщо такого пристрою в машині немає.",
     "theory": "sikring/barn-i-bilen"
   },
   {
@@ -68,7 +71,8 @@
     "a": [
       "Det er bare lov hvis airbagen er koblet ut",
       "Det er lov for barn som er over ett år",
-      "Det er lov når setet er godt festet med bilbeltet"
+      "Det er lov når setet er godt festet med bilbeltet",
+      "Det er lov hvis forsetet er skjøvet så langt bak som det går"
     ],
     "f": "Et bakovervendt barnesete må aldri stå foran en aktiv airbag. Airbagen kan skade barnet alvorlig.",
     "ru": "Детское кресло, установленное против хода движения, нельзя ставить перед включённой подушкой безопасности: она может тяжело травмировать ребёнка.",
@@ -83,7 +87,8 @@
     "a": [
       "Det beskytter hodet og nakken best ved en kollisjon forfra",
       "Barnet blir mindre bilsykt når det ikke ser veien framover",
-      "Det er lettere å feste barnesetet riktig i bilen"
+      "Det er lettere å feste barnesetet riktig i bilen",
+      "Det beskytter hodet og nakken best ved en påkjøring bakfra, som er den vanligste ulykken"
     ],
     "f": "Små barn har stort hode og svak nakke. Bakovervendt sete fordeler kreftene over ryggen og beskytter best ved frontkollisjon.",
     "ru": "У маленьких детей большая голова и слабая шея. Кресло против хода движения распределяет нагрузку на спину и лучше всего защищает при лобовом столкновении.",
@@ -98,7 +103,8 @@
     "a": [
       "I baksetet",
       "I forsetet, fordi airbagen beskytter barnet",
-      "I forsetet, hvis barnet bruker vanlig bilbelte"
+      "I forsetet, hvis barnet bruker vanlig bilbelte",
+      "I forsetet, hvis setet er skjøvet så langt bak som det går"
     ],
     "f": "Statens vegvesen råder til at barn som er lavere enn 140 cm, ikke sitter foran en aktiv airbag. Baksetet er det tryggeste stedet.",
     "ru": "Дорожное управление (Statens vegvesen) советует не сажать детей ростом ниже 140 см перед включённой подушкой безопасности. Самое безопасное место — заднее сиденье.",
@@ -113,7 +119,8 @@
     "a": [
       "Ved en kollisjon kan de bli kastet framover med stor kraft og skade noen",
       "De kan bli kastet framover ved kollisjon i over 80 km/t, ikke i lav fart",
-      "Det er bare viktig for tunge gjenstander som veier over 50 kg"
+      "Det er bare viktig for tunge gjenstander som veier over 50 kg",
+      "De kan forstyrre airbagen, men ellers gjør de liten skade ved en kollisjon, selv i høy fart"
     ],
     "f": "Ved en kollisjon blir løse gjenstander kastet framover med en kraft som er mange ganger større enn vekten deres.",
     "ru": "При столкновении незакреплённые предметы летят вперёд с силой, во много раз превышающей их вес.",
@@ -128,7 +135,8 @@
     "a": [
       "Lasten skal være sikret slik at den ikke kan falle av eller flytte seg",
       "Lasten trenger bare å sikres når du kjører på motorvei eller i høy fart",
-      "Det er nok at lasten er tung, så ligger den stille av seg selv"
+      "Det er nok at lasten er tung, så ligger den stille av seg selv",
+      "Lasten skal være sikret hvis den stikker ut over bilen, ellers er det nok at den ligger stabilt"
     ],
     "f": "Lasten skal alltid være sikret, slik at den ikke kan falle av, flytte seg eller være til fare under kjøring.",
     "ru": "Груз всегда должен быть закреплён так, чтобы он не мог упасть, сместиться или создать опасность во время движения.",
@@ -143,7 +151,8 @@
     "a": [
       "Bilen kan bli mindre stabil i svinger, så du bør tilpasse farten",
       "Bilen blir mer stabil, fordi vekten holder den nede mot veien",
-      "Det har ingen betydning når lasten ligger i en lukket takboks"
+      "Det har ingen betydning når lasten ligger i en lukket takboks",
+      "Bremselengden blir kortere, fordi vekten presser dekkene hardere mot veien"
     ],
     "f": "Tung last på taket gir høyere tyngdepunkt. Bilen blir mindre stabil, særlig i svinger og ved sidevind.",
     "ru": "Тяжёлый груз на крыше поднимает центр тяжести. Машина становится менее устойчивой, особенно в поворотах и при боковом ветре.",
@@ -158,11 +167,12 @@
     "a": [
       "En tilhenger med tillatt totalvekt på inntil 750 kg",
       "En tilhenger med tillatt totalvekt på inntil 1500 kg",
-      "En tilhenger med tillatt totalvekt på inntil 3500 kg"
+      "En tilhenger med tillatt totalvekt på inntil 3500 kg",
+      "En tilhenger som veier inntil 750 kg med lasten, selv om tillatt totalvekt er høyere"
     ],
-    "f": "Med klasse B kan du alltid trekke en tilhenger med tillatt totalvekt på inntil 750 kg, hvis bilen er godkjent for den.",
-    "ru": "С правами категории B всегда можно буксировать прицеп с разрешённой максимальной массой до 750 кг, если машина допущена к этому.",
-    "uk": "З посвідченням водія категорії B завжди можна буксирувати причіп із дозволеною максимальною масою до 750 кг, якщо машину для цього допущено.",
+    "f": "Med klasse B kan du alltid trekke en tilhenger med tillatt totalvekt på inntil 750 kg, hvis bilen er godkjent for den. Det er tillatt totalvekt som teller, ikke hvor mye tilhengeren veier akkurat nå.",
+    "ru": "С правами категории B всегда можно буксировать прицеп с разрешённой максимальной массой до 750 кг, если машина допущена к этому. Считается разрешённая максимальная масса, а не то, сколько прицеп весит прямо сейчас.",
+    "uk": "З посвідченням водія категорії B завжди можна буксирувати причіп із дозволеною максимальною масою до 750 кг, якщо машину для цього допущено. Враховується дозволена максимальна маса, а не те, скільки причіп важить саме зараз.",
     "theory": "sikring/tilhenger"
   },
   {
@@ -173,7 +183,8 @@
     "a": [
       "Bilens og tilhengerens tillatte totalvekt kan til sammen ikke være mer enn 3500 kg",
       "Det som teller, er at tilhengeren med lasten veier under 750 kg akkurat nå",
-      "Det er lov uten grenser for vekt, så lenge bilen er godkjent for tilhengeren"
+      "Det er lov uten grenser for vekt, så lenge bilen er godkjent for tilhengeren",
+      "Bilens og tilhengerens faktiske vekt med last kan til sammen ikke være mer enn 3500 kg"
     ],
     "f": "Med klasse B kan tilhengeren veie mer enn 750 kg hvis tillatt totalvekt for bil og tilhenger til sammen ikke er over 3500 kg. Det er tillatt totalvekt som teller, ikke hvor mye tilhengeren veier akkurat nå.",
     "ru": "С категорией B прицеп может быть тяжелее 750 кг, если суммарная разрешённая масса машины и прицепа не превышает 3500 кг. Считается разрешённая максимальная масса, а не то, сколько прицеп весит прямо сейчас.",
@@ -188,7 +199,8 @@
     "a": [
       "At tilhengeren er riktig koblet, at lysene virker og at lasten er sikret",
       "At dekkene på tilhengeren har nok luft, resten er ikke så viktig",
-      "At koblingen er i orden, men lysene trenger du bare å sjekke i mørket"
+      "At koblingen er i orden, men lysene trenger du bare å sjekke i mørket",
+      "At tilhengeren er riktig koblet – lys og last kan du sjekke når du stanser etter de første kilometerne"
     ],
     "f": "Før kjøring skal du sjekke koblingen, lysene, dekkene og at lasten er sikret og riktig plassert.",
     "ru": "Перед поездкой проверьте сцепку, фонари, шины и то, что груз закреплён и правильно размещён.",
@@ -203,11 +215,12 @@
     "a": [
       "Lavt og over hjulakselen",
       "Bakerst på tilhengeren",
-      "Øverst på den andre lasten"
+      "Øverst på den andre lasten",
+      "Helt foran, så hengerfestet bærer mest mulig av vekten"
     ],
-    "f": "Tung last skal ligge lavt og over hjulakselen. Feil plassering kan gjøre at tilhengeren slingrer.",
-    "ru": "Тяжёлый груз нужно класть низко и над осью колёс. Неправильное размещение может вызвать раскачивание прицепа.",
-    "uk": "Важкий вантаж потрібно класти низько й над віссю коліс. Неправильне розміщення може спричинити розгойдування причепа.",
+    "f": "Tung last skal ligge lavt og over hjulakselen. Feil plassering kan gjøre at tilhengeren slingrer. Det er akselen og hjulene på tilhengeren som skal bære vekten, ikke hengerfestet.",
+    "ru": "Тяжёлый груз нужно класть низко и над осью колёс. Неправильное размещение может вызвать раскачивание прицепа. Вес должны нести ось и колёса прицепа, а не тягово-сцепное устройство.",
+    "uk": "Важкий вантаж потрібно класти низько й над віссю коліс. Неправильне розміщення може спричинити розгойдування причепа. Вагу мають нести вісь і колеса причепа, а не тягово-зчіпний пристрій.",
     "theory": "sikring/tilhenger"
   },
   {
@@ -218,7 +231,8 @@
     "a": [
       "Overkanten bør være omtrent i høyde med toppen av hodet, og nær hodet",
       "Så lavt som mulig, så du ser godt bakover gjennom bakruten",
-      "Overkanten bør være omtrent i høyde med skuldrene, så den er nær nakken"
+      "Overkanten bør være omtrent i høyde med skuldrene, så den er nær nakken",
+      "Overkanten bør være omtrent i høyde med haken, med god avstand til hodet"
     ],
     "f": "En riktig innstilt nakkestøtte beskytter mot nakkeskader ved påkjøring bakfra. Den bør stå høyt og nær hodet.",
     "ru": "Правильно отрегулированный подголовник защищает шею при ударе сзади. Его следует поднять высоко и придвинуть близко к голове.",
@@ -233,11 +247,76 @@
     "a": [
       "Airbagen virker sammen med bilbeltet og erstatter det ikke",
       "Med airbag trenger du ikke bilbelte",
-      "Airbagen beskytter best hvis du sitter helt inntil rattet"
+      "Airbagen beskytter best hvis du sitter helt inntil rattet",
+      "Airbagen utløses når bilbeltet ikke er i bruk, så de to virker hver for seg"
     ],
     "f": "Airbagen er laget for å virke sammen med bilbeltet. Uten belte kan airbagen gi alvorlige skader.",
     "ru": "Подушка безопасности рассчитана на работу вместе с ремнём. Без ремня она может причинить серьёзные травмы.",
     "uk": "Подушка безпеки розрахована на роботу разом із ременем. Без ременя вона може завдати серйозних травм.",
     "theory": "sikring/airbag-og-nakkestotte"
+  },
+  {
+    "id": "sik-18",
+    "cat": "sikring",
+    "q": "Du har klasse B uten kode 96. I vognkortene står det: Bilen har tillatt totalvekt 1900 kg, og tilhengeren 1700 kg. Tilhengeren med last veier nå 700 kg. Kan du kjøre med den?",
+    "img": null,
+    "a": [
+      "Nei, fordi tillatt totalvekt til sammen er 3600 kg, og grensen er 3500 kg",
+      "Ja, fordi tilhengeren med last veier under 750 kg akkurat nå, og da er det den grensen som gjelder",
+      "Ja, fordi 1900 kg og 700 kg til sammen er mindre enn grensen på 3500 kg",
+      "Nei, fordi en tilhenger over 750 kg krever førerkort klasse BE"
+    ],
+    "f": "Førerretten avhenger av tillatt totalvekt i vognkortene, ikke av hvor mye tilhengeren veier akkurat nå. 1900 + 1700 = 3600 kg, og det er over 3500 kg. Med kode 96 går grensen ved 4250 kg, og da kunne du kjørt.",
+    "ru": "Право управления зависит от разрешённой максимальной массы в регистрационных свидетельствах (vognkort), а не от того, сколько прицеп весит прямо сейчас. 1900 + 1700 = 3600 кг — это больше 3500 кг. С кодом 96 предел составляет 4250 кг, и тогда ехать было бы можно.",
+    "uk": "Право керування залежить від дозволеної максимальної маси у свідоцтвах про реєстрацію (vognkort), а не від того, скільки причіп важить саме зараз. 1900 + 1700 = 3600 кг — це більше ніж 3500 кг. З кодом 96 межа становить 4250 кг, і тоді їхати було б можна.",
+    "theory": "sikring/tilhenger"
+  },
+  {
+    "id": "sik-19",
+    "cat": "sikring",
+    "q": "Bilens vognkort: tillatt tilhengervekt med brems 1000 kg. Tilhengerens vognkort: tillatt totalvekt 1300 kg og egenvekt 350 kg. Du har riktig førerkort for vogntoget. Hvor mye last kan du høyst ha på tilhengeren?",
+    "img": null,
+    "a": [
+      "650 kg",
+      "950 kg",
+      "1000 kg",
+      "1300 kg"
+    ],
+    "f": "Tilhengeren med last kan ikke veie mer enn det bilen kan trekke: 1000 − 350 = 650 kg. De 950 kg (1300 − 350) er det tilhengeren selv tåler, men her er det bilen som setter grensen. Tallene for både bilen og tilhengeren står i vognkortene.",
+    "ru": "Прицеп с грузом не может весить больше, чем машине можно буксировать: 1000 − 350 = 650 кг. 950 кг (1300 − 350) — это то, что выдерживает сам прицеп, но здесь предел задаёт машина. Цифры и для машины, и для прицепа указаны в регистрационных свидетельствах (vognkort).",
+    "uk": "Причіп із вантажем не може важити більше, ніж машині можна буксирувати: 1000 − 350 = 650 кг. 950 кг (1300 − 350) — це те, що витримує сам причіп, але тут межу встановлює машина. Цифри і для машини, і для причепа зазначено у свідоцтвах про реєстрацію (vognkort).",
+    "theory": "sikring/tilhenger"
+  },
+  {
+    "id": "sik-20",
+    "cat": "sikring",
+    "q": "Når gjelder ikke påbudet om å bruke bilbelte?",
+    "img": null,
+    "a": [
+      "Når du rygger",
+      "Når du kjører sakte i kø",
+      "Når du kjører en kort tur i tettbygd strøk",
+      "Når du sitter bak i en drosje"
+    ],
+    "f": "Bilbelte skal brukes der det er montert, også i kø, på korte turer og i drosje. Unntak er blant annet når bilen står stille, når du rygger, og når du har legeerklæring.",
+    "ru": "Ремень нужно использовать там, где он установлен, — и в пробке, и в коротких поездках, и в такси. Исключения — среди прочего, когда машина стоит, когда едете задним ходом и когда есть справка от врача.",
+    "uk": "Ремінь треба використовувати там, де його встановлено, — і в заторі, і в коротких поїздках, і в таксі. Винятки — серед іншого, коли машина стоїть, коли їдете заднім ходом і коли є довідка від лікаря.",
+    "theory": "sikring/bilbelte"
+  },
+  {
+    "id": "sik-21",
+    "cat": "sikring",
+    "q": "Hva er riktig om sikring av passasjerer?",
+    "img": null,
+    "a": [
+      "Et barn på 140 cm kan bruke vanlig bilbelte hvis bilen ikke har godkjent sikringsutstyr for barn",
+      "Et barn på 130 cm kan bruke vanlig bilbelte hvis turen er kort og barnet sitter i baksetet",
+      "En passasjer på 14 år som ikke bruker bilbelte, får selv boten, ikke føreren",
+      "Føreren har ansvaret for at alle passasjerer under 18 år bruker bilbelte, og får boten for dem"
+    ],
+    "f": "Barn mellom 135 og 150 cm skal bruke godkjent sikringsutstyr hvis det finnes i bilen, ellers kan de bruke vanlig bilbelte. Er barnet lavere enn 135 cm, er vanlig bilbelte ikke nok. Føreren har ansvaret for passasjerer under 15 år, og fra 15 år har passasjeren selv ansvaret.",
+    "ru": "Дети ростом от 135 до 150 см должны пользоваться одобренным удерживающим устройством, если оно есть в машине, а если его нет, можно пристегнуть их обычным ремнём. Детям ниже 135 см обычного ремня недостаточно. Водитель отвечает за пассажиров младше 15 лет, а с 15 лет пассажир отвечает за себя сам.",
+    "uk": "Діти зростом від 135 до 150 см повинні користуватися схваленим утримувальним пристроєм, якщо він є в машині, а якщо його немає, їх можна пристебнути звичайним ременем. Дітям зростом менше ніж 135 см звичайного ременя недостатньо. Водій відповідає за пасажирів, молодших за 15 років, а з 15 років пасажир відповідає за себе сам.",
+    "theory": "sikring/barn-i-bilen"
   }
 ]

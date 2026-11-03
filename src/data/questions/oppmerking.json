@@ -242,7 +242,7 @@
       "De skiller trafikk som kjører i motsatte retninger",
       "De skiller kjørefelt med samme kjøreretning",
       "De viser hvor syklende skal kjøre",
-      "De viser hvor du kan parkere"
+      "De skiller alle kjørefelt, også felt med samme kjøreretning"
     ],
     "f": "Gule linjer skiller trafikk i motsatte retninger. Hvite linjer skiller felt med samme kjøreretning og viser som regel kanten av kjørebanen.",
     "ru": "Жёлтые линии разделяют встречные потоки. Белые — полосы одного направления и обычно край проезжей части.",
@@ -274,11 +274,77 @@
       "Feltet er for kjørende som skal svinge til venstre",
       "Du må bytte til feltet til venstre før krysset",
       "Det er forbudt å svinge til venstre",
-      "Feltet er for møtende trafikk"
+      "Feltet er for kjørende som skal rett fram eller til venstre"
     ],
     "f": "Piler i kjørebanen viser hvilken retning feltet er for. Er feltet avgrenset med sperrelinje, er pilen et påbud. Velg feltet i god tid før krysset.",
     "ru": "Стрелки на проезжей части показывают, для какого направления полоса. Если полоса отделена сплошной линией, ехать нужно туда, куда указывает стрелка. Выбирайте полосу заранее, до перекрёстка.",
     "uk": "Стрілки на проїзній частині показують, для якого напрямку смуга. Якщо смугу відокремлено суцільною лінією, їхати потрібно туди, куди вказує стрілка. Обирайте смугу заздалегідь, до перехрестя.",
     "theory": "oppmerking/felt-sperreomrade-og-gangfelt"
+  },
+  {
+    "id": "opp-17",
+    "cat": "oppmerking",
+    "q": "Du ligger bak en traktor og kommer til en bakketopp der du ikke ser over. Linjen midt i veien ser slik ut. Kan du kjøre forbi?",
+    "img": {
+      "road": "varsellinje"
+    },
+    "a": [
+      "Nei, forbikjøring er forbudt der sikten er hindret av en bakketopp",
+      "Ja, linjen er en varsellinje, så du kan kjøre forbi hvis du ikke ser noen møtende",
+      "Ja, hvis traktoren kjører svært sakte og du blinker i god tid",
+      "Nei, linjen er en sperrelinje, og den kan du ikke kjøre over"
+    ],
+    "f": "Dette er en varsellinje, og den kan du kjøre over. Men linjen opphever ikke reglene for forbikjøring. Der sikten er hindret av en bakketopp eller en kurve, er forbikjøring forbudt, fordi du ikke kan vite om noen kommer imot.",
+    "ru": "Это предупреждающая линия, и пересекать её можно. Но она не отменяет правил обгона. Там, где обзор закрыт вершиной подъёма или поворотом, обгон запрещён: вы не можете знать, нет ли встречных.",
+    "uk": "Це попереджувальна лінія, і перетинати її можна. Але вона не скасовує правил обгону. Там, де огляд закритий вершиною підйому або поворотом, обгін заборонено: ви не можете знати, чи немає зустрічних.",
+    "theory": "oppmerking/linjer-midt-i-veien"
+  },
+  {
+    "id": "opp-18",
+    "cat": "oppmerking",
+    "q": "På en vei med to felt i samme retning er det en hvit linje mellom feltene, med lange streker og korte mellomrom. Hva betyr den?",
+    "img": null,
+    "a": [
+      "Det er fare ved å skifte felt her",
+      "Sikten framover er for kort til vanlig forbikjøring",
+      "Det er forbudt å skifte felt her",
+      "Feltet ved siden av er et kollektivfelt"
+    ],
+    "f": "Dette er en hvit varsellinje. Den varsler om fare ved å skifte felt, men forbyr det ikke. Den gule varsellinjen midt i veien varsler derimot om at sikten er for kort til vanlig forbikjøring.",
+    "ru": "Это белая предупреждающая линия. Она предупреждает, что перестраиваться опасно, но не запрещает этого. А жёлтая предупреждающая линия посередине дороги говорит о том, что видимость слишком мала для обычного обгона.",
+    "uk": "Це біла попереджувальна лінія. Вона попереджає, що перестроюватися небезпечно, але не забороняє цього. А жовта попереджувальна лінія посередині дороги говорить про те, що видимість замала для звичайного обгону.",
+    "theory": "oppmerking/gule-og-hvite-linjer"
+  },
+  {
+    "id": "opp-19",
+    "cat": "oppmerking",
+    "q": "Hva er riktig om linjer i kjørebanen?",
+    "img": null,
+    "a": [
+      "En gul kantlinje kan vise kjøreretningen, for eksempel på venstre side av en rampe",
+      "En kjørefeltlinje har lange streker og korte mellomrom, en varsellinje det motsatte",
+      "En hvit sperrelinje kan du kjøre over når det er trygt, fordi den ikke skiller møtende",
+      "En dobbel gul varsellinje betyr det samme som en dobbel sperrelinje"
+    ],
+    "f": "Gul oppmerking skiller motgående kjøreretninger eller tydeliggjør kjøreretningen, som på venstre side av en rampe. Sperrelinje må du ikke kjøre på eller over, uansett farge. Kjørefeltlinje har korte streker og lange mellomrom. Dobbel gul varsellinje skiller felt der kjøreretningen kan endres.",
+    "ru": "Жёлтая разметка разделяет встречные направления или подчёркивает направление движения, например слева на съезде. На сплошную линию нельзя заезжать и пересекать её, какого бы цвета она ни была. У обычной прерывистой (kjørefeltlinje) короткие штрихи и длинные промежутки. Двойная жёлтая предупреждающая линия разделяет полосы, на которых направление движения может меняться.",
+    "uk": "Жовта розмітка розділяє зустрічні напрямки або підкреслює напрямок руху, наприклад ліворуч на з'їзді. На суцільну лінію не можна заїжджати й перетинати її, хоч би якого кольору вона була. У звичайної переривчастої (kjørefeltlinje) короткі штрихи й довгі проміжки. Подвійна жовта попереджувальна лінія розділяє смуги, на яких напрямок руху може змінюватися.",
+    "theory": "oppmerking/gule-og-hvite-linjer"
+  },
+  {
+    "id": "opp-20",
+    "cat": "oppmerking",
+    "q": "Du kjører forbi og er i feltet for møtende. Nå kommer en kombinert linje der sperrelinjen er nærmest deg. Kan du kjøre tilbake til høyre side?",
+    "img": null,
+    "a": [
+      "Ja, du kan kjøre tilbake, selv om sperrelinjen er nærmest deg",
+      "Nei, du må bli i dette feltet til sperrelinjen slutter",
+      "Ja, hvis du først har fått tegn fra bilen du kjører forbi",
+      "Nei, du må kjøre videre til neste kryss og skifte felt der"
+    ],
+    "f": "Ved kombinerte linjer gjelder linjen nærmest deg. Men den som har kjørt over i felt for motgående, kan likevel kjøre tilbake til høyre side. Du skal ikke bli værende i feltet for motgående.",
+    "ru": "При сдвоенных линиях действует та, что ближе к вам. Но тот, кто выехал на встречную полосу, всё равно может вернуться на правую сторону. Оставаться на встречной полосе не нужно.",
+    "uk": "За подвійних ліній діє та, що ближча до вас. Але той, хто виїхав на зустрічну смугу, все одно може повернутися на правий бік. Залишатися на зустрічній смузі не треба.",
+    "theory": "oppmerking/to-linjer-ved-siden-av-hverandre"
   }
 ]

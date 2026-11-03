@@ -7,7 +7,8 @@
     "a": [
       "Nei, forbikjøring er forbudt ved bakketopp der sikten er dårlig",
       "Uten sperrelinje eller skilt kan du kjøre forbi",
-      "Ja, hvis bilen foran kjører mye saktere enn fartsgrensen"
+      "Ja, hvis bilen foran kjører mye saktere enn fartsgrensen",
+      "Ja, når du rekker å være ferdig med forbikjøringen før du når toppen"
     ],
     "f": "Forbikjøring er forbudt ved bakketopper og i kurver der sikten er for dårlig til at du kan se at veien er fri.",
     "ru": "Обгон запрещён перед вершиной подъёма и на поворотах, где не видно, свободна ли встречная полоса.",
@@ -24,7 +25,8 @@
     "a": [
       "Venter med å kjøre forbi til du har god sikt og nok plass",
       "Kjører forbi før kurven, så du er ferdig før den begynner",
-      "Kjører forbi, fordi det går fort å kjøre forbi en traktor"
+      "Kjører forbi, fordi det går fort å kjøre forbi en traktor",
+      "Kjører forbi i kurven, hvis føreren av traktoren blinker til høyre som tegn"
     ],
     "f": "I og like før en uoversiktlig kurve er forbikjøring forbudt. Vent til du ser at veien er fri langt nok framover.",
     "ru": "Обгон запрещён в плохо просматриваемом повороте и непосредственно перед ним. Дождитесь участка, где видно, что дорога свободна.",
@@ -39,7 +41,8 @@
     "a": [
       "Nei, du må ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet",
       "Ja, når du ikke ser noen gående ved gangfeltet",
-      "Du kan kjøre sakte forbi og være klar til å stanse for gående i gangfeltet"
+      "Du kan kjøre sakte forbi og være klar til å stanse for gående i gangfeltet",
+      "Ja, hvis du kjører forbi på høyre side, der du ser fortauet bedre"
     ],
     "f": "Når du nærmer deg et gangfelt, må du ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet. Bilen du vil kjøre forbi, kan skjule en gående.",
     "ru": "Подъезжая к пешеходному переходу, нельзя обгонять транспорт, который закрывает обзор перехода: обгоняемая машина может закрывать пешехода.",
@@ -54,7 +57,8 @@
     "a": [
       "Stanse, fordi det kan være en gående i gangfeltet som du ikke ser",
       "Kjøre forsiktig forbi, fordi ditt eget felt er ledig",
-      "Kjøre videre, fordi det er bilen i det andre feltet som må stanse"
+      "Kjøre videre, fordi det er bilen i det andre feltet som må stanse",
+      "Tute, så den gående vet at du kommer, og kjøre sakte forbi bilen som har stanset"
     ],
     "f": "Du må ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet. Når et kjøretøy har stanset foran et gangfelt, er det ofte for å slippe en gående over. Den gående kan være skjult, så du må stanse.",
     "ru": "Нельзя проезжать мимо транспорта, который закрывает обзор перехода. Если соседняя машина остановилась перед переходом, скорее всего, она пропускает пешехода, которого вам может быть не видно. Нужно остановиться.",
@@ -69,11 +73,12 @@
     "a": [
       "Nei, forbikjøring er forbudt like før og i et slikt kryss",
       "Det er lov når du ser at ingen biler kommer inn i krysset",
-      "Ja, hvis bilen foran ikke skal svinge i krysset"
+      "Ja, hvis bilen foran ikke skal svinge i krysset",
+      "Ja, hvis du er ferdig med forbikjøringen før du kommer inn i krysset"
     ],
-    "f": "Forbikjøring er som hovedregel forbudt like før og i veikryss. I et kryss med høyreregel kan det komme trafikk fra høyre som du må vike for.",
-    "ru": "Обгон, как правило, запрещён непосредственно перед перекрёстком и на нём. На перекрёстке с правилом правой руки справа может появиться транспорт, которому вы обязаны уступить.",
-    "uk": "Обгін, як правило, заборонено безпосередньо перед перехрестям і на ньому. На перехресті з правилом правої руки справа може з'явитися транспорт, якому ви зобов'язані поступитися дорогою.",
+    "f": "Forbikjøring er som hovedregel forbudt like før og i veikryss. I et kryss med høyreregel kan det komme trafikk fra høyre som du må vike for. Det er altså ikke nok å være ferdig før selve krysset.",
+    "ru": "Обгон, как правило, запрещён непосредственно перед перекрёстком и на нём. На перекрёстке с правилом правой руки справа может появиться транспорт, которому вы обязаны уступить. То есть недостаточно закончить обгон до самого перекрёстка.",
+    "uk": "Обгін, як правило, заборонено безпосередньо перед перехрестям і на ньому. На перехресті з правилом правої руки справа може з'явитися транспорт, якому ви зобов'язані поступитися дорогою. Тобто недостатньо завершити обгін до самого перехрестя.",
     "theory": "forbikjoring/her-er-forbikjoring-forbudt"
   },
   {
@@ -86,7 +91,8 @@
     "a": [
       "Vente med å kjøre forbi til du er over sporet, og følge godt med på om det kommer tog",
       "Kjøre forbi før overgangen, så du ikke blir stående bak bilen når du er på sporet",
-      "Kjøre forbi som vanlig, fordi du bare må vente ved en jernbaneovergang med bom"
+      "Kjøre forbi som vanlig, fordi du bare må vente ved en jernbaneovergang med bom",
+      "Legge deg tett bak bilen og følge den over sporet, fordi føreren foran ser om det kommer tog"
     ],
     "f": "Ved en jernbaneovergang må du følge med på om det kommer tog. Vent med å kjøre forbi til du er over sporet, så du har full oversikt og kan stanse for tog.",
     "ru": "У железнодорожного переезда нужно следить, не идёт ли поезд. Подождите с обгоном, пока не проедете пути: так вы хорошо видите ситуацию и можете остановиться перед поездом.",
@@ -117,7 +123,8 @@
     "a": [
       "Holde til høyre og ikke øke farten",
       "Øke farten, så forbikjøringen går fortere",
-      "Bremse kraftig, så den kommer raskt forbi"
+      "Bremse kraftig, så den kommer raskt forbi",
+      "Legge deg nær midtlinjen, så du viser at du har sett bilen"
     ],
     "f": "Den som blir forbikjørt, skal holde til høyre og ikke øke farten. Senk gjerne farten litt hvis det trengs for at forbikjøringen skal gå trygt.",
     "ru": "Тот, кого обгоняют, должен держаться правее и не увеличивать скорость. При необходимости можно немного сбросить скорость, чтобы обгон прошёл безопасно.",
@@ -132,7 +139,8 @@
     "a": [
       "Vente bak syklisten til du kan kjøre forbi med god sideavstand",
       "Kjøre forbi tett inntil syklisten, så du ikke kommer over i det møtende feltet",
-      "Tute, så syklisten flytter seg ut på veiskulderen"
+      "Tute, så syklisten flytter seg ut på veiskulderen",
+      "Kjøre forbi med en gang, fordi den møtende må senke farten og vike for deg"
     ],
     "f": "Syklister kan vingle og trenger god plass. Vent heller litt til du kan kjøre forbi med god avstand.",
     "ru": "Велосипедист может вилять и нуждается в запасе места. Лучше подождите, пока сможете обогнать с большим боковым интервалом.",
@@ -149,11 +157,12 @@
     "a": [
       "Nei, du må ikke krysse eller kjøre på sperrelinjen",
       "Ja, når kjøretøyet foran kjører under 30 km/t",
-      "Ja, hvis det ikke kommer møtende trafikk"
+      "Ja, hvis det ikke kommer møtende trafikk",
+      "Ja, når traktoren blinker til høyre og slipper deg forbi"
     ],
-    "f": "Sperrelinje må ikke krysses eller kjøres på. Vent til sperrelinjen slutter.",
-    "ru": "Сплошную линию (sperrelinje) нельзя пересекать и наезжать на неё. Дождитесь, пока она закончится.",
-    "uk": "Суцільну лінію (sperrelinje) не можна перетинати й наїжджати на неї. Дочекайтеся, доки вона закінчиться.",
+    "f": "Sperrelinje må ikke krysses eller kjøres på. Vent til sperrelinjen slutter. Et blinklys fra traktoren endrer ikke dette.",
+    "ru": "Сплошную линию (sperrelinje) нельзя пересекать и наезжать на неё. Дождитесь, пока она закончится. Поворотник трактора этого не меняет.",
+    "uk": "Суцільну лінію (sperrelinje) не можна перетинати й наїжджати на неї. Дочекайтеся, доки вона закінчиться. Покажчик повороту трактора цього не змінює.",
     "theory": "forbikjoring/her-er-forbikjoring-forbudt"
   },
   {
@@ -164,7 +173,8 @@
     "a": [
       "At du har god sikt og nok plass, og at ingen bak deg har begynt å kjøre forbi deg",
       "At bilen foran kjører saktere enn fartsgrensen, så forbikjøringen blir lovlig",
-      "At du har blinket i minst fem sekunder, så alle har sett deg"
+      "At du har blinket i minst fem sekunder, så alle har sett deg",
+      "At veien er fri til du er på høyde med bilen, og at du har blinket i god tid før du kjører ut"
     ],
     "f": "Før forbikjøring må du være sikker på at veien er fri langt nok framover, at det er plass til å kjøre inn igjen, og at ingen bak deg allerede kjører forbi.",
     "ru": "Перед обгоном убедитесь, что встречная полоса свободна на достаточном расстоянии, есть место, чтобы вернуться в свою полосу, и что вас самих сзади никто уже не обгоняет.",
@@ -179,7 +189,8 @@
     "a": [
       "Så du har tid til å reagere, og så andre som kjører forbi, får plass til å kjøre inn igjen",
       "Det er bare nødvendig når du selv skal kjøre forbi bilene foran deg",
-      "Det er nødvendig når det er mørkt eller glatt, ellers kan du godt ligge tett bak bilen"
+      "Det er nødvendig når det er mørkt eller glatt, ellers kan du godt ligge tett bak bilen",
+      "Så bilene bak deg ikke får plass til å kjøre forbi, og kolonnen holder seg samlet"
     ],
     "f": "God avstand gir deg tid til å reagere. Den gir også plass til biler som kjører forbi kolonnen og må inn igjen.",
     "ru": "Достаточная дистанция даёт время на реакцию и оставляет место обгоняющим машинам, которым нужно вернуться в свою полосу.",
@@ -193,12 +204,13 @@
     "img": null,
     "a": [
       "Forbikjøringen tar lang tid og lang strekning, så du trenger mye fri vei framover",
-      "Vogntoget har plikt til å bremse for deg",
-      "Du bør ligge tett bak vogntoget før du kjører ut, så forbikjøringen går fortere"
+      "Vogntoget må slippe deg inn igjen, så du trenger ikke tenke på plassen foran det",
+      "Du bør ligge tett bak vogntoget før du kjører ut, så forbikjøringen går fortere",
+      "Du kan kjøre over fartsgrensen mens du kjører forbi"
     ],
-    "f": "Et langt vogntog tar lang tid å kjøre forbi. Hold god avstand før du kjører ut, så du ser framover, og kjør bare forbi når du har god sikt.",
-    "ru": "Длинную фуру обгонять долго. Держитесь на расстоянии, чтобы видеть дорогу впереди, и обгоняйте только при хорошей видимости и свободной встречной полосе.",
-    "uk": "Довгий автопоїзд обганяти довго. Тримайтеся на відстані, щоб бачити дорогу попереду, і обганяйте лише за хорошої видимості та вільної зустрічної смуги.",
+    "f": "Et langt vogntog tar lang tid å kjøre forbi. Hold god avstand før du kjører ut, så du ser framover, og kjør bare forbi når du har god sikt. Fartsgrensen gjelder også mens du kjører forbi.",
+    "ru": "Длинную фуру обгонять долго. Держитесь на расстоянии, чтобы видеть дорогу впереди, и обгоняйте только при хорошей видимости и свободной встречной полосе. Ограничение скорости действует и во время обгона.",
+    "uk": "Довгий автопоїзд обганяти довго. Тримайтеся на відстані, щоб бачити дорогу попереду, і обганяйте лише за хорошої видимості та вільної зустрічної смуги. Обмеження швидкості діє й під час обгону.",
     "theory": "forbikjoring/for-du-kjorer-forbi"
   },
   {
@@ -210,8 +222,9 @@
     },
     "a": [
       "Kjøre inn på møteplassen og slippe den møtende forbi",
-      "Fortsette, den møtende må rygge",
-      "Vente der du er til den møtende har kjørt inn på en møteplass"
+      "Fortsette, fordi den møtende må rygge til nærmeste møteplass",
+      "Vente der du er til den møtende har kjørt inn på en møteplass",
+      "Fortsette, fordi møteplasser er for tunge kjøretøy som trenger mer plass"
     ],
     "f": "Møteplasser er laget for at biler skal kunne passere hverandre på smal vei. Den som er nærmest møteplassen, bør bruke den.",
     "ru": "Разъездные карманы (møteplass) сделаны для разъезда на узкой дороге. Воспользоваться им следует тому, кто к нему ближе.",
@@ -228,7 +241,8 @@
     "a": [
       "Du har vikeplikt for møtende trafikk",
       "Møtende trafikk har vikeplikt for deg",
-      "Forbikjøring er forbudt"
+      "Forbikjøring er forbudt",
+      "Den som kommer først til broen, kan kjøre over"
     ],
     "f": "Skiltet betyr møteplikt: du skal vike for møtende kjøretøy på den smale strekningen.",
     "ru": "Знак «Møteplikt»: на узком участке вы обязаны уступить встречному транспорту.",
@@ -243,7 +257,8 @@
     "a": [
       "Du, fordi hindringen er på din side av veien",
       "Den møtende, fordi du kom først til hindringen",
-      "Den møtende, fordi den ser hindringen og kan bremse i god tid"
+      "Den møtende, fordi den ser hindringen og kan bremse i god tid",
+      "Ingen av dere, begge skal kjøre sakte forbi hindringen samtidig"
     ],
     "f": "Har du en hindring i ditt eget kjørefelt, må du vike for møtende trafikk før du kjører ut forbi hindringen.",
     "ru": "Если препятствие находится в вашей полосе, вы уступаете встречным, прежде чем объехать его.",
@@ -258,11 +273,176 @@
     "a": [
       "Vike for lastebilen, fordi det er vanskelig for den å starte igjen i bakken",
       "Fortsette, fordi den som kjører nedover, har forkjørsrett i en bratt bakke",
-      "Stanse og blinke med lysene til lastebilen viker"
+      "Stanse og blinke med lysene til lastebilen viker",
+      "Vente på at lastebilen rygger ned til et bredere sted"
     ],
     "f": "Et tungt kjøretøy i oppoverbakke kan ha vanskelig for å komme i gang igjen. Den som kjører nedover, bør derfor vike når det er mulig.",
     "ru": "Тяжёлой машине трудно снова тронуться в гору. Поэтому тому, кто едет вниз, следует уступить, если это возможно.",
     "uk": "Важкій машині складно знову рушити на підйомі. Тож тому, хто їде вниз, слід поступитися дорогою, якщо це можливо.",
     "theory": "forbikjoring/moting-pa-smal-vei"
+  },
+  {
+    "id": "fob-19",
+    "cat": "forbikjoring",
+    "q": "Når er det lov å kjøre forbi bilen foran like før et veikryss?",
+    "img": null,
+    "a": [
+      "Når trafikken i krysset er regulert med trafikklys eller politi",
+      "Når krysset er oversiktlig, og du ser at ingen kommer fra høyre eller venstre",
+      "Når bilen foran blinker til høyre og skal svinge til høyre i krysset",
+      "Når fartsgrensen er 50 km/t eller lavere, og veien er bred nok"
+    ],
+    "f": "Like før og i veikryss er forbikjøring forbudt, med fire unntak: to eller flere felt i din retning, forbikjøring på høyre side av en bil som skal svinge til venstre, kryss regulert med trafikklys eller politi, og kryss der trafikken på kryssende vei har vikeplikt etter skilt. God oversikt er ikke et unntak.",
+    "ru": "Непосредственно перед перекрёстком и на нём обгон запрещён, кроме четырёх случаев: в вашем направлении две или более полосы; обгон справа машины, которая поворачивает налево; перекрёсток регулируется светофором или полицией; транспорт на пересекаемой дороге уступает по знаку. Хороший обзор исключением не является.",
+    "uk": "Безпосередньо перед перехрестям і на ньому обгін заборонено, крім чотирьох випадків: у вашому напрямку дві чи більше смуги; обгін праворуч машини, яка повертає ліворуч; перехрестя регулюється світлофором або поліцією; транспорт на дорозі, що перетинається, поступається за знаком. Добрий огляд винятком не є.",
+    "theory": "forbikjoring/her-er-forbikjoring-forbudt"
+  },
+  {
+    "id": "fob-20",
+    "cat": "forbikjoring",
+    "q": "Du kjører på en vei med dette skiltet og nærmer deg et kryss. Sideveien har vikepliktskilt. Kan du kjøre forbi bilen foran like før krysset?",
+    "img": {
+      "sign": "forkjorsveg"
+    },
+    "a": [
+      "Ja, forbudet gjelder ikke her, men forbikjøringen må være trygg",
+      "Nei, forbikjøring er forbudt like før alle veikryss som ikke har trafikklys",
+      "Nei, unntaket gjelder i kryss med trafikklys eller politi, ikke i kryss med skilt",
+      "Ja, men da må bilen foran først ha gitt tegn om at du kan kjøre forbi"
+    ],
+    "f": "Forbudet like før og i veikryss gjelder ikke når trafikken på kryssende vei har vikeplikt etter skilt, for eksempel når du kjører på forkjørsvei. Du må likevel forsikre deg om at veien er fri langt nok framover.",
+    "ru": "Запрет непосредственно перед перекрёстком и на нём не действует, если транспорт на пересекаемой дороге уступает по знаку — например, когда вы едете по главной дороге. Но всё равно убедитесь, что дорога свободна на достаточном расстоянии.",
+    "uk": "Заборона безпосередньо перед перехрестям і на ньому не діє, якщо транспорт на дорозі, що перетинається, поступається за знаком — наприклад, коли ви їдете головною дорогою. Але однаково переконайтеся, що дорога вільна на достатній відстані.",
+    "theory": "forbikjoring/her-er-forbikjoring-forbudt"
+  },
+  {
+    "id": "fob-21",
+    "cat": "forbikjoring",
+    "q": "Du nærmer deg et kryss der høyreregelen gjelder. En syklist sykler til høyre i kjørefeltet foran deg. Kan du kjøre forbi syklisten like før krysset?",
+    "img": null,
+    "a": [
+      "Ja, forbudet gjelder ikke tohjulskjøretøy som er plassert til høyre i feltet",
+      "Nei, forbudet like før veikryss gjelder all forbikjøring, også forbikjøring av syklister",
+      "Ja, og da trenger du ikke å vike for biler som kommer fra høyre inn i krysset",
+      "Ja, men du må først gi lydsignal, så syklisten vet at du kommer forbi"
+    ],
+    "f": "Forbudet like før og i veikryss gjelder ikke forbikjøring av tohjulskjøretøy som er plassert til høyre i kjørefeltet. Det samme gjelder ved bakketopp og kurve. Du må likevel gi syklisten god sideavstand og vike for trafikk fra høyre.",
+    "ru": "Запрет перед перекрёстком и на нём не распространяется на обгон двухколёсного транспорта, который едет у правого края полосы. То же касается вершины подъёма и поворота. Но всё равно оставляйте велосипедисту большой боковой интервал и уступайте тем, кто едет справа.",
+    "uk": "Заборона перед перехрестям і на ньому не поширюється на обгін двоколісного транспорту, який їде біля правого краю смуги. Те саме стосується вершини підйому й повороту. Але однаково залишайте велосипедисту великий бічний інтервал і поступайтеся дорогою тим, хто їде справа.",
+    "theory": "forbikjoring/her-er-forbikjoring-forbudt"
+  },
+  {
+    "id": "fob-22",
+    "cat": "forbikjoring",
+    "q": "Hva er riktig om forbikjøring av trikk?",
+    "img": null,
+    "a": [
+      "Du kan kjøre forbi på høyre side, både når trikken kjører, og når den står stille",
+      "Du kan kjøre forbi på høyre side når trikken står stille, men ikke når den kjører",
+      "Du kan kjøre forbi på høyre side ved holdeplass uten trafikkøy, uten å stanse for passasjerene",
+      "Du må vente bak trikken, fordi det er forbudt å kjøre forbi et kjøretøy på skinner"
+    ],
+    "f": "Hovedregelen er forbikjøring på venstre side, men en trikk kan du også kjøre forbi på høyre side, enten den kjører eller står stille. Ved holdeplass uten trafikkøy må du stanse og gi fri vei for passasjerer som går av eller på.",
+    "ru": "Обычно обгоняют слева, но трамвай можно обогнать и справа — и на ходу, и когда он стоит. У остановки без островка безопасности остановитесь и пропустите пассажиров, которые выходят или заходят.",
+    "uk": "Зазвичай обганяють ліворуч, але трамвай можна обігнати й праворуч — і на ходу, і коли він стоїть. Біля зупинки без острівця безпеки зупиніться й пропустіть пасажирів, які виходять або заходять.",
+    "theory": "forbikjoring/forbi-pa-hoyre-side"
+  },
+  {
+    "id": "fob-23",
+    "cat": "forbikjoring",
+    "q": "Du nærmer deg et gangfelt. En varebil foran deg skjuler en del av det. Den delen du ser, er tom. Kan du kjøre forbi varebilen?",
+    "img": null,
+    "a": [
+      "Nei, det er forbudt når et kjøretøy hindrer noen del av sikten til gangfeltet",
+      "Ja, når du ser at det ikke er noen gående på den delen av gangfeltet du kan se",
+      "Ja, hvis du senker farten og er klar til å stanse foran gangfeltet",
+      "Nei, forbikjøring er forbudt foran alle gangfelt, også når sikten er helt fri"
+    ],
+    "f": "Når du nærmer deg et gangfelt, må du ikke kjøre forbi et kjøretøy som hindrer noen del av sikten til gangfeltet. Det er altså nok at en del av gangfeltet er skjult. Hindrer ikke kjøretøyet sikten, gjelder ikke dette forbudet.",
+    "ru": "Подъезжая к пешеходному переходу, нельзя обгонять транспорт, который закрывает хотя бы часть обзора перехода. То есть достаточно, что скрыта только часть перехода. Если транспорт обзор не закрывает, этот запрет не действует.",
+    "uk": "Наближаючись до пішохідного переходу, не можна обганяти транспортний засіб, який закриває хоча б частину огляду переходу. Тобто достатньо, що прихована лише частина переходу. Якщо транспортний засіб огляду не закриває, ця заборона не діє.",
+    "theory": "forbikjoring/her-er-forbikjoring-forbudt"
+  },
+  {
+    "id": "fob-24",
+    "cat": "forbikjoring",
+    "q": "Du nærmer deg en planovergang med bommer. Hva er riktig?",
+    "img": {
+      "sign": "fare_jernbane_bom"
+    },
+    "a": [
+      "Du skal følge med på om det kommer tog, selv om overgangen har bommer og lys",
+      "Hvitt blinkende lys betyr at det kommer tog, så du må stanse foran overgangen",
+      "Rødt blinkende lys betyr at du kan kjøre over, hvis bommene ennå ikke er nede",
+      "Når toget har passert, kan du kjøre over, selv om det fortsatt blinker rødt"
+    ],
+    "f": "Du skal følge med på om det kommer tog, også der overgangen er sikret, og holde en fart som gjør at du kan stanse. Hvitt blink betyr at du kan kjøre over. Rødt blink betyr at bommene er på vei ned: Vent til det slutter å blinke, for det kan komme et tog til.",
+    "ru": "Следите, не идёт ли поезд, даже если переезд оборудован, и держите такую скорость, чтобы успеть остановиться. Белый мигающий сигнал означает, что можно проезжать. Красный мигающий означает, что шлагбаумы опускаются: дождитесь, пока он перестанет мигать, потому что может идти ещё один поезд.",
+    "uk": "Стежте, чи не їде поїзд, навіть якщо переїзд обладнаний, і тримайте таку швидкість, щоб устигнути зупинитися. Білий миготливий сигнал означає, що можна проїжджати. Червоний миготливий означає, що шлагбауми опускаються: дочекайтеся, доки він перестане блимати, бо може їхати ще один поїзд.",
+    "theory": "forbikjoring/planovergang"
+  },
+  {
+    "id": "fob-25",
+    "cat": "forbikjoring",
+    "q": "Bommene går ned mens bilen din står på planovergangen. Foran deg er veien fri. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Kjører videre gjennom bommen, som er laget for å knekke lett",
+      "Stanser og venter i bilen til toget har passert og bommene går opp igjen",
+      "Rygger tilbake over sporet, så du ikke ødelegger bommen foran deg",
+      "Slår på nødsignalet og ringer 112 før du flytter bilen fra sporet"
+    ],
+    "f": "Ifølge Bane NOR skal du kjøre gjennom bommene: De er laget for å knekke lett, og det er bedre enn å bli truffet av toget. Stanser bilen på sporet, skal alle ut av den med en gang og i sikkerhet. Kjør ikke ut på overgangen før du har plass til å kjøre helt over uten å stanse.",
+    "ru": "По словам Bane NOR, нужно ехать сквозь шлагбаумы: они сделаны так, чтобы легко ломаться, и это лучше, чем попасть под поезд. Если машина заглохла на путях, всем нужно немедленно выйти и уйти в безопасное место. Не выезжайте на переезд, пока нет места, чтобы проехать его без остановки.",
+    "uk": "За словами Bane NOR, треба їхати крізь шлагбауми: вони зроблені так, щоб легко ламатися, і це краще, ніж потрапити під поїзд. Якщо машина заглохла на коліях, усім треба негайно вийти й відійти в безпечне місце. Не виїжджайте на переїзд, доки немає місця, щоб проїхати його без зупинки.",
+    "theory": "forbikjoring/planovergang"
+  },
+  {
+    "id": "fob-26",
+    "cat": "forbikjoring",
+    "q": "Lastebilen foran deg blinker til høyre, og du tror sjåføren vil vise at du kan kjøre forbi. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du må selv forsikre deg om at forbikjøringen er trygg, fordi blinklyset ikke gir noen garanti",
+      "Blinklyset er et fast tegn i trafikkreglene, og det betyr at veien er fri langt nok framover",
+      "Sjåføren har ansvaret hvis det kommer møtende trafikk, fordi tegnet kom fra lastebilen",
+      "Du kan kjøre forbi også før en kurve eller bakketopp, fordi sjåføren sitter høyt og ser lenger"
+    ],
+    "f": "Før forbikjøring skal du selv forsikre deg om at veien er fri langt nok framover. Trafikkreglene har ikke noe eget tegn for at du kan kjøre forbi, og høyre blinklys kan også bety at lastebilen skal svinge eller stanse. Trygg Trafikk minner om at det er den som kjører forbi, som har ansvaret. Det samme gjelder når en traktor blinker.",
+    "ru": "Перед обгоном вы сами должны убедиться, что дорога свободна на достаточном расстоянии. В правилах нет особого сигнала «можно обгонять», а правый поворотник может означать и то, что грузовик поворачивает или останавливается. Trygg Trafikk напоминает, что отвечает тот, кто обгоняет. То же самое, когда сигналит трактор.",
+    "uk": "Перед обгоном ви самі маєте переконатися, що дорога вільна на достатній відстані. У правилах немає окремого сигналу «можна обганяти», а правий покажчик повороту може означати і те, що вантажівка повертає або зупиняється. Trygg Trafikk нагадує, що відповідає той, хто обганяє. Те саме, коли сигналить трактор.",
+    "theory": "forbikjoring/for-du-kjorer-forbi"
+  },
+  {
+    "id": "fob-27",
+    "cat": "forbikjoring",
+    "q": "Du har kjørt ut for å kjøre forbi en lastebil, men er ennå ikke på høyde med den. Da kommer det en møtende bil, og du rekker ikke å fullføre. Hva gjør du?",
+    "img": null,
+    "a": [
+      "Avbryter forbikjøringen og kjører inn igjen bak lastebilen",
+      "Gir full gass, fordi en forbikjøring du har begynt på, må fullføres",
+      "Blinker med lysene, så den møtende bilen bremser og gir deg plass",
+      "Legger deg tett inntil lastebilen og fortsetter, så den møtende bilen får plass til å passere"
+    ],
+    "f": "Før du er på høyde med kjøretøyet du vil forbi, må du regne med å avbryte hvis det kommer møtende trafikk og du ikke rekker å fullføre. Du skal kunne komme inn i trafikkstrømmen igjen uten å forstyrre den.",
+    "ru": "Пока вы не поравнялись с транспортом, который обгоняете, будьте готовы прервать обгон, если появится встречный и вы не успеете закончить манёвр. Вы должны иметь возможность вернуться в поток, никому не мешая.",
+    "uk": "Доки ви не порівнялися з транспортним засобом, який обганяєте, будьте готові перервати обгін, якщо з'явиться зустрічний і ви не встигнете завершити маневр. Ви маєте бути здатні повернутися в потік, нікому не заважаючи.",
+    "theory": "forbikjoring/for-du-kjorer-forbi"
+  },
+  {
+    "id": "fob-28",
+    "cat": "forbikjoring",
+    "q": "Du skal kjøre forbi en rytter på hest. Hvilken fart og sideavstand er anbefalt?",
+    "img": null,
+    "a": [
+      "Høyst 25 km/t og minst 2 meter sideavstand",
+      "Høyst 25 km/t og minst 1 meter sideavstand",
+      "Høyst 40 km/t og minst 2 meter sideavstand",
+      "Høyst 50 km/t og minst 1 meter sideavstand"
+    ],
+    "f": "Hesten er et fluktdyr og kan reagere brått, så tenk som om det var en elg. Anbefalingen er høyst 25 km/t og minst 2 meter sideavstand. Ikke bruk tuten, stans hvis rytteren gir tegn til det, og øk farten rolig først når du har passert.",
+    "ru": "Лошадь — животное, склонное к бегству, она может среагировать внезапно, поэтому ведите себя как с лосем. Рекомендация — не быстрее 25 км/ч и боковой интервал не меньше 2 м. Не сигнальте, остановитесь, если всадник подаёт знак, и плавно набирайте скорость только после проезда.",
+    "uk": "Кінь — тварина, схильна до втечі, він може зреагувати раптово, тож поводьтеся як із лосем. Рекомендація — не швидше ніж 25 км/год і бічний інтервал щонайменше 2 м. Не сигнальте, зупиніться, якщо вершник подає знак, і плавно набирайте швидкість лише після проїзду.",
+    "theory": "forbikjoring/hest-pa-veien"
   }
 ]

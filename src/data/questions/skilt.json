@@ -30,9 +30,9 @@
       "Senker farten til gangfart og kjører videre",
       "Stanser når det kommer trafikk fra høyre"
     ],
-    "f": "Ved stoppskilt skal du alltid stanse helt, ved stopplinjen eller der du får god oversikt. Deretter skal du vike for trafikken på veien.",
-    "ru": "У знака STOP нужно всегда полностью остановиться (у стоп-линии или там, где хороший обзор), даже если дорога свободна, а затем уступить дорогу.",
-    "uk": "Біля знака STOP потрібно завжди повністю зупинитися (біля стоп-лінії або там, де добрий огляд), навіть якщо дорога вільна, а потім дати дорогу.",
+    "f": "Ved stoppskilt skal du alltid stanse helt, foran og inntil stopplinjen. Mangler stopplinjen, stanser du så nær den kryssende veien som mulig. Deretter skal du vike for trafikken på veien.",
+    "ru": "У знака STOP нужно всегда полностью остановиться — перед стоп-линией, вплотную к ней. Если стоп-линии нет, остановитесь как можно ближе к пересекаемой дороге. Затем уступите дорогу.",
+    "uk": "Біля знака STOP потрібно завжди повністю зупинитися — перед стоп-лінією, впритул до неї. Якщо стоп-лінії немає, зупиніться якомога ближче до дороги, яку перетинаєте. Потім дайте дорогу.",
     "theory": "skilt/vikeplikt-og-forkjorsskilt"
   },
   {
@@ -45,7 +45,7 @@
     "a": [
       "Du kjører på forkjørsvei, og trafikk fra sideveiene har vikeplikt for deg",
       "Du har vikeplikt for trafikken på veien du kommer inn på",
-      "Forkjørsveien slutter, og de vanlige vikepliktsreglene gjelder igjen",
+      "Forkjørsveien slutter her, og de vanlige vikepliktsreglene gjelder igjen fra nå",
       "Høyreregelen gjelder i alle kryss fram til neste skilt"
     ],
     "f": "Skiltet Forkjørsvei betyr at kjørende fra sideveier og avkjørsler har vikeplikt for deg. Det gjelder fram til skiltet Slutt på forkjørsvei.",
@@ -80,7 +80,7 @@
     },
     "a": [
       "Forkjørsveien slutter, og du må følge de vanlige vikepliktsreglene videre",
-      "Du kjører inn på forkjørsvei, og trafikk fra sideveiene må vike for deg",
+      "Du kjører inn på forkjørsvei, og trafikk fra sideveiene må vike for deg fra nå av",
       "Du har forkjørsrett i alle kryss fram til neste skilt",
       "Veien slutter, og det er ikke mulig å kjøre videre"
     ],
@@ -116,7 +116,7 @@
     },
     "a": [
       "Møtende kjørende har vikeplikt for deg på den smale strekningen",
-      "Du har vikeplikt for møtende trafikk på den smale strekningen",
+      "Du har vikeplikt for møtende trafikk på hele den smale strekningen",
       "Veien er envegskjørt",
       "Du kjører på forkjørsvei og har forkjørsrett i neste kryss"
     ],
@@ -187,18 +187,20 @@
       "signs": [
         "forbudt_venstresving",
         "forbudt_hoyresving",
-        "forbudt_uvending"
+        "forbudt_uvending",
+        "forbikjoring_forbudt"
       ]
     },
     "byNumber": true,
     "a": [
-      "Skilt 1 (til venstre)",
-      "Skilt 2 (i midten)",
-      "Skilt 3 (til høyre)"
+      "Skilt 1",
+      "Skilt 2",
+      "Skilt 3",
+      "Skilt 4"
     ],
-    "f": "Skilt 1 forbyr venstresving, skilt 2 forbyr høyresving, og skilt 3 forbyr u-sving.",
-    "ru": "Знак 1 запрещает поворот налево, знак 2 — поворот направо, знак 3 — разворот.",
-    "uk": "Знак 1 забороняє поворот ліворуч, знак 2 — поворот праворуч, знак 3 — розворот.",
+    "f": "Skilt 1 forbyr venstresving, skilt 2 forbyr høyresving, og skilt 3 forbyr u-sving. Skilt 4 forbyr forbikjøring.",
+    "ru": "Знак 1 запрещает поворот налево, знак 2 — поворот направо, знак 3 — разворот. Знак 4 запрещает обгон.",
+    "uk": "Знак 1 забороняє поворот ліворуч, знак 2 — поворот праворуч, знак 3 — розворот. Знак 4 забороняє обгін.",
     "theory": "skilt/forbudsskilt"
   },
   {
@@ -209,18 +211,20 @@
       "signs": [
         "forbudt_venstresving",
         "forbudt_hoyresving",
-        "forbudt_uvending"
+        "forbudt_uvending",
+        "innkjoring_forbudt"
       ]
     },
     "byNumber": true,
     "a": [
-      "Skilt 3 (til høyre)",
-      "Skilt 1 (til venstre)",
-      "Skilt 2 (i midten)"
+      "Skilt 3",
+      "Skilt 1",
+      "Skilt 2",
+      "Skilt 4"
     ],
-    "f": "Skilt 3, med en pil som går rundt og tilbake, forbyr u-sving. Skilt 1 og 2 forbyr venstresving og høyresving.",
-    "ru": "Знак 3 — со стрелкой, которая загибается назад, — запрещает разворот. Знаки 1 и 2 запрещают поворот налево и направо.",
-    "uk": "Знак 3 — зі стрілкою, що загинається назад, — забороняє розворот. Знаки 1 і 2 забороняють поворот ліворуч і праворуч.",
+    "f": "Skilt 3, med en pil som går rundt og tilbake, forbyr u-sving. Skilt 1 og 2 forbyr venstresving og høyresving. Skilt 4 betyr innkjøring forbudt.",
+    "ru": "Знак 3 — со стрелкой, которая загибается назад, — запрещает разворот. Знаки 1 и 2 запрещают поворот налево и направо. Знак 4 — въезд запрещён.",
+    "uk": "Знак 3 — зі стрілкою, що загинається назад, — забороняє розворот. Знаки 1 і 2 забороняють поворот ліворуч і праворуч. Знак 4 — в'їзд заборонено.",
     "theory": "skilt/forbudsskilt"
   },
   {
@@ -267,18 +271,20 @@
       "signs": [
         "slutt_forbikjoring",
         "slutt_forkjorsveg",
-        "slutt_fart_80"
+        "slutt_fart_80",
+        "forbikjoring_forbudt"
       ]
     },
     "byNumber": true,
     "a": [
-      "Skilt 1 (til venstre)",
-      "Skilt 2 (i midten)",
-      "Skilt 3 (til høyre)"
+      "Skilt 1",
+      "Skilt 2",
+      "Skilt 3",
+      "Skilt 4"
     ],
-    "f": "Skilt 1 betyr slutt på forbikjøringsforbud. Skilt 2 betyr slutt på forkjørsvei, og skilt 3 betyr slutt på særskilt fartsgrense.",
-    "ru": "Знак 1 — конец запрета обгона, знак 2 — конец главной дороги, знак 3 — конец особого ограничения скорости.",
-    "uk": "Знак 1 — кінець заборони обгону, знак 2 — кінець головної дороги, знак 3 — кінець особливого обмеження швидкості.",
+    "f": "Skilt 1 betyr slutt på forbikjøringsforbud. Skilt 2 betyr slutt på forkjørsvei, og skilt 3 betyr slutt på særskilt fartsgrense. Skilt 4 er selve forbudet mot forbikjøring.",
+    "ru": "Знак 1 — конец запрета обгона, знак 2 — конец главной дороги, знак 3 — конец особого ограничения скорости. Знак 4 — сам запрет обгона.",
+    "uk": "Знак 1 — кінець заборони обгону, знак 2 — кінець головної дороги, знак 3 — кінець особливого обмеження швидкості. Знак 4 — сама заборона обгону.",
     "theory": "skilt/forbudsskilt"
   },
   {
@@ -292,7 +298,7 @@
       "Til du passerer et nytt fartsgrenseskilt eller et skilt om slutt på fartsgrensen",
       "Fram til neste veikryss, når det ikke står et nytt skilt etter krysset",
       "I 1 kilometer, hvis ikke et underskilt viser en annen strekning",
-      "Til du kjører ut av tettbygd strøk, selv om det ikke kommer et nytt skilt"
+      "Til du kjører ut av tettbygd strøk, selv om det ikke kommer et nytt skilt om farten der"
     ],
     "f": "Et fartsgrenseskilt gjelder til du passerer et nytt fartsgrenseskilt, et skilt om slutt på særskilt fartsgrense, et skilt for fartsgrensesone eller et skilt for gatetun eller gågate.",
     "ru": "Ограничение скорости действует, пока вы не проедете новый знак ограничения, знак «Конец ограничения», знак зоны или знак жилой зоны (gatetun) либо пешеходной улицы (gågate).",
@@ -328,7 +334,7 @@
       "Du må tilpasse farten til forholdene, selv om skiltet tillater 90 km/t",
       "Du skal holde 90 km/t, så du ikke hindrer trafikken bak deg",
       "Du kan kjøre i 90 km/t hvis du har lyset på og holder god avstand",
-      "Du må senke farten når veien er glatt av is eller snø, ikke i regn"
+      "Du må senke farten når veien er glatt av is eller snø, men ikke når det regner"
     ],
     "f": "Fartsgrensen er den høyeste tillatte farten under gode forhold. Ved regn, mørke eller dårlig sikt skal du kjøre saktere.",
     "ru": "Ограничение — это максимум при хороших условиях. В дождь, в темноте или при плохой видимости нужно ехать медленнее.",
@@ -379,18 +385,20 @@
       "signs": [
         "fart_60",
         "fart_70",
-        "fart_80"
+        "fart_80",
+        "fart_50"
       ]
     },
     "byNumber": true,
     "a": [
-      "Skilt 3 (til høyre)",
-      "Skilt 1 (til venstre)",
-      "Skilt 2 (i midten)"
+      "Skilt 3",
+      "Skilt 1",
+      "Skilt 2",
+      "Skilt 4"
     ],
-    "f": "Den generelle fartsgrensen utenfor tettbygd strøk er 80 km/t – det viser skilt 3. I tettbygd strøk er den 50 km/t.",
-    "ru": "Общее ограничение вне населённых пунктов — 80 км/ч, это знак 3. В населённом пункте — 50 км/ч.",
-    "uk": "Загальне обмеження поза населеними пунктами — 80 км/год, це знак 3. У населеному пункті — 50 км/год.",
+    "f": "Den generelle fartsgrensen utenfor tettbygd strøk er 80 km/t – det viser skilt 3. I tettbygd strøk er den 50 km/t, som på skilt 4.",
+    "ru": "Общее ограничение вне населённых пунктов — 80 км/ч, это знак 3. В населённом пункте — 50 км/ч, как на знаке 4.",
+    "uk": "Загальне обмеження поза населеними пунктами — 80 км/год, це знак 3. У населеному пункті — 50 км/год, як на знаку 4.",
     "theory": "skilt/forbudsskilt"
   },
   {
@@ -403,7 +411,7 @@
     "a": [
       "Fartsgrensen er 30 km/t på alle veier i området, til du kjører ut av sonen",
       "Fartsgrensen er 30 km/t bare fram til neste veikryss",
-      "Anbefalt fart er 30 km/t i hele området, men det er ikke en fartsgrense",
+      "Anbefalt fart er 30 km/t på alle veier i området, men det er ikke en fartsgrense",
       "Du kan parkere i høyst 30 minutter i hele området"
     ],
     "f": "Fartsgrensesone betyr at fartsgrensen gjelder i hele området, også etter kryss, til du passerer skiltet om slutt på sonen.",
@@ -422,7 +430,7 @@
       "Ja, fartsgrensen gjelder hele døgnet hvis ikke et underskilt sier noe annet",
       "Nei, den gjelder om dagen, når skolen er åpen",
       "Om kvelden gjelder den generelle fartsgrensen på 50 km/t",
-      "Nei, når det ikke er barn ute, kan du kjøre etter forholdene på veien"
+      "Nei, når det ikke er barn ute, kan du kjøre etter forholdene på veien i stedet"
     ],
     "f": "Et fartsgrenseskilt gjelder hele døgnet. Bare et underskilt med tidspunkt kan begrense når det gjelder.",
     "ru": "Знак ограничения скорости действует круглосуточно. Только табличка с указанием времени может ограничить срок его действия.",
@@ -456,7 +464,7 @@
     },
     "a": [
       "Ja, kort stans for å slippe av eller på passasjerer er tillatt",
-      "Nei, skiltet betyr at det er forbudt å stanse i det hele tatt",
+      "Nei, skiltet betyr at det er forbudt å stanse i det hele tatt her",
       "Ja, men du må ha nødsignal på",
       "Nei, bare drosjer kan stanse her"
     ],
@@ -558,19 +566,19 @@
   {
     "id": "sk-31",
     "cat": "skilt",
-    "q": "Du kjører utenfor tettbygd strøk og ser dette skiltet uten underskilt. Hvor langt foran faren står skiltet vanligvis?",
+    "q": "Fartsgrensen er 80 km/t, og dette skiltet står uten underskilt. Omtrent hvor langt foran faren står skiltet?",
     "img": {
       "sign": "fare_sving_v"
     },
     "a": [
-      "150–250 meter",
-      "Rett ved faren",
-      "1–2 kilometer",
-      "20–30 meter"
+      "Omtrent 150–200 meter",
+      "Omtrent 50–100 meter",
+      "Omtrent 250–350 meter",
+      "Omtrent 400 meter"
     ],
-    "f": "Utenfor tettbygd strøk står fareskilt vanligvis 150–250 meter før faren. Er avstanden en annen, vises den ofte på et underskilt.",
-    "ru": "Вне населённых пунктов предупреждающие знаки обычно ставят за 150–250 м до опасности. Если расстояние другое, его часто указывают на табличке.",
-    "uk": "Поза населеними пунктами попереджувальні знаки зазвичай встановлюють за 150–250 м до небезпеки. Якщо відстань інша, її часто вказують на табличці.",
+    "f": "Hvor langt før faren fareskiltet står, avhenger av fartsgrensen. Den nyere vegnormalen sier 125–200 meter ved 70–80 km/t, mens eldre regler og mange lærebøker sier 150–250 meter ved 70 km/t eller mer. Står skiltet et annet sted, skal avstanden stå på et underskilt.",
+    "ru": "Расстояние от предупреждающего знака до опасности зависит от ограничения скорости. В новой дорожной норме при 70–80 км/ч указано 125–200 метров, а в старых правилах и многих учебниках при 70 км/ч и выше — 150–250 метров. Если знак стоит на другом расстоянии, оно должно быть указано на табличке.",
+    "uk": "Відстань від попереджувального знака до небезпеки залежить від обмеження швидкості. У новій дорожній нормі за 70–80 км/год указано 125–200 метрів, а в старих правилах і багатьох підручниках за 70 км/год і більше — 150–250 метрів. Якщо знак стоїть на іншій відстані, її має бути вказано на табличці.",
     "theory": "skilt/fareskilt"
   },
   {
@@ -653,18 +661,20 @@
       "signs": [
         "fare_motende",
         "fare_smalere",
-        "fare_ko"
+        "fare_ko",
+        "fare_rundkjoring"
       ]
     },
     "byNumber": true,
     "a": [
-      "Skilt 1 (til venstre)",
-      "Skilt 2 (i midten)",
-      "Skilt 3 (til høyre)"
+      "Skilt 1",
+      "Skilt 2",
+      "Skilt 3",
+      "Skilt 4"
     ],
-    "f": "Skilt 1 varsler om møtende trafikk. Skilt 2 varsler om at veien blir smalere, og skilt 3 varsler om kø.",
-    "ru": "Знак 1 — «Встречное движение», знак 2 — «Сужение дороги», знак 3 — «Затор».",
-    "uk": "Знак 1 — «Зустрічний рух», знак 2 — «Звуження дороги», знак 3 — «Затор».",
+    "f": "Skilt 1 varsler om møtende trafikk. Skilt 2 varsler om at veien blir smalere, og skilt 3 varsler om kø. Skilt 4 varsler om rundkjøring.",
+    "ru": "Знак 1 — «Встречное движение», знак 2 — «Сужение дороги», знак 3 — «Затор». Знак 4 — «Кольцевое движение».",
+    "uk": "Знак 1 — «Зустрічний рух», знак 2 — «Звуження дороги», знак 3 — «Затор». Знак 4 — «Круговий рух».",
     "theory": "skilt/fareskilt"
   },
   {
@@ -747,18 +757,20 @@
       "signs": [
         "fare_lyssignal",
         "fare_rundkjoring",
-        "fare_sykkel"
+        "fare_sykkel",
+        "fare_barn"
       ]
     },
     "byNumber": true,
     "a": [
-      "Skilt 3 (til høyre)",
-      "Skilt 1 (til venstre)",
-      "Skilt 2 (i midten)"
+      "Skilt 3",
+      "Skilt 1",
+      "Skilt 2",
+      "Skilt 4"
     ],
-    "f": "Skilt 3 varsler om syklende. Skilt 1 varsler om lyssignal, og skilt 2 om rundkjøring.",
-    "ru": "Знак 3 — «Велосипедисты», знак 1 — «Светофор», знак 2 — «Кольцевое движение».",
-    "uk": "Знак 3 — «Велосипедисти», знак 1 — «Світлофор», знак 2 — «Круговий рух».",
+    "f": "Skilt 3 varsler om syklende. Skilt 1 varsler om lyssignal, og skilt 2 om rundkjøring. Skilt 4 varsler om barn.",
+    "ru": "Знак 3 — «Велосипедисты», знак 1 — «Светофор», знак 2 — «Кольцевое движение». Знак 4 — «Дети».",
+    "uk": "Знак 3 — «Велосипедисти», знак 1 — «Світлофор», знак 2 — «Круговий рух». Знак 4 — «Діти».",
     "theory": "skilt/fareskilt"
   },
   {
@@ -920,7 +932,7 @@
     },
     "a": [
       "Du har vikeplikt for trafikken i rundkjøringen, og du skal kjøre rundt med øya på venstre side",
-      "Trafikken i rundkjøringen har vikeplikt for deg, og du kjører rundt med øya på venstre side",
+      "Trafikken i rundkjøringen har vikeplikt for deg, og du kjører rundt med øya på venstre side av bilen",
       "Du må stanse helt før du kjører inn, selv om rundkjøringen er tom",
       "Høyreregelen gjelder, så den som skal inn i rundkjøringen, kjører først"
     ],
@@ -1013,7 +1025,7 @@
     },
     "a": [
       "Motorveien slutter, og de særskilte reglene for motorvei gjelder ikke lenger",
-      "Motorveien begynner, og de særskilte reglene for motorvei gjelder fra nå",
+      "Motorveien begynner her, og de særskilte reglene for motorvei gjelder fra og med skiltet",
       "Du må kjøre av motorveien ved neste avkjøring",
       "Fartsgrensen blir 110 km/t"
     ],
@@ -1121,7 +1133,7 @@
     },
     "a": [
       "Gågate: kjøring med motorvogn er forbudt, unntatt det et underskilt tillater",
-      "Gatetun: du kan kjøre bil i gangfart og parkere på plasser som er merket",
+      "Gatetun: du kan kjøre bil i gangfart og parkere på de plassene som er merket for det",
       "Gangfelt: du har vikeplikt for gående som krysser gaten",
       "Gågate: du kan kjøre bil der i gangfart"
     ],
@@ -1140,7 +1152,7 @@
     "a": [
       "Møteplass: et bredere sted på en smal vei der kjøretøy kan møtes",
       "Parkeringsplass for turister",
-      "Møteplass: et sted ved veien der du kan parkere en kort stund",
+      "Møteplass: et sted ved veien der du kan parkere en kort stund hvis det er ledig plass",
       "Rasteplass med toalett"
     ],
     "f": "Møteplass viser et sted der veien er bredere, slik at kjøretøy kan møte hverandre. Du må ikke parkere på møteplassen.",
@@ -1183,5 +1195,206 @@
     "ru": "В тоннеле запрещено останавливаться, если только к этому не вынуждает движение или авария. Включите ближний свет и держите дистанцию.",
     "uk": "У тунелі заборонено зупинятися, якщо тільки до цього не змушує дорожній рух або аварія. Увімкніть ближнє світло й тримайте дистанцію.",
     "theory": "skilt/fareskilt"
+  },
+  {
+    "id": "sk-65",
+    "cat": "skilt",
+    "q": "Hva er riktig om fareskilt på motorvei?",
+    "img": null,
+    "a": [
+      "Det første skiltet står omtrent 400 meter før faren, med avstanden på et underskilt",
+      "Skiltet står 200–300 meter før faren, som på andre veier med høy fart, uten underskilt",
+      "Det første skiltet står omtrent 400 meter før faren, og det kommer ikke flere skilt etter det",
+      "Skiltet står 50–150 meter før faren, fordi du ser langt framover på motorvei"
+    ],
+    "f": "På motorvei er farten høy, så varselet må komme tidlig. Det første skiltet står omtrent 400 meter før faren og har alltid et underskilt med avstanden. Omtrent 200 meter senere kommer skiltet en gang til.",
+    "ru": "На автомагистрали скорость высокая, поэтому предупреждать нужно заранее. Первый знак стоит примерно за 400 метров до опасности, и на табличке под ним всегда указано расстояние. Примерно через 200 метров знак повторяется.",
+    "uk": "На автомагістралі швидкість висока, тому попереджати треба завчасно. Перший знак стоїть приблизно за 400 метрів до небезпеки, і на табличці під ним завжди вказано відстань. Приблизно через 200 метрів знак повторюється.",
+    "theory": "skilt/fareskilt"
+  },
+  {
+    "id": "sk-66",
+    "cat": "skilt",
+    "q": "Fartsgrensen er 80 km/t, og du ser dette skiltet. Hva er riktig?",
+    "img": {
+      "sign": "fare_sving_h",
+      "under": [
+        {
+          "text": "50 m"
+        }
+      ]
+    },
+    "a": [
+      "Svingen kommer om 50 meter, altså nærmere enn det som er vanlig ved denne farten",
+      "Svingen er 50 meter lang, og den begynner et godt stykke etter skiltet",
+      "Du bør kjøre gjennom svingen i høyst 50 km/t, selv om fartsgrensen er 80 km/t",
+      "Svingen begynner rett ved skiltet og slutter etter 50 meter, så du kan holde farten etterpå"
+    ],
+    "f": "Et underskilt med ett tall viser avstanden til faren. Ved 80 km/t står fareskilt vanligvis mye lenger før faren, så her får du et kort varsel. Derfor står avstanden på et underskilt, og du må senke farten med en gang.",
+    "ru": "Табличка с одним числом показывает расстояние до опасности. При 80 км/ч предупреждающие знаки обычно стоят намного дальше от опасности, так что здесь предупреждение короткое. Поэтому расстояние указано на табличке, и скорость нужно снижать сразу.",
+    "uk": "Табличка з одним числом показує відстань до небезпеки. За 80 км/год попереджувальні знаки зазвичай стоять набагато далі від небезпеки, тож тут попередження коротке. Тому відстань указано на табличці, і швидкість треба знижувати одразу.",
+    "theory": "skilt/fareskilt"
+  },
+  {
+    "id": "sk-67",
+    "cat": "skilt",
+    "q": "Hva betyr underskiltet under dette skiltet?",
+    "img": {
+      "sign": "fare_ujevn",
+      "under": [
+        {
+          "text": "100–600 m"
+        }
+      ]
+    },
+    "a": [
+      "Den ujevne veien begynner om 100 meter og er 500 meter lang",
+      "Den ujevne veien begynner om 600 meter og er 100 meter lang",
+      "Den ujevne veien begynner om 100 meter og er 600 meter lang",
+      "Det er 100–600 meter igjen til den ujevne veien, og skiltet sier ikke hvor lang den er"
+    ],
+    "f": "To tall er underskiltet Utstrekning: De viser avstanden fra skiltet til starten og slutten av strekningen. Her begynner den etter 100 meter og slutter etter 600 meter, så den er 500 meter lang. Underskiltet Avstand har ett tall, for eksempel 500 m, og viser hvor langt det er til faren.",
+    "ru": "Два числа — это табличка «Протяжённость»: они показывают расстояние от знака до начала и до конца участка. Здесь он начинается через 100 метров и заканчивается через 600, значит его длина 500 метров. На табличке «Расстояние» одно число, например 500 m, — сколько ехать до опасности.",
+    "uk": "Два числа — це табличка «Протяжність»: вони показують відстань від знака до початку і до кінця ділянки. Тут вона починається через 100 метрів і закінчується через 600, отже її довжина 500 метрів. На табличці «Відстань» одне число, наприклад 500 m, — скільки їхати до небезпеки.",
+    "theory": "skilt/underskilt"
+  },
+  {
+    "id": "sk-68",
+    "cat": "skilt",
+    "q": "Under dette skiltet står underskiltet Anbefalt fart med 50 km/t. Fartsgrensen er 80 km/t, og det er glatt. Hva er riktig?",
+    "img": {
+      "sign": "fare_sving_v"
+    },
+    "a": [
+      "Fartsgrensen er fortsatt 80 km/t, men du bør kjøre saktere enn 50 km/t",
+      "Fartsgrensen er nå 50 km/t, og du kan holde den farten også når det er glatt",
+      "Fartsgrensen er fortsatt 80 km/t, og anbefalt fart gjelder ikke når det er glatt",
+      "Du må holde nøyaktig 50 km/t gjennom svingen, fordi anbefalt fart er et påbud"
+    ],
+    "f": "Anbefalt fart er ikke en fartsgrense. Den er den høyeste farten som faren tilsier når vær, føre, sikt og lys er normale. Når det er glatt, kan 50 km/t være for fort, selv om fartsgrensen fortsatt er 80 km/t.",
+    "ru": "Рекомендуемая скорость — не ограничение скорости. Это самая высокая скорость, которую допускает эта опасность при обычной погоде, покрытии, видимости и освещении. Когда скользко, даже 50 км/ч может быть слишком быстро, хотя ограничение по-прежнему 80 км/ч.",
+    "uk": "Рекомендована швидкість — не обмеження швидкості. Це найвища швидкість, яку допускає ця небезпека за звичайної погоди, покриття, видимості й освітлення. Коли слизько, навіть 50 км/год може бути забагато, хоча обмеження й далі 80 км/год.",
+    "theory": "skilt/underskilt"
+  },
+  {
+    "id": "sk-69",
+    "cat": "skilt",
+    "q": "Du kommer til dette skiltet foran en smal strekning. En møtende bil er like ved den andre enden, men har ikke kjørt inn ennå. Hva gjør du?",
+    "img": {
+      "sign": "moteplikt"
+    },
+    "a": [
+      "Venter, fordi du ikke må kjøre inn hvis det hindrer den møtende",
+      "Kjører inn, fordi vikeplikten gjelder biler som er inne på strekningen",
+      "Kjører inn raskt, så du er ute igjen før den møtende når strekningen",
+      "Kjører inn og stanser halvveis, så den møtende ser at du viker"
+    ],
+    "f": "Skiltet forbyr deg å kjøre inn på den smale strekningen hvis det hindrer møtende. Det gjelder ikke bare biler som allerede er inne på strekningen. Vent ved skiltet til den møtende har passert.",
+    "ru": "Знак запрещает въезжать на узкий участок, если вы этим помешаете встречным. Это касается не только машин, которые уже на участке. Подождите у знака, пока встречная машина проедет.",
+    "uk": "Знак забороняє в'їжджати на вузьку ділянку, якщо ви цим завадите зустрічним. Це стосується не лише автомобілів, які вже на ділянці. Зачекайте біля знака, поки зустрічний автомобіль проїде.",
+    "theory": "skilt/vikeplikt-og-forkjorsskilt"
+  },
+  {
+    "id": "sk-70",
+    "cat": "skilt",
+    "q": "Du kommer til dette skiltet foran en smal strekning. En møtende bil er allerede midt på strekningen. Hva bør du gjøre?",
+    "img": {
+      "sign": "forkjorsrett_mote"
+    },
+    "a": [
+      "Vente til bilen har kommet ut, selv om du har forkjørsrett",
+      "Kjøre inn, fordi den møtende må rygge tilbake for deg",
+      "Kjøre inn og bruke lydhornet, så den møtende skjønner at du har forkjørsrett",
+      "Holde farten, fordi den møtende har vikeplikt og må vente på deg"
+    ],
+    "f": "Skiltet betyr at møtende har vikeplikt for deg på strekningen. Men har bilen allerede kjørt inn, hjelper det ikke å kjøre mot den. Også den som har forkjørsrett, skal være oppmerksom og vise hensyn, så vent til veien er fri.",
+    "ru": "Знак означает, что на этом участке встречные уступают вам. Но если машина уже въехала, ехать ей навстречу бессмысленно. Даже тот, у кого есть преимущество, должен быть внимателен и вежлив, поэтому подождите, пока дорога освободится.",
+    "uk": "Знак означає, що на цій ділянці зустрічні поступаються вам. Але якщо автомобіль уже в'їхав, їхати йому назустріч немає сенсу. Навіть той, хто має перевагу, повинен бути уважним і поступливим, тому зачекайте, поки дорога звільниться.",
+    "theory": "skilt/vikeplikt-og-forkjorsskilt"
+  },
+  {
+    "id": "sk-71",
+    "cat": "skilt",
+    "q": "Hva er riktig om veier med disse to skiltene?",
+    "img": {
+      "signs": [
+        "motorveg",
+        "motortrafikkveg"
+      ]
+    },
+    "a": [
+      "Trafikkreglene er like, men motortrafikkvei kan ha møtende trafikk uten midtdeler",
+      "På motortrafikkvei er det lov å stanse kort for passasjerer, men på motorvei er det forbudt",
+      "Moped kan kjøre på motortrafikkvei, men ikke på motorvei",
+      "Motorvei kan ha vanlige kryss i samme plan, men det kan ikke motortrafikkvei"
+    ],
+    "f": "Reglene er de samme: bare motorvogner som lovlig kan kjøre minst 40 km/t, ikke moped, og forbud mot å rygge, snu og stanse. Forskjellen er hvordan veien er bygd. Motorvei har atskilte kjøreretninger, mens motortrafikkvei kan ha ett felt i hver retning og møtende trafikk uten midtdeler.",
+    "ru": "Правила одинаковые: только механические ТС, которые по закону могут ехать не медленнее 40 км/ч, никаких мопедов, запрет ехать задним ходом, разворачиваться и останавливаться. Разница в том, как построена дорога. У автомагистрали направления разделены, а на дороге для автомобилей может быть по одной полосе в каждую сторону и встречное движение без разделителя.",
+    "uk": "Правила однакові: лише механічні ТЗ, які за законом можуть їхати не повільніше ніж 40 км/год, жодних мопедів, заборона їхати заднім ходом, розвертатися й зупинятися. Різниця в тому, як побудовано дорогу. В автомагістралі напрямки розділено, а на дорозі для автомобілів може бути по одній смузі в кожен бік і зустрічний рух без розділювача.",
+    "theory": "skilt/motorvei-og-motortrafikkvei"
+  },
+  {
+    "id": "sk-72",
+    "cat": "skilt",
+    "q": "Hva betyr det at kryssene på en vei er planskilte?",
+    "img": null,
+    "a": [
+      "Veiene krysser hverandre i ulik høyde, og du kjører av og på via ramper",
+      "Veiene krysser hverandre i samme høyde, men trafikken styres av lyssignal",
+      "Kryssene er merket på skilt i god tid før du kommer fram til dem",
+      "Trafikken fra sideveiene har vikeplikt, fordi veien er forkjørsvei"
+    ],
+    "f": "I et planskilt kryss går veiene over eller under hverandre, for eksempel med bru eller tunnel. Da krysser ikke trafikken hverandre i samme plan. Motorvei og motortrafikkvei har som regel planskilte kryss.",
+    "ru": "На развязке в разных уровнях (planskilt kryss) дороги проходят одна над другой или под другой, например по мосту или через тоннель. Поэтому потоки не пересекаются на одном уровне. На автомагистралях и дорогах для автомобилей перекрёстки, как правило, именно такие.",
+    "uk": "На розв'язці в різних рівнях (planskilt kryss) дороги проходять одна над іншою або під іншою, наприклад мостом або через тунель. Тому потоки не перетинаються на одному рівні. На автомагістралях і дорогах для автомобілів перехрестя, як правило, саме такі.",
+    "theory": "skilt/motorvei-og-motortrafikkvei"
+  },
+  {
+    "id": "sk-73",
+    "cat": "skilt",
+    "q": "To vanlige kjørefelt blir til ett, og skiltet Sammenfletting står ved veien. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Kjøre fram i feltet ditt og flette der veien snevrer inn",
+      "Skifte felt så tidlig du kan, fordi det er feil å kjøre helt fram i feltet som slutter",
+      "Kjøre først inn der feltene møtes, fordi bilene i det andre feltet har vikeplikt",
+      "Stanse der feltene møtes og vente til det ikke kommer biler i det andre feltet"
+    ],
+    "f": "Ved fletting bør begge felt brukes helt fram til der veien snevrer inn. Der tilpasser førerne i begge felt farten, slik at bilene veksler på å kjøre inn. Ingen av dem har vikeplikt, så godt samspill er viktig.",
+    "ru": "При поочерёдном слиянии (fletting) обе полосы нужно использовать до самого сужения. Там водители в обеих полосах подстраивают скорость, чтобы машины въезжали по очереди. Никто никому не обязан уступать, поэтому важно действовать согласованно.",
+    "uk": "Під час почергового злиття (fletting) обидві смуги треба використовувати до самого звуження. Там водії в обох смугах підлаштовують швидкість, щоб автомобілі в'їжджали по черзі. Ніхто нікому не зобов'язаний поступатися, тому важливо діяти узгоджено.",
+    "theory": "skilt/fletting-og-felt-som-slutter"
+  },
+  {
+    "id": "sk-74",
+    "cat": "skilt",
+    "q": "Hva er riktig om skiltene Sammenfletting og Kjørefelt slutter?",
+    "img": null,
+    "a": [
+      "Ved Kjørefelt slutter har du vikeplikt, ved Sammenfletting veksler bilene på å kjøre inn",
+      "Ved Sammenfletting har du vikeplikt, ved Kjørefelt slutter veksler bilene på å kjøre inn",
+      "Begge betyr at du har vikeplikt for dem i feltet du skal inn i, og at du må stanse før du skifter",
+      "Begge betyr at bilene veksler på å kjøre inn, og at ingen av førerne har vikeplikt"
+    ],
+    "f": "Skiltet Sammenfletting står der to vanlige felt blir til ett: Begge tilpasser farten, og bilene veksler på å kjøre inn. Skiltet Kjørefelt slutter brukes for eksempel på vei med tre felt i samme retning eller når et kollektivfelt slutter. Da må du skifte felt, og du har vikeplikt for dem i feltet du skal inn i.",
+    "ru": "Знак «Слияние полос» (Sammenfletting) стоит там, где две обычные полосы становятся одной: скорость подстраивают оба водителя, и машины въезжают по очереди. Знак «Полоса заканчивается» (Kjørefelt slutter) ставят, например, на дороге с тремя полосами в одном направлении или там, где заканчивается автобусная полоса. Тогда нужно перестроиться и уступить тем, кто едет в полосе, куда вы въезжаете.",
+    "uk": "Знак «Злиття смуг» (Sammenfletting) стоїть там, де дві звичайні смуги стають однією: швидкість підлаштовують обидва водії, і автомобілі в'їжджають по черзі. Знак «Смуга закінчується» (Kjørefelt slutter) ставлять, наприклад, на дорозі з трьома смугами в одному напрямку або там, де закінчується автобусна смуга. Тоді треба перестроїтися й поступитися тим, хто їде в смузі, куди ви в'їжджаєте.",
+    "theory": "skilt/fletting-og-felt-som-slutter"
+  },
+  {
+    "id": "sk-75",
+    "cat": "skilt",
+    "q": "Du kjører personbil og passerer skiltet Forbikjøringsforbud for lastebil. Foran deg kjører en lastebil sakte. Kan du kjøre forbi den?",
+    "img": null,
+    "a": [
+      "Ja, hvis det er trygt: forbudet gjelder lastebiler som kjører forbi andre",
+      "Nei, skiltet betyr at det er forbudt å kjøre forbi lastebiler på denne strekningen",
+      "Nei, ikke før neste veikryss, for der slutter forbudet",
+      "Nei, forbudet gjelder alle motorvogner med mer enn to hjul"
+    ],
+    "f": "Skiltet forbyr føreren av en lastebil med tillatt totalvekt over 3500 kg å kjøre forbi motorvogner med mer enn to hjul. Du som kjører personbil, er ikke omfattet av forbudet. Det gjelder fram til skiltet Slutt på forbikjøringsforbud for lastebil eller over strekningen på et underskilt, og et veikryss opphever det ikke.",
+    "ru": "Знак запрещает водителю грузовика с разрешённой максимальной массой больше 3500 кг обгонять механические ТС, у которых больше двух колёс. На легковую машину запрет не распространяется. Он действует до знака конца запрета обгона для грузовиков или на участке, указанном на табличке, и перекрёсток его не отменяет.",
+    "uk": "Знак забороняє водієві вантажівки з дозволеною максимальною масою понад 3500 кг обганяти механічні ТЗ, які мають понад два колеса. На легковий автомобіль заборона не поширюється. Вона діє до знака кінця заборони обгону для вантажівок або на ділянці, указаній на табличці, і перехрестя її не скасовує.",
+    "theory": "skilt/forbudsskilt"
   }
 ]

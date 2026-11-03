@@ -7,7 +7,8 @@
     "a": [
       "Jevn fart, tidlig giring opp og god planlegging",
       "Kraftige akselerasjoner og harde nedbremsinger",
-      "Kjøring i lavt gir med høyt turtall"
+      "Kjøring i lavt gir med høyt turtall",
+      "Jevn fart, sen giring opp og høyt turtall i hvert gir"
     ],
     "f": "Jevn kjøring der du ser langt fram og unngår unødvendige oppbremsinger, gir lavere forbruk og mindre utslipp.",
     "ru": "Плавная езда, когда вы смотрите далеко вперёд и избегаете лишних торможений, снижает расход топлива и выбросы.",
@@ -22,7 +23,8 @@
     "a": [
       "Det gir unødvendig forurensning og drivstofforbruk",
       "Det er forbudt, også langt fra byer og bebyggelse",
-      "Motoren trenger å gå lenge på tomgang for å bli varm"
+      "Motoren trenger å gå lenge på tomgang for å bli varm",
+      "Det sliter ut batteriet, fordi det ikke lades på tomgang"
     ],
     "f": "Tomgang gir utslipp uten at du kommer noen vei. Motoren blir raskere varm når du kjører rolig.",
     "ru": "Работа двигателя на холостом ходу даёт выбросы без всякой пользы. Двигатель быстрее прогревается при спокойной езде.",
@@ -37,7 +39,8 @@
     "a": [
       "Forbruket øker fordi luftmotstanden blir større",
       "Det er vekten som øker forbruket, ikke luftmotstanden",
-      "Det har ingen betydning, fordi en tom takboks er lett"
+      "Det har ingen betydning, fordi en tom takboks er lett",
+      "Forbruket øker mest i bykjøring, der luftmotstanden er størst"
     ],
     "f": "Takboks og takstativ øker luftmotstanden. Ta dem av når du ikke trenger dem.",
     "ru": "Багажник на крыше увеличивает сопротивление воздуха. Снимайте его, когда он не нужен.",
@@ -52,7 +55,8 @@
     "a": [
       "Mindre slitasje på motoren og mindre forbruk og utslipp ved kaldstart",
       "Du kan la motoren gå på tomgang uten at den gir utslipp",
-      "Du kan kjøre med høyt turtall med en gang uten at forbruket øker"
+      "Du kan kjøre med høyt turtall med en gang uten at forbruket øker",
+      "Motoren blir varm nok til at du kan akselerere hardt med en gang du starter"
     ],
     "f": "En kald motor bruker mer drivstoff og slipper ut mer. Motorvarmer reduserer slitasje og utslipp ved start.",
     "ru": "Холодный двигатель расходует больше топлива и даёт больше выбросов. Подогреватель двигателя уменьшает износ и выбросы при запуске.",
@@ -66,8 +70,9 @@
     "img": null,
     "a": [
       "Fordi piggdekk sliter asfalten og lager svevestøv som er skadelig å puste inn",
-      "Fordi piggdekk gir dårligere veigrep på is",
-      "Fordi piggdekk er forbudt i byene, og du får bot hver gang du kjører med dem"
+      "Fordi piggdekk gir dårligere veigrep på is og dermed flere ulykker i byene",
+      "Fordi piggdekk er forbudt i byene, og du får bot hver gang du kjører med dem",
+      "Fordi piggdekk gir mer støy og dyrere veivedlikehold, men ingen helseskade"
     ],
     "f": "Piggene river opp asfalten. Det gir svevestøv som er skadelig for helsen, særlig i byene.",
     "ru": "Шипы разрушают асфальт. Образуется мелкая пыль, вредная для здоровья, особенно в городах.",
@@ -82,7 +87,8 @@
     "a": [
       "Slipper gassen tidlig og lar bilen rulle i gir",
       "Gasser helt fram til krysset og bremser hardt",
-      "Setter giret i fri tidlig og lar bilen rulle mot lyset"
+      "Setter giret i fri tidlig og lar bilen rulle mot lyset",
+      "Holder farten jevn helt fram og slipper gassen rett før stopplinjen"
     ],
     "f": "Når du slipper gassen i gir, bruker de fleste moderne biler nesten ikke drivstoff. Tidlig motorbrems sparer både drivstoff og bremser.",
     "ru": "Когда вы отпускаете газ на включённой передаче, большинство современных машин почти не расходует топливо. Раннее торможение двигателем экономит и топливо, и тормоза.",
@@ -97,7 +103,8 @@
     "a": [
       "Forbruket øker mye fordi luftmotstanden øker med farten",
       "Forbruket blir lavere fordi du kommer raskere fram",
-      "Farten har ingen betydning for forbruket"
+      "Farten har ingen betydning for forbruket",
+      "Forbruket øker lite, fordi luftmotstanden nesten ikke endrer seg med farten"
     ],
     "f": "Luftmotstanden øker kraftig med farten. Litt lavere fart på landeveien gir merkbart lavere forbruk.",
     "ru": "Сопротивление воздуха сильно растёт с увеличением скорости. Немного меньшая скорость на трассе заметно снижает расход.",
@@ -112,7 +119,8 @@
     "a": [
       "Planlegge turene, samkjøre og gå eller sykle på korte turer",
       "La motoren gå på tomgang til den er varm før du kjører",
-      "Ta flere korte turer i stedet for én lang tur med mange ærend"
+      "Ta flere korte turer i stedet for én lang tur med mange ærend",
+      "Holde høyere fart på motorveien, så du kommer raskere fram og bruker kortere tid"
     ],
     "f": "Korte turer med kald motor gir mye utslipp per kilometer. Planlegging og samkjøring gir færre turer.",
     "ru": "Короткие поездки на холодном двигателе дают много выбросов на километр. Планирование и совместные поездки уменьшают число поездок.",
@@ -143,7 +151,7 @@
     "a": [
       "Nei, i boligområder er tomgang som gir unødig støy eller eksos forbudt",
       "Det er lov når bilen står lovlig parkert og du sitter i den",
-      "Ja, tomgang er bare forbudt i sentrum av store byer, som Oslo og Bergen",
+      "Ja, tomgang er forbudt i sentrum av store byer, som Oslo og Bergen, men ikke her",
       "Ja, hvis det er kaldt ute og du vil at bilen skal være varm"
     ],
     "f": "I eller ved bebyggelse er det forbudt å bruke motoren på tomgang når det gir unødig støy eller unødig utslipp av røyk eller gass. Slå av motoren mens du venter.",
@@ -159,7 +167,8 @@
     "a": [
       "Du leverer den til et godkjent mottak for bilvrak og får vrakpant",
       "Du tar av skiltene og lar bilen stå i skogen",
-      "Du lar bilen stå på en offentlig parkeringsplass til kommunen henter den"
+      "Du lar bilen stå på en offentlig parkeringsplass til kommunen henter den",
+      "Du melder bilen som vraket til Statens vegvesen og beholder den på tomta"
     ],
     "f": "Gamle biler inneholder stoffer som kan skade helse og miljø. Lever bilen til et godkjent mottak, så får du vrakpant, og Statens vegvesen får beskjed automatisk.",
     "ru": "В старых машинах есть вещества, вредные для здоровья и природы. Сдайте машину в официальный пункт приёма — вы получите утилизационную премию (vrakpant), а Statens vegvesen получит уведомление автоматически.",
@@ -174,11 +183,44 @@
     "a": [
       "I en vaskehall, som samler opp mye av olje og vaskemidler",
       "På asfalten i gata, så vannet renner rett i sluket",
-      "Hjemme, så lenge du bruker lite vann og vaskemidler"
+      "Hjemme i innkjørselen, hvis du bruker lite vann og vaskemidler",
+      "På grusen i innkjørselen, så jorda filtrerer bort olje og vaskemidler"
     ],
     "f": "Vaskevann fra gater og innkjørsler renner ofte urenset ut i elver, innsjøer og fjorder. En vaskehall samler opp mye av olje og vaskemidler.",
     "ru": "Вода после мойки на улицах и у домов часто без очистки стекает в реки, озёра и фьорды. Автомойка задерживает большую часть масла и моющих средств.",
     "uk": "Вода після миття на вулицях і біля будинків часто без очищення стікає в річки, озера та фіорди. Автомийка затримує більшу частину оливи та мийних засобів.",
     "theory": "miljo/bilvask-og-bilvrak"
+  },
+  {
+    "id": "mil-13",
+    "cat": "miljo",
+    "q": "Hva er riktig om drivstofforbruket?",
+    "img": null,
+    "a": [
+      "Både takboks og tomt takstativ øker forbruket, så ta dem av når du ikke trenger dem",
+      "For lavt dekktrykk senker forbruket, fordi en større del av dekket ligger mot veien",
+      "Motoren bruker minst drivstoff de første minuttene, mens den fortsatt er kald",
+      "Å sette giret i fri i nedoverbakke bruker mindre drivstoff enn å la bilen rulle i gir"
+    ],
+    "f": "Takboks og takstativ øker luftmotstanden, også når de er tomme. For lavt dekktrykk gir større rullemotstand og høyere forbruk. En kald motor bruker mest drivstoff. I gir med gassen sluppet bruker de fleste moderne biler nesten ikke drivstoff, men i fri går motoren på tomgang og bruker drivstoff.",
+    "ru": "Бокс и багажник на крыше увеличивают сопротивление воздуха, даже когда пустые. Слишком низкое давление в шинах увеличивает сопротивление качению и расход. Холодный двигатель расходует больше всего топлива. На передаче с отпущенным газом большинство современных машин почти не расходует топливо, а на нейтрали двигатель работает на холостом ходу и топливо расходует.",
+    "uk": "Бокс і багажник на даху збільшують опір повітря, навіть коли порожні. Занадто низький тиск у шинах збільшує опір коченню й витрату. Холодний двигун витрачає найбільше пального. На передачі з відпущеним газом більшість сучасних автомобілів майже не витрачає пального, а на нейтралі двигун працює на холостому ходу й пальне витрачає.",
+    "theory": "miljo/fart-og-luftmotstand"
+  },
+  {
+    "id": "mil-14",
+    "cat": "miljo",
+    "q": "Du må vente flere minutter foran en stengt bom. Hva er best for forbruk og utslipp?",
+    "img": null,
+    "a": [
+      "Å slå av motoren, fordi tomgang bruker drivstoff uten at du kommer noen vei",
+      "Å la motoren gå, fordi en ny start bruker mer enn flere minutter på tomgang",
+      "Å la motoren gå med lavt turtall, fordi tomgang ikke gir utslipp av betydning",
+      "Å sette giret i fri og gi litt gass, så batteriet lades mens du venter"
+    ],
+    "f": "En motor på tomgang bruker omtrent 0,5–1 liter i timen, og en ny start bruker ikke mer enn flere minutter på tomgang. Som tommelfingerregel lønner det seg å slå av motoren hvis du må stå lenger enn omtrent 20 sekunder. I eller ved bebyggelse kan tomgang dessuten være forbudt.",
+    "ru": "На холостом ходу двигатель расходует примерно 0,5–1 литр в час, а новый запуск не расходует больше, чем несколько минут холостого хода. Как правило, двигатель выгодно выключать, если стоять нужно дольше примерно 20 секунд. В населённых пунктах и рядом с жильём работа на холостом ходу к тому же может быть запрещена.",
+    "uk": "На холостому ходу двигун витрачає приблизно 0,5–1 літр на годину, а новий запуск не витрачає більше, ніж кілька хвилин холостого ходу. Як правило, двигун вигідно вимикати, якщо стояти треба довше приблизно 20 секунд. У населених пунктах і поблизу житла робота на холостому ходу до того ж може бути заборонена.",
+    "theory": "miljo/kald-motor-og-tomgang"
   }
 ]

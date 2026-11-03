@@ -23,7 +23,8 @@
     "a": [
       "Kjørelyset lyser ikke opp veien godt nok, og på mange biler er baklysene da ikke tent",
       "Kjørelyset er laget for kjøring i tunnel og tåke, og i mørket skal du bruke fjernlys",
-      "Kjørelyset er så sterkt at det blender både møtende trafikk og førere foran deg"
+      "Kjørelyset er så sterkt at det blender både møtende trafikk og førere foran deg",
+      "Kjørelyset bruker så mye strøm at batteriet lett blir tomt når du kjører lenge i mørket om vinteren"
     ],
     "f": "Kjørelys er laget for å bli sett om dagen. I mørket trenger du nærlys, og da er også baklysene på.",
     "ru": "Дневные ходовые огни нужны, чтобы машину было видно днём. В темноте нужен ближний свет — тогда горят и задние фонари.",
@@ -38,7 +39,8 @@
     "a": [
       "Nærlys",
       "Kjørelys",
-      "Tåkebaklys"
+      "Tåkebaklys",
+      "Parkeringslys"
     ],
     "f": "I tunnel skal du ha nærlys, slik at du ser godt og blir sett, også bakfra.",
     "ru": "В тоннеле нужен ближний свет, чтобы вы хорошо видели дорогу и вас было видно, в том числе сзади.",
@@ -53,7 +55,8 @@
     "a": [
       "Fjernlys",
       "Nærlys",
-      "Tåkebaklys"
+      "Tåkebaklys",
+      "Kjørelys"
     ],
     "f": "Fjernlys gir lengst sikt. Bruk det når du ikke blender andre.",
     "ru": "Дальний свет даёт наибольшую видимость. Используйте его, когда он никого не ослепляет.",
@@ -68,7 +71,8 @@
     "a": [
       "Blende ned til nærlys i god tid, så du ikke blender føreren",
       "Beholde fjernlyset til bilen er rett ved siden av deg",
-      "Blinke med fjernlyset, så føreren av den møtende bilen ser deg"
+      "Blinke med fjernlyset, så føreren av den møtende bilen ser deg",
+      "Blende ned først når føreren av den møtende bilen blinker til deg"
     ],
     "f": "Du skal blende ned i god tid før du møter andre, slik at de ikke blir blendet.",
     "ru": "Переключитесь на ближний свет заблаговременно до встречного разъезда, чтобы не ослепить встречного водителя.",
@@ -83,7 +87,8 @@
     "a": [
       "Du skal blende ned, fordi fjernlyset kan blende føreren foran gjennom speilene",
       "Du kan beholde fjernlyset, fordi fjernlys ikke blender førere som kjører foran deg",
-      "Du kan beholde fjernlyset, fordi det lyser opp veien for føreren foran deg"
+      "Du kan beholde fjernlyset, fordi det lyser opp veien for føreren foran deg",
+      "Du skal blende ned når du kjører forbi, men ellers kan du beholde fjernlyset bak bilen foran"
     ],
     "f": "Fjernlyset kan blende føreren foran deg gjennom speilene. Blend ned når du kjører bak andre.",
     "ru": "Дальний свет может ослепить водителя впереди через зеркала. Переключитесь на ближний, когда едете за другой машиной.",
@@ -98,7 +103,8 @@
     "a": [
       "Se mot høyre kant av veien og senke farten",
       "Se rett inn i lyset til den møtende bilen",
-      "Sette på fjernlys for å blende tilbake"
+      "Sette på fjernlys for å blende tilbake",
+      "Se mot midtlinjen og holde farten, så du kommer raskt forbi lyset"
     ],
     "f": "Når du blir blendet, skal du se mot høyre veikant, senke farten og om nødvendig stoppe.",
     "ru": "Если вас ослепили, смотрите на правый край дороги, снизьте скорость и при необходимости остановитесь.",
@@ -129,7 +135,8 @@
     "a": [
       "Det sterke lyset kan blende den som kjører bak deg",
       "Det bruker mye strøm, og batteriet kan bli tomt",
-      "Lyset er så sterkt at det blender møtende biler"
+      "Lyset er så sterkt at det blender møtende biler",
+      "Lyset blir så varmt at det kan skade baklykten etter noen minutter"
     ],
     "f": "Tåkebaklyset er så sterkt at det kan blende andre og gjøre det vanskelig å se bremselysene dine.",
     "ru": "Задний противотуманный фонарь настолько яркий, что может слепить водителей сзади и мешать им видеть ваши стоп-сигналы.",
@@ -176,7 +183,8 @@
     "a": [
       "Du bør rengjøre lyktene, fordi skitne lykter lyser svakere og kan blende andre",
       "Det har ingen betydning, fordi lyset går like godt gjennom skitt og salt",
-      "Du bør bruke fjernlys i stedet, så du ser like godt som med rene lykter"
+      "Du bør bruke fjernlys i stedet, så du ser like godt som med rene lykter",
+      "Du kan vente til neste bilvask, fordi lysreguleringen gjør at lyktene lyser like godt"
     ],
     "f": "Skitne lykter lyser mye svakere og sprer lyset, slik at andre kan bli blendet. Hold lys og ruter rene.",
     "ru": "Грязные фары светят намного слабее и рассеивают свет, ослепляя других. Держите фары и стёкла чистыми.",
@@ -191,11 +199,12 @@
     "a": [
       "Slik at du kan stoppe på den strekningen du ser foran deg",
       "Du kan holde samme fart som om dagen",
-      "Du kan alltid kjøre så fort som fartsgrensen tillater"
+      "Du kan alltid kjøre så fort som fartsgrensen tillater",
+      "Slik at reaksjonslengden, ikke hele stopplengden, er kortere enn den strekningen du ser"
     ],
-    "f": "I mørket ser du kortere. Du må kunne stoppe på den strekningen som lyset viser deg.",
-    "ru": "В темноте видно ближе. Скорость должна позволять остановиться в пределах участка, освещённого фарами.",
-    "uk": "У темряві видно не так далеко. Швидкість має дозволяти зупинитися в межах ділянки, освітленої фарами.",
+    "f": "I mørket ser du kortere. Du må kunne stoppe på den strekningen som lyset viser deg. Hele stopplengden må være kortere enn det du ser, ikke bare reaksjonslengden.",
+    "ru": "В темноте видно ближе. Скорость должна позволять остановиться в пределах участка, освещённого фарами. Короче видимого участка должен быть весь остановочный путь, а не только путь реакции.",
+    "uk": "У темряві видно не так далеко. Швидкість має дозволяти зупинитися в межах ділянки, освітленої фарами. Коротшим за видиму ділянку має бути весь зупинний шлях, а не лише шлях реакції.",
     "theory": "lys/fjernlys-og-naerlys-i-morket"
   },
   {
@@ -206,11 +215,44 @@
     "a": [
       "Justere lyset ned med lysreguleringen, så du ikke blender møtende",
       "Ingenting, fordi lasten bak ikke påvirker hvor frontlysene peker",
-      "Justere lyset opp, så du ser lenger når bilen er tungt lastet"
+      "Justere lyset opp, så du ser lenger når bilen er tungt lastet",
+      "Sette på fjernlys i stedet, fordi frontlysene peker for lavt når bilen er lastet bak"
     ],
     "f": "Tung last bak gjør at fronten løfter seg og lyset peker høyere. Juster lyset ned, så du ikke blender andre.",
     "ru": "Тяжёлый груз сзади приподнимает перед машины, и фары светят выше. Опустите свет корректором фар, чтобы не слепить встречных.",
     "uk": "Важкий вантаж ззаду піднімає передню частину машини, і фари світять вище. Опустіть світло коректором фар, щоб не засліплювати зустрічних.",
     "theory": "lys/rene-og-riktig-innstilte-lys"
+  },
+  {
+    "id": "lys-16",
+    "cat": "lys",
+    "q": "Du kjører i 80 km/t på tørr vei i mørket. Nærlyset lyser opp omtrent 40 m framover. Reaksjonslengden er 22 m, og bremselengden er 32 m. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du kjører for fort, fordi stopplengden på 54 m er lengre enn det du ser",
+      "Farten er grei, fordi bremselengden på 32 m er kortere enn det du ser",
+      "Farten er grei, fordi fartsgrensen på veien er 80 km/t",
+      "Du kjører for fort, fordi bremselengden på 32 m er lengre enn det du ser"
+    ],
+    "f": "Du skal kunne stanse på den strekningen du ser er fri. Stopplengden er reaksjonslengden pluss bremselengden: 22 + 32 = 54 m, og det er lengre enn de 40 m du ser. Senk farten, eller bruk fjernlys når du ikke blender andre. Fartsgrensen er bare en øvre grense.",
+    "ru": "Вы должны успеть остановиться в пределах участка, который видите свободным. Остановочный путь — это путь реакции плюс тормозной путь: 22 + 32 = 54 м, а это больше тех 40 м, что вы видите. Снизьте скорость или включите дальний свет, когда он никого не ослепляет. Ограничение скорости — лишь верхний предел.",
+    "uk": "Ви повинні встигнути зупинитися в межах ділянки, яку бачите вільною. Зупинний шлях — це шлях реакції плюс гальмівний шлях: 22 + 32 = 54 м, а це більше за ті 40 м, які ви бачите. Знизьте швидкість або ввімкніть дальнє світло, коли воно нікого не засліплює. Обмеження швидкості — лише верхня межа.",
+    "theory": "lys/fjernlys-og-naerlys-i-morket"
+  },
+  {
+    "id": "lys-17",
+    "cat": "lys",
+    "q": "Hva er riktig om bruk av lys?",
+    "img": null,
+    "a": [
+      "Du skal blende ned også når du møter et tog eller en trikk som kjører langs veien",
+      "I tett tåke skal du bruke tåkelysene foran sammen med nærlyset, så du ser best mulig",
+      "Står bilen stille på en mørk vei, skal nærlyset være på, så andre ser den",
+      "Kjørelys er nok i en tunnel med god belysning, hvis det er lyst ute"
+    ],
+    "f": "Regelen om å blende ned gjelder også når du møter tog, trikk og fartøy langs veien. Tåkelys foran skal ikke brukes sammen med nærlys. Står bilen på en mørk vei, skal parkeringslys være på, ikke nærlys eller fjernlys. I tunnel trenger du nærlys, slik at også baklysene er på.",
+    "ru": "Правило о переключении на ближний свет действует и при встрече с поездом, трамваем и судном, идущими вдоль дороги. Передние противотуманные фары нельзя использовать вместе с ближним светом. Если машина стоит на тёмной дороге, должны гореть габаритные огни, а не ближний или дальний свет. В тоннеле нужен ближний свет, чтобы горели и задние фонари.",
+    "uk": "Правило про перемикання на ближнє світло діє і під час зустрічі з поїздом, трамваєм і судном, що рухаються вздовж дороги. Передні протитуманні фари не можна використовувати разом із ближнім світлом. Якщо машина стоїть на темній дорозі, мають горіти габаритні вогні, а не ближнє чи дальнє світло. У тунелі потрібне ближнє світло, щоб горіли й задні ліхтарі.",
+    "theory": "lys/fjernlys-og-naerlys-i-morket"
   }
 ]

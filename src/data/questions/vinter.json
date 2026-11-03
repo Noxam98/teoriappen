@@ -7,7 +7,8 @@
     "a": [
       "På bruer og der veien ligger i skyggen",
       "Der sola har skint på veien hele dagen",
-      "På strekninger med mye trafikk midt i byen"
+      "På strekninger med mye trafikk midt i byen",
+      "På strekninger der veien nettopp er strødd med sand og salt"
     ],
     "f": "Bruer blir avkjølt fra både over- og undersiden og fryser raskt. I skyggen kan det være is selv om veien ellers er bar.",
     "ru": "Мосты охлаждаются и сверху, и снизу, поэтому быстро покрываются льдом. В тени может быть лёд, даже если в остальных местах дорога чистая.",
@@ -22,7 +23,8 @@
     "a": [
       "Et tynt, klart islag som gjør at veien ser våt eller bar ut",
       "Is som er blandet med sand og grus, slik at den ser mørk ut",
-      "Is som er lett å se, fordi den er helt svart på veien"
+      "Is som er lett å se, fordi den er helt svart på veien",
+      "Is som ligger under et tynt lag med snø, slik at du ikke ser den"
     ],
     "f": "Svart is er tynn og gjennomsiktig is. Den er vanskelig å se, fordi veien ser mørk og våt ut.",
     "ru": "«Чёрный лёд» — тонкий прозрачный лёд. Его трудно заметить, потому что дорога выглядит тёмной и мокрой.",
@@ -37,11 +39,12 @@
     "a": [
       "Sjekke vær- og føremeldingen og ha med varme klær og kjetting",
       "Regne med at veien er åpen, så du trenger ikke sjekke noe",
-      "Fylle litt drivstoff og vente med resten til etter fjellet"
+      "Fylle litt drivstoff og vente med resten til etter fjellet",
+      "Slippe litt luft ut av dekkene, slik at de får bedre grep på snø og is"
     ],
-    "f": "På fjellet kan været endre seg raskt, og veien kan bli stengt. Planlegg turen og ha med utstyr hvis du blir stående. Fyll tanken før du kjører over fjellet.",
-    "ru": "В горах погода может быстро меняться, а дорогу могут закрыть. Планируйте поездку и возьмите с собой снаряжение на случай, если придётся долго стоять. Перед поездкой через перевал заправьте полный бак.",
-    "uk": "У горах погода може швидко змінюватися, а дорогу можуть закрити. Плануйте поїздку та візьміть із собою спорядження на випадок, якщо доведеться довго стояти. Перед поїздкою через перевал заправте повний бак.",
+    "f": "På fjellet kan været endre seg raskt, og veien kan bli stengt. Planlegg turen og ha med utstyr hvis du blir stående. Fyll tanken før du kjører over fjellet. Å slippe ut luft gir ikke bedre grep: For lavt lufttrykk gir dårligere veigrep.",
+    "ru": "В горах погода может быстро меняться, а дорогу могут закрыть. Планируйте поездку и возьмите с собой снаряжение на случай, если придётся долго стоять. Перед поездкой через перевал заправьте полный бак. Если выпустить воздух, сцепление не улучшится: при слишком низком давлении оно становится хуже.",
+    "uk": "У горах погода може швидко змінюватися, а дорогу можуть закрити. Плануйте поїздку та візьміть із собою спорядження на випадок, якщо доведеться довго стояти. Перед поїздкою через перевал заправте повний бак. Якщо випустити повітря, зчеплення не покращиться: за надто низького тиску воно стає гіршим.",
     "theory": "vinter/for-du-kjorer-om-vinteren"
   },
   {
@@ -52,7 +55,8 @@
     "a": [
       "Fjerne snø og is fra alle ruter, lys, speil og taket",
       "Fjerne snø fra frontruten og bakruten, men la taket være",
-      "Kjøre forsiktig de første kilometerne til snøen blåser av"
+      "Kjøre forsiktig de første kilometerne til snøen blåser av",
+      "Fjerne snø og is fra frontruten og sidevinduene, men la speil og lys være"
     ],
     "f": "Du skal ha god sikt hele veien rundt bilen. Snø fra taket kan falle ned på frontruten når du bremser, eller blåse mot andre trafikanter.",
     "ru": "Обзор должен быть хорошим со всех сторон. Снег с крыши может съехать на лобовое стекло при торможении или полететь в других участников движения.",
@@ -99,7 +103,8 @@
     "a": [
       "Nei, men dekkene må være tilpasset føret",
       "Ja, for alle personbiler fra 1. november",
-      "I Nordland, Troms og Finnmark er det påbudt"
+      "I Nordland, Troms og Finnmark er det påbudt",
+      "Nei, men piggfrie vinterdekk er påbudt fra 1. november"
     ],
     "f": "Verken piggdekk eller piggfrie vinterdekk er påbudt, men dekkene skal gi godt nok veigrep på det føret du kjører på.",
     "ru": "Ни шипованные, ни зимние нешипованные шины не обязательны, но шины должны обеспечивать достаточное сцепление на том покрытии, по которому вы едете.",
@@ -114,7 +119,8 @@
     "a": [
       "Den kan bli mange ganger lengre",
       "Den er omtrent den samme med gode vinterdekk",
-      "Den blir kortere fordi bilen har ABS"
+      "Den blir kortere fordi bilen har ABS",
+      "Den blir litt lengre, omtrent 10–20 prosent"
     ],
     "f": "På is er friksjonen mye lavere, og bremselengden kan bli mange ganger lengre. Hold lavere fart og større avstand.",
     "ru": "На льду сцепление намного хуже, и тормозной путь может стать в несколько раз длиннее. Держите меньшую скорость и большую дистанцию.",
@@ -129,7 +135,8 @@
     "a": [
       "Slippe gassen og rette opp rattet litt, slik at forhjulene får grep igjen",
       "Svinge enda mer med rattet, slik at bilen kommer seg rundt svingen",
-      "Gi mer gass, slik at forhjulene trekker bilen inn i svingen"
+      "Gi mer gass, slik at forhjulene trekker bilen inn i svingen",
+      "Trekke i parkeringsbremsen, slik at bakhjulene låser seg og bilen svinger inn igjen"
     ],
     "f": "Dette kalles understyring. Når du slipper gassen og minsker rattutslaget, kan forhjulene få feste igjen, og bilen kan styres.",
     "ru": "Это называется недостаточной поворачиваемостью (снос передней оси). Если отпустить газ и немного уменьшить угол поворота руля, передние колёса снова получат сцепление и машина станет управляемой.",
@@ -144,7 +151,8 @@
     "a": [
       "Se dit du vil kjøre og styre i den retningen",
       "Bremse hardt og holde rattet helt stille",
-      "Se på grøfta du er redd for å havne i"
+      "Se på grøfta du er redd for å havne i",
+      "Vri rattet kraftig inn i svingen, slik at bakenden kommer tilbake"
     ],
     "f": "Dette kalles overstyring. Se og styr dit du vil, så følger bilen ofte blikket. Hard bremsing gjør det verre.",
     "ru": "Это избыточная поворачиваемость (занос задней оси). Смотрите и рулите туда, куда хотите ехать — машина обычно следует за взглядом. Резкое торможение ухудшит ситуацию.",
@@ -159,7 +167,8 @@
     "a": [
       "Høy fart og slitte dekk",
       "Lav fart og nye dekk",
-      "Kjøring med nærlys"
+      "Tung last og høyt lufttrykk i dekkene",
+      "Smale dekk og lav fart"
     ],
     "f": "Jo høyere fart og jo mindre mønster på dekkene, desto lettere blir det vannplaning. Senk farten når det er vann på veien.",
     "ru": "Чем выше скорость и чем меньше протектор, тем легче возникает аквапланирование. Снижайте скорость, когда на дороге вода.",
@@ -174,7 +183,8 @@
     "a": [
       "Senke farten så du kan stanse på den strekningen du ser er fri",
       "Bruke fjernlys, slik at du ser lenger fram i tåken",
-      "Kjøre tett etter bilen foran, slik at du hele tiden ser baklysene"
+      "Kjøre tett etter bilen foran, slik at du hele tiden ser baklysene",
+      "Bruke tåkebaklys og holde fartsgrensen, så bilene bak ser deg i tide"
     ],
     "f": "Du skal alltid kunne stanse på den strekningen du ser er fri. Fjernlys blir reflektert i tåken og gir dårligere sikt.",
     "ru": "Вы всегда должны успеть остановиться на том участке, который видите свободным. Дальний свет отражается от тумана и ухудшает видимость.",
@@ -189,7 +199,8 @@
     "a": [
       "Senke farten, bruke solskjermen og sørge for at frontruten er ren",
       "Holde farten og se ned på veien rett foran bilen, ikke mot sola",
-      "Holde samme fart og bruke spylervæske, slik at frontruten blir ren"
+      "Holde samme fart og bruke spylervæske, slik at frontruten blir ren",
+      "Ta på solbriller og holde samme fart, siden solbrillene tar bort blendingen"
     ],
     "f": "Lav sol kan gjøre at du ikke ser andre trafikanter. En skitten frontrute gjør blendingen verre.",
     "ru": "Низкое солнце может помешать увидеть других участников движения. Грязное лобовое стекло усиливает ослепление.",
@@ -204,7 +215,8 @@
     "a": [
       "Du skal følge kolonnelederens anvisninger og ikke kjøre forbi",
       "Du kan kjøre forbi kolonnelederen hvis bilen har firehjulstrekk",
-      "Du kan selv velge farten, men du må holde deg i kolonnen"
+      "Du kan selv velge farten, men du må holde deg i kolonnen",
+      "Du kan kjøre forbi andre biler i kolonnen, men ikke kolonnelederen"
     ],
     "f": "Ved kolonnekjøring bestemmer kolonnelederen farten. Du skal holde deg i kolonnen og følge anvisningene.",
     "ru": "При движении в колонне скорость задаёт ведущий колонны. Нужно оставаться в колонне и выполнять его указания.",
@@ -235,7 +247,8 @@
     "a": [
       "Senke farten og holde godt fast i rattet",
       "Øke farten for å komme fort over",
-      "Kjøre tett bak en lastebil, som stopper vinden"
+      "Kjøre tett bak en lastebil, som stopper vinden",
+      "Holde samme fart og styre litt mot vinden hele veien over brua"
     ],
     "f": "Sterke vindkast kan flytte bilen sidelengs. Lav fart gir deg bedre kontroll.",
     "ru": "Сильные порывы ветра могут сдвинуть машину в сторону. На низкой скорости вы лучше контролируете автомобиль.",
@@ -273,5 +286,92 @@
     "ru": "Цепи нужны, чтобы ведущие колёса не буксовали и не проскальзывали. Поэтому их надевают на ведущие колёса — те, которые тянут машину.",
     "uk": "Ланцюги потрібні, щоб ведучі колеса не буксували й не прослизали. Тому їх надягають на ведучі колеса — ті, що тягнуть автомобіль.",
     "theory": "vinter/kjetting"
+  },
+  {
+    "id": "vin-20",
+    "cat": "vinter",
+    "q": "Det er rim på alle rutene, og du har det travelt. Du skraper bare et lite område på frontruten. Hva gjelder?",
+    "img": null,
+    "a": [
+      "Det er ikke nok, fordi du skal ha tilstrekkelig utsyn til alle sider",
+      "Det er nok hvis området er større enn et A4-ark",
+      "Det er nok hvis du kjører sakte til resten av ruten har tint",
+      "Det er ikke nok, fordi hele frontruten må være fri, men sidevinduene og bakruten kan vente"
+    ],
+    "f": "Føreren skal sørge for tilstrekkelig utsyn til alle sider, og snø, is og dugg må ikke hindre sikten. Det gjelder også på korte turer. Er sikten sterkt begrenset, kan du få bot og miste førerkortet. Fjern også snøen på taket, fordi den kan gli ned på frontruten når du bremser.",
+    "ru": "Водитель обязан обеспечить достаточный обзор во все стороны: снег, лёд и запотевание не должны мешать видеть дорогу. Это касается и коротких поездок. Если обзор сильно ограничен, можно получить штраф и лишиться прав. Очистите от снега и крышу: при торможении он может съехать на лобовое стекло.",
+    "uk": "Водій зобов'язаний забезпечити достатній огляд в усі боки: сніг, лід і запотівання не повинні заважати бачити дорогу. Це стосується й коротких поїздок. Якщо огляд сильно обмежений, можна отримати штраф і втратити посвідчення водія. Очистьте від снігу й дах: під час гальмування він може з'їхати на лобове скло.",
+    "theory": "vinter/for-du-kjorer-om-vinteren"
+  },
+  {
+    "id": "vin-21",
+    "cat": "vinter",
+    "q": "Trafikken stanser i en tunnel, og det står kø foran deg. Du ser verken røyk eller flammer. Hva bør du gjøre?",
+    "img": null,
+    "a": [
+      "Holde god avstand til bilen foran og sette på nødsignal, så bilene bak blir varslet",
+      "Kjøre tett inntil bilen foran, slik at flest mulig biler får plass inne i tunnelen bak deg",
+      "Kjøre inn i nærmeste havarilomme og vente der til køen er borte",
+      "Snu bilen og kjøre tilbake, slik at du kommer raskest mulig ut av tunnelen"
+    ],
+    "f": "Avstanden gir deg plass hvis noe skjer, og nødsignalet varsler bilene bak om at trafikken står. Havarilommen er for motorstopp og for dem som trenger hjelp, ikke for å vente i kø. I en tunnel der trafikken går i én retning, skal du ikke snu. Ser du røyk, gjelder reglene for brann.",
+    "ru": "Дистанция оставляет вам место на случай, если что-то произойдёт, а аварийная сигнализация предупреждает машины сзади, что движение стоит. Аварийный карман нужен при поломке двигателя и для тех, кому нужна помощь, а не чтобы пережидать пробку. В туннеле с движением в одну сторону разворачиваться нельзя. Если видите дым, действуют правила для пожара.",
+    "uk": "Дистанція залишає вам місце на випадок, якщо щось станеться, а аварійна сигналізація попереджає машини позаду, що рух стоїть. Аварійна кишеня потрібна в разі поломки двигуна і для тих, кому потрібна допомога, а не щоб перечікувати затор. У тунелі з рухом в один бік розвертатися не можна. Якщо бачите дим, діють правила для пожежі.",
+    "theory": "vinter/kolonne-og-tunnel"
+  },
+  {
+    "id": "vin-22",
+    "cat": "vinter",
+    "q": "I 80 km/t på tørr vei er reaksjonslengden 22 m og bremselengden 32 m. Hvor lang blir stopplengden hvis veien er våt og veigrepet er halvert?",
+    "img": null,
+    "a": [
+      "86 m",
+      "108 m",
+      "64 m",
+      "54 m"
+    ],
+    "f": "Halvert veigrep gir dobbelt så lang bremselengde: 2 × 32 = 64 m. Reaksjonslengden endrer seg ikke, fordi farten og reaksjonstiden er de samme: 22 + 64 = 86 m. Selv litt fuktighet på veien kan gi opptil halvert veigrep.",
+    "ru": "Вдвое меньшее сцепление даёт вдвое больший тормозной путь: 2 × 32 = 64 м. Путь реакции не меняется, потому что скорость и время реакции те же: 22 + 64 = 86 м. Даже небольшая влага на дороге может снизить сцепление вдвое.",
+    "uk": "Удвічі менше зчеплення дає вдвічі довший гальмівний шлях: 2 × 32 = 64 м. Шлях реакції не змінюється, бо швидкість і час реакції ті самі: 22 + 64 = 86 м. Навіть невелика волога на дорозі може знизити зчеплення вдвічі.",
+    "theory": "vinter/glatt-vei"
+  },
+  {
+    "id": "vin-23",
+    "cat": "vinter",
+    "q": "Hva er riktig om veigrep?",
+    "img": null,
+    "a": [
+      "Stabilitetskontroll hjelper i en skrens, men ikke hvis farten er for høy",
+      "Med ABS og gode vinterdekk er bremselengden på is omtrent som på tørr asfalt",
+      "Er veien litt fuktig, men uten vanndammer, er veigrepet som på tørr vei",
+      "Har du testet veigrepet tidlig på turen, trenger du ikke teste det igjen senere på samme tur"
+    ],
+    "f": "Stabilitetskontroll kan hindre at bilen snurrer rundt, men hvis farten er for høy, kan ikke systemene redde deg. ABS hindrer at hjulene låser seg, men på is blir bremselengden likevel mange ganger lengre. Litt fuktighet kan gi opptil halvert veigrep. Veigrepet kan endre seg fort, så test det ofte med en forsiktig bremsing når ingen kjører bak deg.",
+    "ru": "Система стабилизации может не дать машине развернуться, но при слишком высокой скорости системы не спасут. ABS не даёт колёсам заблокироваться, но на льду тормозной путь всё равно в несколько раз длиннее. Небольшая влага может снизить сцепление вдвое. Сцепление может быстро меняться, поэтому почаще проверяйте его осторожным торможением, когда сзади никого нет.",
+    "uk": "Система стабілізації може не дати машині розвернутися, але за надто високої швидкості системи не врятують. ABS не дає колесам заблокуватися, але на льоду гальмівний шлях однаково в кілька разів довший. Невелика волога може знизити зчеплення вдвічі. Зчеплення може швидко змінюватися, тому частіше перевіряйте його обережним гальмуванням, коли позаду нікого немає.",
+    "theory": "vinter/glatt-vei"
+  },
+  {
+    "id": "vin-24",
+    "cat": "vinter",
+    "q": "Det har begynt å regne, og du ser dette skiltet. Hva bør du gjøre?",
+    "img": {
+      "sign": "fare_glatt",
+      "under": [
+        {
+          "text": "Ved våt veg"
+        }
+      ]
+    },
+    "a": [
+      "Senke farten, fordi veien her kan være særlig glatt nå",
+      "Holde farten, fordi skiltet varsler om is og snø, ikke om regn",
+      "Senke farten først når du kjenner at bilen begynner å skrense",
+      "Holde farten hvis bilen har ABS, fordi hjulene da ikke låser seg"
+    ],
+    "f": "Skiltet varsler om fare for glatt kjørebane, og underskiltet sier når: når veien er våt. Senk farten før du kommer dit, og unngå brå bremsing. ABS hindrer at hjulene låser seg, men det gir deg ikke mer veigrep.",
+    "ru": "Знак предупреждает об опасности скользкой дороги, а табличка уточняет когда: когда дорога мокрая. Снизьте скорость заранее и избегайте резкого торможения. ABS не даёт колёсам заблокироваться, но сцепления не добавляет.",
+    "uk": "Знак попереджає про небезпеку слизької дороги, а табличка уточнює коли: коли дорога мокра. Знизьте швидкість заздалегідь і уникайте різкого гальмування. ABS не дає колесам заблокуватися, але зчеплення не додає.",
+    "theory": "vinter/glatt-vei"
   }
 ]

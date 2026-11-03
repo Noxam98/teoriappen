@@ -1,5 +1,5 @@
 // Checks the question bank, the theory chapters and the dictionary:  npm run validate
-// - every question has the right shape, a known category, 3–4 options and a valid picture
+// - every question has the right shape, a known category, exactly 4 options and a valid picture
 // - every theory chapter has known block types, translations and valid pictures
 // - every question links to an existing theory section ("theory": "<topic>/<section>")
 // - every Norwegian word in questions, options, explanations and theory has a dictionary entry
@@ -82,7 +82,7 @@ for (const file of readdirSync(join(root, dir)).filter(f => f.endsWith('.json'))
     counts[q.cat] = (counts[q.cat] ?? 0) + 1;
     for (const k of ['q', 'f']) if (typeof q[k] !== 'string' || q[k].trim().length < 5) err(id, `missing "${k}"`);
     translated(id, q, 'the explanation');
-    if (!Array.isArray(q.a) || q.a.length < 3 || q.a.length > 4) err(id, '"a" needs 3–4 options (correct one first)');
+    if (!Array.isArray(q.a) || q.a.length !== 4) err(id, '"a" needs exactly 4 options (correct one first)');
     else if (new Set(q.a).size !== q.a.length) err(id, 'duplicate options');
     checkFigure(id, q.img);
     if (q.byNumber !== undefined) {

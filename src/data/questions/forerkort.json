@@ -71,7 +71,8 @@
     "a": [
       "Du får dobbelt så mange prikker",
       "Prikkene teller ikke i prøvetiden",
-      "Du får halvparten så mange prikker"
+      "Du får halvparten så mange prikker",
+      "Du får like mange prikker, men de teller dobbelt så lenge"
     ],
     "f": "I prøvetiden får du dobbelt antall prikker. En overtredelse som vanligvis gir 3 prikker, gir da 6.",
     "ru": "В испытательный срок начисляется вдвое больше штрафных баллов (prikker). Нарушение, за которое обычно дают 3 балла, принесёт 6.",
@@ -97,16 +98,17 @@
   {
     "id": "fk-07",
     "cat": "forerkort",
-    "q": "Du mister førerretten mens du er i prøvetiden. Hva må du gjøre for å få førerkortet tilbake?",
+    "q": "Du bryter trafikkreglene og mister førerretten mens du er i prøvetiden. Hva må du gjøre for å få førerkortet tilbake?",
     "img": null,
     "a": [
       "Ta ny teoriprøve og ny praktisk prøve",
       "Vente til tapsperioden er over, så får du det tilbake",
-      "Ta ny praktisk prøve, men ikke ny teoriprøve"
+      "Ta ny praktisk prøve, men ikke ny teoriprøve",
+      "Ta ny teoriprøve, men ikke ny praktisk prøve"
     ],
-    "f": "Mister du førerretten i prøvetiden, må du ta både teoriprøven og den praktiske prøven på nytt.",
-    "ru": "Если лишиться прав в испытательный срок, придётся заново сдать и теоретический, и практический экзамен.",
-    "uk": "Якщо вас позбавили права керування у випробувальний термін, доведеться знову скласти і теоретичний, і практичний іспит.",
+    "f": "Mister du førerretten i prøvetiden fordi du har brutt trafikkreglene, må du ta både teoriprøven og den praktiske prøven på nytt. Da får du også en ny prøvetid på 2 år.",
+    "ru": "Если в испытательный срок вас лишили прав за нарушение правил движения, придётся заново сдать и теоретический, и практический экзамен. После этого начнётся новый испытательный срок на 2 года.",
+    "uk": "Якщо у випробувальний термін вас позбавили права керування за порушення правил дорожнього руху, доведеться знову скласти і теоретичний, і практичний іспит. Після цього почнеться новий випробувальний термін на 2 роки.",
     "theory": "forerkort/provetid-og-prikker"
   },
   {
@@ -149,11 +151,12 @@
     "a": [
       "Ledsageren",
       "Eleven som sitter bak rattet",
-      "Den som eier bilen"
+      "Den som eier bilen",
+      "Både eleven og ledsageren"
     ],
-    "f": "Ved øvelseskjøring regnes ledsageren som fører. Ledsageren har derfor hovedansvaret for kjøringen og må være edru og oppmerksom.",
-    "ru": "Во время учебной езды водителем считается сопровождающий. Поэтому основная ответственность за езду лежит на нём, и он должен быть трезвым и внимательным.",
-    "uk": "Під час навчальної їзди водієм вважається супровідник. Тому основна відповідальність за їзду лежить на ньому, і він повинен бути тверезим і уважним.",
+    "f": "Ved øvelseskjøring regnes ledsageren som fører. Ledsageren har derfor hovedansvaret for kjøringen og må være edru og oppmerksom. Reglene om alkohol og rus gjelder likevel også for eleven.",
+    "ru": "Во время учебной езды водителем считается сопровождающий. Поэтому основная ответственность за езду лежит на нём, и он должен быть трезвым и внимательным. Но правила об алкоголе и других одурманивающих веществах касаются и ученика.",
+    "uk": "Під час навчальної їзди водієм вважається супровідник. Тому основна відповідальність за їзду лежить на ньому, і він повинен бути тверезим і уважним. Але правила щодо алкоголю та інших одурманювальних речовин стосуються й учня.",
     "theory": "forerkort/ovelseskjoring"
   },
   {
@@ -196,7 +199,8 @@
     "a": [
       "Ja, enten det fysiske førerkortet eller det digitale førerkortet i appen",
       "Ja, og det må være det fysiske kortet, fordi appen ikke gjelder som førerkort",
-      "Nei, du trenger bare å ha det med når du kjører i utlandet"
+      "Nei, du trenger bare å ha det med når du kjører i utlandet",
+      "Ja, enten det fysiske kortet eller et bilde av det på telefonen"
     ],
     "f": "Du skal ha med førerkortet når du kjører. I Norge kan du bruke det digitale førerkortet i appen. I utlandet må du ha med det fysiske kortet.",
     "ru": "Во время езды права должны быть при вас. В Норвегии можно пользоваться цифровыми правами в приложении. За границей нужна пластиковая карточка.",
@@ -211,7 +215,8 @@
     "a": [
       "Du må alltid bruke briller eller linser når du kjører",
       "Om dagen i godt vær kan du kjøre uten dem",
-      "Du må bare bruke dem når du skal kjøre lange turer"
+      "Du må bare bruke dem når du skal kjøre lange turer",
+      "Du må bruke dem i mørket og ved dårlig sikt"
     ],
     "f": "Er det krav om synskorreksjon i førerkortet, må du alltid bruke briller eller linser når du kjører.",
     "ru": "Если в правах указано требование коррекции зрения, при вождении всегда нужно быть в очках или линзах.",
@@ -257,7 +262,7 @@
     "img": null,
     "a": [
       "Du betaler boten, og saken er avgjort",
-      "Saken går alltid videre til retten",
+      "Saken går videre til retten",
       "Du mister førerkortet med en gang",
       "Du må ta teoriprøven på nytt"
     ],
@@ -275,7 +280,7 @@
       "Ta beslag i førerkortet med en gang",
       "Ingenting før saken har vært i retten",
       "Gi deg prikker, men la deg beholde førerkortet",
-      "Bare gi deg en skriftlig advarsel"
+      "Gi deg en skriftlig advarsel og la deg kjøre videre"
     ],
     "f": "Er du mistenkt for noe som kan gi tap av førerretten, for eksempel promillekjøring, kan politiet ta beslag i førerkortet på stedet. Da har du ikke lov til å kjøre, og tiden uten førerkort trekkes fra tapstiden.",
     "ru": "Если вас подозревают в нарушении, за которое могут лишить прав (например, езда в нетрезвом виде), полиция может изъять права прямо на месте. После этого водить нельзя, а время без прав засчитывается в срок лишения.",
@@ -290,7 +295,7 @@
     "a": [
       "Bot og tap av førerretten",
       "Bot og prikker, men ikke tap av førerretten",
-      "Bare 2 prikker",
+      "Bot og 3 prikker",
       "En muntlig advarsel"
     ],
     "f": "Er fartsgrensen 60 km/t eller lavere, mister du førerretten hvis du kjører 26 km/t eller mer over grensen. 80 km/t i en 50-sone er 30 km/t for fort.",
@@ -329,5 +334,183 @@
     "ru": "При уровне алкоголя выше 1,2 промилле вас лишат прав минимум на 2 года. Лишить прав могут и при более низком уровне: свыше 0,5 до 0,8 промилле — на 12–18 месяцев.",
     "uk": "Якщо рівень алкоголю перевищує 1,2 промілле, вас позбавлять права керування щонайменше на 2 роки. Позбавити права керування можуть і за нижчого рівня: понад 0,5 до 0,8 промілле — на 12–18 місяців.",
     "theory": "forerkort/bot-beslag-og-tap-av-forerretten"
+  },
+  {
+    "id": "fk-22",
+    "cat": "forerkort",
+    "q": "Du ble dømt for å ha kjørt med 0,9 promille. Tre år senere blir du tatt med 0,9 promille igjen. Hva skjer med førerretten?",
+    "img": null,
+    "a": [
+      "Du mister den for alltid, men politiet kan normalt forkorte tapet etter minst 5 år",
+      "Du mister den i 20–22 måneder, fordi tiden regnes ut fra promillen hver gang",
+      "Du mister den for alltid, og det finnes ingen måte å få den tilbake på",
+      "Du mister den i 5 år, og etter det får du den automatisk tilbake uten søknad"
+    ],
+    "f": "Ny promillekjøring innen 5 år etter den forrige straffen gir tap av førerretten for alltid, når promillen var over 0,5 begge ganger. «For alltid» betyr at du ikke har krav på å få førerretten tilbake. Politiet kan forkorte tapet hvis særlige grunner taler for det, normalt tidligst etter 5 år.",
+    "ru": "Повторная езда в нетрезвом виде в течение 5 лет после предыдущего наказания означает лишение прав навсегда, если оба раза уровень был выше 0,5 промилле. «Навсегда» значит, что вы не вправе требовать их обратно. Полиция может сократить срок при особых причинах, обычно не раньше чем через 5 лет.",
+    "uk": "Повторне керування в нетверезому стані протягом 5 років після попереднього покарання означає позбавлення права керування назавжди, якщо обидва рази рівень перевищував 0,5 промілле. «Назавжди» означає, що ви не можете вимагати його назад. Поліція може скоротити строк за особливих причин, зазвичай не раніше ніж через 5 років.",
+    "theory": "forerkort/bot-beslag-og-tap-av-forerretten"
+  },
+  {
+    "id": "fk-23",
+    "cat": "forerkort",
+    "q": "Du er i prøvetiden og blir tatt med 0,3 promille. Hva må du regne med?",
+    "img": null,
+    "a": [
+      "Bot og tap av førerretten i minst 6 måneder",
+      "Bot, men ikke tap av førerretten, fordi promillen er under 0,5",
+      "Bot og dobbelt så mange prikker, men ikke tap av førerretten",
+      "Ingen straff, fordi promillen ikke er over 0,5"
+    ],
+    "f": "Over 0,2 promille er ulovlig. Er promillen 0,5 eller lavere, blir det som regel bot, men vanligvis ikke tap av førerretten. I prøvetiden er det annerledes: Da bør du miste førerretten i minst 6 måneder. Promillekjøring gir ikke prikker.",
+    "ru": "Больше 0,2 промилле — уже нарушение. Если уровень не выше 0,5 промилле, обычно назначают штраф, но прав, как правило, не лишают. В испытательный срок всё иначе: как правило, прав лишают минимум на 6 месяцев. Штрафных баллов за езду в нетрезвом виде не начисляют.",
+    "uk": "Понад 0,2 промілле — уже порушення. Якщо рівень не перевищує 0,5 промілле, зазвичай призначають штраф, але права керування, як правило, не позбавляють. У випробувальний термін усе інакше: як правило, права керування позбавляють щонайменше на 6 місяців. Штрафних балів за керування в нетверезому стані не нараховують.",
+    "theory": "forerkort/bot-beslag-og-tap-av-forerretten"
+  },
+  {
+    "id": "fk-24",
+    "cat": "forerkort",
+    "q": "Du kjører i 63 km/t her og blir tatt. Du er i prøvetiden. Hvor mange prikker får du?",
+    "img": {
+      "sign": "fart_50"
+    },
+    "a": [
+      "4 prikker",
+      "2 prikker",
+      "3 prikker",
+      "6 prikker"
+    ],
+    "f": "63 km/t er 13 km/t over grensen. Når fartsgrensen er 60 km/t eller lavere, gir 11–15 km/t for mye 2 prikker, og 16 km/t eller mer gir 3 prikker. I prøvetiden dobles prikkene: 2 × 2 = 4.",
+    "ru": "63 км/ч — это на 13 км/ч больше разрешённого. Если ограничение 60 км/ч или ниже, превышение на 11–15 км/ч даёт 2 балла, а на 16 км/ч и больше — 3 балла. В испытательный срок баллы удваиваются: 2 × 2 = 4.",
+    "uk": "63 км/год — це на 13 км/год більше дозволеного. Якщо обмеження становить 60 км/год або менше, перевищення на 11–15 км/год дає 2 бали, а на 16 км/год і більше — 3 бали. У випробувальний термін бали подвоюються: 2 × 2 = 4.",
+    "theory": "forerkort/provetid-og-prikker"
+  },
+  {
+    "id": "fk-25",
+    "cat": "forerkort",
+    "q": "Hva er riktig om prikker på førerkortet?",
+    "img": null,
+    "a": [
+      "Ved 4 prikker får du et skriftlig varsel",
+      "Ved 4 prikker mister du førerretten i 3 måneder",
+      "Prikkene slettes når du har kjørt ett år uten nye prikker",
+      "Flere overtredelser på samme stopp regnes som én, med prikker for den alvorligste"
+    ],
+    "f": "Ved 4 prikker får du et skriftlig varsel, og ved 8 prikker i løpet av 3 år mister du førerretten i 6 måneder. Flere overtredelser på samme stopp gir prikker for hver av dem. Prikker slettes etter 3 år, og prikkene som førte til tapet, slettes når du får førerretten tilbake.",
+    "ru": "При 4 баллах вы получаете письменное предупреждение, а при 8 баллах за 3 года вас лишают прав на 6 месяцев. За несколько нарушений при одной остановке баллы начисляют за каждое из них. Баллы снимаются через 3 года, а те, из-за которых вас лишили прав, снимаются, когда права возвращают.",
+    "uk": "За 4 бали ви отримуєте письмове попередження, а за 8 балів протягом 3 років вас позбавляють права керування на 6 місяців. За кілька порушень під час однієї зупинки бали нараховують за кожне з них. Бали знімаються через 3 роки, а ті, через які вас позбавили права керування, знімаються, коли це право повертають.",
+    "theory": "forerkort/provetid-og-prikker"
+  },
+  {
+    "id": "fk-26",
+    "cat": "forerkort",
+    "q": "Du kjører varer i jobben din, og arbeidsdagen begynner klokka 07.00. Når må du senest ha drukket din siste alkohol?",
+    "img": null,
+    "a": [
+      "Klokka 23.00 kvelden før",
+      "Klokka 01.00 natten før arbeidet",
+      "Klokka 19.00 kvelden før",
+      "Klokka 03.00 natten før arbeidet"
+    ],
+    "f": "Dette er pliktmessig avhold (vegtrafikkloven § 22 b). Den som kjører personer eller varer i jobben, må ikke drikke alkohol i arbeidstiden eller de siste 8 timene før arbeidet begynner. 07.00 minus 8 timer er 23.00. Ikke bland det med regelen om 6 timer etter kjøringen, som gjelder ved mulig politietterforskning.",
+    "ru": "Это pliktmessig avhold — обязательное воздержание от алкоголя (vegtrafikkloven § 22 b). Тот, кто по работе возит людей или грузы, не должен пить алкоголь в рабочее время и в последние 8 часов перед началом работы. 07:00 минус 8 часов — это 23:00. Не путайте это с правилом о 6 часах после поездки, которое действует при возможном полицейском расследовании.",
+    "uk": "Це pliktmessig avhold — обов'язкове утримання від алкоголю (vegtrafikkloven § 22 b). Той, хто за роботою возить людей або вантажі, не повинен пити алкоголь у робочий час і в останні 8 годин перед початком роботи. 07:00 мінус 8 годин — це 23:00. Не плутайте це з правилом про 6 годин після поїздки, яке діє за можливого поліцейського розслідування.",
+    "theory": "forerkort/pliktmessig-avhold"
+  },
+  {
+    "id": "fk-27",
+    "cat": "forerkort",
+    "q": "Gjelder vegtrafikkloven § 3 når du kjører bil på en privat vei eller en parkeringsplass?",
+    "img": null,
+    "a": [
+      "Ja, loven gjelder all trafikk med motorvogn",
+      "Nei, på privat grunn er det eieren som bestemmer reglene",
+      "Ja på parkeringsplassen, men ikke på den private veien",
+      "Ja, der det er satt opp trafikkskilt, ellers ikke"
+    ],
+    "f": "Vegtrafikkloven gjelder all trafikk med motorvogn, og en parkeringsplass regnes som vei. Derfor skal du være hensynsfull, aktpågivende og varsom også på en privat vei og på en parkeringsplass. Du skal også vise hensyn mot dem som bor ved veien.",
+    "ru": "Закон о дорожном движении (vegtrafikkloven) действует для всего движения механических транспортных средств, а парковка считается дорогой. Поэтому быть внимательным к другим, бдительным и осторожным нужно и на частной дороге, и на парковке. Считаться нужно и с теми, кто живёт у дороги.",
+    "uk": "Закон про дорожній рух (vegtrafikkloven) діє для всього руху механічних транспортних засобів, а парковка вважається дорогою. Тому бути уважним до інших, пильним і обережним треба і на приватній дорозі, і на парковці. Зважати треба й на тих, хто живе біля дороги.",
+    "theory": "forerkort/vegtrafikkloven-3-og-21"
+  },
+  {
+    "id": "fk-28",
+    "cat": "forerkort",
+    "q": "Legen sier at du på grunn av sykdom ikke oppfyller helsekravene de neste 2 månedene. Du har fortsatt førerkortet. Kan du kjøre?",
+    "img": null,
+    "a": [
+      "Nei, ikke så lenge helsesvekkelsen varer",
+      "Ja, helt til politiet har tatt førerkortet fra deg",
+      "Ja, forbudet kommer først hvis det varer mer enn 6 måneder",
+      "Ja, hvis du holder deg til korte turer og kjører rolig"
+    ],
+    "f": "Du må ikke kjøre når du ikke er i stand til å kjøre trygt, for eksempel på grunn av sykdom eller medisiner (vegtrafikkloven § 21). Det gjelder selv om du har førerkortet. Varer svekkelsen mer enn 6 måneder, skal legen også melde fra til statsforvalteren. Er du i tvil om helsen, må du gå til lege før du kjører videre.",
+    "ru": "Нельзя водить, если вы не в состоянии делать это безопасно, например из-за болезни или лекарств (vegtrafikkloven § 21). Это так, даже если права у вас остаются. Если ухудшение продлится больше 6 месяцев, врач должен ещё и сообщить губернатору фюльке (statsforvalteren). Если вы сомневаетесь в своём здоровье, сходите к врачу, прежде чем ехать дальше.",
+    "uk": "Не можна керувати, якщо ви не в змозі робити це безпечно, наприклад через хворобу або ліки (vegtrafikkloven § 21). Це так, навіть якщо посвідчення водія у вас залишається. Якщо погіршення триватиме понад 6 місяців, лікар має ще й повідомити губернатора фюльке (statsforvalteren). Якщо ви сумніваєтеся у своєму здоров'ї, сходіть до лікаря, перш ніж їхати далі.",
+    "theory": "forerkort/helsekrav"
+  },
+  {
+    "id": "fk-29",
+    "cat": "forerkort",
+    "q": "Hvem av disse kan være privat ledsager når du øvelseskjører med bil?",
+    "img": null,
+    "a": [
+      "Tanten din (40 år), førerkort klasse B uten avbrudd i 20 år",
+      "Broren din (24 år), førerkort klasse B uten avbrudd i 6 år",
+      "Onkelen din (55 år), førerkort klasse B uten avbrudd i 4 år",
+      "Moren din (50 år), førerkort klasse B i 30 år, men mistet førerretten i 6 måneder i fjor"
+    ],
+    "f": "Ledsageren må ha fylt 25 år og ha hatt førerkort i samme klasse sammenhengende de siste 5 årene. Broren er for ung, og onkelen har hatt førerkort for kort tid. Moren fyller ikke kravet, fordi førerretten ble avbrutt i fjor.",
+    "ru": "Сопровождающему должно быть не меньше 25 лет, и он должен иметь права той же категории непрерывно последние 5 лет. Брат слишком молод, а дядя получил права слишком недавно. Мать не подходит, потому что в прошлом году её право управления прерывалось.",
+    "uk": "Супровідникові має бути не менше 25 років, і він повинен мати посвідчення водія тієї самої категорії безперервно останні 5 років. Брат надто молодий, а дядько отримав посвідчення надто недавно. Мати не підходить, тому що торік її право керування переривалося.",
+    "theory": "forerkort/ovelseskjoring"
+  },
+  {
+    "id": "fk-30",
+    "cat": "forerkort",
+    "q": "Du skal øvelseskjøre privat med en vanlig personbil. Hva er riktig om bilen?",
+    "img": null,
+    "a": [
+      "Den skal ha L-skilt bak og et ekstra speil til ledsageren",
+      "Den skal ha L-skilt bak, men ekstra speil kreves på trafikkskolebiler, ikke her",
+      "Den skal ha L-skilt bak, og skiltet kan sitte på også når bilen brukes til annet",
+      "Den skal ha hvit L på rød bunn, godt synlig for dem som kjører bak"
+    ],
+    "f": "Bilen skal ha en rød L på hvit bunn, godt synlig for dem som kjører bak, og et ekstra speil, slik at ledsageren ser bakover. Har bilen skjerm i stedet for bakspeil, holder det hvis ledsageren ser godt nok bakover. Ta av L-skiltet når øvelseskjøringen er over.",
+    "ru": "На машине должна быть красная буква L на белом фоне, хорошо заметная для тех, кто едет сзади, и дополнительное зеркало, чтобы сопровождающий видел, что позади. Если вместо зеркала заднего вида стоит экран, этого достаточно, когда сопровождающему хорошо видно назад. Снимите знак L, когда учебная езда закончится.",
+    "uk": "На автомобілі має бути червона літера L на білому фоні, добре помітна для тих, хто їде позаду, і додаткове дзеркало, щоб супровідник бачив, що позаду. Якщо замість дзеркала заднього виду стоїть екран, цього досить, коли супровідникові добре видно назад. Зніміть знак L, коли навчальна їзда закінчиться.",
+    "theory": "forerkort/ovelseskjoring"
+  },
+  {
+    "id": "fk-31",
+    "cat": "forerkort",
+    "q": "I Norge skiller gule linjer trafikk i motsatt retning. Hva må du være forberedt på i Sverige og Danmark?",
+    "img": null,
+    "a": [
+      "Midtlinjen er vanligvis hvit, og gult brukes blant annet ved veiarbeid",
+      "Midtlinjen er gul, som i Norge, og hvitt brukes ved veiarbeid",
+      "Alle linjer er gule, også linjene mellom felt med samme kjøreretning",
+      "Midtlinjen er hvit i Sverige, men gul i Danmark"
+    ],
+    "f": "I Sverige og Danmark er linjene på veien som regel hvite, også midtlinjen. Gule linjer brukes blant annet når de midlertidig erstatter de vanlige linjene ved veiarbeid. Du kan derfor ikke bruke fargen til å se om trafikken i feltet ved siden av kommer imot deg.",
+    "ru": "В Швеции и Дании линии на дороге обычно белые, в том числе осевая. Жёлтые линии применяют, среди прочего, когда они временно заменяют обычные на время дорожных работ. Поэтому по цвету нельзя понять, идёт ли по соседней полосе встречное движение.",
+    "uk": "У Швеції та Данії лінії на дорозі зазвичай білі, зокрема й осьова. Жовті лінії застосовують, серед іншого, коли вони тимчасово замінюють звичайні на час дорожніх робіт. Тому за кольором не можна зрозуміти, чи йде сусідньою смугою зустрічний рух.",
+    "theory": "forerkort/kjoring-i-utlandet"
+  },
+  {
+    "id": "fk-32",
+    "cat": "forerkort",
+    "q": "Du skal kjøre en norsk bil til Danmark. Bilskiltene har ikke N og flagg på blå bunn. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Du må ha med det fysiske førerkortet, og bilen må ha et eget N-merke bak",
+      "Det digitale førerkortet holder, men bilen må ha et eget N-merke bak",
+      "Du må ha med det fysiske førerkortet, og et norsk flagg på bakruten erstatter N-merket",
+      "Du må ha internasjonalt førerkort i tillegg, og bilen må ha et eget N-merke foran"
+    ],
+    "f": "I utlandet må du ha med det fysiske førerkortet. Det digitale førerkortet i appen gjelder ikke der. Når bilen kjører ut av Norge, skal den ha nasjonalitetsmerke: N og flagg på blå bunn på bilskiltet, eller et eget ovalt merke med svart N bak på bilen.",
+    "ru": "За границей нужна пластиковая карточка прав. Цифровые права в приложении там не действуют. Когда машина выезжает из Норвегии, на ней должен быть знак страны: N и флаг на синем фоне на номерном знаке или отдельный овальный знак с чёрной буквой N сзади на машине.",
+    "uk": "За кордоном потрібна пластикова картка посвідчення водія. Цифрове посвідчення в застосунку там не діє. Коли автомобіль виїжджає з Норвегії, на ньому має бути знак країни: N і прапор на синьому фоні на номерному знаку або окремий овальний знак із чорною літерою N позаду на автомобілі.",
+    "theory": "forerkort/kjoring-i-utlandet"
   }
 ]

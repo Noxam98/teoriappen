@@ -7,7 +7,8 @@
     "a": [
       "At et barn kan komme løpende etter ballen",
       "At ballen ikke betyr noe for kjøringen",
-      "At barn alltid ser seg for før de løper ut"
+      "At barn ser seg for før de løper ut etter ballen",
+      "At et barn vil vente på fortauet til du har kjørt forbi"
     ],
     "f": "Der det kommer en ball, kan det komme et barn etter. Senk farten og vær klar til å stoppe.",
     "ru": "За мячом может выбежать ребёнок. Снизьте скорость и будьте готовы остановиться.",
@@ -22,7 +23,8 @@
     "a": [
       "Senke farten og være klar til å stoppe, fordi barn kan gjøre uventede ting",
       "Tute for å varsle barna og holde farten, så du ikke stopper trafikken",
-      "Kjøre raskt forbi, så du er nær barna i så kort tid som mulig"
+      "Kjøre raskt forbi, så du er nær barna i så kort tid som mulig",
+      "Holde farten, men flytte bilen litt mot midten av veien og følge med på barna"
     ],
     "f": "Barn er små, vanskelige å se og kan gjøre uventede ting. Senk farten og vær klar til å stoppe.",
     "ru": "Дети маленькие, их трудно заметить, и они могут повести себя неожиданно. Снизьте скорость и будьте готовы остановиться.",
@@ -37,7 +39,8 @@
     "a": [
       "Omtrent 25–30 meter",
       "Omtrent 140 meter",
-      "Omtrent 300 meter"
+      "Omtrent 300 meter",
+      "Omtrent 60–70 meter"
     ],
     "f": "Med nærlys ser du en gående med mørke klær først på omtrent 25–30 meters avstand. Med refleks ser du personen på omtrent 140 meter.",
     "ru": "С ближним светом пешехода в тёмной одежде видно лишь примерно с 25–30 метров. Со светоотражателем — примерно со 140 метров.",
@@ -52,11 +55,12 @@
     "a": [
       "Bilførere ser dem da på mye lengre avstand",
       "Refleksen gir gående forkjørsrett",
-      "Refleksen lyser av seg selv uten lys fra bilene"
+      "Refleksen lyser av seg selv uten lys fra bilene",
+      "Bilførere ser dem da like langt unna med nærlys som med fjernlys"
     ],
-    "f": "Refleks gjør at gående blir sett mye tidligere i lyset fra bilene, med nærlys omtrent 140 meter i stedet for omtrent 25–30 meter.",
-    "ru": "Светоотражатель позволяет водителям увидеть пешехода гораздо раньше в свете фар: при ближнем свете примерно со 140 метров вместо 25–30.",
-    "uk": "Світловідбивач дає змогу водіям побачити пішохода у світлі фар набагато раніше: з ближнім світлом приблизно з 140 метрів замість 25–30.",
+    "f": "Refleks gjør at gående blir sett mye tidligere i lyset fra bilene, med nærlys omtrent 140 meter i stedet for omtrent 25–30 meter. Med fjernlys ser du personen på omtrent 400 meter.",
+    "ru": "Светоотражатель позволяет водителям увидеть пешехода гораздо раньше в свете фар: при ближнем свете примерно со 140 метров вместо 25–30. С дальним светом человека видно примерно с 400 метров.",
+    "uk": "Світловідбивач дає змогу водіям побачити пішохода у світлі фар набагато раніше: з ближнім світлом приблизно з 140 метрів замість 25–30. З дальнім світлом людину видно приблизно з 400 метрів.",
     "theory": "myke/refleks-i-morket"
   },
   {
@@ -69,7 +73,8 @@
     "a": [
       "Stoppe og la den gående gå over",
       "Kjøre forbi før den gående går ut",
-      "Tute, så den gående venter"
+      "Tute, så den gående venter",
+      "Senke farten og kjøre forbi hvis personen venter"
     ],
     "f": "Du har vikeplikt for gående som er i gangfeltet eller er på vei ut i det.",
     "ru": "Вы обязаны уступить пешеходам, которые находятся на пешеходном переходе или собираются на него выйти.",
@@ -84,11 +89,12 @@
     "a": [
       "Personen er blind eller svaksynt, og du må ta ekstra hensyn",
       "Personen er eldre og trenger en stokk for å kunne gå",
-      "Personen hører dårlig og kan ikke høre at bilene kommer"
+      "Personen hører dårlig og kan ikke høre at bilene kommer",
+      "Personen er svaksynt, men det gir deg ingen særlige plikter som fører"
     ],
-    "f": "Hvit stokk betyr at personen er blind eller ser dårlig. Vær ekstra forsiktig og gi personen god tid.",
-    "ru": "Белая трость означает, что человек слепой или плохо видит. Будьте особенно внимательны и дайте ему достаточно времени.",
-    "uk": "Біла тростина означає, що людина незряча або погано бачить. Будьте особливо уважні й дайте їй достатньо часу.",
+    "f": "Hvit stokk betyr at personen er blind eller ser dårlig. Vær ekstra forsiktig og gi personen god tid. Trafikkreglene krever at du holder lav fart og om nødvendig stanser straks.",
+    "ru": "Белая трость означает, что человек слепой или плохо видит. Будьте особенно внимательны и дайте ему достаточно времени. Правила требуют держать низкую скорость и при необходимости сразу остановиться.",
+    "uk": "Біла тростина означає, що людина незряча або погано бачить. Будьте особливо уважні й дайте їй достатньо часу. Правила вимагають тримати низьку швидкість і за потреби одразу зупинитися.",
     "theory": "myke/gaende"
   },
   {
@@ -99,7 +105,8 @@
     "a": [
       "Hold god sideavstand, gjerne minst 1,5 meter, og kjør forbi bare når det er trygt",
       "Du kan kjøre tett forbi hvis syklisten holder seg helt til høyre i kjørebanen",
-      "Tut før du kjører forbi, så syklisten vet at du kommer og flytter seg"
+      "Tut før du kjører forbi, så syklisten vet at du kommer og flytter seg",
+      "Du kan kjøre forbi med en halv meters sideavstand hvis du holder lav fart og syklisten er stø"
     ],
     "f": "Syklister kan vingle, for eksempel på grunn av hull i veien eller vind. Hold god sideavstand. Statens vegvesen anbefaler minst 1,5 meter.",
     "ru": "Велосипедист может вильнуть, например из-за ямы или ветра. Держите большой боковой интервал. Дорожное управление (Statens vegvesen) рекомендует не меньше 1,5 метра.",
@@ -114,7 +121,8 @@
     "a": [
       "De er smale, og det er vanskelig å bedømme fart og avstand",
       "De har ikke lys på om dagen, så de er vanskelige å se",
-      "De har ikke blinklys, så du ser ikke hvor de skal svinge"
+      "De har ikke blinklys, så du ser ikke hvor de skal svinge",
+      "De er så lave at de blir skjult av autovernet langs veien"
     ],
     "f": "Motorsykler er smale og blir lett skjult. Det er også vanskelig å bedømme hvor fort de kommer.",
     "ru": "Мотоциклы узкие, их легко не заметить. Также трудно оценить, с какой скоростью они приближаются.",
@@ -128,8 +136,9 @@
     "img": null,
     "a": [
       "Motorsykkelen kan være nærmere og kjøre fortere enn du tror",
-      "Motorsykler har alltid vikeplikt for biler",
-      "Du kan svinge, fordi motorsykkelen er liten og kan kjøre utenom deg"
+      "Motorsykkelen har vikeplikt, fordi bilen din er i krysset først",
+      "Du kan svinge, fordi motorsykkelen er liten og kan kjøre utenom deg",
+      "Motorsykkelen virker nærmere enn den er, så du har god tid til å svinge"
     ],
     "f": "Når du svinger til venstre, har du vikeplikt for møtende. Motorsykler er vanskelige å bedømme, så vent hvis du er usikker.",
     "ru": "При повороте налево вы уступаете встречным. Скорость мотоцикла трудно оценить, поэтому если сомневаетесь — подождите.",
@@ -146,7 +155,8 @@
     "a": [
       "Senke farten og følge godt med langs veikantene",
       "Holde farten, fordi elgen er ute om natten og ikke i skumringen",
-      "Tute når du ser en elg, så den løper bort fra veien"
+      "Tute når du ser en elg, så den løper bort fra veien",
+      "Slå på fjernlys og holde farten, så du ser elgen i tide"
     ],
     "f": "Elg er ofte i bevegelse i skumringen og om natten. Senk farten og følg med langs veikantene.",
     "ru": "Лоси особенно активны в сумерках и ночью. Снизьте скорость и внимательно следите за обочинами.",
@@ -161,7 +171,8 @@
     "a": [
       "At flere elger kan komme etter",
       "At det ikke kommer flere dyr etter den",
-      "At elgen alltid stopper for biler"
+      "At elgen stopper når den ser bilen din",
+      "At veien er fri så snart den første elgen har krysset"
     ],
     "f": "Elg kan gå sammen med kalv eller andre elger. Når én elg har krysset, kan flere komme etter.",
     "ru": "Лось может идти вместе с лосёнком или с другими лосями. Если один лось перешёл дорогу, за ним могут пойти другие.",
@@ -176,7 +187,8 @@
     "a": [
       "Senke farten og være klar til å stoppe",
       "Tute for å skremme dem bort fra veien",
-      "Holde farten, fordi sauer ikke går ut i veien"
+      "Holde farten, fordi sauer ikke går ut i veien",
+      "Kjøre raskt forbi, så dyrene ikke rekker å gå ut i veien"
     ],
     "f": "Dyr kan plutselig gå ut i veien. Senk farten og kjør forsiktig forbi.",
     "ru": "Животные могут внезапно выйти на дорогу. Снизьте скорость и проезжайте мимо осторожно.",
@@ -191,7 +203,8 @@
     "a": [
       "Kjør sakte og hold god avstand, så hesten ikke blir skremt",
       "Tut i god tid, så rytteren og hesten vet at du kommer",
-      "Kjør raskt forbi med god avstand, så det går fort over"
+      "Kjør raskt forbi med god avstand, så det går fort over",
+      "Kjør sakte og tett inntil, så du ikke kommer over i det andre feltet"
     ],
     "f": "Hester kan bli redde for lyd og biler som kommer nær. Kjør sakte forbi med god avstand og ikke bruk tuten.",
     "ru": "Лошадь может испугаться шума и близко проезжающих машин. Проезжайте медленно, с большим интервалом и не сигнальте.",
@@ -206,7 +219,8 @@
     "a": [
       "I kjørebanen, i sykkelfeltet og på sykkelveien, og på fortauet når det ikke er til hinder for gående",
       "På fortauet og på gang- og sykkelveien, men ikke i kjørebanen og heller ikke i sykkelfeltet",
-      "Bare i kjørebanen og i sykkelfeltet, men aldri på fortauet, selv om det er helt tomt for gående"
+      "I kjørebanen og i sykkelfeltet, men ikke på fortauet, selv om det er helt tomt for gående",
+      "I kjørebanen og på fortauet, men ikke i sykkelfeltet, fordi det feltet er forbeholdt dem som sykler"
     ],
     "f": "En elsparkesykkel følger stort sett de samme reglene som en sykkel. Den kan kjøre i kjørebanen og i sykkelfeltet, og på fortauet når det ikke er til hinder for gående.",
     "ru": "Для электросамоката в основном действуют те же правила, что и для велосипеда. На нём можно ехать по проезжей части и по велополосе, а по тротуару — если это не мешает пешеходам.",
@@ -221,7 +235,8 @@
     "a": [
       "Senke farten og være klar til å stoppe, fordi elsparkesykkelen kan komme brått ut i veien",
       "Holde farten, fordi personen på elsparkesykkelen sikkert har sett bilen din og stopper",
-      "Tute for å varsle personen og holde farten, så du ikke hindrer trafikken bak deg"
+      "Tute for å varsle personen og holde farten, så du ikke hindrer trafikken bak deg",
+      "Flytte bilen ut mot midten av veien og holde farten, fordi personen skal stanse ved gangfeltet"
     ],
     "f": "Elsparkesykler er nesten lydløse, kan kjøre ganske fort og er mindre synlige enn en bil. De kan komme brått ut fra fortauet. Senk farten og vær klar til å stoppe.",
     "ru": "Электросамокаты почти бесшумные, могут ехать довольно быстро и менее заметны, чем машина. Они могут внезапно выехать с тротуара. Снизьте скорость и будьте готовы остановиться.",
@@ -238,7 +253,8 @@
     "a": [
       "Personen regnes ikke som gående og har vikeplikt, men du må uansett være klar til å bremse",
       "Du har vikeplikt, fordi alle som er i et gangfelt, regnes som gående og skal slippe over",
-      "Personen har forkjørsrett, fordi elsparkesykkelen kom ut i gangfeltet før du kom fram"
+      "Personen har forkjørsrett, fordi elsparkesykkelen kom ut i gangfeltet før du kom fram",
+      "Personen regnes som gående og skal slippe over når elsparkesykkelen holder lav fart"
     ],
     "f": "Den som kjører sykkel eller elsparkesykkel over gangfeltet, regnes ikke som gående og har vikeplikt. Går personen av og triller, har du vikeplikt. Uansett skal du være aktpågivende og bremse hvis det trengs.",
     "ru": "Тот, кто пересекает пешеходный переход верхом на велосипеде или электросамокате, не считается пешеходом и сам обязан уступить. Если человек слезет и поведёт самокат рядом, уступить обязаны вы. В любом случае вы должны быть внимательны и тормозить, если нужно.",
@@ -252,12 +268,113 @@
     "img": null,
     "a": [
       "Syklisten kan være i blindsonen, så sjåføren ser kanskje ikke syklisten",
-      "Det er bare farlig i mørket, fordi sjåføren da ikke ser syklisten i speilene",
-      "Det er ikke farlig når lastebilen blinker til høyre i god tid"
+      "Det er farlig i mørket, fordi sjåføren da ikke ser syklisten i speilene, men ikke om dagen",
+      "Det er ikke farlig når lastebilen blinker til høyre i god tid",
+      "Syklisten har vikeplikt her, så sjåføren trenger ikke å se etter syklisten"
     ],
     "f": "Store kjøretøy, som lastebiler og busser, har store blindsoner. En syklist rett ved siden av en lastebil som svinger til høyre, kan være i blindsonen. Kan du ikke se sjåføren, er det ikke sikkert at sjåføren ser deg.",
     "ru": "У больших машин — грузовиков и автобусов — большие слепые зоны. Велосипедист рядом с грузовиком, который поворачивает направо, может оказаться в слепой зоне. Если вы не видите водителя, возможно, и он не видит вас.",
     "uk": "Великі транспортні засоби — вантажівки й автобуси — мають великі сліпі зони. Велосипедист поруч із вантажівкою, яка повертає праворуч, може опинитися в сліпій зоні. Якщо ви не бачите водія, можливо, і він не бачить вас.",
     "theory": "myke/syklister"
+  },
+  {
+    "id": "myk-21",
+    "cat": "myke",
+    "q": "Hva er riktig om feltet helt til høyre på bildet?",
+    "img": {
+      "road": "sykkelfelt"
+    },
+    "a": [
+      "Syklister kan også sykle i kjørebanen, selv om det er sykkelfelt her",
+      "Mopeder kan bruke feltet på samme måte som syklister når det er kø",
+      "Du kan stanse kort i feltet for å slippe av en passasjer når det er fritt for syklister",
+      "Syklister kan bruke feltet i begge retninger når det er lite trafikk"
+    ],
+    "f": "Sykkelfelt er for syklister og førere av små elektriske motorvogner, som elsparkesykkel. Andre kjørende må ikke bruke det, og det er forbudt å stanse der. Feltet brukes på høyre side av veien. Syklister har ikke plikt til å bruke det: De kan også sykle i kjørebanen.",
+    "ru": "Велополоса предназначена для велосипедистов и водителей небольших электрических транспортных средств, например электросамокатов. Другим ею пользоваться нельзя, и останавливаться на ней запрещено. Ею пользуются на правой стороне дороги. Велосипедист не обязан ехать по ней: он может ехать и по проезжей части.",
+    "uk": "Велосмуга призначена для велосипедистів і водіїв невеликих електричних транспортних засобів, наприклад електросамокатів. Іншим нею користуватися не можна, і зупинятися на ній заборонено. Нею користуються на правому боці дороги. Велосипедист не зобов'язаний їхати нею: він може їхати й проїзною частиною.",
+    "theory": "myke/syklister"
+  },
+  {
+    "id": "myk-22",
+    "cat": "myke",
+    "q": "Du kommer bak en syklist. Veien er merket slik, og du får ikke god sideavstand uten å krysse linjen. Hva gjør du?",
+    "img": {
+      "road": "sperrelinje"
+    },
+    "a": [
+      "Venter bak syklisten til du kan kjøre forbi uten å krysse linjen",
+      "Krysser linjen når veien er fri, fordi forbudet ikke gjelder forbi syklister",
+      "Kjører forbi på din side av linjen, tett inntil syklisten og i lav fart",
+      "Tuter, så syklisten flytter seg lenger ut til høyre, og kjører forbi etterpå"
+    ],
+    "f": "Det må ikke kjøres på eller over en sperrelinje, og det finnes ikke noe unntak for forbikjøring av syklister. Syklister kan vingle, så ikke press deg forbi tett inntil dem. Vent til du kan kjøre forbi med god sideavstand uten å krysse linjen.",
+    "ru": "На сплошную линию и через неё заезжать нельзя, и для обгона велосипедистов исключения нет. Велосипедист может вильнуть, поэтому не протискивайтесь вплотную к нему. Подождите, пока сможете обогнать с большим боковым интервалом, не пересекая линию.",
+    "uk": "На суцільну лінію й через неї заїжджати не можна, і для обгону велосипедистів винятку немає. Велосипедист може вильнути вбік, тому не протискуйтеся впритул до нього. Зачекайте, поки зможете обігнати з великим бічним інтервалом, не перетинаючи лінію.",
+    "theory": "myke/syklister"
+  },
+  {
+    "id": "myk-23",
+    "cat": "myke",
+    "q": "På en smal vei uten fortau kommer en person joggende mot deg, ytterst på din side av veien. Hva er riktig?",
+    "img": null,
+    "a": [
+      "Personen følger reglene for gående, og du skal gi god plass",
+      "Personen er på feil side og må gå ut av veien når du kommer",
+      "Personen regnes som kjørende og skal holde seg til høyre, slik som deg",
+      "Du kan holde farten, fordi personen ser deg og kan flytte seg i god tid"
+    ],
+    "f": "Gående i kjørebanen skal gå ytterst til venstre i gangretningen, altså mot trafikken. Det gjelder også den som jogger. Den som leier sykkel, går ytterst til høyre. Du skal gi gående tilstrekkelig plass, og senke farten hvis det er trangt.",
+    "ru": "Пешеход на проезжей части должен идти с самого левого края по ходу своего движения, то есть навстречу транспорту. Это касается и бегущего. Тот, кто ведёт велосипед, идёт с самого правого края. Вы должны дать пешеходу достаточно места и снизить скорость, если тесно.",
+    "uk": "Пішохід на проїзній частині має йти з самого лівого краю в напрямку свого руху, тобто назустріч транспорту. Це стосується й того, хто біжить. Той, хто веде велосипед, іде з самого правого краю. Ви маєте дати пішоходу достатньо місця й знизити швидкість, якщо тісно.",
+    "theory": "myke/gaende"
+  },
+  {
+    "id": "myk-24",
+    "cat": "myke",
+    "q": "Hva er riktig om elsparkesykkel?",
+    "img": null,
+    "a": [
+      "Barn under 15 år skal bruke hjelm, og promillegrensen er 0,2",
+      "Alle under 18 år skal bruke hjelm, og promillegrensen er 0,5",
+      "Det er lov med to personer på den når begge bruker hjelm",
+      "Promillegrensen gjelder ikke, fordi du ikke trenger førerkort for å kjøre den"
+    ],
+    "f": "Barn under 15 år skal bruke hjelm, og promillegrensen er 0,2. Det er lov med bare én person. Aldersgrensen er 12 år, men i oktober 2026 foreslo regjeringen å heve den til 16 år. Elsparkesykkelen skal ha sperre på 20 km/t, og forbi gående skal den ikke kjøre fortere enn 6 km/t.",
+    "ru": "Дети младше 15 лет обязаны надевать шлем, а допустимый уровень алкоголя — 0,2 промилле. Ехать можно только одному. Минимальный возраст — 12 лет, но в октябре 2026 года правительство предложило поднять его до 16 лет. Скорость электросамоката должна быть ограничена 20 км/ч, а мимо пешеходов нельзя ехать быстрее 6 км/ч.",
+    "uk": "Діти молодші за 15 років зобов'язані вдягати шолом, а допустимий рівень алкоголю — 0,2 промілле. Їхати можна лише одному. Мінімальний вік — 12 років, але в жовтні 2026 року уряд запропонував підняти його до 16 років. Швидкість електросамоката має бути обмежена 20 км/год, а повз пішоходів не можна їхати швидше ніж 6 км/год.",
+    "theory": "myke/elsparkesykler"
+  },
+  {
+    "id": "myk-25",
+    "cat": "myke",
+    "q": "Du skal passere en person med hvit stokk eller førerhund ved veien. Hva krever trafikkreglene?",
+    "img": null,
+    "a": [
+      "At du holder lav nok fart og stanser straks hvis det trengs",
+      "At du stanser hvis personen står ved et gangfelt, ellers er det ingen særlige krav",
+      "At du tuter i god tid, fordi personen ikke kan se at bilen kommer",
+      "At du holder vanlig fart, men flytter deg så langt ut i veien som mulig"
+    ],
+    "f": "Trafikkreglene § 13 krever at du holder tilstrekkelig lav fart og om nødvendig stanser straks når du passerer en person med hvit stokk eller førerhund. Det samme gjelder barn på eller ved veien, skolepatrulje og buss som har stanset på holdeplass. Regelen gjelder også utenfor gangfelt.",
+    "ru": "§ 13 правил дорожного движения требует держать достаточно низкую скорость и при необходимости сразу останавливаться, когда вы проезжаете мимо человека с белой тростью или собакой-поводырём. То же касается детей на дороге или рядом с ней, школьного патруля и автобуса, остановившегося на остановке. Правило действует и вне пешеходного перехода.",
+    "uk": "§ 13 правил дорожнього руху вимагає тримати досить низьку швидкість і за потреби одразу зупинятися, коли ви проїжджаєте повз людину з білою тростиною або собакою-поводирем. Те саме стосується дітей на дорозі чи поруч із нею, шкільного патруля й автобуса, що зупинився на зупинці. Правило діє і поза пішохідним переходом.",
+    "theory": "myke/gaende"
+  },
+  {
+    "id": "myk-26",
+    "cat": "myke",
+    "q": "Hva er riktig om barn og eldre i trafikken?",
+    "img": null,
+    "a": [
+      "Barn bedømmer fart og avstand dårligere enn voksne, også når de ser bilen",
+      "Eldre bedømmer farten på biler bedre enn yngre, fordi de har lengre erfaring",
+      "Eldre har ofte kortere reaksjonstid, fordi de er mer forsiktige i trafikken",
+      "Et barn som har sett bilen din, blir stående til du har kjørt forbi"
+    ],
+    "f": "Barn er dårligere til å bedømme fart og avstand og kan være impulsive. Eldre bedømmer farten på biler dårligere enn yngre og har ofte lengre reaksjonstid. At noen har sett bilen din, betyr ikke at de venter. Senk farten og vær klar til å stoppe.",
+    "ru": "Дети хуже оценивают скорость и расстояние и могут действовать импульсивно. Пожилые люди оценивают скорость машин хуже молодых, и реакция у них часто медленнее. Если вас заметили, это не значит, что будут ждать. Снизьте скорость и будьте готовы остановиться.",
+    "uk": "Діти гірше оцінюють швидкість і відстань і можуть діяти імпульсивно. Літні люди оцінюють швидкість автомобілів гірше за молодих, і реакція в них часто повільніша. Якщо вас помітили, це не означає, що чекатимуть. Зменште швидкість і будьте готові зупинитися.",
+    "theory": "myke/barn"
   }
 ]
