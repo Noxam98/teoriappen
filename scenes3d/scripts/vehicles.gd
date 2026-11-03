@@ -65,6 +65,45 @@ static func _lamp(c: Color, energy: float) -> StandardMaterial3D:
 	return m
 
 
+## Ореол маячка: белая сердцевина, насыщенный синий и четыре луча. Прозрачность обычная, а не сложение:
+## сложенный синий на жёлтой стене дал бы белёсое пятно.
+static func _flare() -> ImageTexture:
+	var n: int = 128
+	var image := Image.create(n, n, false, Image.FORMAT_RGBA8)
+	for py: int in n:
+		for px: int in n:
+			var u: float = (px + 0.5) / n * 2.0 - 1.0
+			var v: float = (py + 0.5) / n * 2.0 - 1.0
+			var r: float = sqrt(u * u + v * v)
+			var edge: float = clampf(1.0 - r, 0.0, 1.0)
+			var rays: float = (exp(-absf(v) * 34.0) + exp(-absf(u) * 34.0)) * edge * edge
+			var glow: float = pow(edge, 2.4) * 1.5
+			var core: float = 1.0 - smoothstep(0.03, 0.15, r)
+			var c: Color = Color(0.02, 0.2, 1.0).lerp(Color(0.85, 0.92, 1.0), core)
+			c.a = clampf(glow + rays * 0.9, 0.0, 1.0)
+			image.set_pixel(px, py, c)
+	return ImageTexture.create_from_image(image)
+
+
+## Ореол всегда лицом к камере и поверх кузова: иначе крыша срезает его нижнюю половину.
+static func _beacon(root: Node3D, pos: Vector3, size: float, flare: Texture2D) -> void:
+	var m := StandardMaterial3D.new()
+	m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	m.billboard_mode = BaseMaterial3D.BILLBOARD_ENABLED
+	m.no_depth_test = true
+	m.disable_fog = true
+	m.albedo_texture = flare
+	var quad := QuadMesh.new()
+	quad.size = Vector2(size, size)
+	quad.material = m
+	var node := MeshInstance3D.new()
+	node.mesh = quad
+	node.position = pos
+	node.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	root.add_child(node)
+
+
 static func _text(root: Node3D, text: String, pos: Vector3, yaw: float, size: float, color: Color) -> void:
 	var font := SystemFont.new()
 	font.font_names = PackedStringArray(["Liberation Sans", "Arial", "DejaVu Sans"])
@@ -404,12 +443,20 @@ static func ambulance() -> Node3D:
 			if sx < 0.0:
 				w.rotation.y = PI
 			root.add_child(w)
-	var blue: StandardMaterial3D = _lamp(Color(0.1, 0.3, 1.0), 3.2)
-	Car.box(root, Vector3(1.4, 0.08, 0.3), Vector3(0, 2.5, -0.68), dark)
-	for sx: float in [-1.0, -0.42, 0.42, 1.0]:
-		Car.box(root, Vector3(0.3, 0.12, 0.26), Vector3(sx * 0.55, 2.59, -0.68), blue)
+	# Зелёной доли в синем почти нет: при большей яркости AgX выбеливает цвет.
+	var blue: StandardMaterial3D = _lamp(Color(0.005, 0.07, 1.0), 2.4)
+	Car.box(root, Vector3(1.7, 0.09, 0.36), Vector3(0, 2.5, -0.68), dark)
 	for sx: float in [-1.0, 1.0]:
+		Car.box(root, Vector3(0.62, 0.2, 0.32), Vector3(sx * 0.5, 2.64, -0.68), blue)
 		Car.box(root, Vector3(0.22, 0.09, 0.26), Vector3(sx * 0.6, 2.54, 2.72), blue)
+		Car.box(root, Vector3(0.26, 0.1, 0.03), Vector3(sx * 0.42, 0.84, -2.92), blue)
+	# Кадр застывает на вспышке: левая лампа горит сильнее правой. Днём одной светящейся лампы не видно.
+	var flare: ImageTexture = _flare()
+	_beacon(root, Vector3(-0.5, 2.68, -0.68), 3.0, flare)
+	_beacon(root, Vector3(0.5, 2.68, -0.68), 1.9, flare)
+	_beacon(root, Vector3(-0.42, 0.84, -2.98), 1.3, flare)
+	_beacon(root, Vector3(0.42, 0.84, -2.98), 0.8, flare)
+	for sx: float in [-1.0, 1.0]:
 		Car.box(root, Vector3(0.34, 0.12, 0.03), Vector3(sx * 0.6, 1.0, -2.91), _lamp(Color(0.95, 0.96, 0.92), 0.35))
 		Car.box(root, Vector3(0.12, 0.4, 0.03), Vector3(sx * 0.86, 1.0, 2.91), _lamp(Color(0.72, 0.03, 0.04), 0.3))
 		Car.box(root, Vector3(0.06, 0.16, 0.1), Vector3(sx * 1.1, 1.75, -1.25), dark)
