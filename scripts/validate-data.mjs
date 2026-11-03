@@ -1,4 +1,5 @@
 // Checks the question bank, the theory chapters and the dictionary:  npm run validate
+// - the rendered scenes passed the check (nothing stands on the road) and match their sources: scenes3d/specs.json, scripts, shaders
 // - every question has the right shape, a known category, exactly 4 options and a valid picture
 // - every theory chapter has known block types, translations and valid pictures
 // - every question links to an existing theory section ("theory": "<topic>/<section>")
@@ -8,6 +9,7 @@
 // Drafting new text: `node scripts/validate-data.mjs --words draft.json fart lys` also reads the entries in
 // draft.json ({ "words": {…}, "phrases": {…} }) and checks only the named theory chapters;
 // `--no-uk` (any language code) skips that language while its translation is not written yet.
+import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -28,6 +30,7 @@ const WORD = /[A-Za-zÀ-ÖØ-öø-ÿ]+(?:-[A-Za-zÀ-ÖØ-öø-ÿ]+)*/g;
 
 // sign names are the keys of the official drawings (src/components/figures/signs/official.ts, scripts/sign-numbers.json)
 const SIGNS = new Set(Object.keys(read('scripts/sign-numbers.json')));
+const SCENE_SPECS = read('scenes3d/specs.json');
 
 const errors = [];
 const err = (id, msg) => errors.push(`${id}: ${msg}`);
@@ -186,6 +189,9 @@ function checkFigure(id, img) {
       const to = v.go === 'straight' ? ORDER[(i + 2) % 4] : v.go === 'left' ? ORDER[(i + 1) % 4] : ORDER[(i + 3) % 4];
       if (!legs.includes(to)) err(id, `vehicle ${v.id} drives into missing leg "${to}"`);
     }
+  } else if (type === 'view') {
+    if (!existsSync(join(root, 'src/assets/scenes', `${img.view}.webp`))) err(id, `no rendered picture src/assets/scenes/${img.view}.webp`);
+    if (!SCENE_SPECS[img.view]) err(id, `no scene "${img.view}" in scenes3d/specs.json`);
   } else err(id, `unknown picture type "${type}"`);
 }
 
@@ -207,6 +213,21 @@ for (const code of OTHER) {
     if (e[2]) check('grammar', tg[e[2]], `the grammar label "${e[2]}"`);
   }
   for (const p of phrases) check('phrases', tp[p], `"${p}"`);
+}
+
+// the rendered pictures: made by `npm run scenes`, which refuses to save a scene with anything standing on the road
+{
+  const sha = data => createHash('sha256').update(data).digest('hex');
+  const lines = [`specs.json ${sha(readFileSync(join(root, 'scenes3d/specs.json')))}`];
+  for (const folder of ['scripts', 'shaders']) {
+    const names = readdirSync(join(root, 'scenes3d', folder)).filter(f => /\.(gd|gdshader|gdshaderinc)$/.test(f)).sort((a, b) => (a < b ? -1 : a > b ? 1 : 0));
+    for (const f of names) lines.push(`${folder}/${f} ${sha(readFileSync(join(root, 'scenes3d', folder, f)))}`);
+  }
+  const path = 'src/assets/scenes/manifest.json';
+  const manifest = existsSync(join(root, path)) ? read(path) : null;
+  if (!manifest?.audited) err(path, 'the scenes were not rendered and checked: run npm run scenes');
+  else if (manifest.sources !== sha(lines.join('\n'))) err(path, 'scenes3d changed after the pictures were rendered: run npm run scenes');
+  else for (const id of Object.keys(SCENE_SPECS)) if (!manifest.scenes.includes(id)) err(path, `scene ${id} was not rendered: run npm run scenes`);
 }
 
 console.log(`${ids.size} questions in ${Object.keys(counts).length} topics, ${chapters.length} theory chapters, ${Object.keys(words).length} dictionary words; translations: ${[BASE, ...OTHER].join(', ')}`);

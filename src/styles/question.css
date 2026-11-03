@@ -50,6 +50,7 @@
 @media (min-width: 720px) {
   .qcard { padding: 24px; }
   .qbody.has-fig { grid-template-columns: minmax(0, 280px) minmax(0, 1fr); align-items: start; gap: 22px; }
+  .qbody.has-fig:has(.fig-view) { grid-template-columns: minmax(0, 400px) minmax(0, 1fr); }
 }
 
 .fig { display: flex; justify-content: center; align-items: center; gap: 12px; padding: 14px; border-radius: var(--r); background: var(--surface-2); }
@@ -62,6 +63,8 @@
 .fig .road { width: 100%; max-width: 210px; height: auto; border-radius: 10px; }
 .fig .scene { width: 100%; max-width: 290px; height: auto; border-radius: 10px; }
 .fig-scene, .fig-road { padding: 6px; }
+.fig-view { padding: 0; overflow: hidden; }
+.fig .view { display: block; width: 100%; height: auto; }
 /* a sign with a time plate: --k is the picture's height over the sign's, so the sign keeps its size */
 .fig .sign.with-plate { height: calc(116px * var(--k)); }
 @media (min-width: 720px) { .fig .sign.with-plate { height: calc(150px * var(--k)); } }

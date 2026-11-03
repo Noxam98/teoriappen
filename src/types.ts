@@ -49,7 +49,9 @@ export type Figure =
   | { signs: string[] }
   | { light: LightState }
   | { road: RoadKind }
-  | { scene: Scene };
+  | { scene: Scene }
+  /** a rendered 3D picture of the situation: src/assets/scenes/<view>.webp, made from scenes3d/specs.json */
+  | { view: string };
 
 /**
  * A text in the translation languages: the base one (Russian) always, the others once they are written.

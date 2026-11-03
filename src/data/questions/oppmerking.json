@@ -4,7 +4,7 @@
     "cat": "oppmerking",
     "q": "Hva betyr linjen midt i veien på bildet?",
     "img": {
-      "road": "sperrelinje"
+      "view": "opp-01"
     },
     "a": [
       "Det er en sperrelinje: du må ikke kjøre over eller på den",
@@ -22,7 +22,7 @@
     "cat": "oppmerking",
     "q": "Hva varsler linjen på bildet om?",
     "img": {
-      "road": "varsellinje"
+      "view": "opp-02"
     },
     "a": [
       "At sikten framover er for kort til vanlig forbikjøring",
@@ -40,7 +40,7 @@
     "cat": "oppmerking",
     "q": "Kan du kjøre over denne linjen?",
     "img": {
-      "road": "skillelinje"
+      "view": "opp-03"
     },
     "a": [
       "Ja, når det er trygt, for eksempel for å kjøre forbi",
@@ -58,7 +58,7 @@
     "cat": "oppmerking",
     "q": "Det er to linjer midt i veien. Linjen nærmest deg er heltrukket. Kan du kjøre over linjene for å kjøre forbi?",
     "img": {
-      "road": "sperre_varsel"
+      "view": "opp-04"
     },
     "a": [
       "Nei, det er linjen nærmest deg som gjelder, og den er en sperrelinje",
@@ -76,7 +76,7 @@
     "cat": "oppmerking",
     "q": "Det er to linjer midt i veien. Linjen nærmest deg er stiplet. Hva gjelder for deg?",
     "img": {
-      "road": "varsel_sperre"
+      "view": "opp-05"
     },
     "a": [
       "Du kan kjøre over linjene når det er trygt, fordi linjen nærmest deg er en varsellinje",
@@ -94,7 +94,7 @@
     "cat": "oppmerking",
     "q": "Hva betyr de to heltrukne linjene midt i veien?",
     "img": {
-      "road": "dobbel_sperrelinje"
+      "view": "opp-06"
     },
     "a": [
       "Dobbel sperrelinje: ingen kan kjøre over, uansett retning",
@@ -112,7 +112,7 @@
     "cat": "oppmerking",
     "q": "Hva betyr de hvite trekantene over feltet ditt?",
     "img": {
-      "road": "haitenner"
+      "view": "opp-07"
     },
     "a": [
       "Det er en vikelinje: du har vikeplikt, og du skal stanse ved linjen hvis det er nødvendig",
@@ -130,7 +130,7 @@
     "cat": "oppmerking",
     "q": "Det står et stoppskilt ved krysset, og det er en hvit, heltrukket linje over feltet ditt. Hvor skal du stanse?",
     "img": {
-      "road": "stopplinje"
+      "view": "opp-08"
     },
     "a": [
       "Rett foran stopplinjen",
@@ -148,7 +148,7 @@
     "cat": "oppmerking",
     "q": "Kan du stanse i sykkelfeltet for å slippe av en passasjer?",
     "img": {
-      "road": "sykkelfelt"
+      "view": "opp-09"
     },
     "a": [
       "Nei, det er forbudt å stanse i sykkelfelt",
@@ -166,7 +166,7 @@
     "cat": "oppmerking",
     "q": "Du skal svinge til høyre i krysset og krysse sykkelfeltet. En syklist i sykkelfeltet skal rett fram. Hva gjelder?",
     "img": {
-      "road": "sykkelfelt"
+      "view": "opp-10"
     },
     "a": [
       "Du har vikeplikt for syklisten",
@@ -184,7 +184,7 @@
     "cat": "oppmerking",
     "q": "Det er kø i feltet ditt. Feltet til høyre er merket KOLLEKTIVFELT. Kan du kjøre der med vanlig personbil for å komme raskere fram?",
     "img": {
-      "road": "kollektivfelt"
+      "view": "opp-11"
     },
     "a": [
       "Nei, ikke hvis skilt ikke tillater det",
@@ -202,7 +202,7 @@
     "cat": "oppmerking",
     "q": "Mellom feltene er det et område med skrå streker og en heltrukket linje rundt. Kan du kjøre på dette området?",
     "img": {
-      "road": "sperreflate"
+      "view": "opp-12"
     },
     "a": [
       "Nei, det er et sperreområde, og du må ikke kjøre på det",
@@ -220,7 +220,7 @@
     "cat": "oppmerking",
     "q": "Hvor nær gangfeltet foran deg kan du stanse eller parkere?",
     "img": {
-      "road": "gangfelt"
+      "view": "opp-13"
     },
     "a": [
       "Ikke i gangfeltet og ikke nærmere enn 5 meter foran det",
@@ -286,7 +286,7 @@
     "cat": "oppmerking",
     "q": "Du ligger bak en traktor og kommer til en bakketopp der du ikke ser over. Linjen midt i veien ser slik ut. Kan du kjøre forbi?",
     "img": {
-      "road": "varsellinje"
+      "view": "opp-17"
     },
     "a": [
       "Nei, forbikjøring er forbudt der sikten er hindret av en bakketopp",

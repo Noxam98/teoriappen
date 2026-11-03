@@ -1,0 +1,959 @@
+{
+ "vik-01": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "e",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-02": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-03": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "left",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "n",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-04": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "e",
+     "go": "straight"
+    },
+    {
+     "id": "C",
+     "from": "w",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-05": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "left",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "n",
+     "go": "straight"
+    },
+    {
+     "id": "C",
+     "from": "e",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-06": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "signs": {
+    "s": "vikeplikt",
+    "n": "vikeplikt",
+    "e": "forkjorsveg",
+    "w": "forkjorsveg"
+   },
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-07": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "signs": {
+    "e": "forkjorsveg",
+    "w": "forkjorsveg",
+    "n": "vikeplikt",
+    "s": "vikeplikt"
+   },
+   "veh": [
+    {
+     "id": "A",
+     "from": "e",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "n",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-08": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "signs": {
+    "e": "forkjorsveg",
+    "w": "forkjorsveg",
+    "n": "vikeplikt",
+    "s": "vikeplikt"
+   },
+   "veh": [
+    {
+     "id": "A",
+     "from": "e",
+     "go": "left",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-09": {
+  "type": "junction",
+  "scene": {
+   "type": "t",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "left",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "e",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-10": {
+  "type": "junction",
+  "scene": {
+   "type": "t",
+   "veh": [
+    {
+     "id": "A",
+     "from": "w",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "s",
+     "go": "left"
+    }
+   ]
+  }
+ },
+ "vik-11": {
+  "type": "junction",
+  "scene": {
+   "type": "t",
+   "signs": {
+    "s": "vikeplikt"
+   },
+   "veh": [
+    {
+     "id": "A",
+     "from": "w",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "s",
+     "go": "left"
+    }
+   ]
+  }
+ },
+ "vik-12": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "signs": {
+    "s": "stopp",
+    "n": "stopp"
+   },
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-13": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight",
+     "kind": "tram"
+    }
+   ]
+  }
+ },
+ "vik-14": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight",
+     "kind": "utrykning"
+    }
+   ]
+  }
+ },
+ "vik-15": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "right",
+     "me": true
+    }
+   ],
+   "ped": [
+    "e"
+   ],
+   "pedAt": "crossing"
+  }
+ },
+ "vik-16": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "e",
+     "go": "straight",
+     "kind": "bike"
+    }
+   ]
+  }
+ },
+ "vik-17": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight",
+     "kind": "bus"
+    }
+   ]
+  }
+ },
+ "vik-18": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "left",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "n",
+     "go": "right"
+    }
+   ]
+  }
+ },
+ "vik-19": {
+  "type": "junction",
+  "scene": {
+   "type": "t",
+   "signs": {
+    "s": "stopp"
+   },
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "left",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight"
+    },
+    {
+     "id": "C",
+     "from": "e",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-20": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "signs": {
+    "n": "vikeplikt",
+    "s": "vikeplikt",
+    "e": "forkjorsveg",
+    "w": "forkjorsveg"
+   },
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "n",
+     "go": "left"
+    }
+   ]
+  }
+ },
+ "vik-21": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "signs": {
+    "e": "forkjorsveg",
+    "w": "forkjorsveg",
+    "n": "vikeplikt",
+    "s": "vikeplikt"
+   },
+   "veh": [
+    {
+     "id": "A",
+     "from": "w",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "s",
+     "go": "straight",
+     "kind": "utrykning"
+    }
+   ]
+  }
+ },
+ "vik-22": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "straight",
+     "me": true
+    }
+   ],
+   "ped": [
+    "n"
+   ]
+  }
+ },
+ "vik-23": {
+  "type": "junction",
+  "scene": {
+   "type": "t",
+   "veh": [
+    {
+     "id": "A",
+     "from": "e",
+     "go": "left",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-24": {
+  "type": "junction",
+  "scene": {
+   "type": "t",
+   "veh": [
+    {
+     "id": "A",
+     "from": "e",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "s",
+     "go": "left"
+    }
+   ]
+  }
+ },
+ "vik-25": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "right",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "w",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-51": {
+  "type": "junction",
+  "scene": {
+   "type": "t",
+   "signs": {
+    "s": "vikeplikt",
+    "w": "forkjorsveg",
+    "e": "forkjorsveg"
+   },
+   "veh": [
+    {
+     "id": "A",
+     "from": "w",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "s",
+     "go": "right"
+    }
+   ]
+  }
+ },
+ "vik-54": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "right",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "n",
+     "go": "left"
+    },
+    {
+     "id": "C",
+     "from": "w",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-55": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "veh": [
+    {
+     "id": "A",
+     "from": "s",
+     "go": "right",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "e",
+     "go": "straight"
+    }
+   ]
+  }
+ },
+ "vik-60": {
+  "type": "junction",
+  "scene": {
+   "type": "x",
+   "signs": {
+    "e": "forkjorsveg",
+    "w": "forkjorsveg",
+    "n": "vikeplikt",
+    "s": "vikeplikt"
+   },
+   "veh": [
+    {
+     "id": "A",
+     "from": "w",
+     "go": "straight",
+     "me": true
+    },
+    {
+     "id": "B",
+     "from": "s",
+     "go": "straight",
+     "kind": "tram"
+    }
+   ]
+  }
+ },
+ "fob-10": {
+  "kind": "sperrelinje",
+  "actors": [
+   {
+    "what": "tractor",
+    "x": 1.75,
+    "z": -12.0
+   },
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -46,
+    "yaw": 3.14159,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "suv"
+   }
+  ],
+  "type": "road"
+ },
+ "myk-05": {
+  "kind": "gangfelt",
+  "env": "street",
+  "actors": [
+   {
+    "what": "person",
+    "x": 4.15,
+    "z": -14.5,
+    "yaw": 1.5708,
+    "base": 0.14
+   },
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -34,
+    "yaw": 3.14159,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "hatch"
+   }
+  ],
+  "type": "road"
+ },
+ "myk-19": {
+  "kind": "gangfelt",
+  "env": "street",
+  "actors": [
+   {
+    "what": "scooter",
+    "x": 2.2,
+    "z": -14.5,
+    "yaw": 1.5708
+   }
+  ],
+  "type": "road"
+ },
+ "myk-21": {
+  "kind": "sykkelfelt",
+  "env": "street",
+  "actors": [
+   {
+    "what": "cyclist",
+    "x": 3.95,
+    "z": -26.0
+   },
+   {
+    "what": "car",
+    "x": -1.6,
+    "z": -40,
+    "yaw": 3.14159,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "hatch"
+   }
+  ],
+  "type": "road"
+ },
+ "myk-22": {
+  "kind": "sperrelinje",
+  "actors": [
+   {
+    "what": "cyclist",
+    "x": 2.55,
+    "z": -10.0
+   },
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -60,
+    "yaw": 3.14159,
+    "color": [
+     0.05,
+     0.06,
+     0.08
+    ],
+    "kind": "suv"
+   }
+  ],
+  "type": "road"
+ },
+ "opp-01": {
+  "kind": "sperrelinje",
+  "actors": [
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -38,
+    "yaw": 3.14159,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "sedan"
+   }
+  ],
+  "type": "road"
+ },
+ "opp-02": {
+  "kind": "varsellinje",
+  "actors": [
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -52,
+    "yaw": 3.14159,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "suv"
+   }
+  ],
+  "type": "road"
+ },
+ "opp-03": {
+  "kind": "skillelinje",
+  "actors": [
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -44,
+    "yaw": 3.14159,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "hatch"
+   }
+  ],
+  "type": "road"
+ },
+ "opp-04": {
+  "kind": "sperre_varsel",
+  "actors": [],
+  "type": "road"
+ },
+ "opp-05": {
+  "kind": "varsel_sperre",
+  "actors": [],
+  "type": "road"
+ },
+ "opp-06": {
+  "kind": "dobbel_sperrelinje",
+  "actors": [
+   {
+    "what": "car",
+    "x": -1.75,
+    "z": -40,
+    "yaw": 3.14159,
+    "color": [
+     0.06,
+     0.24,
+     0.16
+    ],
+    "kind": "hatch"
+   }
+  ],
+  "type": "road"
+ },
+ "opp-07": {
+  "kind": "haitenner",
+  "env": "street",
+  "cross": "both",
+  "actors": [
+   {
+    "what": "car",
+    "x": -20.0,
+    "z": -12.25,
+    "yaw": -1.5708,
+    "color": [
+     0.5,
+     0.05,
+     0.06
+    ],
+    "kind": "sedan"
+   }
+  ],
+  "type": "road",
+  "zc": -14.0
+ },
+ "opp-08": {
+  "kind": "stopplinje",
+  "env": "street",
+  "cross": "both",
+  "signs": [
+   {
+    "id": "stopp",
+    "x": 4.4,
+    "z": -9.6,
+    "w": 0.9
+   }
+  ],
+  "type": "road",
+  "zc": -14.0
+ },
+ "opp-09": {
+  "kind": "sykkelfelt",
+  "env": "street",
+  "actors": [
+   {
+    "what": "cyclist",
+    "x": 3.95,
+    "z": -30.0
+   }
+  ],
+  "type": "road"
+ },
+ "opp-10": {
+  "kind": "sykkelfelt",
+  "env": "street",
+  "cross": "right",
+  "arrow": "right",
+  "actors": [
+   {
+    "what": "cyclist",
+    "x": 3.95,
+    "z": -6.0
+   }
+  ],
+  "type": "road",
+  "zc": -18.0
+ },
+ "opp-11": {
+  "kind": "kollektivfelt",
+  "env": "street",
+  "queue": 6,
+  "signs": [
+   {
+    "id": "kollektivfelt",
+    "x": 6.05,
+    "z": -9.0,
+    "w": 0.85
+   }
+  ],
+  "actors": [
+   {
+    "what": "bus",
+    "x": 3.5,
+    "z": -52.0
+   },
+   {
+    "what": "car",
+    "x": -3.5,
+    "z": -30,
+    "yaw": 3.14159,
+    "color": [
+     0.82,
+     0.82,
+     0.8
+    ],
+    "kind": "hatch"
+   }
+  ],
+  "type": "road"
+ },
+ "opp-12": {
+  "kind": "sperreflate",
+  "actors": [
+   {
+    "what": "car",
+    "x": -3.1,
+    "z": -44,
+    "yaw": 3.14159,
+    "color": [
+     0.72,
+     0.72,
+     0.74
+    ],
+    "kind": "hatch"
+   }
+  ],
+  "type": "road"
+ },
+ "opp-13": {
+  "kind": "gangfelt",
+  "env": "street",
+  "actors": [],
+  "type": "road"
+ },
+ "opp-17": {
+  "kind": "varsellinje",
+  "hill": true,
+  "actors": [
+   {
+    "what": "tractor",
+    "x": 1.75,
+    "z": -14.0
+   }
+  ],
+  "type": "road"
+ },
+ "pla-15": {
+  "kind": "sykkelfelt",
+  "env": "street",
+  "cross": "right",
+  "arrow": "right",
+  "actors": [],
+  "type": "road",
+  "zc": -18.0
+ }
+}

@@ -4,22 +4,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A. Det er ingen skilt i krysset, og begge bilene kommer samtidig. Hvem skal kjøre først?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "e",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-01"
     },
     "a": [
       "Bil B, fordi den kommer fra høyre",
@@ -37,22 +22,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A. Krysset har ingen skilt. Hvem har vikeplikt?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "w",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-02"
     },
     "a": [
       "Bil B har vikeplikt for deg",
@@ -70,22 +40,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og skal svinge til venstre. Bil B kommer imot deg og skal kjøre rett fram. Hva gjelder?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "left",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "n",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-03"
     },
     "a": [
       "Du må vente til bil B har kjørt forbi, fordi du svinger til venstre",
@@ -103,27 +58,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A. Det er ingen skilt, og alle tre bilene kommer samtidig. I hvilken rekkefølge skal de kjøre?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "e",
-            "go": "straight"
-          },
-          {
-            "id": "C",
-            "from": "w",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-04"
     },
     "a": [
       "B, A, C",
@@ -141,27 +76,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og skal svinge til venstre. Bil B og bil C skal kjøre rett fram. Det er ingen skilt. Hvilken rekkefølge er riktig?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "left",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "n",
-            "go": "straight"
-          },
-          {
-            "id": "C",
-            "from": "e",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-05"
     },
     "a": [
       "B, C, A",
@@ -179,28 +94,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og har vikepliktskilt. Bil B kommer fra venstre. Hva gjelder?",
     "img": {
-      "scene": {
-        "type": "x",
-        "signs": {
-          "s": "vikeplikt",
-          "n": "vikeplikt",
-          "e": "forkjorsveg",
-          "w": "forkjorsveg"
-        },
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "w",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-06"
     },
     "a": [
       "Du har vikeplikt for trafikk fra begge sider",
@@ -218,28 +112,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og kjører på forkjørsvei. Bil B kommer fra høyre og har vikepliktskilt. Hvem kjører først?",
     "img": {
-      "scene": {
-        "type": "x",
-        "signs": {
-          "e": "forkjorsveg",
-          "w": "forkjorsveg",
-          "n": "vikeplikt",
-          "s": "vikeplikt"
-        },
-        "veh": [
-          {
-            "id": "A",
-            "from": "e",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "n",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-07"
     },
     "a": [
       "Du, fordi du er på forkjørsveien",
@@ -257,28 +130,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A på forkjørsveien og skal svinge til venstre. Bil B kommer imot deg på den samme veien og skal kjøre rett fram. Hva gjelder?",
     "img": {
-      "scene": {
-        "type": "x",
-        "signs": {
-          "e": "forkjorsveg",
-          "w": "forkjorsveg",
-          "n": "vikeplikt",
-          "s": "vikeplikt"
-        },
-        "veh": [
-          {
-            "id": "A",
-            "from": "e",
-            "go": "left",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "w",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-08"
     },
     "a": [
       "Du må vike for B, fordi du svinger til venstre",
@@ -296,22 +148,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og skal svinge til venstre ut på veien. Det er ingen skilt. Bil B kommer fra høyre. Hva gjelder?",
     "img": {
-      "scene": {
-        "type": "t",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "left",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "e",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-09"
     },
     "a": [
       "Du har vikeplikt for bil B, som kommer fra høyre",
@@ -329,22 +166,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og kjører rett fram på veien som går gjennom T-krysset. Det er ingen skilt. Bil B kommer fra sideveien til høyre for deg. Hvem har vikeplikt?",
     "img": {
-      "scene": {
-        "type": "t",
-        "veh": [
-          {
-            "id": "A",
-            "from": "w",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "s",
-            "go": "left"
-          }
-        ]
-      }
+      "view": "vik-10"
     },
     "a": [
       "Du, fordi bil B kommer fra høyre for deg",
@@ -362,25 +184,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A. Bil B kommer fra sideveien til høyre for deg og har vikepliktskilt. Hvem kjører først?",
     "img": {
-      "scene": {
-        "type": "t",
-        "signs": {
-          "s": "vikeplikt"
-        },
-        "veh": [
-          {
-            "id": "A",
-            "from": "w",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "s",
-            "go": "left"
-          }
-        ]
-      }
+      "view": "vik-11"
     },
     "a": [
       "Du, fordi B har vikepliktskilt",
@@ -398,26 +202,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og har stoppskilt. Bil B kommer fra venstre. Hva skal du gjøre?",
     "img": {
-      "scene": {
-        "type": "x",
-        "signs": {
-          "s": "stopp",
-          "n": "stopp"
-        },
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "w",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-12"
     },
     "a": [
       "Stanse helt ved stopplinjen og slippe bil B forbi før du kjører",
@@ -435,23 +220,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A. En trikk (B) kommer fra venstre. Det er ingen skilt. Hva gjelder?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "w",
-            "go": "straight",
-            "kind": "tram"
-          }
-        ]
-      }
+      "view": "vik-13"
     },
     "a": [
       "Du skal gi trikken fri vei, også når den kommer fra venstre",
@@ -469,23 +238,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A. En ambulanse (B) kommer fra venstre med blålys og sirene. Hva skal du gjøre?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "w",
-            "go": "straight",
-            "kind": "utrykning"
-          }
-        ]
-      }
+      "view": "vik-14"
     },
     "a": [
       "Gi ambulansen fri vei og stanse hvis det trengs",
@@ -503,21 +256,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og skal svinge til høyre. En fotgjenger går over i gangfeltet i veien du svinger inn i. Hva skal du gjøre?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "right",
-            "me": true
-          }
-        ],
-        "ped": [
-          "e"
-        ],
-        "pedAt": "crossing"
-      }
+      "view": "vik-15"
     },
     "a": [
       "Slippe fotgjengeren over før du svinger",
@@ -535,23 +274,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A. En syklist (B) kommer fra høyre på kjørebanen. Det er ingen skilt. Hvem har vikeplikt?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "e",
-            "go": "straight",
-            "kind": "bike"
-          }
-        ]
-      }
+      "view": "vik-16"
     },
     "a": [
       "Du har vikeplikt for syklisten",
@@ -569,23 +292,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A. En buss (B) kommer fra venstre. Det er ingen skilt i krysset. Hva gjelder?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "w",
-            "go": "straight",
-            "kind": "bus"
-          }
-        ]
-      }
+      "view": "vik-17"
     },
     "a": [
       "Bussen har vikeplikt, fordi du kommer fra høyre for den",
@@ -603,22 +310,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og skal svinge til venstre. Møtende bil B skal svinge til høyre inn i den samme veien. Hvem kjører først?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "left",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "n",
-            "go": "right"
-          }
-        ]
-      }
+      "view": "vik-18"
     },
     "a": [
       "Bil B kjører først, fordi du svinger til venstre",
@@ -636,30 +328,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og har stoppskilt. Bil B og bil C kjører på veien du skal inn på. Hva er riktig?",
     "img": {
-      "scene": {
-        "type": "t",
-        "signs": {
-          "s": "stopp"
-        },
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "left",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "w",
-            "go": "straight"
-          },
-          {
-            "id": "C",
-            "from": "e",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-19"
     },
     "a": [
       "Du må vente til begge bilene på veien har kjørt forbi",
@@ -677,28 +346,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A. Både du og bil B har vikepliktskilt, og det kommer ingen på forkjørsveien. Bil B skal svinge til venstre. Hvem kjører først?",
     "img": {
-      "scene": {
-        "type": "x",
-        "signs": {
-          "n": "vikeplikt",
-          "s": "vikeplikt",
-          "e": "forkjorsveg",
-          "w": "forkjorsveg"
-        },
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "n",
-            "go": "left"
-          }
-        ]
-      }
+      "view": "vik-20"
     },
     "a": [
       "Du kjører først, fordi bil B svinger til venstre",
@@ -716,29 +364,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A på forkjørsveien. Fra sideveien kommer en ambulanse (B) med blålys og sirene. Hva gjelder?",
     "img": {
-      "scene": {
-        "type": "x",
-        "signs": {
-          "e": "forkjorsveg",
-          "w": "forkjorsveg",
-          "n": "vikeplikt",
-          "s": "vikeplikt"
-        },
-        "veh": [
-          {
-            "id": "A",
-            "from": "w",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "s",
-            "go": "straight",
-            "kind": "utrykning"
-          }
-        ]
-      }
+      "view": "vik-21"
     },
     "a": [
       "Du skal gi ambulansen fri vei, også på forkjørsvei",
@@ -756,20 +382,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og skal kjøre rett fram. På den andre siden av krysset er en fotgjenger på vei ut i gangfeltet. Hva skal du gjøre?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "straight",
-            "me": true
-          }
-        ],
-        "ped": [
-          "n"
-        ]
-      }
+      "view": "vik-22"
     },
     "a": [
       "Stanse og slippe fotgjengeren over",
@@ -787,22 +400,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og skal svinge til venstre inn i sideveien. Bil B kommer imot deg og skal kjøre rett fram. Det er ingen skilt. Hva gjelder?",
     "img": {
-      "scene": {
-        "type": "t",
-        "veh": [
-          {
-            "id": "A",
-            "from": "e",
-            "go": "left",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "w",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-23"
     },
     "a": [
       "Du må vike for bil B, fordi du svinger til venstre",
@@ -820,22 +418,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og kjører rett fram. Bil B kommer fra sideveien og skal svinge til venstre. Det er ingen skilt. Hvem har vikeplikt?",
     "img": {
-      "scene": {
-        "type": "t",
-        "veh": [
-          {
-            "id": "A",
-            "from": "e",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "s",
-            "go": "left"
-          }
-        ]
-      }
+      "view": "vik-24"
     },
     "a": [
       "Bil B har vikeplikt for deg",
@@ -853,22 +436,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og skal svinge til høyre. Bil B kommer fra venstre og skal kjøre rett fram. Det er ingen skilt. Hvem kjører først?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "right",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "w",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-25"
     },
     "a": [
       "Du, fordi du kommer fra høyre",
@@ -1280,27 +848,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A på forkjørsveien. Bil B har vikepliktskilt, men begynner å kjøre ut foran deg. Hva bør du gjøre?",
     "img": {
-      "scene": {
-        "type": "t",
-        "signs": {
-          "s": "vikeplikt",
-          "w": "forkjorsveg",
-          "e": "forkjorsveg"
-        },
-        "veh": [
-          {
-            "id": "A",
-            "from": "w",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "s",
-            "go": "right"
-          }
-        ]
-      }
+      "view": "vik-51"
     },
     "a": [
       "Sette ned farten og stanse om det trengs, selv om du har forkjørsrett",
@@ -1350,27 +898,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og skal svinge til høyre. Det er ingen skilt. I hvilken rekkefølge skal bilene kjøre?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "right",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "n",
-            "go": "left"
-          },
-          {
-            "id": "C",
-            "from": "w",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-54"
     },
     "a": [
       "A, C, B",
@@ -1388,22 +916,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A og skal svinge til høyre. Det er ingen skilt. Hva er riktig?",
     "img": {
-      "scene": {
-        "type": "x",
-        "veh": [
-          {
-            "id": "A",
-            "from": "s",
-            "go": "right",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "e",
-            "go": "straight"
-          }
-        ]
-      }
+      "view": "vik-55"
     },
     "a": [
       "Du kan svinge uten å vente på bil B, hvis du holder deg til høyre og ikke hindrer den",
@@ -1487,29 +1000,7 @@
     "cat": "vikeplikt",
     "q": "Du er bil A. En trikk (B) kommer fra sideveien. Se på skiltene. Hvem har vikeplikt?",
     "img": {
-      "scene": {
-        "type": "x",
-        "signs": {
-          "e": "forkjorsveg",
-          "w": "forkjorsveg",
-          "n": "vikeplikt",
-          "s": "vikeplikt"
-        },
-        "veh": [
-          {
-            "id": "A",
-            "from": "w",
-            "go": "straight",
-            "me": true
-          },
-          {
-            "id": "B",
-            "from": "s",
-            "go": "straight",
-            "kind": "tram"
-          }
-        ]
-      }
+      "view": "vik-60"
     },
     "a": [
       "Trikken, fordi trikkeføreren også skal følge skilt",

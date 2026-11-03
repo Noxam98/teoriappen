@@ -232,7 +232,7 @@
     "cat": "plassering",
     "q": "Du skal svinge til høyre i neste kryss. Det er et sykkelfelt til høyre for deg, slik som på bildet. Hva er riktig?",
     "img": {
-      "road": "sykkelfelt"
+      "view": "pla-15"
     },
     "a": [
       "Du har vikeplikt for syklister i sykkelfeltet som skal rett fram",

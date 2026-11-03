@@ -68,7 +68,7 @@
     "cat": "myke",
     "q": "En gående står ved et gangfelt og skal tydelig gå over. Hva skal du gjøre?",
     "img": {
-      "road": "gangfelt"
+      "view": "myk-05"
     },
     "a": [
       "Stoppe og la den gående gå over",
@@ -248,7 +248,7 @@
     "cat": "myke",
     "q": "En person kjører elsparkesykkel ut i gangfeltet foran deg uten å gå av. Hva er riktig?",
     "img": {
-      "road": "gangfelt"
+      "view": "myk-19"
     },
     "a": [
       "Personen regnes ikke som gående og har vikeplikt, men du må uansett være klar til å bremse",
@@ -282,7 +282,7 @@
     "cat": "myke",
     "q": "Hva er riktig om feltet helt til høyre på bildet?",
     "img": {
-      "road": "sykkelfelt"
+      "view": "myk-21"
     },
     "a": [
       "Syklister kan også sykle i kjørebanen, selv om det er sykkelfelt her",
@@ -300,7 +300,7 @@
     "cat": "myke",
     "q": "Du kommer bak en syklist. Veien er merket slik, og du får ikke god sideavstand uten å krysse linjen. Hva gjør du?",
     "img": {
-      "road": "sperrelinje"
+      "view": "myk-22"
     },
     "a": [
       "Venter bak syklisten til du kan kjøre forbi uten å krysse linjen",

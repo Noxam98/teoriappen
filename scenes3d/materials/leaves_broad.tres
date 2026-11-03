@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://shaders/leaves.gdshader" id="1"]
+[ext_resource type="Texture2D" path="res://textures/leaf_broad.png" id="2"]
+[ext_resource type="Texture2D" path="res://textures/leaf_broad_n.png" id="3"]
+
+[resource]
+shader = ExtResource("1")
+shader_parameter/leaf_mask = ExtResource("2")
+shader_parameter/leaf_normal = ExtResource("3")
+shader_parameter/color_a = Color(0.17, 0.33, 0.08, 1)
+shader_parameter/color_b = Color(0.38, 0.49, 0.13, 1)
+shader_parameter/alpha_cut = 0.4
+shader_parameter/backlight = 0.62

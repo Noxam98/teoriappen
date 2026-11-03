@@ -1,3 +1,4 @@
+import { cacheScenes } from './lib/offlineScenes';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import '@fontsource-variable/golos-text';
@@ -26,5 +27,9 @@ createRoot(document.getElementById('root')!).render(
 // Offline support when the app is hosted as a website (not for the single-file build or embedded views).
 if (import.meta.env.PROD && import.meta.env.MODE !== 'single' && 'serviceWorker' in navigator
   && location.protocol.startsWith('http') && window.top === window) {
-  window.addEventListener('load', () => { navigator.serviceWorker.register('./sw.js').catch(() => {}); });
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    // the pictures of road situations are loaded quietly, so that every question also works offline
+    navigator.serviceWorker.ready.then(cacheScenes).catch(() => {});
+  });
 }

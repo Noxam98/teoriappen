@@ -1,6 +1,7 @@
 import type { Figure as FigureSpec } from '../../types';
 import { JunctionScene } from './JunctionScene';
 import { RoadMarking } from './RoadMarking';
+import { sceneUrl } from './sceneImages';
 import { Sign } from './Sign';
 import { TrafficLight } from './TrafficLight';
 
@@ -16,6 +17,11 @@ export function Figure({ spec, numbered = false }: { spec: FigureSpec | null; nu
     </div>
   );
   if ('light' in spec) return <div className="fig fig-light"><TrafficLight state={spec.light} /></div>;
+  if ('view' in spec) return (
+    <div className="fig fig-view">
+      <img className="view" src={sceneUrl(spec.view)} alt="Situasjon på veien" width={960} height={600} loading="lazy" decoding="async" />
+    </div>
+  );
   if ('road' in spec) return <div className="fig fig-road"><RoadMarking kind={spec.road} /></div>;
   return <div className="fig fig-scene"><JunctionScene scene={spec.scene} /></div>;
 }

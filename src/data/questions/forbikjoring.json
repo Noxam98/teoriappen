@@ -152,7 +152,7 @@
     "cat": "forbikjoring",
     "q": "Det er sperrelinje midt i veien, slik som på bildet. En traktor kjører i 25 km/t foran deg. Kan du krysse sperrelinjen for å kjøre forbi?",
     "img": {
-      "road": "sperrelinje"
+      "view": "fob-10"
     },
     "a": [
       "Nei, du må ikke krysse eller kjøre på sperrelinjen",
