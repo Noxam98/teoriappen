@@ -19,7 +19,9 @@
     "id": "pla-02",
     "cat": "plassering",
     "q": "Du skal svinge til venstre i et kryss. Veien har ett kjørefelt i hver retning. Hvor plasserer du bilen før du svinger?",
-    "img": null,
+    "img": {
+      "view": "pla-02"
+    },
     "a": [
       "Nær midten av veien, i ditt eget kjørefelt",
       "Så langt til høyre som mulig, så du får en bredere sving",
@@ -35,7 +37,9 @@
     "id": "pla-03",
     "cat": "plassering",
     "q": "Du skal svinge til høyre i et kryss. Hvordan plasserer du bilen?",
-    "img": null,
+    "img": {
+      "view": "pla-03"
+    },
     "a": [
       "Så nær høyre kant av kjørebanen som mulig",
       "Nær midtlinjen, så du ser bedre inn i veien du skal inn på",
@@ -335,7 +339,9 @@
     "id": "pla-21",
     "cat": "plassering",
     "q": "Du skal svinge til venstre i et kryss. Hvorfor bør du se ekstra godt etter gående som kommer fra siden?",
-    "img": null,
+    "img": {
+      "view": "pla-21"
+    },
     "a": [
       "Stolpen mellom frontruta og sideruta (A-stolpen) kan skjule en gående",
       "Gående har vikeplikt for biler som svinger, så de stopper selv",

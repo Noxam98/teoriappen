@@ -30,6 +30,8 @@ static func build(id: String, w: World) -> void:
 			_modeli(w)
 		"sykkel":
 			_sykkel(w)
+		"lyudi":
+			_lyudi(w)
 		_:
 			var spec: Dictionary = Scenes.specs().get(id, {})
 			if spec.is_empty():
@@ -219,6 +221,35 @@ static func _modeli(w: World) -> void:
 
 
 ## Проверка велосипедиста крупным планом.
+## Смотрины пешеходов вблизи: сбоку, спереди, сзади и на самокате.
+static func _lyudi(w: World) -> void:
+	w.setup_light(11.0, 1.6, 0.4)
+	w.hills()
+	w.ground()
+	var pad := PackedVector2Array([Vector2(-60, -80), Vector2(60, -80), Vector2(60, 40), Vector2(-60, 40)])
+	w.add_mesh(Mesher.prism(pad, -0.02, 0.0, w.asphalt(0.0), w.kerb()))
+	for spot: Array in [
+		[-2.1, 0.0, -PI / 2.0, Color(0.74, 0.2, 0.12), Color(0.1, 0.13, 0.22)],
+		[-0.7, 0.0, PI - 0.35, Color(0.14, 0.32, 0.5), Color(0.2, 0.2, 0.22)],
+		[0.7, 0.0, 0.3, Color(0.78, 0.6, 0.12), Color(0.08, 0.1, 0.16)],
+	]:
+		var p: Node3D = Person.make(spot[3], spot[4])
+		p.position = Vector3(spot[0], 0.0, spot[1])
+		p.rotation.y = spot[2]
+		w.add_child(p)
+	var s: Node3D = Person.scooter(Color(0.16, 0.3, 0.46), Color(0.14, 0.14, 0.16))
+	s.position = Vector3(2.2, 0.0, 0.0)
+	s.rotation.y = PI / 2.0 + 0.35
+	w.add_child(s)
+	w.camera = Camera3D.new()
+	w.camera.fov = 34.0
+	w.camera.far = 9000.0
+	w.camera.position = Vector3(0.0, 1.25, 6.4)
+	w.add_child(w.camera)
+	w.camera.look_at(Vector3(0.0, 0.9, 0.0), Vector3.UP)
+	w.camera.current = true
+
+
 static func _sykkel(w: World) -> void:
 	w.setup_light(11.0, 1.6, 0.4)
 	w.hills()

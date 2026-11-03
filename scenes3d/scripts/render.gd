@@ -75,14 +75,18 @@ func _check_all() -> int:
 			printerr("ОШИБКА %s:\n  %s" % [id, "\n  ".join(bad)])
 		for kind: String in world._plant_radius:
 			radius_max = maxf(radius_max, world._plant_radius[kind])
+		if world.tufts_dropped > 0:
+			print("%s: трава с покрытия убрана, %d пучков" % [id, world.tufts_dropped])
 		world.free()
 	# Тест самого теста: на чистой сцене нарушений нет, с деревом или столбом на дороге они есть.
-	var traps: Array = [["дерево на перекрёстке", "vik-01", Vector2(0.0, 30.0), "pine"], ["дерево с кроной над дорогой", "vik-01", Vector2(6.0, 40.0), "broad"], ["дерево на дороге", "opp-01", Vector2(1.0, -40.0), "pine"], ["столб на дороге", "opp-09", Vector2(1.0, -30.0), "lamp"]]
+	var traps: Array = [["трава на проезжей части", "vik-01", Vector2(0.0, 30.0), "tuft"], ["трава на тротуаре", "vik-01", Vector2(Junction.HW + 1.3, 30.0), "tuft"], ["трава на обочине", "myk-08", Vector2(4.0, -20.0), "tuft"], ["трава на боковой дороге", "fob-05", Vector2(14.0, -19.0), "tuft"], ["дерево на перекрёстке", "vik-01", Vector2(0.0, 30.0), "pine"], ["дерево с кроной над дорогой", "vik-01", Vector2(6.0, 40.0), "broad"], ["дерево на дороге", "opp-01", Vector2(1.0, -40.0), "pine"], ["столб на дороге", "opp-09", Vector2(1.0, -30.0), "lamp"]]
 	for t: Array in traps:
 		var world: World = await _build(t[1])
 		var before: int = world.audit().size()
 		if t[3] == "lamp":
 			world.lamp(t[2].x, t[2].y)
+		elif t[3] == "tuft":
+			world._tuft(t[2].x, t[2].y, 0.0, true)
 		else:
 			world.plant(t[3], t[2].x, t[2].y, 1.0)
 		var after: int = world.audit().size()

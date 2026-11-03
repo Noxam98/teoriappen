@@ -3,7 +3,9 @@
     "id": "fob-01",
     "cat": "forbikjoring",
     "q": "Du nærmer deg en bakketopp og kan ikke se om det kommer møtende trafikk. Kan du kjøre forbi bilen foran?",
-    "img": null,
+    "img": {
+      "view": "fob-01"
+    },
     "a": [
       "Nei, forbikjøring er forbudt ved bakketopp der sikten er dårlig",
       "Uten sperrelinje eller skilt kan du kjøre forbi",
@@ -37,7 +39,9 @@
     "id": "fob-03",
     "cat": "forbikjoring",
     "q": "Du nærmer deg et gangfelt. Bilen foran deg hindrer sikten til gangfeltet. Er det lov å kjøre forbi bilen?",
-    "img": null,
+    "img": {
+      "view": "fob-03"
+    },
     "a": [
       "Nei, du må ikke kjøre forbi et kjøretøy som hindrer sikten til gangfeltet",
       "Ja, når du ikke ser noen gående ved gangfeltet",
@@ -69,7 +73,9 @@
     "id": "fob-05",
     "cat": "forbikjoring",
     "q": "Du kjører på en vei uten skilt og nærmer deg et kryss der høyreregelen gjelder. Kan du kjøre forbi bilen foran like før krysset?",
-    "img": null,
+    "img": {
+      "view": "fob-05"
+    },
     "a": [
       "Nei, forbikjøring er forbudt like før og i et slikt kryss",
       "Det er lov når du ser at ingen biler kommer inn i krysset",
@@ -119,7 +125,9 @@
     "id": "fob-08",
     "cat": "forbikjoring",
     "q": "En bil holder på å kjøre forbi deg. Hva skal du gjøre?",
-    "img": null,
+    "img": {
+      "view": "fob-08"
+    },
     "a": [
       "Holde til høyre og ikke øke farten",
       "Øke farten, så forbikjøringen går fortere",
@@ -135,7 +143,9 @@
     "id": "fob-09",
     "cat": "forbikjoring",
     "q": "Du skal kjøre forbi en syklist på en smal vei, og det kommer en møtende bil. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "fob-09"
+    },
     "a": [
       "Vente bak syklisten til du kan kjøre forbi med god sideavstand",
       "Kjøre forbi tett inntil syklisten, så du ikke kommer over i det møtende feltet",
@@ -253,7 +263,9 @@
     "id": "fob-17",
     "cat": "forbikjoring",
     "q": "Det står en parkert bil i ditt kjørefelt, og det kommer møtende trafikk. Hvem bør vike?",
-    "img": null,
+    "img": {
+      "view": "fob-17"
+    },
     "a": [
       "Du, fordi hindringen er på din side av veien",
       "Den møtende, fordi du kom først til hindringen",
@@ -319,7 +331,9 @@
     "id": "fob-21",
     "cat": "forbikjoring",
     "q": "Du nærmer deg et kryss der høyreregelen gjelder. En syklist sykler til høyre i kjørefeltet foran deg. Kan du kjøre forbi syklisten like før krysset?",
-    "img": null,
+    "img": {
+      "view": "fob-21"
+    },
     "a": [
       "Ja, forbudet gjelder ikke tohjulskjøretøy som er plassert til høyre i feltet",
       "Nei, forbudet like før veikryss gjelder all forbikjøring, også forbikjøring av syklister",

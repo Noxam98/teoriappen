@@ -101,7 +101,9 @@
     "id": "myk-08",
     "cat": "myke",
     "q": "Du skal kjøre forbi en syklist. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "myk-08"
+    },
     "a": [
       "Hold god sideavstand, gjerne minst 1,5 meter, og kjør forbi bare når det er trygt",
       "Du kan kjøre tett forbi hvis syklisten holder seg helt til høyre i kjørebanen",
@@ -231,7 +233,9 @@
     "id": "myk-18",
     "cat": "myke",
     "q": "Du kjører i en gate. En person på elsparkesykkel kommer fort på fortauet mot et gangfelt foran deg. Hva bør du gjøre?",
-    "img": null,
+    "img": {
+      "view": "myk-18"
+    },
     "a": [
       "Senke farten og være klar til å stoppe, fordi elsparkesykkelen kan komme brått ut i veien",
       "Holde farten, fordi personen på elsparkesykkelen sikkert har sett bilen din og stopper",
@@ -317,7 +321,9 @@
     "id": "myk-23",
     "cat": "myke",
     "q": "På en smal vei uten fortau kommer en person joggende mot deg, ytterst på din side av veien. Hva er riktig?",
-    "img": null,
+    "img": {
+      "view": "myk-23"
+    },
     "a": [
       "Personen følger reglene for gående, og du skal gi god plass",
       "Personen er på feil side og må gå ut av veien når du kommer",

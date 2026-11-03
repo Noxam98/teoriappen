@@ -26,10 +26,18 @@ var elev: Callable = Callable()
 var _badges: Array = []
 ## Проезжая часть: [путь, полуширина]. Здесь не должно быть ничего неподвижного.
 var _corridors: Array = []
+## Дорога с обочиной на загородной сцене: [путь, полуширина].
+var _strips: Array = []
+## Газоны, уже сжатые на вылет травинок. Если они есть в сцене, трава растёт только на них.
+var _lawns: Array = []
+## Сколько пучков травы не посажено, потому что они попали на покрытие.
+var tufts_dropped: int = 0
 var _plant_radius: Dictionary = {}
 ## Дымка: множитель плотности тумана и воздушной перспективы.
 const HAZE: float = 1.08
 const CLEARANCE: float = 4.5
+## Вылет травинок от центра пучка при самом большом масштабе.
+const TUFT_MARGIN: float = 0.35
 const TREE_MARGIN: float = 0.3
 const PLANT_SEEDS: Dictionary = {"pine": [31, 37, 43], "broad": [11, 17, 23], "bush": [51, 53], "rock": [61, 67, 71]}
 var rng := RandomNumberGenerator.new()
@@ -278,6 +286,7 @@ static func at(path: PackedVector2Array, s: float) -> Array:
 
 
 func road(path: PackedVector2Array, half: float, shoulder: float = 0.8, tracks: float = 0.12) -> void:
+	_strips.push_back([_simplified(path), half + shoulder])
 	if shoulder > 0.0:
 		add_mesh(Mesher.strip(path, -half - shoulder, half + shoulder, -0.012, gravel(), elev))
 	add_mesh(Mesher.strip(path, -half, half, 0.0, asphalt(tracks), elev))
@@ -340,6 +349,7 @@ func lot(x0: float, z0: float, sx: float, sz: float, w: float, d: float, radius:
 	if with_grass:
 		var g: PackedVector2Array = outline.call(x0 + sx * walk, z0 + sz * walk, w - walk, d - walk, maxf(0.0, radius - walk))
 		add_mesh(Mesher.prism(g, 0.1, 0.17, grass_ground(), kerb()))
+		_lawns.append_array(Geometry2D.offset_polygon(g, -TUFT_MARGIN))
 
 
 # ---- знаки: официальные рисунки на столбе ------------------------------------------
@@ -666,7 +676,37 @@ func _radius_of(kind: String, pick: int) -> float:
 
 ## Отметить проезжую часть: путь и половина ширины.
 func keep_clear(path: PackedVector2Array, half: float) -> void:
-	_corridors.push_back([path, half])
+	_corridors.push_back([_simplified(path), half])
+
+
+## Путь без промежуточных точек на прямых: проверки идут десятки тысяч раз.
+func _simplified(path: PackedVector2Array) -> PackedVector2Array:
+	var out := PackedVector2Array([path[0]])
+	for i: int in range(1, path.size() - 1):
+		var a: Vector2 = (path[i] - out[out.size() - 1]).normalized()
+		var b: Vector2 = (path[i + 1] - path[i]).normalized()
+		if absf(a.cross(b)) > 0.001:
+			out.push_back(path[i])
+	out.push_back(path[path.size() - 1])
+	return out
+
+
+## Можно ли здесь расти траве: не на проезжей части и обочине, а на сцене с газонами только на газоне.
+func grass_free(x: float, z: float) -> bool:
+	var q := Vector2(x, z)
+	for list: Array in [_corridors, _strips]:
+		for c: Array in list:
+			var path: PackedVector2Array = c[0]
+			var limit: float = float(c[1]) + TUFT_MARGIN
+			for i: int in range(1, path.size()):
+				if Geometry2D.get_closest_point_to_segment(q, path[i - 1], path[i]).distance_to(q) < limit:
+					return false
+	if _lawns.is_empty():
+		return true
+	for g: PackedVector2Array in _lawns:
+		if Geometry2D.is_point_in_polygon(q, g):
+			return true
+	return false
 
 
 ## Свободна ли точка: круг радиуса radius не касается ни одной проезжей части.
@@ -711,6 +751,15 @@ func audit() -> PackedStringArray:
 			if not road_free(p[0].x, p[0].z, r):
 				bad.push_back("%s (%.1f, %.1f), крона %.1f м, задевает проезжую часть" % [kind, p[0].x, p[0].z, r])
 	_audit_node(self, bad)
+	var wrong: int = 0
+	var first := Vector3.ZERO
+	for t: Transform3D in _tufts:
+		if not grass_free(t.origin.x, t.origin.z):
+			if wrong == 0:
+				first = t.origin
+			wrong += 1
+	if wrong > 0:
+		bad.push_back("трава: %d пучков на дороге или тротуаре, первый (%.1f, %.1f)" % [wrong, first.x, first.z])
 	return bad
 
 
@@ -752,8 +801,12 @@ func tufts_along(path: PackedVector2Array, a: float, b: float, count: int, to: f
 		_tuft(q.x, q.y, -0.03)
 
 
-func _tuft(x: float, z: float, base: float) -> void:
+## force сажает без проверки: так самопроверка ставит ловушку для audit.
+func _tuft(x: float, z: float, base: float, force: bool = false) -> void:
 	var b := Basis(Vector3.UP, rng.randf() * TAU).scaled(Vector3.ONE * rng.randf_range(0.7, 1.5))
+	if not force and not grass_free(x, z):
+		tufts_dropped += 1
+		return
 	_tufts.push_back(Transform3D(b, Vector3(x, base + h(z), z)))
 
 
