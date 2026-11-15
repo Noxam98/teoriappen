@@ -4,7 +4,13 @@ import { useSwipeDown } from '../hooks/useSwipeDown';
 import { useT } from '../i18n';
 
 interface Props {
-  title: string;
+  title: ReactNode;
+  /** A line under the title. */
+  sub?: ReactNode;
+  /** Buttons in the head, before the close button. */
+  tools?: ReactNode;
+  /** Nearly the whole screen on phones and a larger dialog on wider screens, of a fixed height: for content that is leafed through. */
+  tall?: boolean;
   children?: ReactNode;
   /** Buttons at the bottom of the sheet. */
   actions?: ReactNode;
@@ -16,11 +22,14 @@ interface Props {
 
 const FOCUSABLE = 'button:not([disabled]), [href], input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])';
 
+/** The sheets on screen, the top one last: a sheet opened over another takes the keys, and the page wakes up after the last one closes. */
+const open: object[] = [];
+
 /**
  * A modal bottom sheet on phones (drag the grip down, tap outside, press Esc or ✕ to close),
  * a centred dialog on wider screens. Focus stays inside while open and returns to the trigger afterwards.
  */
-export function Sheet({ title, children, actions, onClose, lang, closeLabel }: Props) {
+export function Sheet({ title, sub, tools, tall, children, actions, onClose, lang, closeLabel }: Props) {
   const titleId = useId();
   const t = useT();
   const box = useRef<HTMLDivElement>(null);
@@ -33,6 +42,8 @@ export function Sheet({ title, children, actions, onClose, lang, closeLabel }: P
   useEffect(() => {
     const trigger = document.activeElement as HTMLElement | null;
     const root = document.getElementById('root');
+    const me = {};
+    open.push(me);
     // a value, not "": the picture viewer opened over a sheet puts back what it found when it closes
     root?.setAttribute('inert', 'true');
     document.body.classList.add('sheet-open');
@@ -41,7 +52,7 @@ export function Sheet({ title, children, actions, onClose, lang, closeLabel }: P
 
     const key = (e: KeyboardEvent) => {
       // a picture opened full screen from the sheet takes the keys (Esc closes the picture, not the sheet)
-      if (document.body.classList.contains('viewer-open')) return;
+      if (document.body.classList.contains('viewer-open') || open[open.length - 1] !== me) return;
       if (e.key === 'Escape') { e.preventDefault(); closeRef.current(); return; }
       if (e.key !== 'Tab' || !box.current) return;
       const items = [...box.current.querySelectorAll<HTMLElement>(FOCUSABLE)];
@@ -53,18 +64,25 @@ export function Sheet({ title, children, actions, onClose, lang, closeLabel }: P
     document.addEventListener('keydown', key);
     return () => {
       document.removeEventListener('keydown', key);
-      root?.removeAttribute('inert');
-      document.body.classList.remove('sheet-open');
+      open.splice(open.indexOf(me), 1);
+      if (!open.length) {
+        root?.removeAttribute('inert');
+        document.body.classList.remove('sheet-open');
+      }
       if (trigger?.isConnected) trigger.focus({ preventScroll: true });
     };
   }, []);
 
   return createPortal(
     <div className="modal" onClick={e => { if (e.target === e.currentTarget) onClose(); }}>
-      <div className="sheet" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={box} tabIndex={-1} lang={lang}>
+      <div className={tall ? 'sheet tall' : 'sheet'} role="dialog" aria-modal="true" aria-labelledby={titleId} ref={box} tabIndex={-1} lang={lang}>
         <div className="sheet-grip" ref={grip} aria-hidden="true"><span /></div>
         <div className="sheet-head">
-          <h2 id={titleId}>{title}</h2>
+          <div className="sheet-title">
+            <h2 id={titleId}>{title}</h2>
+            {sub && <p className="sheet-sub">{sub}</p>}
+          </div>
+          {tools}
           <button className="iconbtn" onClick={onClose} aria-label={closeLabel ?? t.close}>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 L18 18 M18 6 L6 18" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" /></svg>
           </button>

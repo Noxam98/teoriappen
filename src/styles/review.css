@@ -2,12 +2,12 @@
    whole test and jump. --rv-bleed: how far the deck may run past its box (to the edge of the panel or the screen). */
 .rv { --rv-bleed: 0px; --rv-gap: 10px; --rv-card: min(calc(100% - 26px), 480px); display: grid; gap: 10px; min-width: 0; }
 .result .rv { --rv-bleed: 16px; margin-top: 16px; }
-.attempt .rv { --rv-bleed: 14px; }
+/* in a dialog: to the edges of the sheet */
+.sheet .rv { --rv-bleed: 18px; }
+@media (min-width: 640px) { .sheet .rv { --rv-bleed: 22px; } }
 .rv-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; min-height: 38px; }
 .rv-top .segmented { flex: 1 1 250px; max-width: 420px; }
-/* inside an opened test of the history the filter needs no heading */
-.attempt .rv-top .eyebrow { display: none; }
-.attempt .rv-top .segmented { max-width: none; }
+.sheet .rv-top .segmented { max-width: none; }
 .rv-top .segmented button { padding: 0 11px; }
 /* the filter of questions with translated words carries the highlighter's colour */
 .rv-fwords::before { content: ""; display: inline-block; width: 9px; height: 9px; margin-right: 6px; border-radius: 50%; background: var(--yellow); }
@@ -22,7 +22,7 @@
 .rv-dot.ok.cur { background: var(--ok); color: var(--on-ok); }
 .rv-dot.bad.cur { background: var(--bad); color: var(--surface); }
 .rv-dot.has-words::after { content: ""; position: absolute; top: -3px; right: -3px; width: 11px; height: 11px; border-radius: 50%; background: var(--yellow); border: 2px solid var(--bg); }
-.attempt .rv-dot.has-words::after { border-color: var(--surface-2); }
+.sheet .rv-dot.has-words::after { border-color: var(--surface); }
 
 .rv-deck { position: relative; display: flex; align-items: flex-start; gap: var(--rv-gap); overflow-x: auto; overflow-y: hidden; margin-inline: calc(-1 * var(--rv-bleed)); padding: 2px var(--rv-bleed) 10px; scroll-snap-type: x mandatory; scroll-padding-inline: var(--rv-bleed); overscroll-behavior-x: contain; scrollbar-width: none; transition: height .22s ease; }
 .rv-deck::-webkit-scrollbar { display: none; }
@@ -76,7 +76,7 @@
 .rv-card .explain { margin-top: 0; animation: none; }
 
 /* the words translated in this question: the highlighter's yellow, as in the text above */
-.rv-words { display: grid; gap: 4px; padding: 10px 6px 4px 12px; border-radius: var(--r); background: var(--note); border: 1px solid color-mix(in srgb, var(--flag) 40%, transparent); }
+.rv-words { display: grid; padding: 2px 6px 2px 12px; border-radius: var(--r); background: var(--note); border: 1px solid color-mix(in srgb, var(--flag) 40%, transparent); }
 .w.looked { background: linear-gradient(176deg, transparent 18%, var(--paint) 18%, var(--paint) 86%, transparent 86%); box-shadow: 4px 0 0 -1px var(--paint), -4px 0 0 -1px var(--paint); }
 .looked-list.compact { border: 0; border-radius: 0; background: none; }
 .looked-list.compact .looked-item { grid-template-columns: minmax(0, 1fr) 40px; grid-template-areas: "w star" "tr star"; gap: 0 8px; padding: 5px 0; border-top-color: color-mix(in srgb, var(--flag) 28%, transparent); }
@@ -89,6 +89,8 @@
 @media (hover: hover) { .rv-more:hover { background: var(--surface-2); } }
 
 .rv-nav { display: flex; align-items: center; justify-content: center; gap: 16px; color: var(--ink-2); font-size: .92rem; }
+/* a finger swipes the deck and taps the numbers: the arrows are for a mouse */
+@media (hover: none) and (pointer: coarse) { .rv-nav { display: none; } }
 .rv-nav .iconbtn[disabled] { opacity: .35; cursor: default; }
 .rv-rest { display: grid; gap: 8px; margin-top: 6px; }
 @media (min-width: 720px) { .rv-card { padding: 18px; } }

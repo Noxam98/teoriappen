@@ -61,28 +61,21 @@
 .hscore.bad b { color: var(--bad); }
 .hmain [lang="nb"] { font-weight: 600; }
 
-/* a test of the history: the row opens it — its questions with the answers given, the words translated in it,
-   do it again, train its mistakes */
-.hentry { border-top: 1px solid var(--line); }
-.hentry:first-child { border-top: 0; }
-.hentry > .hrow { width: 100%; border: 0; background: none; text-align: left; cursor: pointer; }
-@media (hover: hover) { .hentry > .hrow:hover { background: var(--surface-2); } }
-.hentry.open > .hrow { background: var(--surface-2); }
+/* a row of the history opens its test in a dialog */
+.history > .hrow { width: 100%; border: 0; border-top: 1px solid var(--line); background: none; text-align: left; cursor: pointer; }
+.history > .hrow:first-child { border-top: 0; }
+@media (hover: hover) { .history > .hrow:hover { background: var(--surface-2); } }
 .hchev { display: grid; color: var(--ink-3); }
-.hchev svg { width: 18px; height: 18px; transition: transform .15s; }
-.hentry.open .hchev svg { transform: rotate(90deg); }
+.hchev svg { width: 18px; height: 18px; }
 
-.attempt { display: grid; gap: 14px; padding: 2px 14px 16px; background: var(--surface-2); min-width: 0; }
-.attempt-facts { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; color: var(--ink-2); font-size: .88rem; }
-.attempt-facts span { display: inline-flex; align-items: center; gap: 5px; }
-.attempt-facts svg { width: 15px; height: 15px; }
-.attempt-facts .warn { color: var(--streak-ink); font-weight: 600; }
-.attempt-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 8px; }
-.attempt-actions .btn { min-width: 0; padding: 0 12px; }
-.attempt-actions .btn.wide { grid-column: 1 / -1; }
-.attempt-note { color: var(--ink-2); font-size: .9rem; line-height: 1.4; }
+/* the dialog of one test: score and date in its head, the review, the buttons at the bottom */
+.att-title { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.att-score { font-family: var(--display); font-weight: 500; font-size: 1.15rem; color: var(--ink-2); }
+.att-score b { color: var(--ink); font-size: 1.3rem; }
+.att-warn { color: var(--streak-ink); font-weight: 600; }
+.sheet-head > .later-chip { flex: none; min-height: 36px; padding: 3px 12px 3px 9px; border: 0; cursor: pointer; }
+.attempt-note { color: var(--ink-2); font-size: .92rem; line-height: 1.4; }
 .attempt-part { display: grid; gap: 8px; }
-.attempt .later-item { background: var(--surface); }
 
 /* words translated with «Перевод» during a test */
 .looked-panel { display: grid; gap: 12px; padding: 16px; }

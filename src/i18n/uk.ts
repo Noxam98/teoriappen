@@ -140,6 +140,7 @@ export const uk: Messages = {
     emptyExams: 'Іспитів поки не було.',
     emptyPractice: 'Тренувань поки не було.',
     retake: 'Пройти знову',
+    retakeShort: 'Знову',
     trainMistakes: (k: number) => `Тренувати помилки · ${k}`,
     readLater: (k: number) => `Почитати · ${k}`,
     lost: 'Питання цієї спроби не збереглися: історія запам’ятовує їх лише з цієї версії.',

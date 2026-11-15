@@ -10,6 +10,7 @@ import { Icon } from './Icons';
 import { laterOf, ReadingList, ReadingSheet } from './later/Reading';
 import { LookedList, lookedOf, mergeWords } from './Looked';
 import { AnswerReview } from './review/AnswerReview';
+import { Sheet } from './Sheet';
 
 export interface HistoryEntry {
   key: string;
@@ -78,46 +79,35 @@ function Row({ e }: { e: HistoryEntry }) {
   );
 }
 
-/**
- * Rows of the history. A tap opens the test: buttons to do it again or to train only its mistakes, the questions
- * to read about, and the review — its questions with the answers given and the words translated in them.
- */
-export function HistoryList({ entries }: { entries: HistoryEntry[] }) {
-  const { data } = useApp();
-  const [open, setOpen] = useState<string | null>(null);
-  const [reading, setReading] = useState<{ test: number; at: string | null } | null>(null);
+/** Rows of the history; a tap opens the test in a dialog over the list. */
+export function HistoryList({ entries, onOpen }: { entries: HistoryEntry[]; onOpen: (key: string) => void }) {
   return (
-    <>
-      <div className="history">
-        {entries.map(e => {
-          const on = open === e.key;
-          return (
-            <div key={e.key} className={on ? 'hentry open' : 'hentry'}>
-              <button className="hrow" aria-expanded={on} aria-controls={`att-${e.key}`} onClick={() => setOpen(on ? null : e.key)}><Row e={e} /></button>
-              {on && <Attempt id={`att-${e.key}`} e={e} onRead={at => setReading({ test: e.test!, at })} />}
-            </div>
-          );
-        })}
-      </div>
-      {reading && <ReadingSheet items={laterOf(data.later, reading.test)} start={reading.at} onClose={() => setReading(null)} />}
-    </>
+    <div className="history">
+      {entries.map(e => <button key={e.key} className="hrow" aria-haspopup="dialog" onClick={() => onOpen(e.key)}><Row e={e} /></button>)}
+    </div>
   );
 }
 
 const NO_ANSWERS: Record<string, number> = {};
 
-/** One test opened in the history. */
-function Attempt({ id, e, onRead }: { id: string; e: HistoryEntry; onRead: (at: string | null) => void }) {
-  const { go, startExam } = useApp();
+/**
+ * One test of the history in a dialog: its score and date in the head (with the way to its reading list), the review
+ * in the middle, and at the bottom the buttons to do it again or to train only its mistakes.
+ */
+export function AttemptSheet({ e, onClose }: { e: HistoryEntry; onClose: () => void }) {
+  const { data, go, startExam } = useApp();
   const t = useT();
   const h = t.history;
   const r = e.res;
+  // the reading list over this dialog: closed, the list (null), or one of its questions
+  const [reading, setReading] = useState<string | null>();
   // questions removed from the bank since are left out
   const ids = useMemo(() => (r?.ids ?? []).filter(x => QUESTION_BY_ID[x]), [r]);
   const ans = r?.ans ?? NO_ANSWERS;
   const wrong = ids.filter(x => ans[x] !== 0);
   const isExam = !!r && r.kind !== 'practice';
   const mode = r?.mode ?? 'all';
+  const read = e.items.filter(x => x.read).length;
 
   // the same questions again; a test from before the history kept them can only start anew
   let again: { label: string; run: () => void } | null = null;
@@ -125,40 +115,53 @@ function Attempt({ id, e, onRead }: { id: string; e: HistoryEntry; onRead: (at: 
   else if (r && isExam) again = { label: t.result.newExam, run: () => startExam() };
   else if (r && r.mode && r.mode !== 'list') again = { label: t.result.again, run: () => go({ name: 'practice', mode }) };
 
+  const score = r && r.n > 0 && <span className="att-score tnum"><b>{r.right}</b>/{r.n}</span>;
+  const title = !r ? <span className="stamp open">Ikke fullført</span>
+    : isExam ? <><span className={r.pass ? 'stamp pass' : 'stamp fail'}>{r.pass ? 'Bestått' : 'Ikke bestått'}</span>{score}</>
+      : <><span lang="nb">{practiceTitle(mode, t, data.prefs.lang)[0]}</span>{score}</>;
+  const sub = (
+    <>
+      <span className="tnum">{new Date(e.date).toLocaleString(t.locale, { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' })}</span>
+      {r && r.ms > 0 && <span className="tnum"><Icon name="clock" />{fmtTime(r.ms)}</span>}
+      {r?.timeout && <span className="att-warn">{t.result.timeout}</span>}
+    </>
+  );
+  const tools = r && e.items.length > 0 && (
+    <button className={read === e.items.length ? 'later-chip done tnum' : 'later-chip tnum'} onClick={() => setReading(null)}
+      aria-label={t.later.chip(e.items.length)} title={t.later.chip(e.items.length)}>
+      <Icon name={read === e.items.length ? 'check' : 'bookmark'} />{e.items.length}
+    </button>
+  );
+  const actions = (again || wrong.length > 0) && (
+    <>
+      {again && (
+        <button className={wrong.length ? 'btn' : 'btn primary'} onClick={again.run} aria-label={again.label}>
+          <Icon name="redo" />{wrong.length && again.label === h.retake ? h.retakeShort : again.label}
+        </button>
+      )}
+      {wrong.length > 0 && <button className="btn primary" onClick={() => go({ name: 'practice', mode: 'list', ids: wrong })}>{h.trainMistakes(wrong.length)}</button>}
+    </>
+  );
+
   return (
-    <div className="attempt" id={id}>
-      {r && (
-        <p className="attempt-facts tnum">
-          <span>{new Date(e.date).toLocaleString(t.locale, { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' })}</span>
-          {r.ms > 0 && <span><Icon name="clock" />{fmtTime(r.ms)}</span>}
-          {r.timeout && <span className="warn">{t.result.timeout}</span>}
-        </p>
-      )}
-
-      {(again || wrong.length > 0 || (r && e.items.length > 0)) && (
-        <div className="attempt-actions">
-          {again && <button className="btn small-btn primary" onClick={again.run}><Icon name="redo" />{again.label}</button>}
-          {wrong.length > 0 && <button className="btn small-btn" onClick={() => go({ name: 'practice', mode: 'list', ids: wrong })}>{h.trainMistakes(wrong.length)}</button>}
-          {r && e.items.length > 0 && <button className="btn small-btn wide" onClick={() => onRead(null)}><Icon name="bookmark" />{h.readLater(e.items.length)}</button>}
-        </div>
-      )}
-
-      {!r && <p className="attempt-note">{h.unfinishedNote}</p>}
-      {!r && e.items.length > 0 && <ReadingList items={e.items} onOpen={onRead} />}
-
-      {r && ids.length > 0
-        ? <AnswerReview ids={ids} ans={ans} perm={r.perm} words={e.words} />
-        : (
-          <>
-            {r && <p className="attempt-note">{r.ids ? h.noAnswers : h.lost}</p>}
-            {e.words.length > 0 && (
-              <section className="attempt-part" aria-label={t.looked.title}>
-                <div className="eyebrow">{t.looked.title}</div>
-                <LookedList items={mergeWords(e.words)} />
-              </section>
-            )}
-          </>
-        )}
-    </div>
+    <>
+      <Sheet tall title={<span className="att-title">{title}</span>} sub={sub} tools={tools} actions={actions || undefined} onClose={onClose}>
+        {r && ids.length > 0
+          ? <AnswerReview ids={ids} ans={ans} perm={r.perm} words={e.words} heading={false} keys={reading === undefined} />
+          : (
+            <>
+              <p className="attempt-note">{!r ? h.unfinishedNote : r.ids ? h.noAnswers : h.lost}</p>
+              {!r && e.items.length > 0 && <ReadingList items={e.items} onOpen={setReading} />}
+              {e.words.length > 0 && (
+                <section className="attempt-part" aria-label={t.looked.title}>
+                  <div className="eyebrow">{t.looked.title}</div>
+                  <LookedList items={mergeWords(e.words)} />
+                </section>
+              )}
+            </>
+          )}
+      </Sheet>
+      {reading !== undefined && <ReadingSheet items={laterOf(data.later, e.test)} start={reading} onClose={() => setReading(undefined)} />}
+    </>
   );
 }

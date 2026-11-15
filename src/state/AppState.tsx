@@ -13,8 +13,12 @@ interface AppApi {
   visit: number;
   /** The screen came from the address (reload, back/forward, a link) rather than a tap in the app: restore where it was. */
   restored: boolean;
-  /** Opens a screen as a new step in the browser history (`replace`: instead of the current step, e.g. a redirect). */
-  go: (s: Screen, opts?: { replace?: boolean }) => void;
+  /**
+   * Opens a screen as a new step in the browser history (`replace`: instead of the current step, e.g. a redirect).
+   * `stay`: the same screen with something opened over it (a dialog) — it is not remounted or scrolled, and the
+   * browser's back button closes what was opened (`history.state.stay` marks such a step).
+   */
+  go: (s: Screen, opts?: { replace?: boolean; stay?: boolean }) => void;
   /** Updates the address for the place within the same screen (question, section) without remounting it. */
   mark: (s: Screen) => void;
   /** A short message at the bottom of the screen, e.g. "link copied". */
@@ -118,11 +122,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const update = useCallback((fn: (d: AppData) => AppData) => setData(fn), []);
 
-  const go = useCallback((screen: Screen, opts?: { replace?: boolean }) => {
+  const go = useCallback((screen: Screen, opts?: { replace?: boolean; stay?: boolean }) => {
     rememberScroll(location.hash, window.scrollY);
-    setNav(n => ({ screen, visit: n.visit + 1, restored: false }));
-    setAddress(toHash(screen), !opts?.replace);
-    window.scrollTo(0, 0);
+    setNav(n => ({ screen, visit: opts?.stay ? n.visit : n.visit + 1, restored: false }));
+    setAddress(toHash(screen), !opts?.replace, opts?.stay ? { stay: true } : null);
+    if (!opts?.stay) window.scrollTo(0, 0);
   }, []);
 
   const mark = useCallback((screen: Screen) => {

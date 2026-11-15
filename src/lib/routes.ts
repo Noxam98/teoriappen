@@ -8,7 +8,7 @@ import type { CategoryId, PracticeMode, Screen } from '../types';
 //   #/practice/<topic|all|wrong>[/<question id>]
 //   #/questions/<id,id,…>[/<question id>]   a hand-picked list, e.g. the mistakes of one exam
 //   #/repeat/<topic|all|wrong>/<id,id,…>[/<question id>]   a practice round of the history done again
-//   #/history[/prover|/oving]           the history: exams or practice rounds
+//   #/history[/prover|/oving[/<test>]]  the history: exams or practice rounds; a test opened over the list
 //   #/exam  #/result  #/vocab  #/vocab/cards
 
 export function toHash(s: Screen): string {
@@ -18,7 +18,7 @@ export function toHash(s: Screen): string {
     case 'result': return '#/result';
     case 'vocab': return '#/vocab';
     case 'flashcards': return '#/vocab/cards';
-    case 'history': return s.tab ? `#/history/${s.tab === 'exam' ? 'prover' : 'oving'}` : '#/history';
+    case 'history': return s.tab ? `#/history/${s.tab === 'exam' ? 'prover' : 'oving'}${s.open ? `/${s.open}` : ''}` : '#/history';
     case 'theory': return '#/theory';
     case 'chapter': return `#/theory/${s.cat}${s.section ? `/${s.section}` : ''}`;
     case 'practice': {
@@ -39,7 +39,10 @@ export function fromHash(hash: string): Screen {
   switch (page) {
     case 'exam': return { name: 'exam' };
     case 'result': return { name: 'result' };
-    case 'history': return { name: 'history', tab: a === 'prover' ? 'exam' : a === 'oving' ? 'practice' : undefined };
+    case 'history': {
+      const tab = a === 'prover' ? 'exam' : a === 'oving' ? 'practice' : undefined;
+      return { name: 'history', tab, open: (tab && b) || undefined };
+    }
     case 'vocab': return a === 'cards' ? { name: 'flashcards' } : { name: 'vocab' };
     case 'theory': return isTopic(a) && THEORY_BY_CAT[a] ? { name: 'chapter', cat: a, section: b || undefined } : { name: 'theory' };
     case 'practice': {
@@ -69,11 +72,14 @@ export function slug(text: string): string {
     .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
-/** Writes the address without reloading; a sandboxed frame that refuses the History API still gets the hash. */
-export function setAddress(hash: string, push: boolean): void {
+/**
+ * Writes the address without reloading; a sandboxed frame that refuses the History API still gets the hash.
+ * `state` goes with a new step of the browser history (a replaced step keeps its own).
+ */
+export function setAddress(hash: string, push: boolean, state: unknown = null): void {
   if (!push && location.hash === hash) return;
   try {
-    if (push) history.pushState(null, '', hash);
+    if (push) history.pushState(state, '', hash);
     else history.replaceState(history.state, '', hash);
   } catch {
     try { if (push) location.hash = hash; else location.replace(hash); } catch { /* no address bar to update */ }

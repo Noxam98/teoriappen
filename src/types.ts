@@ -288,8 +288,8 @@ export type Screen =
   | { name: 'practice'; mode: PracticeMode; ids?: string[]; q?: string }
   | { name: 'vocab' }
   | { name: 'flashcards' }
-  /** `tab`: exams or practice rounds; none: the tab of the newest test */
-  | { name: 'history'; tab?: TestKind }
+  /** `tab`: exams or practice rounds; none: the tab of the newest test. `open`: the test shown in a dialog over the list. */
+  | { name: 'history'; tab?: TestKind; open?: string }
   | { name: 'theory' }
   /** `section`: the heading in view, so a reload or a shared link opens that part of the chapter */
   | { name: 'chapter'; cat: CategoryId; section?: string };

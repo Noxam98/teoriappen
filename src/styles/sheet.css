@@ -9,7 +9,20 @@
 .sheet-grip { display: grid; place-items: center; height: 24px; margin: 0 -18px; cursor: grab; touch-action: none; }
 .sheet-grip span { width: 40px; height: 5px; border-radius: 3px; background: var(--surface-3); }
 .sheet-head { display: flex; align-items: center; gap: 10px; min-height: 44px; }
-.sheet-head h2 { flex: 1; font-size: 1.12rem; }
+.sheet-title { flex: 1; min-width: 0; display: grid; gap: 1px; }
+.sheet-head h2 { font-size: 1.12rem; }
+.sheet-sub { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 12px; color: var(--ink-2); font-size: .84rem; line-height: 1.3; }
+.sheet-sub span { display: inline-flex; align-items: center; gap: 4px; }
+.sheet-sub svg { width: 14px; height: 14px; }
+/* a tall sheet: nearly the whole screen, of a fixed height, so it stands still while its content is leafed through;
+   the buttons stay at its bottom */
+.sheet.tall { display: flex; flex-direction: column; height: min(94vh, 920px); height: min(94dvh, 920px); max-height: none; }
+.sheet.tall > * { flex: none; }
+.sheet.tall > .sheet-body { flex: 1 0 auto; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 10px; padding-top: 8px; }
+/* the bar spans the whole sheet: what is leafed through above runs to its edges and must not show beside the buttons */
+.sheet.tall .sheet-actions { display: flex; gap: 8px; margin: 10px calc(-1 * var(--sheet-pad)) 0; padding-inline: var(--sheet-pad); z-index: 1; }
+.sheet.tall { --sheet-pad: 18px; }
+.sheet.tall .sheet-actions .btn { flex: 1 1 auto; min-width: 0; padding: 0 14px; }
 .sheet-body { display: grid; gap: 16px; padding-block: 6px 4px; }
 .sheet-actions { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 10px; margin-top: 16px; position: sticky; bottom: calc(-16px - env(safe-area-inset-bottom, 0px)); background: var(--surface); padding-block: 10px 8px; border-top: 1px solid var(--line); }
 .mtext { font-size: 1rem; }
@@ -20,6 +33,8 @@
   .sheet { width: min(540px, 100%); border-radius: 20px; padding: 18px 22px 22px; animation: pop .2s ease-out; }
   .sheet-grip { display: none; }
   .sheet-actions { position: static; }
+  .sheet.tall { --sheet-pad: 22px; width: min(640px, 100%); height: min(90vh, 900px); }
+  .sheet.tall .sheet-actions { position: sticky; bottom: -22px; }
   @keyframes pop { from { transform: scale(.96); opacity: 0; } }
 }
 

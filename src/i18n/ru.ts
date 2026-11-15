@@ -144,6 +144,7 @@ export const ru = {
     emptyExams: 'Экзаменов пока не было.',
     emptyPractice: 'Тренировок пока не было.',
     retake: 'Пройти заново',
+    retakeShort: 'Заново',
     trainMistakes: (k: number) => `Тренировать ошибки · ${k}`,
     readLater: (k: number) => `Почитать · ${k}`,
     lost: 'Вопросы этой попытки не сохранились: история запоминает их только с этой версии.',

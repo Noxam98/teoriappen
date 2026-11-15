@@ -48,14 +48,18 @@ const DECK_PAD = 12;
 /**
  * The review of a test: its questions as a deck of cards, swiped sideways, with a strip of numbers above to see the
  * whole test and jump. A card shows the picture, the question and the answer given; opened, all options and the
- * explanation. Words translated during the test are highlighted in their question and listed under it.
+ * explanation — every card opens and closes together, so leafing on keeps the same view. Words translated during
+ * the test are highlighted in their question and listed under it.
+ * `heading: false` and `keys` are for a dialog: no title of its own, and ← → leaf through the cards from anywhere.
  */
-export function AnswerReview({ ids, ans, perm, words, initial = 'all' }: {
+export function AnswerReview({ ids, ans, perm, words, initial = 'all', heading = true, keys = false }: {
   ids: string[];
   ans: Record<string, number>;
   perm?: Record<string, number[]>;
   words: LookedUp[];
   initial?: ReviewFilter;
+  heading?: boolean;
+  keys?: boolean;
 }) {
   const t = useT();
   const v = t.review;
@@ -65,7 +69,7 @@ export function AnswerReview({ ids, ans, perm, words, initial = 'all' }: {
   const [filter, setFilter] = useState<ReviewFilter>(initial === 'bad' && !wrong.length ? 'all' : initial);
   const shown = filter === 'bad' ? wrong : filter === 'words' ? withWords : ids;
   const [at, setAt] = useState(0);
-  const [open, setOpen] = useState<ReadonlySet<string>>(() => new Set());
+  const [open, setOpen] = useState(false);
   const [height, setHeight] = useState<number>();
   const deck = useRef<HTMLDivElement>(null);
   const strip = useRef<HTMLDivElement>(null);
@@ -86,11 +90,21 @@ export function AnswerReview({ ids, ans, perm, words, initial = 'all' }: {
     setFilter(f);
     setAt(0);
   };
-  const toggle = (id: string) => setOpen(s => {
-    const next = new Set(s);
-    if (!next.delete(id)) next.add(id);
-    return next;
-  });
+  const step = useRef((_d: number) => {});
+  step.current = d => goTo(cur + d);
+
+  // in a dialog the arrow keys leaf through the cards wherever the focus is (not while a picture is open full screen)
+  useEffect(() => {
+    if (!keys) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      if (e.metaKey || e.ctrlKey || e.altKey || document.body.classList.contains('viewer-open')) return;
+      e.preventDefault();
+      step.current(e.key === 'ArrowRight' ? 1 : -1);
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [keys]);
 
   // the deck is as tall as the card on screen, also when that card opens or its picture loads
   useLayoutEffect(() => {
@@ -117,8 +131,8 @@ export function AnswerReview({ ids, ans, perm, words, initial = 'all' }: {
 
   return (
     <section className="rv" aria-label={t.result.review}>
-      <div className="rv-top">
-        <div className="eyebrow">{t.result.review}</div>
+      {(heading || filters.length > 1) && <div className="rv-top">
+        {heading && <div className="eyebrow">{t.result.review}</div>}
         {filters.length > 1 && (
           <div className="segmented small" role="radiogroup" aria-label={t.result.show}>
             {filters.map(([f, label]) => (
@@ -126,7 +140,7 @@ export function AnswerReview({ ids, ans, perm, words, initial = 'all' }: {
             ))}
           </div>
         )}
-      </div>
+      </div>}
 
       {shown.length > 1 && (
         <div className="rv-strip" ref={strip} role="group" aria-label={v.strip}>
@@ -143,13 +157,13 @@ export function AnswerReview({ ids, ans, perm, words, initial = 'all' }: {
       {/* a new deck per filter: a kept one would stay scrolled to the card it was snapped to */}
       <div key={filter} className={shown.length > 1 ? 'rv-deck' : 'rv-deck single'} ref={deck} onScroll={onScroll} style={height ? { height } : undefined}
         tabIndex={shown.length > 1 ? 0 : undefined} role="group" aria-label={v.deck}
-        onKeyDown={e => {
+        onKeyDown={keys ? undefined : e => {
           if (e.key === 'ArrowRight') { e.preventDefault(); goTo(cur + 1); }
           else if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(cur - 1); }
         }}>
         {shown.map((id, k) => (Math.abs(k - cur) <= NEAR
           ? <Card key={id} q={QUESTION_BY_ID[id]} n={ids.indexOf(id) + 1} total={ids.length} chosen={ans[id]} state={verdict(id)}
-              order={shownOrder(QUESTION_BY_ID[id], perm?.[id])} words={by.get(id)} open={open.has(id)} toggle={() => toggle(id)} />
+              order={shownOrder(QUESTION_BY_ID[id], perm?.[id])} words={by.get(id)} open={open} toggle={() => setOpen(o => !o)} />
           : <div key={id} className="rv-card ghost" aria-hidden="true" />))}
       </div>
 
@@ -171,7 +185,7 @@ export function AnswerReview({ ids, ans, perm, words, initial = 'all' }: {
   );
 }
 
-/** One question of the test: closed, with the answer given; opened, with every option and the explanation. */
+/** One question of the test: closed, with the answer given; opened (all cards at once), with every option and the explanation. */
 function Card({ q, n, total, chosen, state, order, words, open, toggle }: {
   q: Question; n: number; total: number; chosen: number | undefined; state: Verdict; order: number[];
   words: LookedUp[] | undefined; open: boolean; toggle: () => void;
@@ -221,8 +235,7 @@ function Card({ q, n, total, chosen, state, order, words, open, toggle }: {
       )}
 
       {list.length > 0 && (
-        <div className="rv-words">
-          <span className="rv-label"><Icon name="translate" />{v.words}</span>
+        <div className="rv-words" role="group" aria-label={v.words}>
           <LookedList items={list} compact />
         </div>
       )}
