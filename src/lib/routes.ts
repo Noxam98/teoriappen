@@ -8,7 +8,8 @@ import type { CategoryId, PracticeMode, Screen } from '../types';
 //   #/practice/<topic|all|wrong>[/<question id>]
 //   #/questions/<id,id,…>[/<question id>]   a hand-picked list, e.g. the mistakes of one exam
 //   #/repeat/<topic|all|wrong>/<id,id,…>[/<question id>]   a practice round of the history done again
-//   #/exam  #/result  #/vocab  #/vocab/cards  #/history
+//   #/history[/prover|/oving]           the history: exams or practice rounds
+//   #/exam  #/result  #/vocab  #/vocab/cards
 
 export function toHash(s: Screen): string {
   switch (s.name) {
@@ -17,7 +18,7 @@ export function toHash(s: Screen): string {
     case 'result': return '#/result';
     case 'vocab': return '#/vocab';
     case 'flashcards': return '#/vocab/cards';
-    case 'history': return '#/history';
+    case 'history': return s.tab ? `#/history/${s.tab === 'exam' ? 'prover' : 'oving'}` : '#/history';
     case 'theory': return '#/theory';
     case 'chapter': return `#/theory/${s.cat}${s.section ? `/${s.section}` : ''}`;
     case 'practice': {
@@ -38,7 +39,7 @@ export function fromHash(hash: string): Screen {
   switch (page) {
     case 'exam': return { name: 'exam' };
     case 'result': return { name: 'result' };
-    case 'history': return { name: 'history' };
+    case 'history': return { name: 'history', tab: a === 'prover' ? 'exam' : a === 'oving' ? 'practice' : undefined };
     case 'vocab': return a === 'cards' ? { name: 'flashcards' } : { name: 'vocab' };
     case 'theory': return isTopic(a) && THEORY_BY_CAT[a] ? { name: 'chapter', cat: a, section: b || undefined } : { name: 'theory' };
     case 'practice': {

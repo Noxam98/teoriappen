@@ -24,7 +24,7 @@ function CurrentScreen() {
     case 'practice': return <PracticeScreen key={visit} screen={screen} />;
     case 'vocab': return <VocabScreen />;
     case 'flashcards': return <FlashcardsScreen key={visit} />;
-    case 'history': return <HistoryScreen />;
+    case 'history': return <HistoryScreen key={visit} screen={screen} />;
     case 'theory': return <TheoryScreen />;
     case 'chapter': return <ChapterScreen key={visit} cat={screen.cat} />;
     default: return <HomeScreen />;

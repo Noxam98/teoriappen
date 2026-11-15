@@ -6,7 +6,7 @@ import { testId } from '../lib/exam';
 import { fmtTime } from '../lib/text';
 import { practiceTitle } from '../screens/PracticeScreen';
 import { useApp } from '../state/AppState';
-import type { ExamResult, LookedUp, Question, ReadLater } from '../types';
+import type { ExamResult, LookedUp, Question, ReadLater, TestKind } from '../types';
 import { Figure } from './figures/Figure';
 import { Zoomable } from './figures/viewer';
 import { Icon } from './Icons';
@@ -18,6 +18,8 @@ export interface HistoryEntry {
   key: string;
   /** None for a test left unfinished: it is in the history for the questions marked or the words translated in it. */
   res?: ExamResult;
+  /** Its tab of the history. */
+  kind: TestKind;
   test?: number;
   date: number;
   items: ReadLater[];
@@ -32,31 +34,39 @@ export function useHistory(): HistoryEntry[] {
   const { data } = useApp();
   return useMemo(() => {
     const finished: HistoryEntry[] = data.exams.map(res => ({
-      key: `r${res.date}`, res, test: res.test, date: res.date, items: laterOf(data.later, res.test), words: lookedOf(data.looked, res.test),
+      key: `r${res.date}`, res, kind: res.kind ?? 'exam', test: res.test, date: res.date,
+      items: laterOf(data.later, res.test), words: lookedOf(data.looked, res.test),
     }));
     const known = new Set([...data.exams.map(r => r.test), data.cur && testId(data.cur), data.practice?.start]);
-    const left = [...new Set([...data.later, ...data.looked].map(x => x.test))].filter(k => !known.has(k))
-      .map(k => ({ key: `u${k}`, test: k, date: k, items: laterOf(data.later, k), words: lookedOf(data.looked, k) }))
+    const marks = [...data.later, ...data.looked];
+    const left: HistoryEntry[] = [...new Set(marks.map(x => x.test))].filter(k => !known.has(k))
+      .map(k => ({
+        // marks from before they knew their test's kind: most tests left unfinished are practice rounds
+        key: `u${k}`, kind: marks.find(x => x.test === k && x.kind)?.kind ?? 'practice', test: k, date: k,
+        items: laterOf(data.later, k), words: lookedOf(data.looked, k),
+      }))
       .filter(e => e.items.length || e.words.length);
     return [...finished, ...left].sort((a, b) => b.date - a.date);
   }, [data.exams, data.later, data.looked, data.cur, data.practice]);
 }
 
+/** A row: an exam with its verdict and score; a practice round with its score and topic. */
 function Row({ e }: { e: HistoryEntry }) {
   const { data } = useApp();
   const t = useT();
   const r = e.res;
-  const practice = r?.kind === 'practice';
   const read = e.items.filter(x => x.read).length;
+  const title = r?.kind === 'practice' ? practiceTitle(r.mode ?? 'all', t, data.prefs.lang) : null;
   return (
     <>
       {!r ? <span className="stamp open">Ikke fullført</span>
-        : practice ? <span className="stamp practice">Øving</span>
+        : title ? <span className={`hscore tnum ${!r.n ? '' : r.right === r.n ? 'ok' : r.right / r.n >= .8 ? 'mid' : 'bad'}`}>{r.n ? <><b>{r.right}</b>/{r.n}</> : '—'}</span>
           : <span className={r.pass ? 'stamp pass' : 'stamp fail'}>{r.pass ? 'Bestått' : 'Ikke bestått'}</span>}
       <span className="hmain">
-        {r && r.n > 0 && <span className="tnum"><b>{r.right}</b>/{r.n} · {t.errors(r.n - r.right)}</span>}
-        {practice && r.mode && <small>{practiceTitle(r.mode, t, data.prefs.lang)[1]}</small>}
-        {!r && <small>{t.history.unfinished}</small>}
+        {title
+          ? <><span lang="nb">{title[0]}</span><small>{title[1]}{r!.n > 0 && <> · {t.errors(r!.n - r!.right)}</>}</small></>
+          : r ? r.n > 0 && <span className="tnum"><b>{r.right}</b>/{r.n} · {t.errors(r.n - r.right)}</span>
+            : <small>{t.history.unfinished}</small>}
       </span>
       <span className="hside">
         {e.items.length > 0 && (

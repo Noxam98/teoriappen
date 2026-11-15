@@ -175,9 +175,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
       return !has;
     },
     toggleLater(id, test) {
+      const kind = navRef.current.screen.name === 'exam' ? 'exam' : 'practice';
       setData(d => {
         const has = d.later.some(x => x.id === id && x.test === test);
-        return { ...d, later: has ? d.later.filter(x => !(x.id === id && x.test === test)) : [...d.later, { id, test }] };
+        return { ...d, later: has ? d.later.filter(x => !(x.id === id && x.test === test)) : [...d.later, { id, test, kind }] };
       });
     },
     lookedUp(item, count = true) {
@@ -185,9 +186,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
         const s = navRef.current.screen;
         const test = s.name === 'exam' && d.cur ? testId(d.cur) : s.name === 'practice' && d.practice ? d.practice.start : undefined;
         if (test === undefined) return d;
+        const kind = s.name === 'exam' ? 'exam' as const : 'practice' as const;
         const ai = item.ai ? { ai: item.ai } : {};
         const has = d.looked.some(x => x.w === item.w && x.test === test);
-        if (!has) return count ? { ...d, looked: [...d.looked, { ...item, ...ai, ctx: item.ctx.slice(0, 220), test, n: 1 }] } : d;
+        if (!has) return count ? { ...d, looked: [...d.looked, { ...item, ...ai, ctx: item.ctx.slice(0, 220), test, kind, n: 1 }] } : d;
         return { ...d, looked: d.looked.map(x => (x.w === item.w && x.test === test ? { ...x, ...ai, n: x.n + (count ? 1 : 0) } : x)) };
       });
     },

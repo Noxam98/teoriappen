@@ -36,6 +36,31 @@
 .reader-theory .t-h { margin-top: 0; padding-top: 0; border-top: 0; }
 .reader-theory > .btn { justify-self: start; }
 
+/* the home screen's way to the history */
+.history-link { width: 100%; display: grid; grid-template-columns: 38px minmax(0, 1fr) 20px; gap: 12px; align-items: center; margin-top: 30px; padding: 14px 16px; border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--surface); text-align: left; cursor: pointer; }
+.history-link-text { display: grid; gap: 2px; min-width: 0; }
+.history-link-text b { font-size: 1.02rem; line-height: 1.2; }
+.history-link-text small { color: var(--ink-2); font-size: .84rem; line-height: 1.3; }
+.history-link > svg { width: 20px; height: 20px; color: var(--ink-3); }
+.history-link:active { transform: scale(.99); }
+@media (hover: hover) { .history-link:hover { border-color: var(--ink-3); } }
+
+/* the history screen: exams and practice rounds in two tabs */
+.history-tabs { margin-bottom: 14px; }
+.history-tabs button { display: grid; justify-items: center; align-content: center; gap: 0; min-height: 54px; line-height: 1.15; }
+.history-tabs button > span { font-family: var(--display); font-size: 1rem; }
+.history-tabs small { font-weight: 500; font-size: .76rem; color: var(--ink-2); }
+.history-tabs button[aria-selected="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(0, 0, 0, .14); }
+/* a practice round's score where an exam has its stamp */
+.hscore { min-width: 58px; padding: 2px 8px; border-radius: 8px; background: var(--surface-3); text-align: center; font-size: .9rem; color: var(--ink-2); white-space: nowrap; }
+.hscore b { font-family: var(--display); font-size: 1.05rem; color: var(--ink); }
+.hscore.ok { background: var(--ok-soft); }
+.hscore.ok b { color: var(--ok); }
+.hscore.mid { background: var(--note); }
+.hscore.bad { background: var(--bad-soft); }
+.hscore.bad b { color: var(--bad); }
+.hmain [lang="nb"] { font-weight: 600; }
+
 /* a test of the history: the row opens it — its questions with the answers given, the words translated in it,
    do it again, train its mistakes */
 .hentry { border-top: 1px solid var(--line); }

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { CategoryIcon } from '../components/CategoryIcon';
-import { HistoryList, useHistory } from '../components/History';
+import { useHistory } from '../components/History';
 import { Words } from '../features/brush/Words';
 import { ProgressRing } from '../components/Gauges';
 import { Icon } from '../components/Icons';
@@ -23,6 +23,7 @@ export function HomeScreen() {
   const seen = Object.keys(data.stats).filter(id => QUESTION_BY_ID[id]).length;
   const ready = readiness(data.stats);
   const history = useHistory();
+  const exams = history.filter(e => e.kind === 'exam').length;
   const chaptersRead = THEORY.filter(t => data.read[t.cat]).length;
   const options = revealOptions(t);
   const reveal = options.find(o => o.value === data.prefs.reveal) ?? options[0];
@@ -119,11 +120,14 @@ export function HomeScreen() {
         })}
       </div>
 
-      <div className="section-title">
-        <h2>{t.history.title}</h2>
-        {history.length > 5 && <button className="text-link" onClick={() => go({ name: 'history' })}>{t.history.all}<Icon name="right" /></button>}
-      </div>
-      {history.length ? <HistoryList entries={history.slice(0, 5)} /> : <div className="empty">{t.history.empty}</div>}
+      <button className="history-link" onClick={() => go({ name: 'history' })}>
+        <span className="tile-ic"><Icon name="clock" /></span>
+        <span className="history-link-text">
+          <b>{t.history.title}</b>
+          <small className="tnum">{history.length ? t.history.counts(exams, history.length - exams) : t.history.empty}</small>
+        </span>
+        <Icon name="right" />
+      </button>
     </div>
   );
 }

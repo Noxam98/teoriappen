@@ -225,11 +225,16 @@ export interface PracticeRound {
   instant: boolean;
 }
 
+/** An exam or a practice round: the two tabs of the history. */
+export type TestKind = 'exam' | 'practice';
+
 /** A question someone ticked "I want to read about this" on, in the test where it came up. */
 export interface ReadLater {
   id: string;
   /** The test: ExamResult.test, ExamSession.tid, PracticeRound.start. */
   test: number;
+  /** What kind of test: puts a test left unfinished in its tab of the history (older marks have none). */
+  kind?: TestKind;
   /** When it was opened from the list. */
   read?: number;
 }
@@ -244,6 +249,7 @@ export interface LookedUp {
   ctx: string;
   /** The test: ExamSession.tid, PracticeRound.start. */
   test: number;
+  kind?: TestKind;
   /** times it was translated in that test */
   n: number;
   /** the translation in context from Claude, if it was asked for */
@@ -278,7 +284,8 @@ export type Screen =
   | { name: 'practice'; mode: PracticeMode; ids?: string[]; q?: string }
   | { name: 'vocab' }
   | { name: 'flashcards' }
-  | { name: 'history' }
+  /** `tab`: exams or practice rounds; none: the tab of the newest test */
+  | { name: 'history'; tab?: TestKind }
   | { name: 'theory' }
   /** `section`: the heading in view, so a reload or a shared link opens that part of the chapter */
   | { name: 'chapter'; cat: CategoryId; section?: string };
