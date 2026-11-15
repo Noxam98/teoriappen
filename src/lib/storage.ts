@@ -7,6 +7,7 @@ export const EMPTY: AppData = {
   stats: {},
   exams: [],
   later: [],
+  looked: [],
   vocab: [],
   cur: null,
   last: null,
@@ -28,7 +29,10 @@ export function loadData(): AppData {
     if (old?.theoryLang === 'ru') prefs.theoryLang = 'tr';
     // a language this version does not have (yet): ask again
     if (!LANGS.includes(prefs.lang)) Object.assign(prefs, { lang: BASE_LANG, langChosen: false });
-    return { ...EMPTY, ...saved, prefs };
+    // the history kept no questions before; the newest test still has them in `last`
+    const last = saved.last;
+    const exams = (saved.exams ?? []).map(r => (!r.ids && last && r.date === last.res.date ? { ...r, ids: last.ids, ans: last.ans } : r));
+    return { ...EMPTY, ...saved, exams, prefs };
   } catch {
     return EMPTY;
   }

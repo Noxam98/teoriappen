@@ -21,8 +21,9 @@ export function pickExamQuestions(stats: Record<string, QuestionStat>): string[]
   return shuffle(chosen.slice(0, EXAM_QUESTIONS));
 }
 
-export function createExam(stats: Record<string, QuestionStat>, reveal: RevealMode): ExamSession {
-  const ids = pickExamQuestions(stats);
+/** A new exam; `again`: the questions of an exam from the history, in a new order. */
+export function createExam(stats: Record<string, QuestionStat>, reveal: RevealMode, again?: string[]): ExamSession {
+  const ids = again?.length ? shuffle(again) : pickExamQuestions(stats);
   const now = Date.now();
   return {
     ids,
@@ -93,6 +94,7 @@ export function gradeExam(session: ExamSession, timeout: boolean, practice?: Fin
     res: {
       kind: practice ? 'practice' : 'exam', mode: practice?.mode, test: testId(session),
       date: Date.now(), n, right, pass: n - right <= MAX_ERRORS, ms: Math.min(Date.now(), session.end) - session.start, timeout,
+      ids: session.ids, ans: session.ans,
     },
   };
 }

@@ -7,6 +7,7 @@ import type { CategoryId, PracticeMode, Screen } from '../types';
 //   #/theory  #/theory/<topic>[/<section>]
 //   #/practice/<topic|all|wrong>[/<question id>]
 //   #/questions/<id,id,…>[/<question id>]   a hand-picked list, e.g. the mistakes of one exam
+//   #/repeat/<topic|all|wrong>/<id,id,…>[/<question id>]   a practice round of the history done again
 //   #/exam  #/result  #/vocab  #/vocab/cards  #/history
 
 export function toHash(s: Screen): string {
@@ -21,7 +22,8 @@ export function toHash(s: Screen): string {
     case 'chapter': return `#/theory/${s.cat}${s.section ? `/${s.section}` : ''}`;
     case 'practice': {
       const at = s.q ? `/${s.q}` : '';
-      return s.mode === 'list' ? `#/questions/${(s.ids ?? []).join(',')}${at}` : `#/practice/${s.mode}${at}`;
+      if (s.mode === 'list') return `#/questions/${(s.ids ?? []).join(',')}${at}`;
+      return s.ids ? `#/repeat/${s.mode}/${s.ids.join(',')}${at}` : `#/practice/${s.mode}${at}`;
     }
   }
 }
@@ -32,7 +34,7 @@ const isTopic = (x: string | undefined): x is CategoryId => !!x && x in CATEGORY
 export function fromHash(hash: string): Screen {
   let path: string;
   try { path = decodeURIComponent(hash); } catch { path = hash; }
-  const [page, a, b] = path.replace(/^#\/?/, '').split('/');
+  const [page, a, b, c] = path.replace(/^#\/?/, '').split('/');
   switch (page) {
     case 'exam': return { name: 'exam' };
     case 'result': return { name: 'result' };
@@ -42,6 +44,12 @@ export function fromHash(hash: string): Screen {
     case 'practice': {
       if (!(a === 'all' || a === 'wrong' || isTopic(a))) break;
       return { name: 'practice', mode: a as PracticeMode, q: b && QUESTION_BY_ID[b] ? b : undefined };
+    }
+    case 'repeat': {
+      if (!(a === 'all' || a === 'wrong' || isTopic(a))) break;
+      const ids = (b ?? '').split(',').filter(id => QUESTION_BY_ID[id]);
+      if (!ids.length) break;
+      return { name: 'practice', mode: a as PracticeMode, ids, q: c && ids.includes(c) ? c : undefined };
     }
     case 'questions': {
       const ids = (a ?? '').split(',').filter(id => QUESTION_BY_ID[id]);

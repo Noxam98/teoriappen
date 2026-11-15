@@ -3,7 +3,7 @@ import { createExam, fixOptionOrders, gradeExam, recordAnswer, setClock, testId 
 import { fromHash, rememberScroll, setAddress, toHash } from '../lib/routes';
 import { playSound } from '../lib/sound';
 import { loadData, saveData } from '../lib/storage';
-import type { AppData, ExamSession, FinishedExam, Screen, VocabItem } from '../types';
+import type { AppData, ExamSession, FinishedExam, LookedUp, Screen, VocabItem } from '../types';
 
 interface AppApi {
   data: AppData;
@@ -20,7 +20,8 @@ interface AppApi {
   /** A short message at the bottom of the screen, e.g. "link copied". */
   notify: (text: string) => void;
   toast: string;
-  startExam: () => void;
+  /** A new exam; `again`: the questions of an exam from the history. */
+  startExam: (again?: string[]) => void;
   finishExam: (timeout: boolean) => void;
   /** Ends a practice round and shows its result screen. */
   finishPractice: (session: ExamSession, practice: NonNullable<FinishedExam['practice']>) => void;
@@ -30,6 +31,11 @@ interface AppApi {
   toggleLater: (id: string, test: number) => void;
   /** The question was opened from the reading list. */
   markRead: (id: string, test: number) => void;
+  /**
+   * A word was translated with the «Перевод» button: during an exam or a practice round it is kept with that test.
+   * `count: false` only adds to the word already kept (the translation in context, when it comes).
+   */
+  lookedUp: (item: Pick<LookedUp, 'w' | 'show' | 'ctx' | 'ai'>, count?: boolean) => void;
 }
 
 const AppContext = createContext<AppApi | null>(null);
@@ -135,9 +141,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
     mark,
     notify: setToast,
     toast,
-    startExam() {
+    startExam(again) {
       playSound('start');
-      setData(d => ({ ...d, cur: createExam(d.stats, d.prefs.reveal) }));
+      setData(d => ({ ...d, cur: createExam(d.stats, d.prefs.reveal, again) }));
       go({ name: 'exam' });
     },
     finishExam(timeout) {
@@ -172,6 +178,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
       setData(d => {
         const has = d.later.some(x => x.id === id && x.test === test);
         return { ...d, later: has ? d.later.filter(x => !(x.id === id && x.test === test)) : [...d.later, { id, test }] };
+      });
+    },
+    lookedUp(item, count = true) {
+      setData(d => {
+        const s = navRef.current.screen;
+        const test = s.name === 'exam' && d.cur ? testId(d.cur) : s.name === 'practice' && d.practice ? d.practice.start : undefined;
+        if (test === undefined) return d;
+        const ai = item.ai ? { ai: item.ai } : {};
+        const has = d.looked.some(x => x.w === item.w && x.test === test);
+        if (!has) return count ? { ...d, looked: [...d.looked, { ...item, ...ai, ctx: item.ctx.slice(0, 220), test, n: 1 }] } : d;
+        return { ...d, looked: d.looked.map(x => (x.w === item.w && x.test === test ? { ...x, ...ai, n: x.n + (count ? 1 : 0) } : x)) };
       });
     },
     markRead(id, test) {

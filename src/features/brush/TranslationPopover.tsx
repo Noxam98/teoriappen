@@ -18,15 +18,33 @@ type Ai =
   | { state: 'error'; message: string };
 
 let claudeBlocked = false;
+let noted = 0;
+
+/** The dictionary's translation of the marked words, as saved to the vocabulary (`tr` is empty when it has none). */
+export function translationOf(words: string[], t: Messages['popover'], lang: Lang): { lemma: string; tr: string; gram: string } {
+  if (words.length === 1) {
+    const r = lookup(words[0], lang);
+    if (r?.kind === 'entry') {
+      const [lemma, tr, gram = ''] = r.entry;
+      return { lemma, tr, gram };
+    }
+    if (r?.kind === 'compound') return { lemma: '', tr: r.parts.map(([, e]) => firstVariant(e[1])).join(' + '), gram: t.compound };
+    return { lemma: '', tr: '', gram: '' };
+  }
+  const found = phrasesIn(words, lang);
+  const tr = found.length ? found.map(([, x]) => x).join('; ') : words.map(w => firstVariant(gloss(w, lang))).join(' ');
+  return { lemma: '', tr, gram: t.phrase };
+}
 
 /** Dictionary result for what the user painted: what to show and what to save to the vocabulary. */
 function translate(req: TranslationRequest, t: Messages['popover'], lang: Lang): { body: ReactNode; lemma: string; tr: string; gram: string } {
+  const fields = translationOf(req.words, t, lang);
   if (req.words.length === 1) {
     const r = lookup(req.words[0], lang);
     if (r?.kind === 'entry') {
       const [lemma, tr, gram = ''] = r.entry;
       return {
-        lemma, tr, gram,
+        ...fields,
         body: (
           <>
             <div className="lemma"><b>{lemma}</b>{gram && ` · ${gram}`}</div>
@@ -37,25 +55,23 @@ function translate(req: TranslationRequest, t: Messages['popover'], lang: Lang):
       };
     }
     if (r?.kind === 'compound') {
-      const tr = r.parts.map(([, e]) => firstVariant(e[1])).join(' + ');
       return {
-        lemma: '', tr, gram: t.compound,
+        ...fields,
         body: (
           <>
             <div className="lemma">{t.compound}</div>
-            <div className="tr">{tr}</div>
+            <div className="tr">{fields.tr}</div>
             <div className="parts">{r.parts.map(([w, e]) => <div key={w}><b>{w}</b><span>{e[1]}</span></div>)}</div>
           </>
         ),
       };
     }
-    return { lemma: '', tr: '', gram: '', body: <div className="none">{t.notFound}</div> };
+    return { ...fields, body: <div className="none">{t.notFound}</div> };
   }
   const found = phrasesIn(req.words, lang);
   const whole = found.length === 1 && found[0][0].split(' ').length === req.words.length;
-  const tr = found.length ? found.map(([, x]) => x).join('; ') : req.words.map(w => firstVariant(gloss(w, lang))).join(' ');
   return {
-    lemma: '', tr, gram: t.phrase,
+    ...fields,
     body: (
       <>
         {found.map(([p, x]) => (
@@ -78,7 +94,7 @@ export function TranslationPopover() {
 
 function Popover({ req }: { req: TranslationRequest }) {
   const { close } = useBrush();
-  const { data, toggleVocab } = useApp();
+  const { data, toggleVocab, lookedUp } = useApp();
   const tt = useT();
   const p = tt.popover;
   const voice = useNorwegianVoice();
@@ -97,6 +113,8 @@ function Popover({ req }: { req: TranslationRequest }) {
   useEffect(() => {
     playSound('magic');
     getSample().then(s => setCanAsk(!!s && !claudeBlocked));
+    // kept with the test on screen, once per translation (React StrictMode runs this twice in development)
+    if (noted !== req.id) { noted = req.id; lookedUp({ w: key, show: req.text, ctx: req.context }); }
     return () => abort.current?.abort();
   }, []);
 
@@ -117,6 +135,7 @@ function Popover({ req }: { req: TranslationRequest }) {
     try {
       const result = await translateInContext(req.text, req.context, data.prefs.lang, abort.current.signal);
       setAi({ state: 'done', result });
+      if (result.translation) lookedUp({ w: key, show: req.text, ctx: req.context, ai: result.translation }, false);
     } catch (e) {
       const kind = classifyError(e);
       if (kind === 'cancelled') return;

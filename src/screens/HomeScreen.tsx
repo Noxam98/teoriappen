@@ -52,10 +52,10 @@ export function HomeScreen() {
               <span><b>{h.continue}</b><small className="tnum">{h.continueSub(Object.keys(cur.ans).length, cur.ids.length, fmtTime(timeLeft(cur, now)))}</small></span>
               <Icon name="right" />
             </button>
-            <button className="hero-link" onClick={startExam}>{h.newExam}</button>
+            <button className="hero-link" onClick={() => startExam()}>{h.newExam}</button>
           </>
         ) : (
-          <button className="cta" onClick={startExam}>
+          <button className="cta" onClick={() => startExam()}>
             <span><b>{h.start}</b><small>{h.startSub}</small></span>
             <Icon name="right" />
           </button>

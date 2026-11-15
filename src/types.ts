@@ -172,6 +172,13 @@ export interface ExamResult {
   pass: boolean;
   ms: number;
   timeout: boolean;
+  /**
+   * The questions in the order they came (an exam: all of them; practice: the ones answered) and the option chosen
+   * in each (index into Question.a, 0 = right; none = no answer): the history shows them and can run them again.
+   * Results saved before the history kept them have none.
+   */
+  ids?: string[];
+  ans?: Record<string, number>;
 }
 
 export type PracticeMode = CategoryId | 'all' | 'wrong' | 'list';
@@ -227,12 +234,30 @@ export interface ReadLater {
   read?: number;
 }
 
+/** A word or phrase translated with the «Перевод» button during a test: the result shows them. */
+export interface LookedUp {
+  /** lowercased key, as in the vocabulary */
+  w: string;
+  /** as written */
+  show: string;
+  /** the sentence it came from */
+  ctx: string;
+  /** The test: ExamSession.tid, PracticeRound.start. */
+  test: number;
+  /** times it was translated in that test */
+  n: number;
+  /** the translation in context from Claude, if it was asked for */
+  ai?: string;
+}
+
 export interface AppData {
   stats: Record<string, QuestionStat>;
   /** The history: finished exams and practice rounds, oldest first. */
   exams: ExamResult[];
   /** Questions to read about after the test, of every test; kept with the history. */
   later: ReadLater[];
+  /** Words translated during the tests; kept with the history. */
+  looked: LookedUp[];
   vocab: VocabItem[];
   cur: ExamSession | null;
   last: FinishedExam | null;
@@ -246,7 +271,10 @@ export type Screen =
   | { name: 'home' }
   | { name: 'exam' }
   | { name: 'result' }
-  /** `q`: the question on screen (a reload or a shared link opens it) */
+  /**
+   * `q`: the question on screen (a reload or a shared link opens it). `ids`: exactly these questions instead of the
+   * topic's — the list of mode 'list', or a test of the history done again (its title stays the topic's).
+   */
   | { name: 'practice'; mode: PracticeMode; ids?: string[]; q?: string }
   | { name: 'vocab' }
   | { name: 'flashcards' }

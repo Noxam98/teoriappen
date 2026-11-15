@@ -21,7 +21,7 @@ type PracticeScreenSpec = Extract<Screen, { name: 'practice' }>;
 
 function buildList(screen: PracticeScreenSpec, stats: AppData['stats']): string[] {
   if (screen.mode === 'wrong') return shuffle(wrongQuestionIds(stats));
-  if (screen.mode === 'list') return shuffle(screen.ids ?? []);
+  if (screen.mode === 'list' || screen.ids) return shuffle(screen.ids ?? []);
   const pool = screen.mode === 'all' ? QUESTIONS : QUESTIONS.filter(q => q.cat === screen.mode);
   // questions never seen before come first
   return shuffle(pool.map(q => q.id)).sort((a, b) => Number(!!stats[a]) - Number(!!stats[b]));
@@ -35,7 +35,7 @@ const sameSet = (a: string[], b: string[]) => a.length === b.length && a.every(x
  */
 function openRound(screen: PracticeScreenSpec, data: AppData, restored: boolean): PracticeRound {
   const saved = data.practice;
-  if (restored && saved && saved.mode === screen.mode && (screen.mode !== 'list' || sameSet(saved.ids, screen.ids ?? []))
+  if (restored && saved && saved.mode === screen.mode && (screen.ids ? sameSet(saved.ids, screen.ids) : screen.mode !== 'list')
     && (!screen.q || saved.ids.includes(screen.q))) {
     return { ...fixOptionOrders({ ...saved, perm: { ...orders(saved.ids), ...saved.perm } }), i: screen.q ? saved.ids.indexOf(screen.q) : saved.i };
   }
@@ -83,8 +83,8 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
     update(d => ({ ...d, practice: { mode: screen.mode, ids, i, ans: answers, perm: orders, start, instant } }));
   }, [id, i, answers, orders, ids, instant, start, screen.mode, update]);
   useEffect(() => {
-    if (id) mark({ name: 'practice', mode: screen.mode, ids: screen.mode === 'list' ? ids : undefined, q: id });
-  }, [id, ids, screen.mode, mark]);
+    if (id) mark({ name: 'practice', mode: screen.mode, ids: screen.ids ? ids : undefined, q: id });
+  }, [id, ids, screen.mode, screen.ids, mark]);
 
   const q = id ? QUESTION_BY_ID[id] : null;
   const order = id ? orders[id] ?? [] : [];
@@ -123,8 +123,8 @@ export function PracticeScreen({ screen }: { screen: PracticeScreenSpec }) {
     // in "answers at the end" mode the current choice is counted only when leaving the question
     if (recordCurrent && !instant && q && chosen !== undefined) answer(q.id, chosen === 0);
     const answered = ids.filter(x => answers[x] !== undefined);
-    // nothing answered and nothing to read about: no result to show
-    if (!answered.length && !data.later.some(x => x.test === start)) { update(d => ({ ...d, practice: null })); go({ name: 'home' }); return; }
+    // nothing answered, nothing to read about and no word translated: no result to show
+    if (!answered.length && !data.later.some(x => x.test === start) && !data.looked.some(x => x.test === start)) { update(d => ({ ...d, practice: null })); go({ name: 'home' }); return; }
     finishPractice(
       { ids: answered, perm: orders, ans: answers, flag: {}, i: 0, start, end: Date.now() },
       { mode: screen.mode, title: [no, ru] },

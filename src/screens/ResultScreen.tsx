@@ -5,6 +5,7 @@ import { Zoomable } from '../components/figures/viewer';
 import { ScoreGauge } from '../components/Gauges';
 import { Icon } from '../components/Icons';
 import { laterOf, ReadingList, ReadingSheet } from '../components/later/Reading';
+import { LookedList, lookedOf } from '../components/Looked';
 import { Explanation } from '../components/question/Explanation';
 import { QuestionShare } from '../components/question/QuestionCard';
 import { CATEGORY, QUESTION_BY_ID, THEORY_BY_CAT } from '../data';
@@ -49,6 +50,7 @@ export function ResultScreen() {
   const title = L.practice ? practiceTitle(L.practice.mode, t, lang) : null;
   const later = laterOf(data.later, res.test);
   const readCount = later.filter(x => x.read).length;
+  const words = lookedOf(data.looked, res.test);
 
   return (
     <div className="result">
@@ -87,6 +89,17 @@ export function ResultScreen() {
       )}
       {reading && <ReadingSheet items={later} start={reading} onClose={() => setReading(null)} />}
 
+      {words.length > 0 && (
+        <section className="panel looked-panel" aria-labelledby="looked-title">
+          <div className="later-head">
+            <Icon name="translate" />
+            <h2 id="looked-title">{t.looked.title}</h2>
+            <span className="chip tnum">{words.length}</span>
+          </div>
+          <LookedList items={words} />
+        </section>
+      )}
+
       {topics.length > 1 && (
         <section className="panel breakdown">
           <div className="eyebrow">{r.byTopic}</div>
@@ -105,7 +118,7 @@ export function ResultScreen() {
 
       <div className="result-actions">
         {isExam
-          ? <button className="btn primary" onClick={startExam}><Icon name="redo" />{r.newExam}</button>
+          ? <button className="btn primary" onClick={() => startExam()}><Icon name="redo" />{r.newExam}</button>
           : <button className="btn primary" onClick={() => go({ name: 'practice', mode: L.practice?.mode ?? 'all' })}><Icon name="redo" />{r.again}</button>}
         {errors > 0 && <button className="btn" onClick={() => go({ name: 'practice', mode: 'list', ids: wrongIds })}>{r.trainMistakes}</button>}
         {practiced && THEORY_BY_CAT[practiced] && <button className="btn" onClick={() => go({ name: 'chapter', cat: practiced })}><Icon name="theory" />{r.theoryTitle}</button>}

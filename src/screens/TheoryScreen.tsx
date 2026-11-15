@@ -75,7 +75,7 @@ export function TheoryScreen() {
         <button className="btn square" onClick={() => go({ name: 'home' })} aria-label={t.toHome}><Icon name="left" /></button>
         {nextUp
           ? <button className="btn primary grow" onClick={() => go({ name: 'chapter', cat: nextUp.cat })}>{read ? t.theory.continue : t.theory.startFirst}<Icon name="right" /></button>
-          : <button className="btn primary grow" onClick={startExam}>{t.theory.allRead}<Icon name="right" /></button>}
+          : <button className="btn primary grow" onClick={() => startExam()}>{t.theory.allRead}<Icon name="right" /></button>}
       </ActionBar>
     </div>
   );
