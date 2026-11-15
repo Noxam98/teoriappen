@@ -149,9 +149,25 @@ export const ru = {
     lost: 'Вопросы этой попытки не сохранились: история запоминает их только с этой версии.',
     noAnswers: 'В этой попытке нет ответов.',
     unfinishedNote: 'Тест не закончен, ответы не сохранились.',
-    question: (n: number) => `Вопрос ${n}`,
-    yourAnswer: 'Ваш ответ: ',
-    rightAnswer: 'Правильный ответ: ',
+  },
+
+  /** The review of a test: a deck of cards, one question each. */
+  review: {
+    yourAnswer: 'Ваш ответ',
+    noAnswer: 'Без ответа',
+    yours: 'ваш ответ',
+    correct: 'правильный ответ',
+    more: 'Все варианты и объяснение',
+    less: 'Свернуть',
+    words: 'Вы переводили',
+    wordsN: (k: number) => `Слова · ${k}`,
+    otherWords: 'Другие переведённые слова',
+    strip: 'Все вопросы попытки',
+    deck: 'Вопросы попытки, листаются в стороны',
+    card: (n: number, total: number) => `Вопрос ${n} из ${total}`,
+    goTo: (n: number, state: string) => `Вопрос ${n}: ${state}`,
+    prev: 'Предыдущий вопрос',
+    next: 'Следующий вопрос',
   },
 
   /** Words translated with the «Перевод» button during a test, listed in its result. */
@@ -226,12 +242,9 @@ export const ru = {
     show: 'Что показать',
     mistakesN: (k: number) => `Ошибки · ${k}`,
     allN: (k: number) => `Все · ${k}`,
-    noMistakes: 'Ошибок нет. Отличный результат!',
     right: 'верно',
     noAnswer: 'без ответа',
     mistake: 'ошибка',
-    yourAnswer: 'Ваш ответ: ',
-    rightAnswer: 'Правильный ответ: ',
   },
 
   theory: {

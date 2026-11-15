@@ -95,6 +95,7 @@ export function gradeExam(session: ExamSession, timeout: boolean, practice?: Fin
       kind: practice ? 'practice' : 'exam', mode: practice?.mode, test: testId(session),
       date: Date.now(), n, right, pass: n - right <= MAX_ERRORS, ms: Math.min(Date.now(), session.end) - session.start, timeout,
       ids: session.ids, ans: session.ans,
+      perm: Object.fromEntries(session.ids.filter(id => session.perm[id]).map(id => [id, session.perm[id]])),
     },
   };
 }

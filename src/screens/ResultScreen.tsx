@@ -1,21 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { playSound } from '../lib/sound';
-import { Figure } from '../components/figures/Figure';
-import { Zoomable } from '../components/figures/viewer';
 import { ScoreGauge } from '../components/Gauges';
 import { Icon } from '../components/Icons';
 import { laterOf, ReadingList, ReadingSheet } from '../components/later/Reading';
-import { LookedList, lookedOf } from '../components/Looked';
-import { Explanation } from '../components/question/Explanation';
-import { QuestionShare } from '../components/question/QuestionCard';
-import { CATEGORY, QUESTION_BY_ID, THEORY_BY_CAT } from '../data';
+import { LookedList, lookedOf, mergeWords } from '../components/Looked';
+import { AnswerReview } from '../components/review/AnswerReview';
+import { CATEGORY, THEORY_BY_CAT } from '../data';
 import { Words } from '../features/brush/Words';
 import { MAX_ERRORS } from '../lib/exam';
 import { topicName, useT } from '../i18n';
 import { fmtTime } from '../lib/text';
 import { practiceTitle } from './PracticeScreen';
 import { useApp } from '../state/AppState';
-import type { CategoryId, Question } from '../types';
+import type { CategoryId } from '../types';
 
 let soundedFor = 0;
 
@@ -24,7 +21,6 @@ export function ResultScreen() {
   const t = useT();
   const r = t.result;
   const lang = data.prefs.lang;
-  const [filter, setFilter] = useState<'bad' | 'all'>('bad');
   const [reading, setReading] = useState<string | null>(null);
   const L = data.last;
   // the stamp sound plays together with the stamp animation, once per result
@@ -38,19 +34,19 @@ export function ResultScreen() {
   }, [L]);
   // the address #/result from another device or after a reset: there is nothing to show
   useEffect(() => { if (!L) go({ name: 'home' }, { replace: true }); }, [L, go]);
+  const words = useMemo(() => lookedOf(data.looked, L?.res.test), [data.looked, L?.res.test]);
   if (!L) return null;
   const { res } = L;
   const isExam = L.kind !== 'practice';
   const errors = res.n - res.right;
   const wrongIds = L.ids.filter(id => L.ans[id] !== 0);
-  const shown = filter === 'all' ? L.ids : wrongIds;
   const topics = (Object.entries(L.byCat) as [CategoryId, [number, number]][]).sort((a, b) => a[1][0] / a[1][1] - b[1][0] / b[1][1]);
   const practiced = L.practice && L.practice.mode in CATEGORY ? L.practice.mode as CategoryId : null;
   // the title in the reader's current language, not the one saved with the result
   const title = L.practice ? practiceTitle(L.practice.mode, t, lang) : null;
   const later = laterOf(data.later, res.test);
   const readCount = later.filter(x => x.read).length;
-  const words = lookedOf(data.looked, res.test);
+  const wordList = mergeWords(words);
 
   return (
     <div className="result">
@@ -94,9 +90,9 @@ export function ResultScreen() {
           <div className="later-head">
             <Icon name="translate" />
             <h2 id="looked-title">{t.looked.title}</h2>
-            <span className="chip tnum">{words.length}</span>
+            <span className="chip tnum">{wordList.length}</span>
           </div>
-          <LookedList items={words} />
+          <LookedList items={wordList} />
         </section>
       )}
 
@@ -125,41 +121,7 @@ export function ResultScreen() {
         <button className="btn ghost" onClick={() => go({ name: 'home' })}><Icon name="home" />{t.toHome}</button>
       </div>
 
-      {res.n > 0 && <>
-        <div className="section-title tight">
-          <h2>{r.review}</h2>
-          <div className="segmented small" role="radiogroup" aria-label={r.show}>
-            <button role="radio" aria-checked={filter === 'bad'} onClick={() => setFilter('bad')}>{r.mistakesN(errors)}</button>
-            <button role="radio" aria-checked={filter === 'all'} onClick={() => setFilter('all')}>{r.allN(res.n)}</button>
-          </div>
-        </div>
-        <div className="review">
-          {shown.length
-            ? shown.map(id => <ReviewItem key={id} q={QUESTION_BY_ID[id]} chosen={L.ans[id]} number={L.ids.indexOf(id) + 1} />)
-            : <div className="empty">{r.noMistakes}</div>}
-        </div>
-      </>}
+      {res.n > 0 && <AnswerReview ids={L.ids} ans={L.ans} perm={L.perm} words={words} initial="bad" />}
     </div>
-  );
-}
-
-function ReviewItem({ q, chosen, number }: { q: Question; chosen: number | undefined; number: number }) {
-  const ok = chosen === 0;
-  const r = useT().result;
-  return (
-    <article className={ok ? 'ritem ok' : 'ritem bad'}>
-      <div className="qmeta">
-        <span className="qn">Spørsmål {number}</span>
-        <span className={ok ? 'verdict-chip ok' : 'verdict-chip bad'}>{ok ? r.right : chosen === undefined ? r.noAnswer : r.mistake}</span>
-        <QuestionShare q={q} />
-      </div>
-      <div className={q.img ? 'ritem-body has-fig' : 'ritem-body'}>
-        {q.img && <Zoomable slide={{ type: 'figure', spec: q.img, numbered: q.byNumber }}><Figure spec={q.img} numbered={q.byNumber} /></Zoomable>}
-        <p className="qtext" data-block lang="nb"><Words text={q.q} /></p>
-      </div>
-      {chosen !== undefined && !ok && <div className="ans bad"><Icon name="cross" /><span className="sr-only">{r.yourAnswer}</span><span data-block lang="nb"><Words text={q.a[chosen]} /></span></div>}
-      <div className="ans ok"><Icon name="check" /><span className="sr-only">{r.rightAnswer}</span><span data-block lang="nb"><Words text={q.a[0]} /></span></div>
-      <Explanation q={q} />
-    </article>
   );
 }

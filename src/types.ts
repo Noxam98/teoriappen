@@ -179,6 +179,8 @@ export interface ExamResult {
    */
   ids?: string[];
   ans?: Record<string, number>;
+  /** The order the options were shown in, per question: the review lists them the same way. */
+  perm?: Record<string, number[]>;
 }
 
 export type PracticeMode = CategoryId | 'all' | 'wrong' | 'list';
@@ -250,7 +252,9 @@ export interface LookedUp {
   /** The test: ExamSession.tid, PracticeRound.start. */
   test: number;
   kind?: TestKind;
-  /** times it was translated in that test */
+  /** The question on screen then: the review shows the word in its card (older words have none). */
+  q?: string;
+  /** times it was translated there */
   n: number;
   /** the translation in context from Claude, if it was asked for */
   ai?: string;

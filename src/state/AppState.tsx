@@ -187,10 +187,12 @@ export function AppProvider({ children }: { children: ReactNode }) {
         const test = s.name === 'exam' && d.cur ? testId(d.cur) : s.name === 'practice' && d.practice ? d.practice.start : undefined;
         if (test === undefined) return d;
         const kind = s.name === 'exam' ? 'exam' as const : 'practice' as const;
+        // the question on screen: the word belongs to its card in the review
+        const q = s.name === 'exam' ? d.cur?.ids[d.cur.i] : d.practice?.ids[d.practice.i];
         const ai = item.ai ? { ai: item.ai } : {};
-        const has = d.looked.some(x => x.w === item.w && x.test === test);
-        if (!has) return count ? { ...d, looked: [...d.looked, { ...item, ...ai, ctx: item.ctx.slice(0, 220), test, kind, n: 1 }] } : d;
-        return { ...d, looked: d.looked.map(x => (x.w === item.w && x.test === test ? { ...x, ...ai, n: x.n + (count ? 1 : 0) } : x)) };
+        const same = (x: LookedUp) => x.w === item.w && x.test === test && x.q === q;
+        if (!d.looked.some(same)) return count ? { ...d, looked: [...d.looked, { ...item, ...ai, ctx: item.ctx.slice(0, 220), test, kind, q, n: 1 }] } : d;
+        return { ...d, looked: d.looked.map(x => (same(x) ? { ...x, ...ai, n: x.n + (count ? 1 : 0) } : x)) };
       });
     },
     markRead(id, test) {

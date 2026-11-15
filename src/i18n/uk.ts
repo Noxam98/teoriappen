@@ -145,9 +145,24 @@ export const uk: Messages = {
     lost: 'Питання цієї спроби не збереглися: історія запам’ятовує їх лише з цієї версії.',
     noAnswers: 'У цій спробі немає відповідей.',
     unfinishedNote: 'Тест не завершено, відповіді не збереглися.',
-    question: (n: number) => `Питання ${n}`,
-    yourAnswer: 'Ваша відповідь: ',
-    rightAnswer: 'Правильна відповідь: ',
+  },
+
+  review: {
+    yourAnswer: 'Ваша відповідь',
+    noAnswer: 'Без відповіді',
+    yours: 'ваша відповідь',
+    correct: 'правильна відповідь',
+    more: 'Усі варіанти й пояснення',
+    less: 'Згорнути',
+    words: 'Ви перекладали',
+    wordsN: (k: number) => `Слова · ${k}`,
+    otherWords: 'Інші перекладені слова',
+    strip: 'Усі питання спроби',
+    deck: 'Питання спроби, гортаються в сторони',
+    card: (n: number, total: number) => `Питання ${n} з ${total}`,
+    goTo: (n: number, state: string) => `Питання ${n}: ${state}`,
+    prev: 'Попереднє питання',
+    next: 'Наступне питання',
   },
 
   looked: {
@@ -221,12 +236,9 @@ export const uk: Messages = {
     show: 'Що показати',
     mistakesN: (k: number) => `Помилки · ${k}`,
     allN: (k: number) => `Усі · ${k}`,
-    noMistakes: 'Помилок немає. Чудовий результат!',
     right: 'правильно',
     noAnswer: 'без відповіді',
     mistake: 'помилка',
-    yourAnswer: 'Ваша відповідь: ',
-    rightAnswer: 'Правильна відповідь: ',
   },
 
   theory: {

@@ -32,25 +32,11 @@
 .result-actions { display: grid; gap: 8px; }
 @media (min-width: 560px) { .result-actions { grid-auto-flow: column; grid-auto-columns: 1fr; } }
 
-.review { display: grid; gap: 12px; margin-top: 12px; }
-.ritem { padding: 14px; display: grid; gap: 10px; border-radius: var(--r-lg); background: var(--surface); border: 1px solid var(--line); }
-.ritem .qmeta { margin: 0; }
-.ritem .qmeta .verdict-chip { margin-left: auto; }
-.verdict-chip { font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 3px 8px; border-radius: 6px; }
+.verdict-chip { font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 3px 8px; border-radius: 6px; white-space: nowrap; }
 .verdict-chip.ok { background: var(--ok-soft); color: var(--ok); }
 .verdict-chip.bad { background: var(--bad-soft); color: var(--bad); }
-.ritem-body { display: grid; gap: 10px; }
-.ritem-body.has-fig { grid-template-columns: 96px minmax(0, 1fr); align-items: start; }
-.ritem .fig { padding: 6px; border-radius: 10px; }
-.ritem .fig .sign { height: 70px; }
-.ritem .fig .sign.with-plate { height: calc(70px * var(--k)); }
-.ritem .fig-signs { flex-direction: column; gap: 4px; }
-.ritem .fig-signs .sign { height: 44px; }
-.ritem .fig .light { height: 84px; }
-.ritem .qtext { font-size: calc(var(--qsize) * .9); }
 .ans { display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: start; font-size: .95rem; line-height: 1.4; }
 .ans svg { width: 20px; height: 20px; margin-top: 1px; }
 .ans.ok { color: var(--ok); }
 .ans.bad { color: var(--bad); }
 .ans span { color: var(--ink); }
-.ritem .explain { margin-top: 0; animation: none; }

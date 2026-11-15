@@ -8,17 +8,28 @@ import { Icon } from './Icons';
 export const lookedOf = (looked: LookedUp[], test: number | undefined) =>
   test === undefined ? [] : looked.filter(x => x.test === test);
 
+/** One row per word: a word translated in several questions of the test is listed once, its counts added up. */
+export function mergeWords(items: LookedUp[]): LookedUp[] {
+  const byWord = new Map<string, LookedUp>();
+  for (const x of items) {
+    const seen = byWord.get(x.w);
+    byWord.set(x.w, seen ? { ...seen, n: seen.n + x.n, ai: seen.ai ?? x.ai } : x);
+  }
+  return [...byWord.values()];
+}
+
 /**
- * The words translated during a test: each with its translation in the reader's current language (the dictionary's,
- * or Claude's in context when the dictionary has none) and a star that keeps it in the vocabulary.
+ * Translated words: each with its translation in the reader's current language (the dictionary's, or Claude's in
+ * context when the dictionary has none) and a star that keeps it in the vocabulary. `compact`: inside a question's
+ * card in the review.
  */
-export function LookedList({ items }: { items: LookedUp[] }) {
+export function LookedList({ items, compact = false }: { items: LookedUp[]; compact?: boolean }) {
   const { data, toggleVocab } = useApp();
   const saved = useSavedWords();
   const t = useT();
   const l = t.looked;
   return (
-    <ul className="looked-list">
+    <ul className={compact ? 'looked-list compact' : 'looked-list'}>
       {items.map(x => {
         const f = translationOf(x.w.split(' '), t.popover, data.prefs.lang);
         const tr = f.tr || x.ai || '';

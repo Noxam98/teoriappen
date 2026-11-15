@@ -1,0 +1,94 @@
+/* The review of a test: its questions as a deck of cards swiped sideways, a strip of numbers above to see the
+   whole test and jump. --rv-bleed: how far the deck may run past its box (to the edge of the panel or the screen). */
+.rv { --rv-bleed: 0px; --rv-gap: 10px; --rv-card: min(calc(100% - 26px), 480px); display: grid; gap: 10px; min-width: 0; }
+.result .rv { --rv-bleed: 16px; margin-top: 16px; }
+.attempt .rv { --rv-bleed: 14px; }
+.rv-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; min-height: 38px; }
+.rv-top .segmented { flex: 1 1 250px; max-width: 420px; }
+/* inside an opened test of the history the filter needs no heading */
+.attempt .rv-top .eyebrow { display: none; }
+.attempt .rv-top .segmented { max-width: none; }
+.rv-top .segmented button { padding: 0 11px; }
+/* the filter of questions with translated words carries the highlighter's colour */
+.rv-fwords::before { content: ""; display: inline-block; width: 9px; height: 9px; margin-right: 6px; border-radius: 50%; background: var(--yellow); }
+
+/* every question of the test: green right, red wrong, grey unanswered; a yellow dot = words were translated there */
+.rv-strip { position: relative; display: flex; gap: 6px; overflow-x: auto; margin-inline: calc(-1 * var(--rv-bleed)); padding: 4px var(--rv-bleed); scrollbar-width: none; }
+.rv-strip::-webkit-scrollbar { display: none; }
+.rv-dot { position: relative; flex: none; min-width: 38px; height: 38px; padding: 0 5px; border-radius: 11px; border: 0; background: var(--surface-3); color: var(--ink-2); font-family: var(--display); font-weight: 700; font-size: .92rem; cursor: pointer; transition: transform .12s, background-color .12s, color .12s; }
+.rv-dot.ok { background: var(--ok-soft); color: var(--ok); }
+.rv-dot.bad { background: var(--bad-soft); color: var(--bad); }
+.rv-dot.cur { background: var(--ink-2); color: var(--surface); transform: scale(1.08); }
+.rv-dot.ok.cur { background: var(--ok); color: var(--on-ok); }
+.rv-dot.bad.cur { background: var(--bad); color: var(--surface); }
+.rv-dot.has-words::after { content: ""; position: absolute; top: -3px; right: -3px; width: 11px; height: 11px; border-radius: 50%; background: var(--yellow); border: 2px solid var(--bg); }
+.attempt .rv-dot.has-words::after { border-color: var(--surface-2); }
+
+.rv-deck { position: relative; display: flex; align-items: flex-start; gap: var(--rv-gap); overflow-x: auto; overflow-y: hidden; margin-inline: calc(-1 * var(--rv-bleed)); padding: 2px var(--rv-bleed) 10px; scroll-snap-type: x mandatory; scroll-padding-inline: var(--rv-bleed); overscroll-behavior-x: contain; scrollbar-width: none; transition: height .22s ease; }
+.rv-deck::-webkit-scrollbar { display: none; }
+.rv-deck:focus-visible { outline-offset: -3px; }
+/* room after the last card, so it too comes to rest at the left edge */
+.rv-deck::after { content: ""; flex: 0 0 calc(100% - var(--rv-card) - var(--rv-gap) + var(--rv-bleed)); }
+.rv-deck.single { --rv-card: 100%; }
+.rv-deck.single::after { content: none; }
+
+.rv-card { flex: 0 0 var(--rv-card); min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 12px; padding: 14px; border-radius: var(--r-lg); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); scroll-snap-align: start; scroll-snap-stop: always; }
+.rv-card.ghost { min-height: 260px; box-shadow: none; opacity: .55; }
+.rv-head { display: flex; align-items: center; gap: 8px; min-height: 30px; }
+.rv-n { flex: none; display: grid; place-items: center; min-width: 30px; height: 30px; padding: 0 6px; border-radius: 10px; background: var(--surface-3); color: var(--ink-2); font-family: var(--display); font-weight: 700; font-size: .95rem; }
+.rv-card.ok .rv-n { background: var(--ok-soft); color: var(--ok); }
+.rv-card.bad .rv-n { background: var(--bad-soft); color: var(--bad); }
+.rv-topic { flex: 1; min-width: 0; color: var(--ink-2); font-size: .82rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.verdict-chip.none { background: var(--surface-3); color: var(--ink-2); }
+.rv-head .qshare { margin: -8px -8px -8px -6px; }
+.rv-card .fig-view { border-radius: var(--r); }
+.rv-card .fig .sign { height: 104px; }
+.rv-card .fig .sign.with-plate { height: calc(104px * var(--k)); }
+.rv-card .fig-signs .sign { height: 76px; }
+.rv-card .fig .light { height: 130px; }
+.rv-card .qtext { font-size: calc(var(--qsize) * .94); }
+
+.rv-label { display: flex; align-items: center; gap: 6px; font-family: var(--display); font-weight: 600; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+.rv-label svg { width: 17px; height: 17px; }
+/* closed: only the answer given */
+.rv-mine { display: grid; gap: 6px; padding: 10px 12px 11px; border-radius: var(--r); border: 1.5px solid var(--line); background: var(--surface-2); }
+.rv-mine.ok { border-color: color-mix(in srgb, var(--ok) 45%, transparent); background: var(--ok-soft); }
+.rv-mine.bad { border-color: color-mix(in srgb, var(--bad) 45%, transparent); background: var(--bad-soft); }
+.rv-ans { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 8px; align-items: start; font-size: calc(var(--qsize) * .9); line-height: 1.38; }
+.rv-ans svg { width: 21px; height: 21px; margin-top: 1px; color: var(--ink-3); }
+.rv-mine.ok .rv-ans svg { color: var(--ok); }
+.rv-mine.bad .rv-ans svg { color: var(--bad); }
+.rv-mine.none .rv-ans { color: var(--ink-2); }
+
+/* opened: every option in the order it was shown, the right one and the chosen one marked */
+.rv-opts { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+.rv-opt { display: grid; grid-template-columns: 30px minmax(0, 1fr) 22px; gap: 10px; align-items: center; padding: 9px 10px; border-radius: var(--r); border: 1.5px dashed var(--line); color: var(--ink-2); font-size: calc(var(--qsize) * .88); line-height: 1.36; }
+.rv-opt .key { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; background: var(--surface-2); border: 1px solid var(--line); font-family: var(--display); font-weight: 700; font-size: 1rem; }
+.rv-opt > svg { width: 22px; height: 22px; }
+.rv-otext { display: grid; gap: 1px; min-width: 0; }
+.rv-otext small { font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.rv-opt.right { border-style: solid; border-color: var(--ok); background: var(--ok-soft); color: var(--ink); }
+.rv-opt.right .key { background: var(--ok); border-color: var(--ok); color: var(--on-ok); }
+.rv-opt.right > svg, .rv-opt.right small { color: var(--ok); }
+.rv-opt.wrong { border-style: solid; border-color: var(--bad); background: var(--bad-soft); color: var(--ink); }
+.rv-opt.wrong .key { background: var(--bad); border-color: var(--bad); color: var(--surface); }
+.rv-opt.wrong > svg, .rv-opt.wrong small { color: var(--bad); }
+.rv-card .explain { margin-top: 0; animation: none; }
+
+/* the words translated in this question: the highlighter's yellow, as in the text above */
+.rv-words { display: grid; gap: 4px; padding: 10px 6px 4px 12px; border-radius: var(--r); background: var(--note); border: 1px solid color-mix(in srgb, var(--flag) 40%, transparent); }
+.w.looked { background: linear-gradient(176deg, transparent 18%, var(--paint) 18%, var(--paint) 86%, transparent 86%); box-shadow: 4px 0 0 -1px var(--paint), -4px 0 0 -1px var(--paint); }
+.looked-list.compact { border: 0; border-radius: 0; background: none; }
+.looked-list.compact .looked-item { grid-template-columns: minmax(0, 1fr) 40px; grid-template-areas: "w star" "tr star"; gap: 0 8px; padding: 5px 0; border-top-color: color-mix(in srgb, var(--flag) 28%, transparent); }
+.looked-list.compact .looked-tr { color: var(--ink); }
+.looked-list.compact .looked-star { width: 40px; height: 40px; }
+
+.rv-more { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; margin: -4px -6px -8px; border: 0; border-radius: 12px; background: none; color: var(--blue); font-weight: 600; font-size: .92rem; cursor: pointer; }
+.rv-more svg { width: 16px; height: 16px; transform: rotate(90deg); transition: transform .15s; }
+.rv-card.open .rv-more svg { transform: rotate(-90deg); }
+@media (hover: hover) { .rv-more:hover { background: var(--surface-2); } }
+
+.rv-nav { display: flex; align-items: center; justify-content: center; gap: 16px; color: var(--ink-2); font-size: .92rem; }
+.rv-nav .iconbtn[disabled] { opacity: .35; cursor: default; }
+.rv-rest { display: grid; gap: 8px; margin-top: 6px; }
+@media (min-width: 720px) { .rv-card { padding: 18px; } }
